@@ -1,0 +1,1401 @@
+<!-- Ajout pour le bouton de téléchargement et le style des jupyter notebook   https://github.com/danielfrg/mkdocs-jupyter -->
+
+
+<!doctype html>
+<html lang="fr" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Cours et TD de l'année en cours">
+      
+      
+        <meta name="author" content="M.Meyroneinc-Condy">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.15">
+    
+    
+      
+        <title>Thème 4 - Base de données - NSI Terminale 2022-2023</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.c382b1dc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.cc9b2e1e.min.css">
+        
+      
+    
+    
+    
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#le-modele-relationnel" class="md-skip">
+          Aller au contenu
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="En-tête">
+    <a href="../.." title="NSI Terminale 2022-2023" class="md-header__button md-logo" aria-label="NSI Terminale 2022-2023" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            NSI Terminale 2022-2023
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Thème 4 - Base de données
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Basculer en mode sombre"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Basculer en mode sombre" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5c-.84 0-1.65.15-2.39.42L12 2M3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29L3.34 7m.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14L3.36 17M20.65 7l-1.77 3.79a7.023 7.023 0 0 0-2.38-4.15l4.15.36m-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29L20.64 17M12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44L12 22Z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="brown" data-md-color-accent="brown"  aria-label="Basculer en mode clair"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Basculer en mode clair" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3 3.19.09m3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95 2.06.05m-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31Z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Rechercher" placeholder="Rechercher" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Effacer" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initialisation de la recherche
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Onglets" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../.." class="md-tabs__link">
+      Accueil
+    </a>
+  </li>
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="./" class="md-tabs__link md-tabs__link--active">
+        T2 - Bases de données
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../epreuve_pratique/" class="md-tabs__link">
+        E.P 💻
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../divers/sujet0_geipi.pdf" class="md-tabs__link">
+        Divers
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../divers/conseil/" class="md-tabs__link">
+      Divers conseils
+    </a>
+  </li>
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="NSI Terminale 2022-2023" class="md-nav__button md-logo" aria-label="NSI Terminale 2022-2023" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    NSI Terminale 2022-2023
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Accueil
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
+      
+      
+      
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_2">
+          T2 - Bases de données
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="T2 - Bases de données" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          T2 - Bases de données
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          TP 01 Modèle relationnel
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        TP 01 Modèle relationnel
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#le-modele-relationnel" class="md-nav__link">
+    Le modèle relationnel
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#premiere-relation" class="md-nav__link">
+    Première relation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#contrainte-dintegrite-contrainte-de-domaine" class="md-nav__link">
+    Contrainte d’intégrité : Contrainte de domaine
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cle-primaire" class="md-nav__link">
+    Clé Primaire
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dautres-relations" class="md-nav__link">
+    D'autres relations
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#redondance-des-donnees" class="md-nav__link">
+    Redondance des données
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#contraintes-dintegrite" class="md-nav__link">
+    Contraintes d'intégrité
+  </a>
+  
+    <nav class="md-nav" aria-label="Contraintes d'intégrité">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#contrainte-de-domaine" class="md-nav__link">
+    Contrainte de domaine
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contrainte-de-relation" class="md-nav__link">
+    Contrainte de relation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contrainte-de-reference" class="md-nav__link">
+    Contrainte de référence
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#representation-usuelles-des-bases-de-donnees-en-modele-relationnel" class="md-nav__link">
+    Représentation usuelles des bases de données en modèle relationnel
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Cours_TP_SQL/" class="md-nav__link">
+        TP 02 Langage SQL
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../SQL_BAC/" class="md-nav__link">
+        BAC SQL
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      
+      
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          E.P 💻
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="E.P 💻" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          E.P 💻
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../epreuve_pratique/" class="md-nav__link">
+        Déroulement
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../divers/Consigne_EP/" class="md-nav__link">
+        Consigne
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_4">
+          Divers
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Divers" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          Divers
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../divers/sujet0_geipi.pdf" class="md-nav__link">
+        Epreuve GEIPI
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../divers/conseil/" class="md-nav__link">
+        Divers conseils
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#le-modele-relationnel" class="md-nav__link">
+    Le modèle relationnel
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#premiere-relation" class="md-nav__link">
+    Première relation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#contrainte-dintegrite-contrainte-de-domaine" class="md-nav__link">
+    Contrainte d’intégrité : Contrainte de domaine
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cle-primaire" class="md-nav__link">
+    Clé Primaire
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dautres-relations" class="md-nav__link">
+    D'autres relations
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#redondance-des-donnees" class="md-nav__link">
+    Redondance des données
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#contraintes-dintegrite" class="md-nav__link">
+    Contraintes d'intégrité
+  </a>
+  
+    <nav class="md-nav" aria-label="Contraintes d'intégrité">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#contrainte-de-domaine" class="md-nav__link">
+    Contrainte de domaine
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contrainte-de-relation" class="md-nav__link">
+    Contrainte de relation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contrainte-de-reference" class="md-nav__link">
+    Contrainte de référence
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#representation-usuelles-des-bases-de-donnees-en-modele-relationnel" class="md-nav__link">
+    Représentation usuelles des bases de données en modèle relationnel
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset"><a class="md-content__button md-icon" download href="Modele_Relationnel.pdf" title="PDF"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 10.5h1v3h-1v-3m-5 1h1v-1H7v1M20 6v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2M9.5 10.5A1.5 1.5 0 0 0 8 9H5.5v6H7v-2h1a1.5 1.5 0 0 0 1.5-1.5v-1m5 0A1.5 1.5 0 0 0 13 9h-2.5v6H13a1.5 1.5 0 0 0 1.5-1.5v-3m4-1.5h-3v6H17v-2h1.5v-1.5H17v-1h1.5V9z"></path></svg></a>
+              
+
+
+
+
+
+                
+
+
+  <h1>TP 01 Modèle relationnel</h1>
+
+<table  class="yellowTable">
+        <tr >
+            <th  width="100%"; style="text-align:center;border:none;font-size:15pt;">Thème 2 : Base de données</th>
+        </tr>
+</table>
+<p><br></p>
+<table  class="yellowTable">
+        <tr >
+            <th width="20%"; style="background-color: #3B444B;color:white;text-align:center;border:none;font-size:40pt;">
+            01
+            </th>
+            <th  width="80%"; style="text-align:center;border:none;font-size:25pt;">Le modèle relationnel</th>
+        </tr>
+</table>
+<p><br></p>
+<div class="admonition prognsi">
+<p class="admonition-title">Programme Terminale</p>
+<table>
+<thead>
+<tr>
+<th align="center">Contenus</th>
+<th align="center">Capacités attendues</th>
+<th align="center">Commentaires</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">Modèle relationel : relation, attribut, domaine, clef primaire, clef étrangère, schéma relationnel</td>
+<td align="center">Identifier les concepts définissant le modèle relationnel</td>
+<td align="center">Ces concept permettent d'exprimer les contraites d'intégrité (domaine, relation et référence)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>L’année dernière nous avons eu l’occasion de travailler sur des données structurées en les stockant dans des fichiers au format CSV. Même si cette méthode de stockage de l’information peut s’avérer pratique dans certains cas précis, il est souvent souhaitable d’utiliser une base de données pour stocker des données.  </p>
+<p>En effet si le nombre de données à stocker devient très grand, est-ce que ma solution choisie pourra les gérer ?  (on peut par exemple méditer sur le cas du Royaume-Uni dont le comptage des patients positifs au Covid est devenu faux car il a dépassé les limites de leur <a href="https://www.numerama.com/politique/653217-16-000-anglais-malades-du-covid-ont-ete-oublies-a-cause-dune-feuille-excel-trop-pleine.html">feuille Excel</a>)</p>
+<ul>
+<li>
+<p>Est-ce que d'autres personnes que moi sont susceptibles de consulter ou modifier ces données, éventuellement en même temps que moi ?</p>
+</li>
+<li>
+<p>Si une donnée se retrouve à plusieurs endroits dans mes données, devrais-je aller modifier cette donnée partout où elle se trouve ou bien une seule fois ?</p>
+</li>
+</ul>
+<p>L'étude des Bases de Données tente d'apporter des réponses à toutes ces questions.</p>
+<p>Dans une base de données, l’information est stockée dans des fichiers, mais à la différence des fichiers au format CSV, il n’est pas possible de travailler sur ces données avec un simple éditeur de texte. Pour manipuler les données présentes dans une base de données (écrire, lire ou encore modifier), il est nécessaire d’utiliser un type de logiciel appelé <strong>"système de gestion de base de données"</strong> très souvent abrégé <strong>en SGBD</strong>.<br />
+Il existe une multitude de SGBD : des gratuites, des payantes, des libres ou bien encore des propriétaires. Les SGBD permettent de grandement simplifier la gestion des bases de données :<br />
+- les SGBD permettent de gérer la lecture, l’écriture ou la modification des informations contenues dans une base de données<br />
+- les SGBD permettent de gérer les autorisations d’accès à une base de données. Il est en effet souvent nécessaire de contrôler les accès par exemple en permettant à l’utilisateur A de lire et d’écrire dans la base de données alors que l’utilisateur B aura uniquement la possibilité de lire les informations contenues dans cette même base de données.<br />
+- les fichiers des bases de données sont stockés sur des disques durs dans des ordinateurs, ces ordinateurs peuvent subir des pannes. Il est souvent nécessaire que l’accès aux informations contenues dans une base de données soit maintenu, même en cas de panne matérielle. Les bases de données sont donc dupliquées sur plusieurs ordinateurs afin qu’en cas de panne d’un ordinateur A, un ordinateur B contenant une copie de la base de données présente dans A, puisse prendre le relais. Tout cela est très complexe à gérer, en effet toute modification de la base de données présente sur l’ordinateur A doit entraîner la même modification de la base de données présente sur l’ordinateur B. Cette synchronisation entre A et B doit se faire le plus rapidement possible, il est fondamental d’avoir des copies parfaitement identiques en permanence. C’est aussi les SGBD qui assurent la maintenance des différentes copies de la base de données.<br />
+- plusieurs personnes peuvent avoir besoin d’accéder aux informations contenues dans une base données en même temps. Cela peut parfois poser problème, notamment si les 2 personnes désirent modifier la même donnée au même moment (on parle d’accès concurrent). Ces problèmes d’accès concurrent sont aussi gérés par les SGBD.  </p>
+<p>Comme nous venons de la voir, les SGBD jouent un rôle fondamental. L’utilisation des SGBD explique en partie la supériorité de l’utilisation des bases de données sur des solutions plus simples à mettre en oeuvre, mais aussi beaucoup plus limitées comme les fichiers au format CSV.</p>
+<h2 id="le-modele-relationnel">Le modèle relationnel<a class="headerlink" href="#le-modele-relationnel" title="Permanent link">⚓︎</a></h2>
+<p>Le programme de Terminale NSI prévoit uniquement l'étude du <strong>modèle relationnel</strong>.</p>
+<p><img alt="codd" class="center" src="../data/codd.jpg" />
+Théorisé en 1970 par le Britannique Edgard J. Codd, 
+le modèle relationnel est à ce jour le modèle de base de données le plus utilisé, même si l'ère actuelle du Big Data tend à mettre en avant d'autres modèles non relationnels (nous en reparlerons).</p>
+<div class="admonition abstract">
+<p class="admonition-title">Les principes de base du modèle relationnel</p>
+<ul>
+<li>Les données sont regroupées dans différentes <strong>tables</strong> (qu'on appellera plutôt <strong>relations</strong> et qui donnent son nom au modèle). Chaque relation contient des éléments directement en lien avec le sujet général de la table.</li>
+<li>Autant que possible, des données identiques ne doivent pas se trouver dans des tables différentes : on évite la <strong>redondance</strong> des données.</li>
+<li>Les données ne doivent pas contenir elles-mêmes d'autres données : on parle d'<strong>atomicité</strong> des données.</li>
+</ul>
+</div>
+<p>Un modèle relationnel est donc basé sur des... <strong>relations</strong>.</p>
+<h2 id="premiere-relation">Première relation<a class="headerlink" href="#premiere-relation" title="Permanent link">⚓︎</a></h2>
+<p>Prenons l'exemple d'une bibliothèque dont la base de données possède une relation «livres» :</p>
+<p><strong>Relation «Livres»</strong> </p>
+<p><img alt="" src="../data/table.png" /></p>
+<div class="admonition aide">
+<p class="admonition-title">Vocabulaire</p>
+<ul>
+<li><strong>relation</strong> , ou <strong>table</strong> : c'est l'endroit où sont rangées les données. L'ordre des lignes (que l'on appelera des enregistrements) n'a pas d'importance.</li>
+<li><strong>enregistrement</strong>, ou <strong>tuple</strong>, ou <strong>n-uplet</strong>, ou <strong>t-uplet</strong>, ou <strong>vecteur</strong> : cela correspond à une ligne du tableau, et donc un ensemble de valeurs liées entre elles : l'auteur «Bradbury» a bien écrit le livre «Fahreneit 451». 
+Il est <strong>interdit</strong> que deux enregistrements soient totalement identiques. 
+Le nombre d'enregistrements d'une relation s'appelle son <strong>cardinal</strong>.</li>
+<li><strong>attribut</strong> : c'est l'équivalent d'une colonne. Il y a dans notre relation un attribut «code», un attribut «Titre», etc.</li>
+<li><strong>domaine</strong> : le domaine désigne «le type» (au sens type <code>Int</code>, <code>Float</code>, <code>String</code>). L'attribut «Auteur» est une chaîne de caractères, par contre l'attribut «code» est un nombre. </li>
+<li><strong>schéma</strong> : le schéma d'une relation est le regroupement de tous les attributs et de leur domaine respectif. Ici notre schéma serait <code>((Code, Entier), (Titre, Chaîne de caractères), (Auteur, Chaîne de caractères), (ann_publi, date), (note, Entier))</code> </li>
+</ul>
+</div>
+<h2 id="contrainte-dintegrite-contrainte-de-domaine">Contrainte d’intégrité : Contrainte de domaine<a class="headerlink" href="#contrainte-dintegrite-contrainte-de-domaine" title="Permanent link">⚓︎</a></h2>
+<p>Pour chaque attribut d’une relation, il est nécessaire de définir un domaine : Le domaine d’un attribut donné correspond à un ensemble fini ou infini de valeurs admissibles.<br />
+Par exemple, le domaine de l’attribut "codz" correspond à l’ensemble des entiers (noté INT) : la colonne "code" devra obligatoirement contenir des entiers.<br />
+Autre exemple, le domaine de l’attribut "titre" correspond à l’ensemble des chaînes de caractères (noté TEXT ou CHAR).<br />
+Dernier exemple, le domaine de l’attribut "note" correspond à l’ensemble des entiers positifs.<br />
+Au moment de la création d’une relation, il est nécessaire de renseigner le domaine de chaque attribut.<br />
+Le SGBD s’assure qu’un élément ajouté à une relation respecte bien le domaine de l’attribut correspondant : si par exemple vous essayez d’ajouter une note non entière (par exemple 8.5), le SGBD signalera cette erreur et n’autorisera pas l’écriture de cette nouvelle donnée.</p>
+<h2 id="cle-primaire">Clé Primaire<a class="headerlink" href="#cle-primaire" title="Permanent link">⚓︎</a></h2>
+<div class="admonition note">
+<p class="admonition-title">Clé primaire <img alt="❤" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/2764.svg" title=":heart:" /></p>
+<p>Une clé primaire est un attribut (ou une réunion d'attributs) <strong>dont la connaissance suffit à identifier avec certitude un unique enregistrement</strong>.</p>
+</div>
+<p>Par exemple, la clé primaire de la relation des personnes nées en France pourrait être leur <a href="https://fr.wikipedia.org/wiki/Num%C3%A9ro_de_s%C3%A9curit%C3%A9_sociale_en_France" target="_blank">numéro de Sécurité Sociale</a>.</p>
+<p>Observons, dans notre relation précédente, ce qui peut être une clé primaire et ce qui ne peut pas l'être.</p>
+<ul>
+<li>Titre : cet attribut pourrait jouer le rôle de clé primaire. En effet, notre table ne contient pas deux livres ayant le même titre. Mais en réalité, à éviter car des livres peuvent avoir le même nom parfois.</li>
+<li>Auteur : cet attribut ne pourrait pas jouer le rôle de clé primaire. En effet, notre table contient des livres ayant le même auteur.</li>
+<li>ann_publi : cet attribut ne peut <strong>pas</strong> jouer le rôle de clé primaire. En effet, la donnée de l'attribut «1951» renvoie vers plusieurs livres différents.</li>
+<li>note : cet attribut ne peut pas jouer le rôle de clé primaire.</li>
+<li>Code : cet attribut peut jouer le rôle de clé primaire. En effet, notre table ne contient pas deux livre ayant le même code.</li>
+</ul>
+<p>Alors, quelle clé primaire choisir ?  </p>
+<p>Il faut pour cela réfléchir à ce que deviendrait notre relation si elle contenait 1000 livres au lieu de 10. Il est fort probable que deux livres aient alors le même auteur : l'attribut «Auteur» ne serait donc plus une clé primaire.<br />
+Il peut arriver aussi que deux livres aient le même titre : l'attribut «Titre» n'est donc pas une bonne clé primaire.</p>
+<p>L'attribut «Code», qui correspond à une nomenclature «maison», c'est donc une clé primaire qu'on qualifiera d'«artificielle».  </p>
+<p>Attention, il ne peut pas y avoir deux clés primaires dans une table. La clé primaire choisie ici serait sans aucun doute l'attribut «Code».</p>
+<p>On note :<br />
+(<span style="text-decoration:underline">Code : Entier</span>, Titre : Chaîne de caractères, Auteur : Chaîne de caractères, ann_publi : date, note : Entier)</p>
+<h2 id="dautres-relations">D'autres relations<a class="headerlink" href="#dautres-relations" title="Permanent link">⚓︎</a></h2>
+<p>Ajoutons maintenant les relations ci-dessous :</p>
+<p><strong>Relation «Emprunts»</strong> </p>
+<table>
+<thead>
+<tr>
+<th>id_emprunteur</th>
+<th>date</th>
+<th>Nom</th>
+<th>Prénom</th>
+<th>titre</th>
+<th>auteur</th>
+<th>code</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>845</td>
+<td>12/10/2020</td>
+<td>DURAND</td>
+<td>Michel</td>
+<td>Fondation</td>
+<td>Asimov</td>
+<td>3</td>
+</tr>
+<tr>
+<td>125</td>
+<td>13/10/2020</td>
+<td>MARTIN</td>
+<td>Jean</td>
+<td>Blade Runner</td>
+<td>K.Dick</td>
+<td>9</td>
+</tr>
+<tr>
+<td>125</td>
+<td>13/10/2020</td>
+<td>MARTIN</td>
+<td>Jean</td>
+<td>De la Terre à la Lune</td>
+<td>Verne</td>
+<td>16</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Relation «Emprunteurs»</strong> </p>
+<table>
+<thead>
+<tr>
+<th>id_emprunteur</th>
+<th>Nom</th>
+<th>Prénom</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>129</td>
+<td>DUPOND</td>
+<td>Marcel</td>
+</tr>
+<tr>
+<td>845</td>
+<td>DURAND</td>
+<td>Michel</td>
+</tr>
+<tr>
+<td>125</td>
+<td>MARTIN</td>
+<td>Jean</td>
+</tr>
+</tbody>
+</table>
+<p>L'attribut «id_emprunteur» est une clé primaire de la relation «Emprunteurs».</p>
+<p><strong>Notion de clé étrangère</strong> </p>
+<p>Y-a-t-il une clé primaire dans la relation «Emprunts» ? </p>
+<p>«id_emprunteur» est bien une clé primaire (d'«Emprunteurs») mais ne peut pas être une clé primaire d'«Emprunts», car une personne peut prendre plusieurs livres à la fois : on dit que c'est une <strong>clé étrangère</strong>. </p>
+<div class="admonition note">
+<p class="admonition-title">Clé étrangère <img alt="❤" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/2764.svg" title=":heart:" /></p>
+<p>Une clé étrangère est une clé primaire d'une autre relation.</p>
+</div>
+<p>«code» est aussi une clé étrangère : c'est une clé primaire (de la relation «livres») mais elle ne peut pas jouer le rôle de clé primaire pour la relation emprunt, car un même livre pourra être pris à différentes dates.</p>
+<h2 id="redondance-des-donnees">Redondance des données<a class="headerlink" href="#redondance-des-donnees" title="Permanent link">⚓︎</a></h2>
+<p>La relation «Emprunts» contient des informations qui sont déjà disponibles dans d'autres relations : on dit qu'elle est <strong>redondante</strong>, et c'est quelque chose qu'il faut éviter. À la fois pour des raisons d'espace de stockage mais aussi de cohérence : si une modification doit être faite (un emprunteur change de prénom), cette modification ne doit être faite qu'à un seul endroit de notre base de données.</p>
+<p>Une version non-redondante de la relation «Emprunteurs» serait donc celle-ci :</p>
+<p><strong>Relation «Emprunts»</strong> </p>
+<table>
+<thead>
+<tr>
+<th>id_emprunteur</th>
+<th>date</th>
+<th>code</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>845</td>
+<td>12/10/2020</td>
+<td>3</td>
+</tr>
+<tr>
+<td>125</td>
+<td>13/10/2020</td>
+<td>9</td>
+</tr>
+<tr>
+<td>125</td>
+<td>13/10/2020</td>
+<td>16</td>
+</tr>
+</tbody>
+</table>
+<h2 id="contraintes-dintegrite">Contraintes d'intégrité<a class="headerlink" href="#contraintes-dintegrite" title="Permanent link">⚓︎</a></h2>
+<h3 id="contrainte-de-domaine">Contrainte de domaine<a class="headerlink" href="#contrainte-de-domaine" title="Permanent link">⚓︎</a></h3>
+<p>Tout attribut d'un enregistrement doit respecter le domaine indiqué dans le schéma relationnel.</p>
+<p>Attention, certains domaines sont subtils. Par exemple, si une relation possède un attribut "Code Postal", le domaine de cet attribut devra être <code>String</code> plutôt que <code>Entier</code> . Dans le cas contraire, un enregistrement possédant le code postal <code>03150</code> serait converti en <code>3150</code> (car pour les entiers, 03150 = 3150). Or le code postal <code>3150</code> n'existe pas.</p>
+<h3 id="contrainte-de-relation">Contrainte de relation<a class="headerlink" href="#contrainte-de-relation" title="Permanent link">⚓︎</a></h3>
+<p>La contrainte de relation impose que tout enregistrement soit unique : cette contrainte est réalisée par l'existence obligatoire d'une clé primaire.
+Cette clé primaire est souvent créée de manière artificielle (voir <code>id_emprunteurs</code>  dans la table ci-dessus par exemple).</p>
+<h3 id="contrainte-de-reference">Contrainte de référence<a class="headerlink" href="#contrainte-de-reference" title="Permanent link">⚓︎</a></h3>
+<p>La cohérence entre les différentes tables d'une base de données est assurée par les clés étrangères : dans une table, la valeur d'un attribut qui est clé étrangère doit obligatoirement pouvoir être retrouvée dans la table dont cet attribut est clé primaire.</p>
+<p>Par exemple, la relation «Emprunts_v2» ci-dessous n'est pas valable :</p>
+<p><strong>Relation «Emprunts_v2»</strong> </p>
+<table>
+<thead>
+<tr>
+<th>id_emprunteur</th>
+<th>date</th>
+<th>code</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>845</td>
+<td>12/10/2020</td>
+<td>3</td>
+</tr>
+<tr>
+<td>125</td>
+<td>13/10/2020</td>
+<td>9</td>
+</tr>
+<tr>
+<td>125</td>
+<td>13/10/2020</td>
+<td><strong>27</strong></td>
+</tr>
+</tbody>
+</table>
+<p>En effet, le code 511 (clé étrangère de ma table «Emprunts_v2») ne correspond à aucun enregistrement dans la table dont il est clé primaire (la table «Livres») :</p>
+<p>Il n'y a pas de code 27, donc ma relation «Emprunts_v2» ne respecte pas la contrainte de référence, et provoquerait une erreur du SGBD.</p>
+<h2 id="representation-usuelles-des-bases-de-donnees-en-modele-relationnel">Représentation usuelles des bases de données en modèle relationnel<a class="headerlink" href="#representation-usuelles-des-bases-de-donnees-en-modele-relationnel" title="Permanent link">⚓︎</a></h2>
+<p>Considérons la base de données Tour de France 2020, contenant les relations suivantes :
+(d'après une idée de <a href="http://webtic.free.fr/sql/mldr.htm">Didier Boulle</a>)</p>
+<p><strong>relation Équipes</strong></p>
+<table>
+<thead>
+<tr>
+<th>codeEquipe</th>
+<th>nomEquipe</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ALM</td>
+<td>AG2R La Mondiale</td>
+</tr>
+<tr>
+<td>AST</td>
+<td>Astana Pro Team</td>
+</tr>
+<tr>
+<td>TBM</td>
+<td>Bahrain - McLaren</td>
+</tr>
+<tr>
+<td>BOH</td>
+<td>BORA - hansgrohe</td>
+</tr>
+<tr>
+<td>CCC</td>
+<td>CCC Team</td>
+</tr>
+<tr>
+<td>COF</td>
+<td>Cofidis, Solutions Crédits</td>
+</tr>
+<tr>
+<td>DQT</td>
+<td>Deceuninck - Quick Step</td>
+</tr>
+<tr>
+<td>EF1</td>
+<td>EF Pro Cycling</td>
+</tr>
+<tr>
+<td>GFC</td>
+<td>Groupama - FDJ</td>
+</tr>
+<tr>
+<td>LTS</td>
+<td>Lotto Soudal</td>
+</tr>
+<tr>
+<td>...</td>
+<td>...</td>
+</tr>
+</tbody>
+</table>
+<p>Le schéma relationnel de cette table s'écrira souvent :
+Equipes ( <ins>codeEquipe</ins>  <code>String</code>,  nomEquipe <code>String</code> ) </p>
+<p>Notez le soulignement sous le mot «codeEquipe», qui signifie que cet attribut est une clé primaire. 
+Les clés étrangères, lorsqu'elles existent, peuvent être signalées par une astérisque * ou #.</p>
+<p><strong>relation Coureurs</strong></p>
+<table>
+<thead>
+<tr>
+<th>dossard</th>
+<th>nomCoureur</th>
+<th>prénomCoureur</th>
+<th>codeEquipe</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>141</td>
+<td>LÓPEZ</td>
+<td>Miguel Ángel</td>
+<td>AST</td>
+</tr>
+<tr>
+<td>142</td>
+<td>FRAILE</td>
+<td>Omar</td>
+<td>AST</td>
+</tr>
+<tr>
+<td>143</td>
+<td>HOULE</td>
+<td>Hugo</td>
+<td>AST</td>
+</tr>
+<tr>
+<td>11</td>
+<td>ROGLIČ</td>
+<td>Primož</td>
+<td>TJV</td>
+</tr>
+<tr>
+<td>12</td>
+<td>BENNETT</td>
+<td>George</td>
+<td>TJV</td>
+</tr>
+<tr>
+<td>41</td>
+<td>ALAPHILIPPE</td>
+<td>Julian</td>
+<td>DQT</td>
+</tr>
+<tr>
+<td>44</td>
+<td>CAVAGNA</td>
+<td>Rémi</td>
+<td>DQT</td>
+</tr>
+<tr>
+<td>45</td>
+<td>DECLERCQ</td>
+<td>Tim</td>
+<td>DQT</td>
+</tr>
+<tr>
+<td>121</td>
+<td>MARTIN</td>
+<td>Guillaume</td>
+<td>COF</td>
+</tr>
+<tr>
+<td>122</td>
+<td>CONSONNI</td>
+<td>Simone</td>
+<td>COF</td>
+</tr>
+<tr>
+<td>123</td>
+<td>EDET</td>
+<td>Nicolas</td>
+<td>COF</td>
+</tr>
+<tr>
+<td>…</td>
+<td>…</td>
+<td>…</td>
+<td>…</td>
+</tr>
+</tbody>
+</table>
+<p>Schéma : 
+Equipes ( <ins>dossard</ins>  <code>Int</code>,  nomCoureur <code>String</code>,  prénomCoureur <code>String</code>,   #codeEquipe <code>String</code> ) </p>
+<p><strong>relation Étapes</strong></p>
+<table>
+<thead>
+<tr>
+<th>numéroEtape</th>
+<th>villeDépart</th>
+<th>villeArrivée</th>
+<th>km</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Nice</td>
+<td>Nice</td>
+<td>156</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Nice</td>
+<td>Nice</td>
+<td>185</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Nice</td>
+<td>Sisteron</td>
+<td>198</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Sisteron</td>
+<td>Orcières-Merlette</td>
+<td>160</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Gap</td>
+<td>Privas</td>
+<td>198</td>
+</tr>
+<tr>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+<td>...</td>
+</tr>
+</tbody>
+</table>
+<p>Schéma : 
+Étapes ( <ins>numéroEtape</ins>  <code>Int</code>,  villeDépart <code>String</code>,  villeArrivée <code>String</code>,   km <code>Int</code> ) </p>
+<p><strong>relation Temps</strong></p>
+<table>
+<thead>
+<tr>
+<th align="center">dossard</th>
+<th align="center">numéroEtape</th>
+<th align="center">tempsRéalisé</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">41</td>
+<td align="center">2</td>
+<td align="center">04:55:27</td>
+</tr>
+<tr>
+<td align="center">121</td>
+<td align="center">4</td>
+<td align="center">04:07:47</td>
+</tr>
+<tr>
+<td align="center">11</td>
+<td align="center">5</td>
+<td align="center">04:21:22</td>
+</tr>
+<tr>
+<td align="center">122</td>
+<td align="center">5</td>
+<td align="center">04:21:22</td>
+</tr>
+<tr>
+<td align="center">41</td>
+<td align="center">4</td>
+<td align="center">04:08:24</td>
+</tr>
+<tr>
+<td align="center">...</td>
+<td align="center">...</td>
+<td align="center">...</td>
+</tr>
+</tbody>
+</table>
+<p>Schéma : 
+Temps ( #<ins>dossard</ins>  <code>Int</code>,  #<ins>numéroEtape</ins>  <code>Int</code>,  tempsRéalisé <code>String</code>) </p>
+<p>Remarquez que la clé primaire de cette relation est le couple dossard-numéroEtape.</p>
+<p><strong>Représentation graphique</strong></p>
+<p><img alt="" src="../data/schema.svg" /></p>
+
+              
+
+<style>
+    .jp-RenderedHTMLCommon p {
+        font-size: 0.8rem;
+        line-height: 1.6;
+    }
+
+    .jp-RenderedHTMLCommon li {
+        font-size: .8rem;
+        line-height: 1.6;
+    }
+
+    .jp-RenderedHTMLCommon h1 {
+        margin: 0 0 1.25em;
+        color: var(--md-default-fg-color--light);
+        font-weight: 300;
+        font-size: 2em;
+        line-height: 1.3;
+        letter-spacing: -0.01em;
+    }
+
+    .jp-RenderedHTMLCommon h2 {
+        margin: 1.6em 0 .64em;
+        font-weight: 300;
+        font-size: 1.965em;
+        line-height: 1.4;
+        letter-spacing: -0.01em;
+    }
+
+    .jp-RenderedHTMLCommon h3 {
+        margin: 1.6em 0 .8em;
+        font-weight: 400;
+        font-size: 1.57em;
+        line-height: 1.5;
+        letter-spacing: -0.01em;
+    }
+
+    .jp-RenderedHTMLCommon hr {
+        border: none;
+    }
+</style>
+
+
+
+            </article>
+          </div>
+        </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" data-md-state="hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+            Retour en haut de la page
+          </a>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Pied de page">
+      
+        
+        <a href="../.." class="md-footer__link md-footer__link--prev" aria-label="Précédent: Accueil" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Précédent
+              </span>
+              Accueil
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../Cours_TP_SQL/" class="md-footer__link md-footer__link--next" aria-label="Suivant: TP 02 Langage SQL" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Suivant
+              </span>
+              TP 02 Langage SQL
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      2023 sous licence <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.fr" target="_blank">CC BY-NC-SA 4.0</a>
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.tabs", "navigation.top", "navigation.sections", "navigation.indexes", "navigation.tracking", "header.autohide", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.2a1c317c.min.js", "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.config.lang": "fr", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Rechercher", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version.title": "S\u00e9lectionner la version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.a6c66575.min.js"></script>
+      
+        <script src="../../xtra/mathjax.js"></script>
+      
+        <script src="../../javascripts/config.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

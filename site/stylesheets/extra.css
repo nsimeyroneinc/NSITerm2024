@@ -1,7 +1,14 @@
 .md-grid {
   max-width: 1540px; 
 }
- 
+
+@media print {
+  @page {
+    margin-top: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
  
  /*Ajout de Guillaume CONNAN pour éviter l'ascenceur vertical  */
  .md-typeset div.arithmatex  {
@@ -10,15 +17,15 @@
 
 /*Ajout de Sébastien HOARO pour avoir une taille de police normale dans les admonotions  */
 .md-typeset .admonition {
-  font-size: 0.8rem;
+  font-size: 0.75rem;
 }
 
 
 .md-typeset details {
-  font-size: 0.8rem;
+  font-size: 0.75rem;
 }
 .md-typeset .collapsible {
-  font-size: 0.8rem;
+  font-size: 0.75rem;
 }
 /*
 :root{
@@ -244,6 +251,24 @@ background-color: rgb(77, 146, 77);
 }
 
 
+:root {
+  --md-admonition-icon--progNSI: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M0 2.75C0 1.784.784 1 1.75 1h12.5c.966 0 1.75.784 1.75 1.75v10.5A1.75 1.75 0 0 1 14.25 15H1.75A1.75 1.75 0 0 1 0 13.25V2.75zm1.75-.25a.25.25 0 0 0-.25.25v10.5c0 .138.112.25.25.25h12.5a.25.25 0 0 0 .25-.25V2.75a.25.25 0 0 0-.25-.25H1.75zM7.25 8a.75.75 0 0 1-.22.53l-2.25 2.25a.75.75 0 1 1-1.06-1.06L5.44 8 3.72 6.28a.75.75 0 1 1 1.06-1.06l2.25 2.25c.141.14.22.331.22.53zm1.5 1.5a.75.75 0 0 0 0 1.5h3a.75.75 0 0 0 0-1.5h-3z"/></svg>')
+}
+.md-typeset .admonition.objectif,
+.md-typeset details.progNSI {
+  border-color: rgb(77, 146, 77);
+}
+.md-typeset .progNSI > .admonition-title,
+.md-typeset .progNSI > summary {
+  background-color: rgba(77, 146, 77, 0.1);
+  border-color: rgb(77, 146, 77);
+}
+.md-typeset .progNSI > .admonition-title::before,
+.md-typeset .progNSI > summary::before {
+  background-color: rgb(77, 146, 77);
+  -webkit-mask-image: var(--md-admonition-icon--progNSI);
+          mask-image: var(--md-admonition-icon--progNSI);
+}
 
 
 
@@ -331,25 +356,25 @@ background-color: rgb(77, 146, 77);
 
 }
 
-/* ugli-note */
+/* note */
 
-.md-typeset .admonition.ugli-note,
-.md-typeset details.ugli-note {
+.md-typeset .admonition.note,
+.md-typeset details.note {
 
   border-color: var(--green);
 }
 
-.md-typeset .ugli-note > .admonition-title,
-.md-typeset .ugli-note > summary {
+.md-typeset .note > .admonition-title,
+.md-typeset .note > summary {
   background-color: var(--green);
   color: var(--lightgreen); /* text color */
   border-color: var(--green);
 }
 
-.md-typeset .ugli-note > .admonition-title::before,
-.md-typeset .ugli-note > summary::before {
+.md-typeset .note > .admonition-title::before,
+.md-typeset .note > summary::before {
   background-color: var(--lightgreen); /* icon color */
-  -webkit-mask-image: var(--md-admonition-icon--ugli-note);
+  -webkit-mask-image: var(--md-admonition-icon--note);
 
 }
 
@@ -389,7 +414,7 @@ body {
 }
 
 h1 {
-  background-color: #87A96B;
+  background-color: #A19162;
   color:white;
   font-family: @@font_name@@;
   font-size: 12pt;
@@ -404,7 +429,7 @@ h3 {
     color: brown;
 }
 h1:before {
-  content: counter(h1) ".    ";
+  content:  "    ";
   counter-increment: h1;
 }
 h2:before {
@@ -430,12 +455,12 @@ h1.unnumbered:before, h2.unnumbered:before, h3.unnumbered:before {
 }
 */
 
-table {
+/*table {
   border-collapse: collapse;
   width: 100%;
   border: 1px solid #ddd;
 }
-
+*/
 
 table.blueTable {
   border: 1px solid #151616;
@@ -447,6 +472,15 @@ table.blueTable {
   font-size: 18px;
 }
 
+table.yellowTable {
+  border: 1px solid #151616;
+  background-color: #c5ca27;
+  width: 100%;
+  color: black;
+  text-align: center;
+  border-collapse: collapse;
+  font-size: 18px;
+}
 
 table.greenTable {
   border: 1px solid #151616;
@@ -458,6 +492,7 @@ table.greenTable {
   font-size: 18px;
 }
 
+/*
 table.greenTable td, table.greenTable th {
   border: 1px solid #AAAAAA;
   padding: 3px 2px;
@@ -490,7 +525,7 @@ table.greenTable tfoot .links a {
 em {
   color: var(--red);
 }
-
+*/
 /*
 python blue : 006699
 python yellow : FFCC33
@@ -505,3 +540,10 @@ Orange : rgb(255, 145, 0)
 Violet : rgb(124, 77, 255)
 Gray : rgb(158, 158, 158)
 */
+
+
+.cle_primaire {
+  text-decoration-line: underline;
+  text-underline-offset: 0.37em;
+  text-decoration-thickness: 1.5px; 
+}

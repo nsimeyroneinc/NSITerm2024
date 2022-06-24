@@ -2,19 +2,16 @@ Ce site est dédié aux élèves de Terminales NSI du Lycée Murat à Issoire af
 
 Les notebooks sont corrigés et les cellules peuvent être copiées pour être testées dans vos notebooks Capytale.
 
+
 !!! info 
     **Thème en cours** :  
-    - [Calculabilité et Décidabilité](Programmation/Calculabilite_Decidabilite.md)  
-    - [Graphe](Graphe/TD_Graphe.md) 
+    
 
     
 
-!!! info  "Epreuve BAC 2022 - Report"
-    Les épreuves de spécialité reportées à la mi-mai se dérouleront en effet conformément au programme d’examen prévu pour mars.  
-    Ces épreuves de spécialité comporteront des aménagements de leurs sujets, qui garantiront toujours un choix au candidat, que ce soit entre des questions ou entre des exercices. Il sera ainsi assuré de traiter un sujet sollicitant des contenus d’enseignement qu’il aura étudiés et travaillés. Les deux jours précédant ces épreuves seront consacrés, dans les établissements, aux révisions des examens, les élèves de terminale n’ayant que leurs cours de spécialité.
+!!! info  "Epreuve BAC 2023"
+    Les épreuves de spécialité se dérouleront mi-mars 2023.  
 
-    - Les **épreuves écrites** auront lieu du mercredi 11 mai au vendredi 13 mai 2022.  
-    - Les **épreuves pratiques** interviendront dans les jours suivants.
 
 ## Notions à l'épreuve écrite de Mars 2022 : 
 
@@ -33,7 +30,7 @@ Les notebooks sont corrigés et les cellules peuvent être copiées pour être t
 
 ### &#10145; Thème : Architectures matérielles, système d’exploitation et réseaux(ARSE)  
 
-□ Gestion des processus et des ressources par un système d’exploitation  
+🗹 Gestion des processus et des ressources par un système d’exploitation  
 🗹 Protocoles de routage  
 □ Composants intégrés d’un système sur puce
 
