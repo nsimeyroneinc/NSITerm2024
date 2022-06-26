@@ -482,6 +482,15 @@ table.yellowTable {
   font-size: 18px;
 }
 
+table.redTable {
+  border: 1px solid #151616;
+  background-color: #FC6B3C;
+  width: 100%;
+  color: black;
+  text-align: center;
+  border-collapse: collapse;
+  font-size: 18px;
+}
 table.greenTable {
   border: 1px solid #151616;
   background-color: #87A96B;

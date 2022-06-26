@@ -4,7 +4,7 @@ Les notebooks sont corrigés et les cellules peuvent être copiées pour être t
 
 
 !!! info 
-    **Thème en cours** :  
+    **Thème en cours** :  Modèle relationnel et Langage SQL
     
 
     
@@ -17,34 +17,33 @@ Les notebooks sont corrigés et les cellules peuvent être copiées pour être t
 
 ### &#10145; Thème : Structure de données  
 
-🗹 Structure de données abstraites( file) : interface et implémentation  
-🗹 Programmation orientée objet  
-🗹 Structures linéaires : Listes, Piles, Files  
-🗹 Arbres
+□ Structure de données abstraites( file) : interface et implémentation  
+□ Programmation orientée objet  
+□ Structures linéaires : Listes, Piles, Files  
+□ Arbres
 
 ### &#10145; Thème : Base de données  
 
 🗹 Modèle relationnel, clé,schéma relationnel  
-🗹 Base de données relationnelle et SGBD.  
-🗹 Langage SQL  
+□ Base de données relationnelle et SGBD.  
+□ Langage SQL  
 
 ### &#10145; Thème : Architectures matérielles, système d’exploitation et réseaux(ARSE)  
 
-🗹 Gestion des processus et des ressources par un système d’exploitation  
-🗹 Protocoles de routage  
+□ Gestion des processus et des ressources par un système d’exploitation  
+□ Protocoles de routage  
 □ Composants intégrés d’un système sur puce
 
 ### &#10145; Thème : Langage de programmation(LP)  
 	
-🗹 Récursivité  
-🗹 Modularité
-	
-🗹 Mise au point des programmes. Gestion des bugs.
+□ Récursivité  
+□ Modularité  	
+□ Mise au point des programmes. Gestion des bugs.
 
 
 ### &#10145; Thème : Algorithmique(A)
 
-🗹 Algorithmes sur les arbres binaires et sur les arbres binaires de recherche.
+□ Algorithmes sur les arbres binaires et sur les arbres binaires de recherche.
 
-🗹 Méthode « diviser pour régner »
+□ Méthode « diviser pour régner »
 	

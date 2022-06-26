@@ -1,6 +1,6 @@
 ---
 title : Thème 4 - Base de données
-subtitle: Langage SQL - Sujet BAC
+subtitle: Langage SQL - Sujet BAC - Correction
 subsubtitle: Terminale NSI
 author : M.Meyroneinc-Condy
 numbersections: true
@@ -12,6 +12,8 @@ geometry:
 - heightrounded    
 --- 
 
+SQL : Exercices BAC - Correction
+===
 
 <table  class="yellowTable">
         <tr >

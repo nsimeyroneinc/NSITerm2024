@@ -5,12 +5,11 @@
 
 Lorsqu'on ne travaillera pas sur les notebook de capytale, il est conseillé de travailler avec 3 espaces :
 
-- l'écran de l'ordinateur partitionné avec les 2 premiers espaces: ce site et un IDE (Thonny par exemple);
+- l'écran de l'ordinateur partitionné avec les 2 premiers espaces: ce site et un IDE (Spyder ou Thonny par exemple);
 
-![image](data/cap.png){: .center}
 
 !!! danger "C'est en codant qu'on apprend à coder"
-    **Tous** les exemples de code dans le cours doivent être **retapés** (résistez à l'envie du copier-coller) dans Thonny, soit en fenêtre de script, soit en console.
+    **Tous** les exemples de code dans le cours doivent être **retapés** (résistez à l'envie du copier-coller).
 
     Cela permet de :
 
@@ -21,51 +20,14 @@ Lorsqu'on ne travaillera pas sur les notebook de capytale, il est conseillé de 
 
     - **faire ses propres tests et modifications** pour vérifier sa bonne compréhension. 
 
-- et un troisième espace essentiel : un petit cahier à spirale et un stylo !
+- et un troisième espace essentiel : un cahier à spirale et un stylo !
 
 ![image](data/cahier.jpeg){: .center width=50%}
 
 
-## Script ou console ???
-
-Thonny, comme la grande majorité des IDE Python, est composé de deux zones distinctes :
-
-- la zone de script
-- la console
-
-![image](data/thonny.png){: .center width=50%}
-
-La zone de script est **asynchrone**. Il ne se passera rien tant que vous n'aurez pas exécuté le script (par F5 par exemple).
-C'est donc l'endroit où on va rédiger son programme.
-
-La **console** est synchrone : elle répond dès que vous appuyez sur la touche Entrée. Elle sert donc aux petits tests rapides, ou bien tests post-exécution d'un code.
-
-!!! note "Utilisation classique du couple script / console"
-    1. On écrit son code dans la zone de script
-    2. On l'exécute.
-    3. On interroge la console pour connaître l'état des variables, pour utiliser les fonctions construites dans le script.
-
-Pour les extraits de code présents sur ce site :
-
-- tout le code qui est précédé d'une numérotation de ligne est à écrire en zone de script.
-
-Exemple :
-```python linenums='1'
-def accueil(n):
-   for k in range(n):
-       print("bonjour") 
-```
-
-- tout le code qui est précédé ```>>>``` est à taper en console.
-
-Exemple :
-```python
->>> accueil(5)
-```
-
 ## Dossiers, fichiers et versionning
 
-Cette année en NSI nous allons manipuler un certain nombre de fichiers qui sont dans capytale sur l'ENT. Il est possible de les télécharger sur clé usb, dans ce cas il est important de les nommer et les classer de façon rigoureuse pour les retrouver rapidement et les partager.
+Cette année en NSI nous allons manipuler un certain nombre de fichiers qui sont dans capytale sur l'ENT. Pensez à les "étiqueter", de plus il est possible de les télécharger sur clé usb, dans ce cas il est important de les nommer et les classer de façon rigoureuse pour les retrouver rapidement et les partager.
 
 
 !!! tip "Conseils"

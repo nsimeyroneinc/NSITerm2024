@@ -12,6 +12,8 @@ geometry:
 - heightrounded    
 --- 
 
+SQL : Exercices BAC
+===
 
 <table  class="yellowTable">
         <tr >
@@ -23,9 +25,9 @@ geometry:
 <table  class="yellowTable">
         <tr >
             <th width="20%"; style="background-color: #3B444B;color:white;text-align:center;border:none;font-size:40pt;">
-            03
+            BAC
             </th>
-            <th  width="80%"; style="text-align:center;border:none;font-size:25pt;">BAC : langage SQL</th>
+            <th  width="80%"; style="text-align:center;border:none;font-size:25pt;">Langage SQL</th>
         </tr>
 </table>
 <br>
