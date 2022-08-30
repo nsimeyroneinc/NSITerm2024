@@ -47,3 +47,6 @@ Les notebooks sont corrigés et les cellules peuvent être copiées pour être t
 
 □ Méthode « diviser pour régner »
 	
+## Répartition des notes :
+
+![](r-partition-de-la-note-finale.jpg)
