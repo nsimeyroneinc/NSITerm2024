@@ -1,4 +1,4 @@
-Ce site est dédié aux élèves de Terminales NSI du Lycée Murat à Issoire afin de retrouver les divers TP & TD travaillés en claase.  
+Ce site est dédié aux élèves de Terminales NSI du Lycée Murat à Issoire afin de retrouver les divers TP & TD travaillés en classe.  
 
 Les notebooks sont corrigés et les cellules peuvent être copiées pour être testées dans vos notebooks Capytale.
 
@@ -12,8 +12,8 @@ Les notebooks sont corrigés et les cellules peuvent être copiées pour être t
 !!! info  "Epreuve BAC 2023"
     Les épreuves de spécialité se dérouleront mi-mars 2023.  
 
-
-## Notions à l'épreuve écrite de Mars 2022 : 
+ 
+## Notions à l'épreuve écrite de Mars 2022 (sera mis à jours dés que possible): 
 
 ### &#10145; Thème : Structure de données  
 
@@ -47,3 +47,6 @@ Les notebooks sont corrigés et les cellules peuvent être copiées pour être t
 
 □ Méthode « diviser pour régner »
 	
+## Répartition des notes :
+
+![](r-partition-de-la-note-finale.jpg)

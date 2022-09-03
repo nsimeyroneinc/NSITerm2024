@@ -12,6 +12,8 @@ geometry:
 - heightrounded    
 --- 
 
+Langage SQL : Résumé
+===
 
 <table  class="yellowTable">
         <tr >
@@ -25,7 +27,7 @@ geometry:
             <th width="20%"; style="background-color: #3B444B;color:white;text-align:center;border:none;font-size:40pt;">
             02
             </th>
-            <th  width="80%"; style="text-align:center;border:none;font-size:25pt;">Résumé cours : langage SQL</th>
+            <th  width="80%"; style="text-align:center;border:none;font-size:25pt;">Résumé cours : Langage SQL</th>
         </tr>
 </table>
 <br>
@@ -224,7 +226,7 @@ WHERE auteur='K.Dick' ORDER BY ann_publi
 <table class="dataframe" border="1"><thead><tr style="text-align: right;"><th>titre</th></tr></thead><tbody><tr><td>Le Maître du Haut Château</td></tr><tr><td>Blade Runner</td></tr><tr><td>Ubik</td></tr></tbody></table>
 
 
-!!! voc "Remarques :""
+!!! voc "Remarques :"
     - **Comportement par défaut :** Si le paramètre ASC ou DESC est omis, le classement se fait par ordre **croissant** (donc ASC est le paramètre par défaut).
 
 ## &#x2712;  La clause DISTINCT

@@ -16,8 +16,8 @@ nav:
     #- Test : Notebook.ipynb
 
     #- Struct. de données :
-    - T1 - Struct. de données :  
-      - P.O.O : Programmation/Cours_Programmation_Orientee_Objet.md
+    #- T1 - Struct. de données :  
+    #  - P.O.O : Programmation/Cours_Programmation_Orientee_Objet.md
    
     
     - T2 - Bases de données :  
