@@ -397,15 +397,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#cle-primaire" class="md-nav__link">
-    Clé Primaire
+  <a href="#contrainte-dintegrite-cle-primaire" class="md-nav__link">
+    Contrainte d’intégrité :  Clé Primaire
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#dautres-relations" class="md-nav__link">
-    D'autres relations
+  <a href="#contrainte-dintegrite-cle-etrangere" class="md-nav__link">
+    Contrainte d’intégrité : clé étrangère
   </a>
   
 </li>
@@ -418,11 +418,11 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#contraintes-dintegrite" class="md-nav__link">
-    Contraintes d'intégrité
+  <a href="#resume-contraintes-dintegrite" class="md-nav__link">
+    Résumé : Contraintes d'intégrité
   </a>
   
-    <nav class="md-nav" aria-label="Contraintes d'intégrité">
+    <nav class="md-nav" aria-label="Résumé : Contraintes d'intégrité">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -684,15 +684,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#cle-primaire" class="md-nav__link">
-    Clé Primaire
+  <a href="#contrainte-dintegrite-cle-primaire" class="md-nav__link">
+    Contrainte d’intégrité :  Clé Primaire
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#dautres-relations" class="md-nav__link">
-    D'autres relations
+  <a href="#contrainte-dintegrite-cle-etrangere" class="md-nav__link">
+    Contrainte d’intégrité : clé étrangère
   </a>
   
 </li>
@@ -705,11 +705,11 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#contraintes-dintegrite" class="md-nav__link">
-    Contraintes d'intégrité
+  <a href="#resume-contraintes-dintegrite" class="md-nav__link">
+    Résumé : Contraintes d'intégrité
   </a>
   
-    <nav class="md-nav" aria-label="Contraintes d'intégrité">
+    <nav class="md-nav" aria-label="Résumé : Contraintes d'intégrité">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -849,12 +849,12 @@ Le nombre d'enregistrements d'une relation s'appelle son <strong>cardinal</stron
 </div>
 <h2 id="contrainte-dintegrite-contrainte-de-domaine">Contrainte d’intégrité : Contrainte de domaine<a class="headerlink" href="#contrainte-dintegrite-contrainte-de-domaine" title="Permanent link">⚓︎</a></h2>
 <p>Pour chaque attribut d’une relation, il est nécessaire de définir un domaine : Le domaine d’un attribut donné correspond à un ensemble fini ou infini de valeurs admissibles.<br />
-Par exemple, le domaine de l’attribut "codz" correspond à l’ensemble des entiers (noté INT) : la colonne "code" devra obligatoirement contenir des entiers.<br />
-Autre exemple, le domaine de l’attribut "titre" correspond à l’ensemble des chaînes de caractères (noté TEXT ou CHAR).<br />
-Dernier exemple, le domaine de l’attribut "note" correspond à l’ensemble des entiers positifs.<br />
+- Par exemple, le domaine de l’attribut "code" correspond à l’ensemble des entiers (noté INT) : la colonne "code" devra obligatoirement contenir des entiers.<br />
+- Autre exemple, le domaine de l’attribut "titre" correspond à l’ensemble des chaînes de caractères (noté TEXT ou CHAR).<br />
+- Dernier exemple, le domaine de l’attribut "note" correspond à l’ensemble des entiers positifs.<br />
 Au moment de la création d’une relation, il est nécessaire de renseigner le domaine de chaque attribut.<br />
 Le SGBD s’assure qu’un élément ajouté à une relation respecte bien le domaine de l’attribut correspondant : si par exemple vous essayez d’ajouter une note non entière (par exemple 8.5), le SGBD signalera cette erreur et n’autorisera pas l’écriture de cette nouvelle donnée.</p>
-<h2 id="cle-primaire">Clé Primaire<a class="headerlink" href="#cle-primaire" title="Permanent link">⚓︎</a></h2>
+<h2 id="contrainte-dintegrite-cle-primaire">Contrainte d’intégrité :  Clé Primaire<a class="headerlink" href="#contrainte-dintegrite-cle-primaire" title="Permanent link">⚓︎</a></h2>
 <div class="admonition note">
 <p class="admonition-title">Clé primaire <img alt="❤" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/2764.svg" title=":heart:" /></p>
 <p>Une clé primaire est un attribut (ou une réunion d'attributs) <strong>dont la connaissance suffit à identifier avec certitude un unique enregistrement</strong>.</p>
@@ -875,7 +875,7 @@ Il peut arriver aussi que deux livres aient le même titre : l'attribut «Titre�
 <p>Attention, il ne peut pas y avoir deux clés primaires dans une table. La clé primaire choisie ici serait sans aucun doute l'attribut «Code».</p>
 <p>On note :<br />
 (<span style="text-decoration:underline">Code : Entier</span>, Titre : Chaîne de caractères, Auteur : Chaîne de caractères, ann_publi : date, note : Entier)</p>
-<h2 id="dautres-relations">D'autres relations<a class="headerlink" href="#dautres-relations" title="Permanent link">⚓︎</a></h2>
+<h2 id="contrainte-dintegrite-cle-etrangere">Contrainte d’intégrité : clé étrangère<a class="headerlink" href="#contrainte-dintegrite-cle-etrangere" title="Permanent link">⚓︎</a></h2>
 <p>Ajoutons maintenant les relations ci-dessous :</p>
 <p><strong>Relation «Emprunts»</strong> </p>
 <table>
@@ -986,15 +986,24 @@ Il peut arriver aussi que deux livres aient le même titre : l'attribut «Titre�
 </tr>
 </tbody>
 </table>
-<h2 id="contraintes-dintegrite">Contraintes d'intégrité<a class="headerlink" href="#contraintes-dintegrite" title="Permanent link">⚓︎</a></h2>
+<h2 id="resume-contraintes-dintegrite">Résumé : Contraintes d'intégrité<a class="headerlink" href="#resume-contraintes-dintegrite" title="Permanent link">⚓︎</a></h2>
 <h3 id="contrainte-de-domaine">Contrainte de domaine<a class="headerlink" href="#contrainte-de-domaine" title="Permanent link">⚓︎</a></h3>
+<div class="admonition note">
+<p class="admonition-title">Contrainte de domaine <img alt="❤" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/2764.svg" title=":heart:" /></p>
 <p>Tout attribut d'un enregistrement doit respecter le domaine indiqué dans le schéma relationnel.</p>
+</div>
 <p>Attention, certains domaines sont subtils. Par exemple, si une relation possède un attribut "Code Postal", le domaine de cet attribut devra être <code>String</code> plutôt que <code>Entier</code> . Dans le cas contraire, un enregistrement possédant le code postal <code>03150</code> serait converti en <code>3150</code> (car pour les entiers, 03150 = 3150). Or le code postal <code>3150</code> n'existe pas.</p>
 <h3 id="contrainte-de-relation">Contrainte de relation<a class="headerlink" href="#contrainte-de-relation" title="Permanent link">⚓︎</a></h3>
-<p>La contrainte de relation impose que tout enregistrement soit unique : cette contrainte est réalisée par l'existence obligatoire d'une clé primaire.
+<div class="admonition note">
+<p class="admonition-title">Clé primaire <img alt="❤" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/2764.svg" title=":heart:" /></p>
+<p>La contrainte de relation impose que tout enregistrement soit unique : cette contrainte est réalisée par <strong>l'existence obligatoire d'une clé primaire</strong>.<br />
 Cette clé primaire est souvent créée de manière artificielle (voir <code>id_emprunteurs</code>  dans la table ci-dessus par exemple).</p>
+</div>
 <h3 id="contrainte-de-reference">Contrainte de référence<a class="headerlink" href="#contrainte-de-reference" title="Permanent link">⚓︎</a></h3>
-<p>La cohérence entre les différentes tables d'une base de données est assurée par les clés étrangères : dans une table, la valeur d'un attribut qui est clé étrangère doit obligatoirement pouvoir être retrouvée dans la table dont cet attribut est clé primaire.</p>
+<div class="admonition note">
+<p class="admonition-title">Clé primaire <img alt="❤" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/2764.svg" title=":heart:" /></p>
+<p>La <strong>cohérence entre les différentes tables</strong> d'une base de données <strong>est assurée par les clés étrangères</strong> : dans une table, la valeur d'un attribut qui est clé étrangère doit obligatoirement pouvoir être retrouvée dans la table dont cet attribut est clé primaire.</p>
+</div>
 <p>Par exemple, la relation «Emprunts_v2» ci-dessous n'est pas valable :</p>
 <p><strong>Relation «Emprunts_v2»</strong> </p>
 <table>
@@ -1023,8 +1032,8 @@ Cette clé primaire est souvent créée de manière artificielle (voir <code>id_
 </tr>
 </tbody>
 </table>
-<p>En effet, le code 511 (clé étrangère de ma table «Emprunts_v2») ne correspond à aucun enregistrement dans la table dont il est clé primaire (la table «Livres») :</p>
-<p>Il n'y a pas de code 27, donc ma relation «Emprunts_v2» ne respecte pas la contrainte de référence, et provoquerait une erreur du SGBD.</p>
+<p>En effet, le code 27 (clé étrangère de la table «Emprunts_v2») ne correspond à aucun enregistrement dans la table dont il est clé primaire (la table «Livres») :</p>
+<p>Donc ma relation «Emprunts_v2» ne respecte pas la contrainte de référence, et provoquerait une erreur du SGBD.</p>
 <h2 id="representation-usuelles-des-bases-de-donnees-en-modele-relationnel">Représentation usuelles des bases de données en modèle relationnel<a class="headerlink" href="#representation-usuelles-des-bases-de-donnees-en-modele-relationnel" title="Permanent link">⚓︎</a></h2>
 <p>Considérons la base de données Tour de France 2020, contenant les relations suivantes :
 (d'après une idée de <a href="http://webtic.free.fr/sql/mldr.htm">Didier Boulle</a>)</p>

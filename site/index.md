@@ -49,6 +49,6 @@ Les notebooks sont corrigés et les cellules peuvent être copiées pour être t
 	
 ## Comment calculer sa note au BAC 2023 et Répartition des notes :
 
-![Fiche pour calculer sa note au BAC 2023](divers/el-ve-de-premiere-comment-calculer-note-bac-2022-94490.pdf)
+[Fiche pour calculer sa note au BAC 2023](divers/data/el-ve-de-premiere-comment-calculer-note-bac-2022-94490.pdf){:target="_blank"} 
 
 ![](r-partition-de-la-note-finale.jpg)

@@ -103,13 +103,13 @@ Prenons l'exemple d'une bibliothèque dont la base de données possède une rela
 ## Contrainte d’intégrité : Contrainte de domaine
 
 Pour chaque attribut d’une relation, il est nécessaire de définir un domaine : Le domaine d’un attribut donné correspond à un ensemble fini ou infini de valeurs admissibles.  
-Par exemple, le domaine de l’attribut "codz" correspond à l’ensemble des entiers (noté INT) : la colonne "code" devra obligatoirement contenir des entiers.  
-Autre exemple, le domaine de l’attribut "titre" correspond à l’ensemble des chaînes de caractères (noté TEXT ou CHAR).  
-Dernier exemple, le domaine de l’attribut "note" correspond à l’ensemble des entiers positifs.  
+- Par exemple, le domaine de l’attribut "code" correspond à l’ensemble des entiers (noté INT) : la colonne "code" devra obligatoirement contenir des entiers.  
+- Autre exemple, le domaine de l’attribut "titre" correspond à l’ensemble des chaînes de caractères (noté TEXT ou CHAR).  
+- Dernier exemple, le domaine de l’attribut "note" correspond à l’ensemble des entiers positifs.  
 Au moment de la création d’une relation, il est nécessaire de renseigner le domaine de chaque attribut.  
 Le SGBD s’assure qu’un élément ajouté à une relation respecte bien le domaine de l’attribut correspondant : si par exemple vous essayez d’ajouter une note non entière (par exemple 8.5), le SGBD signalera cette erreur et n’autorisera pas l’écriture de cette nouvelle donnée.
 
-## Clé Primaire
+## Contrainte d’intégrité :  Clé Primaire
 
 !!! note "Clé primaire :heart:"
     Une clé primaire est un attribut (ou une réunion d'attributs) **dont la connaissance suffit à identifier avec certitude un unique enregistrement**.
@@ -139,7 +139,7 @@ On note :
 
 
 
-## D'autres relations
+## Contrainte d’intégrité : clé étrangère
 
 Ajoutons maintenant les relations ci-dessous :
 
@@ -188,19 +188,23 @@ Une version non-redondante de la relation «Emprunteurs» serait donc celle-ci :
 | 125           | 13/10/2020 | 9    |
 | 125           | 13/10/2020 | 16   |
 
-## Contraintes d'intégrité
+## Résumé : Contraintes d'intégrité
 
 ### Contrainte de domaine
-Tout attribut d'un enregistrement doit respecter le domaine indiqué dans le schéma relationnel.
+!!! note "Contrainte de domaine :heart:"
+    Tout attribut d'un enregistrement doit respecter le domaine indiqué dans le schéma relationnel.
 
 Attention, certains domaines sont subtils. Par exemple, si une relation possède un attribut "Code Postal", le domaine de cet attribut devra être ```String``` plutôt que ```Entier``` . Dans le cas contraire, un enregistrement possédant le code postal ```03150``` serait converti en ```3150``` (car pour les entiers, 03150 = 3150). Or le code postal ```3150``` n'existe pas.
 
 ### Contrainte de relation
-La contrainte de relation impose que tout enregistrement soit unique : cette contrainte est réalisée par l'existence obligatoire d'une clé primaire.
-Cette clé primaire est souvent créée de manière artificielle (voir ```id_emprunteurs```  dans la table ci-dessus par exemple).
+
+!!! note "Clé primaire :heart:"
+    La contrainte de relation impose que tout enregistrement soit unique : cette contrainte est réalisée par **l'existence obligatoire d'une clé primaire**.  
+    Cette clé primaire est souvent créée de manière artificielle (voir ```id_emprunteurs```  dans la table ci-dessus par exemple).
 
 ### Contrainte de référence
-La cohérence entre les différentes tables d'une base de données est assurée par les clés étrangères : dans une table, la valeur d'un attribut qui est clé étrangère doit obligatoirement pouvoir être retrouvée dans la table dont cet attribut est clé primaire.
+!!! note "Clé primaire :heart:"
+    La **cohérence entre les différentes tables** d'une base de données **est assurée par les clés étrangères** : dans une table, la valeur d'un attribut qui est clé étrangère doit obligatoirement pouvoir être retrouvée dans la table dont cet attribut est clé primaire.
 
 Par exemple, la relation «Emprunts_v2» ci-dessous n'est pas valable :
 
@@ -212,10 +216,9 @@ Par exemple, la relation «Emprunts_v2» ci-dessous n'est pas valable :
 | 125           | 13/10/2020 | 9    |
 | 125           | 13/10/2020 | **27**  |
 
-En effet, le code 511 (clé étrangère de ma table «Emprunts_v2») ne correspond à aucun enregistrement dans la table dont il est clé primaire (la table «Livres») :
+En effet, le code 27 (clé étrangère de la table «Emprunts_v2») ne correspond à aucun enregistrement dans la table dont il est clé primaire (la table «Livres») :
 
-
-Il n'y a pas de code 27, donc ma relation «Emprunts_v2» ne respecte pas la contrainte de référence, et provoquerait une erreur du SGBD.
+Donc ma relation «Emprunts_v2» ne respecte pas la contrainte de référence, et provoquerait une erreur du SGBD.
 
 
 ## Représentation usuelles des bases de données en modèle relationnel
