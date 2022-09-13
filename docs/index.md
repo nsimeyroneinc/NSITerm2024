@@ -4,13 +4,14 @@ Les notebooks sont corrigés et les cellules peuvent être copiées pour être t
 
 
 !!! info 
-    **Thème en cours** :  Modèle relationnel et Langage SQL
+    - Corrections des sujets BAC SQL disponibles  
+    - **Thème en cours** :  Récursivité
     
 
     
 
 !!! info  "Epreuve BAC 2023"
-    Les épreuves de spécialité se dérouleront mi-mars 2023.  
+    Les épreuves de spécialité se dérouleront normalement mi-mars 2023 (en attente d'information).  
 
  
 ## Notions à l'épreuve écrite de Mars 2022 (sera mis à jours dés que possible): 
@@ -25,8 +26,8 @@ Les notebooks sont corrigés et les cellules peuvent être copiées pour être t
 ### &#10145; Thème : Base de données  
 
 🗹 Modèle relationnel, clé,schéma relationnel  
-□ Base de données relationnelle et SGBD.  
-□ Langage SQL  
+🗹 Base de données relationnelle et SGBD.  
+🗹 Langage SQL  
 
 ### &#10145; Thème : Architectures matérielles, système d’exploitation et réseaux(ARSE)  
 
