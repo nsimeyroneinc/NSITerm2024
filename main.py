@@ -3,6 +3,32 @@ import os
 def define_env(env):
     "Hook function"
 
+#---------------- <exo perso>-------------------- 
+
+    @env.macro
+    def correction(bool, texte):
+        if bool == False:
+            return ""
+        else:
+            return texte
+
+
+
+    @env.macro
+    def initexo(n):
+        env.variables['compteur_exo'] = n
+        return ""
+
+
+
+
+    env.variables['compteur_exo'] = 0
+    @env.macro
+    def exercice():
+        env.variables['compteur_exo'] += 1
+        return f"Exercice  { env.variables['compteur_exo']}"
+
+#---------------- </exo perso>-------------------- 
     @env.macro
     def relation(nom, primaire, *reste) -> str:
         return f'<code><strong>{nom}</strong> (<span class="cle_primaire">{primaire}</span>, {", ".join(reste)})</code>'

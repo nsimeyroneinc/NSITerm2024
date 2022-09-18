@@ -15,10 +15,10 @@ nav:
     - Accueil : index.md
     #- Test : Notebook.ipynb
 
-    #- Struct. de données :
-    #- T1 - Struct. de données :  
-    #  - P.O.O : Programmation/Cours_Programmation_Orientee_Objet.md
-   
+    - T1 - Struct. de données :
+    #- T1 - Struct. de données :  StructureDonnees/T1_1_Recursivite.md
+      - P.O.O : StructureDonnees/T1_1_Programmation_Orientee_Objet.md
+      - POO BAC : StructureDonnees/POO_BAC.md
     
     - T2 - Bases de données :  
       - TP 01 Modèle relationnel : BasesDonnees/Modele_Relationnel.md
@@ -28,8 +28,8 @@ nav:
     
     #- T3 - Archi. matèrielle :
     
-    # T4 - Programmation :
-      # - 
+    - T4 - Programmation :
+       - Récursivité : Programmation/T4_1_TP_Recursivite_correction.md
 
     #- T5 Algo. : 
 

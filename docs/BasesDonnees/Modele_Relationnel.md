@@ -17,7 +17,7 @@ Modèle relationnel
 
 <table  class="yellowTable">
         <tr >
-            <th  width="100%"; style="text-align:center;border:none;font-size:15pt;">Thème 2 : Base de données</th>
+            <th  class="yellowTh";width="100%"; style="text-align:center;border:none;font-size:15pt;">Thème 2 : Base de données</th>
         </tr>
 </table>
 <br>
@@ -27,7 +27,7 @@ Modèle relationnel
             <th width="20%"; style="background-color: #3B444B;color:white;text-align:center;border:none;font-size:40pt;">
             01
             </th>
-            <th  width="80%"; style="text-align:center;border:none;font-size:25pt;">Le modèle relationnel</th>
+            <th  class="yellowTh";width="80%"; style="text-align:center;border:none;font-size:25pt;">Le modèle relationnel</th>
         </tr>
 </table>
 <br>

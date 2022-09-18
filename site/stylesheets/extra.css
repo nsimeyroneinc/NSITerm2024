@@ -426,7 +426,7 @@ h2 {
   font-size: 12pt;
 }
 h3 {
-    color: brown;
+    color: rgb(13, 112, 17);
 }
 h1:before {
   content:  "    ";
@@ -437,7 +437,7 @@ h2:before {
   counter-increment: h2;
 }
 h3:before {
-  content:  counter(h3) ".  ";
+  content: counter(h2)"."counter(h3) ".  ";
   counter-increment: h3;
 }
 h1 {
@@ -464,7 +464,7 @@ h1.unnumbered:before, h2.unnumbered:before, h3.unnumbered:before {
 
 table.blueTable {
   border: 1px solid #151616;
-  background-color: #8bb7d4;
+  background-color: #318CE7;
   width: 100%;
   color: black;
   text-align: center;
@@ -501,6 +501,15 @@ table.greenTable {
   font-size: 18px;
 }
 
+th.blueTh {
+  border: 1px solid #151616;
+  background-color: #318CE7;
+  width: 100%;
+  color: black;
+  text-align: center;
+  border-collapse: collapse;
+  font-size: 18px;
+}
 
 th.yellowTh {
   border: 1px solid #151616;
