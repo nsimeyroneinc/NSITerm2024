@@ -28,8 +28,8 @@ nav:
     
     #- T3 - Archi. matèrielle :
     
-    - T4 - Programmation :
-       - Récursivité : Programmation/T4_1_TP_Recursivite_correction.md
+    #- T4 - Programmation :
+    #   - Récursivité : Programmation/T4_1_TP_Recursivite_correction.md
 
     #- T5 Algo. : 
 
@@ -43,8 +43,8 @@ nav:
     #  - Sujets : divers/EpreuvePratique.md
       #- EP 2022 : BAC/EP_2022.md
   
-    #Devoirs
-    #- Devoirs :
+    - Evaluations :
+      - DS01 : Evaluations/BDD_Devoir.md
 
 
 

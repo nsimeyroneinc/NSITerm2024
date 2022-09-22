@@ -5,13 +5,13 @@ Les notebooks sont corrigés et les cellules peuvent être copiées pour être t
 
 !!! info 
     - Corrections des sujets BAC SQL disponibles  
-    - **Thème en cours** :  Récursivité
+    - **Thème en cours** :  P.O.O
     
 
     
 
 !!! info  "Epreuve BAC 2023"
-    Les épreuves de spécialité se dérouleront normalement mi-mars 2023 (en attente d'information).  
+    Les épreuves de spécialité se dérouleront les 20 et 21 mars 2023 pour la N.S.I.  
 
  
 ## Notions à l'épreuve écrite de Mars 2022 (sera mis à jours dés que possible): 
