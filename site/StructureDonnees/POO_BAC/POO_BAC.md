@@ -34,10 +34,8 @@ POO : Exercices BAC
 </table>
 
 
-{{ initexo(0) }}
 
-EXERCICES TYPE BAC
-===
+{{ initexo(0) }}
 
 ## Exercice n°1 : Métropole J1 : Ex.5 - 2022
 

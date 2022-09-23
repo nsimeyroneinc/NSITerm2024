@@ -17,8 +17,10 @@ nav:
 
     - T1 - Struct. de données :
     #- T1 - Struct. de données :  StructureDonnees/T1_1_Recursivite.md
-      - P.O.O : StructureDonnees/T1_1_Programmation_Orientee_Objet.md
-      - POO BAC : StructureDonnees/POO_BAC.md
+      - T1_1 P.O.O : StructureDonnees/T1_1_Programmation_Orientee_Objet.md
+      - T1_2 POO Exercices : StructureDonnees/T1_2_TD_POO.md
+      - T1_3 TD POO BAC : StructureDonnees/T1_3_BAC_Capytale.md     
+      - T1_4 Sujet POO BAC : StructureDonnees/POO_BAC.md
     
     - T2 - Bases de données :  
       - TP 01 Modèle relationnel : BasesDonnees/Modele_Relationnel.md

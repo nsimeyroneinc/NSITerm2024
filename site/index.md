@@ -5,13 +5,15 @@ Les notebooks sont corrigés et les cellules peuvent être copiées pour être t
 
 !!! info 
     - Corrections des sujets BAC SQL disponibles  
-    - **Thème en cours** :  Récursivité
+    - **Thème en cours** :  [P.O.O](docs/StructureDonnees)
     
 
     
 
-!!! info  "Epreuve BAC 2023"
-    Les épreuves de spécialité se dérouleront normalement mi-mars 2023 (en attente d'information).  
+!!! info  "Epreuve BAC 2023"  
+    - Les épreuves de spécialité se dérouleront les 20 et 21 mars 2023 pour la N.S.I.  
+    - Les épreuves pratiques seront organisées la semaine suivante.
+
 
  
 ## Notions à l'épreuve écrite de Mars 2022 (sera mis à jours dés que possible): 
@@ -19,7 +21,7 @@ Les notebooks sont corrigés et les cellules peuvent être copiées pour être t
 ### &#10145; Thème : Structure de données  
 
 □ Structure de données abstraites( file) : interface et implémentation  
-□ Programmation orientée objet  
+🗹 Programmation orientée objet  
 □ Structures linéaires : Listes, Piles, Files  
 □ Arbres
 
@@ -37,7 +39,7 @@ Les notebooks sont corrigés et les cellules peuvent être copiées pour être t
 
 ### &#10145; Thème : Langage de programmation(LP)  
 	
-□ Récursivité  
+🗹 Récursivité  
 □ Modularité  	
 □ Mise au point des programmes. Gestion des bugs.
 
