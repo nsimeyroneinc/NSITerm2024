@@ -5,7 +5,7 @@ Les notebooks sont corrigés et les cellules peuvent être copiées pour être t
 
 !!! info 
     - Corrections des sujets BAC SQL disponibles  
-    - **Thème en cours** :  [P.O.O](docs/StructureDonnees)
+    - **Thème en cours** : T1 Structure de données - P.O.O
     
 
     

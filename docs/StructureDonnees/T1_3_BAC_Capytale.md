@@ -99,63 +99,52 @@ class Gite:
 
 1. Lister les attributs en donnant leur type. Préciser s’ils sont modifiables dans la classe, en explicitant la méthode associée.
 
+??? check "Réponse :"
+    Les attributs sont en principe définis et initialisés dans la méthode `__init__`. On les désigne en faisant précéder leur nom du mot réservé `self`. Ici on a donc les attributs appelés `_nom` et `_occupation` .  
 
+    On constate que lors de l'initialisation la valeur attribuée à `_nom` est le paramètre `nom` de la méthode `__init__` , dont le type est précisé comme étant `str`, c'est à dire chaîne de caractères. 
 
+    `_occupation` est initialisé sous la forme d'une liste de valeurs booléennes (définie en compréhension)
 
-Les attributs sont en principe définis et initialisés dans la méthode `__init__`. On les désigne en faisant précéder leur nom du mot réservé `self`. Ici on a donc les attributs appelés `_nom` et `_occupation` .  
-
-On constate que lors de l'initialisation la valeur attribuée à `_nom` est le paramètre `nom` de la méthode `__init__` , dont le type est précisé comme étant `str`, c'est à dire chaîne de caractères. 
-
-`_occupation` est initialisé sous la forme d'une liste de valeurs booléennes (définie en compréhension)
-
- La méthode `reserver` permet de modifier la valeur de l'attribut `_occupation`.
+    La méthode `reserver` permet de modifier la valeur de l'attribut `_occupation`.
     
 
+2. Écrire un `assert` dans la méthode `reserver` pour vérifier si le nombre `date` passé en paramètre est bien compris entre 1 et 365 (on ne gère pas les années bissextiles).
 
 
-    
-  2. Écrire un `assert` dans la méthode `reserver` pour vérifier si le nombre `date` passé en paramètre est bien compris entre 1 et 365 (on ne gère pas les années bissextiles).
+??? check "Réponse :"
+    Modification de la méthode `reserver`:     
 
+    ```python
+    def reserver(self, date: int):
+        assert date >=1 and date <=365
+        self._occupation[date - 1] = True
+    ```
 
-Modification de la méthode `reserver`:     
+    ou   
 
+    ```python
+    def reserver(self, date: int):
+        assert 1<= date <=365
+        self._occupation[date - 1] = True
+    ```
 
-
-```python
-def reserver(self, date: int):
-    assert date >=1 and date <=365
-    self._occupation[date - 1] = True
-```
-
-
-    
-ou   
-
-
-
-```python
-def reserver(self, date: int):
-    assert 1<= date <=365
-    self._occupation[date - 1] = True
-```
-
-
-    
-  3. Écrire la méthode `annuler_reserver(self, date : int)`  qui annule la réservation pour le jour `date`.
+3. Écrire la méthode `annuler_reserver(self, date : int)`  qui annule la réservation pour le jour `date`.
 
 
 
-```python
-def annuler_reserver(self, date:int):
-    self._occupation[date - 1] = False 
+??? check "Réponse :"
 
-```
+    ```python
+    def annuler_reserver(self, date:int):
+        self._occupation[date - 1] = False 
+    ```
 
 ### Partie B - Étude de la classe `Gite` :
 
 Le gîte « BonneNuit » a 5 chambres dénommées :  
     
-             'Ch1', 'Ch2', 'Ch3', 'Ch4', 'Ch5'
+'Ch1', 'Ch2', 'Ch3', 'Ch4', 'Ch5'
     
 On définit l’objet `giteBN` par l’instruction : `giteBN = Gite("BonneNuit")`.  
     
@@ -164,59 +153,46 @@ On définit l’objet `giteBN` par l’instruction : `giteBN = Gite("BonneNuit")
 Écrire l’instruction Python pour ajouter `'Ch1'` à l’objet `giteBN`.
     
 
+??? check "Réponse :"
+    Ajout d'une chambre à `giteBN` en appelant sa méthode `ajouter_chambre` avec en paramètre le nom de la chambre  : 
+
+    ```python
+    giteBN.ajouter_chambres('Ch1')
+    ```
+
+Dans les questions suivantes 2, 3 et 4, on considère que l’objet `giteBN`  contient toutes les chambres du gite « BonneNuit ».    
     
-Ajout d'une chambre à `giteBN` en appelant sa méthode `ajouter_chambre` avec en paramètre le nom de la chambre  : 
-
-
-
-```python
-giteBN.ajouter_chambres('Ch1')
-```
-
-
-    
-  Dans les questions suivantes 2, 3 et 4, on considère que l’objet `giteBN`  contient toutes les chambres du gite « BonneNuit ».    
-    
-  2. La méthode `ajouter_chambres` permet d’enregistrer une nouvelle chambre,
-mais elle ne teste pas si le nom de cette chambre existe déjà.
+2. La méthode `ajouter_chambres` permet d’enregistrer une nouvelle chambre, mais elle ne teste pas si le nom de cette chambre existe déjà.  
 Modifier la méthode pour éviter cet éventuel doublon.
 
 
+??? check "Réponse :"
+    Les chambres sont enregistrées dans l'attribut `_chambres` de l'objet gite. Il faut inspecter tous les noms de chambre dans cette liste pour savoir si le nouveau nom proposé existe déjà.  
+    La méthode `get_nchambres` renvoie la liste des noms de toutes les chambres du gite. On peut donc faire : 
 
+    ```python
+    def ajouter_chambres(self, nom_ch : str):
+        if nom_ch not in self.get_nchambres():
+            self._chambres.append(Chambre(nom_ch))
+    ```
 
-Les chambres sont enregistrées dans l'attribut `_chambres` de l'objet gite. Il faut inspecter tous les noms de chambre dans cette liste pour savoir si le nouveau nom proposé existe déjà. 
-La méthode `get_nchambres` renvoie la liste des noms de toutes les chambres du gite. On peut donc faire : 
+    ou bien, sans utiliser `get_nchambres`, une démarche classique où l'on parcourt la liste de chambres en positionnant un indicateur booléen (`nom_nouveau`) pour signaler éventuellement que le nom choisi existait déjà : 
 
-
-
-```python
-def ajouter_chambres(self, nom_ch : str):
-    if nom_nouveau not in self.get_nchambres():
-        self._chambres.append(Chambre(nom_ch))
-```
-
-
-    
-ou bien, sans utiliser `get_nchambres`, une démarche classique où l'on parcourt la liste de chambres en positionnant un indicateur booléen (`nom_nouveau`) pour signaler éventuellement que le nom choisi existait déjà : 
-
-
-
-```python
-def ajouter_chambres(self, nom_ch : str):
-    nom_nouveau = True
-    for chambre in self._chambres:
-        if chambre.get_nom() == nom_ch:
-            nom_nouveau = False
-    if nom_nouveau:
-        self._chambres.append(Chambre(nom_ch))
-```
+    ```python
+    def ajouter_chambres(self, nom_ch : str):
+        nom_nouveau = True
+        for chambre in self._chambres:
+            if chambre.get_nom() == nom_ch:
+                nom_nouveau = False
+        if nom_nouveau:
+            self._chambres.append(Chambre(nom_ch))
+    ```
 
 
     
-  3. Étude des méthodes : `get_chambres()` et `get_nchambres()`.  
+3. Étude des méthodes : `get_chambres()` et `get_nchambres()`.  
     
-   a. Parmi les 4 propositions ci-dessous, quel est le type renvoyé par l’instruction
-Python : `giteBN.get_chambres()` .
+a. Parmi les 4 propositions ci-dessous, quel est le type renvoyé par l’instruction Python : `giteBN.get_chambres()` .
     
    * String 
    * Objet Chambre
@@ -224,68 +200,52 @@ Python : `giteBN.get_chambres()` .
    * Tableau d’objets Chambre
 
 
-Cette méthode renvoie la valeur de l'attribut `_chambres` , qui est une liste. La méthode `ajouter_chambres` de la classe gite modifie cette liste en lui ajoutant un nouvel objet Chambre (créé par l'appel de `Chambre(nom_ch)`) . 
+??? check "Réponse :"
+    Cette méthode renvoie la valeur de l'attribut `_chambres` , qui est une liste. La méthode `ajouter_chambres` de la classe gite modifie cette liste en lui ajoutant un nouvel objet Chambre (créé par l'appel de `Chambre(nom_ch)`) . 
 
-La réponse est donc "tableau d’objets Chambre" (une liste Python est un tableau dynamique)
+    La réponse est donc "tableau d’objets Chambre" (une liste Python est un tableau dynamique)
 
+b. Qu’affiche la suite d’instructions suivante ?
 
-
-      
-  b. Qu’affiche la suite d’instructions suivante ?
+```python
+ch = giteBN.get_chambres()[1]
+print(ch.get_nom())
+```
     
-         ch = giteBN.get_chambres()[1]
-         print(ch.get_nom())
+
+??? check "Réponse :"
+    La première ligne récupère le second élément de la liste des chambres et la seconde affiche le nom de cette chambre.
+
+
+c. Quelle différence existe-t-il entre les deux méthodes `get_nchambres()`  et `get_chambres()` ?
+
+
+??? check "Réponse :"
+    La méthode `get_nchambres` renvoie une liste de chaines de caractères qui sont les noms des chambres, et `get_chambres` renvoie une liste d'objets Chambre.
+
+
+4. Les chambres `'Ch1', 'Ch3', Ch5'` sont réservées pour tout le mois de Janvier 2021.
+    
+a. Que va renvoyer l’instruction `giteBN.mystere(3)` ?   
     
 
+??? check "Réponse :"
+    La méhode `mystere` renvoie une liste à laquelle ont été ajoutés les noms des chambres du gite à condition qu'elles ne soient pas réservées à la date passée en paramètre.  
 
-    
-La première ligne récupère le second élément de la liste des chambres et la seconde affiche le nom de cette chambre.
-
-
-  
-      
- 
-  c. Quelle différence existe-t-il entre les deux méthodes `get_nchambres()`  et
-`get_chambres()` ?
-
-
-
-
-La méthode `get_nchambres` renvoie une liste de chaines de caractères qui sont les noms des chambres, et `get_chambres` renvoie une liste d'objets Chambre.
-
-
-
- 
-    
- 4. Les chambres `'Ch1', 'Ch3', Ch5'` sont réservées pour tout le mois de Janvier 2021.
-    
-  a. Que va renvoyer l’instruction `giteBN.mystere(3)` ?   
-    
->
-
-
-
-La méhode `mystere` renvoie une liste à laquelle ont été ajoutés les noms des chambres du gite à condition qu'elles ne soient pas réservées à la date passée en paramètre.  
-
-Donc `giteBN.mystere(3)` va renvoyer la liste des noms des chambres du gite "BonneNuit" disponibles le 4 janvier. Cette liste ne contiendra pas les noms `'Ch1', 'Ch3', Ch5'` puisque ces chambres sont réservées en Janvier. Elle contiendra peut-être `'Ch2'` et `'Ch4'` dont on ne sait pas si elles sont réservées le 4 janvier.
+    Donc `giteBN.mystere(3)` va renvoyer la liste des noms des chambres du gite "BonneNuit" disponibles le 4 janvier. Cette liste ne contiendra pas les noms `'Ch1', 'Ch3', Ch5'` puisque ces chambres sont réservées en Janvier. Elle contiendra peut-être `'Ch2'` et `'Ch4'` dont on ne sait pas si elles sont réservées le 4 janvier.
     
 
 
+b. Dans la méthode `mystere`  de la classe `Gite` , quel est le type des variables en paramètre et en sortie ? Quelles sont les méthodes ou attributs dont cette méthode a besoin ?
 
+
+??? check "Réponse :"
+    La méthode `mystere` prend comme paramètre `date`, qui est un entier (`int`). 
+
+    Elle retourne une liste Python. 
+
+    Elle a besoin de l'attribut `_chambres` des la classe `Gite` (ainsi que de la méthode `get_occupation` et `get_nom` de la classe `Chambre` , et la méthode `append` de la classe `list`. La question n'est pas très précise quand à ce qui est attendu)
     
-    
-  b. Dans la méthode `mystere`  de la classe `Gite` , quel est le type des variables en paramètre et en
-sortie ? Quelles sont les méthodes ou attributs dont cette méthode a besoin ?
-
-
-La méthode `mystere` prend comme paramètre `date`, qui est un entier (`int`). 
-
-Elle retourne une liste Python. 
-
-Elle a besoin de l'attribut `_chambres` des la classe `Gite` (ainsi que de la méthode `get_occupation` et `get_nom` de la classe `Chambre` , et la méthode `append` de la classe `list`. La question n'est pas très précise quand à ce qui est attendu)
-    
-
-
 
 ## Exercice 2 : (d'après Bac) - Pots de yaourts "
 
@@ -320,8 +280,6 @@ On va créer également des méthodes permettant d’interagir avec l’objet Ya
        
 
 
-
-    
 1. Code partiel de la classe Yaourt, à compléter aux endroits indiqués en suivant les consignes des questions suivantes  : 
 
 
@@ -366,101 +324,83 @@ class Yaourt:
 ```
 
 
-1a.     
-Quelles sont les assertions à prévoir pour vérifier que l'arôme et la durée correspondent bien à des valeurs acceptables? Il faudra aussi expliciter les commentaires qui seront renvoyés.  
+1.a. Quelles sont les assertions à prévoir pour vérifier que l'arôme et la durée correspondent bien à des valeurs acceptables? Il faudra aussi expliciter les commentaires qui seront renvoyés.  
 Pour rappel : 
    
    * L’arôme doit prendre comme valeur 'fraise', 'abricot', 'vanille' ou 'aucun'.
    * Sa date de durabilité minimale (DDM) est une valeur positive.
 
+
+??? check "Réponse :"
+    Modification de la méthode `__init__` de la classe Yaourt :  
+
+    ```python
+        def __init__(self,arome,duree):
+            assert arome in ('fraise', 'abricot', 'vanille', 'aucun') , "valeur invalide pour l'arôme"
+            assert duree >= 0, "La DDM doit être une valeur positive"
+            self.__arome = arome
+            self.__duree = duree
+            if arome == 'aucun':
+                self.__genre = 'nature'
+            else:
+                self.__genre = 'aromatise'
+    ```
+
  
-Modification de la méthode `__init__` de la classe Yaourt :  
+    
+1.b. Pour créer un yaourt, on exécutera la commande suivante : 
+
+```python    
+mon_yaourt = Yaourt('fraise',24)
+```
+    
+Quelle valeur sera affectée à l’attribut `genre` associé à `mon_yaourt` ?
 
 
+??? check "Réponse :"    
+    L'attribut `genre` aura comme valeur 'aromatise' puisque l'arome du yaourt n'est pas ègal à 'aucun'.
 
-```python
-    def __init__(self,arome,duree):
+    
+1.c. Écrire en Python une fonction `get_arome(self)`, renvoyant l’arôme du yaourt créé.
+
+
+??? check "Réponse :"    
+    Méthode `get_arome` à insérer dans le code de la classe Yaourt : 
+
+    ```python
+    def get_arome(self):
+        return self.__arome
+    ```
+
+2. On appelle mutateur une méthode permettant de modifier un ou plusieurs attributs d’un objet.  
+Ecrire en Python le mutateur `set_arome(self,arome)` permettant de modifier l’arôme du yaourt.   
+*On veillera à garder une cohérence entre l’arôme et le genre.*
+    
+
+
+??? check "Réponse :"
+    Méthode `set_arome` à insérer dans le code de la classe Yaourt : 
+
+    ```python
+    def set_arome(self, arome):
         assert arome in ('fraise', 'abricot', 'vanille', 'aucun') , "valeur invalide pour l'arôme"
-        assert duree >= 0, "La DDM doit être une valeur positive"
-        self.__arome = arome
-        self.__duree = duree
+        self.__arome=arome
         if arome == 'aucun':
             self.__genre = 'nature'
         else:
             self.__genre = 'aromatise'
-```
+    ```
 
- 
-    
-1.b.     
- Pour créer un yaourt, on exécutera la commande suivante : 
-    
-     mon_yaourt = Yaourt('fraise',24)
-    
-  Quelle valeur sera affectée à l’attribut `genre` associé à `mon_yaourt` ?
+    On peut aussi utiliser la méthode `set_genre` déjà définie pour garder une cohérence entre l’arôme et le genre.:
 
-    
-L'attribut `genre` aura comme valeur 'aromatise' puisque l'arome du yaourt n'est pas ègal à 'aucun'.
-
-    
-1.c.  
-Écrire en Python une fonction `get_arome(self)`, renvoyant l’arôme du yaourt
-créé.
-
-
-
-    
-Méthode `get_arome` à insérer dans le code de la classe Yaourt : 
-
-
-
-```python
-def get_arome(self):
-    return self.__arome
-```
-
-
-    
-2. On appelle mutateur une méthode permettant de modifier un ou plusieurs attributs d’un objet.  
-Ecrire en Python le mutateur `set_arome(self,arome)` permettant
-de modifier l’arôme du yaourt.   
-*On veillera à garder une cohérence entre l’arôme et le genre.*
-    
-
-    
-    
-Méthode `set_arome` à insérer dans le code de la classe Yaourt : 
-
-
-
-```python
-def set_arome(self, arome):
-    assert arome in ('fraise', 'abricot', 'vanille', 'aucun') , "valeur invalide pour l'arôme"
-    self.__arome=arome
-    if arome == 'aucun':
-        self.__genre = 'nature'
-    else:
-        self.__genre = 'aromatise'
-```
-
-
-    
-On peut aussi utiliser la méthode `set_genre` déjà définie pour garder une cohérence entre l’arôme et le genre.:
-
-
-
-
-```
-def set_arome(self, arome):
-    assert arome in ('fraise', 'abricot', 'vanille', 'aucun') , "valeur invalide pour l'arôme"
-    self.__arome=arome
-    self.__set_genre(arome)
-```
-
- 
-    
-3. On veut créer une pile contenant le stock de yaourts. Pour cela il faut tout d’abord
-créer une pile vide : 
+    ```python
+    def set_arome(self, arome):
+        assert arome in ('fraise', 'abricot', 'vanille', 'aucun') , "valeur invalide pour l'arôme"
+        self.__arome=arome
+        self.__set_genre(arome)
+    ```
+   
+3. On veut créer une pile contenant le stock de yaourts. Pour cela il faut tout d’abord créer une pile vide : 
     
 ```python
 def creer_pile():
@@ -468,71 +408,50 @@ def creer_pile():
     return pile
 ```
 
-3.a.   
-Créer une fonction `empiler( p, yaourt:Yaourt)`  qui renvoie la pile `p` après avoir ajouté
-un objet de type Yaourt au sommet de la pile.
+3.a. Créer une fonction `empiler( p, yaourt:Yaourt)`  qui renvoie la pile `p` après avoir ajouté un objet de type Yaourt au sommet de la pile.
     
 
-    
-Fonction `empiler` (on suppose que le sommet de la pile est la fin de la liste): 
+??? check "Réponse :"
+    Fonction `empiler` (on suppose que le sommet de la pile est la fin de la liste): 
 
+    ```python
+    def empiler(p, yaourt):
+        p.append(yaourt)
+    ```
 
-
-```python
-def empiler(p, yaourt):
-    p.append(yaourt)
-```
-
-
-    
-3.b.  
-  Créer une fonction `depiler(p)` qui renvoie l’objet à dépiler.
+3.b. Créer une fonction `depiler(p)` qui renvoie l’objet à dépiler.
     
 
-    
-Fonction `dépiler` :
+??? check "Réponse :"   
+    Fonction `dépiler` :
+
+    ```python
+    def depiler(p):
+        return p.pop(-1)
+    ```
+
+3.c. Créer une fonction `est_vide(p)` qui renvoie `True` si la pile est vide et `False` sinon.
 
 
+??? check "Réponse :"
+    Fonction `est_vide` :
 
-```python
-def depiler(p):
-    return p.pop(-1)
-```
+    ```python
+    def est_vide(p):
+        return len(p) == 0
+    ```
 
+    ou bien, en plus explicite : 
 
-    
-3.c.  
- Créer une fonction `est_vide(p)` qui renvoie `True` si la pile est vide et `False` sinon.
+    ```python
+    def est_vide(p):
+        if len(p) == 0:
+            return True
+        else:
+            return False
+    ```
 
-
-    
-Fonction `est_vide` :
-
-
-
-```python
-def est_vide(p):
-    return len(p) == 0
-```
-
-
-    
-ou bien, en plus explicite : 
-
-
-
-```python
-def est_vide(p):
-    if len(p) == 0:
-        return True
-    else:
-        return False
-```
-
-
-    
-3.d.  
-Qu’affiche le bloc de commandes ci-dessous ?
+3.d. Qu’affiche le bloc de commandes ci-dessous ?
 
 ```python 
     mon_yaourt1 = Yaourt('aucun',18)
@@ -545,84 +464,76 @@ Qu’affiche le bloc de commandes ci-dessous ?
 ```    
 
 
-
-
-Le sujet d'origine contient un espace entre mon_yaourt et 2 à la ligne 5, ce qui fait que l'exécution du code tel quel génèrerait une erreur. Il s'agit cependant sans doute d'une coquille. 
+??? check "Réponse :"
+    Le sujet d'origine contient un espace entre mon_yaourt et 2 à la ligne 5, ce qui fait que l'exécution du code tel quel génèrerait une erreur. Il s'agit cependant sans doute d'une coquille. 
     
-Pour le code corrigé donné ci-dessus : 
-Les deux premières lignes créent deux objets Yaourt. La troisième crée une pile, où les deux Yaourts sont empilés aux deux lignes suivantes. A la ligne 6, la commande dépile le dernier Yaourt empilé, `mon_yaourt2`, et affiche sa DDN, c'est à dire 24. Enfin la dernière ligne affiche `False` puisqu'à ce stade la pile contient encore `mon_yaourt1`, donc n'est pas vide. 
+    Pour le code corrigé donné ci-dessus :  
+    Les deux premières lignes créent deux objets Yaourt. La troisième crée une pile, où les deux Yaourts sont empilés aux deux lignes suivantes. A la ligne 6, la commande dépile le dernier Yaourt empilé, `mon_yaourt2`, et affiche sa DDN, c'est à dire 24. Enfin la dernière ligne affiche `False` puisqu'à ce stade la pile contient encore `mon_yaourt1`, donc n'est pas vide. 
 
-
-
-
-```python
-class Yaourt:
-    """ Classe définissant un yaourt caractérisé par :
-        - son arome
-        - son genre
-        - sa durée de durabilité minimale"""
+    ```python
+    class Yaourt:
+        """ Classe définissant un yaourt caractérisé par :
+            - son arome
+            - son genre
+            - sa durée de durabilité minimale"""
     
-    def __init__(self,arome,duree):
-        assert arome in ('fraise', 'abricot', 'vanille', 'aucun') , "valeur invalide pour l'arôme"
-        assert duree >= 0, "La DDM doit être une valeur positive" 
-        self.__arome = arome
-        self.__duree = duree
-        if arome == 'aucun':
-            self.__genre = 'nature'
-        else:
-            self.__genre = 'aromatise'
-            
-    def get_arome(self):
-        return self.__arome 
-
-    def get_duree(self):
-        return self.__duree
-    
-    def get_genre(self):
-        return self.__genre
-    
-
-    def set_duree(self,duree):
-        # **** Mutateur de durée
-        if duree > 0 :
+        def __init__(self,arome,duree):
+            assert arome in ('fraise', 'abricot', 'vanille', 'aucun') , "valeur invalide pour l'arôme"
+            assert duree >= 0, "La DDM doit être une valeur positive" 
+            self.__arome = arome
             self.__duree = duree
+            if arome == 'aucun':
+                self.__genre = 'nature'
+            else:
+                self.__genre = 'aromatise'
             
-    def set_arome(self, arome):
-        assert arome in ('fraise', 'abricot', 'vanille', 'aucun') , "valeur invalide pour l'arôme"
-        self.__arome=arome
-        self.__set_genre(arome)
+        def get_arome(self):
+            return self.__arome 
+
+        def get_duree(self):
+            return self.__duree
+    
+        def get_genre(self):
+            return self.__genre
+    
+        def set_duree(self,duree):
+            # **** Mutateur de durée
+            if duree > 0 :
+                self.__duree = duree
+            
+        def set_arome(self, arome):
+            assert arome in ('fraise', 'abricot', 'vanille', 'aucun') , "valeur invalide pour l'arôme"
+            self.__arome=arome
+            self.__set_genre(arome)
         
-    def __set_genre(self,arome):
-        if arome == 'aucun':
-            self.__genre = 'nature'
-        else:
-            self.__genre = 'aromatise'
+        def __set_genre(self,arome):
+            if arome == 'aucun':
+                self.__genre = 'nature'
+            else:
+                self.__genre = 'aromatise'
        
-            
-def creer_pile():
-    pile = [ ]
-    return pile 
+    def creer_pile():
+        pile = [ ]
+        return pile 
 
-def empiler(p, yaourt):
-    p.append(yaourt)
+    def empiler(p, yaourt):
+        p.append(yaourt)
 
-def depiler(p):
-    return p.pop(-1)
+    def depiler(p):
+        return p.pop(-1)
 
-def est_vide(p):
-    return len(p) == 0
+    def est_vide(p):
+        return len(p) == 0
 
-mon_yaourt1 = Yaourt('aucun',18)
-mon_yaourt2 = Yaourt('fraise',24)
-ma_pile = creer_pile()
-empiler(ma_pile, mon_yaourt1)
-empiler(ma_pile, mon_yaourt2)
-print(depiler(ma_pile).get_duree())
-print(est_vide(ma_pile))
+    mon_yaourt1 = Yaourt('aucun',18)
+    mon_yaourt2 = Yaourt('fraise',24)
+    ma_pile = creer_pile()
+    empiler(ma_pile, mon_yaourt1)
+    empiler(ma_pile, mon_yaourt2)
+    print(depiler(ma_pile).get_duree())
+    print(est_vide(ma_pile))
 
-```
+    ```
 
-24  
-False
-
-
+    24  
+    False

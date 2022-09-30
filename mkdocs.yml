@@ -20,7 +20,7 @@ nav:
       - T1_1 P.O.O : StructureDonnees/T1_1_Programmation_Orientee_Objet.md
       - T1_2 POO Exercices : StructureDonnees/T1_2_TD_POO.md
       - T1_3 TD POO BAC : StructureDonnees/T1_3_BAC_Capytale.md     
-      - T1_4 Sujet POO BAC : StructureDonnees/POO_BAC.md
+      - T1_4 Sujet POO BAC : StructureDonnees/POO_BAC_correction.md
     
     - T2 - Bases de données :  
       - TP 01 Modèle relationnel : BasesDonnees/Modele_Relationnel.md
@@ -63,20 +63,22 @@ theme:
     custom_dir: overrides
     font: false  # RGPD ; pas de fonte Google
     language: fr # français
-    
+    icon:
+      logo: fontawesome/solid/spider
+    favicon : images/dragon.svg
 
     palette: # Palettes de couleurs jour/nuit, cf : https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/
       - scheme: default # nom du thème clair
         primary: indigo # couleur primaire des titres, des liens, ..., à prendre dans la liste
         accent: indigo # couleur d'accentuation au survol des boutons, desliens, ..., à prendre dans la liste
         toggle: # définition du bouton pour switcher de palette
-          icon: material/weather-sunny # apparence
+          icon: material/lightbulb # apparence
           name: Basculer en mode sombre # message
       - scheme: slate # nom du thème sombre
-        primary: brown
-        accent: brown
+        primary: teal
+        accent: teal
         toggle:
-          icon: material/weather-night
+          icon: material/lightbulb-outline
           name: Basculer en mode clair
 
     features:

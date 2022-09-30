@@ -34,7 +34,7 @@ SQL : Devoir n°1
 
 
 
-## D'après 2022, Polynésie, J1, 
+## D'après 2021, France, J2, 
 
 L'énoncé de cet exercice utilise les mots du langage SQL suivants :
 `SELECT FROM, WHERE, JOIN ON, INSERT INTO VALUES, UPDATE, SET, DELETE,
