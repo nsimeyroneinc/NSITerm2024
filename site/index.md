@@ -16,26 +16,26 @@ Les notebooks sont corrigés et les cellules peuvent être copiées pour être t
 
 
  
-## Notions à l'épreuve écrite de Mars 2022 (sera mis à jours dés que possible): 
+## Notions à l'épreuve écrite de Mars 2023 (mis à jours 30/09/2022): 
 
 ### &#10145; Thème : Structure de données  
 
 □ Structure de données abstraites( file) : interface et implémentation  
-🗹 Programmation orientée objet  
-□ Structures linéaires : Listes, Piles, Files  
-□ Arbres
+🗹 Vocabulaire de la programmation objet : classes, attributs, méthodes, objets 
+□ Listes, piles, files : structures linéaires. Dictionnaires, index et clé  
+□ Arbres : structures hiérarchiques. Arbres binaires : nœuds, racines, feuilles, sous-arbres gauches, sous-arbres droits
+
 
 ### &#10145; Thème : Base de données  
 
-🗹 Modèle relationnel, clé,schéma relationnel  
+🗹 Modèle relationnel : relation, attribut, domaine, clef primaire, clef étrangère, schéma relationnel 
 🗹 Base de données relationnelle et SGBD.  
-🗹 Langage SQL  
+🗹 Langage SQL : requêtes d'interrogation et de mise à jour d'une base de données  
 
 ### &#10145; Thème : Architectures matérielles, système d’exploitation et réseaux(ARSE)  
 
-□ Gestion des processus et des ressources par un système d’exploitation  
+□ Gestion des processus et des ressources par un système d'exploitation  
 □ Protocoles de routage  
-□ Composants intégrés d’un système sur puce
 
 ### &#10145; Thème : Langage de programmation(LP)  
 	
