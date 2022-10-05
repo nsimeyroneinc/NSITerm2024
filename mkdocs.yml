@@ -42,7 +42,9 @@ nav:
     
     #- BAC 📝:
 
-    - Annales du Bac :
+    - Annales du Bac E.P. 💻 :
+      - Déroulement : epreuve_pratique.md
+      - Consigne : divers/Consigne_EP.md
       #- index_annales.md
       - '2022': 
         - "Epreuves pratiques" : Annales/2022/EP.md
@@ -88,9 +90,9 @@ nav:
           - "Sujet 39" : Annales/Corriges/2022-S39.md
           - "Sujet 40" : Annales/Corriges/2022-S40.md
 
-    - E.P 💻: 
-      - Déroulement : epreuve_pratique.md
-      - Consigne : divers/Consigne_EP.md
+    #- E.P 💻: 
+    #  - Déroulement : epreuve_pratique.md
+    #  - Consigne : divers/Consigne_EP.md
     #  - Sujets : divers/EpreuvePratique.md
       #- EP 2022 : BAC/EP_2022.md
   
