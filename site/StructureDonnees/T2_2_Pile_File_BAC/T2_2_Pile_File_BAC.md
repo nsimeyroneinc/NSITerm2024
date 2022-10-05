@@ -462,7 +462,7 @@ def traiter(self):
 **5.b.** Expliquer le traitement effectué par cette méthode.
 
 
-## Centres étrangers 2022, J1 - Dictionnaire modélisant le contenu d'un répertoire"
+## Centres étrangers 2022, J1 - Dictionnaire modélisant le contenu d'un répertoire
 !!! {{ exercice() }} "D'après 2022, Centres étrangers, J1, Ex. 3"
 
 
