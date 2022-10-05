@@ -589,10 +589,11 @@ td {
   padding: 9px;
 }
 
-/* light mode alternating table bg colors */
+/* light mode alternating table bg colors 
 .md-typeset__table tr:nth-child(2n) {
-  background-color: #a9ada6;
+  background-color: #252725;
 }
+*/
 /*
 table.greenTable td, table.greenTable th {
   border: 1px solid #AAAAAA;
