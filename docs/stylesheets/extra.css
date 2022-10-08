@@ -39,6 +39,16 @@
   margin: 0 auto;
 }
 
+.centre {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imgcentre{
+  display: block;
+  margin: 0 auto;
+}
 
 
 :root {
@@ -497,6 +507,8 @@ h1.unnumbered:before, h2.unnumbered:before, h3.unnumbered:before,h4.unnumbered:b
 }
 */
 
+/* T1 Structure de données*/
+
 table.blueTable {
   border: 1px solid #151616;
   background-color: #318CE7;
@@ -506,6 +518,8 @@ table.blueTable {
   border-collapse: collapse;
   font-size: 18px;
 }
+
+/* T2 Bases de données*/
 
 table.yellowTable {
   border: 1px solid #151616;
@@ -517,6 +531,8 @@ table.yellowTable {
   font-size: 18px;
 }
 
+/* T3 Architecture matérielle*/
+
 table.redTable {
   border: 1px solid #151616;
   background-color: #FC6B3C;
@@ -526,6 +542,9 @@ table.redTable {
   border-collapse: collapse;
   font-size: 18px;
 }
+
+/* T4 Langage et programmation*/
+
 table.greenTable {
   border: 1px solid #151616;
   background-color: #87A96B;

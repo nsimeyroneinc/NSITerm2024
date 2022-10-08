@@ -39,6 +39,26 @@ def define_env(env):
     def table_cle(table, cle) -> str:
         return f'<code><strong>{table}</strong>.{cle}</code>'
 
+    @env.macro
+    def sc(chaine):
+        return f'<span style="font-variant:small-caps;">{chaine}</span>'
+    
+    env.variables['devant_act']=':black_small_square:'
+    env.variables['num_act']=1
+    @env.macro
+    def titre_activite(titre,licones,numero=1):
+        if numero==0:
+            env.variables['num_act']=1
+        ligne=f"### {env.variables['devant_act']}   Activité {env.variables['num_act']} "
+        if titre!="":
+            ligne+=f": *{titre}*"
+        if licones!=[]:
+            ligne+=f"<span style='float:right;'>"
+            for icone in licones:
+                ligne+=f"<span style='float:right;'>&thinsp; {env.variables['icones_act'][icone]}</span>"
+            ligne+="</span>"
+        env.variables['num_act']=env.variables['num_act']+1
+        return ligne
 
     @env.macro
     def script(lang: str, nom: str, indentation=0, stop="") -> str:
@@ -162,7 +182,7 @@ def define_env(env):
     def console(hauteur : int = 200) -> str:
         return "[Console pyodide, dernière en date](https://pyodide.org/en/stable/console.html){target=_blank}"
 
-#------ Marcro sujet ------
+#------ Marcro sujet EP------
 
     @env.macro
     def titre_correction(annee,numero):
@@ -217,3 +237,6 @@ def define_env(env):
 {stab}--8<-- "python/C{chap}/{nom}"\n
 {stab}```'''
         return modele
+
+
+
