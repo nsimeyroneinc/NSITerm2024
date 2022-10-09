@@ -377,8 +377,6 @@ Utilisation de **l'algorithme de Dijkstra**, pour le comprendre, vous pouvez reg
     <iframe width="913" height="522" src="https://www.youtube.com/embed/rHylCtXtdNs" title="Utiliser l'algorithme de Dijkstra - PostBac" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
-![image](data/Dijstrac.png){:.center}</a>
-
 Cet algorithme, ici exécuté de manière manuelle, est bien sûr programmable. Et c'est donc grâce à lui que chaque routeur calcule la route la plus rapide pour acheminer les données qu'il reçoit.
 
 **Exemple** d'application de l'algorithme de Dijkstra : donner le plus court chemin de A jusqu'à F
