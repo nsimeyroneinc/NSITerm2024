@@ -5,7 +5,7 @@ Les notebooks sont corrigés et les cellules peuvent être copiées pour être t
 
 !!! info "Actualités"
     - **Correction** des sujets BAC P.O.O disponibles  
-    - **Thème en cours** : T1 Structure de données - Piles et Files
+    - **Thème en cours** : [T3 - Routage](Archi_Materielle/T3_1_Routage.md)  
     - **[Correction](StructureDonnees/T2_2_Pile_File_BAC_Correction.md)** des exercices BAC Piles et Files disponibles. 
     
 
