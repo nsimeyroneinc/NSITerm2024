@@ -524,10 +524,7 @@ def jouer(p):
 
 ## D'après 2022, Polynésie, J1, Ex. 4 - Tri d'une pile
 !!! {{ exercice()}} "D'après 2022, Polynésie, J1, Ex. 4"
----
-title: Tri d'une pile
-author: Franck Chambon
----
+
 
 
 

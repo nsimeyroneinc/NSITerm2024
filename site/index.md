@@ -3,9 +3,10 @@ Ce site est dédié aux élèves de Terminales NSI du Lycée Murat à Issoire af
 Les notebooks sont corrigés et les cellules peuvent être copiées pour être testées dans vos notebooks Capytale.
 
 
-!!! info 
-    - Corrections des sujets BAC P.O.O disponibles  
-    - **Thème en cours** : T1 Structure de données - P.O.O
+!!! info "Actualités"
+    - **Correction** des sujets BAC P.O.O disponibles  
+    - **Thème en cours** : T1 Structure de données - Piles et Files
+    - **[Correction](StructureDonnees/T2_2_Pile_File_BAC_Correction.md)** des exercices BAC Piles et Files disponibles. 
     
 
     
@@ -20,9 +21,10 @@ Les notebooks sont corrigés et les cellules peuvent être copiées pour être t
 
 ### &#10145; Thème : Structure de données  
 
-□ Structure de données abstraites( file) : interface et implémentation  
+🗹 Structure de données abstraites( file) : interface et implémentation  
 🗹 Vocabulaire de la programmation objet : classes, attributs, méthodes, objets 
-□ Listes, piles, files : structures linéaires. Dictionnaires, index et clé  
+🗹 Listes, piles, files : structures linéaires. 
+□ Dictionnaires, index et clé  
 □ Arbres : structures hiérarchiques. Arbres binaires : nœuds, racines, feuilles, sous-arbres gauches, sous-arbres droits
 
 
@@ -35,7 +37,7 @@ Les notebooks sont corrigés et les cellules peuvent être copiées pour être t
 ### &#10145; Thème : Architectures matérielles, système d’exploitation et réseaux(ARSE)  
 
 □ Gestion des processus et des ressources par un système d'exploitation  
-□ Protocoles de routage  
+🗹 Protocoles de routage  
 
 ### &#10145; Thème : Langage de programmation(LP)  
 	

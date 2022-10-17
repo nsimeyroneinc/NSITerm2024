@@ -902,3 +902,51 @@ f.defile()
 
 5
 
+## Sujet Epreuve Pratique  
+
+
+!!! {{ exercice() }} "Sujet 13 :"  
+
+    On veut écrire une classe pour gérer une file à l’aide d’une liste chaînée. On dispose d’une classe ```Maillon``` permettant la  création d’un maillon de la chaîne, celui-ci étant constitué d’une valeur et d’une référence au maillon suivant de la chaîne :
+
+    ```python
+    class Maillon :
+        def __init__(self,v) :
+            self.valeur = v
+            self.suivant = None
+    ```
+
+    Compléter la classe File suivante où l’attribut dernier_file contient le maillon correspondant à l’élément arrivé en dernier dans la file :  
+
+    ```python
+    class File:
+
+    def __init__(self):
+        self.tete = None
+        self.queue = None 
+
+    def est_vide(self):
+        return self.queue is None
+
+    def affiche(self):
+        maillon = self.tete 
+        print('<-- sens de la file <--')
+        while maillon is not None:
+            print(maillon.valeur, end=' ') 
+            maillon = maillon.suivant
+        print()
+
+    def enfile(self, element):
+        nouveau_maillon = ...
+        if self.est_vide():
+            self.tete = ...
+        else:
+            self.queue.suivant = ...
+        self... = nouveau_maillon
+
+    def defile(self):
+        if ...:
+            resultat = ...
+            self.tete = ...
+            return ...
+    ```

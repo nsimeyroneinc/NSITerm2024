@@ -21,7 +21,7 @@ Les notebooks sont corrigés et les cellules peuvent être copiées pour être t
 
 ### &#10145; Thème : Structure de données  
 
-□ Structure de données abstraites( file) : interface et implémentation  
+🗹 Structure de données abstraites( file) : interface et implémentation  
 🗹 Vocabulaire de la programmation objet : classes, attributs, méthodes, objets 
 🗹 Listes, piles, files : structures linéaires. 
 □ Dictionnaires, index et clé  
@@ -37,7 +37,7 @@ Les notebooks sont corrigés et les cellules peuvent être copiées pour être t
 ### &#10145; Thème : Architectures matérielles, système d’exploitation et réseaux(ARSE)  
 
 □ Gestion des processus et des ressources par un système d'exploitation  
-□ Protocoles de routage  
+🗹 Protocoles de routage  
 
 ### &#10145; Thème : Langage de programmation(LP)  
 	

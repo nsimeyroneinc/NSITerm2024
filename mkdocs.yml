@@ -35,6 +35,7 @@ nav:
     - T3 - Archi. matèrielle :
       - T3_1 Protocole de routage : Archi_Materielle/T3_1_Routage.md
       - T3_1 BAC Protocole de routage : Archi_Materielle/T3_1_Routage_BAC.md
+      - T3_1 BAC Correction Protocole de routage : Archi_Materielle/T3_1_Routage_BAC_Correction.md
     
     #- T4 - Programmation :
     #   - Récursivité : Programmation/T4_1_TP_Recursivite_correction.md
@@ -243,6 +244,8 @@ extra_javascript:
   - xtra/mathjax.js                    # MathJax
   - javascripts/config.js
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+  - https://cdn.jsdelivr.net/gh/rod2ik/cdn@main/mkdocs/javascripts/massilia-admonitions.js
 
 extra_css:
   - stylesheets/extra.css
+  - https://cdn.jsdelivr.net/gh/rod2ik/cdn@main/mkdocs/css/massilia-admonitions.css
