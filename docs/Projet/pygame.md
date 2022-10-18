@@ -833,17 +833,17 @@ Le corps se déplace.
 
 ??? correction
 
-  ```python
-    snake.insert(0, head)
-  ```
+    ```python
+      snake.insert(0, head)
+    ```
 
 2. On perd un élément de fin :
 
 ??? correction
 
-  ```python
-    snake.pop(-1)
-  ```
+    ```python
+      snake.pop(-1)
+    ```
 
 ### Version 4
 
@@ -859,10 +859,10 @@ Il meurt :
 
 ??? correction
 
-  ```python
-    if head in snake[1:] or head[0] < 0 or head[0] > LARGEUR / BLOC - 1 or head[1] < 0 or head[1] > HAUTEUR / BLOC - 1:
-      pygame.quit()
-  ```
+    ```python
+      if head in snake[1:] or head[0] < 0 or head[0] > LARGEUR / BLOC - 1 or head[1] < 0 or head[1] > HAUTEUR / BLOC - 1:
+       pygame.quit()
+    ```
 
 ### Version 5
 
@@ -921,9 +921,9 @@ On dessine la pomme comme la tête, mais en rouge
 
 ??? correction
 
-  ```python
-  pygame.draw.rect(fenetre, ROUGE,(pomme[0] * BLOC, pomme[1] * BLOC, BLOC, BLOC))
-  ```
+    ```python
+    pygame.draw.rect(fenetre, ROUGE,(pomme[0] * BLOC, pomme[1] * BLOC, BLOC, BLOC))
+    ```
 
 #### Nourriture
 
@@ -940,17 +940,17 @@ La boucle `while` empêche la pomme d'apparaître sur le serpent
 
 ??? correction
 
-  ```python
-  from random import randint
-    # ...
+    ```python
+    from random import randint
+      # ...
 
-    # Dans la boucle infinie
-    if snake[0] == pomme:
-      score += 1
-      while pomme in snake:
-          pomme = [randint(0, LARGEUR / BLOC - 1),
-                  randint(0, HAUTEUR / BLOC - 1)]
-  ```
+      # Dans la boucle infinie
+      if snake[0] == pomme:
+        score += 1
+        while pomme in snake:
+            pomme = [randint(0, LARGEUR / BLOC - 1),
+                    randint(0, HAUTEUR / BLOC - 1)]
+    ```
 
 
 #### Nourriture
