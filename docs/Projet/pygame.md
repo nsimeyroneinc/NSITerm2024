@@ -21,7 +21,7 @@ Projet
             <th width="20%"; style="background-color: #3B444B;color:white;text-align:center;border:none;font-size:40pt;">
             Projet
             </th>
-            <th class="redTh"; width="80%"; style="text-align:center;border:none;font-size:25pt;">PPygame</th>
+            <th class="redTh"; width="80%"; style="text-align:center;border:none;font-size:25pt;">Pygame : Initiation</th>
         </tr>
 </table>
 
@@ -174,7 +174,8 @@ Voici ce que nous dit la documentation à propos de ce module :
     - pygame.event.Event — create a new event object  
     - pygame.event.EventType — pygame object for representing SDL events
 
-    - [event](http://www.pygame.org/docs/ref/event.html)
+    - [event](http://www.pygame.org/docs/ref/event.html)  
+
 
 Et comme on peut le voir, le module event ne permet pas que d’intercepter des événements. Il nous permet aussi de créer des événements. Et même d’en bloquer !
 
@@ -235,7 +236,7 @@ for event in pygame.event.get():
 
 Le tuple ```(abscisse, ordonnée)``` des coordonnées de la souris sera récupéré avec l'instruction ```pygame.mouse.get_pos()```.
 
-## Déplacement du personnage
+### Déplacement du personnage
 
 Le déplacement d'un personnage se fera toujours par modification de ses coordonnées (et visuellement, par effacement de la dernière position).  
 Ce déplacement pourra être :  
@@ -255,7 +256,6 @@ où ```position_perso``` est l'objet de type ```rect```  contenant les coordonn�
     Coder un script pour déplacer Paragoomba à la souris (Paragoomba doit toujours suivre la souris) (`MOUSEMOTION`)
 
 ??? correction
-
     ```python
     import pygame, sys
     from pygame.locals import *
@@ -274,22 +274,22 @@ où ```position_perso``` est l'objet de type ```rect```  contenant les coordonn�
     position_perso.topleft = (100,200)
 
     while continuer:
-        pygame.draw.rect(ecran, (10,186,181), (0, 0, 640, 480))
-        for event in pygame.event.get():
-            if event.type == pygame.MOUSEMOTION:
-                position_perso = event.pos
-            if event.type == KEYDOWN:
-                if event.key == K_RIGHT:
-                    continuer = False
-        ecran.blit(perso, position_perso)
-        pygame.display.flip()
+      pygame.draw.rect(ecran, (10,186,181), (0, 0, 640, 480))
+      for event in pygame.event.get():
+        if event.type == pygame.MOUSEMOTION:
+          position_perso = event.pos
+          if event.type == KEYDOWN:
+            if event.key == K_RIGHT:
+              continuer = False
+      ecran.blit(perso, position_perso)
+      pygame.display.flip()
     
     pygame.quit()
     ```
 
 
 !!! exo
-    Coder un script pour dessiner un rectangle sur l’écran au relâchement d’un bouton de la souris.
+  Coder un script pour dessiner un rectangle sur l’écran au relâchement d’un bouton de la souris.
 
 ??? correction
 
@@ -315,417 +315,153 @@ où ```position_perso``` est l'objet de type ```rect```  contenant les coordonn�
     couleur = (200, 80, 20)
 
     while continuer:
-        for event in pygame.event.get():
-            if event.type == pygame.MOUSEBUTTONUP:
-                x, y = event.pos
-                pygame.draw.rect(ecran, couleur, (x, y, largeur, hauteur))
-            if event.type == KEYDOWN:
-                if event.key == K_RIGHT:
-                    continuer = False
-        ecran.blit(perso, position_perso)
-        pygame.display.flip()
+      for event in pygame.event.get():
+        if event.type == pygame.MOUSEBUTTONUP:
+          x, y = event.pos
+          pygame.draw.rect(ecran, couleur, (x, y, largeur, hauteur))
+        if event.type == KEYDOWN:
+          if event.key == K_RIGHT:
+            continuer = False
+      ecran.blit(perso, position_perso)
+      pygame.display.flip()
     ```
 
-## Un Premier Jeu - Pong
-
-Pong est l'un des premiers jeux vidéo d'arcade commercialisé en 1972. Il s'inspire du tennis de table. Devant l'engouement généré par le jeu, Pong est porté sur une console de salon à partir de 1975.  
-
-Le package PyGame permet de réaliser avec Python des jeux en quelques heures. Nous allons donc créer un jeu de pong rudimentaire en utilisant des classes pour gérer la balle et la raquette
-
-Voici ce à quoi ressemblera l'interface du jeu que nous allons créer :
-
-![tennis](data/tennis.png)  
-
-Nous allons mettre en oeuvre le concept objet en définissant une classe Balle et une classe Raquette pour le jeu de Pong.
-
-
-### Ouverture d'une fenêtre graphique
-
-Voici le code à saisir pour créer une fenêtre graphique dans laquelle nous dessinerons :
-
-```python
-import pygame
-from pygame.locals import *
- 
-HAUTEUR_FENETRE = 480
-LARGEUR_FENETRE = 640
- 
-fenetre = pygame.display.set_mode( (LARGEUR_FENETRE, HAUTEUR_FENETRE) )
-pygame.display.set_caption("Titre de la fenêtre")
-pygame.font.init()
-fonte = pygame.font.Font(None, 30)
-```
-
-La fenêtre s'affiche mais disparait aussitôt. il faut créer une boucle pour la garder ouverte et rafraichir l'affichage dans la fenêtre :
-
-```python
-import pygame
-from pygame.locals import *
- 
-HAUTEUR_FENETRE = 480
-LARGEUR_FENETRE = 640
- 
-fenetre = pygame.display.set_mode( (LARGEUR_FENETRE, HAUTEUR_FENETRE) )
-pygame.display.set_caption("Titre de la fenêtre")
-pygame.font.init()
-fonte = pygame.font.Font(None, 30)
- 
-while True:
-  pygame.display.update()
-```
-
-L'écran reste noir et rien ne s'affiche. Dans la boucle while il faut réaliser une série d'actions : afficher des images, du texte, etc.
-
-```python
-import pygame
-from pygame.locals import *
- 
-HAUTEUR_FENETRE = 480
-LARGEUR_FENETRE = 640
- 
-fenetre = pygame.display.set_mode( (LARGEUR_FENETRE, HAUTEUR_FENETRE) )
-pygame.display.set_caption("Titre de la fenêtre")
-pygame.font.init()
-fonte = pygame.font.Font(None, 30)
- 
-x = LARGEUR_FENETRE // 2
-y = HAUTEUR_FENETRE // 2
-rayon = 10
-while True:
-  # dessine la balle
-  pygame.draw.circle(fenetre, (255,255,255), (x, y), rayon)
-  pygame.display.update()
- 
-  # attente du clic souris sur x pour fermer la fenêtre
-  # ou Alt+F4 sous Linux
-  for event in pygame.event.get():
-    if event.type == pygame.QUIT:
-      pygame.quit()
-      exit()
-```
-
-Enfin il est nécessaire de déplacer les éléments dans la fenêtre :
-
-```python
-import pygame
-from pygame.locals import *
- 
-# initialisation de l'écran de jeu
-pygame.init()
-
-HAUTEUR_FENETRE = 480
-LARGEUR_FENETRE = 640
- 
-fenetre = pygame.display.set_mode( (LARGEUR_FENETRE, HAUTEUR_FENETRE) )
-pygame.display.set_caption("Titre de la fenêtre")
-pygame.font.init()
-fonte = pygame.font.Font(None, 30)
- 
-# données de la balle
-x = LARGEUR_FENETRE // 2
-y = HAUTEUR_FENETRE // 2
-rayon = 10
-
-# vecteur de déplacement
-vx = 1
-vy = 1
-
-while True:
-  # temporise
-  pygame.time.delay(15)
- 
-  # dessine le fond de l'écran en noir
-  fenetre.fill( (0,0,0) )
- 
-  # dessine la balle
-  pygame.draw.circle(fenetre, (255,255,255), (x, y), rayon)
- 
-  # nouvelle position
-  x = x + vx
-  y = y + vy
- 
-  if x >= LARGEUR_FENETRE or x <= 0:
-    vx = -vx
- 
-  if y >= HAUTEUR_FENETRE or y <= 0:
-    vy = -vy 
- 
-  pygame.display.update()
-
-del(police)
-pygame.quit()
-```
-
-!!! exo
-    Améliorer la gestion du rebond car la balle sort de l'écran.
-
-Gestion des événements
-Afin de gérer les évènements (appui sur une touche, clic souris, etc), il faut énumérer chacun des événements reçus et vérifier celui qui nous intéresse.
-
-Sur l'exemple suivant on test l'appui sur la touche 'A', un clic souris ou le fait de quitter la fenêtre en cliquant sur l'icone correspondante en haut de la fenêtre.
-
-```python
-import pygame
-import sys
-from pygame.locals import *
- 
-HAUTEUR_FENETRE = 480
-LARGEUR_FENETRE = 640
- 
-fenetre = pygame.display.set_mode( (LARGEUR_FENETRE, HAUTEUR_FENETRE) )
-pygame.display.set_caption("Titre de la fenêtre")
-pygame.font.init()
-fonte = pygame.font.Font(None, 30)
- 
-# données de la balle
-x = LARGEUR_FENETRE // 2
-y = HAUTEUR_FENETRE // 2
-rayon = 10
-# vecteur de déplacement
-vx = 1
-vy = 1
-while True:
-  # temporise
-  pygame.time.delay(15)
- 
-  # dessine le fond de l'écran en noir
-  fenetre.fill( (0,0,0) )
- 
-  # dessine la balle
-  pygame.draw.circle(fenetre, (255,255,255), (x, y), rayon)
- 
-  # nouvelle position
-  x = x + vx
-  y = y + vy
- 
-  if x >= LARGEUR_FENETRE or x <= 0:
-    vx = -vx
- 
-  if y >= HAUTEUR_FENETRE or y <= 0:
-    vy = -vy 
- 
-  for event in pygame.event.get():
-    if event.type == KEYDOWN:
-      if event.key == pygame.K_a:
-        vx = -vx
-    if event.type == QUIT:
-      pygame.quit()
-      sys.exit()
-    if event.type == MOUSEBUTTONDOWN:
-      vy = -vy
-   
-  pygame.display.update()
-```
-
-### Le jeu de tennis (à la Pong)
+## Le jeu de tennis (à la Pong)
 
 Pour la création du jeu de tennis, nous allons organiser notre code en plusieurs fichiers :
 
 - un fichier tennis.py qui sera le programme principal  
-- un fichier constantes.py qui contiendra les constantes utilisées par les autres fichiers (hauteur et largeur de fenêtre, couleurs)  
-- un fichier balle.py qui implantera une classe Balle qui représentera une balle qui rebondit sur les murs et la raquette  
-- un fichier raquette.py qui représente une Raquette qui se déplace verticalement et dont le but et de taper dans la balle  
+- un fichier constantes.py qui contiendra les constantes utilisées par les autres fichiers (hauteur et largeur de fenêtre, couleurs), certaines fonctions...  
 
-#### Les packages utilisés
+
+### Les packages utilisés
 
 On commence par introduire les packages (bibliothèques) qui seront utilisées :
 
 ```python
-# paquet pygame pour gestion des graphismes et des sons
 import pygame
-# constantes de pygame pour le clavier
 from pygame.locals import *
-# paquet system pour quitter le jeu
-import sys
-# paquet random pour générer une position aléatoire de la balle au début
-import random
+from constantes import *
 ```
 
 ### Les constantes du jeu : fichier constantes.py
+
 On définit la hauteur et la largeur de la fenêtre ainsi que l'abscisse du mur qui sera situé à droite.
 
-On définit également un jeu de couleurs qui utilisent des nuances proches de celles du tournoi du grand chelem de Roland Garros.
+On définit également un jeu de couleurs.
 
 ```python
-# dimensions de la fenêtre
-LARGEUR_FENETRE = 640
-HAUTEUR_FENETRE = 480
- 
-# abscisse pour le mur
-COORD_X_MUR = LARGEUR_FENETRE-20
- 
-# couleurs
-BLANC_ROLAND_GARROS = 0
-NOIR = 1
-ORANGE_ROLAND_GARROS = 2
-VERT_ROLAND_GARROS = 3
- 
-couleurs = [ (217,223,226), (0,0,0), (0xc8, 0x62, 0x2f), (0x22, 0x3f, 0x34) ]
-```
-
-#### La classe Balle balle.py
-
-La balle se déplace dans l'aire de jeu et rebondit sur les bords haut, bas et droit de la fenêtre. Par contre sur la gauche elle doit rebondir sur la raquette pour que le jeu continue.
-
-On crée une classe Balle que l'on instanciera par la suite. La classe est une structure de donnée et on pourra créer autant de balles que nécessaire par la suite mais dans le jeu qui nous intéresse il n'y a qu'une seule balle.
-
-Pour la balle, on doit définir les méthodes suivantes :
-
-- un constructeur `__init__`  
-- dessine pour dessiner la balle dans la fenêtre courante  
-- déplace pour déplacer la balle dans la fenêtre courante  
-- rebond_x pour les rebonds sur l'axe des x (mur, raquette)  
-- rebond_y pour les rebonds sur l'axe des y (bords fenetre)  
-- perdue pour vérifier si la balle est toujours dans la zone de jeu  
-
-On notera l'utilisation du mot-clé self qui permet de faire référence aux variables et méthodes de la classe.
-
-```python
-import random
 import pygame
+from pygame.locals import *
 from constantes import *
- 
-"""
-  classe Balle
- 
-  une balle est définie par les attributs (champs) suivants :
-  - sa position x, y dans la fenêtre en pixels
-  - son rayon en pixel
-  - son vecteur de déplacement (dx, dy) en pixels
-  - une référence à la fenêtre du jeu pour pouvoir dessiner la balle
- 
-"""
-class Balle(object):
- 
-  """
-    initialisation de la balle
-  """
-  def __init__(self, fenetre):
-    self.x = 100
-    self.y = random.randint(20, HAUTEUR_FENETRE-20)
-    self.rayon = 10
-    self.dx = 1
-    self.dy = 1
-    self.fenetre = fenetre
- 
-  """
-    dessine la balle sous forme d'un cercle dans la fenêtre graphique
-    avec une couleur blanche
-  """
-  def dessine(self):
-    pygame.draw.circle(self.fenetre, couleurs[BLANC_ROLAND_GARROS], \
-      (self.x, self.y), self.rayon)
- 
-  """
-    déplace la balle en gérant les rebonds
-  """
-  def deplace(self):
-    self.x += self.dx
-    self.y += self.dy
-    # rebond sur le mur à droite
-    # TODO
-    # rebond sur les bords haut et bas
-    # TODO
+
+
+# initialisation de l'écran de jeu
+pygame.init()
+
+
+
+police = pygame.font.SysFont("Arial", 25)
+fonte = pygame.font.Font(None, 30) 
+
+
+# Initialise la fenêtre de jeu
+largeur_ecran = 600
+hauteur_ecran = 400
+
+screen = pygame.display.set_mode((largeur_ecran,hauteur_ecran))
+pygame.display.set_caption("Tennis")
+
+# variables d'état
+
+hauteur_raquette=50
+
+largeur_raquette =10
+dist_mur   = 20  # distance du mur au bord de la raquette
+
+
+raquette_G_x = dist_mur
+raquette_G_y = 50
+
+
+ball_x = int(largeur_ecran / 2)
+ball_y = int(hauteur_ecran / 2)
+ball_speed_x = -4
+ball_speed_y = -4
+ball_rayon  = 10
+
+score = 0
+vie=2
+
+COORD_X_MUR = largeur_ecran-20
+
+
+# Definit des couleurs RGB
+BLACK = [0, 0, 0]
+WHITE = [255, 255, 255]
+GREEN = [24, 161, 80]
+RED   = [255, 0, 0]
+BLUE  = [30 , 36 , 161]
+ORANGE = [196 , 92 , 54]
+
+#fonctions permettant de dessiner la balle et les deux raquettes
+def Raquette(x, y):
+   R = (x,y,largeur_raquette,hauteur_raquette)
+   pygame.draw.rect(screen, WHITE, R, 0)
+
+def Balle(x,y):
+   pygame.draw.circle(screen, WHITE, (x,y),10, 0)
+
+def Mur():
+   R = (COORD_X_MUR,0,20,hauteur_ecran)
+   pygame.draw.rect(screen, GREEN, R, 0)
+
+
+
+def touche_clavier():
+  for event in pygame.event.get():
+    if event.type == KEYDOWN:
+      # Ctrl-C pour quitter le jeu
+      if event.key == pygame.K_c and pygame.key.get_mods() & pygame.KMOD_CTRL:
+        quitter()
+      # retourner la touche pressée 
+      return event.key
+    # sinon, ne rien retourner (valeur nulle)
+    return None    
      
-  """
-    rebond sur l'axe des x
-  """
-  def rebond_x(self):
-    self.dx = -self.dx
- 
-  """
-    rebond sur l'axe des y
-  """
-  def rebond_y(self):
-    self.dy = -self.dy
-       
-  """
-    indique si la balle est en dehors de l'aire de jeu
-  """
-  def perdue(self):
-    return self.x < 0
+def attente():
+   while touche_clavier() == None:
+      pygame.display.update()
 
-```
+# initialisation de l'écran de jeu
+pygame.init()
 
-#### La classe Raquette raquette.py
 
-La raquette se déplace verticalement sur le bord gauche. On créera une instance de la raquette.
 
-Pour la raquette, on doit définir les méthodes suivantes :
 
-- un constructeur __init__  
-- dessine pour dessiner la raquette dans la fenêtre courante  
-- déplace pour déplacer la raquette dans la fenêtre courante  
-- vers_le_haut pour modifier le déplacement de la raquette vers le haut  
-- vers_le_bas pour modifier le déplacement de la raquette vers le bas  
-- contact(balle) pour vérifier si la balle touche la raquette
+def affiche_texte_centre(texte, y=-1, couleur=None):
+  if couleur == None:
+    couleur = ORANGE
+  rendu = fonte.render(texte, True, couleur)
+  rectangle = rendu.get_rect()
+  if y == -1:
+    rectangle.center = ((largeur_ecran) / 2 , (hauteur_ecran) / 2)
+  else:
+    rectangle.center = ((largeur_ecran) / 2 , y)
+  screen.blit(rendu, rectangle)
 
-```python
-import random
-import pygame
-from constantes import *
- 
-"""
-  classe raquette
- 
-  une raquette est définie par les attributs (champs) suivants :
-  - sa position x, y dans la fenêtre en pixels, sachant que x est fixé
-  - sa largeur et sa hauteur en pixels
-  - son vecteur de déplacement en dy en pixels
-  - une référence à la fenêtre du jeu pour pouvoir dessiner la balle
-"""
-class Raquette(object):
- 
-  """
-    initialisation de la raquette
-  """
-  def __init__(self, fenetre):
-    self.hauteur = 80
-    self.largeur = 20
-    self.x = 20
-    self.y = (HAUTEUR_FENETRE - self.hauteur) // 2
-    self.dy = 2
-    self.fenetre = fenetre
-   
-  """
-    dessine la raquette dans la fenêtre graphique 
-    en blanc sous forme d'un rectangle
-  """
-  def dessine(self):
-    pygame.draw.rect(self.fenetre, couleurs[BLANC_ROLAND_GARROS], \
-      (self.x, self.y, self.largeur, self.hauteur), 0)
- 
-  """
-    déplace la raquette suivant le vecteur de déplacement en inversant la direction
-    si on arrive en haut ou en bas de la fenêtre
-  """
-  def deplace(self):
-    self.y += self.dy
-    # si la raquette est en haut on change la direction du déplacement
-    # TODO
-    # si la raquette est en bas on change la direction du déplacement
-    # TODO
- 
-  """
-    modifie le vecteur de déplacement pour que la raquette aille vers le haut
-  """
-  def vers_le_haut(self):
-    self.dy = -1
- 
-  """
-    modifie le vecteur de déplacement pour que la raquette aille vers le bas
-  """
-  def vers_le_bas(self):
-    self.dy = +1
- 
-  """
-    vérifie s'il y a contact entre la raquette et la balle
-  """
-  def contact(self, balle):
-    # TODO
+def affiche_texte(texte, x, y, couleur=None):
+  if couleur == None:
+    couleur = WHITE
+  rendu = fonte.render(texte, True, couleur)
+  rectangle = rendu.get_rect()
+  rectangle.center = (x, y)
+  screen.blit(rendu, rectangle)
+
 ```
 
 #### Le jeu
+
 On crée la fenêtre de jeu, on utilise la fonte courante et on charge les sons qui seront utilisé pour le jeu :
 
 - la musique d'ambiance music.mp3  
@@ -739,228 +475,509 @@ Le jeu se compose de trois parties :
 
 
 ```python
-###########################################################
-# librairies
-###########################################################
 import pygame
 from pygame.locals import *
-import sys
-import random
 from constantes import *
-import balle
-import raquette
+
+
+
+
  
-###########################################################
-# fonctions utiles
-###########################################################
- 
-"""
-  afficher un texte au centre de l'écran
- 
-  si la coordonnée y est égale à -1, on place le texte
-  au milieu de la fenetred'affichage
- 
-  on peut également spécifier la couleur qui est l'orange
-  par défaut
- 
-"""
-def affiche_texte_centre(texte, y=-1, couleur=None):
-  if couleur == None:
-    couleur = couleurs[ ORANGE_ROLAND_GARROS ]
-  rendu = fonte.render(texte, True, couleur)
-  rectangle = rendu.get_rect()
-  if y == -1:
-    rectangle.center = ((LARGEUR_FENETRE) / 2 , (HAUTEUR_FENETRE) / 2)
-  else:
-    rectangle.center = ((LARGEUR_FENETRE) / 2 , y)
-  fenetre.blit(rendu, rectangle)
- 
- 
-"""
-  afficher un texte au centre de l'écran en précisant
-  les coordonnées x et y
- 
-  on peut également spécifier la couleur qui est l'orange
-  par défaut
- 
-"""
-def affiche_texte(texte, x, y, couleur=None):
-  if couleur == None:
-    couleur = couleurs[ ORANGE_ROLAND_GARROS ]
-  rendu = fonte.render(texte, True, couleur)
-  rectangle = rendu.get_rect()
-  rectangle.center = (x, y)
-  fenetre.blit(rendu, rectangle)
- 
-"""
-  quitter le programme
- 
-  on arrête la musique d'ambiance et on libère les resources
-  utilisées par pygame
- 
-"""
-def quitter():
-  pygame.mixer.music.stop()
-  pygame.quit()
-  sys.exit()
- 
-"""
-  attend qu'on tape une touche au clavier
- 
-  on parcourt les événements (clavier, souris) mais en ne
-  traitant que l'appui sur une touche (KEYDOWN)
-"""
-def touche_clavier():
-  for event in pygame.event.get():
-    if event.type == KEYDOWN:
-      # Ctrl-C pour quitter le jeu
-      if event.key == pygame.K_c and pygame.key.get_mods() & pygame.KMOD_CTRL:
-        quitter()
-      # retourner la touche pressée 
-      return event.key
-    # sinon, ne rien retourner (valeur nulle)
-    return None    
-       
-"""
-  on attend que l'utilisateur tape une touche du clavier avant
-  d'aller plus loin. A chaque itération on redessine la fenêtre
-"""      
-def attente():
-  while touche_clavier() == None:
-    pygame.display.update()
-     
- 
- 
-###########################################################
-# initialisation du jeu
-###########################################################
-pygame.init()
-fenetre = pygame.display.set_mode((LARGEUR_FENETRE, HAUTEUR_FENETRE))
-pygame.display.set_caption("Tennis")
-pygame.font.init()
-fonte = pygame.font.Font(None, 30) 
-crash_sound = pygame.mixer.Sound("glass_break.wav")
-pygame.mixer.music.load("music.mp3")
-pygame.mixer.music.play()
- 
-###########################################################
-# définition des variables du jeu
-###########################################################
- 
-balle = balle.Balle(fenetre)
- 
-raquette = raquette.Raquette(fenetre)
- 
-# nombre de rebonds sur la raquette
-score = 0
- 
-# variable booléenne à vrai si on est en pause
-pause = False
- 
- 
+
+
+
+# Gestion du rafraichissement de l'écran
+clock = pygame.time.Clock()
+
+# Cache le pointeur de la souris
+pygame.mouse.set_visible(0)
+
+
+
+
 ###########################################################
 # écran d'accueil
 ###########################################################
-fenetre.fill(couleurs[NOIR])
+screen.fill(BLACK)
 affiche_texte_centre("Appuyez sur une touche pour commencer", 100)
 affiche_texte_centre("Flèche haut pour faire monter la raquette", 140)
 affiche_texte_centre("Flèche bas pour faire descendre la raquette", 170)
-affiche_texte_centre("p pour pause", 200)
-affiche_texte_centre("Ctrl-C pour quitter", 230)
+
 attente()
-     
-###########################################################
-# écran de jeu : boucle principale
-###########################################################
-while True:
-  # temporisation : arrêt de l'exécution du programme pendant 5 ms
-  pygame.time.delay(5)
- 
-  # -------------------------------
-  # dessine les différents éléments
-  # - fond d'écran
-  # - mur de droite
-  # - balle
-  # - raquette
-  # - score
-  # -------------------------------
- 
-  # dessine le fond en orange
-  fenetre.fill( couleurs[ ORANGE_ROLAND_GARROS ] )
-  # dessine le mur de droite
-  pygame.draw.rect(fenetre, couleurs[ VERT_ROLAND_GARROS ], (COORD_X_MUR, 0, 20, HAUTEUR_FENETRE), 0)
- 
-  balle.dessine()
- 
-  raquette.dessine()
- 
-  # affichage du score
-  texte = "Score = {}".format(score)
-  affiche_texte_centre(texte, 20, couleurs[VERT_ROLAND_GARROS])
- 
-  pygame.display.update()
- 
-  # -------------------------------
-  # gestion des événements clavier
-  # - flèche vers le haut
-  # - flèche vers le bas
-  # - 'p' pour pause
-  # -------------------------------
- 
-  clavier = touche_clavier()
-  if clavier == K_UP:
-    raquette.vers_le_haut()
-  if clavier == K_DOWN:
-    raquette.vers_le_bas() 
-  if clavier == K_p:
-    pause = not pause
- 
-  # si on a appuyé sur 'p' et qu'on met le jeu en pause
-  # il ne faut pas aller plus loin c'est à dire qu'il ne
-  # faut pas déplacer ni la raquette, ni la balle
-  if pause:
-    continue
- 
-  # ------------------------------
-  # déplacement de la raquette et de la balle
-  # vérification de fin de jeu
-  # ------------------------------
+
+# Le jeu continue tant que l'utilisateur ne ferme pas la fenêtre
+Termine = False
+
+# Boucle principale de jeu
+while not Termine:
+   # recupère la liste des évènements du joueur
+   event = pygame.event.Event(pygame.USEREVENT)
    
-  raquette.deplace()
+   # dessine le mur de droite
    
-  balle.deplace()
- 
-  # si balle en dehors de l'aire de jeu, on quitte la boucle
-  # de jeu
-  # TODO
- 
-  # si la balle touche la raquette, on réalise le rebond
-  # TODO   
- 
-################################
-# écran de fin de partie
-################################
- 
-fenetre.fill( couleurs[NOIR] )
+   # EVENEMENTS
+   # détecte le clic sur le bouton close de la fenêtrepygame.Rect
+   for event in pygame.event.get():
+      if event.type == pygame.QUIT:
+         Termine = True
+
+   # récupère la liste des touches claviers appuyeées sous la forme d'une liste de booléens
+   KeysPressed = pygame.key.get_pressed()
+
+   # LOGIQUE
+   # déplacement du palet gauche
+
+   if KeysPressed[pygame.K_UP]:
+       raquette_G_y -= 3
+
+   if KeysPressed[pygame.K_DOWN]:
+       raquette_G_y += 3
+
+
+   if raquette_G_y < 0 :
+      raquette_G_y = 0
+
+
+   if raquette_G_y > hauteur_ecran - hauteur_raquette :
+       raquette_G_y = hauteur_ecran - hauteur_raquette
+
+   # Déplacement de la balle
+   ball_x += ball_speed_x
+   ball_y += ball_speed_y
+
+   if ball_y < ball_rayon or ball_y > hauteur_ecran - ball_rayon :
+       ball_speed_y *= -1
+
+   # collision entre la balle et le palet de gauche
+   if ball_x  <  dist_mur + largeur_raquette + ball_rayon :
+       if ball_y > raquette_G_y  and  ball_y  <  raquette_G_y + hauteur_raquette :
+          ball_speed_x *= -1
+          score+=1
+         
+
+
+   # collision avec les murs gauche et droit
+   if ball_x < ball_rayon :
+      ball_x = int(largeur_ecran / 2)
+      ball_y = int(hauteur_ecran / 2)
+      vie-=1
+      
+
+   if ball_x > largeur_ecran - ball_rayon :
+      ball_speed_x *= -1
+
+
+
+   # AFFICHAGE
+   # Dessine le fond
+   screen.fill(BLACK)
+   Mur()
+   Raquette(raquette_G_x, raquette_G_y)
+
+   Balle(ball_x,ball_y)
+
+   #  dessine le texte dans une zone de rendu à part
+   texte = "Votre score : " + str(score) + " Vie : " + str(vie)
+   if score == 15 :
+      texte = "Joueur GAGNANT"
+      Termine=True
+   if vie<=0:
+      texte = 'PERDU' 
+      Termine=True
+
+
+   zone = police.render( texte, True, GREEN)
+   # affiche la zone de rendu au dessus de fenetre de jeu
+   screen.blit(zone,(280,10))
+
+
+
+   # Bascule l'image dessinée à l'écran
+   pygame.display.flip()
+
+    # Demande à pygame de se caler sur 30 FPS
+   clock.tick(30)
+
+screen.fill( 'black')
 texte = "Votre score est de {} points".format(score)
-affiche_texte_centre(texte)
+affiche_texte_centre(texte,150)
 affiche_texte_centre("Appuyez sur une touche pour terminer", 200)
-pygame.mixer.Sound.play(crash_sound)
-pygame.mixer.music.stop()
 attente()
- 
-quitter()
+
+# Ferme la fenêtre
+del(police)
+pygame.quit()
+
+
 ```
 
-### Multi Pong
+### Le jeu Pong en lui-même
+
+A vous.
+
+## SNAKE en Python, le plus simplement possible
+
+### Version 0
 
 
-!!! exo 
-    A titre d'exercice vous pouvez modifier le jeu de manière à lancer plusieurs balles au début du jeu. Il suffit de créer une liste de balles et de travailler avec cette liste plutôt qu'avec une seule balle.
+#### Pygame
+On importe pygame avec :
 
-!!! exo     
-    On peut également faire en sorte qu'à mesure que le temps passe :
+```python
+import pygame
+from pygame.locals import *
+```
 
-    - les balles se déplacent plus vite  
-    -  la hauteur de la raquette diminue  
-    
+Le second import sert à quitter le jeu propremement.
+
+
+#### Constantes
+On crée quelques constantes :
+
+```python
+HAUTEUR = 600  # hauteur de la fenetre
+LARGEUR = 600  # largeur de la fenetre
+BLOC = 20
+
+# Les couleurs utilisées
+NOIR = (..., ..., ...)  # fond
+ROUGE = (..., ..., ...) # pomme
+JAUNE = (..., ..., ...)  # tête
+VERT = (..., ..., ...)  # corps
+CYAN = (..., ..., ...)  # texte
+
+FPS = 30
+```
+
+#### initialisation
+
+On initialise le jeu :
+
+```python
+
+
+pygame.init()
+horloge = pygame.time.Clock()
+fenetre = pygame.display.set_mode((LARGEUR, HAUTEUR))
+pygame.display.set_caption('Snake')
+
+pygame.display.update()
+```
+
+#### Boucle Infinie
+
+Tous les jeux comportent une boucle infinie. Celle-ci ne contient pas grand chose :
+
+* quitter le jeu,  
+* remplir la fenêtre de noir  
+* faire avancer l'horloge  
+* mettre à jour les affichages  
+
+#### Boucle infinie
+
+```python
+while True:
+    for event in pygame.event.get():
+        if event.type == QUIT:
+            pygame.quit()
+        if event.type == KEYDOWN:
+            if event.key == K_ESCAPE:
+                pygame.quit()
+    fenetre.fill(NOIR)
+    horloge.tick(FPS)
+    pygame.display.update()
+```
+
+#### Boucle infinie
+
+* La boucle `for event in...` permet de récupérer les événements "cliquer sur la croix" ou "appuyer sur Escape" et quitte le jeu dans ce cas.
+
+* Ensuite on dessine la fenêtre, remplie de noir
+* On fait avancer l'horloge
+* On affiche tout ça
+
+### Version 1
+
+#### Ecrire du texte
+
+Cette fonction nous permettra d'écrire facilement le score
+
+```python
+def drawText(text, font, surface, x, y):
+    textobj = font.render(text, 1, CYAN)
+    textrect = textobj.get_rect()
+    textrect.topleft = (x, y)
+    surface.blit(textobj, textrect)
+```
+
+#### Taille de la police, valeur du score
+
+```Python
+font = pygame.font.SysFont(None, 48)
+```
+
+et
+
+```python
+score = 0
+```
+
+#### Le serpent
+
+Le serpent est une double liste
+
+```python
+snake = [[3, 3], [2, 3], [1, 3]]
+```
+
+Le premier élément est sa tête, elle est en `[3,3]` ensuite vient son
+corps. Il commence donc avec une taille de 3.
+
+#### Dessiner le serpent
+
+Dans la boucle infinie, avant l'horloge :
+
+```python
+  for elt in snake[1:]:
+      pygame.draw.rect(fenetre, VERT,
+                       (elt[0] * BLOC, elt[1] * BLOC,
+                        BLOC, BLOC))
+  pygame.draw.rect(fenetre, JAUNE,
+                   (snake[0][0] * BLOC, snake[0][1] * BLOC,
+                    BLOC, BLOC))
+```
+
+Le corps est vert et la tête jaune.
+
+#### Afficher le score
+
+On utilise notre fonction crée plus tôt :
+
+``` python
+drawText(str(score), font, fenetre, 0.2*LARGEUR, 0.2*HAUTEUR)
+```
+
+
+### Version 2
+
+#### Capturer les touches du jeu
+
+On ne capturait que "Escape" et le clic sur la croix. On ajoute les flêches.
+
+```python
+  if key:
+    if key[pygame.K_UP]:
+        print("up")
+    if key[pygame.K_DOWN]:
+        print("down")
+    if key[pygame.K_LEFT]:
+        print("left")
+    if key[pygame.K_RIGHT]:
+        print("right")
+```
+
+#### Capturer les touches du jeu
+
+Pour l'instant elles ne font rien d'autre qu'afficher du texte
+
+### Version 3
+
+#### Diminuer la vitesse de rafaîchissement
+
+```python
+FPS = 3
+```
+
+
+#### Déplacer le serpent
+
+On commence par créer une direction (= la vitesse)
+
+```python
+direction = (1, 0)
+```
+
+#### Déplacer le serpent
+
+Chaque pression d'une flêche change la direction :
+
+```python
+    key = pygame.key.get_pressed()
+    if key:
+        if key[pygame.K_UP]:
+            direction = (..., ...)
+        if key[pygame.K_DOWN]:
+            direction = (..., ...)
+        if key[pygame.K_LEFT]:
+            direction = (..., ...)
+        if key[pygame.K_RIGHT]:
+            direction = (..., ...)
+```
+
+#### Déplacer le serpent
+
+Ensuite la tête.
+
+C'est l'ancienne tête, qui s'est déplacée :
+
+```python
+  head = [snake[0][0] + direction[0], snake[0][1] + direction[1]]
+```
+
+#### Déplacer le serpent
+
+Le corps se déplace.
+
+1. On ajoute la tête au début :
+
+
+??? correction
+
+  ```python
+    snake.insert(0, head)
+  ```
+
+2. On perd un élément de fin :
+
+??? correction
+
+  ```python
+    snake.pop(-1)
+  ```
+
+### Version 4
+
+#### La mort du serpent
+
+Il meurt :
+
+* s'il quitte l'écran  
+* si sa tête est dans son corps  
+
+
+#### La mort du serpent
+
+??? correction
+
+  ```python
+    if head in snake[1:] or head[0] < 0 or head[0] > LARGEUR / BLOC - 1 or head[1] < 0 or head[1] > HAUTEUR / BLOC - 1:
+      pygame.quit()
+  ```
+
+### Version 5
+
+#### Fluidité
+
+Le jeu n'est pas fluide.
+
+On va mettre à jour les éléments du jeux toutes les 1.5 secondes
+et afficher 30 frames par secondes.
+
+Il nous faut deux variables supplémentaires :
+
+1. Une valeur pour décider quand mettre à jour  
+2. Un compteur  
+
+#### Fluidité
+
+```python
+FPS = 30
+MAJ = 10
+
+# ...
+
+# juste avant la boucle infinie
+compteur = 0
+```
+
+#### Fluidité
+
+Dans la boucle infinie
+
+```python
+  if compteur == MAJ:
+    compteur = 0
+    head = [snake[0][0] + direction[0],
+            snake[0][1] + direction[1]]
+    # autres événements
+
+  # On augmente le compteur
+  # tout à la fin de la boucle infinie
+  compteur += 1
+```
+
+
+#### Nourriture
+
+On crée d'abord une nouvelle liste :
+
+```python
+pomme = [8, 3]
+```
+
+#### Nourriture
+
+On dessine la pomme comme la tête, mais en rouge
+
+??? correction
+
+  ```python
+  pygame.draw.rect(fenetre, ROUGE,(pomme[0] * BLOC, pomme[1] * BLOC, BLOC, BLOC))
+  ```
+
+#### Nourriture
+
+Puis on détecte la collision avec la pomme.
+
+En cas de collision :
+
+1. Le score augmente  
+2. Une nouvelle pomme est crée.  
+
+La boucle `while` empêche la pomme d'apparaître sur le serpent
+
+#### Nourriture
+
+??? correction
+
+  ```python
+  from random import randint
+    # ...
+
+    # Dans la boucle infinie
+    if snake[0] == pomme:
+      score += 1
+      while pomme in snake:
+          pomme = [randint(0, LARGEUR / BLOC - 1),
+                  randint(0, HAUTEUR / BLOC - 1)]
+  ```
+
+
+#### Nourriture
+
+S'il n'y a pas de collision le serpent diminue, sinon il conserve sa taille
+
+```python
+  else:
+    snake.pop(-1)
+```
+
+
+### Conclusion
+
+#### Conclusion
+
+C'est terminé...
+
+Snake en 100 lignes (peu commentées) avec le minimum d'instructions.
+On peut faire beaucoup plus court mais c'est déjà très simple
+
+#### Conclusion
+
+* Python permet notamment de créer des jeux,  
+* Créer un jeu avec Pygame n'est pas difficile,  
+* Il nous faut quelques constantes, quelques éléments de jeu (serpent, tête)  
+* Une boucle infinie dans laquelle  
+  1. On lit les saisies de l'utilisateur  
+  2. On effectue les calculs (nouvelle tête, collisions etc.)  
+  3. On met à jour les éléments graphiques  
