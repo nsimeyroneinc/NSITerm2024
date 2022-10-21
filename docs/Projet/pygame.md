@@ -326,7 +326,7 @@ où ```position_perso``` est l'objet de type ```rect```  contenant les coordonn�
       pygame.display.flip()
     ```
 
-## Le jeu de tennis (à la Pong)
+## Le jeu de tennis (à la Pong) ![](data/niveau1.png){width=25px}
 
 Pour la création du jeu de tennis, nous allons organiser notre code en plusieurs fichiers :
 
@@ -615,7 +615,7 @@ pygame.quit()
 
 A vous.
 
-## SNAKE en Python, le plus simplement possible
+## SNAKE en Python, le plus simplement possible ![](data/niveau2.png){width=25px}
 
 ### Version 0
 
@@ -760,38 +760,21 @@ drawText(str(score), font, fenetre, 0.2*LARGEUR, 0.2*HAUTEUR)
 
 ### Version 2
 
-#### Capturer les touches du jeu
-
 On ne capturait que "Escape" et le clic sur la croix. On ajoute les flêches.
 
-```python
-  if key:
-    if key[pygame.K_UP]:
-        print("up")
-    if key[pygame.K_DOWN]:
-        print("down")
-    if key[pygame.K_LEFT]:
-        print("left")
-    if key[pygame.K_RIGHT]:
-        print("right")
-```
+
 
 #### Capturer les touches du jeu
-
-Pour l'instant elles ne font rien d'autre qu'afficher du texte
-
-### Version 3
 
 #### Diminuer la vitesse de rafaîchissement
 
 ```python
-FPS = 3
+FPS = 5
 ```
-
 
 #### Déplacer le serpent
 
-On commence par créer une direction (= la vitesse)
+On commence par créer une direction (= la vitesse) en dehors de la boucle infinie
 
 ```python
 direction = (1, 0)
@@ -899,7 +882,7 @@ Dans la boucle infinie
     compteur = 0
     head = [snake[0][0] + direction[0],
             snake[0][1] + direction[1]]
-    # autres événements
+    # mettre les autres événements concernant le snake
 
   # On augmente le compteur
   # tout à la fin de la boucle infinie
@@ -965,14 +948,12 @@ S'il n'y a pas de collision le serpent diminue, sinon il conserve sa taille
 
 ### Conclusion
 
-#### Conclusion
 
 C'est terminé...
 
 Snake en 100 lignes (peu commentées) avec le minimum d'instructions.
 On peut faire beaucoup plus court mais c'est déjà très simple
 
-#### Conclusion
 
 * Python permet notamment de créer des jeux,  
 * Créer un jeu avec Pygame n'est pas difficile,  
@@ -981,3 +962,392 @@ On peut faire beaucoup plus court mais c'est déjà très simple
   1. On lit les saisies de l'utilisateur  
   2. On effectue les calculs (nouvelle tête, collisions etc.)  
   3. On met à jour les éléments graphiques  
+
+
+## Mini-Tetris ![](data/niveau3.png){width=25px}
+
+!!! histoire "Un peu d’histoire"
+  Tetris est un jeu vidéo entre arcade et puzzle, conçu par Alekseï Pajitnov en juin 1984. Le succès devient planétaire et tous les consoles qui suivront posséderont leur version de Tetris. Il fait partie des jeux les plus addictifs de l’époque, avec Pacman.
+
+```python
+import pygame
+import copy
+import random
+
+# initialisation de l'écran de jeu
+pygame.init()
+
+# Definit des couleurs RGB
+NOIR  = (0, 0, 0)
+VERT  = (0, 255, 0)
+ROUGE = (255, 0, 0)
+BLEU  = (0 , 0 , 255)
+GRIS  = (128,128,128)
+CYAN  = (0,255,255)
+JAUNE = (255,255,0)
+ORANGE= (255,150,0)
+VERT  = (0,255,255)
+MAUVE = (180,80,255)
+LCoul = [ NOIR, GRIS, CYAN, JAUNE, MAUVE, ORANGE, BLEU, ROUGE, VERT ]
+
+# PIECES
+P_I = [ [0,2,0],
+        [0,2,0],
+        [0,2,0] ]
+
+P_T = [ [0,0,0],
+        [4,4,4],
+        [0,4,0]]
+
+P_O = [ [3,3,0],
+        [3,3,0],
+        [0,0,0] ]
+
+P_L = [ [0,0,0],
+        [5,5,5],
+        [5,0,0] ]
+
+P_J = [ [0,0,0],
+        [6,6,6],
+        [0,0,6]]
+
+P_Z = [ [7,7,0],
+        [0,7,7],
+        [0,0,0] ]
+
+P_S = [ [0,8,8],
+        [8,8,0],
+        [0,0,0]]
+
+LP  = [ P_I, P_T, P_O, P_L, P_J, P_Z, P_S]
+
+
+def AffPiece():
+    P = LP[idpiece]
+    for dx in range(3):
+        for dy in range(3):
+            c = P[dy][dx]
+            if c != 0:
+               idcoul = int(c)
+               xx = (px+dx) * LCASE
+               yy = (py+dy) * LCASE
+               R = (xx,yy,LCASE,LCASE)
+               pygame.draw.rect(screen,LCoul[idcoul],R)
+
+
+
+# DECORS
+LIGNE_VIDE = [1,1] + [0]*11 + [1]*2
+DECOR = []
+for i in range(16):
+    DECOR.append(LIGNE_VIDE.copy())
+DECOR.append([1]*15)
+DECOR.append([1]*15)
+
+LCASE = 20
+def AfficheDecors():
+    for y in range(len(DECOR)) :
+        for x in range(len(DECOR[0])):
+            xx = x * LCASE
+            yy = y * LCASE
+            id = DECOR[y][x]
+
+            pygame.draw.rect(screen,LCoul[id],(xx,yy,LCASE,LCASE))
+            pygame.draw.rect(screen,NOIR,(xx,yy,LCASE,LCASE),1)
+
+
+# Initialise la fenêtre de jeu
+screenWidth = 300
+screenHeight = 360
+screen = pygame.display.set_mode((screenWidth,screenHeight))
+pygame.display.set_caption("MINI TETRIS")
+
+
+# Gestion du rafraichissement de l'écran
+clock = pygame.time.Clock()
+# Cache le pointeur de la souris
+pygame.mouse.set_visible(0)
+
+
+# variables d'état
+# piece courante
+idpiece = 1
+px  = 6
+py  = 0
+rot = 0
+#Touches
+KEyDown  = 0
+KeyUp    = 0
+KeyLeft  = 0
+KeyRight = 0
+
+#compteur d'affichage
+comptage = 0
+
+
+# Le jeu continue tant que l'utilisateur ne ferme pas la fenêtre
+Termine = False
+
+# Boucle principale de jeu
+while not Termine:
+   # recupère la liste des évènements du joueur
+   event = pygame.event.Event(pygame.USEREVENT)
+
+   # EVENEMENTS
+   # détecte le clic sur le bouton close de la fenêtre
+   for event in pygame.event.get():
+      if event.type == pygame.QUIT:
+         Termine = True
+
+   # récupère la liste des touches claviers appuyeées sous la forme d'une liste de booléens
+   KeysPressed = pygame.key.get_pressed()
+
+   # LOGIQUE
+   # déplacement de la pièce
+   comptage += 1
+   if comptage % 20 == 0 :
+           py += 1
+
+
+   if KeysPressed[pygame.K_UP] and KeyUp == 0:
+        pass
+
+   if KeysPressed[pygame.K_LEFT] and KeyLeft == 0:
+        pass
+
+   if KeysPressed[pygame.K_RIGHT] and KeyRight == 0:
+        pass
+
+   if KeysPressed[pygame.K_DOWN] and KeyDown == 0:
+        pass
+
+
+   KeyDown  = KeysPressed[pygame.K_DOWN]
+   KeyUp    = KeysPressed[pygame.K_UP]
+   KeyLeft  = KeysPressed[pygame.K_LEFT]
+   KeyRight = KeysPressed[pygame.K_RIGHT]
+
+
+
+   # AFFICHAGE
+   # Dessine le fond
+   AfficheDecors()
+   AffPiece()
+
+   # Bascule l'image dessinée à l'écran
+   pygame.display.flip()
+
+    # Demande à pygame de se caler sur 30 FPS
+   clock.tick(30)
+
+# Ferme la fenêtre
+pygame.quit()
+```
+
+Le jeu est fonctionnel que dans une petite partie : une pièce descend mais il est impossible de la déplacer.
+
+
+### Présentation du code
+
+ #### Les constantes couleurs :
+
+
+```python
+# Definit des couleurs RGB
+NOIR  = (0, 0, 0)
+VERT  = (0, 255, 0)
+ROUGE = (255, 0, 0)
+BLEU  = (0 , 0 , 255)
+GRIS  = (128,128,128)
+CYAN  = (0,255,255)
+JAUNE = (255,255,0)
+ORANGE= (255,150,0)
+MAUVE = (180,80,255)
+LCoul = [ NOIR, GRIS, CYAN, JAUNE, MAUVE, ORANGE, BLEU, ROUGE, VERT ]
+```
+
+Le fond noir est associé à la valeur d'indice  0, les murs gris à la valeur d'indice 1 et chaque pièce du jeu est associée avec la couleur d'indice compris entre 2 et 8.
+
+#### Les différentes pièces :
+
+
+Pour simplifier les algorithmes, on va utiliser des combinaisons de carrés qui s'inscrivent dans une grille 3 $\times$ 3
+
+![piece](data/tetris_pieces.png)
+
+**Toutes les pièces** sont stockées dans des listes de 3 $\times$ 3 éléments. Une valeur nulle correspond à une case vide et une valeur non nulle indique une case pleine ainsi que sa couleur. L'ensemble des pièces est stocké dans une liste nommée LP : 
+
+```python
+# PIECES
+P_I = [ [0,2,0],
+        [0,2,0],
+        [0,2,0] ]
+
+P_O = [ [3,3,0],
+        [3,3,0],
+        [0,0,0] ]
+
+P_T = [ [0,0,0],
+        [4,4,4],
+        [0,4,0]]
+
+P_L = [ [0,0,0],
+        [5,5,5],
+        [5,0,0] ]
+
+P_J = [ [0,0,0],
+        [6,6,6],
+        [0,0,6]]
+
+P_Z = [ [7,7,0],
+        [0,7,7],
+        [0,0,0] ]
+
+P_S = [ [0,8,8],
+        [8,8,0],
+        [0,0,0]]
+
+LP  = [ P_I, P_O, P_T, P_L, P_J, P_Z, P_S]
+```
+
+
+**Les variables d'état** sont présentées ci-dessous. 
+
+```python
+# variables d'état
+# piece courante
+idpiece = 1
+px  = 6
+py  = 0
+rot = 0
+#Touches
+KeyDown  = 0
+KeyUp    = 0
+KeyLeft  = 0
+KeyRight = 0
+```
+
+La variable `idpiece` indique l'indice de la pièce courante dans la liste `LP`. Ainsi le jeu démarre avec la pièce T.  
+Les variable `px`, `py` et `rot` indique la position en $x$, et $y$ da la pièce dans la grille, ainsi que sa rotation : 0 pour $0^{\circ}$ et 1 pour $90^{\circ}$ .  
+Et quatre variables pour stocker l'état précédent des touches fléchées : enfoncé ou non. L'intérêt des de pouvoir détecter les appuis sur ces touches.
+
+### Affichage du décors :
+
+```python
+# DECORS
+LIGNE_VIDE = [1,1] + [0]*11 + [1]*2
+DECOR = []
+for i in range(16):
+    DECOR.append(LIGNE_VIDE.copy())
+DECOR.append([1]*15)
+DECOR.append([1]*15)
+
+
+LCASE = 20
+def AfficheDecors():
+    for y in range(len(DECOR)) :
+        for x in range(len(DECOR[0])):
+            xx = x * LCASE
+            yy = y * LCASE
+            id = DECOR[y][x]
+
+            pygame.draw.rect(screen,LCoul[id],(xx,yy,LCASE,LCASE))
+            pygame.draw.rect(screen,NOIR,(xx,yy,LCASE,LCASE),1)
+```
+
+
+Le décor est stocké dans une grille de 15 cases de large pour 18 de haut. Comme la largeur des cases fait 20 pixels, on a donc une fenêtre de taille 300 $\times$ 360 pixels. On définit une constante `LIGNE_VIDE` composée de 2 colonnes sur la gauche et sur la droite, qui marquent les bords avec des cases grises,donc de code couleur associé 1. Les 11 cases centrales vides sont remplies avec la valeur 0? Le décor est défini comme une liste de 18 lignes.  
+Les 16 premières sont des lignes vides, et les 2 dernières sont remplies de 1. Pour créer les 16 lignes vides, nous utilisons la liste `LIGNE_VIDE` qu'on copie avec la fonction `copy()`. Ceci est très important car chaque ligne doit être indépendante !\\
+
+![](data/tetris_interface.png)
+
+
+Les valeurs sont stockées dans une liste de listes intitulée `DECOR`. Ainsi `len(DECOR)` correspond au nombre de lignes et `len(DECOR[0])` au nombre de colonnes du jeu.  
+En écrivant `DECOR[y][x]` on accède à l'indice de couleur pour la case de coordonnées (x,y). L'origine du décor (0,0) est positionnée en haut à gauche de l'écran.  
+La variable `LCASE` définit la largeur d'une case en pixels. Pour dessiner entièrement la grille, on utilise un double boucle en x et y.  
+
+On dessine un carré plein grâce à la première fonction `draw.rect()`, puis les bords noirs avec le deuxième appel.
+
+### Déplacement des pièces :
+
+On déplace la pièce courante avec une technique particulière. On utilise une variable comptage qui comptabilise le nombre d'affichages effectués. Le test effectué est : `comptage % 20 == 0`,  ce qui produit 20 affichages. Comme on est à 30 FPS, cela se produit toutes les 0,66 seconde. a ce moment-là, on fait descendre la pièce d'une ligne vers le bas. (A ce niveau aucune collision n'est pas gérée) 
+
+```python
+   # LOGIQUE
+   # déplacement de la pièce
+   comptage += 1
+   if comptage % 20 == 0 :
+           py += 1
+```
+
+Dans la partie gérant la logique du jeu, on trouve cette ligne
+
+```python
+### Q6 ###
+   if KeysPressed[pygame.K_UP] and KeyUp == 0:
+        pass
+```
+
+
+La variable `KeyUp` stocke l'état de la touche `[Flèche Haut]` lors de l'affichage précédent. Dans cette condition, on détecte si le joueur vient d'appuyer sur cette touche. Pour l'instant cette condition ne déclenche rien mais cela va changer par la suite.
+
+!!! exo "Gestion de la rotation"
+    Vous allez gérer la rotation de la pièce courante. Tout d'abord après la condition gérant l'appui sur la touche `[Flèche Haut]`, vous allez modifier la valeur de la variable `rot`. Chaque appui doit augmenter la variable `rot` de 1. Il serait judicieux d'appliquer un modulo 4 pour faire en sorte que cette variable ne puisse prendre que des valeurs entre 0 et 3. Dans le jeu orignal, les pièces ne tournent que dans un sens.
+	
+    === "Question 1" 
+      Créez une fonction `Rot90Droite(P)` qui, à partir d'une pièce 3 $\times$ 3 tourne cette pièce de $90^{\circ}$. La pièce P correspond à une liste de listes, cette pièce ne doit pas être modifiée. Vous allez construire une nouvelle pièce et la retourner. Voici quelques conseils :      
+      
+      - Pour créer une nouvelle pièce, vous pouvez l'initialiser à partir d'une liste de listes contenant des 0 ou appliquer la fonction `copy.deepcopy()` sur la pièce P actuelle. Le contenu n'a pas d'importance, car de toute façon, il va être écrasé  
+      - Il faut programmer la rotation de $90^{\circ}$. Voici un exemple avec la pièce P en entrée et la pièce R à calculer à droite.  
+      Dans tous les cas, la case centrale ne change pas.
+	
+      ![](data/piece.png)
+
+      - Option 1 : écrivez une instruction pour chacune des huit cases. Par exemple, pour la case 1 en haut à gauche : `R[0][0]=P[2][0]`, et pour la case 2 : `R[0][1]=P[1][0]`.  
+      - Option 2 : faites une liste des positions des huit cases des bords, ceci en tournant dans le sens des aiguilles d'une montre : `L=((0,0) , (1,0) , (2,0), (2,1) ( (2,2) , (1,2) ...]` Ainsi en créant une boucle for d'indice i allant de 0 à 7 , vous savez que la case à la position `R[i]` doit être initialisée avec la case `L[(i-2)%8]`.
+	
+    === "Question 2"
+      Créez une fonction `Rotn(P,nb)` qui calcul la pièce P après nb rotations.  
+      Pour cela :  
+
+      - Initialiser une pièce 3 $\times$ 3 sous forme de liste de listes. Il  judicieux d'utiliser la fonction `copy.deepcopy()` pour cloner la pièce P, car si la variable nb vaut 0, il n'y aura aucune rotation effectuée et c'est la copie de la pièce initiale qui sera retournée.  
+      - Effectuez autant de rotations que nécessaire. Pour cela utiliser la fonction `Rot90Droite()`.  
+      - Retournez le résultat.
+		
+    === "Question 3"
+      Modifier la fonction `AffPiece()` pour qu'elle tienne compte de la variable rot et affichez la pièce en tenant compte de ce paramètre. Maintenant, lorsque vous appuyer sur la touche [Flèche Haut], vous devez voir la pièce tourner.
+	
+!!! exo "Déplacement latéraux"
+  === "Question 1" 
+    Écrivez une fonction `DetectColission()` qui détermine suivant une pièce, une rotation et une position (x,y) données s'il y a collision avec le décor ou non. Voici quelques conseils :   
+    - Appliquer la rotation sur la pièce pour obtenir sa bonne orientation  
+    - Créez une double boucle d'indices dx et dy pour parcourir les cases de la pièce.  
+    - Comparer chaque case `(dx,dy)` de la pièce avec la case `(x+dx,y+dy)` du décor. Si les deux cases sont non vides, alors il y a collision, et retournez vrai dans ce cas.  
+	  
+  === "Question 2"
+    Complétez le code gérant l'appui sur les touches `[Flèche Droite]` et `[Flèche Gauche]`. Par exemple, lors de l'appui sur `[Flèche Gauche]`, vérifiez d'abord que la futur place de la pièce n'est pas en collision avec le décor. Si aucune collision n'est détectée, alors modifier la position de la pièce en faisant : $px-=1$.
+
+!!! exo "Gestion de la descente"
+  === "Question 1" 
+    Écrivez une fonction `FusionDecor()` qui, suivant une pièce, une rotation et une position (x,y) donnée, fixe cette pièce dans le décor. Cette fonction est comparable à la fonction `DetectCollision()`, sauf qu'il n'y a pas à faire de test, mais juste un transfert des cases colorées de la pièce vers les cases de la grille.  
+    
+  === "Question 2"
+		Écrivez une fonction `NextPiece()` qui initialise une nouvelle pièce. Pour cela, grâce au package `random`, choisissez une pièce au hasard. Sa position sera forcément la ligne 0 et au milieu de la grille, c'est-à-dire à l'abscisse 6. Par contre vous pouvez choisir sa rotation aléatoirement.  
+    
+  === "Question 3"
+    Tous les 20 affichages, la pièce courante descend automatiquement d'une ligne, gérez la collision avec le décor. Lorsque la pièce est susceptible de descendre, examinez si sa position futur produit une collision. Dans ce cas-là, elle ne doit pas descendre, car elle est stoppée par quelque chose. Appelez cette fonction `FusionDecor()` pour figer la pièce.  
+    Après cela générez une nouvelle pièce.  
+  
+  === "Question 4"
+    Vous pouvez maintenant gérer l'appui sur la touche `[Flèche BAS]`. Le mécanisme est identique à celui de la descente automatique. 
+
+  === "Question 5"
+    Il reste un mécanisme à mettre en  place : le retrait des lignes pleines. Cet événement peut arriver après la fusion d'une pièce avec le décor. Il se peut qu'une ou plusieurs lignes pleines apparaissent. Écrivez une fonction `RetraitLigne()` dont l'objectif est de retirer l'ensemble des lignes pleines du décor.  
+    - Créez une boucle for avec un indice partant de 0 jusqu'à 15 compris. Les deux dernières lignes ne doivent pas être traitées.  
+    - Faites un calcul pour trouver la valeur de l'indice qui parcourt les lignes en sens inverse, c'est-à-dire de l'indice 15 à 0.  
+    - Testez la ligne associée à ce nouvel indice pour savoir si elle est pleine :  
+      - Pour cela, il suffit de détecter si une valeur 0 est présente dans la ligne courante. utilisez le test `0 in MaLigneCourante` qui retourne Vrai ou Faux  
+      - Si la ligne est pleine, retirez-la grâce à la fonction `DECOR.pop(index)`.  
+		- Une fois le parcours terminé, des lignes ont pu être supprimées. Ainsi tant que le nombre de lignes dans la liste `DECOR` est insuffisant, rajoutez des lignes vides à l'indice 0 grâce à la fonction `DECOR.insert(0,...)`. Pensez à insérer une ligne vide qui soit indépendante de la constante `LIGNE_VIDE` définie dans le programme.
+		
+		
