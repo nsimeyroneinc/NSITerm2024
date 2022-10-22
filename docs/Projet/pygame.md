@@ -30,6 +30,7 @@ Projet
 {{ initexo(0)}}
 
 ## Preambule
+
 Pygame est un package de Python facilitant la création de jeux basés une interface graphique. Vous pouvez :
 
 - l'installer sur votre distribution Python, par ```pip3 install pygame```.  
@@ -350,117 +351,120 @@ On définit la hauteur et la largeur de la fenêtre ainsi que l'abscisse du mur 
 
 On définit également un jeu de couleurs.
 
-```python
-import pygame
-from pygame.locals import *
-from constantes import *
+??? check "Fichier constantes.py"
+    ```python
+    import pygame
+    from pygame.locals import *
+    from constantes import *
 
 
-# initialisation de l'écran de jeu
-pygame.init()
-
-
-
-police = pygame.font.SysFont("Arial", 25)
-fonte = pygame.font.Font(None, 30) 
-
-
-# Initialise la fenêtre de jeu
-largeur_ecran = 600
-hauteur_ecran = 400
-
-screen = pygame.display.set_mode((largeur_ecran,hauteur_ecran))
-pygame.display.set_caption("Tennis")
-
-# variables d'état
-
-hauteur_raquette=50
-
-largeur_raquette =10
-dist_mur   = 20  # distance du mur au bord de la raquette
-
-
-raquette_G_x = dist_mur
-raquette_G_y = 50
-
-
-ball_x = int(largeur_ecran / 2)
-ball_y = int(hauteur_ecran / 2)
-ball_speed_x = -4
-ball_speed_y = -4
-ball_rayon  = 10
-
-score = 0
-vie=2
-
-COORD_X_MUR = largeur_ecran-20
-
-
-# Definit des couleurs RGB
-BLACK = [0, 0, 0]
-WHITE = [255, 255, 255]
-GREEN = [24, 161, 80]
-RED   = [255, 0, 0]
-BLUE  = [30 , 36 , 161]
-ORANGE = [196 , 92 , 54]
-
-#fonctions permettant de dessiner la balle et les deux raquettes
-def Raquette(x, y):
-   R = (x,y,largeur_raquette,hauteur_raquette)
-   pygame.draw.rect(screen, WHITE, R, 0)
-
-def Balle(x,y):
-   pygame.draw.circle(screen, WHITE, (x,y),10, 0)
-
-def Mur():
-   R = (COORD_X_MUR,0,20,hauteur_ecran)
-   pygame.draw.rect(screen, GREEN, R, 0)
+    # initialisation de l'écran de jeu
+    pygame.init()
 
 
 
-def touche_clavier():
-  for event in pygame.event.get():
-    if event.type == KEYDOWN:
-      # Ctrl-C pour quitter le jeu
-      if event.key == pygame.K_c and pygame.key.get_mods() & pygame.KMOD_CTRL:
-        quitter()
-      # retourner la touche pressée 
-      return event.key
-    # sinon, ne rien retourner (valeur nulle)
-    return None    
-     
-def attente():
-   while touche_clavier() == None:
-      pygame.display.update()
-
-# initialisation de l'écran de jeu
-pygame.init()
+    police = pygame.font.SysFont("Arial", 25)
+    fonte = pygame.font.Font(None, 30) 
 
 
+    # Initialise la fenêtre de jeu
+    largeur_ecran = 600
+    hauteur_ecran = 400
+
+    screen = pygame.display.set_mode((largeur_ecran,hauteur_ecran))
+    pygame.display.set_caption("Tennis")
+
+    # variables d'état
+
+    hauteur_raquette=50
+
+    largeur_raquette =10
+    dist_mur   = 20  # distance du mur au bord de la raquette
 
 
-def affiche_texte_centre(texte, y=-1, couleur=None):
-  if couleur == None:
-    couleur = ORANGE
-  rendu = fonte.render(texte, True, couleur)
-  rectangle = rendu.get_rect()
-  if y == -1:
-    rectangle.center = ((largeur_ecran) / 2 , (hauteur_ecran) / 2)
-  else:
-    rectangle.center = ((largeur_ecran) / 2 , y)
-  screen.blit(rendu, rectangle)
+    raquette_G_x = dist_mur
+    raquette_G_y = 50
 
-def affiche_texte(texte, x, y, couleur=None):
-  if couleur == None:
-    couleur = WHITE
-  rendu = fonte.render(texte, True, couleur)
-  rectangle = rendu.get_rect()
-  rectangle.center = (x, y)
-  screen.blit(rendu, rectangle)
 
-```
+    ball_x = int(largeur_ecran / 2)
+    ball_y = int(hauteur_ecran / 2)
+    ball_speed_x = -4
+    ball_speed_y = -4
+    ball_rayon  = 10
 
-#### Le jeu
+    score = 0
+    vie=2
+
+    COORD_X_MUR = largeur_ecran-20
+
+
+    # Definit des couleurs RGB
+    BLACK = [0, 0, 0]
+    WHITE = [255, 255, 255]
+    GREEN = [24, 161, 80]
+    RED   = [255, 0, 0]
+    BLUE  = [30 , 36 , 161]
+    ORANGE = [196 , 92 , 54]
+
+    #fonctions permettant de dessiner la balle et les deux raquettes
+    def Raquette(x, y):
+      R = (x,y,largeur_raquette,hauteur_raquette)
+      pygame.draw.rect(screen, WHITE, R, 0)
+
+    def Balle(x,y):
+      pygame.draw.circle(screen, WHITE, (x,y),10, 0)
+
+    def Mur():
+      R = (COORD_X_MUR,0,20,hauteur_ecran)
+      pygame.draw.rect(screen, GREEN, R, 0)
+
+
+
+    def touche_clavier():
+      for event in pygame.event.get():
+        if event.type == KEYDOWN:
+          # Ctrl-C pour quitter le jeu
+          if event.key == pygame.K_c and pygame.key.get_mods() & pygame.KMOD_CTRL:
+            quitter()
+          # retourner la touche pressée 
+          return event.key
+        # sinon, ne rien retourner (valeur nulle)
+        return None    
+        
+    def attente():
+      while touche_clavier() == None:
+          pygame.display.update()
+
+    # initialisation de l'écran de jeu
+    pygame.init()
+
+
+
+
+    def affiche_texte_centre(texte, y=-1, couleur=None):
+      if couleur == None:
+        couleur = ORANGE
+      rendu = fonte.render(texte, True, couleur)
+      rectangle = rendu.get_rect()
+      if y == -1:
+        rectangle.center = ((largeur_ecran) / 2 , (hauteur_ecran) / 2)
+      else:
+        rectangle.center = ((largeur_ecran) / 2 , y)
+      screen.blit(rendu, rectangle)
+
+    def affiche_texte(texte, x, y, couleur=None):
+      if couleur == None:
+        couleur = WHITE
+      rendu = fonte.render(texte, True, couleur)
+      rectangle = rendu.get_rect()
+      rectangle.center = (x, y)
+      screen.blit(rendu, rectangle)
+
+    ```
+
+
+
+### Le jeu
 
 On crée la fenêtre de jeu, on utilise la fonte courante et on charge les sons qui seront utilisé pour le jeu :
 
@@ -473,147 +477,148 @@ Le jeu se compose de trois parties :
 - le jeu de tennis  
 - la fin de partie qui affiche le score obtenu par le joueur  
 
-
-```python
-import pygame
-from pygame.locals import *
-from constantes import *
-
-
-
-
- 
-
-
-
-# Gestion du rafraichissement de l'écran
-clock = pygame.time.Clock()
-
-# Cache le pointeur de la souris
-pygame.mouse.set_visible(0)
+??? check "tennis.py"
+    ```python
+    import pygame
+    from pygame.locals import *
+    from constantes import *
 
 
 
 
-###########################################################
-# écran d'accueil
-###########################################################
-screen.fill(BLACK)
-affiche_texte_centre("Appuyez sur une touche pour commencer", 100)
-affiche_texte_centre("Flèche haut pour faire monter la raquette", 140)
-affiche_texte_centre("Flèche bas pour faire descendre la raquette", 170)
-
-attente()
-
-# Le jeu continue tant que l'utilisateur ne ferme pas la fenêtre
-Termine = False
-
-# Boucle principale de jeu
-while not Termine:
-   # recupère la liste des évènements du joueur
-   event = pygame.event.Event(pygame.USEREVENT)
-   
-   # dessine le mur de droite
-   
-   # EVENEMENTS
-   # détecte le clic sur le bouton close de la fenêtrepygame.Rect
-   for event in pygame.event.get():
-      if event.type == pygame.QUIT:
-         Termine = True
-
-   # récupère la liste des touches claviers appuyeées sous la forme d'une liste de booléens
-   KeysPressed = pygame.key.get_pressed()
-
-   # LOGIQUE
-   # déplacement du palet gauche
-
-   if KeysPressed[pygame.K_UP]:
-       raquette_G_y -= 3
-
-   if KeysPressed[pygame.K_DOWN]:
-       raquette_G_y += 3
+    
 
 
-   if raquette_G_y < 0 :
-      raquette_G_y = 0
+
+    # Gestion du rafraichissement de l'écran
+    clock = pygame.time.Clock()
+
+    # Cache le pointeur de la souris
+    pygame.mouse.set_visible(0)
 
 
-   if raquette_G_y > hauteur_ecran - hauteur_raquette :
-       raquette_G_y = hauteur_ecran - hauteur_raquette
-
-   # Déplacement de la balle
-   ball_x += ball_speed_x
-   ball_y += ball_speed_y
-
-   if ball_y < ball_rayon or ball_y > hauteur_ecran - ball_rayon :
-       ball_speed_y *= -1
-
-   # collision entre la balle et le palet de gauche
-   if ball_x  <  dist_mur + largeur_raquette + ball_rayon :
-       if ball_y > raquette_G_y  and  ball_y  <  raquette_G_y + hauteur_raquette :
-          ball_speed_x *= -1
-          score+=1
-         
 
 
-   # collision avec les murs gauche et droit
-   if ball_x < ball_rayon :
-      ball_x = int(largeur_ecran / 2)
-      ball_y = int(hauteur_ecran / 2)
-      vie-=1
+    ###########################################################
+    # écran d'accueil
+    ###########################################################
+    screen.fill(BLACK)
+    affiche_texte_centre("Appuyez sur une touche pour commencer", 100)
+    affiche_texte_centre("Flèche haut pour faire monter la raquette", 140)
+    affiche_texte_centre("Flèche bas pour faire descendre la raquette", 170)
+
+    attente()
+
+    # Le jeu continue tant que l'utilisateur ne ferme pas la fenêtre
+    Termine = False
+
+    # Boucle principale de jeu
+    while not Termine:
+      # recupère la liste des évènements du joueur
+      event = pygame.event.Event(pygame.USEREVENT)
       
+      # dessine le mur de droite
+      
+      # EVENEMENTS
+      # détecte le clic sur le bouton close de la fenêtrepygame.Rect
+      for event in pygame.event.get():
+          if event.type == pygame.QUIT:
+            Termine = True
 
-   if ball_x > largeur_ecran - ball_rayon :
-      ball_speed_x *= -1
+      # récupère la liste des touches claviers appuyeées sous la forme d'une liste de booléens
+      KeysPressed = pygame.key.get_pressed()
 
+      # LOGIQUE
+      # déplacement du palet gauche
 
+      if KeysPressed[pygame.K_UP]:
+          raquette_G_y -= 3
 
-   # AFFICHAGE
-   # Dessine le fond
-   screen.fill(BLACK)
-   Mur()
-   Raquette(raquette_G_x, raquette_G_y)
-
-   Balle(ball_x,ball_y)
-
-   #  dessine le texte dans une zone de rendu à part
-   texte = "Votre score : " + str(score) + " Vie : " + str(vie)
-   if score == 15 :
-      texte = "Joueur GAGNANT"
-      Termine=True
-   if vie<=0:
-      texte = 'PERDU' 
-      Termine=True
+      if KeysPressed[pygame.K_DOWN]:
+          raquette_G_y += 3
 
 
-   zone = police.render( texte, True, GREEN)
-   # affiche la zone de rendu au dessus de fenetre de jeu
-   screen.blit(zone,(280,10))
+      if raquette_G_y < 0 :
+          raquette_G_y = 0
+
+
+      if raquette_G_y > hauteur_ecran - hauteur_raquette :
+          raquette_G_y = hauteur_ecran - hauteur_raquette
+
+      # Déplacement de la balle
+      ball_x += ball_speed_x
+      ball_y += ball_speed_y
+
+      if ball_y < ball_rayon or ball_y > hauteur_ecran - ball_rayon :
+          ball_speed_y *= -1
+
+      # collision entre la balle et le palet de gauche
+      if ball_x  <  dist_mur + largeur_raquette + ball_rayon :
+          if ball_y > raquette_G_y  and  ball_y  <  raquette_G_y + hauteur_raquette :
+              ball_speed_x *= -1
+              score+=1
+            
+
+
+      # collision avec les murs gauche et droit
+      if ball_x < ball_rayon :
+          ball_x = int(largeur_ecran / 2)
+          ball_y = int(hauteur_ecran / 2)
+          vie-=1
+          
+
+      if ball_x > largeur_ecran - ball_rayon :
+          ball_speed_x *= -1
 
 
 
-   # Bascule l'image dessinée à l'écran
-   pygame.display.flip()
+      # AFFICHAGE
+      # Dessine le fond
+      screen.fill(BLACK)
+      Mur()
+      Raquette(raquette_G_x, raquette_G_y)
 
-    # Demande à pygame de se caler sur 30 FPS
-   clock.tick(30)
+      Balle(ball_x,ball_y)
 
-screen.fill( 'black')
-texte = "Votre score est de {} points".format(score)
-affiche_texte_centre(texte,150)
-affiche_texte_centre("Appuyez sur une touche pour terminer", 200)
-attente()
-
-# Ferme la fenêtre
-del(police)
-pygame.quit()
+      #  dessine le texte dans une zone de rendu à part
+      texte = "Votre score : " + str(score) + " Vie : " + str(vie)
+      if score == 15 :
+          texte = "Joueur GAGNANT"
+          Termine=True
+      if vie<=0:
+          texte = 'PERDU' 
+          Termine=True
 
 
-```
+      zone = police.render( texte, True, GREEN)
+      # affiche la zone de rendu au dessus de fenetre de jeu
+      screen.blit(zone,(280,10))
+
+
+
+      # Bascule l'image dessinée à l'écran
+      pygame.display.flip()
+
+        # Demande à pygame de se caler sur 30 FPS
+      clock.tick(30)
+
+    screen.fill( 'black')
+    texte = "Votre score est de {} points".format(score)
+    affiche_texte_centre(texte,150)
+    affiche_texte_centre("Appuyez sur une touche pour terminer", 200)
+    attente()
+
+    # Ferme la fenêtre
+    del(police)
+    pygame.quit()
+
+
+    ```
 
 ### Le jeu Pong en lui-même
 
-A vous.
+!!! exo "A vous"
+  Faites votre propre jeu avec une deuxième raquette, meilleur gestion des rebonds, changement de vitesses....
 
 ## SNAKE en Python, le plus simplement possible ![](data/niveau2.png){width=25px}
 
@@ -739,12 +744,8 @@ Dans la boucle infinie, avant l'horloge :
 
 ```python
   for elt in snake[1:]:
-      pygame.draw.rect(fenetre, VERT,
-                       (elt[0] * BLOC, elt[1] * BLOC,
-                        BLOC, BLOC))
-  pygame.draw.rect(fenetre, JAUNE,
-                   (snake[0][0] * BLOC, snake[0][1] * BLOC,
-                    BLOC, BLOC))
+      pygame.draw.rect(fenetre, VERT, (elt[0] * BLOC, elt[1] * BLOC,  BLOC, BLOC))
+  pygame.draw.rect(fenetre, JAUNE, (snake[0][0] * BLOC, snake[0][1] * BLOC, BLOC, BLOC))
 ```
 
 Le corps est vert et la tête jaune.
@@ -853,8 +854,7 @@ Il meurt :
 
 Le jeu n'est pas fluide.
 
-On va mettre à jour les éléments du jeux toutes les 1.5 secondes
-et afficher 30 frames par secondes.
+On va mettre à jour les éléments du jeux toutes les 1.5 secondes et afficher 30 frames par secondes.
 
 Il nous faut deux variables supplémentaires :
 
@@ -880,8 +880,7 @@ Dans la boucle infinie
 ```python
   if compteur == MAJ:
     compteur = 0
-    head = [snake[0][0] + direction[0],
-            snake[0][1] + direction[1]]
+    head = [snake[0][0] + direction[0], snake[0][1] + direction[1]]
     # mettre les autres événements concernant le snake
 
   # On augmente le compteur
@@ -963,186 +962,371 @@ On peut faire beaucoup plus court mais c'est déjà très simple
   2. On effectue les calculs (nouvelle tête, collisions etc.)  
   3. On met à jour les éléments graphiques  
 
+??? check "Code final"
+    ```python
+    """
+    Snake simple
+    Snake réalisé "simplement" en Pygame avec Python 3.
+    Nécessite Pygame et Python 3.7
+    """
+    # -*- coding: utf-8 -*-
 
+    # pour choisir où faire apparaître la nouvelle pomme
+    from random import randint
+    # la librairie pygame
+    import pygame
+    # afin de quitter le jeu proprement
+    from pygame.locals import *
+
+
+    # Les dimensions de la fenêtre
+    HAUTEUR = 600  # hauteur de la fenetre
+    LARGEUR = 600  # largeur de la fenetre
+    # Ainsi que celle d'un carré à l'écran : 20 pixels
+    BLOC = 20
+
+    # Les couleurs utilisées
+    NOIR = (0, 0, 0)  # fond
+    ROUGE = (193, 68, 51)  # pomme
+    JAUNE = (208, 210, 62)  # tête
+    VERT = (97, 195, 73)  # corps
+    CYAN = (51, 133, 193)  # texte
+
+    # Vitesse de rafaîchissement du jeu
+    FPS = 60
+    # On effectue les calculs toutes les 15 frames
+    MAJ = 15
+
+
+    ############################################################
+    #####################   Fonctions             ##############
+    ############################################################
+
+
+    def drawText(text, font, surface, x, y):
+        '''
+        Dessine du texte à l'écran
+        @param text: (str) le texte
+        @param font: (pygame.font) la police
+        @param surface: (pygame.surface) la surface sur laquelle écrire
+        @param x, y: (int) les coordonnées du texte
+        '''
+        textobj = font.render(text, 1, CYAN)
+        textrect = textobj.get_rect()
+        textrect.topleft = (x, y)
+        surface.blit(textobj, textrect)
+
+
+    ############################################################
+    #####################   GAME INITIALISATION   ##############
+    ############################################################
+
+
+    # pygame
+    # les éléments indispensables sont init, time.Clock()  et un
+    # display
+    pygame.init()
+    horloge = pygame.time.Clock()
+    fenetre = pygame.display.set_mode((LARGEUR, HAUTEUR))
+    # titre de la fenêtre
+    pygame.display.set_caption('Snake')
+
+    # taille et type de la fonte
+    font = pygame.font.SysFont(None, 48)
+
+    # on met immédiatement à jour avant de commencer
+    pygame.display.update()
+
+    ############################################################
+    #####################   GAME LOOP    #######################
+    ############################################################
+
+    # les éléments du jeu
+    # le serpent est un tableau à 2 dimensions.
+    # le premier est la tête, les suivants le corps
+    # chaque élément est une liste de cooordonnées [abs, ord]
+    snake = [[3, 3], [2, 3], [1, 3]]
+    direction = (1, 0)
+    pomme = [8, 3]
+
+    # le score est un entier
+    score = 0
+
+    # compteur de frame pour les mises à jour
+    compteur = 0
+
+    while True:
+        # Saisies de l'utilisateur
+
+        # quitter le jeu
+        for event in pygame.event.get():
+            if event.type == QUIT:
+                pygame.quit()
+
+            if event.type == KEYDOWN:
+                if event.key == K_ESCAPE:
+                    pygame.quit()
+
+        # déplacer le serpent
+        key = pygame.key.get_pressed()
+        if key:
+            if key[pygame.K_UP]:
+                # on change la direction vers le haut
+                direction = (0, -1)
+            if key[pygame.K_DOWN]:
+                # on change la direction vers le bas
+                direction = (0, 1)
+            if key[pygame.K_LEFT]:
+                # on change la direction vers la gauche
+                direction = (-1, 0)
+            if key[pygame.K_RIGHT]:
+                # on change la direction vers la droite
+                direction = (1, 0)
+
+        # Calculs
+        # ils ne sont effectués que toutes les 15 frames
+        if compteur == MAJ:
+            # on reset le compteur
+            compteur = 0
+
+            # la nouvelle tête est l'ancienne, déplacée dans la direction
+            head = [snake[0][0] + direction[0], snake[0][1] + direction[1]]
+
+            # on l'insère au début
+            snake.insert(0, head)
+
+            # collision tête / pomme
+            if snake[0] == pomme:
+                # on augmente le score
+                score += 1
+                # on déplace la pomme en dehors du corps
+                while pomme in snake:
+                    # nécessaire de tirer plusieurs fois si on n'a
+                    # pas de chance !
+                    pomme = [randint(0, LARGEUR / BLOC - 1),
+                            randint(0, HAUTEUR / BLOC - 1)]
+            else:
+                # si le serpent n'a pas mangé la pomme, il diminue
+                snake.pop(-1)
+
+            # mort du serpent
+            # s'il touche son corps
+            # ou s'il quitte l'écran
+            if head in snake[1:] \
+                    or head[0] < 0 \
+                    or head[0] > LARGEUR / BLOC - 1 \
+                    or head[1] < 0 \
+                    or head[1] > HAUTEUR / BLOC - 1:
+                pygame.quit()
+
+        # Graphiques
+
+        # d'abord on remplit de noir pour cacher les images précédentes
+        fenetre.fill(NOIR)
+        # Ensuite on dessine le corps en vert
+        for elt in snake[1:]:
+            pygame.draw.rect(fenetre, VERT,
+                            (elt[0] * BLOC, elt[1] * BLOC, BLOC, BLOC))
+
+        # la tête en jaune
+        pygame.draw.rect(fenetre, JAUNE,
+                        (snake[0][0] * BLOC, snake[0][1] * BLOC, BLOC, BLOC))
+
+        # la pomme en rouge
+        pygame.draw.rect(fenetre, ROUGE,
+                        (pomme[0] * BLOC, pomme[1] * BLOC, BLOC, BLOC))
+
+        # le score dans le coin de l'écran
+        drawText(str(score), font, fenetre, 0.2 * LARGEUR, 0.2 * HAUTEUR)
+
+        # On met pygame à jour
+        # en avançant l'horloge
+        horloge.tick(FPS)
+        # en dessinant les éléments
+        pygame.display.update()
+        # et comptant les frames
+        compteur += 1
+    ```
 ## Mini-Tetris ![](data/niveau3.png){width=25px}
 
 !!! histoire "Un peu d’histoire"
   Tetris est un jeu vidéo entre arcade et puzzle, conçu par Alekseï Pajitnov en juin 1984. Le succès devient planétaire et tous les consoles qui suivront posséderont leur version de Tetris. Il fait partie des jeux les plus addictifs de l’époque, avec Pacman.
 
-```python
-import pygame
-import copy
-import random
+??? check "Code mini-tetris - Le début"
+    ```python
+    import pygame
+    import copy
+    import random
 
-# initialisation de l'écran de jeu
-pygame.init()
+    # initialisation de l'écran de jeu
+    pygame.init()
 
-# Definit des couleurs RGB
-NOIR  = (0, 0, 0)
-VERT  = (0, 255, 0)
-ROUGE = (255, 0, 0)
-BLEU  = (0 , 0 , 255)
-GRIS  = (128,128,128)
-CYAN  = (0,255,255)
-JAUNE = (255,255,0)
-ORANGE= (255,150,0)
-VERT  = (0,255,255)
-MAUVE = (180,80,255)
-LCoul = [ NOIR, GRIS, CYAN, JAUNE, MAUVE, ORANGE, BLEU, ROUGE, VERT ]
+    # Definit des couleurs RGB
+    NOIR  = (0, 0, 0)
+    VERT  = (0, 255, 0)
+    ROUGE = (255, 0, 0)
+    BLEU  = (0 , 0 , 255)
+    GRIS  = (128,128,128)
+    CYAN  = (0,255,255)
+    JAUNE = (255,255,0)
+    ORANGE= (255,150,0)
+    VERT  = (0,255,255)
+    MAUVE = (180,80,255)
+    LCoul = [ NOIR, GRIS, CYAN, JAUNE, MAUVE, ORANGE, BLEU, ROUGE, VERT ]
 
-# PIECES
-P_I = [ [0,2,0],
-        [0,2,0],
-        [0,2,0] ]
+    # PIECES
+    P_I = [ [0,2,0],
+            [0,2,0],
+            [0,2,0] ]
 
-P_T = [ [0,0,0],
-        [4,4,4],
-        [0,4,0]]
+    P_T = [ [0,0,0],
+            [4,4,4],
+            [0,4,0]]
 
-P_O = [ [3,3,0],
-        [3,3,0],
-        [0,0,0] ]
+    P_O = [ [3,3,0],
+            [3,3,0],
+            [0,0,0] ]
 
-P_L = [ [0,0,0],
-        [5,5,5],
-        [5,0,0] ]
+    P_L = [ [0,0,0],
+            [5,5,5],
+            [5,0,0] ]
 
-P_J = [ [0,0,0],
-        [6,6,6],
-        [0,0,6]]
+    P_J = [ [0,0,0],
+            [6,6,6],
+            [0,0,6]]
 
-P_Z = [ [7,7,0],
-        [0,7,7],
-        [0,0,0] ]
+    P_Z = [ [7,7,0],
+            [0,7,7],
+            [0,0,0] ]
 
-P_S = [ [0,8,8],
-        [8,8,0],
-        [0,0,0]]
+    P_S = [ [0,8,8],
+            [8,8,0],
+            [0,0,0]]
 
-LP  = [ P_I, P_T, P_O, P_L, P_J, P_Z, P_S]
-
-
-def AffPiece():
-    P = LP[idpiece]
-    for dx in range(3):
-        for dy in range(3):
-            c = P[dy][dx]
-            if c != 0:
-               idcoul = int(c)
-               xx = (px+dx) * LCASE
-               yy = (py+dy) * LCASE
-               R = (xx,yy,LCASE,LCASE)
-               pygame.draw.rect(screen,LCoul[idcoul],R)
+    LP  = [ P_I, P_T, P_O, P_L, P_J, P_Z, P_S]
 
 
-
-# DECORS
-LIGNE_VIDE = [1,1] + [0]*11 + [1]*2
-DECOR = []
-for i in range(16):
-    DECOR.append(LIGNE_VIDE.copy())
-DECOR.append([1]*15)
-DECOR.append([1]*15)
-
-LCASE = 20
-def AfficheDecors():
-    for y in range(len(DECOR)) :
-        for x in range(len(DECOR[0])):
-            xx = x * LCASE
-            yy = y * LCASE
-            id = DECOR[y][x]
-
-            pygame.draw.rect(screen,LCoul[id],(xx,yy,LCASE,LCASE))
-            pygame.draw.rect(screen,NOIR,(xx,yy,LCASE,LCASE),1)
-
-
-# Initialise la fenêtre de jeu
-screenWidth = 300
-screenHeight = 360
-screen = pygame.display.set_mode((screenWidth,screenHeight))
-pygame.display.set_caption("MINI TETRIS")
-
-
-# Gestion du rafraichissement de l'écran
-clock = pygame.time.Clock()
-# Cache le pointeur de la souris
-pygame.mouse.set_visible(0)
-
-
-# variables d'état
-# piece courante
-idpiece = 1
-px  = 6
-py  = 0
-rot = 0
-#Touches
-KEyDown  = 0
-KeyUp    = 0
-KeyLeft  = 0
-KeyRight = 0
-
-#compteur d'affichage
-comptage = 0
-
-
-# Le jeu continue tant que l'utilisateur ne ferme pas la fenêtre
-Termine = False
-
-# Boucle principale de jeu
-while not Termine:
-   # recupère la liste des évènements du joueur
-   event = pygame.event.Event(pygame.USEREVENT)
-
-   # EVENEMENTS
-   # détecte le clic sur le bouton close de la fenêtre
-   for event in pygame.event.get():
-      if event.type == pygame.QUIT:
-         Termine = True
-
-   # récupère la liste des touches claviers appuyeées sous la forme d'une liste de booléens
-   KeysPressed = pygame.key.get_pressed()
-
-   # LOGIQUE
-   # déplacement de la pièce
-   comptage += 1
-   if comptage % 20 == 0 :
-           py += 1
-
-
-   if KeysPressed[pygame.K_UP] and KeyUp == 0:
-        pass
-
-   if KeysPressed[pygame.K_LEFT] and KeyLeft == 0:
-        pass
-
-   if KeysPressed[pygame.K_RIGHT] and KeyRight == 0:
-        pass
-
-   if KeysPressed[pygame.K_DOWN] and KeyDown == 0:
-        pass
-
-
-   KeyDown  = KeysPressed[pygame.K_DOWN]
-   KeyUp    = KeysPressed[pygame.K_UP]
-   KeyLeft  = KeysPressed[pygame.K_LEFT]
-   KeyRight = KeysPressed[pygame.K_RIGHT]
+    def AffPiece():
+        P = LP[idpiece]
+        for dx in range(3):
+            for dy in range(3):
+                c = P[dy][dx]
+                if c != 0:
+                  idcoul = int(c)
+                  xx = (px+dx) * LCASE
+                  yy = (py+dy) * LCASE
+                  R = (xx,yy,LCASE,LCASE)
+                  pygame.draw.rect(screen,LCoul[idcoul],R)
 
 
 
-   # AFFICHAGE
-   # Dessine le fond
-   AfficheDecors()
-   AffPiece()
+    # DECORS
+    LIGNE_VIDE = [1,1] + [0]*11 + [1]*2
+    DECOR = []
+    for i in range(16):
+        DECOR.append(LIGNE_VIDE.copy())
+    DECOR.append([1]*15)
+    DECOR.append([1]*15)
 
-   # Bascule l'image dessinée à l'écran
-   pygame.display.flip()
+    LCASE = 20
+    def AfficheDecors():
+        for y in range(len(DECOR)) :
+            for x in range(len(DECOR[0])):
+                xx = x * LCASE
+                yy = y * LCASE
+                id = DECOR[y][x]
 
-    # Demande à pygame de se caler sur 30 FPS
-   clock.tick(30)
+                pygame.draw.rect(screen,LCoul[id],(xx,yy,LCASE,LCASE))
+                pygame.draw.rect(screen,NOIR,(xx,yy,LCASE,LCASE),1)
 
-# Ferme la fenêtre
-pygame.quit()
-```
+
+    # Initialise la fenêtre de jeu
+    screenWidth = 300
+    screenHeight = 360
+    screen = pygame.display.set_mode((screenWidth,screenHeight))
+    pygame.display.set_caption("MINI TETRIS")
+
+
+    # Gestion du rafraichissement de l'écran
+    clock = pygame.time.Clock()
+    # Cache le pointeur de la souris
+    pygame.mouse.set_visible(0)
+
+
+    # variables d'état
+    # piece courante
+    idpiece = 1
+    px  = 6
+    py  = 0
+    rot = 0
+    #Touches
+    KEyDown  = 0
+    KeyUp    = 0
+    KeyLeft  = 0
+    KeyRight = 0
+
+    #compteur d'affichage
+    comptage = 0
+
+
+    # Le jeu continue tant que l'utilisateur ne ferme pas la fenêtre
+    Termine = False
+
+    # Boucle principale de jeu
+    while not Termine:
+      # recupère la liste des évènements du joueur
+      event = pygame.event.Event(pygame.USEREVENT)
+
+      # EVENEMENTS
+      # détecte le clic sur le bouton close de la fenêtre
+      for event in pygame.event.get():
+          if event.type == pygame.QUIT:
+            Termine = True
+
+      # récupère la liste des touches claviers appuyeées sous la forme d'une liste de booléens
+      KeysPressed = pygame.key.get_pressed()
+
+      # LOGIQUE
+      # déplacement de la pièce
+      comptage += 1
+      if comptage % 20 == 0 :
+              py += 1
+
+
+      if KeysPressed[pygame.K_UP] and KeyUp == 0:
+            pass
+
+      if KeysPressed[pygame.K_LEFT] and KeyLeft == 0:
+            pass
+
+      if KeysPressed[pygame.K_RIGHT] and KeyRight == 0:
+            pass
+
+      if KeysPressed[pygame.K_DOWN] and KeyDown == 0:
+            pass
+
+
+      KeyDown  = KeysPressed[pygame.K_DOWN]
+      KeyUp    = KeysPressed[pygame.K_UP]
+      KeyLeft  = KeysPressed[pygame.K_LEFT]
+      KeyRight = KeysPressed[pygame.K_RIGHT]
+
+
+
+      # AFFICHAGE
+      # Dessine le fond
+      AfficheDecors()
+      AffPiece()
+
+      # Bascule l'image dessinée à l'écran
+      pygame.display.flip()
+
+        # Demande à pygame de se caler sur 30 FPS
+      clock.tick(30)
+
+    # Ferme la fenêtre
+    pygame.quit()
+    ```
 
 Le jeu est fonctionnel que dans une petite partie : une pièce descend mais il est impossible de la déplacer.
 
@@ -1259,7 +1443,7 @@ def AfficheDecors():
 Le décor est stocké dans une grille de 15 cases de large pour 18 de haut. Comme la largeur des cases fait 20 pixels, on a donc une fenêtre de taille 300 $\times$ 360 pixels. On définit une constante `LIGNE_VIDE` composée de 2 colonnes sur la gauche et sur la droite, qui marquent les bords avec des cases grises,donc de code couleur associé 1. Les 11 cases centrales vides sont remplies avec la valeur 0? Le décor est défini comme une liste de 18 lignes.  
 Les 16 premières sont des lignes vides, et les 2 dernières sont remplies de 1. Pour créer les 16 lignes vides, nous utilisons la liste `LIGNE_VIDE` qu'on copie avec la fonction `copy()`. Ceci est très important car chaque ligne doit être indépendante !\\
 
-![](data/tetris_interface.png)
+![](data/tetris_interface.png){:.center}
 
 
 Les valeurs sont stockées dans une liste de listes intitulée `DECOR`. Ainsi `len(DECOR)` correspond au nombre de lignes et `len(DECOR[0])` au nombre de colonnes du jeu.  
@@ -1283,7 +1467,6 @@ On déplace la pièce courante avec une technique particulière. On utilise une 
 Dans la partie gérant la logique du jeu, on trouve cette ligne
 
 ```python
-### Q6 ###
    if KeysPressed[pygame.K_UP] and KeyUp == 0:
         pass
 ```
@@ -1291,63 +1474,66 @@ Dans la partie gérant la logique du jeu, on trouve cette ligne
 
 La variable `KeyUp` stocke l'état de la touche `[Flèche Haut]` lors de l'affichage précédent. Dans cette condition, on détecte si le joueur vient d'appuyer sur cette touche. Pour l'instant cette condition ne déclenche rien mais cela va changer par la suite.
 
-!!! exo "Gestion de la rotation"
+!!! fabquestion "Gestion de la rotation"
+
     Vous allez gérer la rotation de la pièce courante. Tout d'abord après la condition gérant l'appui sur la touche `[Flèche Haut]`, vous allez modifier la valeur de la variable `rot`. Chaque appui doit augmenter la variable `rot` de 1. Il serait judicieux d'appliquer un modulo 4 pour faire en sorte que cette variable ne puisse prendre que des valeurs entre 0 et 3. Dans le jeu orignal, les pièces ne tournent que dans un sens.
 
     === "Question 1"
-      Créez une fonction `Rot90Droite(P)` qui, à partir d'une pièce 3 $\times$ 3 tourne cette pièce de $90^{\circ}$. La pièce P correspond à une liste de listes, cette pièce ne doit pas être modifiée. Vous allez construire une nouvelle pièce et la retourner. Voici quelques conseils :      
+        Créez une fonction `Rot90Droite(P)` qui, à partir d'une pièce 3 $\times$ 3 tourne cette pièce de $90^{\circ}$. La pièce P correspond à une liste de listes, cette pièce ne doit pas être modifiée. Vous allez construire une nouvelle pièce et la retourner. Voici quelques conseils :      
       
-      - Pour créer une nouvelle pièce, vous pouvez l'initialiser à partir d'une liste de listes contenant des 0 ou appliquer la fonction `copy.deepcopy()` sur la pièce P actuelle. Le contenu n'a pas d'importance, car de toute façon, il va être écrasé  
-      - Il faut programmer la rotation de $90^{\circ}$. Voici un exemple avec la pièce P en entrée et la pièce R à calculer à droite.  
-      Dans tous les cas, la case centrale ne change pas.
+        - Pour créer une nouvelle pièce, vous pouvez l'initialiser à partir d'une liste de listes contenant des 0 ou appliquer la fonction `copy.deepcopy()` sur la pièce P actuelle. Le contenu n'a pas d'importance, car de toute façon, il va être écrasé  
+        - Il faut programmer la rotation de $90^{\circ}$. Voici un exemple avec la pièce P en entrée et la pièce R à calculer à droite.  
+        Dans tous les cas, la case centrale ne change pas.
 	
-      ![](data/piece.png)
+        ![](data/piece.png)
 
-      - Option 1 : écrivez une instruction pour chacune des huit cases. Par exemple, pour la case 1 en haut à gauche : `R[0][0]=P[2][0]`, et pour la case 2 : `R[0][1]=P[1][0]`.  
-      - Option 2 : faites une liste des positions des huit cases des bords, ceci en tournant dans le sens des aiguilles d'une montre : `L=((0,0) , (1,0) , (2,0), (2,1) ( (2,2) , (1,2) ...]` Ainsi en créant une boucle for d'indice i allant de 0 à 7 , vous savez que la case à la position `R[i]` doit être initialisée avec la case `L[(i-2)%8]`.
+        - Option 1 : écrivez une instruction pour chacune des huit cases. Par exemple, pour la case 1 en haut à gauche : `R[0][0]=P[2][0]`, et pour la case 2 : `R[0][1]=P[1][0]`.  
+        - Option 2 : faites une liste des positions des huit cases des bords, ceci en tournant dans le sens des aiguilles d'une montre : `L=((0,0) , (1,0) , (2,0), (2,1) ( (2,2) , (1,2) ...]` Ainsi en créant une boucle for d'indice i allant de 0 à 7 , vous savez que la case à la position `R[i]` doit être initialisée avec la case `L[(i-2)%8]`.
 	
     === "Question 2"
-      Créez une fonction `Rotn(P,nb)` qui calcul la pièce P après nb rotations.  
-      Pour cela :  
+        Créez une fonction `Rotn(P,nb)` qui calcul la pièce P après nb rotations.  
+        Pour cela :  
 
-      - Initialiser une pièce 3 $\times$ 3 sous forme de liste de listes. Il  judicieux d'utiliser la fonction `copy.deepcopy()` pour cloner la pièce P, car si la variable nb vaut 0, il n'y aura aucune rotation effectuée et c'est la copie de la pièce initiale qui sera retournée.  
-      - Effectuez autant de rotations que nécessaire. Pour cela utiliser la fonction `Rot90Droite()`.  
-      - Retournez le résultat.
+        - Initialiser une pièce 3 $\times$ 3 sous forme de liste de listes. Il est judicieux d'utiliser la fonction `copy.deepcopy()` pour cloner la pièce P, car si la variable nb vaut 0, il n'y aura aucune rotation effectuée et c'est la copie de la pièce initiale qui sera retournée.  
+        - Effectuez autant de rotations que nécessaire. Pour cela utiliser la fonction `Rot90Droite()`.  
+        - Retournez le résultat.
 		
     === "Question 3"
-      Modifier la fonction `AffPiece()` pour qu'elle tienne compte de la variable rot et affichez la pièce en tenant compte de ce paramètre. Maintenant, lorsque vous appuyer sur la touche [Flèche Haut], vous devez voir la pièce tourner.
+        Modifier la fonction `AffPiece()` pour qu'elle tienne compte de la variable rot et affichez la pièce en tenant compte de ce paramètre. Maintenant, lorsque vous appuyer sur la touche [Flèche Haut], vous devez voir la pièce tourner.
 	
-!!! exo "Déplacement latéraux"
-  === "Question 1"
-    Écrivez une fonction `DetectColission()` qui détermine suivant une pièce, une rotation et une position (x,y) données s'il y a collision avec le décor ou non. Voici quelques conseils :   
-    - Appliquer la rotation sur la pièce pour obtenir sa bonne orientation  
-    - Créez une double boucle d'indices dx et dy pour parcourir les cases de la pièce.  
-    - Comparer chaque case `(dx,dy)` de la pièce avec la case `(x+dx,y+dy)` du décor. Si les deux cases sont non vides, alors il y a collision, et retournez vrai dans ce cas.  
+!!! fabquestion  "Déplacement latéraux"
+    === "Question 1"
+        Écrivez une fonction `DetectColission()` qui détermine suivant une pièce, une rotation et une position (x,y) données s'il y a collision avec le décor ou non. Voici quelques conseils : 
+         
+        - Appliquer la rotation sur la pièce pour obtenir sa bonne orientation  
+        - Créez une double boucle d'indices dx et dy pour parcourir les cases de la pièce.  
+        - Comparer chaque case `(dx,dy)` de la pièce avec la case `(x+dx,y+dy)` du décor. Si les deux cases sont non vides, alors il y a collision, et retournez vrai dans ce cas.  
 	  
-  === "Question 2"
-    Complétez le code gérant l'appui sur les touches `[Flèche Droite]` et `[Flèche Gauche]`. Par exemple, lors de l'appui sur `[Flèche Gauche]`, vérifiez d'abord que la futur place de la pièce n'est pas en collision avec le décor. Si aucune collision n'est détectée, alors modifier la position de la pièce en faisant : $px-=1$.
+    === "Question 2"
+        Complétez le code gérant l'appui sur les touches `[Flèche Droite]` et `[Flèche Gauche]`. Par exemple, lors de l'appui sur `[Flèche Gauche]`, vérifiez d'abord que la futur place de la pièce n'est pas en collision avec le décor. Si aucune collision n'est détectée, alors modifier la position de la pièce en faisant : $px-=1$.
 
-!!! exo "Gestion de la descente"
-  === "Question 1"
-    Écrivez une fonction `FusionDecor()` qui, suivant une pièce, une rotation et une position (x,y) donnée, fixe cette pièce dans le décor. Cette fonction est comparable à la fonction `DetectCollision()`, sauf qu'il n'y a pas à faire de test, mais juste un transfert des cases colorées de la pièce vers les cases de la grille.  
+!!! fabquestion  "Gestion de la descente"
+    === "Question 1"
+        Écrivez une fonction `FusionDecor()` qui, suivant une pièce, une rotation et une position (x,y) donnée, fixe cette pièce dans le décor. Cette fonction est comparable à la fonction `DetectCollision()`, sauf qu'il n'y a pas à faire de test, mais juste un transfert des cases colorées de la pièce vers les cases de la grille.  
     
-  === "Question 2"
-  	Écrivez une fonction `NextPiece()` qui initialise une nouvelle pièce. Pour cela, grâce au package `random`, choisissez une pièce au hasard. Sa position sera forcément la ligne 0 et au milieu de la grille, c'est-à-dire à l'abscisse 6. Par contre vous pouvez choisir sa rotation aléatoirement.  
+    === "Question 2"
+  	    Écrivez une fonction `NextPiece()` qui initialise une nouvelle pièce. Pour cela, grâce au package `random`, choisissez une pièce au hasard. Sa position sera forcément la ligne 0 et au milieu de la grille, c'est-à-dire à l'abscisse 6. Par contre vous pouvez choisir sa rotation aléatoirement.  
     
-  === "Question 3"
-    Tous les 20 affichages, la pièce courante descend automatiquement d'une ligne, gérez la collision avec le décor. Lorsque la pièce est susceptible de descendre, examinez si sa position futur produit une collision. Dans ce cas-là, elle ne doit pas descendre, car elle est stoppée par quelque chose. Appelez cette fonction `FusionDecor()` pour figer la pièce.  
-    Après cela générez une nouvelle pièce.  
+    === "Question 3"
+        Tous les 20 affichages, la pièce courante descend automatiquement d'une ligne, gérez la collision avec le décor. Lorsque la pièce est susceptible de descendre, examinez si sa position futur produit une collision. Dans ce cas-là, elle ne doit pas descendre, car elle est stoppée par quelque chose. Appelez cette fonction `FusionDecor()` pour figer la pièce.  
+        Après cela générez une nouvelle pièce.  
   
-  === "Question 4"
-    Vous pouvez maintenant gérer l'appui sur la touche `[Flèche BAS]`. Le mécanisme est identique à celui de la descente automatique. 
+    === "Question 4"
+        Vous pouvez maintenant gérer l'appui sur la touche `[Flèche BAS]`. Le mécanisme est identique à celui de la descente automatique. 
 
-  === "Question 5"
-    Il reste un mécanisme à mettre en  place : le retrait des lignes pleines. Cet événement peut arriver après la fusion d'une pièce avec le décor. Il se peut qu'une ou plusieurs lignes pleines apparaissent. Écrivez une fonction `RetraitLigne()` dont l'objectif est de retirer l'ensemble des lignes pleines du décor.  
-    - Créez une boucle for avec un indice partant de 0 jusqu'à 15 compris. Les deux dernières lignes ne doivent pas être traitées.  
-    - Faites un calcul pour trouver la valeur de l'indice qui parcourt les lignes en sens inverse, c'est-à-dire de l'indice 15 à 0.  
-    - Testez la ligne associée à ce nouvel indice pour savoir si elle est pleine :  
-      - Pour cela, il suffit de détecter si une valeur 0 est présente dans la ligne courante. utilisez le test `0 in MaLigneCourante` qui retourne Vrai ou Faux  
-      - Si la ligne est pleine, retirez-la grâce à la fonction `DECOR.pop(index)`.  
-      - Une fois le parcours terminé, des lignes ont pu être supprimées. Ainsi tant que le nombre de lignes dans la liste `DECOR` est insuffisant, rajoutez des lignes vides à l'indice 0 grâce à la fonction `DECOR.insert(0,...)`. Pensez à insérer une ligne vide qui soit indépendante de la constante `LIGNE_VIDE` définie dans le programme.
+    === "Question 5"
+        Il reste un mécanisme à mettre en  place : le retrait des lignes pleines. Cet événement peut arriver après la fusion d'une pièce avec le décor. Il se peut qu'une ou plusieurs lignes pleines apparaissent. Écrivez une fonction `RetraitLigne()` dont l'objectif est de retirer l'ensemble des lignes pleines du décor.  
+
+        - Créez une boucle for avec un indice partant de 0 jusqu'à 15 compris. Les deux dernières lignes ne doivent pas être traitées.  
+        - Faites un calcul pour trouver la valeur de l'indice qui parcourt les lignes en sens inverse, c'est-à-dire de l'indice 15 à 0.  
+        - Testez la ligne associée à ce nouvel indice pour savoir si elle est pleine :  
+            - Pour cela, il suffit de détecter si une valeur 0 est présente dans la ligne courante. utilisez le test `0 in MaLigneCourante` qui retourne Vrai ou Faux  
+            - Si la ligne est pleine, retirez-la grâce à la fonction `DECOR.pop(index)`.  
+            - Une fois le parcours terminé, des lignes ont pu être supprimées. Ainsi tant que le nombre de lignes dans la liste `DECOR` est insuffisant, rajoutez des lignes vides à l'indice 0 grâce à la fonction `DECOR.insert(0,...)`. Pensez à insérer une ligne vide qui soit indépendante de la constante `LIGNE_VIDE` définie dans le programme.
 		
 		
