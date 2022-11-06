@@ -358,44 +358,6 @@ Ceci est bien un polynôme du second degré, ce qui confirme que la complexité 
     !!! aide
             Comme une *nouvelle liste* est crée, on utilisera l'instruction `return` pour la renvoyer vers le programme principal. 
 
-!!! exo "Comparaison de temps d'exécution"
-
-    1. Ecrire une fonction `hasard(n,mini,maxi)` qui renvoie une liste de `n` nombres entiers tirés au sort entre `mini` et `maxi`.
-        
-        !!! aide
-            Utiliser la fonction `randint` du module random
-        
-    2. En utilisant le module `time` de Python, donner une estimation du temps d'exécution de l'algorithme du tri par sélection vu en cours lorsque la taille de la liste augmente. On pourra utiliser un tableau comme :
-
-        |Taille de la liste | Temps d'exécution|
-        |-------------------|------------------|
-        | $20\,000$ | ...... |
-        | $40\,000$ | ...... |
-        | $100\,000$ | ...... |
-        | .... | ...... |
-
-    3. En utilisant un tableur, tracer la courbe d'évolution du temps d'exécution en fonction de la taille de la liste. Le résultat était-il prévisible ? Justifier en citant un résultat du cours.
-
-    4. La méthode `sort` des listes de Python permet de trier une liste de Python, par exemple si `liste=[5,19,11,13]`, après l'exécution de `liste.sort()`, le contenu de liste devient : `liste = [5,11,13,19]`. Faire un tableau de mesures de temps d'exécution de `sort` en faisant varier la longueur de la liste comme ci-dessus.
-
-    5. Avec le tableur, représenter sur le même graphique les mesures de temps d'exécution pour l'algorithme du tri par sélection et pour la méthode `sort`. Que remarquez-vous ?
-
-
-!!! exo "Compléxité"
-
-    1. Ecrire une fonction `cherche_min` qui prend en argument une liste et renvoie son minimum.
-
-    2. Pour une liste de $n$ éléments, quel sera le nombre maximal de comparaisons effectué par votre fonction `cherche_min`. En déduire sa complexité.
-
-    3. Mesurer le temps d'exécution de votre fonction pour une liste de $500\,000$ éléments, prédire le temps pour une liste de $1\,500\,000$.
-
-    2. Jérémy a mesuré que son implémentation du tri par insertion permet de trier une liste de $10\,000$ éléments en environ 0.3 secondes.
-
-        a. Estimer le temps nécessaire pour trier une liste de $200\,000$ éléments
-
-        b. Même question pour une liste de $500\,000$ éléments.
-        
-        c. Peut-on utiliser ce programme pour trier une liste de un milliard d'éléments ? Justifier
 
 !!! exo "Tri à bulles"
 
