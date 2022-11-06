@@ -87,7 +87,7 @@ Ces deux algorithmes ont pour particularité de :
 
 5. Tester cette fonction
 
-{{ IDE() }}
+
 
 ## Cours
 
@@ -310,7 +310,7 @@ Ceci est bien un polynôme du second degré, ce qui confirme que la complexité 
 
 ## Exercices
 
-!!! aide "Fonction `echange(liste,i,j)`:
+!!! aide "Fonction `echange(liste,i,j)`"
     ```python
     def echange(liste,i,j):
         liste[i],liste[j] = liste[j],liste[i]
