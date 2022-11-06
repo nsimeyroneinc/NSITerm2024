@@ -1,29 +1,11 @@
----
-title : Thème 1 - Structure de données
-subtitle: Listes, Piles et Files
-subsubtitle: Terminale NSI
-author : M.Meyroneinc-Condy
-numbersections: true
-fontsize: 10pt
-geometry:
-- top=20mm
-- left=20mm
-- right=20mm
-- heightrounded    
---- 
 
-Thème 1 - Structure de données
-===
+{% set num = 5 %}
+{% set titre = "Files et Piles"%}
+{% set theme = "sd" %}
+{% set niveau = "terminale"%}
 
-<br>
-<table  class="redTable">
-        <tr >
-            <th width="20%"; style="background-color: #3B444B;color:white;text-align:center;border:none;font-size:40pt;">
-            06
-            </th>
-            <th  width="80%"; style="text-align:center;border:none;font-size:25pt;">Listes, Piles et Files</th>
-        </tr>
-</table>
+{{ titre_chapitre(num,titre,theme,niveau)}}
+
 
 **Programme Terminale**  
 

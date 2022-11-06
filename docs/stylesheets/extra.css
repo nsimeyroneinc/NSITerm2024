@@ -50,6 +50,70 @@
   margin: 0 auto;
 }
 
+.sacdos {
+  color: darkorange;
+  font-size : 72pt;
+}
+
+.box {
+  line-height: 1.1;
+  font-family: monospace;
+}
+
+.barre {
+  position: relative;
+}
+.barre:before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 50%;
+  right: 0;
+  border-top: 1px solid;
+  border-color: inherit;
+  
+  -webkit-transform:rotate(-5deg);
+  -moz-transform:rotate(-5deg);
+  -ms-transform:rotate(-5deg);
+  -o-transform:rotate(-5deg);
+  transform:rotate(-5deg);
+}
+
+.pile-o {
+  font-family: monospace;
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  border-left: 2pt solid  black   ;
+  border-right: 2pt solid  black   ;
+  border-bottom: 2pt solid  black   ;
+  padding-bottom: 5pt;
+}
+
+
+.vert {
+  color : limegreen;
+}
+
+.rouge {
+  color : orangered;
+}
+
+
+.objet {
+  color: blue;
+  font-size : larger;
+}
+
+.numchapitre {
+  color : rgb(255, 166, 0);
+  background-color: rgb(55, 55, 144);
+  font-weight: bold;
+  padding-left: 5px;
+  padding-right: 2px;
+  text-align: left;
+}
+
+
 # light theme:
   --correction-color: #f82e2e;
 # dark theme:
@@ -448,12 +512,58 @@ body {
    counter-reset: h1 h2 h3;
 }
 
+.md-typeset h1 {
+  color: teal;
+  font-weight: bold;
+}
+/*
+.md-typeset h2 {
+  font-weight: 500;
+}
+
+.md-typeset h3 {
+  color: darkblue;
+}
+*/
+.numchapitre {
+color : rgb(228, 162, 40);
+background-color: teal;
+font-weight: bold;
+padding-left: 5px;
+padding-right: 2px;
+text-align: left;
+}
+/*
+.md-typeset h2 {
+  color: darkred;
+}
+*/
+
+.histoire {
+  color : maroon
+}
+
+.projet {
+  color : forestgreen
+}
+
+.python {
+  color : #306998
+}
+
+.typesconstruits {
+  color : rebeccapurple
+}
+
+
+/*
 h1 {
   background-color: teal;
   color:white;
   font-family: @@font_name@@;
   font-size: 12pt;
 }
+*/
 h2 {
   background-color: rgb(70, 70, 77);
   color:white;

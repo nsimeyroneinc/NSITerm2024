@@ -1,0 +1,14 @@
+num,enonce,reponseA,reponseB,reponseC,reponseD,bonne_reponse,domaine,chapitre,image
+1,"On applique l'algorithme du tri par sélection à la liste `[9,11,7,16]`, après la première étape, le contenu de la liste sera :","`[11,9,7,16]`","`[7,11,9,16]`","`[16,11,7,9]`",Aucune des propositions ci-dessus,B,Algorithmique,7,
+2,"On applique l'algorithme du tri par insertion à la liste `[9,11,7,16]`, quel sera le contenu de la liste après le premier échange ?","`[11,9,7,16]`","`[9,11,16,7]`","`[9,7,11,16]`",Aucune des propositions ci-dessus,C,Algorithmique,7,
+3,L'algorithme du tri par insertion a une complexité :,logarithmique,linéaire,quadratique,exponentielle,C,Algorithmique,7,
+4,"Un programme de tri par insertion prend environ 1 seconde pour trier une liste de $10\,000$ éléments, combien de temps prendra-t-il environ pour trier une liste de $100\,000$ éléments ?",1 seconde,10 secondes,100 secondes,1000 secondes,C,Algorithmique,7,
+5,"Quelles sont les deux lignes manquantes dans la fonction ci-dessus qui renvoie le minimum d'une liste non vide :
+```python linenums=""1""
+def min_liste(liste):
+    elt_min = ....
+    for elt in liste:
+        if elt<elt_min:
+            ......
+    return elt_min
+```",La ligne 2 est `elt_min=liste[1]` et la ligne 5 est `elt_min=elt`,La ligne 2 est `elt_min=liste[1]` et la ligne 5 est `elt=elt_min`,La ligne 2 est `elt_min=liste[0]` et la ligne 5 est `elt=elt_min`,La ligne 2 est `elt_min=liste[0]` et la ligne 5 est `elt_min=elt`,D,Algorithmique,7,

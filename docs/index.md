@@ -3,8 +3,7 @@ Ce site est dédié aux élèves de Terminales NSI du Lycée Murat à Issoire af
 Les notebooks sont corrigés et les cellules peuvent être copiées pour être testées dans vos notebooks Capytale.
 
 
-!!! info "Actualités"
-    - **Correction** des sujets BAC P.O.O disponibles  
+!!! info "Actualités" 
     - **Thème en cours** : [T3 - Routage](Archi_Materielle/T3_1_Routage.md)  
     - **[Correction](StructureDonnees/T2_2_Pile_File_BAC_Correction.md)** des exercices BAC Piles et Files disponibles. 
     
@@ -13,7 +12,7 @@ Les notebooks sont corrigés et les cellules peuvent être copiées pour être t
 
 !!! info  "Epreuve BAC 2023"  
     - Les épreuves de spécialité se dérouleront les 20 et 21 mars 2023 pour la N.S.I.  
-    - Les épreuves pratiques seront organisées la semaine suivante.
+    - Les épreuves pratiques seront organisées je Jeudi 30 mars 2023.
 
 Le sujet de l’épreuve écrite de la spécialité numérique et sciences informatiques, comporte trois exercices indépendants les uns des autres, qui permettent d’évaluer les connaissances et compétences des candidats. Le sujet comprend obligatoirement au moins un exercice relatif à chacune des trois rubriques suivantes :   
 
@@ -55,7 +54,14 @@ Le sujet de l’épreuve écrite de la spécialité numérique et sciences infor
 □ Algorithmes sur les arbres binaires et sur les arbres binaires de recherche.
 
 □ Méthode « diviser pour régner »
-	
+
+## Progression sur l'année
+
+### Liste des chapitres 
+
+{{ affiche_progression("terminale") }}
+
+
 ## Comment calculer sa note au BAC 2023 et Répartition des notes :
 
 [Fiche pour calculer sa note au BAC 2023](divers/data/el-ve-de-premiere-comment-calculer-note-bac-2022-94490.pdf){:target="_blank"} 

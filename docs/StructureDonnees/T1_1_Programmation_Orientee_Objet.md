@@ -1,37 +1,10 @@
----
-title : Thème 1 - Structure de données
-subtitle: P.O.O
-subsubtitle: Terminale NSI
-author : M.Meyroneinc-Condy
-numbersections: true
-fontsize: 10pt
-geometry:
-- top=20mm
-- left=20mm
-- right=20mm
-- heightrounded    
---- 
 
-POO : Exercices BAC
-===
+{% set num = 4 %}
+{% set titre = "Programmation Orientée objet"%}
+{% set theme = "sd" %}
+{% set niveau = "terminale"%}
 
-<table  class="redTable">
-        <tr>
-             <th  width="100%"; style="text-align:center;border:none;font-size:15pt;">Thème 1 - Structure de données
-            </th>
-        </tr>
-</table>
-
-
-<br>
-<table  class="redTable">
-        <tr >
-            <th width="20%"; style="background-color: #3B444B;color:white;text-align:center;border:none;font-size:40pt;">
-            04
-            </th>
-            <th  width="80%"; style="text-align:center;border:none;font-size:25pt;">Programmation Orientée Objet (POO)</th>
-        </tr>
-</table>
+{{ titre_chapitre(num,titre,theme,niveau)}}
 
 **Programme Terminale**  
 

@@ -1,36 +1,11 @@
----
-title : Thème 4 - Base de données
-subtitle: Le modèle relationnel
-subsubtitle: Terminale NSI
-author : M.Meyroneinc-Condy
-numbersections: true
-fontsize: 10pt
-geometry:
-- top=20mm
-- left=20mm
-- right=20mm
-- heightrounded    
---- 
 
-Modèle relationnel
-===
+{% set num = 1 %}
+{% set titre = "Le modéle relationnel"%}
+{% set theme = "db" %}
+{% set niveau = "terminale"%}
 
-<table  class="yellowTable">
-        <tr >
-            <th  class="yellowTh";width="100%"; style="text-align:center;border:none;font-size:15pt;">Thème 2 : Base de données</th>
-        </tr>
-</table>
-<br>
+{{ titre_chapitre(num,titre,theme,niveau)}}
 
-<table  class="yellowTable">
-        <tr >
-            <th width="20%"; style="background-color: #3B444B;color:white;text-align:center;border:none;font-size:40pt;">
-            01
-            </th>
-            <th  class="yellowTh";width="80%"; style="text-align:center;border:none;font-size:25pt;">Le modèle relationnel</th>
-        </tr>
-</table>
-<br>
 
 !!! progNSI "Programme Terminale"
     |Contenus|Capacités attendues|Commentaires|
