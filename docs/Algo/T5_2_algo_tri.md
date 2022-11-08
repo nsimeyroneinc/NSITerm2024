@@ -374,10 +374,8 @@ Ceci est bien un polynôme du second degré, ce qui confirme que la complexité 
 
 !!! exo "Liste triée"
 
-    1. Ecrire une fonction `est_triee` qui prend en argument une `liste` et qui renvoie `True` si `liste` est triée par ordre croissant et `False` dans le cas contraire.
+    Ecrire une fonction `est_triee` qui prend en argument une `liste` et qui renvoie `True` si `liste` est triée par ordre croissant et `False` dans le cas contraire.
 
         !!! Attention
             On ne doit pas trier la liste, simplement vérifier si elle l'est déjà ou pas.
-
-    2. Ajouter un paramètre  `reverse` à cette fonction de façon à vérifier si la liste est trié par ordre croissant (`reverse=False`) ou décroissant (`reverse=True`).
 
