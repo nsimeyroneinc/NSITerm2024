@@ -134,65 +134,66 @@ Une définition pourrait être :
     2. Rappeler rapidement le principe du [tri par insertion](https://nsimeyroneinc.github.io/NSITerm/Algo/T5_2_algo_tri/){target=_blank} vu en classe de première. Donner les étapes de cet algorithme pour trier la liste `[10,6,3,9,7,5]` 
     3. Quelle est la complexité de ces deux algorithmes ?
 
-3. L'algorithme du **tri fusion** consiste à :  
-:one: partager la liste en deux moitiés (à une unité près),  
-:two: trier chacune des deux moitiés,  
-:three: les fusionner pour obtenir la liste triée.  
+2. L'algorithme du **tri fusion** consiste à :  <br>
+    :one: partager la liste en deux moitiés (à une unité près),  
+    :two: trier chacune des deux moitiés,  
+    :three: les fusionner pour obtenir la liste triée.  
 
-On a schématisé le tri de la liste `[10,6,3,9,7,5]` suivant ce principe ci-dessous :  
-```mermaid
-    graph TD
-    subgraph Partager en deux
-    S["[10,6,3,9,7,5]"] --> S1["[10,6,3]"]
-    S --> S2["[9,7,5]"]
-    end
-    subgraph Fusionner
-    S1 -.Trier.-> T1["[3,6,10]"]
-    S2 -.Trier.-> T2["[5,7,9]"]
-    T1 --> T["[3,5,6,7,9,10]"]
-    T2 --> T
-    end
-```
-    1. Le tri des deux moitiés est lui-même effectué par tri fusion, par conséquent que peut-on dire de cet algorithme ?
-    1. On a schématisé ci-dessous le fonctionnement complet de l'algorithme pour la liste `[10,6,3,9,7,5]`, recopier et compléter les cases manquantes.
+    On a schématisé le tri de la liste `[10,6,3,9,7,5]` suivant ce principe ci-dessous :  
+    ```mermaid
+        graph TD
+        subgraph Partager en deux
+        S["[10,6,3,9,7,5]"] --> S1["[10,6,3]"]
+        S --> S2["[9,7,5]"]
+        end
+        subgraph Fusionner
+        S1 -.Trier.-> T1["[3,6,10]"]
+        S2 -.Trier.-> T2["[5,7,9]"]
+        T1 --> T["[3,5,6,7,9,10]"]
+        T2 --> T
+        end
+    ```  
 
-        ```mermaid
-            graph TD
-                    subgraph Partager en deux
-                    S["[10,6,3,9,7,5]"] --> S1["[10,6,3]"]
-                    S --> S2["[9,7,5]"]
-                    S1 --> S11["[10]"]
-                    S1 --> S12["[6,3]"]
-                    S2 --> S21["[9]"]
-                    S2 --> S22["[...,...]"]
-                    S12 --> S121["[6]"]
-                    S12 --> S122["[3]"]
-                    S22 --> S221["[...]"]
-                    S22 --> S222["[...]"]
-                    end
-                    subgraph Fusionner
-                    S121 --> T21["[...,...]"]
-                    S122 --> T21
-                    S221 --> T22["[5,7]"]
-                    S222 --> T22["[5,7]"]
-                    S11 --> T1["[...,...,...]"]
-                    T21 --> T1
-                    S21 --> T2["[...,...,...]"]
-                    T22 --> T2
-                    T1 --> T["[3,5,6,7,9,10]"]
-                    T2 --> T
-                    end
+    1. Le tri des deux moitiés est lui-même effectué par tri fusion, par conséquent que peut-on dire de cet algorithme ?  
+    2. On a schématisé ci-dessous le fonctionnement complet de l'algorithme pour la liste `[10,6,3,9,7,5]`, recopier et compléter les cases manquantes.
 
-        ```
+    ```mermaid
+        graph TD
+            subgraph Partager en deux
+            S["[10,6,3,9,7,5]"] --> S1["[10,6,3]"]
+            S --> S2["[9,7,5]"]
+            S1 --> S11["[10]"]
+            S1 --> S12["[6,3]"]
+            S2 --> S21["[9]"]
+            S2 --> S22["[...,...]"]
+            S12 --> S121["[6]"]
+            S12 --> S122["[3]"]
+            S22 --> S221["[...]"]
+            S22 --> S222["[...]"]
+        end
+            subgraph Fusionner
+            S121 --> T21["[...,...]"]
+            S122 --> T21
+            S221 --> T22["[5,7]"]
+            S222 --> T22["[5,7]"]
+            S11 --> T1["[...,...,...]"]
+            T21 --> T1
+            S21 --> T2["[...,...,...]"]
+            T22 --> T2
+            T1 --> T["[3,5,6,7,9,10]"]
+            T2 --> T
+        end
 
-2. Implémentation en Python
+    ```  
+3. Implémentation en Python  
+
     1. Programmer une fonction `partage(l)` qui prend en argument une liste `l` et renvoie les deux moitiés `l1` et `l2` (à une unité près) de `l`. Par exemple `partage([3,7,5])` renvoie `[3]` et `[7,5]`.
 
         !!! aide
-            * Penser à utiliser les constructions de listes par compréhension
-            * Les *slices* de Python sont un moyen efficace d'effectuer le partage, mais leur connaissance n'est pas un attendu du programme de terminale. Les élèves intéressés pourront faire leur propre recherche sur le *Web*.
+            * Penser à utiliser les constructions de listes par compréhension  
+            * Les *slices* de Python sont un moyen efficace d'effectuer le partage, mais leur connaissance n'est pas un attendu du programme de terminale. Les élèves intéressés pourront faire leur propre recherche sur le *Web*.  
 
-    2. On donne ci-dessous une fonction `fusion(l1,l2)` qui prend en argument deux listes **déjà triées** `l1` et `l2` et renvoie la liste triée `l` fusion de `l1` et `l2` :
+    2. On donne ci-dessous une fonction `fusion(l1,l2)` qui prend en argument deux listes **déjà triées** `l1` et `l2` et renvoie la liste triée `l` fusion de `l1` et `l2` :  
         
         ```python linenums="1"
         def fusion(l1,l2):
@@ -215,12 +216,12 @@ On a schématisé le tri de la liste `[10,6,3,9,7,5]` suivant ce principe ci-des
             return l
         ```
 
-        1. Recopier et compléter cette fonction.
-        2. Quel est le rôle des variables `ind1` et `ind2` ?
-        3. Ajouter un commentaire décrivant le rôle de la boucle `while`.
-        4. Ajouter un commentaire décrivant le rôle des lignes 12 à 17.
+        1. Recopier et compléter cette fonction.  
+        2. Quel est le rôle des variables `ind1` et `ind2` ?  
+        3. Ajouter un commentaire décrivant le rôle de la boucle `while`.  
+        4. Ajouter un commentaire décrivant le rôle des lignes 12 à 17.  
     
-    3. En utilisant les deux fonctions précédentes, écrire une fonction `tri_fusion(l)` qui implémente l'algorithme du tri fusion en Python.
+    3. En utilisant les deux fonctions précédentes, écrire une fonction `tri_fusion(l)` qui implémente l'algorithme du tri fusion en Python.  
 
 
         ```python linenums="1"
@@ -362,7 +363,7 @@ On a schématisé le tri de la liste `[10,6,3,9,7,5]` suivant ce principe ci-des
 
         On rappelle que l'instruction ```a, b = b, a``` échange les contenus de ```a``` et ```b```.
 
-    === "Sujet 19 : Exercice2"
+    === "Sujet 19 : Exercice 2"
         Soit `T` un tableau non vide d'entiers triés dans l'ordre croissant et `n` un entier.  
         La fonction `chercher`, donnée à la page suivante, doit renvoyer un indice où la valeur `n` apparaît éventuellement dans `T`, et `None` sinon.
 
