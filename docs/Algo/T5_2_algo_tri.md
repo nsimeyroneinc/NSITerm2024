@@ -330,6 +330,18 @@ Ceci est bien un polynôme du second degré, ce qui confirme que la complexité 
 
     1. On donne ci-dessous l'implémentation du tri par sélection vu en cours :
     ```python
+    def echange(liste,i,j):
+    liste[i],liste[j] = liste[j],liste[i]
+
+    def min_liste(liste,ind):
+        elt_min = liste[ind]
+        ind_min=ind
+        for k in range(ind,len(liste)):
+            if liste[k]<elt_min:
+                elt_min=liste[k]
+                ind_min=k
+        return ind_min
+
     def tri_selection(liste):
         longueur = len(liste)
         for ind in range(longueur):
@@ -365,7 +377,7 @@ Ceci est bien un polynôme du second degré, ce qui confirme que la complexité 
     2. Détailler le fonctionnement de cet algorithme de tri sur la liste suivante : `[12,9,17,11,3]`
     3. Programmer cet algorithme en python
 
-        !!! aide
+        !!! aide 
             On pourra utiliser la fonction `echange(liste,i,j)` déjà programmée en cours. 
 
 

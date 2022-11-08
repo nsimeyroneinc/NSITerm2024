@@ -69,7 +69,8 @@ def define_env(env):
         4 : ["sd","Programmation Orientée Objet",2,"StructureDonnees/T1_1_Programmation_Orientee_Objet.md"],
         5 : ["os","Listes et Piles",2,"StructureDonnees/T2_1_Listes_Piles_et_Files.md"],
         6 : ["os","Protocole de routage",1,"Archi_Materielle/T3_1_Routage.md"],
-        7 : ["algorithmique","Algorithmes de tri",1,"Algo/T5_2_algo_tri.md"]
+        7 : ["algorithmique","Algorithmes de tri",1,"Algo/T5_2_algo_tri.md"],
+        8 : ["algorithmique","Diviser pour régner",1,"T5_2_Diviser_pour_regner.md"]
         #6 : ["os","Protocole de Routage",1,""],
         #7 : ["python","Notions de programmation orienté objet",2,"poo.md"],
         #8 : ["sd","Structures de données linéaires",2,"sl.md"],
