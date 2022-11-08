@@ -371,15 +371,6 @@ Ceci est bien un polynôme du second degré, ce qui confirme que la complexité 
             Comme une *nouvelle liste* est crée, on utilisera l'instruction `return` pour la renvoyer vers le programme principal. 
 
 
-!!! exo "Tri à bulles"
-
-    1. En effectuant vos propres recherches sur le *web*, expliquer le principe du **tri à bulles**.
-    2. Détailler le fonctionnement de cet algorithme de tri sur la liste suivante : `[12,9,17,11,3]`
-    3. Programmer cet algorithme en python
-
-        !!! aide 
-            On pourra utiliser la fonction `echange(liste,i,j)` déjà programmée en cours. 
-
 
 !!! exo "Liste triée"
 
