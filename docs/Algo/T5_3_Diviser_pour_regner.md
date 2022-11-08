@@ -511,7 +511,7 @@ En utilisant la fonction `nb_inv_tab` et les questions précédentes, écrire un
 2. C'est algorithme est-il du type itératif ou récursif ? Justifier.
 3. Découpage de l'image en quatres quarts à l'aide du module {{sc("pil")}} de manipulation d'images
     1. On a représenté une image carré de $n$ pixels de côté avec le système de coordonnées d'une image dans le module {{ sc("pil")}}. Quelles sont les coordonnées manquantes ? <br>
-    ![coordonnees](./images/C8/coordonnees.png){width=300}
+    ![coordonnees](../images/C8/coordonnees.png){width=300}
     2. La méthode `crop` du module {{ sc("pil")}} permet d'extraire une portion rectangulaire d'une image en donnant les coordonnées des coins supérieur gauche et inférieur droit du rectangle. Compléter la fonction Python suivante qui prend en entrée une image et retourne les quatre quarts de cette image.
 
         ```python
