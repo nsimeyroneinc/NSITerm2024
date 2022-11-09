@@ -395,23 +395,7 @@ Ceci est bien un polynôme du second degré, ce qui confirme que la complexité 
         >>> tri_selection([1,52,6,-9,12])
         [-9, 1, 6, 12, 52]
         ```
-    === "Sujet 35 : Exercice 2"
-        Écrire une fonction qui prend en paramètre un tableau d'entiers non vide et qui renvoie la  moyenne de ces entiers. La fonction est spécifiée ci-après et doit passer les assertions fournies.  
-
-        ```python
-        def moyenne (tab):
-            '''
-                moyenne(list) -> float
-                Entrée : un tableau non vide d'entiers
-                Sortie : nombre de type float
-                Correspondant à la moyenne des valeurs présentes dans le
-                tableau
-            '''
-
-        assert moyenne([1]) == 1
-        assert moyenne([1,2,3,4,5,6,7] == 4
-        assert moyenne([1,2]) == 1.5
-        ```
+ 
 
     === "Sujet 27 : Exercice 1"
         On considère l'algorithme de tri de tableau suivant : à chaque étape, on parcourt depuis le début du tableau tous les éléments non rangés et on place en dernière position le plus grand élément.
