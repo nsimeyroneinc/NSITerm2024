@@ -7,7 +7,7 @@ Les notebooks sont corrigés et les cellules peuvent être copiées pour être t
     - **Thème en cours** : [T5 - Les tris](https://nsimeyroneinc.github.io/NSITerm/Algo/T5_2_algo_tri/)   
     - **[Correction des exercices BAC Routage disponibles](https://nsimeyroneinc.github.io/NSITerm/Archi_Materielle/T3_1_Routage_BAC_Correction/)   
     - **[Correction des exercices BAC Piles et Files disponibles](StructureDonnees/T2_2_Pile_File_BAC_Correction.md)  
-    - **&#127381; :** un onglet annales de BAC épreuves écrites est disponible avec un grand nombre de corrigés.  
+    - **&#127381; : Bientôt disponible** un onglet annales de BAC épreuves écrites.  
 
 
 ## Progression sur l'année

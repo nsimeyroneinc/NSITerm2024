@@ -539,7 +539,7 @@ Vous pouvez télécharger une copie au format pdf du diaporama de synthèse de c
                         corr += ":material-numeric-"+str(num)+"-circle-outline:{.vert title='exercice"+str(num)+"corrigé'}"
                     else:
                         corr += ":material-numeric-"+str(num)+"-circle-outline:{.rouge title='exercice"+str(num)+"non corrigé'}"
-                aff+=f"|{s['Repere']}|{s['Centre']}|{s['Jour']}|[{s['Repere']}](../../../officiels/Annales/EE/{annee}/{s['Repere']}.pdf)|[{corr}](../../../Annales/Corriges/{s['Repere']})|\n"
+                aff+=f"|{s['Repere']}|{s['Centre']}|{s['Jour']}|[{s['Repere']}](../../officiels/Annales/EE/{annee}/{s['Repere']}.pdf)|[{corr}](../../Corriges/{s['Repere']})|\n"
         return aff
     
     @env.macro
@@ -553,7 +553,7 @@ Vous pouvez télécharger une copie au format pdf du diaporama de synthèse de c
         for s in sujet_bac:
             if s['Annee']==annee:
                 aff+=f"##{s['Centre']} - jour {s['Jour']} : *{s['Repere']}*\n"
-                aff+=telecharger(s['Repere'],f"../../../officiels/Annales/EE/{annee}/{s['Repere']}.pdf")
+                aff+=telecharger(s['Repere'],f"../../officiels/Annales/EE/{annee}/{s['Repere']}.pdf")
                 aff+='\n \n'
                 for i in range(1,6):
                     aff+=f"* **Exercice {i}** : *{s['Ex'+str(i)]}* \n \n"
@@ -567,7 +567,7 @@ Vous pouvez télécharger une copie au format pdf du diaporama de synthèse de c
                 aff += f"Année : **{s['Annee']}** <br>"
                 aff += f"Centre : **{s['Centre']}** <br>"
                 aff += f"Jour : **{s['Jour']}** <br>"
-                aff += f"Enoncé : [:fontawesome-solid-file-pdf:](../../../officiels/Annales/EE/{s['Annee']}/{s['Repere']}.pdf)<br>"
+                aff += f"Enoncé : [:fontawesome-solid-file-pdf:](../../officiels/Annales/EE/{s['Annee']}/{s['Repere']}.pdf)<br>"
                 return aff
     
     @env.macro
