@@ -4,10 +4,15 @@ Les notebooks sont corrigés et les cellules peuvent être copiées pour être t
 
 
 !!! info "Actualités" 
-    - **Thème en cours** : [T3 - Routage](Archi_Materielle/T3_1_Routage.md)  
-    - **[Correction](StructureDonnees/T2_2_Pile_File_BAC_Correction.md)** des exercices BAC Piles et Files disponibles. 
+    - **Thème en cours** : [T5 - Les tris](https://nsimeyroneinc.github.io/NSITerm/Algo/T5_2_algo_tri/)  
+    - **[Correction](https://nsimeyroneinc.github.io/NSITerm/Archi_Materielle/T3_1_Routage_BAC_Correction/)**Correction des exercices BAC Routage disponibles. 
+    - **[Correction](StructureDonnees/T2_2_Pile_File_BAC_Correction.md)**Correction des exercices BAC Piles et Files disponibles. 
     
+## Progression sur l'année
 
+### Liste des chapitres 
+
+{{ affiche_progression("terminale") }}
     
 
 !!! info  "Epreuve BAC 2023"  
@@ -55,11 +60,7 @@ Le sujet de l’épreuve écrite de la spécialité numérique et sciences infor
 
 □ Méthode « diviser pour régner »
 
-## Progression sur l'année
 
-### Liste des chapitres 
-
-{{ affiche_progression("terminale") }}
 
 
 ## Comment calculer sa note au BAC 2023 et Répartition des notes :
