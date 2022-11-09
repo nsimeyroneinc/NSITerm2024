@@ -6,7 +6,7 @@ def echange(liste,i,j):
 
 # Tri par insertion
 def tri_insertion(liste):
-    for ind in range(1,len(liste)-1):
+    for ind in range(len(liste)-1):
         j = ind
         while liste[j+1]<liste[j] and j>=0:
             echange(liste,j,j+1)

@@ -4,10 +4,12 @@ Les notebooks sont corrigés et les cellules peuvent être copiées pour être t
 
 
 !!! info "Actualités" 
-    - **Thème en cours** : [T5 - Les tris](https://nsimeyroneinc.github.io/NSITerm/Algo/T5_2_algo_tri/)  
-    - **[Correction](https://nsimeyroneinc.github.io/NSITerm/Archi_Materielle/T3_1_Routage_BAC_Correction/)**Correction des exercices BAC Routage disponibles. 
-    - **[Correction](StructureDonnees/T2_2_Pile_File_BAC_Correction.md)**Correction des exercices BAC Piles et Files disponibles. 
-    
+    - **Thème en cours** : [T5 - Les tris](https://nsimeyroneinc.github.io/NSITerm/Algo/T5_2_algo_tri/)   
+    - **[Correction des exercices BAC Routage disponibles](https://nsimeyroneinc.github.io/NSITerm/Archi_Materielle/T3_1_Routage_BAC_Correction/)   
+    - **[Correction des exercices BAC Piles et Files disponibles](StructureDonnees/T2_2_Pile_File_BAC_Correction.md)  
+    - **&#127381; :** un onglet annales de BAC épreuves écrites est disponible avec un grand nombre de corrigés.  
+
+
 ## Progression sur l'année
 
 ### Liste des chapitres 

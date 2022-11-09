@@ -256,36 +256,56 @@ Une définition pourrait être :
 
 
 !!! exo "Epreuve Pratique"
-    === "Sujet 38 : Exercice 1"
-        Écrire une fonction tri_selection qui prend en paramètre une liste tab de nombres entiers et qui renvoie le tableau trié par ordre croissant.  
-        On utilisera l’algorithme suivant :  
-        
-        - on recherche le plus petit élément du tableau, et on l'échange avec l'élément d'indice 0 ;  
-        - on recherche le second plus petit élément du tableau, et on l'échange avec l'élément d'indice 1 ;  
-        - on continue de cette façon jusqu'à ce que le tableau soit entièrement trié.  
-        
-        Exemple :
-        ```python
-        >>> tri_selection([1,52,6,-9,12])
-        [-9, 1, 6, 12, 52]
-        ```
     === "Sujet 35 : Exercice 2"
-        Écrire une fonction qui prend en paramètre un tableau d'entiers non vide et qui renvoie la  moyenne de ces entiers. La fonction est spécifiée ci-après et doit passer les assertions fournies.  
+        Le but de l'exercice est de compléter une fonction qui détermine si une valeur est présente dans un tableau de valeurs triées dans l'ordre croissant.
+
+        L'algorithme traite le cas du tableau vide.  
+
+        L'algorithme est écrit pour que la recherche dichotomique ne se fasse que dans le cas où la valeur est comprise entre les valeurs extrêmes du tableau.
+
+        On distingue les trois cas qui renvoient `False` en renvoyant `False,1` , `False,2` et `False,3`.
+
+        Compléter l'algorithme de dichotomie donné ci-après.
+
+        ```python linenums='1'
+        def dichotomie(tab, x):
+            """
+                tab : tableau trié dans l’ordre croissant
+                x : nombre entier
+                La fonction renvoie True si tab contient x et False sinon
+            """
+            # cas du tableau vide
+            if ...:
+                return False,1
+            # cas où x n'est pas compris entre les valeurs extrêmes
+            if (x < tab[0]) or ...:
+                return False,2
+            debut = 0
+            fin = len(tab) - 1
+            while debut <= fin:
+                m = ...
+                if x == tab[m]:
+                    return ...
+                if x > tab[m]:
+                    debut = m + 1
+                else:
+                    fin = ...
+            return ...
+        ```
+
+        Exemples :
 
         ```python
-        def moyenne (tab):
-            '''
-                moyenne(list) -> float
-                Entrée : un tableau non vide d'entiers
-                Sortie : nombre de type float
-                Correspondant à la moyenne des valeurs présentes dans le
-                tableau
-            '''
-
-        assert moyenne([1]) == 1
-        assert moyenne([1,2,3,4,5,6,7] == 4
-        assert moyenne([1,2]) == 1.5
+        >>> dichotomie([15, 16, 18, 19, 23, 24, 28, 29, 31, 33],28)
+        True
+        >>> dichotomie([15, 16, 18, 19, 23, 24, 28, 29, 31, 33],27)
+        (False, 3)
+        >>> dichotomie([15, 16, 18, 19, 23, 24, 28, 29, 31, 33],1)
+        (False, 2)
+        >>> dichotomie([],28)
+        (False, 1)
         ```
+
 
     === "Sujet 10 : Exercice 2"
         La fonction `fusion` prend deux listes `L1`, `L2` d’entiers triées par ordre croissant et les fusionne en une liste triée `L12` qu’elle renvoie.
@@ -326,42 +346,6 @@ Une définition pourrait être :
         >>> fusion([1,6,10],[0,7,8,9])
         [0, 1, 6, 7, 8, 9, 10]
         ```
-    === "Sujet 27 : Exercice 1"
-        On considère l'algorithme de tri de tableau suivant : à chaque étape, on parcourt depuis le début du tableau tous les éléments non rangés et on place en dernière position le plus grand élément.
-
-        Exemple avec le tableau : ```t = [41, 55, 21, 18, 12, 6, 25]```
-
-        - Étape 1 : on parcourt tous les éléments du tableau, on permute le plus grand élément avec le dernier.
-
-        Le tableau devient `t = [41, 25, 21, 18, 12, 6, 55]`
-
-        - Étape 2 : on parcourt tous les éléments **sauf le dernier**, on permute le plus grand élément trouvé avec l'avant dernier.
-
-        Le tableau devient : ```t = [6, 25, 21, 18, 12, 41, 55]```
-
-        Et ainsi de suite. La code de la fonction `tri_iteratif` qui implémente cet algorithme est donné ci-
-        dessous.
-
-        ```python linenums='1'
-        def tri_iteratif(tab):
-            for k in range(..., 0 ,-1):
-                imax = ...
-                for i in range(0, ...):
-                    if tab[i] > ... :
-                        imax = i
-                if tab[max] > ... :
-                    ..., tab[imax] = tab[imax], ...
-            return tab
-        ```
-
-        Compléter le code qui doit donner :
-
-        ```python
-        >>> tri_iteratif([41, 55, 21, 18, 12, 6, 25])
-        [6, 12, 18, 21, 25, 41, 55]
-        ```
-
-        On rappelle que l'instruction ```a, b = b, a``` échange les contenus de ```a``` et ```b```.
 
     === "Sujet 19 : Exercice 2"
         Soit `T` un tableau non vide d'entiers triés dans l'ordre croissant et `n` un entier.  

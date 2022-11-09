@@ -348,7 +348,7 @@ Ceci est bien un polynôme du second degré, ce qui confirme que la complexité 
             ind_min = min_liste(liste,ind)
             echange(liste,ind,ind_min)
     ```
-    Modifier cette fonction afin d'effectuer un tri dans l'ordre décroissant.
+    Modifier cette (ces) fonction(s) afin d'effectuer un tri dans l'ordre décroissant.
 
     2. Même question pour l'algorithme du tri par insertion ci-dessous :
     ```python
@@ -368,7 +368,7 @@ Ceci est bien un polynôme du second degré, ce qui confirme que la complexité 
     2. Même question pour le tri par insertion
 
     !!! aide
-            Comme une *nouvelle liste* est crée, on utilisera l'instruction `return` pour la renvoyer vers le programme principal. 
+        Comme une *nouvelle liste* est crée, on utilisera l'instruction `return` pour la renvoyer vers le programme principal. 
 
 
 
@@ -376,6 +376,79 @@ Ceci est bien un polynôme du second degré, ce qui confirme que la complexité 
 
     Ecrire une fonction `est_triee` qui prend en argument une `liste` et qui renvoie `True` si `liste` est triée par ordre croissant et `False` dans le cas contraire.
 
-        !!! Attention
-            On ne doit pas trier la liste, simplement vérifier si elle l'est déjà ou pas.
+    !!! Attention
+        On ne doit pas trier la liste, simplement vérifier si elle l'est déjà ou pas.
+
+
+
+!!! exo "Epreuve Pratique"
+    === "Sujet 38 : Exercice 1"
+        Écrire une fonction tri_selection qui prend en paramètre une liste tab de nombres entiers et qui renvoie le tableau trié par ordre croissant.  
+        On utilisera l’algorithme suivant :  
+        
+        - on recherche le plus petit élément du tableau, et on l'échange avec l'élément d'indice 0 ;  
+        - on recherche le second plus petit élément du tableau, et on l'échange avec l'élément d'indice 1 ;  
+        - on continue de cette façon jusqu'à ce que le tableau soit entièrement trié.  
+        
+        Exemple :
+        ```python
+        >>> tri_selection([1,52,6,-9,12])
+        [-9, 1, 6, 12, 52]
+        ```
+    === "Sujet 35 : Exercice 2"
+        Écrire une fonction qui prend en paramètre un tableau d'entiers non vide et qui renvoie la  moyenne de ces entiers. La fonction est spécifiée ci-après et doit passer les assertions fournies.  
+
+        ```python
+        def moyenne (tab):
+            '''
+                moyenne(list) -> float
+                Entrée : un tableau non vide d'entiers
+                Sortie : nombre de type float
+                Correspondant à la moyenne des valeurs présentes dans le
+                tableau
+            '''
+
+        assert moyenne([1]) == 1
+        assert moyenne([1,2,3,4,5,6,7] == 4
+        assert moyenne([1,2]) == 1.5
+        ```
+
+    === "Sujet 27 : Exercice 1"
+        On considère l'algorithme de tri de tableau suivant : à chaque étape, on parcourt depuis le début du tableau tous les éléments non rangés et on place en dernière position le plus grand élément.
+
+        Exemple avec le tableau : ```t = [41, 55, 21, 18, 12, 6, 25]```
+
+        - Étape 1 : on parcourt tous les éléments du tableau, on permute le plus grand élément avec le dernier.
+
+        Le tableau devient `t = [41, 25, 21, 18, 12, 6, 55]`
+
+        - Étape 2 : on parcourt tous les éléments **sauf le dernier**, on permute le plus grand élément trouvé avec l'avant dernier.
+
+        Le tableau devient : ```t = [6, 25, 21, 18, 12, 41, 55]```
+
+        Et ainsi de suite. La code de la fonction `tri_iteratif` qui implémente cet algorithme est donné ci-
+        dessous.
+
+        ```python linenums='1'
+        def tri_iteratif(tab):
+            for k in range(..., 0 ,-1):
+                imax = ...
+                for i in range(0, ...):
+                    if tab[i] > ... :
+                        imax = i
+                if tab[max] > ... :
+                    ..., tab[imax] = tab[imax], ...
+            return tab
+        ```
+
+        Compléter le code qui doit donner :
+
+        ```python
+        >>> tri_iteratif([41, 55, 21, 18, 12, 6, 25])
+        [6, 12, 18, 21, 25, 41, 55]
+        ```
+
+        On rappelle que l'instruction ```a, b = b, a``` échange les contenus de ```a``` et ```b```.
+
+ 
 
