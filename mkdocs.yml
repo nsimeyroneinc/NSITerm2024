@@ -112,7 +112,7 @@ nav:
   
     - Evaluations :
       - DS 01 : Evaluations/BDD_Devoir.md
-      #- DS 03 : Evaluations/DS_Pile_File_Routage.md
+      - DS 03 : Evaluations/DS_Pile_File_Routage.md
  
 
 
@@ -142,8 +142,8 @@ theme:
           icon: material/lightbulb # apparence
           name: Basculer en mode sombre # message
       - scheme: slate # nom du thème sombre
-        primary: teal
-        accent: teal
+        primary: brown
+        accent: brown
         toggle:
           icon: material/lightbulb-outline
           name: Basculer en mode clair

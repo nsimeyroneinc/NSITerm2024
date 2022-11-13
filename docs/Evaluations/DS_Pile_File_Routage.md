@@ -12,9 +12,6 @@ geometry:
 - heightrounded    
 --- 
 
-Devoir 
-===
-
 <br>
 <table  class="redTable">
         <tr >
@@ -32,7 +29,7 @@ Devoir
 
 On rappelle qu’une pile est une structure de données abstraite fondée sur le principe «dernier arrivé, premier sorti» :  
 
-![](data/21-sujet0-exo1_1.png){:.center}
+![](data/21-sujet0-exo1_1.png){:.center width=50%}
 
 On munit la structure de données Pile de quatre fonctions primitives définies dans le tableau ci-dessous :
 
@@ -117,3 +114,48 @@ On munit la structure de données Pile de quatre fonctions primitives définies 
 
 !!! exo "Routage"
 
+On considère le réseau suivant composé de sept routeurs.
+
+![](data/exo_graph.svg){:.center}
+
+On donne les tables de routage préalablement construites ci-dessous avec le protocole RIP (Routing Information Protocole). Le protocole RIP permet de construire les tables de routage des différents routeurs, en indiquant pour chaque routeur, la distance, en nombr de sauts, qui le sépare d'un autre routeur.  
+
+Voir ANNEXE
+
+1.  Le routeur R2 doit envoyer un paquet de données au routeur R7 qui accuse réception.  
+    Déterminer le chemin parcouru par le paquet de données ainsi que celui parcouru par l'éaccusé de réception.  
+
+2.  a.  Indiquer la faiblesse que représente ce réseau en cas de panne du routeur R4.  
+    b. Proposer une solution pour y remédier.  
+
+3.  Dans cette question uniquement, on décide de rajouter un routeur R8 qui sera relié aux routeurs R2 et R6.  
+    a. Donner la table de routage pour R8 qui minimise le nombre de saut.  
+    b. Donner une nouvelle table de routage pour R2.  
+
+4. **Pour la suite de l'exercice on considère le réseau sans le routeur R8**.  
+    Il a été décidé de modifier les règles de routage de ce réseau en appliquant le protocole de routage OSPF qui pren en compte la bande passante.  
+    Ce protocole attribue un coût à chaque liaison afin de privilégier le choix de certaines routes plus rapide. Plus le coût est faible, plus le lien est intéressant.  
+    Le coût d'une liaison est calculé par la formule :  
+    $coût=\dfrac{10^8\text{ bit/s}}{\text{ bande passante du lien en bit/s}}$
+
+    Voici le tableau référençant les coûts des liaisons en fonction du type de liaison entre deux routeurs :  
+
+    |Type de laiison| bande passante | Coût|
+    |:---:|:---:|:---:|
+    |FastEthernet (FE)| ? | 1|
+    |Ethernet (E) | 10 Mb/s| ? |
+    | (E1)| 2,048 Mb/s|49|
+    |(T1)| 1.544 Mb/s| 65|  
+
+    On rappelle que 1 Mb/s = 1 000 kb/s = $10^6$ bit/s.
+
+    1.  Déterminer la bande passante di FastEthernet (FE) et justifier que le coût du réseau de type Ethernet (E) est de 10.  
+    2. On précise sur le graphe ci-dessous les types de liaison dans notre réseau :  
+
+    ![](data/exo_graph_cout.png){:.center width=60%}   
+
+    Le coût d'un chemin est la somme des coûts des liaisons rencontrés. Donner en justifiant le chemin le moins coûteux pour relier R2 à R5. Préciser le coût.
+
+ANNEXE :  
+
+![](data/22-NSIJ1AN1-exo_routage.png){:.center}
