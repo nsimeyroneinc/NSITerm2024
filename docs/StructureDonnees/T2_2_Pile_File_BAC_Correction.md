@@ -752,11 +752,6 @@ def traiter(self):
 
 !!! {{ exercice() }} "D'après 2022, Centres étrangers, J1, Ex. 3"
 
----
-title: Dictionnaire modélisant le contenu d'un répertoire
-author: Franck Chambon
----
-
 
 
 

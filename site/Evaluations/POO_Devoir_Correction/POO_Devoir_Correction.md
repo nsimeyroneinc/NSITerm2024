@@ -70,11 +70,11 @@ usuel.
     être définies par
 
     ```python
-    def indice_capitale(indice: int) -> str:
+    def lettre_capitale(indice: int) -> str:
         assert 0 <= indice < 26, "L'indice doit être entre 0 et 25"
         return chr(ord('A') + indice)
 
-    def lettre_capitale(lettre: str) -> int:
+    def indice_capitale(lettre: str) -> int:
         assert lettre in [chr(i + ord('A')) for i in range(26)], "La lettre doit être dans l'alphabet latin capital"
         return ord(lettre) - ord('A')
     ```
@@ -166,6 +166,7 @@ On exécute la ligne suivante dans une console `CodeCesar(10).transforme("PSX")`
     transformation opposée.
 
 
+## D'après 2022, Centres étrangers, J2, Ex. 4  
 
 Simon souhaite créer en Python le jeu de cartes « la bataille » pour deux joueurs.
 Les questions qui suivent demandent de reprogrammer quelques fonctions du jeu.

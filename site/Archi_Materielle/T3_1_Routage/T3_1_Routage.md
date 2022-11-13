@@ -1,29 +1,11 @@
----
-title : Thème 3 - Architecture matérielle
-subtitle: Protocole de routage
-subsubtitle: Terminale NSI
-author : M.Meyroneinc-Condy
-numbersections: true
-fontsize: 10pt
-geometry:
-- top=20mm
-- left=20mm
-- right=20mm
-- heightrounded    
---- 
 
-Thème 3 - Architecture matérielle
-===
+{% set num = 6 %}
+{% set titre = "Protocole de Routage"%}
+{% set theme = "os" %}
+{% set niveau = "terminale"%}
 
-<br>
-<table  class="redTable">
-        <tr >
-            <th width="20%"; style="background-color: #3B444B;color:white;text-align:center;border:none;font-size:40pt;">
-            06
-            </th>
-            <th class="redTh"; width="80%"; style="text-align:center;border:none;font-size:25pt;">Protocole de Routage</th>
-        </tr>
-</table>
+{{ titre_chapitre(num,titre,theme,niveau)}}
+
 
 !!! progNSI "Programme Terminale"
 

@@ -111,8 +111,9 @@ nav:
       #- EP 2022 : BAC/EP_2022.md
   
     - Evaluations :
-      - DS01 : Evaluations/BDD_Devoir.md
-
+      - DS 01 : Evaluations/BDD_Devoir.md
+      #- DS 03 : Evaluations/DS_Pile_File_Routage.md
+ 
 
 
     - Extras :
@@ -213,18 +214,7 @@ markdown_extensions: # https://squidfunk.github.io/mkdocs-material/reference/abb
 
 
 plugins:
-
-  - search # Inclure une barre de recherche
-  - mkdocs-jupyter: # Convertir les fichiers .ipynb et .py en pages du site https://github.com/danielfrg/mkdocs-jupyter
-      kernel_name: python3
-      execute: False
-      include_source: True
-  - macros
-  - awesome-pages:
-      collapse_single_pages: true
-
-
-  #- page-to-pdf : 
+  #- page-to-pdf #: 
   #    disable: False
   #    disableOnServe: False
   #    displayHeaderFooter: True
@@ -240,6 +230,20 @@ plugins:
   #                      <span class="page" style="position:absolute;bottom:0;right:0;">
   #                       <span class="pageNumber"></span>/<span class="totalPages"></span>
   #                      </span>'
+  - search # Inclure une barre de recherche
+  - mkdocs-jupyter: # Convertir les fichiers .ipynb et .py en pages du site https://github.com/danielfrg/mkdocs-jupyter
+      kernel_name: python3
+      execute: False
+      include_source: True
+  - macros
+  - awesome-pages:
+      collapse_single_pages: true
+  #- mkpdfs:
+  #    design: design/extra.css
+  #- with-pdf
+  #- pdf-export:
+  #    combined: true
+
   #   headerTemplate : 
   #      title
   #      date

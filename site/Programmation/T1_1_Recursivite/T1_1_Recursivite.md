@@ -1,38 +1,10 @@
----
-title : Thème 4 - Programmation
-subtitle: Récursivité
-subsubtitle: Terminale NSI
-author : M.Meyroneinc-Condy
-numbersections: true
-fontsize: 10pt
-geometry:
-- top=20mm
-- left=20mm
-- right=20mm
-- heightrounded    
---- 
 
-Récursivité
-===
+{% set num = 3 %}
+{% set titre = "Récursivité"%}
+{% set theme = "python" %}
+{% set niveau = "terminale"%}
 
-<table  class="blueTable">
-        <tr >
-            <th  class="blueTh";width="100%"; style="text-align:center;border:none;font-size:15pt;">Thème 4 : Langage et programmation</th>
-        </tr>
-</table>
-<br>
-
-<table  class="blueTable">
-        <tr >
-            <th width="20%"; style="background-color: #3B444B;color:white;text-align:center;border:none;font-size:40pt;">
-            04
-            </th>
-            <th  class="blueTh";width="80%"; style="text-align:center;border:none;font-size:25pt;">RECURSIVITE</th>
-        </tr>
-</table>
-<br>
-
-
+{{ titre_chapitre(num,titre,theme,niveau)}}
 
 **Programme Terminale**  
 

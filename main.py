@@ -429,6 +429,8 @@ Vous pouvez télécharger une copie au format pdf du diaporama de synthèse de c
 ```'''
         return modele
 
+
+
     @env.macro
     def ep(annee):
         aff="\n"
@@ -571,6 +573,17 @@ Vous pouvez télécharger une copie au format pdf du diaporama de synthèse de c
                 return aff
     
     @env.macro
+    def enonce_sujetbac(repere):
+        aff = f'#<span class="numchapitre">{repere}</span> : Enoncé \n'
+        for s in sujet_bac:
+            if s['Repere']==repere:
+                aff += f"Année : **{s['Annee']}** <br>"
+                aff += f"Centre : **{s['Centre']}** <br>"
+                aff += f"Jour : **{s['Jour']}** <br>"
+                aff += f"Enoncé : [:fontawesome-solid-file-pdf:](../../officiels/Annales/EE/{s['Annee']}/{s['Repere']}.pdf)<br>"
+                return aff
+
+    @env.macro
     def corrige_exobac(repere,num):
         aff = f'##Exercice {num} : '
         for s in sujet_bac:
@@ -578,7 +591,14 @@ Vous pouvez télécharger une copie au format pdf du diaporama de synthèse de c
                 aff+=f"<span class='theme_exo'>*{s['Ex'+str(num)]}*</span> \n"
                 return aff
     
-
+    @env.macro
+    def enonce_exobac(repere,num):
+        aff = f'##Exercice {num} : '
+        for s in sujet_bac:
+            if s['Repere']==repere:
+                aff+=f"<span class='theme_exo'>*{s['Ex'+str(num)]}*</span> \n"
+                return aff
+                
     @env.macro
     def binaire(nombre):
         to_disp = '$'
