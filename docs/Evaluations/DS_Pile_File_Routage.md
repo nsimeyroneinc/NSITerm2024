@@ -1,26 +1,15 @@
----
-title : Thème 
-subtitle: Protocole de routage - Pile et File
-subsubtitle: Terminale NSI
-author : M.Meyroneinc-Condy
-numbersections: true
-fontsize: 10pt
-geometry:
-- top=20mm
-- left=20mm
-- right=20mm
-- heightrounded    
---- 
 
-<br>
-<table  class="redTable">
-        <tr >
-            <th width="20%"; style="background-color: #3B444B;color:white;text-align:center;border:none;font-size:40pt;">
-            DS
-            </th>
-            <th class="redTh"; width="80%"; style="text-align:center;border:none;font-size:25pt;">Devoir : Pile -File et Routage</th>
-        </tr>
-</table>
+{% set num = 3 %}
+{% set titre = "Pile - Routage" %}
+{% set theme = "devoir" %}
+{% set niveau = "terminale" %}
+
+
+{{ titre_chapitre(num,titre,theme,niveau)}}
+
+{{ initexo(0) }}
+
+
 
 
 !!! exo "Pile - File"

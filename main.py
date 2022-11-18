@@ -7,11 +7,13 @@ def define_env(env):
     
     env.variables['transversal']=["histoire","projet","typesconstruits","python"]
     env.variables['projet'] = {"icone":":fontawesome-solid-lightbulb:","style":"projet"}
+    env.variables['devoir'] = {"icone":":fontawesome-solid-pen-to-square:","style":"devoir"}
     env.variables['typesconstruits'] = {"icone":":fontawesome-solid-cubes:","style":"typesconstruits"}
     env.variables['python'] = {"icone":":fontawesome-brands-python:","style":"python"}
     env.variables['themes']={
         "histoire":"Histoire de l'informatique",
         "projet":"Projet",
+        "devoir":"Devoir",
         "sd":"Structures de données",
         "db":"Bases de données",
         "os":"Architectures matérielles, systèmes d'exploitation et réseaux",
@@ -25,6 +27,7 @@ def define_env(env):
     env.variables['icones'] = {
         "histoire":':fontawesome-solid-building-columns:{title="'+env.variables['themes']['histoire']+'"}',
         "projet":':fontawesome-solid-lightbulb:{title="'+env.variables['themes']['projet']+'"}',
+        "devoir":':fontawesome-solid-pen-to-square:{title="'+env.variables['themes']['devoir']+'"}',
         "sd":':fontawesome-solid-diagram-project:{title="'+env.variables['themes']['sd']+'"}',
         "db":':fontawesome-solid-database:{title="'+env.variables['themes']['db']+'"}',
         "os":':fontawesome-solid-microchip:{title="'+env.variables['themes']['os']+'"}',
@@ -86,6 +89,35 @@ def define_env(env):
         #18:["python","Récursivité",2,"Programmation/T1_1_Recursivite.md"],
         #19 : ["algorithmique","Diviser pour régner",1,"diviser.md"]
     }
+
+    env.variables['devoir_terminale']={
+        1 : ["devoir","Langage SQL","","Evaluations/BDD_Devoir_Corrige.md"],
+        #2 : ["devoir","Pile-File et Protocole de Routage",'16/11/2023',"Evaluations/DS_Pile_File_Routage.md"],
+        3 : ["devoir","Pile-File et Protocole de Routage",'16/11/2023',"Evaluations/DS_Pile_File_Routage.md"]
+        #3 : ["python","Récursivité",1,"Programmation/T1_1_Recursivite.md"],
+        #4 : ["sd","Programmation Orientée Objet",2,"StructureDonnees/T1_1_Programmation_Orientee_Objet.md"],
+        #5 : ["os","Listes et Piles",2,"StructureDonnees/T2_1_Listes_Piles_et_Files.md"],
+        #6 : ["os","Protocole de routage",1,"Archi_Materielle/T3_1_Routage.md"],
+        #7 : ["algorithmique","Algorithmes de tri",1,"Algo/T5_2_algo_tri.md"],
+        #8 : ["algorithmique","Diviser pour régner",1,"T5_2_Diviser_pour_regner.md"]
+        #6 : ["os","Protocole de Routage",1,""],
+        #7 : ["python","Notions de programmation orienté objet",2,"poo.md"],
+        #8 : ["sd","Structures de données linéaires",2,"sl.md"],
+        #9 : ["os","Système sur puce",1,"puces.md"],
+        #10 : ["sd","Arbres",2,"arbres.md"],
+        #11 : ["db","Schéma relationnel d'une base de données",2,"sgbd.md"],
+        #12: ["algorithmique","Algorithmes sur les arbres",2,"algoarbre.md"],
+        #13: ["sd","Graphes",2,"graphes.md"],
+        #14: ["os","Protocoles de routage",2,"routage.md"],
+        #15: ["algorithmique","Recherche textuelle",2,"texte.md"],
+        #16: ["python","Calculabilité, décidabilité",2,"calculabilite.md"],
+        #17: ["os","Sécurisation des communications",2,"cryptographie.md"],
+        #18:["python","Récursivité",2,"Programmation/T1_1_Recursivite.md"],
+        #19 : ["algorithmique","Diviser pour régner",1,"diviser.md"]
+    }
+
+
+
     @env.macro
     def icone(theme):
         return env.variables.icones[theme]
@@ -213,6 +245,43 @@ Vous pouvez télécharger une copie au format pdf du diaporama de synthèse de c
     def chapitre(num,theme,titre,duree,lien):
         icone = env.variables["icones"][theme]
         return f"|{icone}|[C{num}- {titre}]({lien}) | {duree}\n"
+
+
+#------------------DEVOIRS--------------------------
+    @env.macro
+    def devoir(num,theme,titre,duree,lien):
+        icone = env.variables["icones"][theme]
+        return f"|{icone}|[DS {num}- {titre}]({lien}) | {duree}\n" 
+
+
+    @env.macro
+    def sec_devoir(theme,devoir):
+            icone = env.variables.icones[theme]
+            return f"### {icone} &nbsp; {devoir}"
+
+    @env.macro
+    def devoir_chapitre(numero,devoir,theme,niveau):
+        # Position de l'ancre pour repérage dans la page
+        titre_bis = env.variables['devoir_'+niveau][numero][1]
+        ligne=f"# <span class='numdevoir'>Devoir-{numero}</span> {titre_bis} "
+        ligne+=f"<span style='float:right;'>{env.variables.icones[theme]}</span>"
+        return ligne
+
+    @env.macro
+    def affiche_devoir(niveau):
+        ret='''
+| |Devoir       | Le  |
+|-|-------------|-------|
+        '''
+        if niveau=="premiere":
+            var_projet = env.variables.devoir_premiere
+        else:
+            var_projet = env.variables.devoir_terminale
+        for k in var_projet:
+           ret+=devoir(k,env.variables['devoir_'+niveau][k][0],env.variables['devoir_'+niveau][k][1],env.variables['devoir_'+niveau][k][2],env.variables['devoir_'+niveau][k][3])
+        return ret
+
+#--------------------------------------------------------------------------------------        
 
     @env.macro
     def initexo(n):
@@ -402,9 +471,14 @@ Vous pouvez télécharger une copie au format pdf du diaporama de synthèse de c
     @env.macro
     def titre_chapitre(numero,titre,theme,niveau):
         # Position de l'ancre pour repérage dans la page
-        titre_bis = env.variables['progression_'+niveau][numero][1]
-        ligne=f"# <span class='numchapitre'>C{numero}</span> {titre_bis} "
-        ligne+=f"<span style='float:right;'>{env.variables.icones[theme]}</span>"
+        if theme=="devoir":
+            titre_bis = env.variables['devoir_'+niveau][numero][1]
+            ligne=f"# <span class='numdevoir'>Devoir {numero} : </span>  {titre_bis} "
+            ligne+=f"<span style='float:right;'>{env.variables.icones[theme]}</span>"
+        else:
+            titre_bis = env.variables['progression_'+niveau][numero][1]
+            ligne=f"# <span class='numchapitre'>C{numero}</span> {titre_bis} "
+            ligne+=f"<span style='float:right;'>{env.variables.icones[theme]}</span>"
         return ligne
     
 
