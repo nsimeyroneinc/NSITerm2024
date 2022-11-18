@@ -15,7 +15,7 @@
       
       
       <link rel="icon" href="../../../images/dragon.svg">
-      <meta name="generator" content="mkdocs-1.4.1, mkdocs-material-8.5.7">
+      <meta name="generator" content="mkdocs-1.4.1, mkdocs-material-8.5.10">
     
     
       
@@ -23,10 +23,10 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.20d9efc8.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.472b142f.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.cbb835fc.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.08040f6c.min.css">
         
       
       
@@ -111,6 +111,7 @@
         
           
           
+          
           <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Basculer en mode sombre"  type="radio" name="__palette" id="__palette_1">
           
             <label class="md-header__button md-icon" title="Basculer en mode sombre" for="__palette_2" hidden>
@@ -120,7 +121,8 @@
         
           
           
-          <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="teal"  aria-label="Basculer en mode clair"  type="radio" name="__palette" id="__palette_2">
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="brown" data-md-color-accent="brown"  aria-label="Basculer en mode clair"  type="radio" name="__palette" id="__palette_2">
           
             <label class="md-header__button md-icon" title="Basculer en mode clair" for="__palette_1" hidden>
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 1 7 7c0 2.38-1.19 4.47-3 5.74V17a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 0 1 7-7M9 21v-1h6v1a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1m3-17a5 5 0 0 0-5 5c0 2.05 1.23 3.81 3 4.58V16h4v-2.42c1.77-.77 3-2.53 3-4.58a5 5 0 0 0-5-5Z"/></svg>
@@ -1801,6 +1803,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_9">
@@ -1822,7 +1826,21 @@
   
     <li class="md-nav__item">
       <a href="../../../Evaluations/BDD_Devoir/" class="md-nav__link">
-        DS01
+        DS 0001
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Evaluations/DS_Pile_File_Routage/" class="md-nav__link">
+        DS 0011
       </a>
     </li>
   
@@ -3011,14 +3029,14 @@ Licensed under the Apache License, Version 2.0.
                 </div>
             </clipboard-copy>
         </div>
-            <div class="highlight-ipynb hl-python"><pre><span></span><span class="k">def</span> <span class="nf">tri_selection</span><span class="p">(</span><span class="n">tab</span><span class="p">):</span>
-    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">tab</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="p">):</span>
-        <span class="n">indice_min</span> <span class="o">=</span> <span class="n">i</span>
-        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">tab</span><span class="p">)):</span>
-            <span class="k">if</span> <span class="n">tab</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">tab</span><span class="p">[</span><span class="n">indice_min</span><span class="p">]:</span>
-                <span class="n">indice_min</span> <span class="o">=</span> <span class="n">j</span>
-        <span class="n">tab</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">tab</span><span class="p">[</span><span class="n">indice_min</span><span class="p">]</span> <span class="o">=</span> <span class="n">tab</span><span class="p">[</span><span class="n">indice_min</span><span class="p">],</span> <span class="n">tab</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
-    <span class="k">return</span> <span class="n">tab</span>
+            <div class="highlight-ipynb hl-sql"><pre><span></span><span class="n">def</span><span class="w"> </span><span class="n">tri_selection</span><span class="p">(</span><span class="n">tab</span><span class="p">):</span><span class="w"></span>
+<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="n">range</span><span class="p">(</span><span class="n">len</span><span class="p">(</span><span class="n">tab</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="p">):</span><span class="w"></span>
+<span class="w">        </span><span class="n">indice_min</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">i</span><span class="w"></span>
+<span class="w">        </span><span class="k">for</span><span class="w"> </span><span class="n">j</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="n">range</span><span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="n">len</span><span class="p">(</span><span class="n">tab</span><span class="p">)):</span><span class="w"></span>
+<span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="n">tab</span><span class="p">[</span><span class="n">j</span><span class="p">]</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">tab</span><span class="p">[</span><span class="n">indice_min</span><span class="p">]:</span><span class="w"></span>
+<span class="w">                </span><span class="n">indice_min</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">j</span><span class="w"></span>
+<span class="w">        </span><span class="n">tab</span><span class="p">[</span><span class="n">i</span><span class="p">],</span><span class="w"> </span><span class="n">tab</span><span class="p">[</span><span class="n">indice_min</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">tab</span><span class="p">[</span><span class="n">indice_min</span><span class="p">],</span><span class="w"> </span><span class="n">tab</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">tab</span><span class="w"></span>
 </pre></div>
 <div id="cell-1" class="clipboard-copy-txt">def tri_selection(tab):
     for i in range(len(tab)-1):
@@ -3069,13 +3087,13 @@ Licensed under the Apache License, Version 2.0.
                 </div>
             </clipboard-copy>
         </div>
-            <div class="highlight-ipynb hl-python"><pre><span></span><span class="k">def</span> <span class="nf">minimum</span><span class="p">(</span><span class="n">tab</span><span class="p">,</span> <span class="n">i</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;Recherche la position du minimum entre la position i et la fin du tableau tab&quot;&quot;&quot;</span>
-    <span class="n">ind_minimum</span> <span class="o">=</span> <span class="n">i</span>
-    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">tab</span><span class="p">)):</span>
-        <span class="k">if</span> <span class="n">tab</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">tab</span><span class="p">[</span><span class="n">ind_minimum</span><span class="p">]:</span>
-            <span class="n">ind_minimum</span> <span class="o">=</span> <span class="n">j</span>
-    <span class="k">return</span> <span class="n">ind_minimum</span>
+            <div class="highlight-ipynb hl-sql"><pre><span></span><span class="n">def</span><span class="w"> </span><span class="n">minimum</span><span class="p">(</span><span class="n">tab</span><span class="p">,</span><span class="w"> </span><span class="n">i</span><span class="p">):</span><span class="w"></span>
+<span class="w">    </span><span class="ss">&quot;&quot;&quot;Recherche la position du minimum entre la position i et la fin du tableau tab&quot;&quot;&quot;</span><span class="w"></span>
+<span class="w">    </span><span class="n">ind_minimum</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">i</span><span class="w"></span>
+<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="n">j</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="n">range</span><span class="p">(</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="n">len</span><span class="p">(</span><span class="n">tab</span><span class="p">)):</span><span class="w"></span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="n">tab</span><span class="p">[</span><span class="n">j</span><span class="p">]</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">tab</span><span class="p">[</span><span class="n">ind_minimum</span><span class="p">]:</span><span class="w"></span>
+<span class="w">            </span><span class="n">ind_minimum</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">j</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">ind_minimum</span><span class="w"></span>
 </pre></div>
 <div id="cell-2" class="clipboard-copy-txt">def minimum(tab, i):
     """Recherche la position du minimum entre la position i et la fin du tableau tab"""
@@ -3113,8 +3131,8 @@ Licensed under the Apache License, Version 2.0.
                 </div>
             </clipboard-copy>
         </div>
-            <div class="highlight-ipynb hl-python"><pre><span></span><span class="k">def</span> <span class="nf">echange</span><span class="p">(</span><span class="n">tab</span><span class="p">,</span> <span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">):</span>
-    <span class="n">tab</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">tab</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="n">tab</span><span class="p">[</span><span class="n">j</span><span class="p">],</span> <span class="n">tab</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+            <div class="highlight-ipynb hl-sql"><pre><span></span><span class="n">def</span><span class="w"> </span><span class="n">echange</span><span class="p">(</span><span class="n">tab</span><span class="p">,</span><span class="w"> </span><span class="n">i</span><span class="p">,</span><span class="w"> </span><span class="n">j</span><span class="p">):</span><span class="w"></span>
+<span class="w">    </span><span class="n">tab</span><span class="p">[</span><span class="n">i</span><span class="p">],</span><span class="w"> </span><span class="n">tab</span><span class="p">[</span><span class="n">j</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">tab</span><span class="p">[</span><span class="n">j</span><span class="p">],</span><span class="w"> </span><span class="n">tab</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="w"></span>
 </pre></div>
 <div id="cell-3" class="clipboard-copy-txt">def echange(tab, i, j):
     tab[i], tab[j] = tab[j], tab[i]</div>
@@ -3147,11 +3165,11 @@ Licensed under the Apache License, Version 2.0.
                 </div>
             </clipboard-copy>
         </div>
-            <div class="highlight-ipynb hl-python"><pre><span></span><span class="k">def</span> <span class="nf">tri_selection</span><span class="p">(</span><span class="n">tab</span><span class="p">):</span>
-    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">tab</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="p">):</span>
-        <span class="n">ind_minimum</span> <span class="o">=</span> <span class="n">minimum</span><span class="p">(</span><span class="n">tab</span><span class="p">,</span> <span class="n">i</span><span class="p">)</span>
-        <span class="n">echange</span><span class="p">(</span><span class="n">tab</span><span class="p">,</span> <span class="n">i</span><span class="p">,</span> <span class="n">ind_minimum</span><span class="p">)</span>
-    <span class="k">return</span> <span class="n">tab</span>
+            <div class="highlight-ipynb hl-sql"><pre><span></span><span class="n">def</span><span class="w"> </span><span class="n">tri_selection</span><span class="p">(</span><span class="n">tab</span><span class="p">):</span><span class="w"></span>
+<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="n">range</span><span class="p">(</span><span class="n">len</span><span class="p">(</span><span class="n">tab</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="p">):</span><span class="w"></span>
+<span class="w">        </span><span class="n">ind_minimum</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">minimum</span><span class="p">(</span><span class="n">tab</span><span class="p">,</span><span class="w"> </span><span class="n">i</span><span class="p">)</span><span class="w"></span>
+<span class="w">        </span><span class="n">echange</span><span class="p">(</span><span class="n">tab</span><span class="p">,</span><span class="w"> </span><span class="n">i</span><span class="p">,</span><span class="w"> </span><span class="n">ind_minimum</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">tab</span><span class="w"></span>
 </pre></div>
 <div id="cell-4" class="clipboard-copy-txt">def tri_selection(tab):
     for i in range(len(tab)-1):
@@ -3187,7 +3205,7 @@ Licensed under the Apache License, Version 2.0.
                 </div>
             </clipboard-copy>
         </div>
-            <div class="highlight-ipynb hl-python"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">tri_selection</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">52</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="o">-</span><span class="mi">9</span><span class="p">,</span><span class="mi">12</span><span class="p">]))</span>
+            <div class="highlight-ipynb hl-sql"><pre><span></span><span class="n">print</span><span class="p">(</span><span class="n">tri_selection</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">52</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="o">-</span><span class="mi">9</span><span class="p">,</span><span class="mi">12</span><span class="p">]))</span><span class="w"></span>
 </pre></div>
 <div id="cell-5" class="clipboard-copy-txt">print(tri_selection([1,52,6,-9,12]))</div>
     
@@ -3295,7 +3313,7 @@ Licensed under the Apache License, Version 2.0.
     <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.instant", "navigation.tabs", "navigation.tabs.sticky", "navigation.expand", "navigation.top", "navigation.sections", "navigation.indexes", "navigation.tracking", "header.autohide", "content.code.annotate"], "search": "../../../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.config.lang": "fr", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Rechercher", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version.title": "S\u00e9lectionner la version"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.8492ddcf.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.d6c3db9e.min.js"></script>
       
         <script src="../../../xtra/mathjax.js"></script>
       

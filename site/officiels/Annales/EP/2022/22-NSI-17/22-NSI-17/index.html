@@ -15,7 +15,7 @@
       
       
       <link rel="icon" href="../../../../../../images/dragon.svg">
-      <meta name="generator" content="mkdocs-1.4.1, mkdocs-material-8.5.7">
+      <meta name="generator" content="mkdocs-1.4.1, mkdocs-material-8.5.10">
     
     
       
@@ -23,10 +23,10 @@
       
     
     
-      <link rel="stylesheet" href="../../../../../../assets/stylesheets/main.20d9efc8.min.css">
+      <link rel="stylesheet" href="../../../../../../assets/stylesheets/main.472b142f.min.css">
       
         
-        <link rel="stylesheet" href="../../../../../../assets/stylesheets/palette.cbb835fc.min.css">
+        <link rel="stylesheet" href="../../../../../../assets/stylesheets/palette.08040f6c.min.css">
         
       
       
@@ -111,6 +111,7 @@
         
           
           
+          
           <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Basculer en mode sombre"  type="radio" name="__palette" id="__palette_1">
           
             <label class="md-header__button md-icon" title="Basculer en mode sombre" for="__palette_2" hidden>
@@ -120,7 +121,8 @@
         
           
           
-          <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="teal"  aria-label="Basculer en mode clair"  type="radio" name="__palette" id="__palette_2">
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="brown" data-md-color-accent="brown"  aria-label="Basculer en mode clair"  type="radio" name="__palette" id="__palette_2">
           
             <label class="md-header__button md-icon" title="Basculer en mode clair" for="__palette_1" hidden>
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 1 7 7c0 2.38-1.19 4.47-3 5.74V17a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 0 1 7-7M9 21v-1h6v1a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1m3-17a5 5 0 0 0-5 5c0 2.05 1.23 3.81 3 4.58V16h4v-2.42c1.77-.77 3-2.53 3-4.58a5 5 0 0 0-5-5Z"/></svg>
@@ -1801,6 +1803,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_9">
@@ -1822,7 +1826,21 @@
   
     <li class="md-nav__item">
       <a href="../../../../../../Evaluations/BDD_Devoir/" class="md-nav__link">
-        DS01
+        DS 0001
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../../Evaluations/DS_Pile_File_Routage/" class="md-nav__link">
+        DS 0011
       </a>
     </li>
   
@@ -3011,18 +3029,18 @@ Licensed under the Apache License, Version 2.0.
                 </div>
             </clipboard-copy>
         </div>
-            <div class="highlight-ipynb hl-python"><pre><span></span><span class="k">class</span> <span class="nc">Noeud</span><span class="p">:</span>
-    <span class="sd">&#39;&#39;&#39;</span>
-<span class="sd">    Classe implémentant un noeud d&#39;arbre binaire </span>
-<span class="sd">    disposant de 3 attributs :</span>
-<span class="sd">    - valeur : la valeur de l&#39;étiquette,</span>
-<span class="sd">    - gauche : le sous-arbre gauche.</span>
-<span class="sd">    - droit : le sous-arbre droit.</span>
-<span class="sd">    &#39;&#39;&#39;</span>
-    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">v</span><span class="p">,</span> <span class="n">g</span><span class="p">,</span> <span class="n">d</span><span class="p">):</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">valeur</span> <span class="o">=</span> <span class="n">v</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">gauche</span> <span class="o">=</span> <span class="n">g</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">droite</span> <span class="o">=</span> <span class="n">d</span>
+            <div class="highlight-ipynb hl-sql"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="n">Noeud</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="s1">&#39;&#39;&#39;</span>
+<span class="s1">    Classe implémentant un noeud d&#39;</span><span class="n">arbre</span><span class="w"> </span><span class="n">binaire</span><span class="w"> </span>
+<span class="w">    </span><span class="n">disposant</span><span class="w"> </span><span class="n">de</span><span class="w"> </span><span class="mi">3</span><span class="w"> </span><span class="n">attributs</span><span class="w"> </span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="o">-</span><span class="w"> </span><span class="n">valeur</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="n">la</span><span class="w"> </span><span class="n">valeur</span><span class="w"> </span><span class="n">de</span><span class="w"> </span><span class="n">l</span><span class="s1">&#39;étiquette,</span>
+<span class="s1">    - gauche : le sous-arbre gauche.</span>
+<span class="s1">    - droit : le sous-arbre droit.</span>
+<span class="s1">    &#39;&#39;&#39;</span><span class="w"></span>
+<span class="w">    </span><span class="n">def</span><span class="w"> </span><span class="n">__init__</span><span class="p">(</span><span class="k">self</span><span class="p">,</span><span class="w"> </span><span class="n">v</span><span class="p">,</span><span class="w"> </span><span class="k">g</span><span class="p">,</span><span class="w"> </span><span class="n">d</span><span class="p">):</span><span class="w"></span>
+<span class="w">        </span><span class="k">self</span><span class="p">.</span><span class="n">valeur</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">v</span><span class="w"></span>
+<span class="w">        </span><span class="k">self</span><span class="p">.</span><span class="n">gauche</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">g</span><span class="w"></span>
+<span class="w">        </span><span class="k">self</span><span class="p">.</span><span class="n">droite</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">d</span><span class="w"></span>
 </pre></div>
 <div id="cell-1" class="clipboard-copy-txt">class Noeud:
     '''
@@ -3065,58 +3083,58 @@ Licensed under the Apache License, Version 2.0.
                 </div>
             </clipboard-copy>
         </div>
-            <div class="highlight-ipynb hl-python"><pre><span></span><span class="k">class</span> <span class="nc">ABR</span><span class="p">:</span>
-    <span class="sd">&#39;&#39;&#39;</span>
-<span class="sd">    Classe implémentant une structure </span>
-<span class="sd">    d&#39;arbre binaire de recherche.</span>
-<span class="sd">    &#39;&#39;&#39;</span>
-    
-    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="sd">&#39;&#39;&#39;Crée un arbre binaire de recherche vide&#39;&#39;&#39;</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">racine</span> <span class="o">=</span> <span class="kc">None</span>
-        
-    <span class="k">def</span> <span class="nf">est_vide</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="sd">&#39;&#39;&#39;Renvoie True si l&#39;ABR est vide et False sinon.&#39;&#39;&#39;</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">racine</span> <span class="ow">is</span> <span class="kc">None</span>
-    
-    <span class="k">def</span> <span class="nf">parcours</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">tab</span> <span class="o">=</span> <span class="p">[]):</span>
-        <span class="sd">&#39;&#39;&#39;</span>
-<span class="sd">	  Renvoie la liste tab complétée avec tous les </span>
-<span class="sd">        éléments de </span>
-<span class="sd">        l&#39;ABR triés par ordre croissant.</span>
-<span class="sd">        &#39;&#39;&#39;</span>
-        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">est_vide</span><span class="p">():</span>
-            <span class="k">return</span> <span class="n">tab</span>
-        <span class="k">else</span><span class="p">:</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">racine</span><span class="o">.</span><span class="n">gauche</span><span class="o">.</span><span class="n">parcours</span><span class="p">(</span><span class="n">tab</span><span class="p">)</span>
-            <span class="n">tab</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="o">...</span><span class="p">)</span>
-            <span class="o">...</span>
-            <span class="k">return</span> <span class="n">tab</span>
-        
-    <span class="k">def</span> <span class="nf">insere</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">element</span><span class="p">):</span>
-        <span class="sd">&#39;&#39;&#39;Insère un élément dans l&#39;arbre binaire de recherche.&#39;&#39;&#39;</span>
-        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">est_vide</span><span class="p">():</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">racine</span> <span class="o">=</span> <span class="n">Noeud</span><span class="p">(</span><span class="n">element</span><span class="p">,</span> <span class="n">ABR</span><span class="p">(),</span> <span class="n">ABR</span><span class="p">())</span>
-        <span class="k">else</span><span class="p">:</span>
-            <span class="k">if</span> <span class="n">element</span> <span class="o">&lt;</span> <span class="bp">self</span><span class="o">.</span><span class="n">racine</span><span class="o">.</span><span class="n">valeur</span><span class="p">:</span>
-                <span class="bp">self</span><span class="o">.</span><span class="n">racine</span><span class="o">.</span><span class="n">gauche</span><span class="o">.</span><span class="n">insere</span><span class="p">(</span><span class="n">element</span><span class="p">)</span>
-            <span class="k">else</span> <span class="p">:</span> 
-                <span class="bp">self</span><span class="o">.</span><span class="n">racine</span><span class="o">.</span><span class="n">droite</span><span class="o">.</span><span class="n">insere</span><span class="p">(</span><span class="n">element</span><span class="p">)</span>
-    
-    <span class="k">def</span> <span class="nf">recherche</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">element</span><span class="p">):</span>
-        <span class="sd">&#39;&#39;&#39;</span>
-<span class="sd">        Renvoie True si element est présent dans l&#39;arbre </span>
-<span class="sd">        binaire et False sinon.</span>
-<span class="sd">	 &#39;&#39;&#39;</span>
-        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">est_vide</span><span class="p">():</span>
-            <span class="k">return</span> <span class="o">...</span>
-        <span class="k">else</span><span class="p">:</span>
-            <span class="k">if</span> <span class="n">element</span> <span class="o">&lt;</span> <span class="bp">self</span><span class="o">.</span><span class="n">racine</span><span class="o">.</span><span class="n">valeur</span><span class="p">:</span>
-                <span class="k">return</span> <span class="o">...</span>
-            <span class="k">elif</span> <span class="n">element</span> <span class="o">&gt;</span> <span class="bp">self</span><span class="o">.</span><span class="n">racine</span><span class="o">.</span><span class="n">valeur</span><span class="p">:</span>
-                <span class="k">return</span> <span class="o">...</span>
-            <span class="k">else</span><span class="p">:</span>
-                <span class="k">return</span> <span class="o">...</span>
+            <div class="highlight-ipynb hl-sql"><pre><span></span><span class="k">class</span><span class="w"> </span><span class="n">ABR</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="s1">&#39;&#39;&#39;</span>
+<span class="s1">    Classe implémentant une structure </span>
+<span class="s1">    d&#39;</span><span class="n">arbre</span><span class="w"> </span><span class="n">binaire</span><span class="w"> </span><span class="n">de</span><span class="w"> </span><span class="n">recherche</span><span class="p">.</span><span class="w"></span>
+<span class="w">    </span><span class="s1">&#39;&#39;&#39;</span>
+<span class="s1">    </span>
+<span class="s1">    def __init__(self):</span>
+<span class="s1">        &#39;&#39;&#39;</span><span class="n">Crée</span><span class="w"> </span><span class="n">un</span><span class="w"> </span><span class="n">arbre</span><span class="w"> </span><span class="n">binaire</span><span class="w"> </span><span class="n">de</span><span class="w"> </span><span class="n">recherche</span><span class="w"> </span><span class="n">vide</span><span class="s1">&#39;&#39;&#39;</span>
+<span class="s1">        self.racine = None</span>
+<span class="s1">        </span>
+<span class="s1">    def est_vide(self):</span>
+<span class="s1">        &#39;&#39;&#39;</span><span class="n">Renvoie</span><span class="w"> </span><span class="k">True</span><span class="w"> </span><span class="n">si</span><span class="w"> </span><span class="n">l</span><span class="s1">&#39;ABR est vide et False sinon.&#39;&#39;&#39;</span><span class="w"></span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="k">self</span><span class="p">.</span><span class="n">racine</span><span class="w"> </span><span class="k">is</span><span class="w"> </span><span class="k">None</span><span class="w"></span>
+<span class="w">    </span>
+<span class="w">    </span><span class="n">def</span><span class="w"> </span><span class="n">parcours</span><span class="p">(</span><span class="k">self</span><span class="p">,</span><span class="w"> </span><span class="n">tab</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[]):</span><span class="w"></span>
+<span class="w">        </span><span class="s1">&#39;&#39;&#39;</span>
+<span class="s1">	  Renvoie la liste tab complétée avec tous les </span>
+<span class="s1">        éléments de </span>
+<span class="s1">        l&#39;</span><span class="n">ABR</span><span class="w"> </span><span class="n">triés</span><span class="w"> </span><span class="n">par</span><span class="w"> </span><span class="n">ordre</span><span class="w"> </span><span class="n">croissant</span><span class="p">.</span><span class="w"></span>
+<span class="w">        </span><span class="s1">&#39;&#39;&#39;</span>
+<span class="s1">        if self.est_vide():</span>
+<span class="s1">            return tab</span>
+<span class="s1">        else:</span>
+<span class="s1">            self.racine.gauche.parcours(tab)</span>
+<span class="s1">            tab.append(...)</span>
+<span class="s1">            ...</span>
+<span class="s1">            return tab</span>
+<span class="s1">        </span>
+<span class="s1">    def insere(self, element):</span>
+<span class="s1">        &#39;&#39;&#39;</span><span class="n">Insère</span><span class="w"> </span><span class="n">un</span><span class="w"> </span><span class="err">é</span><span class="n">lément</span><span class="w"> </span><span class="n">dans</span><span class="w"> </span><span class="n">l</span><span class="s1">&#39;arbre binaire de recherche.&#39;&#39;&#39;</span><span class="w"></span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="k">self</span><span class="p">.</span><span class="n">est_vide</span><span class="p">():</span><span class="w"></span>
+<span class="w">            </span><span class="k">self</span><span class="p">.</span><span class="n">racine</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Noeud</span><span class="p">(</span><span class="n">element</span><span class="p">,</span><span class="w"> </span><span class="n">ABR</span><span class="p">(),</span><span class="w"> </span><span class="n">ABR</span><span class="p">())</span><span class="w"></span>
+<span class="w">        </span><span class="k">else</span><span class="p">:</span><span class="w"></span>
+<span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="n">element</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="k">self</span><span class="p">.</span><span class="n">racine</span><span class="p">.</span><span class="n">valeur</span><span class="p">:</span><span class="w"></span>
+<span class="w">                </span><span class="k">self</span><span class="p">.</span><span class="n">racine</span><span class="p">.</span><span class="n">gauche</span><span class="p">.</span><span class="n">insere</span><span class="p">(</span><span class="n">element</span><span class="p">)</span><span class="w"></span>
+<span class="w">            </span><span class="k">else</span><span class="w"> </span><span class="p">:</span><span class="w"> </span>
+<span class="w">                </span><span class="k">self</span><span class="p">.</span><span class="n">racine</span><span class="p">.</span><span class="n">droite</span><span class="p">.</span><span class="n">insere</span><span class="p">(</span><span class="n">element</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span>
+<span class="w">    </span><span class="n">def</span><span class="w"> </span><span class="n">recherche</span><span class="p">(</span><span class="k">self</span><span class="p">,</span><span class="w"> </span><span class="n">element</span><span class="p">):</span><span class="w"></span>
+<span class="w">        </span><span class="s1">&#39;&#39;&#39;</span>
+<span class="s1">        Renvoie True si element est présent dans l&#39;</span><span class="n">arbre</span><span class="w"> </span>
+<span class="w">        </span><span class="n">binaire</span><span class="w"> </span><span class="n">et</span><span class="w"> </span><span class="k">False</span><span class="w"> </span><span class="n">sinon</span><span class="p">.</span><span class="w"></span>
+<span class="w">	 </span><span class="s1">&#39;&#39;</span><span class="err">&#39;</span><span class="w"></span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="k">self</span><span class="p">.</span><span class="n">est_vide</span><span class="p">():</span><span class="w"></span>
+<span class="w">            </span><span class="k">return</span><span class="w"> </span><span class="p">...</span><span class="w"></span>
+<span class="w">        </span><span class="k">else</span><span class="p">:</span><span class="w"></span>
+<span class="w">            </span><span class="k">if</span><span class="w"> </span><span class="n">element</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="k">self</span><span class="p">.</span><span class="n">racine</span><span class="p">.</span><span class="n">valeur</span><span class="p">:</span><span class="w"></span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="p">...</span><span class="w"></span>
+<span class="w">            </span><span class="n">elif</span><span class="w"> </span><span class="n">element</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="k">self</span><span class="p">.</span><span class="n">racine</span><span class="p">.</span><span class="n">valeur</span><span class="p">:</span><span class="w"></span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="p">...</span><span class="w"></span>
+<span class="w">            </span><span class="k">else</span><span class="p">:</span><span class="w"></span>
+<span class="w">                </span><span class="k">return</span><span class="w"> </span><span class="p">...</span><span class="w"></span>
 </pre></div>
 <div id="cell-2" class="clipboard-copy-txt">class ABR:
     '''
@@ -3275,7 +3293,7 @@ Licensed under the Apache License, Version 2.0.
     <script id="__config" type="application/json">{"base": "../../../../../..", "features": ["navigation.instant", "navigation.tabs", "navigation.tabs.sticky", "navigation.expand", "navigation.top", "navigation.sections", "navigation.indexes", "navigation.tracking", "header.autohide", "content.code.annotate"], "search": "../../../../../../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.config.lang": "fr", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Rechercher", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version.title": "S\u00e9lectionner la version"}}</script>
     
     
-      <script src="../../../../../../assets/javascripts/bundle.8492ddcf.min.js"></script>
+      <script src="../../../../../../assets/javascripts/bundle.d6c3db9e.min.js"></script>
       
         <script src="../../../../../../xtra/mathjax.js"></script>
       

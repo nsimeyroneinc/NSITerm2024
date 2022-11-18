@@ -405,7 +405,7 @@ _Cet exercice porte sur l’algorithme de tri fusion, qui s’appuie sur la mét
         b. Citer le nom d’un autre algorithme de tri. Donner l’ordre de grandeur de son coût, en nombre de comparaisons, pour une liste de longueur .  
         Comparer ce coût à celui du tri fusion. Aucune justification n’est attendue.  
     === "Solution" 
-        {{ correction(False, 
+        {{ correction(True, 
         "
         a. $O(nlog_2(n))$  
         b. L’algorithme de tri par insertion a une complexité en temps dans le pire des cas en O(n2).
@@ -456,7 +456,7 @@ def tri_fusion(L):
 	    tri_fusion([7, 4, 2, 1, 8, 5, 6, 3])
 	    ```
     === "Solution"
-        {{ correction(False, 
+        {{ correction(True, 
         "
         Voici l’affichage obtenu :
         ```python
@@ -477,7 +477,7 @@ On s’intéresse désormais à différentes fonctions appelées par tri_fusion,
     === "Enoncé"
         Ecrire la fonction moitie_droite.
     === "Solution"
-        {{ correction(False, 
+        {{ correction(True, 
         "
         ```python
         def moitie_droite(L):
@@ -524,7 +524,7 @@ On s’intéresse désormais à différentes fonctions appelées par tri_fusion,
 
         Écrire sur la copie les instructions manquantes des lignes 17 à 22 permettant d’insérer dans la liste L les éléments des listes L1 et L2 par ordre croissant. 
     === "Solution"
-        {{ correction(False, 
+        {{ correction(True, 
         "
         ```python
         def fusion(L1, L2):
@@ -569,7 +569,7 @@ _Cet exercice traite principalement du thème « algorithmique, langages et prog
 	    print(notes)
 	    ```
 	=== "Solution"
-        {{ correction(False, 
+        {{ correction(True, 
         "
         ```python
         >>> 8
@@ -582,7 +582,7 @@ _Cet exercice traite principalement du thème « algorithmique, langages et prog
 	    Écrire un code Python permettant d'afficher les éléments d'indice 2 à 4 de la liste notes.
 
     === "Solution"
-        {{ correction(False, 
+        {{ correction(True, 
         "
         ```python
         for i in range(2,5):
@@ -609,7 +609,7 @@ Le tri par insertion est un algorithme efficace qui s'inspire de la façon dont 
                     liste[i + 1] = element_a_inserer
         ```
     === "Solution"
-        {{ correction(False, 
+        {{ correction(True, 
         "
         ```python
         def tri_insertion(liste):
@@ -640,7 +640,7 @@ On s'interroge sur ce qui s’est passé lors de l’exécution de tri_insertion
     === "Enoncé"
 	    Donner le contenu de la liste notes après le premier passage dans la boucle for.
     === "Solution"
-        {{ correction(False, 
+        {{ correction(True, 
         "
         ```python
         >>> [7, 8, 18, 14, 12, 9, 17, 3]
@@ -651,7 +651,7 @@ On s'interroge sur ce qui s’est passé lors de l’exécution de tri_insertion
 	=== "Enoncé"
         Donner le contenu de la liste notes après le troisième passage dans la boucle for.
     === "Solution"
-        {{ correction(False, 
+        {{ correction(True, 
         "
         ```python
         >>> [7, 8, 14, 18, 12, 9, 17, 3]
@@ -673,7 +673,7 @@ source : Wikipedia
     === "Enoncé"
 	Cet algorithme est-il itératif ou récursif ? Justifier en une phrase.
     === "Solution"
-        {{ correction(False, 
+        {{ correction(True, 
         "
         récursif : à l’étape (3) l’algorithme de tri fusion s’appelle lui-même.
         ")}}
@@ -683,7 +683,7 @@ source : Wikipedia
         Expliquer en trois lignes comment faire pour rassembler dans une main deux tas déjà triés de cartes, la carte en haut d'un tas étant la plus petite de ce même tas ;  
 	    la deuxième carte d'un tas n'étant visible qu'après avoir retiré la première carte de ce tas.
     === "Solution"
-        {{ correction(False, 
+        {{ correction(True, 
         "
         1. Comparer les cartes du haut des 2 tas.  
         2. Placer la carte de valeur plus faible dans la main.  
@@ -712,7 +712,7 @@ Elle prend quatre arguments : la liste qui est en train d'être triée, l'indice
         Remarque : la fonction floor renvoie la partie entière du nombre passé en paramètre. 
 
     === "Solution" 
-        {{ correction(False, 
+        {{ correction(True, 
         "
         ```python
         from math import floor
@@ -742,7 +742,7 @@ Voici une illustration des étapes d’un tri effectué sur la liste `[3, 41, 52
     === "Enoncé"
 	    Quel algorithme a été utilisé : le tri par insertion ou le tri fusion ? Justifier.
     === "Solution"
-        {{ correction(False, 
+        {{ correction(True, 
         "
         tri par fusion : à chaque étape, le tri se fait par fusion de 2 tas déjà triés
         ")}}
@@ -752,7 +752,7 @@ Voici une illustration des étapes d’un tri effectué sur la liste `[3, 41, 52
 	    Identifier le tri qui a une complexité, dans le pire des cas, en O(n2) et identifier le tri qui a une complexité, dans le pire des cas, en O(n log2 n).  
 	    Remarque : n représente la longueur de la liste à trier.
     === "Solution"  
-        {{ correction(False, 
+        {{ correction(Truee, 
         "
 
         - tri par insertion : $O(n^2)$  
@@ -763,7 +763,7 @@ Voici une illustration des étapes d’un tri effectué sur la liste `[3, 41, 52
     === "Enoncé"
 	    Justifier brièvement ces deux complexités. 
     === "Solution"
-        {{ correction(False, 
+        {{ correction(True, 
         "
 
         - Le tri par insertion utilise 2 boucles imbriquées, soit dans le pire des cas ~ $1/2n(n+1)$ opérations.  
@@ -792,7 +792,7 @@ Questions préliminaires
     === "Enoncé"
 	    Expliquer pourquoi le couple (1, 3) est une inversion dans le tableau [4, 8, 3, 7].
     === "Solution" 
-        {{ correction(False, 
+        {{ correction(True, 
         "
         À l’indice 1 du tableau on trouve 8, à l’indice 3 on trouve 7.  
         Nous avons 1 < 3 alors que 8 > 7, nous avons donc bien une inversion
@@ -802,7 +802,7 @@ Questions préliminaires
     === "Enoncé"
 	    Justifier que le couple (2, 3) n’en est pas une.
     === "Solution"
-        {{ correction(False, 
+        {{ correction(True, 
         "
         À l’indice 2 du tableau on trouve 3, à l’indice 3 on trouve 7.  
         Nous avons 2 < 3 et 3 < 7, nous n’avons donc pas d’inversion
@@ -833,7 +833,7 @@ Le but de cette partie est d’écrire une fonction itérative nombre_inversion 
 
         b. Expliquer ce que permet de déterminer cette fonction. 
     === "Solution" 
-        {{ correction(False, 
+        {{ correction(True, 
         "
 
         a.  
@@ -858,7 +858,7 @@ Le but de cette partie est d’écrire une fonction itérative nombre_inversion 
         6
         ```
     === "Solution"
-        {{ correction(False, 
+        {{ correction(True, 
         "
         ```python
         def nombre_inversions(tab):
@@ -875,7 +875,7 @@ Le but de cette partie est d’écrire une fonction itérative nombre_inversion 
         Quelle est l’ordre de grandeur de la complexité en temps de l'algorithme obtenu ?  
 	    Aucune justification n'est attendue.
     === "Solution"
-        {{ correction(False, 
+        {{ correction(True, 
         "
         L’ordre de grandeur de la complexité en temps de l’algorithme est $O(n^2)$
         ")}}
@@ -890,7 +890,7 @@ On définit pour cela des fonctions auxiliaires.
 	    Donner le nom d’un algorithme de tri ayant une complexité meilleure que quadratique.  
 	    Dans la suite de cet exercice, on suppose qu’on dispose d'une fonction tri(tab) qui prend en argument un tableau et renvoie un tableau contenant les mêmes éléments rangés dans l'ordre croissant.  
     === "Solution"
-        {{ correction(False, 
+        {{ correction(True, 
         "
         Le tri fusion a une complexité en $O(n.log_2 (n))$
         ")}}
@@ -908,7 +908,7 @@ On définit pour cela des fonctions auxiliaires.
         [4, 8]
         ```
     === "Solution"
-        {{ correction(False, 
+        {{ correction(True, 
         "
         ```python
         def moitie_gauche(tab):
@@ -958,7 +958,7 @@ Dans la suite, on suppose qu’on dispose de la fonction moitie_droite(tab) qui 
         - Ajouter au nombre d'inversions précédemment comptées le nombre renvoyé par la fonction nb_inv_tab avec pour arguments les deux tableaux triés.  
 
     === "Solution"
-        {{ correction(False, 
+        {{ correction(True, 
         "
         ```python
         def nb_inversions_rec(tab):

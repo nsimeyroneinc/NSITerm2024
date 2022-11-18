@@ -105,8 +105,8 @@
 }
 
 .numchapitre {
-  color : rgb(255, 166, 0);
-  background-color: rgb(55, 55, 144);
+  color : rgb(240, 237, 231);
+  background-color:brown;
   font-weight: bold;
   padding-left: 5px;
   padding-right: 2px;
@@ -513,7 +513,7 @@ body {
 }
 
 .md-typeset h1 {
-  color: teal;
+  color: rgb(131, 95, 77);
   font-weight: bold;
 }
 /*
@@ -526,8 +526,8 @@ body {
 }
 */
 .numchapitre {
-color : rgb(228, 162, 40);
-background-color: teal;
+color : rgb(247, 245, 241);
+background-color: rgb(105, 60, 38);
 font-weight: bold;
 padding-left: 5px;
 padding-right: 2px;
@@ -832,4 +832,104 @@ Gray : rgb(158, 158, 158)
   text-decoration-line: underline;
   text-underline-offset: 0.37em;
   text-decoration-thickness: 1.5px; 
+}
+
+.sacdos {
+  color: darkorange;
+  font-size : 72pt;
+}
+
+.box {
+  line-height: 1.1;
+  font-family: monospace;
+}
+
+.barre {
+  position: relative;
+}
+.barre:before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 50%;
+  right: 0;
+  border-top: 1px solid;
+  border-color: inherit;
+  
+  -webkit-transform:rotate(-5deg);
+  -moz-transform:rotate(-5deg);
+  -ms-transform:rotate(-5deg);
+  -o-transform:rotate(-5deg);
+  transform:rotate(-5deg);
+}
+
+.pile-o {
+  font-family: monospace;
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  border-left: 2pt solid  black   ;
+  border-right: 2pt solid  black   ;
+  border-bottom: 2pt solid  black   ;
+  padding-bottom: 5pt;
+}
+
+table.file {
+  font-family: monospace;
+  border-collapse: collapse;
+}
+
+
+table.file tr td:first-child
+{
+border-top: 2pt solid #777777;
+border-bottom: 2pt solid #777777;
+padding-right : 6pt;
+padding-left : 6pt;
+}
+
+table.file tr td:last-child
+{
+border-top: 2pt solid #777777;
+border-bottom: 2pt solid #777777;
+padding-right : 6pt;
+padding-left : 6pt;
+}
+
+
+
+table.file tr td:not(:first-child):not(:last-child)
+{
+border-top: 2pt solid #777777;
+border-left: 2pt solid #777777;
+border-right: 2pt solid #777777;
+border-bottom: 2pt solid #777777;
+padding-right : 6pt;
+padding-left : 6pt;
+}
+
+table.pile{
+  font-family: monospace;
+  border-collapse: collapse;
+}
+
+table.pile td
+{padding-right: 6pt;
+padding-left: 6pt;}
+
+table.pile tr:not(:first-child)
+{border-top: 2pt solid #777777;
+  border-left: 2pt solid #777777;
+  border-right: 2pt solid #777777;
+  border-bottom: 2pt solid #777777;
+  padding-right : 6pt;
+  padding-left : 6pt;
+}
+
+table.pile tr:first-child
+{ 
+  border-left: 2pt solid #777777;
+  border-right: 2pt solid #777777;
+  border-bottom: 2pt solid #777777;
+  padding-right : 6pt;
+  padding-left : 6pt;
 }

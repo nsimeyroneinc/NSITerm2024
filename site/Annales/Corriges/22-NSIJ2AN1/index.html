@@ -15,7 +15,7 @@
       
       
       <link rel="icon" href="../../../images/dragon.svg">
-      <meta name="generator" content="mkdocs-1.4.1, mkdocs-material-8.5.7">
+      <meta name="generator" content="mkdocs-1.4.1, mkdocs-material-8.5.10">
     
     
       
@@ -23,10 +23,10 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.20d9efc8.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.472b142f.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.cbb835fc.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.08040f6c.min.css">
         
       
       
@@ -116,6 +116,7 @@
         
           
           
+          
           <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Basculer en mode sombre"  type="radio" name="__palette" id="__palette_1">
           
             <label class="md-header__button md-icon" title="Basculer en mode sombre" for="__palette_2" hidden>
@@ -125,7 +126,8 @@
         
           
           
-          <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="teal"  aria-label="Basculer en mode clair"  type="radio" name="__palette" id="__palette_2">
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="brown" data-md-color-accent="brown"  aria-label="Basculer en mode clair"  type="radio" name="__palette" id="__palette_2">
           
             <label class="md-header__button md-icon" title="Basculer en mode clair" for="__palette_1" hidden>
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 1 7 7c0 2.38-1.19 4.47-3 5.74V17a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 0 1 7-7M9 21v-1h6v1a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1m3-17a5 5 0 0 0-5 5c0 2.05 1.23 3.81 3 4.58V16h4v-2.42c1.77-.77 3-2.53 3-4.58a5 5 0 0 0-5-5Z"/></svg>
@@ -1808,6 +1810,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_9">
@@ -1829,7 +1833,21 @@
   
     <li class="md-nav__item">
       <a href="../../../Evaluations/BDD_Devoir/" class="md-nav__link">
-        DS01
+        DS 0001
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Evaluations/DS_Pile_File_Routage/" class="md-nav__link">
+        DS 0011
       </a>
     </li>
   
@@ -2012,326 +2030,241 @@
 <p>Année : <strong>2022</strong> <br>Centre : <strong>Amérique du nord</strong> <br>Jour : <strong>2</strong> <br>Enoncé : <a href="../../../officiels/Annales/EE/2022/22-NSIJ2AN1.pdf"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M64 0C28.7 0 0 28.7 0 64v384c0 35.3 28.7 64 64 64h256c35.3 0 64-28.7 64-64V160H256c-17.7 0-32-14.3-32-32V0H64zm192 0v128h128L256 0zM64 224h24c30.9 0 56 25.1 56 56s-25.1 56-56 56h-8v32c0 8.8-7.2 16-16 16s-16-7.2-16-16V240c0-8.8 7.2-16 16-16zm24 80c13.3 0 24-10.7 24-24s-10.7-24-24-24h-8v48h8zm72-64c0-8.8 7.2-16 16-16h24c26.5 0 48 21.5 48 48v64c0 26.5-21.5 48-48 48h-24c-8.8 0-16-7.2-16-16V240zm32 112h8c8.8 0 16-7.2 16-16v-64c0-8.8-7.2-16-16-16h-8v96zm96-128h48c8.8 0 16 7.2 16 16s-7.2 16-16 16h-32v32h32c8.8 0 16 7.2 16 16s-7.2 16-16 16h-32v48c0 8.8-7.2 16-16 16s-16-7.2-16-16V240c0-8.8 7.2-16 16-16z"/></svg></span></a><br></p>
 <h2 id="exercice-1-listes-arbres-binaires-de-recherche-et-programmation-orientee-objet">Exercice 1 : <span class='theme_exo'><em>listes, arbres binaires de recherche et programmation orientée objet</em></span><a class="headerlink" href="#exercice-1-listes-arbres-binaires-de-recherche-et-programmation-orientee-objet" title="Permanent link">⚓︎</a></h2>
 <ol>
-<li>a. La relation Sport a pour clé primaire le couple d’attribut (nomSport, nomSation) et pour clé étrangère l’attribut nomStation. 
-    b.  <ul>
-<li>contrainte d’intégrité de domaine : l’attribut prix est de type nombre entier  </li>
-<li>contrainte d’intégrité de relation : chaque couple d’attributs (nomSport, nomSation) doit être unique.  </li>
-<li>contrainte d’intégrité de référence : chaque valeur de l’attribut nomStation doit correspondre aux valeurs de l’attribut nomStation de la relation Station   </li>
-</ul>
+<li>
+<p>a.<br />
+    <div class="highlight"><span class="filename">🐍 Script Python</span><pre><span></span><code><span class="k">class</span> <span class="nc">Concurrent</span><span class="p">:</span> 
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">pseudo</span><span class="p">,</span> <span class="n">temps</span><span class="p">,</span> <span class="n">penalite</span><span class="p">):</span> 
+        <span class="bp">self</span><span class="o">.</span><span class="n">nom</span> <span class="o">=</span> <span class="n">pseudo</span> 
+        <span class="bp">self</span><span class="o">.</span><span class="n">temps</span> <span class="o">=</span> <span class="n">temps</span> 
+        <span class="bp">self</span><span class="o">.</span><span class="n">penalite</span> <span class="o">=</span> <span class="n">penalite</span> 
+        <span class="bp">self</span><span class="o">.</span><span class="n">temps_tot</span> <span class="o">=</span> <span class="n">temps</span> <span class="o">+</span> <span class="n">penalite</span> 
+</code></pre></div></p>
+<p>b. Pour c1, <code>temps_tot</code> est égal à 99,67 (87,67 + 12)</p>
+<p>c <code>c1.temps_tot</code></p>
 </li>
 <li>
-<p>a. Une requête d’insertion a été utilisée à la place d’une requête de mise à jour. L’entrée avec le couple (“planche à voile”, “La tramontane catalane”) existe déjà dans la relation Sport, d’où l’erreur (rappel :  chaque couple d’attributs (nomSport, nomSation) doit être unique).      <br />
-    Requête correcte :<br />
-    <div class="highlight"><span class="filename">🗂️ Requête SQL</span><pre><span></span><code><span class="k">UPDATE</span><span class="w"> </span><span class="n">Sport</span><span class="w"> </span>
-<span class="k">SET</span><span class="w"> </span><span class="n">prix</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1350</span><span class="w"> </span>
-<span class="k">WHERE</span><span class="w"> </span><span class="n">nomSport</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ss">&quot;planche à voile&quot;</span><span class="w"> </span><span class="k">AND</span><span class="w"> </span><span class="n">nomSation</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ss">&quot;La tramontane catalane&quot;</span><span class="w"></span>
+<p>a 
+    <div class="highlight"><span class="filename">🐍 Script Python</span><pre><span></span><code><span class="n">L1</span> <span class="o">=</span> <span class="n">resultats</span><span class="o">.</span><span class="n">queue</span><span class="p">()</span> 
+<span class="n">L2</span> <span class="o">=</span> <span class="n">L1</span><span class="o">.</span><span class="n">queue</span><span class="p">()</span> 
+<span class="n">c1</span> <span class="o">=</span> <span class="n">L2</span><span class="o">.</span><span class="n">tete</span><span class="p">()</span>
 </code></pre></div></p>
-<p>b. 
-<div class="highlight"><span class="filename">🗂️ Requête SQL</span><pre><span></span><code><span class="k">INSERT</span><span class="w"> </span><span class="k">INTO</span><span class="w"> </span><span class="n">Station</span><span class="w"> </span>
-<span class="k">VALUES</span><span class="w"> </span><span class="p">(</span><span class="ss">&quot;Soleil Rouge&quot;</span><span class="p">,</span><span class="w"> </span><span class="ss">&quot;Bastia&quot;</span><span class="p">,</span><span class="w"> </span><span class="ss">&quot;Corse&quot;</span><span class="p">)</span><span class="w"></span>
+<p>ou bien directement :  </p>
+<div class="highlight"><span class="filename">🐍 Script Python</span><pre><span></span><code><span class="n">c1</span> <span class="o">=</span> <span class="n">resultats</span><span class="o">.</span><span class="n">queue</span><span class="p">()</span><span class="o">.</span><span class="n">queue</span><span class="p">()</span><span class="o">.</span><span class="n">tete</span><span class="p">()</span>
 </code></pre></div>
-et 
-<div class="highlight"><span class="filename">🗂️ Requête SQL</span><pre><span></span><code><span class="k">INSERT</span><span class="w"> </span><span class="k">INTO</span><span class="w"> </span><span class="n">Sport</span><span class="w"> </span>
-<span class="k">VALUES</span><span class="w"> </span><span class="p">(</span><span class="ss">&quot;plongée&quot;</span><span class="p">,</span><span class="w"> </span><span class="ss">&quot;Soleil Rouge&quot;</span><span class="p">,</span><span class="w"> </span><span class="mi">900</span><span class="p">)</span><span class="w"></span>
+<p>b 
+<div class="highlight"><span class="filename">🐍 Script Python</span><pre><span></span><code><span class="n">temps_total</span> <span class="o">=</span> <span class="n">resultats</span><span class="o">.</span><span class="n">tete</span><span class="p">()</span><span class="o">.</span><span class="n">temps_tot</span>
 </code></pre></div></p>
 </li>
 <li>
-<p>a. 
-    <div class="highlight"><span class="filename">🗂️ Requête SQL</span><pre><span></span><code><span class="k">SELECT</span><span class="w"> </span><span class="n">mail</span><span class="w"> </span>
-<span class="k">FROM</span><span class="w"> </span><span class="n">Client</span><span class="w"></span>
-</code></pre></div></p>
-<p>b. 
-<div class="highlight"><span class="filename">🗂️ Requête SQL</span><pre><span></span><code><span class="k">SELECT</span><span class="w"> </span><span class="n">nomStation</span><span class="w"> </span>
-<span class="k">FROM</span><span class="w"> </span><span class="n">Sport</span><span class="w"> </span>
-<span class="k">WHERE</span><span class="w"> </span><span class="n">nomSport</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ss">&quot;plongée&quot;</span><span class="w"></span>
-</code></pre></div></p>
+<div class="highlight"><span class="filename">🐍 Script Python</span><pre><span></span><code><span class="k">def</span> <span class="nf">meilleur_conccurent</span><span class="p">(</span><span class="n">L</span><span class="p">):</span> 
+    <span class="n">conc_mini</span> <span class="o">=</span> <span class="n">L</span><span class="o">.</span><span class="n">tete</span><span class="p">()</span> 
+    <span class="n">mini</span> <span class="o">=</span> <span class="n">conc_mini</span><span class="o">.</span><span class="n">temps_tot</span> 
+    <span class="n">Q</span> <span class="o">=</span> <span class="n">L</span><span class="o">.</span><span class="n">queue</span><span class="p">()</span> 
+    <span class="k">while</span> <span class="ow">not</span><span class="p">(</span><span class="n">Q</span><span class="o">.</span><span class="n">est_vide</span><span class="p">()):</span> 
+        <span class="n">elt</span> <span class="o">=</span> <span class="n">Q</span><span class="o">.</span><span class="n">tete</span><span class="p">()</span> 
+        <span class="k">if</span> <span class="n">elt</span><span class="o">.</span><span class="n">temps_tot</span> <span class="o">&lt;</span> <span class="n">mini</span> <span class="p">:</span> 
+            <span class="n">conc_mini</span> <span class="o">=</span> <span class="n">elt</span> 
+            <span class="n">mini</span> <span class="o">=</span> <span class="n">elt</span><span class="o">.</span><span class="n">temps_tot</span> 
+        <span class="n">Q</span> <span class="o">=</span> <span class="n">Q</span><span class="o">.</span><span class="n">queue</span><span class="p">()</span> 
+    <span class="k">return</span> <span class="n">conc_mini</span>
+</code></pre></div>
 </li>
 <li>
-<p>a. 
-    <div class="highlight"><span class="filename">🗂️ Requête SQL</span><pre><span></span><code><span class="k">SELECT</span><span class="w"> </span><span class="n">Station</span><span class="p">.</span><span class="n">ville</span><span class="p">,</span><span class="w"> </span><span class="n">Station</span><span class="p">.</span><span class="n">nomStation</span><span class="w"> </span>
-<span class="k">FROM</span><span class="w"> </span><span class="n">Station</span><span class="w"> </span><span class="k">JOIN</span><span class="w"> </span><span class="n">Sport</span><span class="w"> </span><span class="k">ON</span><span class="w"> </span><span class="n">Station</span><span class="p">.</span><span class="n">nomStation</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Sport</span><span class="p">.</span><span class="n">nomStation</span><span class="w"> </span>
-<span class="k">WHERE</span><span class="w"> </span><span class="n">Sport</span><span class="p">.</span><span class="n">nomSport</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ss">&quot;plongée&quot;</span><span class="w"></span>
-</code></pre></div></p>
-<p>b. 
-<div class="highlight"><span class="filename">🗂️ Requête SQL</span><pre><span></span><code><span class="k">SELECT</span><span class="w"> </span><span class="k">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span><span class="w"> </span>
-<span class="k">FROM</span><span class="w"> </span><span class="n">Sejour</span><span class="w"> </span><span class="k">JOIN</span><span class="w"> </span><span class="n">Station</span><span class="w"> </span><span class="k">ON</span><span class="w"> </span><span class="n">Sejour</span><span class="p">.</span><span class="n">nomStation</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Station</span><span class="p">.</span><span class="n">nomStation</span><span class="w"> </span>
-<span class="k">WHERE</span><span class="w"> </span><span class="n">Station</span><span class="p">.</span><span class="n">region</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ss">&quot;Corse&quot;</span><span class="w"> </span><span class="k">AND</span><span class="w"> </span><span class="n">Sejour</span><span class="p">.</span><span class="n">annee</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2020</span><span class="w"></span>
-</code></pre></div></p>
+<pre class="mermaid"><code>    graph TD
+    H["C6"] --&gt; G["C3"]
+    H --&gt; F["C5"]
+    F --&gt; B["C2"]
+    F --&gt; C["C4"]
+    C --&gt; D["C1"]
+    C --&gt; V1[" "]
+    style V1 fill:#FFFFFF, stroke:#FFFFFF
+    linkStyle 5 stroke:#FFFFFF,stroke-width:0px</code></pre>
 </li>
 </ol>
 <h2 id="exercice-2-systemes-dexploitation-gestion-des-processus-par-un-systeme-dexploitation">Exercice 2 : <span class='theme_exo'><em>systèmes d'exploitation, gestion des processus par un système d'exploitation</em></span><a class="headerlink" href="#exercice-2-systemes-dexploitation-gestion-des-processus-par-un-systeme-dexploitation" title="Permanent link">⚓︎</a></h2>
 <ol>
-<li></li>
-<li>paquet de données : R2 → R1 → R4 → R7  </li>
+<li>a. Proposition 2<br />
+    b. cd lycee<br />
+    c. mkdir algorithmique<br />
+    d. rm image1.jpg  </li>
+<li>a. PID du parent du processus démarré par la commande vi : 927<br />
+    b. PID d’un processus enfant du processus démarré par la commande xfce4-terminal : 1058<br />
+    c. PID de deux processus qui ont le même parent : 1153 et 1154 (parent PID 927)<br />
+    d. PID des deux processus qui ont consommé le plus de temps processeur : 923 et 1036  </li>
+<li>a. P1 -  P2 - P3 - P1 - P3 - P1 - P3 - P3<br />
+    b. P2 -  P1 - P1 - P1 - P3 - P3 - P3 - P3    </li>
 <li>
-<p>accusé de réception : R7 → R4 → R3 → R2 </p>
-</li>
-<li>
-<p>a. Dans le cas d’une panne du routeur R4 le groupe de routeur (R1, R2, R3) n’est plus capable d’atteindre le groupe de routeur (R5, R6, R7)<br />
-    b.On pourrait, entre autre, établir une liaison entre le routeur R1 et R6.  </p>
-</li>
-<li>
-<p>a.Table de routage R8  </p>
-<table>
-<thead>
-<tr>
-<th align="center">Destination</th>
-<th align="center">Lien</th>
-<th align="center">Distance</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="center">R1</td>
-<td align="center">R2</td>
-<td align="center">2</td>
-</tr>
-<tr>
-<td align="center">R2</td>
-<td align="center">R2</td>
-<td align="center">1</td>
-</tr>
-<tr>
-<td align="center">R3</td>
-<td align="center">R2</td>
-<td align="center">2</td>
-</tr>
-<tr>
-<td align="center">R4</td>
-<td align="center">R6</td>
-<td align="center">2</td>
-</tr>
-<tr>
-<td align="center">R5</td>
-<td align="center">R6</td>
-<td align="center">2</td>
-</tr>
-<tr>
-<td align="center">R6</td>
-<td align="center">R6</td>
-<td align="center">1</td>
-</tr>
-<tr>
-<td align="center">R7</td>
-<td align="center">R6</td>
-<td align="center">2</td>
-</tr>
-</tbody>
-</table>
-<p>b.Table de routage R2  </p>
-<table>
-<thead>
-<tr>
-<th align="center">Destination</th>
-<th align="center">Lien</th>
-<th align="center">Distance</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="center">R1</td>
-<td align="center">R1</td>
-<td align="center">1</td>
-</tr>
-<tr>
-<td align="center">R3</td>
-<td align="center">R3</td>
-<td align="center">1</td>
-</tr>
-<tr>
-<td align="center">R4</td>
-<td align="center">R1</td>
-<td align="center">2</td>
-</tr>
-<tr>
-<td align="center">R5</td>
-<td align="center">R3</td>
-<td align="center">3</td>
-</tr>
-<tr>
-<td align="center">R6</td>
-<td align="center">R8</td>
-<td align="center">2</td>
-</tr>
-<tr>
-<td align="center">R7</td>
-<td align="center">R1</td>
-<td align="center">3</td>
-</tr>
-<tr>
-<td align="center">R8</td>
-<td align="center">R8</td>
-<td align="center">1</td>
-</tr>
-</tbody>
-</table>
-</li>
-<li>
-<p>a.  </p>
+<p>a. Un processus peut être dans un état : ÉLU, PRÊT ou BLOQUÉ<br />
+    Voici une situation qui peut provoquer un interblocage :  </p>
 <ul>
-<li>Bande passante Fast Ethernet = 108b/s soit 100 Mb/s  </li>
-<li>Bande passante Ethernet = 108/ 107= 10  </li>
+<li>P1 est à l’état ÉLU, il demande R1, il l’obtient (car R1 est libre) puis passe à l’état PRÊT  </li>
+<li>P2 passe à l’état ÉLU, il demande R2, il l’obtient (car R2 est libre) puis passe à l’état PRÊT  </li>
+<li>P3 passe à l’état ÉLU, il demande R3, il l’obtient (car R3 est libre) puis passe à l’état PRÊT  </li>
+<li>P1 passe à l’état ÉLU, il demande R2, il ne l’obtient pas (car R2 est déjà utilisé par P2). P1 passe à l’état BLOQUÉ   </li>
+<li>P2 passe à l’état ÉLU, il demande R3, il ne l’obtient pas (car R3 est déjà utilisé par P3). P2 passe à l’état BLOQUÉ  </li>
+<li>P3 passe à l’état ÉLU, il demande R1, il ne l’obtient pas (car R1 est déjà utilisé par P1). P3 passe à l’état BLOQUÉ.<br />
+Les 3 processus se retrouvent à l’état BLOQUÉ, nous avons ici un phénomène d’interblocage. </li>
 </ul>
-<p>b. R2 → R3 → R4 → R7 → R6 → R5 avec un coût égale à 87 (65+10+1+1+10).<br />
-Tous les autres trajets entre R2 et R5 ont un coût supérieur (à faire)</p>
+<p>b. Pour éviter le phénomène d’interblocage, il suffit d’inverser les 2 lignes Demande R3 et Demande R2 pour le processus P3. On obtient alors :  </p>
+<ul>
+<li>P1 est à l’état ÉLU, il demande R1, il l’obtient (car R1 est libre) puis passe à l’état PRÊT  </li>
+<li>P2 passe à l’état ÉLU, il demande R2, il l’obtient (car R2 est libre) puis passe à l’état PRÊT  </li>
+<li>P3 passe à l’état ÉLU, il demande R1, il ne l’obtient pas (car R1 est déjà utilisé par P1). P3 passe à l’état BLOQUÉ  </li>
+<li>P1 passe à l’état ÉLU, il demande R2, il ne l’obtient pas (car R2 est déjà utilisé par P2). P1 passe à l’état BLOQUÉ  </li>
+<li>P2 passe à l’état ÉLU, il demande R3, il l’obtient (car R3 est libre) puis passe à l’état PRÊT  </li>
+<li>P2 libère R2   </li>
+<li>P2 libère R3  </li>
+<li>P1 passe à l’état ÉLU, il demande R2, il l’obtient (car R2 est libre) puis passe à l’état PRÊT  </li>
+<li>P1 Libère R1  </li>
+<li>P1 libère R2  </li>
+<li>P3 passe à l’état ÉLU, il demande R1, il l’obtient (car R1 est libre) puis passe à l’état PRÊT  </li>
+<li>P3 passe à l’état ÉLU, il demande R3, il l’obtient (car R3 est libre) puis passe à l’état PRÊT  </li>
+<li>P3 Libère R3  </li>
+<li>P3 libère R1  </li>
+</ul>
 </li>
 </ol>
 <h2 id="exercice-3-bases-de-donnees-relationnelles-et-le-langage-sql">Exercice 3 : <span class='theme_exo'><em>bases de données relationnelles et le langage SQL</em></span><a class="headerlink" href="#exercice-3-bases-de-donnees-relationnelles-et-le-langage-sql" title="Permanent link">⚓︎</a></h2>
 <ol>
 <li>
-<p>a. La hauteur de l’arbre est de 3<br />
-    b. La valeur booléenne de l’expression est True<br />
-    c.<br />
-    <pre class="mermaid"><code>    graph TD
-    A["Italie"] --&gt; B["France"]
-    A --&gt; C["Suede"]
-    B --&gt; D["Autriche"]
-    B --&gt; E["Hongrie"]
-    E --&gt; V3[" "]
-    E --&gt; V4[" "]
-    C --&gt; F["Norvege"]
-    C --&gt; V1[" "]
-    D --&gt; H["Allemagne"]
-    D --&gt; V2[" "]
-    F --&gt; G["Luxembourg"]
-    F --&gt; K["Portugal"]
-    style V1 fill:#FFFFFF, stroke:#FFFFFF
-    style V2 fill:#FFFFFF, stroke:#FFFFFF
-    style V3 fill:#FFFFFF, stroke:#FFFFFF
-    style V4 fill:#FFFFFF, stroke:#FFFFFF
-    linkStyle 4 stroke:#FFFFFF,stroke-width:0px
-    linkStyle 5 stroke:#FFFFFF,stroke-width:0px
-    linkStyle 7 stroke:#FFFFFF,stroke-width:0px
-    linkStyle 9 stroke:#FFFFFF,stroke-width:0px</code></pre></p>
+<p>a. Une clé primaire d’une relation est un attribut (ou plusieurs attributs) dont la valeur permet d'identifier de manière unique un p-uplet de la relation.<br />
+    b. Une clé étrangère est un attribut qui permet d’établir un lien entre 2 relations<br />
+    c. Un abonné ne peut pas réserver plusieurs fois la même séance, car le couple idAbonné et idSéance est une clé primaire pour la relation Réservation. Il est donc impossible d’avoir 2 fois la même séance pour le même abonné.<br />
+    d. 
+    |idAbonné |idSéance| nbPlaces_plein |nbPlaces_réduit |
+    |:---:|:----:|:---:|:---:|
+    |13 | 737|3|2|</p>
 </li>
 <li>
-<p>parcours en largeur : <br />
-“Italie” - “France” - “Suede” - “Autriche” - “Hongrie” - “Norvege”  </p>
+<p>a.
+    <div class="highlight"><span class="filename">🗂️ Requête SQL</span><pre><span></span><code><span class="k">SELECT</span><span class="w"> </span><span class="n">titre</span><span class="p">,</span><span class="w"> </span><span class="n">réalisateur</span><span class="w"> </span>
+<span class="k">FROM</span><span class="w"> </span><span class="n">Film</span><span class="w"> </span>
+<span class="k">WHERE</span><span class="w"> </span><span class="n">durée</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">120</span><span class="w"> </span><span class="p">;</span><span class="w"></span>
+</code></pre></div></p>
+<p>b. Cette requête permet de déterminer le nombre de séances proposées les 22 et 23 octobre 2021.<br />
+3.  a.
+<div class="highlight"><span class="filename">🗂️ Requête SQL</span><pre><span></span><code><span class="k">SELECT</span><span class="w"> </span><span class="n">nom</span><span class="p">,</span><span class="w"> </span><span class="n">prénom</span><span class="w"> </span>
+<span class="k">FROM</span><span class="w"> </span><span class="n">Abonné</span><span class="w"></span>
+</code></pre></div></p>
+<p>b. 
+<div class="highlight"><span class="filename">🗂️ Requête SQL</span><pre><span></span><code><span class="k">SELECT</span><span class="w"> </span><span class="n">titre</span><span class="p">,</span><span class="w"> </span><span class="n">durée</span><span class="w"> </span>
+<span class="k">FROM</span><span class="w"> </span><span class="n">Film</span><span class="w"> </span><span class="k">JOIN</span><span class="w"> </span><span class="n">Séance</span><span class="w"> </span><span class="k">ON</span><span class="w"> </span><span class="n">Film</span><span class="p">.</span><span class="n">idFilm</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Séance</span><span class="p">.</span><span class="n">idFilm</span><span class="w"> </span>
+<span class="k">WHERE</span><span class="w"> </span><span class="nb">date</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2021</span><span class="o">-</span><span class="mi">10</span><span class="o">-</span><span class="mi">12</span><span class="w"> </span><span class="k">AND</span><span class="w"> </span><span class="n">heure</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">21</span><span class="p">:</span><span class="mi">00</span><span class="w"></span>
+</code></pre></div></p>
 </li>
 <li>
-<div class="highlight"><span class="filename">🐍 Script Python</span><pre><span></span><code><span class="k">def</span> <span class="nf">recherche</span><span class="p">(</span><span class="n">arb</span><span class="p">,</span> <span class="n">val</span><span class="p">):</span> 
-    <span class="sd">&quot;&quot;&quot;la fonction renvoie True si val est dans l&#39;arbre et False dans le cas contraire&quot;&quot;&quot;</span> 
-    <span class="k">if</span> <span class="n">est_vide</span><span class="p">(</span><span class="n">arb</span><span class="p">):</span> 
-        <span class="k">return</span> <span class="kc">False</span> 
-    <span class="k">if</span> <span class="n">val</span> <span class="o">==</span> <span class="n">racine</span><span class="p">(</span><span class="n">arb</span><span class="p">):</span> 
-        <span class="k">return</span> <span class="kc">True</span> 
-    <span class="k">if</span> <span class="n">val</span> <span class="o">&lt;</span> <span class="n">racine</span><span class="p">(</span><span class="n">arb</span><span class="p">):</span> 
-        <span class="k">return</span> <span class="n">recherche</span><span class="p">(</span><span class="n">gauche</span><span class="p">(</span><span class="n">arb</span><span class="p">),</span> <span class="n">val</span><span class="p">)</span> 
-    <span class="k">else</span> <span class="p">:</span> 
-        <span class="k">return</span> <span class="n">recherche</span><span class="p">(</span><span class="n">droit</span><span class="p">(</span><span class="n">arb</span><span class="p">),</span> <span class="n">val</span><span class="p">)</span>
-</code></pre></div>
-</li>
-<li>
-<div class="highlight"><span class="filename">🐍 Script Python</span><pre><span></span><code><span class="k">def</span> <span class="nf">taille</span><span class="p">(</span><span class="n">arb</span><span class="p">):</span> 
-    <span class="k">if</span> <span class="n">est_vide</span><span class="p">(</span><span class="n">arb</span><span class="p">):</span> 
-        <span class="k">return</span> <span class="mi">0</span> 
-    <span class="k">else</span> <span class="p">:</span> 
-        <span class="k">return</span> <span class="mi">1</span> <span class="o">+</span> <span class="n">taille</span><span class="p">(</span><span class="n">gauche</span><span class="p">(</span><span class="n">arb</span><span class="p">))</span> <span class="o">+</span> <span class="n">taille</span><span class="p">(</span><span class="n">droit</span><span class="p">(</span><span class="n">arb</span><span class="p">))</span>
-</code></pre></div>
+<p>a. 
+    <div class="highlight"><span class="filename">🗂️ Requête SQL</span><pre><span></span><code><span class="k">UPDATE</span><span class="w"> </span><span class="n">Film</span><span class="w"> </span>
+<span class="k">SET</span><span class="w"> </span><span class="n">durée</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">127</span><span class="w"> </span>
+<span class="k">WHERE</span><span class="w"> </span><span class="n">titre</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ss">&quot;Jungle Cruise&quot;</span><span class="w"></span>
+</code></pre></div></p>
+<p>b. idSéance est une clé étrangère pour la relation Réservation. La suppression d’une séance risque donc de provoquer des problèmes dans la relation Réservation (avec un Réservation.idSéance ne correspondant à aucun Séance.idRéservation).<br />
+c. 
+<div class="highlight"><span class="filename">🗂️ Requête SQL</span><pre><span></span><code><span class="k">DELETE</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">Séance</span><span class="w"> </span>
+<span class="k">WHERE</span><span class="w"> </span><span class="n">idSéance</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">135</span><span class="w"></span>
+</code></pre></div></p>
 </li>
 </ol>
 <h2 id="exercice-4-arbres-binaires-et-algorithmes-associes">Exercice 4 : <span class='theme_exo'><em>arbres binaires et algorithmes associés</em></span><a class="headerlink" href="#exercice-4-arbres-binaires-et-algorithmes-associes" title="Permanent link">⚓︎</a></h2>
 <ol>
-<li>a. Proposition 3<br />
-    b. 
-    <div class="highlight"><span class="filename">🐍 Script Python</span><pre><span></span><code><span class="n">txt</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="p">:</span> <span class="n">b</span> 
-<span class="n">txt</span><span class="p">[</span><span class="n">taille</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="p">:</span> <span class="n">r</span> 
-<span class="n">interieur</span> <span class="p">:</span> <span class="n">onjou</span>
-</code></pre></div></li>
-<li>On peut tester un cas où la fonction doit renvoyer <code>True</code> (exemple : <code>palindrome(“BOB”)</code> et un cas où la fonction doit renvoyer <code>False</code> (exemple : <code>palindrome(“BONJOUR”)</code>)  </li>
+<li>a. La racine de l’arbre B est Milka<br />
+    b. feuilles de l’arbre B : Nemo, Moka, Maya, Museau et Noisette<br />
+    c. Nuage est une femelle puisque c’est la mère de Nougat<br />
+    d. père : Ulk ; mère : Maya   </li>
 <li>
-<div class="highlight"><span class="filename">🐍 Script Python</span><pre><span></span><code><span class="k">def</span> <span class="nf">palindrome</span><span class="p">(</span><span class="n">txt</span><span class="p">):</span> 
-    <span class="n">taille</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">txt</span><span class="p">)</span> 
-    <span class="k">if</span> <span class="n">taille</span> <span class="o">&lt;</span> <span class="mi">2</span><span class="p">:</span> 
+<p>a.
+    <div class="highlight"><span class="filename">🐍 Script Python</span><pre><span></span><code><span class="k">def</span> <span class="nf">present</span><span class="p">(</span><span class="n">arb</span><span class="p">,</span> <span class="n">nom</span><span class="p">):</span> 
+    <span class="k">if</span> <span class="n">est_vide</span><span class="p">(</span><span class="n">arb</span><span class="p">):</span> 
+        <span class="k">return</span> <span class="kc">False</span> 
+    <span class="k">elif</span> <span class="n">racine</span><span class="p">(</span><span class="n">arb</span><span class="p">)</span> <span class="o">==</span> <span class="n">nom</span><span class="p">:</span> 
         <span class="k">return</span> <span class="kc">True</span> 
-    <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span> 
-    <span class="n">j</span> <span class="o">=</span> <span class="n">taille</span> <span class="o">-</span> <span class="mi">1</span> 
-    <span class="k">while</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">j</span> <span class="p">:</span> 
-        <span class="k">if</span> <span class="n">txt</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">!=</span> <span class="n">txt</span><span class="p">[</span><span class="n">j</span><span class="p">]:</span> 
-            <span class="k">return</span> <span class="kc">False</span> 
-        <span class="n">i</span> <span class="o">=</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">1</span> 
-        <span class="n">j</span> <span class="o">=</span> <span class="n">j</span> <span class="o">-</span> <span class="mi">1</span> 
-    <span class="k">return</span> <span class="kc">True</span>
-</code></pre></div>
+    <span class="k">else</span> <span class="p">:</span> 
+        <span class="k">return</span> <span class="n">present</span><span class="p">(</span><span class="n">droit</span><span class="p">(</span><span class="n">arb</span><span class="p">),</span> <span class="n">nom</span><span class="p">)</span> <span class="ow">or</span> <span class="n">present</span><span class="p">(</span><span class="n">gauche</span><span class="p">(</span><span class="n">arb</span><span class="p">),</span> <span class="n">nom</span><span class="p">)</span> 
+</code></pre></div></p>
+<p>b. 
+<div class="highlight"><span class="filename">🐍 Script Python</span><pre><span></span><code><span class="k">def</span> <span class="nf">parents</span><span class="p">(</span><span class="n">arb</span><span class="p">):</span> 
+    <span class="k">if</span> <span class="n">est_vide</span><span class="p">(</span><span class="n">gauche</span><span class="p">(</span><span class="n">arb</span><span class="p">)):</span> 
+        <span class="n">pere</span><span class="o">=</span><span class="s2">&quot;&quot;</span> 
+    <span class="k">else</span> <span class="p">:</span> 
+        <span class="n">pere</span> <span class="o">=</span> <span class="n">racine</span><span class="p">(</span><span class="n">gauche</span><span class="p">(</span><span class="n">arb</span><span class="p">))</span> 
+    <span class="k">if</span> <span class="n">est_vide</span><span class="p">(</span><span class="n">droit</span><span class="p">(</span><span class="n">arb</span><span class="p">)):</span> 
+        <span class="n">mere</span><span class="o">=</span><span class="s2">&quot;&quot;</span> 
+    <span class="k">else</span> <span class="p">:</span> 
+        <span class="n">mere</span> <span class="o">=</span> <span class="n">racine</span><span class="p">(</span><span class="n">droit</span><span class="p">(</span><span class="n">arb</span><span class="p">))</span> 
+    <span class="k">return</span> <span class="p">(</span><span class="n">pere</span><span class="p">,</span> <span class="n">mere</span><span class="p">)</span>
+</code></pre></div></p>
 </li>
 <li>
-<p>a. 
-    <div class="highlight"><span class="filename">🐍 Script Python</span><pre><span></span><code><span class="k">def</span> <span class="nf">complementaire</span><span class="p">(</span><span class="n">txt</span><span class="p">):</span> 
-    <span class="n">c</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span> 
-    <span class="k">for</span> <span class="n">l</span> <span class="ow">in</span> <span class="n">txt</span> <span class="p">:</span> 
-        <span class="k">if</span> <span class="n">l</span> <span class="o">==</span> <span class="s2">&quot;A&quot;</span><span class="p">:</span> 
-            <span class="n">c</span> <span class="o">=</span> <span class="n">c</span> <span class="o">+</span> <span class="s2">&quot;T&quot;</span> 
-        <span class="k">if</span> <span class="n">l</span> <span class="o">==</span> <span class="s2">&quot;T&quot;</span><span class="p">:</span> 
-            <span class="n">c</span> <span class="o">=</span> <span class="n">c</span> <span class="o">+</span> <span class="s2">&quot;A&quot;</span> 
-        <span class="k">if</span> <span class="n">l</span> <span class="o">==</span> <span class="s2">&quot;G&quot;</span><span class="p">:</span> 
-            <span class="n">c</span> <span class="o">=</span> <span class="n">c</span> <span class="o">+</span> <span class="s2">&quot;C&quot;</span> 
-        <span class="k">if</span> <span class="n">l</span> <span class="o">==</span> <span class="s2">&quot;C&quot;</span><span class="p">:</span> 
-            <span class="n">c</span> <span class="o">=</span> <span class="n">c</span> <span class="o">+</span> <span class="s2">&quot;G&quot;</span> 
-    <span class="k">return</span> <span class="n">c</span>
+<p>a. Mango et Cacao ont le même père (Domino). Milka et Cacao ont la même mère (Nougat)<br />
+    b. 
+    <div class="highlight"><span class="filename">🐍 Script Python</span><pre><span></span><code><span class="k">def</span> <span class="nf">frere_soeur</span><span class="p">(</span><span class="n">arbre1</span><span class="p">,</span> <span class="n">arbre2</span><span class="p">):</span> 
+    <span class="n">parents1</span> <span class="o">=</span> <span class="n">parents</span><span class="p">(</span><span class="n">arbre1</span><span class="p">)</span> 
+    <span class="n">parents2</span> <span class="o">=</span> <span class="n">parents</span><span class="p">(</span><span class="n">arbre2</span><span class="p">)</span> 
+    <span class="k">return</span> <span class="n">parents1</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">==</span><span class="n">parents2</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="ow">or</span> <span class="n">parents1</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">==</span><span class="n">parents2</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
 </code></pre></div></p>
-<p>b. La chaine “GATCGT” n’est pas palindromique, car la concaténation donne GATCGTCTGCA qui n’est pas un palindrome.<br />
-c. 
-<div class="highlight"><span class="filename">🐍 Script Python</span><pre><span></span><code><span class="k">def</span> <span class="nf">est_palindromique</span><span class="p">(</span><span class="n">txt</span><span class="p">):</span> 
-    <span class="n">comp</span> <span class="o">=</span> <span class="n">complementaire</span><span class="p">(</span><span class="n">txt</span><span class="p">)</span> 
-    <span class="n">conc</span> <span class="o">=</span> <span class="n">txt</span><span class="o">+</span><span class="n">comp</span> 
-    <span class="k">return</span> <span class="n">palindrome</span><span class="p">(</span><span class="n">conc</span><span class="p">)</span>
-</code></pre></div></p>
+</li>
+<li>
+<div class="highlight"><span class="filename">🐍 Script Python</span><pre><span></span><code><span class="k">def</span> <span class="nf">nombre_chiens</span><span class="p">(</span><span class="n">arb</span><span class="p">,</span> <span class="n">n</span><span class="p">):</span> 
+    <span class="k">if</span> <span class="n">est_vide</span><span class="p">(</span><span class="n">arb</span><span class="p">):</span> 
+        <span class="k">return</span> <span class="mi">0</span> 
+    <span class="k">elif</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span> 
+        <span class="k">return</span> <span class="mi">1</span> 
+    <span class="k">else</span><span class="p">:</span> 
+        <span class="k">return</span> <span class="n">nombre_chiens</span><span class="p">(</span><span class="n">gauche</span><span class="p">(</span><span class="n">arb</span><span class="p">),</span> <span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="o">+</span> <span class="n">nombre_chiens</span><span class="p">(</span><span class="n">droit</span><span class="p">(</span><span class="n">arb</span><span class="p">),</span> <span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+</code></pre></div>
 </li>
 </ol>
 <h2 id="exercice-5-tableaux-a-deux-dimensions-et-la-programmation-python-en-general">Exercice 5 : <span class='theme_exo'><em>tableaux à deux dimensions et la programmation Python en général</em></span><a class="headerlink" href="#exercice-5-tableaux-a-deux-dimensions-et-la-programmation-python-en-general" title="Permanent link">⚓︎</a></h2>
+<p>Partie A  </p>
 <ol>
+<li>a<br />
+    b. ligne = 3 ; colonne = 0<br />
+    c. pixel situé en haut et à gauche : ligne = li - 1 ; colonne = co - 1<br />
+    pixel situé en haut et à droite : ligne = li - 1 ; colonne = co + 1   </li>
 <li>
-<p>a. Proposition 2<br />
+<p>a. si image[li - 1][co - 1] est égal à image[li - 1][co + 1] alors image[li][co] est égal à 1.<br />
     b. 
-    <div class="highlight"><span class="filename">🐍 Script Python</span><pre><span></span><code><span class="n">f</span> <span class="o">=</span> <span class="n">creer_file_vide</span><span class="p">()</span> 
-<span class="n">enfiler</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="mi">15</span><span class="p">)</span> 
-<span class="n">enfiler</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="mi">17</span><span class="p">)</span> 
-<span class="n">enfiler</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="mi">14</span><span class="p">)</span>
+    <div class="highlight"><span class="filename">🐍 Script Python</span><pre><span></span><code><span class="k">def</span> <span class="nf">remplir_ligne</span><span class="p">(</span><span class="n">image</span><span class="p">,</span> <span class="n">li</span><span class="p">):</span> 
+    <span class="n">image</span><span class="p">[</span><span class="n">li</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span> 
+    <span class="n">image</span><span class="p">[</span><span class="n">li</span><span class="p">][</span><span class="mi">7</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span> 
+    <span class="k">for</span> <span class="n">co</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">7</span><span class="p">):</span> 
+        <span class="k">if</span> <span class="n">image</span><span class="p">[</span><span class="n">li</span><span class="o">-</span><span class="mi">1</span><span class="p">][</span><span class="n">co</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">!=</span> <span class="n">image</span><span class="p">[</span><span class="n">li</span><span class="o">-</span><span class="mi">1</span><span class="p">][</span><span class="n">co</span><span class="o">+</span><span class="mi">1</span><span class="p">]:</span> 
+            <span class="n">image</span><span class="p">[</span><span class="n">li</span><span class="p">][</span><span class="n">co</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
+</code></pre></div></p>
+<p>c. 
+<div class="highlight"><span class="filename">🐍 Script Python</span><pre><span></span><code><span class="k">def</span> <span class="nf">remplir</span><span class="p">(</span><span class="n">image</span><span class="p">):</span> 
+    <span class="k">for</span> <span class="n">li</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">5</span><span class="p">):</span> 
+        <span class="n">remplir_ligne</span><span class="p">(</span><span class="n">image</span><span class="p">,</span> <span class="n">li</span><span class="p">)</span>
 </code></pre></div></p>
 </li>
+</ol>
+<p>PARTIE B  </p>
+<ol>
 <li>
-<div class="highlight"><span class="filename">🐍 Script Python</span><pre><span></span><code><span class="k">def</span> <span class="nf">longueur_file</span><span class="p">(</span><span class="n">F</span><span class="p">):</span> 
-    <span class="n">G</span> <span class="o">=</span> <span class="n">creer_file_vide</span><span class="p">()</span> 
-    <span class="n">n</span> <span class="o">=</span> <span class="mi">0</span> 
-    <span class="k">while</span> <span class="ow">not</span><span class="p">(</span><span class="n">est_vide</span><span class="p">(</span><span class="n">F</span><span class="p">)):</span> 
-        <span class="n">v</span> <span class="o">=</span> <span class="n">defiler</span><span class="p">(</span><span class="n">F</span><span class="p">)</span> 
-        <span class="n">n</span> <span class="o">=</span> <span class="n">n</span> <span class="o">+</span> <span class="mi">1</span> 
-        <span class="n">enfiler</span><span class="p">(</span><span class="n">G</span><span class="p">,</span> <span class="n">v</span><span class="p">)</span> 
-    <span class="k">while</span> <span class="ow">not</span><span class="p">(</span><span class="n">est_vide</span><span class="p">(</span><span class="n">G</span><span class="p">)):</span> 
-        <span class="n">v</span> <span class="o">=</span> <span class="n">defiler</span><span class="p">(</span><span class="n">G</span><span class="p">)</span> 
-        <span class="n">enfiler</span><span class="p">(</span><span class="n">F</span><span class="p">,</span> <span class="n">v</span><span class="p">)</span> 
-    <span class="k">return</span> <span class="n">n</span>
-</code></pre></div>
-</li>
-<li>
-<div class="highlight"><span class="filename">🐍 Script Python</span><pre><span></span><code><span class="k">def</span> <span class="nf">variations</span><span class="p">(</span><span class="n">F</span><span class="p">):</span> 
-    <span class="n">taille</span> <span class="o">=</span> <span class="n">longueur_file</span><span class="p">(</span><span class="n">F</span><span class="p">)</span> 
-    <span class="k">if</span> <span class="n">taille</span> <span class="o">==</span> <span class="mi">1</span> <span class="p">:</span> 
-        <span class="k">return</span> <span class="p">[]</span> 
-    <span class="k">else</span><span class="p">:</span> 
-        <span class="n">tab</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span> <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">taille</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)]</span>
-        <span class="n">element1</span> <span class="o">=</span> <span class="n">defiler</span><span class="p">(</span><span class="n">F</span><span class="p">)</span> 
-        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">taille</span> <span class="o">-</span> <span class="mi">1</span><span class="p">):</span> 
-            <span class="n">element2</span> <span class="o">=</span> <span class="n">defiler</span><span class="p">(</span><span class="n">F</span><span class="p">)</span> 
-            <span class="n">tab</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">=</span><span class="n">element2</span> <span class="o">-</span> <span class="n">element1</span> 
-            <span class="n">element1</span> <span class="o">=</span> <span class="n">element2</span> 
+<p>a. Représentation en base 10 de l’entier correspondant : 44<br />
+    b. 
+    <div class="highlight"><span class="filename">🐍 Script Python</span><pre><span></span><code><span class="k">def</span> <span class="nf">conversion2_10</span><span class="p">(</span><span class="n">tab</span><span class="p">):</span> 
+    <span class="n">nb_bit</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">tab</span><span class="p">)</span> 
+    <span class="n">s</span> <span class="o">=</span> <span class="mi">0</span> 
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">nb_bit</span><span class="p">):</span> 
+        <span class="n">s</span> <span class="o">=</span> <span class="n">s</span> <span class="o">+</span> <span class="n">tab</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">*</span><span class="mi">2</span><span class="o">**</span><span class="p">(</span><span class="n">nb_bit</span><span class="o">-</span><span class="mi">1</span><span class="o">-</span><span class="n">i</span><span class="p">)</span> 
+    <span class="k">return</span> <span class="n">s</span>
+</code></pre></div></p>
+<p>c. tableau associé à 78 : <code>[0,1,0,0,1,1,1,0]</code><br />
+2.  a. préconditions : Le bit de poids fort est à zéro :  l’entier ne doit pas dépasser 127. Le bit de poids faible est à zéro : l’entier doit être pair. On peut donc utiliser tous les nombres paires entre 0 et 126. 
+b. 
+<div class="highlight"><span class="filename">🐍 Script Python</span><pre><span></span><code><span class="k">def</span> <span class="nf">generer</span><span class="p">(</span><span class="n">n</span><span class="p">,</span><span class="n">k</span><span class="p">):</span> 
+    <span class="n">tab</span> <span class="o">=</span> <span class="p">[</span><span class="kc">None</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">k</span><span class="p">)]</span> 
+    <span class="n">image</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">0</span> <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">8</span><span class="p">)]</span>  <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">k</span><span class="o">+</span><span class="mi">1</span><span class="p">)]</span> 
+    <span class="n">t</span> <span class="o">=</span> <span class="n">conversion10_2</span><span class="p">(</span><span class="n">n</span><span class="p">)</span> 
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">8</span><span class="p">):</span> 
+        <span class="n">image</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">t</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> 
+    <span class="n">tab</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">=</span><span class="n">n</span> 
+    <span class="k">for</span> <span class="n">li</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">k</span><span class="p">):</span> 
+        <span class="n">remplir_ligne</span><span class="p">(</span><span class="n">image</span><span class="p">,</span> <span class="n">li</span><span class="p">)</span> 
+        <span class="n">tab</span><span class="p">[</span><span class="n">li</span><span class="p">]</span> <span class="o">=</span> <span class="n">conversion2_10</span><span class="p">(</span><span class="n">image</span><span class="p">[</span><span class="n">li</span><span class="p">])</span> 
     <span class="k">return</span> <span class="n">tab</span>
-</code></pre></div>
-</li>
-<li>
-<div class="highlight"><span class="filename">🐍 Script Python</span><pre><span></span><code><span class="k">def</span> <span class="nf">nombre_baisses</span><span class="p">(</span><span class="n">tab</span><span class="p">):</span> 
-    <span class="n">mini</span> <span class="o">=</span> <span class="n">tab</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> 
-    <span class="n">nbr</span> <span class="o">=</span> <span class="mi">0</span> 
-    <span class="k">for</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">tab</span><span class="p">:</span> 
-        <span class="k">if</span> <span class="n">v</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span> 
-            <span class="n">nbr</span> <span class="o">=</span> <span class="n">nbr</span> <span class="o">+</span> <span class="mi">1</span> 
-        <span class="k">if</span> <span class="n">v</span> <span class="o">&lt;</span> <span class="n">mini</span><span class="p">:</span> 
-            <span class="n">mini</span> <span class="o">=</span> <span class="n">v</span> 
-    <span class="k">if</span> <span class="n">nbr</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span> 
-        <span class="k">return</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span> 
-    <span class="k">else</span><span class="p">:</span> 
-        <span class="k">return</span> <span class="p">(</span><span class="n">nbr</span><span class="p">,</span> <span class="n">mini</span><span class="p">)</span>
-</code></pre></div>
+</code></pre></div></p>
 </li>
 </ol>
 
@@ -2429,7 +2362,7 @@ c.
     <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.instant", "navigation.tabs", "navigation.tabs.sticky", "navigation.expand", "navigation.top", "navigation.sections", "navigation.indexes", "navigation.tracking", "header.autohide", "content.code.annotate"], "search": "../../../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.config.lang": "fr", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Rechercher", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version.title": "S\u00e9lectionner la version"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.8492ddcf.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.d6c3db9e.min.js"></script>
       
         <script src="../../../xtra/mathjax.js"></script>
       

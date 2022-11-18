@@ -111,8 +111,8 @@ nav:
       #- EP 2022 : BAC/EP_2022.md
   
     - Evaluations :
-      - DS 01 : Evaluations/BDD_Devoir.md
-      #- DS 03 : Evaluations/DS_Pile_File_Routage.md
+      - DS 0001 : Evaluations/BDD_Devoir.md
+      - DS 0011 : Evaluations/DS_Pile_File_Routage.md
  
 
 
@@ -214,7 +214,7 @@ markdown_extensions: # https://squidfunk.github.io/mkdocs-material/reference/abb
 
 
 plugins:
-  #- page-to-pdf #: 
+  #- page-to-pdf : 
   #    disable: False
   #    disableOnServe: False
   #    displayHeaderFooter: True

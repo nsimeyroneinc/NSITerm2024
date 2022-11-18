@@ -15,7 +15,7 @@
       
       
       <link rel="icon" href="../../dragon.svg">
-      <meta name="generator" content="mkdocs-1.4.1, mkdocs-material-8.5.7">
+      <meta name="generator" content="mkdocs-1.4.1, mkdocs-material-8.5.10">
     
     
       
@@ -23,10 +23,10 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.20d9efc8.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.472b142f.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.cbb835fc.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.08040f6c.min.css">
         
       
       
@@ -111,6 +111,7 @@
         
           
           
+          
           <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Basculer en mode sombre"  type="radio" name="__palette" id="__palette_1">
           
             <label class="md-header__button md-icon" title="Basculer en mode sombre" for="__palette_2" hidden>
@@ -120,7 +121,8 @@
         
           
           
-          <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="teal"  aria-label="Basculer en mode clair"  type="radio" name="__palette" id="__palette_2">
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="brown" data-md-color-accent="brown"  aria-label="Basculer en mode clair"  type="radio" name="__palette" id="__palette_2">
           
             <label class="md-header__button md-icon" title="Basculer en mode clair" for="__palette_1" hidden>
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 1 7 7c0 2.38-1.19 4.47-3 5.74V17a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 0 1 7-7M9 21v-1h6v1a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1m3-17a5 5 0 0 0-5 5c0 2.05 1.23 3.81 3 4.58V16h4v-2.42c1.77-.77 3-2.53 3-4.58a5 5 0 0 0-5-5Z"/></svg>
@@ -1801,6 +1803,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_9">
@@ -1822,7 +1826,21 @@
   
     <li class="md-nav__item">
       <a href="../../../Evaluations/BDD_Devoir/" class="md-nav__link">
-        DS01
+        DS 0001
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Evaluations/DS_Pile_File_Routage/" class="md-nav__link">
+        DS 0011
       </a>
     </li>
   
@@ -3011,7 +3029,7 @@ Licensed under the Apache License, Version 2.0.
                 </div>
             </clipboard-copy>
         </div>
-            <div class="highlight-ipynb hl-python"><pre><span></span><span class="sd">&#39;&#39;&#39; Visualisation tri par sélection &#39;&#39;&#39;</span>
+            <div class="highlight-ipynb hl-sql"><pre><span></span><span class="s1">&#39;&#39;&#39; Visualisation tri par sélection &#39;&#39;&#39;</span><span class="w"></span>
 </pre></div>
 <div id="cell-1" class="clipboard-copy-txt">''' Visualisation tri par sélection '''</div>
     
@@ -3043,9 +3061,9 @@ Licensed under the Apache License, Version 2.0.
                 </div>
             </clipboard-copy>
         </div>
-            <div class="highlight-ipynb hl-python"><pre><span></span><span class="kn">import</span> <span class="nn">turtle</span>
-<span class="kn">from</span> <span class="nn">random</span> <span class="kn">import</span> <span class="n">randint</span>
-<span class="kn">import</span> <span class="nn">time</span>
+            <div class="highlight-ipynb hl-sql"><pre><span></span><span class="n">import</span><span class="w"> </span><span class="n">turtle</span><span class="w"></span>
+<span class="k">from</span><span class="w"> </span><span class="n">random</span><span class="w"> </span><span class="n">import</span><span class="w"> </span><span class="n">randint</span><span class="w"></span>
+<span class="n">import</span><span class="w"> </span><span class="k">time</span><span class="w"></span>
 </pre></div>
 <div id="cell-2" class="clipboard-copy-txt">import turtle
 from random import randint
@@ -3079,7 +3097,7 @@ import time</div>
                 </div>
             </clipboard-copy>
         </div>
-            <div class="highlight-ipynb hl-python"><pre><span></span>
+            <div class="highlight-ipynb hl-sql"><pre><span></span>
 </pre></div>
 <div id="cell-3" class="clipboard-copy-txt"></div>
     
@@ -3111,23 +3129,23 @@ import time</div>
                 </div>
             </clipboard-copy>
         </div>
-            <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># Les constantes</span>
-<span class="n">LARGEUR_ECRAN</span> <span class="o">=</span> <span class="mi">1000</span>
-<span class="n">HAUTEUR_ECRAN</span> <span class="o">=</span> <span class="mi">600</span>
-<span class="n">NB</span> <span class="o">=</span> <span class="mi">6</span>
-<span class="n">MARGE</span> <span class="o">=</span> <span class="mi">40</span>
-<span class="n">ECART</span> <span class="o">=</span> <span class="mi">20</span>
-<span class="n">LARGEUR_CARTE</span> <span class="o">=</span> <span class="p">(</span><span class="n">LARGEUR_ECRAN</span><span class="o">-</span><span class="n">MARGE</span><span class="o">*</span><span class="mi">2</span><span class="p">)</span><span class="o">//</span><span class="n">NB</span> <span class="o">-</span> <span class="n">ECART</span>
-<span class="n">HAUTEUR_CARTE</span> <span class="o">=</span> <span class="n">HAUTEUR_ECRAN</span> <span class="o">//</span> <span class="mi">3</span> <span class="o">-</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">MARGE</span>
-<span class="n">VMIN</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="n">VMAX</span> <span class="o">=</span> <span class="mi">20</span>
-<span class="n">COULEUR_BASE</span> <span class="o">=</span> <span class="s2">&quot;black&quot;</span>
-<span class="n">COULEUR_SPOT</span> <span class="o">=</span> <span class="s2">&quot;red&quot;</span>
-<span class="n">LIGNE_CARTE</span> <span class="o">=</span> <span class="n">MARGE</span> <span class="o">+</span> <span class="n">HAUTEUR_CARTE</span><span class="o">*</span><span class="mi">2</span>
-<span class="n">LIGNE_SPOT</span> <span class="o">=</span> <span class="n">LIGNE_CARTE</span> <span class="o">-</span> <span class="mi">20</span>
-<span class="n">WAIT_BLINK</span> <span class="o">=</span> <span class="mf">0.4</span>
-<span class="n">MOVE</span> <span class="o">=</span> <span class="mf">0.002</span>
-<span class="n">PARCOURS</span> <span class="o">=</span> <span class="mf">0.5</span>
+            <div class="highlight-ipynb hl-sql"><pre><span></span><span class="o">#</span><span class="w"> </span><span class="n">Les</span><span class="w"> </span><span class="n">constantes</span><span class="w"></span>
+<span class="n">LARGEUR_ECRAN</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1000</span><span class="w"></span>
+<span class="n">HAUTEUR_ECRAN</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">600</span><span class="w"></span>
+<span class="n">NB</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">6</span><span class="w"></span>
+<span class="n">MARGE</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">40</span><span class="w"></span>
+<span class="n">ECART</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">20</span><span class="w"></span>
+<span class="n">LARGEUR_CARTE</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">LARGEUR_ECRAN</span><span class="o">-</span><span class="n">MARGE</span><span class="o">*</span><span class="mi">2</span><span class="p">)</span><span class="o">//</span><span class="n">NB</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="n">ECART</span><span class="w"></span>
+<span class="n">HAUTEUR_CARTE</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">HAUTEUR_ECRAN</span><span class="w"> </span><span class="o">//</span><span class="w"> </span><span class="mi">3</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">MARGE</span><span class="w"></span>
+<span class="n">VMIN</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="w"></span>
+<span class="n">VMAX</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">20</span><span class="w"></span>
+<span class="n">COULEUR_BASE</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ss">&quot;black&quot;</span><span class="w"></span>
+<span class="n">COULEUR_SPOT</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ss">&quot;red&quot;</span><span class="w"></span>
+<span class="n">LIGNE_CARTE</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">MARGE</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">HAUTEUR_CARTE</span><span class="o">*</span><span class="mi">2</span><span class="w"></span>
+<span class="n">LIGNE_SPOT</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">LIGNE_CARTE</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">20</span><span class="w"></span>
+<span class="n">WAIT_BLINK</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">.</span><span class="mi">4</span><span class="w"></span>
+<span class="k">MOVE</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">.</span><span class="mi">002</span><span class="w"></span>
+<span class="n">PARCOURS</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">.</span><span class="mi">5</span><span class="w"></span>
 </pre></div>
 <div id="cell-4" class="clipboard-copy-txt"># Les constantes
 LARGEUR_ECRAN = 1000
@@ -3175,13 +3193,13 @@ PARCOURS = 0.5</div>
                 </div>
             </clipboard-copy>
         </div>
-            <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># La tortue et l&#39;écran de jeu</span>
-<span class="n">papier</span> <span class="o">=</span> <span class="n">turtle</span><span class="o">.</span><span class="n">Screen</span><span class="p">()</span>
-<span class="n">crayon</span> <span class="o">=</span> <span class="n">turtle</span><span class="o">.</span><span class="n">Turtle</span><span class="p">()</span>
-<span class="n">tortue_spot</span> <span class="o">=</span> <span class="n">turtle</span><span class="o">.</span><span class="n">Turtle</span><span class="p">()</span>
-<span class="n">tortue_carte</span> <span class="o">=</span> <span class="p">[</span><span class="n">turtle</span><span class="o">.</span><span class="n">Turtle</span><span class="p">()</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">NB</span><span class="p">)]</span>
-<span class="n">tortue_ligne</span> <span class="o">=</span> <span class="n">turtle</span><span class="o">.</span><span class="n">Turtle</span><span class="p">()</span>
-<span class="n">tortue_pause</span> <span class="o">=</span> <span class="n">turtle</span><span class="o">.</span><span class="n">Turtle</span><span class="p">()</span>
+            <div class="highlight-ipynb hl-sql"><pre><span></span><span class="o">#</span><span class="w"> </span><span class="n">La</span><span class="w"> </span><span class="n">tortue</span><span class="w"> </span><span class="n">et</span><span class="w"> </span><span class="n">l</span><span class="err">&#39;é</span><span class="n">cran</span><span class="w"> </span><span class="n">de</span><span class="w"> </span><span class="n">jeu</span><span class="w"></span>
+<span class="n">papier</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">turtle</span><span class="p">.</span><span class="n">Screen</span><span class="p">()</span><span class="w"></span>
+<span class="n">crayon</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">turtle</span><span class="p">.</span><span class="n">Turtle</span><span class="p">()</span><span class="w"></span>
+<span class="n">tortue_spot</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">turtle</span><span class="p">.</span><span class="n">Turtle</span><span class="p">()</span><span class="w"></span>
+<span class="n">tortue_carte</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="n">turtle</span><span class="p">.</span><span class="n">Turtle</span><span class="p">()</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="n">_</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="n">range</span><span class="p">(</span><span class="n">NB</span><span class="p">)]</span><span class="w"></span>
+<span class="n">tortue_ligne</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">turtle</span><span class="p">.</span><span class="n">Turtle</span><span class="p">()</span><span class="w"></span>
+<span class="n">tortue_pause</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">turtle</span><span class="p">.</span><span class="n">Turtle</span><span class="p">()</span><span class="w"></span>
 </pre></div>
 <div id="cell-5" class="clipboard-copy-txt"># La tortue et l'écran de jeu
 papier = turtle.Screen()
@@ -3219,11 +3237,11 @@ tortue_pause = turtle.Turtle()</div>
                 </div>
             </clipboard-copy>
         </div>
-            <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># Taille et couleur du papier + coordonnées</span>
-<span class="n">papier</span><span class="o">.</span><span class="n">bgcolor</span><span class="p">(</span><span class="s2">&quot;lightgray&quot;</span><span class="p">)</span>
-<span class="n">papier</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Observer attentivement !&quot;</span><span class="p">)</span>
-<span class="n">papier</span><span class="o">.</span><span class="n">setup</span><span class="p">(</span><span class="n">width</span><span class="o">=</span><span class="n">LARGEUR_ECRAN</span><span class="p">,</span><span class="n">height</span><span class="o">=</span><span class="n">HAUTEUR_ECRAN</span><span class="p">)</span>
-<span class="n">papier</span><span class="o">.</span><span class="n">setworldcoordinates</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="n">LARGEUR_ECRAN</span><span class="p">,</span><span class="n">HAUTEUR_ECRAN</span><span class="p">)</span>
+            <div class="highlight-ipynb hl-sql"><pre><span></span><span class="o">#</span><span class="w"> </span><span class="n">Taille</span><span class="w"> </span><span class="n">et</span><span class="w"> </span><span class="n">couleur</span><span class="w"> </span><span class="n">du</span><span class="w"> </span><span class="n">papier</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">coordonnées</span><span class="w"></span>
+<span class="n">papier</span><span class="p">.</span><span class="n">bgcolor</span><span class="p">(</span><span class="ss">&quot;lightgray&quot;</span><span class="p">)</span><span class="w"></span>
+<span class="n">papier</span><span class="p">.</span><span class="n">title</span><span class="p">(</span><span class="ss">&quot;Observer attentivement !&quot;</span><span class="p">)</span><span class="w"></span>
+<span class="n">papier</span><span class="p">.</span><span class="n">setup</span><span class="p">(</span><span class="n">width</span><span class="o">=</span><span class="n">LARGEUR_ECRAN</span><span class="p">,</span><span class="n">height</span><span class="o">=</span><span class="n">HAUTEUR_ECRAN</span><span class="p">)</span><span class="w"></span>
+<span class="n">papier</span><span class="p">.</span><span class="n">setworldcoordinates</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="n">LARGEUR_ECRAN</span><span class="p">,</span><span class="n">HAUTEUR_ECRAN</span><span class="p">)</span><span class="w"></span>
 </pre></div>
 <div id="cell-6" class="clipboard-copy-txt"># Taille et couleur du papier + coordonnées
 papier.bgcolor("lightgray")
@@ -3259,9 +3277,9 @@ papier.setworldcoordinates(0,0,LARGEUR_ECRAN,HAUTEUR_ECRAN)</div>
                 </div>
             </clipboard-copy>
         </div>
-            <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># Accélération des dessins</span>
-<span class="n">crayon</span><span class="o">.</span><span class="n">speed</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
-<span class="n">papier</span><span class="o">.</span><span class="n">tracer</span><span class="p">(</span><span class="mi">400</span><span class="p">)</span>
+            <div class="highlight-ipynb hl-sql"><pre><span></span><span class="o">#</span><span class="w"> </span><span class="n">Accélération</span><span class="w"> </span><span class="n">des</span><span class="w"> </span><span class="n">dessins</span><span class="w"></span>
+<span class="n">crayon</span><span class="p">.</span><span class="n">speed</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span><span class="w"></span>
+<span class="n">papier</span><span class="p">.</span><span class="n">tracer</span><span class="p">(</span><span class="mi">400</span><span class="p">)</span><span class="w"></span>
 </pre></div>
 <div id="cell-7" class="clipboard-copy-txt"># Accélération des dessins
 crayon.speed(0)
@@ -3295,10 +3313,10 @@ papier.tracer(400)</div>
                 </div>
             </clipboard-copy>
         </div>
-            <div class="highlight-ipynb hl-python"><pre><span></span><span class="k">def</span> <span class="nf">origine</span><span class="p">(</span><span class="n">tortue</span><span class="p">,</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">):</span>
-    <span class="n">tortue</span><span class="o">.</span><span class="n">penup</span><span class="p">()</span>
-    <span class="n">tortue</span><span class="o">.</span><span class="n">goto</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">)</span>
-    <span class="n">tortue</span><span class="o">.</span><span class="n">pendown</span><span class="p">()</span>
+            <div class="highlight-ipynb hl-sql"><pre><span></span><span class="n">def</span><span class="w"> </span><span class="n">origine</span><span class="p">(</span><span class="n">tortue</span><span class="p">,</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">):</span><span class="w"></span>
+<span class="w">    </span><span class="n">tortue</span><span class="p">.</span><span class="n">penup</span><span class="p">()</span><span class="w"></span>
+<span class="w">    </span><span class="n">tortue</span><span class="p">.</span><span class="k">goto</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="n">tortue</span><span class="p">.</span><span class="n">pendown</span><span class="p">()</span><span class="w"></span>
 </pre></div>
 <div id="cell-8" class="clipboard-copy-txt">def origine(tortue,x,y):
     tortue.penup()
@@ -3333,9 +3351,9 @@ papier.tracer(400)</div>
                 </div>
             </clipboard-copy>
         </div>
-            <div class="highlight-ipynb hl-python"><pre><span></span><span class="k">def</span> <span class="nf">ecrit</span><span class="p">(</span><span class="n">tortue</span><span class="p">,</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">texte</span><span class="p">,</span><span class="n">fonte</span><span class="p">):</span>
-    <span class="n">origine</span><span class="p">(</span><span class="n">tortue</span><span class="p">,</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">)</span>
-    <span class="n">tortue</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">texte</span><span class="p">,</span><span class="n">align</span><span class="o">=</span><span class="s2">&quot;center&quot;</span><span class="p">,</span><span class="n">font</span><span class="o">=</span><span class="n">fonte</span><span class="p">)</span>
+            <div class="highlight-ipynb hl-sql"><pre><span></span><span class="n">def</span><span class="w"> </span><span class="n">ecrit</span><span class="p">(</span><span class="n">tortue</span><span class="p">,</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">texte</span><span class="p">,</span><span class="n">fonte</span><span class="p">):</span><span class="w"></span>
+<span class="w">    </span><span class="n">origine</span><span class="p">(</span><span class="n">tortue</span><span class="p">,</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="n">tortue</span><span class="p">.</span><span class="k">write</span><span class="p">(</span><span class="n">texte</span><span class="p">,</span><span class="n">align</span><span class="o">=</span><span class="ss">&quot;center&quot;</span><span class="p">,</span><span class="n">font</span><span class="o">=</span><span class="n">fonte</span><span class="p">)</span><span class="w"></span>
 </pre></div>
 <div id="cell-9" class="clipboard-copy-txt">def ecrit(tortue,x,y,texte,fonte):
     origine(tortue,x,y)
@@ -3369,11 +3387,11 @@ papier.tracer(400)</div>
                 </div>
             </clipboard-copy>
         </div>
-            <div class="highlight-ipynb hl-python"><pre><span></span><span class="k">def</span> <span class="nf">ligne</span><span class="p">(</span><span class="n">tortue</span><span class="p">,</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">l</span><span class="p">,</span><span class="n">angle</span><span class="p">):</span>
-    <span class="sd">&#39;&#39;&#39;Trace le segment de droite d&#39;origne (x,y) et de longueur l dans la direction angle&#39;&#39;&#39;</span>
-    <span class="n">origine</span><span class="p">(</span><span class="n">tortue</span><span class="p">,</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">)</span>
-    <span class="n">tortue</span><span class="o">.</span><span class="n">setheading</span><span class="p">(</span><span class="n">angle</span><span class="p">)</span>
-    <span class="n">tortue</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="n">l</span><span class="p">)</span>
+            <div class="highlight-ipynb hl-sql"><pre><span></span><span class="n">def</span><span class="w"> </span><span class="n">ligne</span><span class="p">(</span><span class="n">tortue</span><span class="p">,</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">l</span><span class="p">,</span><span class="n">angle</span><span class="p">):</span><span class="w"></span>
+<span class="w">    </span><span class="s1">&#39;&#39;&#39;Trace le segment de droite d&#39;</span><span class="n">origne</span><span class="w"> </span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">)</span><span class="w"> </span><span class="n">et</span><span class="w"> </span><span class="n">de</span><span class="w"> </span><span class="n">longueur</span><span class="w"> </span><span class="n">l</span><span class="w"> </span><span class="n">dans</span><span class="w"> </span><span class="n">la</span><span class="w"> </span><span class="n">direction</span><span class="w"> </span><span class="n">angle</span><span class="s1">&#39;&#39;</span><span class="err">&#39;</span><span class="w"></span>
+<span class="w">    </span><span class="n">origine</span><span class="p">(</span><span class="n">tortue</span><span class="p">,</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="n">tortue</span><span class="p">.</span><span class="n">setheading</span><span class="p">(</span><span class="n">angle</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="n">tortue</span><span class="p">.</span><span class="k">forward</span><span class="p">(</span><span class="n">l</span><span class="p">)</span><span class="w"></span>
 </pre></div>
 <div id="cell-10" class="clipboard-copy-txt">def ligne(tortue,x,y,l,angle):
     '''Trace le segment de droite d'origne (x,y) et de longueur l dans la direction angle'''
@@ -3409,15 +3427,15 @@ papier.tracer(400)</div>
                 </div>
             </clipboard-copy>
         </div>
-            <div class="highlight-ipynb hl-python"><pre><span></span><span class="k">def</span> <span class="nf">rectangle</span><span class="p">(</span><span class="n">tortue</span><span class="p">,</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">lx</span><span class="p">,</span><span class="n">ly</span><span class="p">):</span>
-    <span class="n">origine</span><span class="p">(</span><span class="n">tortue</span><span class="p">,</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">)</span>
-    <span class="n">tortue</span><span class="o">.</span><span class="n">begin_fill</span><span class="p">()</span>
-    <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">):</span>
-        <span class="n">tortue</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="n">lx</span><span class="p">)</span>
-        <span class="n">tortue</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
-        <span class="n">tortue</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="n">ly</span><span class="p">)</span>
-        <span class="n">tortue</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
-    <span class="n">tortue</span><span class="o">.</span><span class="n">end_fill</span><span class="p">()</span>
+            <div class="highlight-ipynb hl-sql"><pre><span></span><span class="n">def</span><span class="w"> </span><span class="n">rectangle</span><span class="p">(</span><span class="n">tortue</span><span class="p">,</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">lx</span><span class="p">,</span><span class="n">ly</span><span class="p">):</span><span class="w"></span>
+<span class="w">    </span><span class="n">origine</span><span class="p">(</span><span class="n">tortue</span><span class="p">,</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="n">tortue</span><span class="p">.</span><span class="n">begin_fill</span><span class="p">()</span><span class="w"></span>
+<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="n">_</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="n">range</span><span class="p">(</span><span class="mi">2</span><span class="p">):</span><span class="w"></span>
+<span class="w">        </span><span class="n">tortue</span><span class="p">.</span><span class="k">forward</span><span class="p">(</span><span class="n">lx</span><span class="p">)</span><span class="w"></span>
+<span class="w">        </span><span class="n">tortue</span><span class="p">.</span><span class="k">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span><span class="w"></span>
+<span class="w">        </span><span class="n">tortue</span><span class="p">.</span><span class="k">forward</span><span class="p">(</span><span class="n">ly</span><span class="p">)</span><span class="w"></span>
+<span class="w">        </span><span class="n">tortue</span><span class="p">.</span><span class="k">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="n">tortue</span><span class="p">.</span><span class="n">end_fill</span><span class="p">()</span><span class="w"></span>
 </pre></div>
 <div id="cell-11" class="clipboard-copy-txt">def rectangle(tortue,x,y,lx,ly):
     origine(tortue,x,y)
@@ -3457,13 +3475,13 @@ papier.tracer(400)</div>
                 </div>
             </clipboard-copy>
         </div>
-            <div class="highlight-ipynb hl-python"><pre><span></span><span class="k">def</span> <span class="nf">cercle</span><span class="p">(</span><span class="n">tortue</span><span class="p">,</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">r</span><span class="p">,</span><span class="n">angle</span><span class="o">=</span><span class="mi">360</span><span class="p">):</span>
-    <span class="n">origine</span><span class="p">(</span><span class="n">tortue</span><span class="p">,</span><span class="n">x</span><span class="o">+</span><span class="n">r</span><span class="p">,</span><span class="n">y</span><span class="p">)</span>
-    <span class="n">tortue</span><span class="o">.</span><span class="n">setheading</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
-    <span class="n">tortue</span><span class="o">.</span><span class="n">pendown</span><span class="p">()</span>
-    <span class="n">tortue</span><span class="o">.</span><span class="n">begin_fill</span><span class="p">()</span>
-    <span class="n">tortue</span><span class="o">.</span><span class="n">circle</span><span class="p">(</span><span class="n">r</span><span class="p">)</span>
-    <span class="n">tortue</span><span class="o">.</span><span class="n">end_fill</span><span class="p">()</span>
+            <div class="highlight-ipynb hl-sql"><pre><span></span><span class="n">def</span><span class="w"> </span><span class="n">cercle</span><span class="p">(</span><span class="n">tortue</span><span class="p">,</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">r</span><span class="p">,</span><span class="n">angle</span><span class="o">=</span><span class="mi">360</span><span class="p">):</span><span class="w"></span>
+<span class="w">    </span><span class="n">origine</span><span class="p">(</span><span class="n">tortue</span><span class="p">,</span><span class="n">x</span><span class="o">+</span><span class="n">r</span><span class="p">,</span><span class="n">y</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="n">tortue</span><span class="p">.</span><span class="n">setheading</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="n">tortue</span><span class="p">.</span><span class="n">pendown</span><span class="p">()</span><span class="w"></span>
+<span class="w">    </span><span class="n">tortue</span><span class="p">.</span><span class="n">begin_fill</span><span class="p">()</span><span class="w"></span>
+<span class="w">    </span><span class="n">tortue</span><span class="p">.</span><span class="n">circle</span><span class="p">(</span><span class="n">r</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="n">tortue</span><span class="p">.</span><span class="n">end_fill</span><span class="p">()</span><span class="w"></span>
 </pre></div>
 <div id="cell-12" class="clipboard-copy-txt">def cercle(tortue,x,y,r,angle=360):
     origine(tortue,x+r,y)
@@ -3501,14 +3519,14 @@ papier.tracer(400)</div>
                 </div>
             </clipboard-copy>
         </div>
-            <div class="highlight-ipynb hl-python"><pre><span></span><span class="k">def</span> <span class="nf">set_crayon</span><span class="p">(</span><span class="n">tortue</span><span class="p">,</span><span class="n">epaisseur</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="n">couleur</span><span class="o">=</span><span class="s2">&quot;black&quot;</span><span class="p">,</span><span class="n">remplissage</span><span class="o">=</span><span class="s2">&quot;white&quot;</span><span class="p">,</span><span class="n">visible</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
-    <span class="n">tortue</span><span class="o">.</span><span class="n">pensize</span><span class="p">(</span><span class="n">epaisseur</span><span class="p">)</span>
-    <span class="n">tortue</span><span class="o">.</span><span class="n">color</span><span class="p">(</span><span class="n">couleur</span><span class="p">)</span>
-    <span class="n">tortue</span><span class="o">.</span><span class="n">fillcolor</span><span class="p">(</span><span class="n">remplissage</span><span class="p">)</span>
-    <span class="k">if</span> <span class="n">visible</span><span class="p">:</span>
-        <span class="n">tortue</span><span class="o">.</span><span class="n">showturtle</span><span class="p">()</span>
-    <span class="k">else</span><span class="p">:</span>
-        <span class="n">tortue</span><span class="o">.</span><span class="n">hideturtle</span><span class="p">()</span>
+            <div class="highlight-ipynb hl-sql"><pre><span></span><span class="n">def</span><span class="w"> </span><span class="n">set_crayon</span><span class="p">(</span><span class="n">tortue</span><span class="p">,</span><span class="n">epaisseur</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="n">couleur</span><span class="o">=</span><span class="ss">&quot;black&quot;</span><span class="p">,</span><span class="n">remplissage</span><span class="o">=</span><span class="ss">&quot;white&quot;</span><span class="p">,</span><span class="n">visible</span><span class="o">=</span><span class="k">False</span><span class="p">):</span><span class="w"></span>
+<span class="w">    </span><span class="n">tortue</span><span class="p">.</span><span class="n">pensize</span><span class="p">(</span><span class="n">epaisseur</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="n">tortue</span><span class="p">.</span><span class="n">color</span><span class="p">(</span><span class="n">couleur</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="n">tortue</span><span class="p">.</span><span class="n">fillcolor</span><span class="p">(</span><span class="n">remplissage</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="n">visible</span><span class="p">:</span><span class="w"></span>
+<span class="w">        </span><span class="n">tortue</span><span class="p">.</span><span class="n">showturtle</span><span class="p">()</span><span class="w"></span>
+<span class="w">    </span><span class="k">else</span><span class="p">:</span><span class="w"></span>
+<span class="w">        </span><span class="n">tortue</span><span class="p">.</span><span class="n">hideturtle</span><span class="p">()</span><span class="w"></span>
 </pre></div>
 <div id="cell-13" class="clipboard-copy-txt">def set_crayon(tortue,epaisseur=1,couleur="black",remplissage="white",visible=False):
     tortue.pensize(epaisseur)
@@ -3547,14 +3565,14 @@ papier.tracer(400)</div>
                 </div>
             </clipboard-copy>
         </div>
-            <div class="highlight-ipynb hl-python"><pre><span></span><span class="k">def</span> <span class="nf">dessine_carte</span><span class="p">(</span><span class="n">index</span><span class="p">,</span><span class="n">liste</span><span class="p">,</span><span class="n">couleur</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span><span class="n">visible</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span><span class="n">posx</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="n">posy</span><span class="o">=</span><span class="mi">0</span><span class="p">):</span>
-    <span class="k">if</span> <span class="n">couleur</span><span class="o">==</span><span class="kc">None</span><span class="p">:</span>
-        <span class="n">couleur</span> <span class="o">=</span> <span class="n">tortue_carte</span><span class="p">[</span><span class="n">index</span><span class="p">]</span><span class="o">.</span><span class="n">pencolor</span><span class="p">()</span>
-    <span class="n">tortue_carte</span><span class="p">[</span><span class="n">index</span><span class="p">]</span><span class="o">.</span><span class="n">reset</span><span class="p">()</span>
-    <span class="k">if</span> <span class="n">visible</span><span class="p">:</span>
-        <span class="n">set_crayon</span><span class="p">(</span><span class="n">tortue_carte</span><span class="p">[</span><span class="n">index</span><span class="p">],</span><span class="n">epaisseur</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span><span class="n">couleur</span><span class="o">=</span><span class="n">couleur</span><span class="p">,</span><span class="n">remplissage</span><span class="o">=</span><span class="s2">&quot;white&quot;</span><span class="p">)</span>
-        <span class="n">rectangle</span><span class="p">(</span><span class="n">tortue_carte</span><span class="p">[</span><span class="n">index</span><span class="p">],</span><span class="n">MARGE</span><span class="o">+</span><span class="p">(</span><span class="n">LARGEUR_CARTE</span><span class="o">+</span><span class="n">ECART</span><span class="p">)</span><span class="o">*</span><span class="n">index</span><span class="o">+</span><span class="n">posx</span><span class="p">,</span><span class="n">LIGNE_CARTE</span><span class="o">+</span><span class="n">posy</span><span class="p">,</span><span class="n">LARGEUR_CARTE</span><span class="p">,</span><span class="n">HAUTEUR_CARTE</span><span class="p">)</span>
-        <span class="n">ecrit</span><span class="p">(</span><span class="n">tortue_carte</span><span class="p">[</span><span class="n">index</span><span class="p">],</span><span class="n">MARGE</span><span class="o">+</span><span class="p">(</span><span class="n">LARGEUR_CARTE</span><span class="o">+</span><span class="n">ECART</span><span class="p">)</span><span class="o">*</span><span class="n">index</span><span class="o">+</span><span class="n">LARGEUR_CARTE</span><span class="o">//</span><span class="mi">2</span><span class="o">+</span><span class="n">posx</span><span class="p">,</span><span class="n">LIGNE_CARTE</span><span class="o">+</span><span class="n">HAUTEUR_CARTE</span><span class="o">//</span><span class="mi">2</span><span class="o">+</span><span class="n">posy</span><span class="p">,</span><span class="n">liste</span><span class="p">[</span><span class="n">index</span><span class="p">],</span><span class="n">fonte</span><span class="o">=</span><span class="p">(</span><span class="s2">&quot;Arial&quot;</span><span class="p">,</span><span class="mi">24</span><span class="p">,</span><span class="s2">&quot;bold&quot;</span><span class="p">))</span>
+            <div class="highlight-ipynb hl-sql"><pre><span></span><span class="n">def</span><span class="w"> </span><span class="n">dessine_carte</span><span class="p">(</span><span class="k">index</span><span class="p">,</span><span class="n">liste</span><span class="p">,</span><span class="n">couleur</span><span class="o">=</span><span class="k">None</span><span class="p">,</span><span class="n">visible</span><span class="o">=</span><span class="k">True</span><span class="p">,</span><span class="n">posx</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="n">posy</span><span class="o">=</span><span class="mi">0</span><span class="p">):</span><span class="w"></span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="n">couleur</span><span class="o">==</span><span class="k">None</span><span class="p">:</span><span class="w"></span>
+<span class="w">        </span><span class="n">couleur</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">tortue_carte</span><span class="p">[</span><span class="k">index</span><span class="p">].</span><span class="n">pencolor</span><span class="p">()</span><span class="w"></span>
+<span class="w">    </span><span class="n">tortue_carte</span><span class="p">[</span><span class="k">index</span><span class="p">].</span><span class="k">reset</span><span class="p">()</span><span class="w"></span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="n">visible</span><span class="p">:</span><span class="w"></span>
+<span class="w">        </span><span class="n">set_crayon</span><span class="p">(</span><span class="n">tortue_carte</span><span class="p">[</span><span class="k">index</span><span class="p">],</span><span class="n">epaisseur</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span><span class="n">couleur</span><span class="o">=</span><span class="n">couleur</span><span class="p">,</span><span class="n">remplissage</span><span class="o">=</span><span class="ss">&quot;white&quot;</span><span class="p">)</span><span class="w"></span>
+<span class="w">        </span><span class="n">rectangle</span><span class="p">(</span><span class="n">tortue_carte</span><span class="p">[</span><span class="k">index</span><span class="p">],</span><span class="n">MARGE</span><span class="o">+</span><span class="p">(</span><span class="n">LARGEUR_CARTE</span><span class="o">+</span><span class="n">ECART</span><span class="p">)</span><span class="o">*</span><span class="k">index</span><span class="o">+</span><span class="n">posx</span><span class="p">,</span><span class="n">LIGNE_CARTE</span><span class="o">+</span><span class="n">posy</span><span class="p">,</span><span class="n">LARGEUR_CARTE</span><span class="p">,</span><span class="n">HAUTEUR_CARTE</span><span class="p">)</span><span class="w"></span>
+<span class="w">        </span><span class="n">ecrit</span><span class="p">(</span><span class="n">tortue_carte</span><span class="p">[</span><span class="k">index</span><span class="p">],</span><span class="n">MARGE</span><span class="o">+</span><span class="p">(</span><span class="n">LARGEUR_CARTE</span><span class="o">+</span><span class="n">ECART</span><span class="p">)</span><span class="o">*</span><span class="k">index</span><span class="o">+</span><span class="n">LARGEUR_CARTE</span><span class="o">//</span><span class="mi">2</span><span class="o">+</span><span class="n">posx</span><span class="p">,</span><span class="n">LIGNE_CARTE</span><span class="o">+</span><span class="n">HAUTEUR_CARTE</span><span class="o">//</span><span class="mi">2</span><span class="o">+</span><span class="n">posy</span><span class="p">,</span><span class="n">liste</span><span class="p">[</span><span class="k">index</span><span class="p">],</span><span class="n">fonte</span><span class="o">=</span><span class="p">(</span><span class="ss">&quot;Arial&quot;</span><span class="p">,</span><span class="mi">24</span><span class="p">,</span><span class="ss">&quot;bold&quot;</span><span class="p">))</span><span class="w"></span>
 </pre></div>
 <div id="cell-14" class="clipboard-copy-txt">def dessine_carte(index,liste,couleur=None,visible=True,posx=0,posy=0):
     if couleur==None:
@@ -3593,13 +3611,13 @@ papier.tracer(400)</div>
                 </div>
             </clipboard-copy>
         </div>
-            <div class="highlight-ipynb hl-python"><pre><span></span><span class="k">def</span> <span class="nf">dessine_liste</span><span class="p">(</span><span class="n">liste</span><span class="p">):</span>
-    <span class="n">set_crayon</span><span class="p">(</span><span class="n">crayon</span><span class="p">,</span><span class="n">epaisseur</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span><span class="n">couleur</span><span class="o">=</span><span class="s2">&quot;darkblue&quot;</span><span class="p">,</span><span class="n">remplissage</span><span class="o">=</span><span class="s2">&quot;lightgray&quot;</span><span class="p">)</span>
-    <span class="n">rectangle</span><span class="p">(</span><span class="n">crayon</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="n">LARGEUR_ECRAN</span><span class="o">-</span><span class="mi">10</span><span class="p">,</span><span class="n">HAUTEUR_ECRAN</span><span class="o">-</span><span class="mi">10</span><span class="p">)</span>
-    <span class="n">couleur</span> <span class="o">=</span> <span class="n">COULEUR_BASE</span>
-    <span class="k">for</span> <span class="n">ind</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">NB</span><span class="p">):</span>
-        <span class="n">dessine_carte</span><span class="p">(</span><span class="n">ind</span><span class="p">,</span><span class="n">liste</span><span class="p">,</span><span class="n">couleur</span><span class="p">)</span>
-    <span class="n">pointille</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+            <div class="highlight-ipynb hl-sql"><pre><span></span><span class="n">def</span><span class="w"> </span><span class="n">dessine_liste</span><span class="p">(</span><span class="n">liste</span><span class="p">):</span><span class="w"></span>
+<span class="w">    </span><span class="n">set_crayon</span><span class="p">(</span><span class="n">crayon</span><span class="p">,</span><span class="n">epaisseur</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span><span class="n">couleur</span><span class="o">=</span><span class="ss">&quot;darkblue&quot;</span><span class="p">,</span><span class="n">remplissage</span><span class="o">=</span><span class="ss">&quot;lightgray&quot;</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="n">rectangle</span><span class="p">(</span><span class="n">crayon</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="n">LARGEUR_ECRAN</span><span class="o">-</span><span class="mi">10</span><span class="p">,</span><span class="n">HAUTEUR_ECRAN</span><span class="o">-</span><span class="mi">10</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="n">couleur</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">COULEUR_BASE</span><span class="w"></span>
+<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="n">ind</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="n">range</span><span class="p">(</span><span class="n">NB</span><span class="p">):</span><span class="w"></span>
+<span class="w">        </span><span class="n">dessine_carte</span><span class="p">(</span><span class="n">ind</span><span class="p">,</span><span class="n">liste</span><span class="p">,</span><span class="n">couleur</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="n">pointille</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span><span class="w"></span>
 </pre></div>
 <div id="cell-15" class="clipboard-copy-txt">def dessine_liste(liste):
     set_crayon(crayon,epaisseur=10,couleur="darkblue",remplissage="lightgray")
@@ -3637,14 +3655,14 @@ papier.tracer(400)</div>
                 </div>
             </clipboard-copy>
         </div>
-            <div class="highlight-ipynb hl-python"><pre><span></span><span class="k">def</span> <span class="nf">pointille</span><span class="p">(</span><span class="n">index</span><span class="p">):</span>
-    <span class="n">tortue_ligne</span><span class="o">.</span><span class="n">reset</span><span class="p">()</span>
-    <span class="n">set_crayon</span><span class="p">(</span><span class="n">tortue_ligne</span><span class="p">,</span><span class="n">epaisseur</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span><span class="n">couleur</span><span class="o">=</span><span class="s2">&quot;brown&quot;</span><span class="p">)</span>
-    <span class="n">start</span> <span class="o">=</span> <span class="n">MARGE</span><span class="o">*</span><span class="mi">2</span>
-    <span class="n">inc</span> <span class="o">=</span> <span class="mi">10</span>
-    <span class="k">while</span> <span class="n">start</span><span class="o">+</span><span class="n">inc</span><span class="o">&lt;</span><span class="n">HAUTEUR_ECRAN</span><span class="o">-</span><span class="n">MARGE</span><span class="o">*</span><span class="mi">2</span><span class="p">:</span>
-        <span class="n">ligne</span><span class="p">(</span><span class="n">tortue_ligne</span><span class="p">,</span><span class="n">MARGE</span><span class="o">+</span><span class="p">(</span><span class="n">LARGEUR_CARTE</span><span class="o">+</span><span class="n">ECART</span><span class="p">)</span><span class="o">*</span><span class="n">index</span><span class="o">-</span><span class="n">ECART</span><span class="o">//</span><span class="mi">2</span><span class="p">,</span><span class="n">start</span><span class="p">,</span><span class="n">inc</span><span class="o">//</span><span class="mi">4</span><span class="p">,</span><span class="mi">90</span><span class="p">)</span>
-        <span class="n">start</span><span class="o">=</span><span class="n">start</span><span class="o">+</span><span class="n">inc</span>
+            <div class="highlight-ipynb hl-sql"><pre><span></span><span class="n">def</span><span class="w"> </span><span class="n">pointille</span><span class="p">(</span><span class="k">index</span><span class="p">):</span><span class="w"></span>
+<span class="w">    </span><span class="n">tortue_ligne</span><span class="p">.</span><span class="k">reset</span><span class="p">()</span><span class="w"></span>
+<span class="w">    </span><span class="n">set_crayon</span><span class="p">(</span><span class="n">tortue_ligne</span><span class="p">,</span><span class="n">epaisseur</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span><span class="n">couleur</span><span class="o">=</span><span class="ss">&quot;brown&quot;</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="k">start</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">MARGE</span><span class="o">*</span><span class="mi">2</span><span class="w"></span>
+<span class="w">    </span><span class="n">inc</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">10</span><span class="w"></span>
+<span class="w">    </span><span class="n">while</span><span class="w"> </span><span class="k">start</span><span class="o">+</span><span class="n">inc</span><span class="o">&lt;</span><span class="n">HAUTEUR_ECRAN</span><span class="o">-</span><span class="n">MARGE</span><span class="o">*</span><span class="mi">2</span><span class="p">:</span><span class="w"></span>
+<span class="w">        </span><span class="n">ligne</span><span class="p">(</span><span class="n">tortue_ligne</span><span class="p">,</span><span class="n">MARGE</span><span class="o">+</span><span class="p">(</span><span class="n">LARGEUR_CARTE</span><span class="o">+</span><span class="n">ECART</span><span class="p">)</span><span class="o">*</span><span class="k">index</span><span class="o">-</span><span class="n">ECART</span><span class="o">//</span><span class="mi">2</span><span class="p">,</span><span class="k">start</span><span class="p">,</span><span class="n">inc</span><span class="o">//</span><span class="mi">4</span><span class="p">,</span><span class="mi">90</span><span class="p">)</span><span class="w"></span>
+<span class="w">        </span><span class="k">start</span><span class="o">=</span><span class="k">start</span><span class="o">+</span><span class="n">inc</span><span class="w"></span>
 </pre></div>
 <div id="cell-16" class="clipboard-copy-txt">def pointille(index):
     tortue_ligne.reset()
@@ -3683,16 +3701,16 @@ papier.tracer(400)</div>
                 </div>
             </clipboard-copy>
         </div>
-            <div class="highlight-ipynb hl-python"><pre><span></span><span class="k">def</span> <span class="nf">dessine_spot</span><span class="p">(</span><span class="n">index</span><span class="p">,</span><span class="n">visible</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span><span class="n">mid</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
-    <span class="n">tortue_spot</span><span class="o">.</span><span class="n">reset</span><span class="p">()</span>
-    <span class="n">offset</span><span class="o">=</span><span class="mi">0</span>
-    <span class="k">if</span> <span class="n">mid</span><span class="p">:</span> <span class="n">offset</span><span class="o">=</span><span class="p">(</span><span class="n">LARGEUR_CARTE</span><span class="o">+</span><span class="n">ECART</span><span class="p">)</span><span class="o">//</span><span class="mi">2</span>
-    <span class="k">if</span> <span class="n">visible</span><span class="p">:</span>
-        <span class="n">set_crayon</span><span class="p">(</span><span class="n">tortue_spot</span><span class="p">,</span><span class="n">couleur</span><span class="o">=</span><span class="n">COULEUR_SPOT</span><span class="p">,</span><span class="n">remplissage</span><span class="o">=</span><span class="n">COULEUR_SPOT</span><span class="p">)</span>
-        <span class="n">tortue_spot</span><span class="o">.</span><span class="n">shapesize</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
-        <span class="n">origine</span><span class="p">(</span><span class="n">tortue_spot</span><span class="p">,</span><span class="n">MARGE</span><span class="o">+</span><span class="p">(</span><span class="n">LARGEUR_CARTE</span><span class="o">+</span><span class="n">ECART</span><span class="p">)</span><span class="o">*</span><span class="n">index</span><span class="o">+</span><span class="n">LARGEUR_CARTE</span><span class="o">//</span><span class="mi">2</span><span class="o">+</span><span class="n">offset</span><span class="p">,</span><span class="n">LIGNE_SPOT</span><span class="p">)</span>
-        <span class="n">tortue_spot</span><span class="o">.</span><span class="n">setheading</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
-        <span class="n">tortue_spot</span><span class="o">.</span><span class="n">stamp</span><span class="p">()</span>
+            <div class="highlight-ipynb hl-sql"><pre><span></span><span class="n">def</span><span class="w"> </span><span class="n">dessine_spot</span><span class="p">(</span><span class="k">index</span><span class="p">,</span><span class="n">visible</span><span class="o">=</span><span class="k">True</span><span class="p">,</span><span class="n">mid</span><span class="o">=</span><span class="k">False</span><span class="p">):</span><span class="w"></span>
+<span class="w">    </span><span class="n">tortue_spot</span><span class="p">.</span><span class="k">reset</span><span class="p">()</span><span class="w"></span>
+<span class="w">    </span><span class="k">offset</span><span class="o">=</span><span class="mi">0</span><span class="w"></span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="n">mid</span><span class="p">:</span><span class="w"> </span><span class="k">offset</span><span class="o">=</span><span class="p">(</span><span class="n">LARGEUR_CARTE</span><span class="o">+</span><span class="n">ECART</span><span class="p">)</span><span class="o">//</span><span class="mi">2</span><span class="w"></span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="n">visible</span><span class="p">:</span><span class="w"></span>
+<span class="w">        </span><span class="n">set_crayon</span><span class="p">(</span><span class="n">tortue_spot</span><span class="p">,</span><span class="n">couleur</span><span class="o">=</span><span class="n">COULEUR_SPOT</span><span class="p">,</span><span class="n">remplissage</span><span class="o">=</span><span class="n">COULEUR_SPOT</span><span class="p">)</span><span class="w"></span>
+<span class="w">        </span><span class="n">tortue_spot</span><span class="p">.</span><span class="n">shapesize</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span><span class="w"></span>
+<span class="w">        </span><span class="n">origine</span><span class="p">(</span><span class="n">tortue_spot</span><span class="p">,</span><span class="n">MARGE</span><span class="o">+</span><span class="p">(</span><span class="n">LARGEUR_CARTE</span><span class="o">+</span><span class="n">ECART</span><span class="p">)</span><span class="o">*</span><span class="k">index</span><span class="o">+</span><span class="n">LARGEUR_CARTE</span><span class="o">//</span><span class="mi">2</span><span class="o">+</span><span class="k">offset</span><span class="p">,</span><span class="n">LIGNE_SPOT</span><span class="p">)</span><span class="w"></span>
+<span class="w">        </span><span class="n">tortue_spot</span><span class="p">.</span><span class="n">setheading</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span><span class="w"></span>
+<span class="w">        </span><span class="n">tortue_spot</span><span class="p">.</span><span class="n">stamp</span><span class="p">()</span><span class="w"></span>
 </pre></div>
 <div id="cell-17" class="clipboard-copy-txt">def dessine_spot(index,visible=True,mid=False):
     tortue_spot.reset()
@@ -3733,16 +3751,16 @@ papier.tracer(400)</div>
                 </div>
             </clipboard-copy>
         </div>
-            <div class="highlight-ipynb hl-python"><pre><span></span><span class="k">def</span> <span class="nf">deplace_vertical</span><span class="p">(</span><span class="n">liste</span><span class="p">,</span><span class="n">i</span><span class="p">,</span><span class="n">vy</span><span class="p">,</span><span class="n">env</span> <span class="o">=</span> <span class="kc">False</span><span class="p">):</span>
-    <span class="n">signe</span> <span class="o">=</span> <span class="o">-</span><span class="nb">int</span><span class="p">(</span><span class="nb">abs</span><span class="p">(</span><span class="n">vy</span><span class="p">)</span><span class="o">/</span><span class="n">vy</span><span class="p">)</span>
-    <span class="k">if</span> <span class="n">env</span><span class="p">:</span>
-        <span class="k">for</span> <span class="n">y</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">vy</span><span class="o">*</span><span class="n">signe</span><span class="p">,</span><span class="mi">0</span><span class="p">):</span>
-            <span class="n">dessine_carte</span><span class="p">(</span><span class="n">i</span><span class="p">,</span><span class="n">liste</span><span class="p">,</span><span class="n">posy</span><span class="o">=</span><span class="n">y</span><span class="o">*</span><span class="n">signe</span><span class="p">)</span>
-            <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="n">MOVE</span><span class="p">)</span>
-    <span class="k">else</span><span class="p">:</span>
-        <span class="k">for</span> <span class="n">y</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="o">-</span><span class="n">vy</span><span class="o">*</span><span class="n">signe</span><span class="p">):</span>
-            <span class="n">dessine_carte</span><span class="p">(</span><span class="n">i</span><span class="p">,</span><span class="n">liste</span><span class="p">,</span><span class="n">posy</span><span class="o">=-</span><span class="n">y</span><span class="o">*</span><span class="n">signe</span><span class="p">)</span>
-            <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="n">MOVE</span><span class="p">)</span>
+            <div class="highlight-ipynb hl-sql"><pre><span></span><span class="n">def</span><span class="w"> </span><span class="n">deplace_vertical</span><span class="p">(</span><span class="n">liste</span><span class="p">,</span><span class="n">i</span><span class="p">,</span><span class="n">vy</span><span class="p">,</span><span class="n">env</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">False</span><span class="p">):</span><span class="w"></span>
+<span class="w">    </span><span class="n">signe</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">-</span><span class="nb">int</span><span class="p">(</span><span class="k">abs</span><span class="p">(</span><span class="n">vy</span><span class="p">)</span><span class="o">/</span><span class="n">vy</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="n">env</span><span class="p">:</span><span class="w"></span>
+<span class="w">        </span><span class="k">for</span><span class="w"> </span><span class="n">y</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="n">range</span><span class="p">(</span><span class="n">vy</span><span class="o">*</span><span class="n">signe</span><span class="p">,</span><span class="mi">0</span><span class="p">):</span><span class="w"></span>
+<span class="w">            </span><span class="n">dessine_carte</span><span class="p">(</span><span class="n">i</span><span class="p">,</span><span class="n">liste</span><span class="p">,</span><span class="n">posy</span><span class="o">=</span><span class="n">y</span><span class="o">*</span><span class="n">signe</span><span class="p">)</span><span class="w"></span>
+<span class="w">            </span><span class="k">time</span><span class="p">.</span><span class="n">sleep</span><span class="p">(</span><span class="k">MOVE</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="k">else</span><span class="p">:</span><span class="w"></span>
+<span class="w">        </span><span class="k">for</span><span class="w"> </span><span class="n">y</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="n">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="o">-</span><span class="n">vy</span><span class="o">*</span><span class="n">signe</span><span class="p">):</span><span class="w"></span>
+<span class="w">            </span><span class="n">dessine_carte</span><span class="p">(</span><span class="n">i</span><span class="p">,</span><span class="n">liste</span><span class="p">,</span><span class="n">posy</span><span class="o">=-</span><span class="n">y</span><span class="o">*</span><span class="n">signe</span><span class="p">)</span><span class="w"></span>
+<span class="w">            </span><span class="k">time</span><span class="p">.</span><span class="n">sleep</span><span class="p">(</span><span class="k">MOVE</span><span class="p">)</span><span class="w"></span>
 </pre></div>
 <div id="cell-18" class="clipboard-copy-txt">def deplace_vertical(liste,i,vy,env = False):
     signe = -int(abs(vy)/vy)
@@ -3783,14 +3801,14 @@ papier.tracer(400)</div>
                 </div>
             </clipboard-copy>
         </div>
-            <div class="highlight-ipynb hl-python"><pre><span></span><span class="k">def</span> <span class="nf">deplace_horizontal</span><span class="p">(</span><span class="n">liste</span><span class="p">,</span><span class="n">i</span><span class="p">,</span><span class="n">j</span><span class="p">,</span><span class="n">mid</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
-    <span class="k">if</span> <span class="n">i</span><span class="o">!=</span><span class="n">j</span><span class="p">:</span>
-        <span class="n">offset</span><span class="o">=</span><span class="mi">0</span>
-        <span class="k">if</span> <span class="n">mid</span><span class="p">:</span> <span class="n">offset</span><span class="o">=</span><span class="p">(</span><span class="n">LARGEUR_CARTE</span><span class="o">+</span><span class="n">ECART</span><span class="p">)</span><span class="o">//</span><span class="mi">2</span>
-        <span class="n">signe</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">abs</span><span class="p">(</span><span class="n">i</span><span class="o">-</span><span class="n">j</span><span class="p">))</span><span class="o">//</span><span class="p">(</span><span class="n">i</span><span class="o">-</span><span class="n">j</span><span class="p">)</span>
-        <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">signe</span><span class="o">*</span><span class="p">(</span><span class="n">i</span><span class="o">-</span><span class="n">j</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="n">LARGEUR_CARTE</span><span class="o">+</span><span class="n">ECART</span><span class="p">)):</span>
-            <span class="n">dessine_carte</span><span class="p">(</span><span class="n">i</span><span class="p">,</span><span class="n">liste</span><span class="p">,</span><span class="n">posy</span><span class="o">=</span><span class="p">(</span><span class="o">-</span><span class="n">HAUTEUR_CARTE</span><span class="o">-</span><span class="n">ECART</span><span class="p">)</span><span class="o">*</span><span class="n">signe</span><span class="p">,</span><span class="n">posx</span><span class="o">=-</span><span class="n">x</span><span class="o">*</span><span class="n">signe</span><span class="o">+</span><span class="n">offset</span><span class="p">)</span>
-            <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="n">MOVE</span><span class="p">)</span>
+            <div class="highlight-ipynb hl-sql"><pre><span></span><span class="n">def</span><span class="w"> </span><span class="n">deplace_horizontal</span><span class="p">(</span><span class="n">liste</span><span class="p">,</span><span class="n">i</span><span class="p">,</span><span class="n">j</span><span class="p">,</span><span class="n">mid</span><span class="o">=</span><span class="k">False</span><span class="p">):</span><span class="w"></span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="n">i</span><span class="o">!=</span><span class="n">j</span><span class="p">:</span><span class="w"></span>
+<span class="w">        </span><span class="k">offset</span><span class="o">=</span><span class="mi">0</span><span class="w"></span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="n">mid</span><span class="p">:</span><span class="w"> </span><span class="k">offset</span><span class="o">=</span><span class="p">(</span><span class="n">LARGEUR_CARTE</span><span class="o">+</span><span class="n">ECART</span><span class="p">)</span><span class="o">//</span><span class="mi">2</span><span class="w"></span>
+<span class="w">        </span><span class="n">signe</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">int</span><span class="p">(</span><span class="k">abs</span><span class="p">(</span><span class="n">i</span><span class="o">-</span><span class="n">j</span><span class="p">))</span><span class="o">//</span><span class="p">(</span><span class="n">i</span><span class="o">-</span><span class="n">j</span><span class="p">)</span><span class="w"></span>
+<span class="w">        </span><span class="k">for</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="n">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">signe</span><span class="o">*</span><span class="p">(</span><span class="n">i</span><span class="o">-</span><span class="n">j</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="n">LARGEUR_CARTE</span><span class="o">+</span><span class="n">ECART</span><span class="p">)):</span><span class="w"></span>
+<span class="w">            </span><span class="n">dessine_carte</span><span class="p">(</span><span class="n">i</span><span class="p">,</span><span class="n">liste</span><span class="p">,</span><span class="n">posy</span><span class="o">=</span><span class="p">(</span><span class="o">-</span><span class="n">HAUTEUR_CARTE</span><span class="o">-</span><span class="n">ECART</span><span class="p">)</span><span class="o">*</span><span class="n">signe</span><span class="p">,</span><span class="n">posx</span><span class="o">=-</span><span class="n">x</span><span class="o">*</span><span class="n">signe</span><span class="o">+</span><span class="k">offset</span><span class="p">)</span><span class="w"></span>
+<span class="w">            </span><span class="k">time</span><span class="p">.</span><span class="n">sleep</span><span class="p">(</span><span class="k">MOVE</span><span class="p">)</span><span class="w"></span>
 </pre></div>
 <div id="cell-19" class="clipboard-copy-txt">def deplace_horizontal(liste,i,j,mid=False):
     if i!=j:
@@ -3829,16 +3847,16 @@ papier.tracer(400)</div>
                 </div>
             </clipboard-copy>
         </div>
-            <div class="highlight-ipynb hl-python"><pre><span></span><span class="k">def</span> <span class="nf">show_echange</span><span class="p">(</span><span class="n">liste</span><span class="p">,</span><span class="n">i</span><span class="p">,</span><span class="n">j</span><span class="p">):</span>
-    <span class="k">if</span> <span class="n">i</span><span class="o">!=</span><span class="n">j</span><span class="p">:</span>
-        <span class="n">deplace_vertical</span><span class="p">(</span><span class="n">liste</span><span class="p">,</span><span class="n">i</span><span class="p">,</span><span class="n">HAUTEUR_CARTE</span><span class="o">+</span><span class="n">ECART</span><span class="p">)</span>
-        <span class="n">deplace_vertical</span><span class="p">(</span><span class="n">liste</span><span class="p">,</span><span class="n">j</span><span class="p">,</span><span class="o">-</span><span class="n">HAUTEUR_CARTE</span><span class="o">-</span><span class="n">ECART</span><span class="p">)</span>
-        <span class="n">deplace_horizontal</span><span class="p">(</span><span class="n">liste</span><span class="p">,</span><span class="n">i</span><span class="p">,</span><span class="n">j</span><span class="p">)</span>
-        <span class="n">deplace_horizontal</span><span class="p">(</span><span class="n">liste</span><span class="p">,</span><span class="n">j</span><span class="p">,</span><span class="n">i</span><span class="p">)</span>
-        <span class="n">liste</span><span class="p">[</span><span class="n">i</span><span class="p">],</span><span class="n">liste</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="n">liste</span><span class="p">[</span><span class="n">j</span><span class="p">],</span><span class="n">liste</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
-        <span class="n">tortue_carte</span><span class="p">[</span><span class="n">i</span><span class="p">],</span><span class="n">tortue_carte</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="n">tortue_carte</span><span class="p">[</span><span class="n">j</span><span class="p">],</span><span class="n">tortue_carte</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
-        <span class="n">deplace_vertical</span><span class="p">(</span><span class="n">liste</span><span class="p">,</span><span class="n">i</span><span class="p">,</span><span class="o">-</span><span class="n">HAUTEUR_CARTE</span><span class="o">-</span><span class="n">ECART</span><span class="p">,</span><span class="n">env</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-        <span class="n">deplace_vertical</span><span class="p">(</span><span class="n">liste</span><span class="p">,</span><span class="n">j</span><span class="p">,</span><span class="n">HAUTEUR_CARTE</span><span class="o">+</span><span class="n">ECART</span><span class="p">,</span><span class="n">env</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+            <div class="highlight-ipynb hl-sql"><pre><span></span><span class="n">def</span><span class="w"> </span><span class="n">show_echange</span><span class="p">(</span><span class="n">liste</span><span class="p">,</span><span class="n">i</span><span class="p">,</span><span class="n">j</span><span class="p">):</span><span class="w"></span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="n">i</span><span class="o">!=</span><span class="n">j</span><span class="p">:</span><span class="w"></span>
+<span class="w">        </span><span class="n">deplace_vertical</span><span class="p">(</span><span class="n">liste</span><span class="p">,</span><span class="n">i</span><span class="p">,</span><span class="n">HAUTEUR_CARTE</span><span class="o">+</span><span class="n">ECART</span><span class="p">)</span><span class="w"></span>
+<span class="w">        </span><span class="n">deplace_vertical</span><span class="p">(</span><span class="n">liste</span><span class="p">,</span><span class="n">j</span><span class="p">,</span><span class="o">-</span><span class="n">HAUTEUR_CARTE</span><span class="o">-</span><span class="n">ECART</span><span class="p">)</span><span class="w"></span>
+<span class="w">        </span><span class="n">deplace_horizontal</span><span class="p">(</span><span class="n">liste</span><span class="p">,</span><span class="n">i</span><span class="p">,</span><span class="n">j</span><span class="p">)</span><span class="w"></span>
+<span class="w">        </span><span class="n">deplace_horizontal</span><span class="p">(</span><span class="n">liste</span><span class="p">,</span><span class="n">j</span><span class="p">,</span><span class="n">i</span><span class="p">)</span><span class="w"></span>
+<span class="w">        </span><span class="n">liste</span><span class="p">[</span><span class="n">i</span><span class="p">],</span><span class="n">liste</span><span class="p">[</span><span class="n">j</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">liste</span><span class="p">[</span><span class="n">j</span><span class="p">],</span><span class="n">liste</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="w"></span>
+<span class="w">        </span><span class="n">tortue_carte</span><span class="p">[</span><span class="n">i</span><span class="p">],</span><span class="n">tortue_carte</span><span class="p">[</span><span class="n">j</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">tortue_carte</span><span class="p">[</span><span class="n">j</span><span class="p">],</span><span class="n">tortue_carte</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="w"></span>
+<span class="w">        </span><span class="n">deplace_vertical</span><span class="p">(</span><span class="n">liste</span><span class="p">,</span><span class="n">i</span><span class="p">,</span><span class="o">-</span><span class="n">HAUTEUR_CARTE</span><span class="o">-</span><span class="n">ECART</span><span class="p">,</span><span class="n">env</span><span class="o">=</span><span class="k">True</span><span class="p">)</span><span class="w"></span>
+<span class="w">        </span><span class="n">deplace_vertical</span><span class="p">(</span><span class="n">liste</span><span class="p">,</span><span class="n">j</span><span class="p">,</span><span class="n">HAUTEUR_CARTE</span><span class="o">+</span><span class="n">ECART</span><span class="p">,</span><span class="n">env</span><span class="o">=</span><span class="k">True</span><span class="p">)</span><span class="w"></span>
 </pre></div>
 <div id="cell-20" class="clipboard-copy-txt">def show_echange(liste,i,j):
     if i!=j:
@@ -3879,7 +3897,7 @@ papier.tracer(400)</div>
                 </div>
             </clipboard-copy>
         </div>
-            <div class="highlight-ipynb hl-python"><pre><span></span>
+            <div class="highlight-ipynb hl-sql"><pre><span></span>
 </pre></div>
 <div id="cell-21" class="clipboard-copy-txt"></div>
     
@@ -3911,20 +3929,20 @@ papier.tracer(400)</div>
                 </div>
             </clipboard-copy>
         </div>
-            <div class="highlight-ipynb hl-python"><pre><span></span><span class="k">def</span> <span class="nf">pause_tri</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">):</span>
-    <span class="k">global</span> <span class="n">pause</span>
-    <span class="n">pause</span> <span class="o">=</span> <span class="ow">not</span> <span class="n">pause</span>
-    <span class="n">papier</span><span class="o">.</span><span class="n">update</span><span class="p">()</span>
-    <span class="k">while</span> <span class="n">pause</span><span class="p">:</span>
-        <span class="n">set_crayon</span><span class="p">(</span><span class="n">tortue_pause</span><span class="p">)</span>
-        <span class="n">origine</span><span class="p">(</span><span class="n">tortue_pause</span><span class="p">,</span><span class="n">LARGEUR_ECRAN</span><span class="o">//</span><span class="mi">2</span><span class="p">,</span><span class="n">HAUTEUR_ECRAN</span><span class="o">-</span><span class="n">MARGE</span><span class="o">*</span><span class="mi">2</span><span class="p">)</span>
-        <span class="n">tortue_pause</span><span class="o">.</span><span class="n">color</span><span class="p">(</span><span class="s2">&quot;red&quot;</span><span class="p">)</span>
-        <span class="n">tortue_pause</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="nb">chr</span><span class="p">(</span><span class="mh">0x23F8</span><span class="p">),</span><span class="n">align</span><span class="o">=</span><span class="s2">&quot;center&quot;</span><span class="p">,</span><span class="n">font</span><span class="o">=</span><span class="p">(</span><span class="s2">&quot;Arial&quot;</span><span class="p">,</span><span class="mi">42</span><span class="p">,</span><span class="s2">&quot;bold&quot;</span><span class="p">))</span>
-        <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="n">WAIT_BLINK</span><span class="p">)</span>
-        <span class="n">tortue_pause</span><span class="o">.</span><span class="n">color</span><span class="p">(</span><span class="s2">&quot;black&quot;</span><span class="p">)</span>
-        <span class="n">tortue_pause</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="nb">chr</span><span class="p">(</span><span class="mh">0x23F8</span><span class="p">),</span><span class="n">align</span><span class="o">=</span><span class="s2">&quot;center&quot;</span><span class="p">,</span><span class="n">font</span><span class="o">=</span><span class="p">(</span><span class="s2">&quot;Arial&quot;</span><span class="p">,</span><span class="mi">42</span><span class="p">,</span><span class="s2">&quot;bold&quot;</span><span class="p">))</span>
-        <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="n">WAIT_BLINK</span><span class="p">)</span>
-        <span class="c1"># papier.listen()</span>
+            <div class="highlight-ipynb hl-sql"><pre><span></span><span class="n">def</span><span class="w"> </span><span class="n">pause_tri</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">):</span><span class="w"></span>
+<span class="w">    </span><span class="k">global</span><span class="w"> </span><span class="n">pause</span><span class="w"></span>
+<span class="w">    </span><span class="n">pause</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">not</span><span class="w"> </span><span class="n">pause</span><span class="w"></span>
+<span class="w">    </span><span class="n">papier</span><span class="p">.</span><span class="k">update</span><span class="p">()</span><span class="w"></span>
+<span class="w">    </span><span class="n">while</span><span class="w"> </span><span class="n">pause</span><span class="p">:</span><span class="w"></span>
+<span class="w">        </span><span class="n">set_crayon</span><span class="p">(</span><span class="n">tortue_pause</span><span class="p">)</span><span class="w"></span>
+<span class="w">        </span><span class="n">origine</span><span class="p">(</span><span class="n">tortue_pause</span><span class="p">,</span><span class="n">LARGEUR_ECRAN</span><span class="o">//</span><span class="mi">2</span><span class="p">,</span><span class="n">HAUTEUR_ECRAN</span><span class="o">-</span><span class="n">MARGE</span><span class="o">*</span><span class="mi">2</span><span class="p">)</span><span class="w"></span>
+<span class="w">        </span><span class="n">tortue_pause</span><span class="p">.</span><span class="n">color</span><span class="p">(</span><span class="ss">&quot;red&quot;</span><span class="p">)</span><span class="w"></span>
+<span class="w">        </span><span class="n">tortue_pause</span><span class="p">.</span><span class="k">write</span><span class="p">(</span><span class="n">chr</span><span class="p">(</span><span class="mi">0</span><span class="n">x23F8</span><span class="p">),</span><span class="n">align</span><span class="o">=</span><span class="ss">&quot;center&quot;</span><span class="p">,</span><span class="n">font</span><span class="o">=</span><span class="p">(</span><span class="ss">&quot;Arial&quot;</span><span class="p">,</span><span class="mi">42</span><span class="p">,</span><span class="ss">&quot;bold&quot;</span><span class="p">))</span><span class="w"></span>
+<span class="w">        </span><span class="k">time</span><span class="p">.</span><span class="n">sleep</span><span class="p">(</span><span class="n">WAIT_BLINK</span><span class="p">)</span><span class="w"></span>
+<span class="w">        </span><span class="n">tortue_pause</span><span class="p">.</span><span class="n">color</span><span class="p">(</span><span class="ss">&quot;black&quot;</span><span class="p">)</span><span class="w"></span>
+<span class="w">        </span><span class="n">tortue_pause</span><span class="p">.</span><span class="k">write</span><span class="p">(</span><span class="n">chr</span><span class="p">(</span><span class="mi">0</span><span class="n">x23F8</span><span class="p">),</span><span class="n">align</span><span class="o">=</span><span class="ss">&quot;center&quot;</span><span class="p">,</span><span class="n">font</span><span class="o">=</span><span class="p">(</span><span class="ss">&quot;Arial&quot;</span><span class="p">,</span><span class="mi">42</span><span class="p">,</span><span class="ss">&quot;bold&quot;</span><span class="p">))</span><span class="w"></span>
+<span class="w">        </span><span class="k">time</span><span class="p">.</span><span class="n">sleep</span><span class="p">(</span><span class="n">WAIT_BLINK</span><span class="p">)</span><span class="w"></span>
+<span class="w">        </span><span class="o">#</span><span class="w"> </span><span class="n">papier</span><span class="p">.</span><span class="k">listen</span><span class="p">()</span><span class="w"></span>
 </pre></div>
 <div id="cell-22" class="clipboard-copy-txt">def pause_tri(x,y):
     global pause
@@ -3969,34 +3987,34 @@ papier.tracer(400)</div>
                 </div>
             </clipboard-copy>
         </div>
-            <div class="highlight-ipynb hl-python"><pre><span></span><span class="n">pause</span> <span class="o">=</span> <span class="kc">False</span>
-<span class="n">papier</span><span class="o">.</span><span class="n">onscreenclick</span><span class="p">(</span><span class="n">pause_tri</span><span class="p">)</span>
-<span class="n">liste</span> <span class="o">=</span> <span class="p">[</span><span class="n">randint</span><span class="p">(</span><span class="n">VMIN</span><span class="p">,</span><span class="n">VMAX</span><span class="p">)</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">NB</span><span class="p">)]</span>
-<span class="n">dessine_liste</span><span class="p">(</span><span class="n">liste</span><span class="p">)</span>
-<span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
-<span class="n">papier</span><span class="o">.</span><span class="n">update</span><span class="p">()</span>
-<span class="k">for</span> <span class="n">index</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">NB</span><span class="p">):</span>
-    <span class="n">dessine_spot</span><span class="p">(</span><span class="n">index</span><span class="p">)</span>
-    <span class="n">pointille</span><span class="p">(</span><span class="n">index</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>
-    <span class="n">k</span> <span class="o">=</span> <span class="n">index</span><span class="o">-</span><span class="mi">1</span>
-    <span class="k">while</span> <span class="n">liste</span><span class="p">[</span><span class="n">k</span><span class="p">]</span><span class="o">&gt;</span><span class="n">liste</span><span class="p">[</span><span class="n">k</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span> <span class="ow">and</span> <span class="n">k</span><span class="o">&gt;=</span><span class="mi">0</span><span class="p">:</span>
-        <span class="n">tortue_pause</span><span class="o">.</span><span class="n">reset</span><span class="p">()</span>
-        <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">):</span>
-            <span class="n">dessine_carte</span><span class="p">(</span><span class="n">k</span><span class="p">,</span><span class="n">liste</span><span class="p">,</span><span class="s2">&quot;orange&quot;</span><span class="p">)</span>
-            <span class="n">dessine_carte</span><span class="p">(</span><span class="n">k</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span><span class="n">liste</span><span class="p">,</span><span class="s2">&quot;red&quot;</span><span class="p">)</span>  
-            <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="n">WAIT_BLINK</span><span class="p">)</span>
-            <span class="n">dessine_carte</span><span class="p">(</span><span class="n">k</span><span class="p">,</span><span class="n">liste</span><span class="p">,</span><span class="s2">&quot;red&quot;</span><span class="p">)</span>
-            <span class="n">dessine_carte</span><span class="p">(</span><span class="n">k</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span><span class="n">liste</span><span class="p">,</span><span class="s2">&quot;orange&quot;</span><span class="p">)</span>  
-            <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="n">WAIT_BLINK</span><span class="p">)</span>
-        <span class="n">show_echange</span><span class="p">(</span><span class="n">liste</span><span class="p">,</span><span class="n">k</span><span class="p">,</span><span class="n">k</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>
-        <span class="n">k</span> <span class="o">=</span> <span class="n">k</span> <span class="o">-</span> <span class="mi">1</span>
-        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">index</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
-            <span class="n">dessine_carte</span><span class="p">(</span><span class="n">i</span><span class="p">,</span><span class="n">liste</span><span class="p">,</span><span class="s2">&quot;green&quot;</span><span class="p">)</span>  
-        <span class="n">tortue_pause</span><span class="o">.</span><span class="n">reset</span><span class="p">()</span>
-    <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">0.2</span><span class="p">)</span>
-<span class="n">pointille</span><span class="p">(</span><span class="n">NB</span><span class="p">)</span>
-<span class="n">papier</span><span class="o">.</span><span class="n">update</span><span class="p">()</span>
-<span class="n">papier</span><span class="o">.</span><span class="n">exitonclick</span><span class="p">()</span>
+            <div class="highlight-ipynb hl-sql"><pre><span></span><span class="n">pause</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">False</span><span class="w"></span>
+<span class="n">papier</span><span class="p">.</span><span class="n">onscreenclick</span><span class="p">(</span><span class="n">pause_tri</span><span class="p">)</span><span class="w"></span>
+<span class="n">liste</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="n">randint</span><span class="p">(</span><span class="n">VMIN</span><span class="p">,</span><span class="n">VMAX</span><span class="p">)</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="n">_</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="n">range</span><span class="p">(</span><span class="n">NB</span><span class="p">)]</span><span class="w"></span>
+<span class="n">dessine_liste</span><span class="p">(</span><span class="n">liste</span><span class="p">)</span><span class="w"></span>
+<span class="k">time</span><span class="p">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span><span class="w"></span>
+<span class="n">papier</span><span class="p">.</span><span class="k">update</span><span class="p">()</span><span class="w"></span>
+<span class="k">for</span><span class="w"> </span><span class="k">index</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="n">range</span><span class="p">(</span><span class="n">NB</span><span class="p">):</span><span class="w"></span>
+<span class="w">    </span><span class="n">dessine_spot</span><span class="p">(</span><span class="k">index</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="n">pointille</span><span class="p">(</span><span class="k">index</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span><span class="w"></span>
+<span class="w">    </span><span class="n">k</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">index</span><span class="o">-</span><span class="mi">1</span><span class="w"></span>
+<span class="w">    </span><span class="n">while</span><span class="w"> </span><span class="n">liste</span><span class="p">[</span><span class="n">k</span><span class="p">]</span><span class="o">&gt;</span><span class="n">liste</span><span class="p">[</span><span class="n">k</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span><span class="w"> </span><span class="k">and</span><span class="w"> </span><span class="n">k</span><span class="o">&gt;=</span><span class="mi">0</span><span class="p">:</span><span class="w"></span>
+<span class="w">        </span><span class="n">tortue_pause</span><span class="p">.</span><span class="k">reset</span><span class="p">()</span><span class="w"></span>
+<span class="w">        </span><span class="k">for</span><span class="w"> </span><span class="n">_</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="n">range</span><span class="p">(</span><span class="mi">3</span><span class="p">):</span><span class="w"></span>
+<span class="w">            </span><span class="n">dessine_carte</span><span class="p">(</span><span class="n">k</span><span class="p">,</span><span class="n">liste</span><span class="p">,</span><span class="ss">&quot;orange&quot;</span><span class="p">)</span><span class="w"></span>
+<span class="w">            </span><span class="n">dessine_carte</span><span class="p">(</span><span class="n">k</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span><span class="n">liste</span><span class="p">,</span><span class="ss">&quot;red&quot;</span><span class="p">)</span><span class="w">  </span>
+<span class="w">            </span><span class="k">time</span><span class="p">.</span><span class="n">sleep</span><span class="p">(</span><span class="n">WAIT_BLINK</span><span class="p">)</span><span class="w"></span>
+<span class="w">            </span><span class="n">dessine_carte</span><span class="p">(</span><span class="n">k</span><span class="p">,</span><span class="n">liste</span><span class="p">,</span><span class="ss">&quot;red&quot;</span><span class="p">)</span><span class="w"></span>
+<span class="w">            </span><span class="n">dessine_carte</span><span class="p">(</span><span class="n">k</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span><span class="n">liste</span><span class="p">,</span><span class="ss">&quot;orange&quot;</span><span class="p">)</span><span class="w">  </span>
+<span class="w">            </span><span class="k">time</span><span class="p">.</span><span class="n">sleep</span><span class="p">(</span><span class="n">WAIT_BLINK</span><span class="p">)</span><span class="w"></span>
+<span class="w">        </span><span class="n">show_echange</span><span class="p">(</span><span class="n">liste</span><span class="p">,</span><span class="n">k</span><span class="p">,</span><span class="n">k</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span><span class="w"></span>
+<span class="w">        </span><span class="n">k</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">k</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="w"></span>
+<span class="w">        </span><span class="k">for</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="n">range</span><span class="p">(</span><span class="k">index</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span><span class="w"></span>
+<span class="w">            </span><span class="n">dessine_carte</span><span class="p">(</span><span class="n">i</span><span class="p">,</span><span class="n">liste</span><span class="p">,</span><span class="ss">&quot;green&quot;</span><span class="p">)</span><span class="w">  </span>
+<span class="w">        </span><span class="n">tortue_pause</span><span class="p">.</span><span class="k">reset</span><span class="p">()</span><span class="w"></span>
+<span class="w">    </span><span class="k">time</span><span class="p">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">0</span><span class="p">.</span><span class="mi">2</span><span class="p">)</span><span class="w"></span>
+<span class="n">pointille</span><span class="p">(</span><span class="n">NB</span><span class="p">)</span><span class="w"></span>
+<span class="n">papier</span><span class="p">.</span><span class="k">update</span><span class="p">()</span><span class="w"></span>
+<span class="n">papier</span><span class="p">.</span><span class="n">exitonclick</span><span class="p">()</span><span class="w"></span>
 </pre></div>
 <div id="cell-23" class="clipboard-copy-txt">pause = False
 papier.onscreenclick(pause_tri)
@@ -4131,7 +4149,7 @@ papier.exitonclick()</div>
     <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.instant", "navigation.tabs", "navigation.tabs.sticky", "navigation.expand", "navigation.top", "navigation.sections", "navigation.indexes", "navigation.tracking", "header.autohide", "content.code.annotate"], "search": "../../../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.config.lang": "fr", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Rechercher", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version.title": "S\u00e9lectionner la version"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.8492ddcf.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.d6c3db9e.min.js"></script>
       
         <script src="../../../xtra/mathjax.js"></script>
       
