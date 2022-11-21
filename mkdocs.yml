@@ -24,6 +24,7 @@ nav:
       - T2_1 Listes, Piles et Files : StructureDonnees/T2_1_Listes_Piles_et_Files.md
       #- T2_2 BAC - Listes, Piles et Files : StructureDonnees/T2_2_Pile_File_BAC.md
       - T2_2 BAC Correction - Listes, Piles et Files : StructureDonnees/T2_2_Pile_File_BAC_Correction.md
+      - Arbre binaire : StructureDonnees/T3_1_arbre.md
 
     
     - T2 - Bases de données :  
@@ -192,6 +193,8 @@ markdown_extensions: # https://squidfunk.github.io/mkdocs-material/reference/abb
             "SQL": "🗂️ Requête SQL"
 
     - pymdownx.inlinehilite         # pour  `#!python  <python en ligne>`
+    - pymdownx.highlight:
+         anchor_linenums: true
     - pymdownx.snippets             # Inclusion de fichiers externe.
     - pymdownx.tasklist:            # Cases à cocher  - [ ]  et - [x]
         custom_checkbox:    false   #   avec cases d'origine
