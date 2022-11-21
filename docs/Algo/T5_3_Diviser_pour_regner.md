@@ -76,7 +76,8 @@
         On a donc montré que si l’entier $k$ vérifie $n \leq 2^k$ , alors l’algorithme va effectuer au plus $n$ itérations.
         La plus petite valeur est obtenue pour $\log(n) = \log_2 k$.  
         Ainsi, la complexité de la fonction est de l’ordre du logarithme  de la longueur de la liste ($O(log_2(n))$).  
-        $log_2(n)$.
+        
+        Donc l'algorithme du tri fusion a une complexité de l'ordre de $n \times log_2(n)$.
 
 
 3. Dichotomie récursive sans slicing
@@ -577,7 +578,8 @@ _Cet exercice traite principalement du thème « algorithmique, langages et prog
         ```
         ")}}
 
-`!!! fabquestion "Question A.2"
+!!! fabquestion "Question A.2"
+
     === "Enoncé"
 	    Écrire un code Python permettant d'afficher les éléments d'indice 2 à 4 de la liste notes.
 
@@ -671,24 +673,28 @@ source : Wikipedia
 
 !!! fabquestion "Question C.1"
     === "Enoncé"
-	Cet algorithme est-il itératif ou récursif ? Justifier en une phrase.
+	    Cet algorithme est-il itératif ou récursif ? Justifier en une phrase.
+    
     === "Solution"
         {{ correction(True, 
         "
         récursif : à l’étape (3) l’algorithme de tri fusion s’appelle lui-même.
-        ")}}
+        "
+        )}}
 
 !!! fabquestion "Question C.2"
 	=== "Enoncé"
         Expliquer en trois lignes comment faire pour rassembler dans une main deux tas déjà triés de cartes, la carte en haut d'un tas étant la plus petite de ce même tas ;  
 	    la deuxième carte d'un tas n'étant visible qu'après avoir retiré la première carte de ce tas.
+
     === "Solution"
         {{ correction(True, 
         "
         1. Comparer les cartes du haut des 2 tas.  
         2. Placer la carte de valeur plus faible dans la main.  
         3. Recommencer l’étape 1 jusqu’à épuisement des tas.
-        ")}}
+        "
+        )}}
 
 À la fin du procédé, les cartes en main doivent être triées par ordre croissant.  
 Une fonction fusionner a été implémentée en Python en s'inspirant du procédé de la question précédente.  
@@ -736,7 +742,7 @@ Elle prend quatre arguments : la liste qui est en train d'être triée, l'indice
 
 Voici une illustration des étapes d’un tri effectué sur la liste `[3, 41, 52, 26, 38, 57, 9, 49]`.
 
-![](data/polynesie_tri.png)[:.center}]
+![](data/polynesie_tri.png){:.center}
 
 !!! fabquestion "Question D.1"
     === "Enoncé"

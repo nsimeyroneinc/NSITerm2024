@@ -252,7 +252,7 @@ Voir ANNEXE
 
     Le coût d'un chemin est la somme des coûts des liaisons rencontrés. Donner en justifiant le chemin le moins coûteux pour relier R2 à R5. Préciser le coût.
 
-    ??? check "Réponseé
+    ??? check "Réponse"
 
         a.  A rédiger :  
         - Bande passante Fast Ethernet = $10^8$b/s soit 100 Mb/s  
