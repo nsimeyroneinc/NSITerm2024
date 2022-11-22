@@ -15,7 +15,7 @@
       
       
       <link rel="icon" href="../../../images/dragon.svg">
-      <meta name="generator" content="mkdocs-1.4.1, mkdocs-material-8.5.10">
+      <meta name="generator" content="mkdocs-1.4.1, mkdocs-material-8.5.7">
     
     
       
@@ -23,10 +23,10 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.472b142f.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.20d9efc8.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.08040f6c.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.cbb835fc.min.css">
         
       
       
@@ -111,7 +111,6 @@
         
           
           
-          
           <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Basculer en mode sombre"  type="radio" name="__palette" id="__palette_1">
           
             <label class="md-header__button md-icon" title="Basculer en mode sombre" for="__palette_2" hidden>
@@ -119,7 +118,6 @@
             </label>
           
         
-          
           
           
           <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="brown" data-md-color-accent="brown"  aria-label="Basculer en mode clair"  type="radio" name="__palette" id="__palette_2">
@@ -1826,7 +1824,7 @@
   
     <li class="md-nav__item">
       <a href="../../../Evaluations/BDD_Devoir/" class="md-nav__link">
-        DS 0001
+        DS 01
       </a>
     </li>
   
@@ -1840,7 +1838,7 @@
   
     <li class="md-nav__item">
       <a href="../../../Evaluations/DS_Pile_File_Routage/" class="md-nav__link">
-        DS 0011
+        DS 03
       </a>
     </li>
   
@@ -3029,7 +3027,7 @@ Licensed under the Apache License, Version 2.0.
                 </div>
             </clipboard-copy>
         </div>
-            <div class="highlight-ipynb hl-sql"><pre><span></span><span class="k">from</span><span class="w"> </span><span class="n">PIL</span><span class="w"> </span><span class="n">import</span><span class="w"> </span><span class="n">Image</span><span class="w"></span>
+            <div class="highlight-ipynb hl-python"><pre><span></span><span class="kn">from</span> <span class="nn">PIL</span> <span class="kn">import</span> <span class="n">Image</span>
 </pre></div>
 <div id="cell-1" class="clipboard-copy-txt">from PIL import Image</div>
     
@@ -3061,14 +3059,14 @@ Licensed under the Apache License, Version 2.0.
                 </div>
             </clipboard-copy>
         </div>
-            <div class="highlight-ipynb hl-sql"><pre><span></span><span class="n">def</span><span class="w"> </span><span class="n">partage_quart</span><span class="p">(</span><span class="n">image</span><span class="p">):</span><span class="w"></span>
-<span class="w">    </span><span class="n">n</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">image</span><span class="p">.</span><span class="n">width</span><span class="w"></span>
-<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">1</span><span class="p">:</span><span class="w"></span>
-<span class="w">        </span><span class="n">q1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">image</span><span class="p">.</span><span class="n">crop</span><span class="p">((</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="n">n</span><span class="o">//</span><span class="mi">2</span><span class="p">,</span><span class="n">n</span><span class="o">//</span><span class="mi">2</span><span class="p">))</span><span class="w"></span>
-<span class="w">        </span><span class="n">q2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">image</span><span class="p">.</span><span class="n">crop</span><span class="p">((</span><span class="n">n</span><span class="o">//</span><span class="mi">2</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="n">n</span><span class="p">,</span><span class="n">n</span><span class="o">//</span><span class="mi">2</span><span class="p">))</span><span class="w"></span>
-<span class="w">        </span><span class="n">q3</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">image</span><span class="p">.</span><span class="n">crop</span><span class="p">((</span><span class="mi">0</span><span class="p">,</span><span class="n">n</span><span class="o">//</span><span class="mi">2</span><span class="p">,</span><span class="n">n</span><span class="o">//</span><span class="mi">2</span><span class="p">,</span><span class="n">n</span><span class="p">))</span><span class="w"></span>
-<span class="w">        </span><span class="n">q4</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">image</span><span class="p">.</span><span class="n">crop</span><span class="p">((</span><span class="n">n</span><span class="o">//</span><span class="mi">2</span><span class="p">,</span><span class="n">n</span><span class="o">//</span><span class="mi">2</span><span class="p">,</span><span class="n">n</span><span class="p">,</span><span class="n">n</span><span class="p">))</span><span class="w"></span>
-<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">q1</span><span class="p">,</span><span class="n">q2</span><span class="p">,</span><span class="n">q3</span><span class="p">,</span><span class="n">q4</span><span class="w"></span>
+            <div class="highlight-ipynb hl-python"><pre><span></span><span class="k">def</span> <span class="nf">partage_quart</span><span class="p">(</span><span class="n">image</span><span class="p">):</span>
+    <span class="n">n</span> <span class="o">=</span> <span class="n">image</span><span class="o">.</span><span class="n">width</span>
+    <span class="k">if</span> <span class="n">n</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">:</span>
+        <span class="n">q1</span> <span class="o">=</span> <span class="n">image</span><span class="o">.</span><span class="n">crop</span><span class="p">((</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="n">n</span><span class="o">//</span><span class="mi">2</span><span class="p">,</span><span class="n">n</span><span class="o">//</span><span class="mi">2</span><span class="p">))</span>
+        <span class="n">q2</span> <span class="o">=</span> <span class="n">image</span><span class="o">.</span><span class="n">crop</span><span class="p">((</span><span class="n">n</span><span class="o">//</span><span class="mi">2</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="n">n</span><span class="p">,</span><span class="n">n</span><span class="o">//</span><span class="mi">2</span><span class="p">))</span>
+        <span class="n">q3</span> <span class="o">=</span> <span class="n">image</span><span class="o">.</span><span class="n">crop</span><span class="p">((</span><span class="mi">0</span><span class="p">,</span><span class="n">n</span><span class="o">//</span><span class="mi">2</span><span class="p">,</span><span class="n">n</span><span class="o">//</span><span class="mi">2</span><span class="p">,</span><span class="n">n</span><span class="p">))</span>
+        <span class="n">q4</span> <span class="o">=</span> <span class="n">image</span><span class="o">.</span><span class="n">crop</span><span class="p">((</span><span class="n">n</span><span class="o">//</span><span class="mi">2</span><span class="p">,</span><span class="n">n</span><span class="o">//</span><span class="mi">2</span><span class="p">,</span><span class="n">n</span><span class="p">,</span><span class="n">n</span><span class="p">))</span>
+        <span class="k">return</span> <span class="n">q1</span><span class="p">,</span><span class="n">q2</span><span class="p">,</span><span class="n">q3</span><span class="p">,</span><span class="n">q4</span>
 </pre></div>
 <div id="cell-2" class="clipboard-copy-txt">def partage_quart(image):
     n = image.width
@@ -3107,7 +3105,7 @@ Licensed under the Apache License, Version 2.0.
                 </div>
             </clipboard-copy>
         </div>
-            <div class="highlight-ipynb hl-sql"><pre><span></span><span class="n">img_test</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Image</span><span class="p">.</span><span class="k">open</span><span class="p">(</span><span class="ss">&quot;image1.jpg&quot;</span><span class="p">)</span><span class="w"></span>
+            <div class="highlight-ipynb hl-python"><pre><span></span><span class="n">img_test</span> <span class="o">=</span> <span class="n">Image</span><span class="o">.</span><span class="n">open</span><span class="p">(</span><span class="s2">&quot;image1.jpg&quot;</span><span class="p">)</span>
 </pre></div>
 <div id="cell-3" class="clipboard-copy-txt">img_test = Image.open("image1.jpg")</div>
     
@@ -3139,7 +3137,7 @@ Licensed under the Apache License, Version 2.0.
                 </div>
             </clipboard-copy>
         </div>
-            <div class="highlight-ipynb hl-sql"><pre><span></span>
+            <div class="highlight-ipynb hl-python"><pre><span></span>
 </pre></div>
 <div id="cell-4" class="clipboard-copy-txt"></div>
     
@@ -3171,25 +3169,25 @@ Licensed under the Apache License, Version 2.0.
                 </div>
             </clipboard-copy>
         </div>
-            <div class="highlight-ipynb hl-sql"><pre><span></span><span class="n">def</span><span class="w"> </span><span class="n">quart_tour</span><span class="p">(</span><span class="n">image</span><span class="p">):</span><span class="w"></span>
-<span class="w">    </span><span class="n">n</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">image</span><span class="p">.</span><span class="n">width</span><span class="w"></span>
-<span class="w">    </span><span class="o">#</span><span class="w"> </span><span class="n">Partage</span><span class="w"> </span><span class="n">de</span><span class="w"> </span><span class="n">l</span><span class="s1">&#39;image en quatre quarts</span>
-<span class="s1">    if n&gt;1:</span>
-<span class="s1">        q1,q2,q3,q4 = partage_quart(image)</span>
-<span class="s1">        # Rotation de chacun des quarts</span>
-<span class="s1">        rq1 = quart_tour(q1)</span>
-<span class="s1">        rq2 = quart_tour(q2)</span>
-<span class="s1">        rq3 = quart_tour(q3)</span>
-<span class="s1">        rq4 = quart_tour(q4)</span>
-<span class="s1">        # Reconstruction de l&#39;</span><span class="n">image</span><span class="w"></span>
-<span class="w">        </span><span class="n">resultat</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">Image</span><span class="p">.</span><span class="k">new</span><span class="p">(</span><span class="s1">&#39;RGB&#39;</span><span class="p">,</span><span class="n">image</span><span class="p">.</span><span class="k">size</span><span class="p">)</span><span class="w"></span>
-<span class="w">        </span><span class="n">resultat</span><span class="p">.</span><span class="n">paste</span><span class="p">(</span><span class="n">rq2</span><span class="p">,(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">))</span><span class="w"></span>
-<span class="w">        </span><span class="n">resultat</span><span class="p">.</span><span class="n">paste</span><span class="p">(</span><span class="n">rq4</span><span class="p">,(</span><span class="n">n</span><span class="o">//</span><span class="mi">2</span><span class="p">,</span><span class="mi">0</span><span class="p">))</span><span class="w"></span>
-<span class="w">        </span><span class="n">resultat</span><span class="p">.</span><span class="n">paste</span><span class="p">(</span><span class="n">rq1</span><span class="p">,(</span><span class="mi">0</span><span class="p">,</span><span class="n">n</span><span class="o">//</span><span class="mi">2</span><span class="p">))</span><span class="w"></span>
-<span class="w">        </span><span class="n">resultat</span><span class="p">.</span><span class="n">paste</span><span class="p">(</span><span class="n">rq3</span><span class="p">,(</span><span class="n">n</span><span class="o">//</span><span class="mi">2</span><span class="p">,</span><span class="n">n</span><span class="o">//</span><span class="mi">2</span><span class="p">))</span><span class="w"></span>
-<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">resultat</span><span class="w"></span>
-<span class="w">    </span><span class="k">else</span><span class="p">:</span><span class="w"></span>
-<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">image</span><span class="w"></span>
+            <div class="highlight-ipynb hl-python"><pre><span></span><span class="k">def</span> <span class="nf">quart_tour</span><span class="p">(</span><span class="n">image</span><span class="p">):</span>
+    <span class="n">n</span> <span class="o">=</span> <span class="n">image</span><span class="o">.</span><span class="n">width</span>
+    <span class="c1"># Partage de l&#39;image en quatre quarts</span>
+    <span class="k">if</span> <span class="n">n</span><span class="o">&gt;</span><span class="mi">1</span><span class="p">:</span>
+        <span class="n">q1</span><span class="p">,</span><span class="n">q2</span><span class="p">,</span><span class="n">q3</span><span class="p">,</span><span class="n">q4</span> <span class="o">=</span> <span class="n">partage_quart</span><span class="p">(</span><span class="n">image</span><span class="p">)</span>
+        <span class="c1"># Rotation de chacun des quarts</span>
+        <span class="n">rq1</span> <span class="o">=</span> <span class="n">quart_tour</span><span class="p">(</span><span class="n">q1</span><span class="p">)</span>
+        <span class="n">rq2</span> <span class="o">=</span> <span class="n">quart_tour</span><span class="p">(</span><span class="n">q2</span><span class="p">)</span>
+        <span class="n">rq3</span> <span class="o">=</span> <span class="n">quart_tour</span><span class="p">(</span><span class="n">q3</span><span class="p">)</span>
+        <span class="n">rq4</span> <span class="o">=</span> <span class="n">quart_tour</span><span class="p">(</span><span class="n">q4</span><span class="p">)</span>
+        <span class="c1"># Reconstruction de l&#39;image</span>
+        <span class="n">resultat</span> <span class="o">=</span> <span class="n">Image</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="s1">&#39;RGB&#39;</span><span class="p">,</span><span class="n">image</span><span class="o">.</span><span class="n">size</span><span class="p">)</span>
+        <span class="n">resultat</span><span class="o">.</span><span class="n">paste</span><span class="p">(</span><span class="n">rq2</span><span class="p">,(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">))</span>
+        <span class="n">resultat</span><span class="o">.</span><span class="n">paste</span><span class="p">(</span><span class="n">rq4</span><span class="p">,(</span><span class="n">n</span><span class="o">//</span><span class="mi">2</span><span class="p">,</span><span class="mi">0</span><span class="p">))</span>
+        <span class="n">resultat</span><span class="o">.</span><span class="n">paste</span><span class="p">(</span><span class="n">rq1</span><span class="p">,(</span><span class="mi">0</span><span class="p">,</span><span class="n">n</span><span class="o">//</span><span class="mi">2</span><span class="p">))</span>
+        <span class="n">resultat</span><span class="o">.</span><span class="n">paste</span><span class="p">(</span><span class="n">rq3</span><span class="p">,(</span><span class="n">n</span><span class="o">//</span><span class="mi">2</span><span class="p">,</span><span class="n">n</span><span class="o">//</span><span class="mi">2</span><span class="p">))</span>
+        <span class="k">return</span> <span class="n">resultat</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">image</span>
 </pre></div>
 <div id="cell-5" class="clipboard-copy-txt">def quart_tour(image):
     n = image.width
@@ -3239,7 +3237,7 @@ Licensed under the Apache License, Version 2.0.
                 </div>
             </clipboard-copy>
         </div>
-            <div class="highlight-ipynb hl-sql"><pre><span></span><span class="n">im1</span><span class="o">=</span><span class="n">quart_tour</span><span class="p">(</span><span class="n">img_test</span><span class="p">)</span><span class="w"></span>
+            <div class="highlight-ipynb hl-python"><pre><span></span><span class="n">im1</span><span class="o">=</span><span class="n">quart_tour</span><span class="p">(</span><span class="n">img_test</span><span class="p">)</span>
 </pre></div>
 <div id="cell-6" class="clipboard-copy-txt">im1=quart_tour(img_test)</div>
     
@@ -3271,7 +3269,7 @@ Licensed under the Apache License, Version 2.0.
                 </div>
             </clipboard-copy>
         </div>
-            <div class="highlight-ipynb hl-sql"><pre><span></span><span class="n">im1</span><span class="p">.</span><span class="k">show</span><span class="p">()</span><span class="w"></span>
+            <div class="highlight-ipynb hl-python"><pre><span></span><span class="n">im1</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 <div id="cell-7" class="clipboard-copy-txt">im1.show()</div>
     
@@ -3379,7 +3377,7 @@ Licensed under the Apache License, Version 2.0.
     <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.instant", "navigation.tabs", "navigation.tabs.sticky", "navigation.expand", "navigation.top", "navigation.sections", "navigation.indexes", "navigation.tracking", "header.autohide", "content.code.annotate"], "search": "../../../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.config.lang": "fr", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Rechercher", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version.title": "S\u00e9lectionner la version"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.d6c3db9e.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.8492ddcf.min.js"></script>
       
         <script src="../../../xtra/mathjax.js"></script>
       

@@ -4,10 +4,9 @@ Les notebooks sont corrigés et les cellules peuvent être copiées pour être t
 
 
 !!! info "Actualités" 
-    - **Thème en cours** : [T5 - Les tris](https://nsimeyroneinc.github.io/NSITerm/Algo/T5_2_algo_tri/)   
-    - [Correction des exercices BAC Routage disponibles](https://nsimeyroneinc.github.io/NSITerm/Archi_Materielle/T3_1_Routage_BAC_Correction/)   
-    - [Correction des exercices BAC Piles et Files disponibles](StructureDonnees/T2_2_Pile_File_BAC_Correction.md)  
-    - **&#127381; : Bientôt disponible** un onglet annales de BAC épreuves écrites.  
+    - **Thème en cours** : [Diviser pour régner](Algo/T5_3_Diviser_pour_regner.md)   
+    - **Sujet BAC :** [BAC - Diviser pour régner](Algo/T5_4_Diviser_pour_regner_BAC.md)
+    - **&#127381; :** un onglet annales de BAC épreuves écrites avec les sujets 2022 corrigés.  
 
 
 ## Progression sur l'année
@@ -60,7 +59,7 @@ Le sujet de l’épreuve écrite de la spécialité numérique et sciences infor
 
 □ Algorithmes sur les arbres binaires et sur les arbres binaires de recherche.
 
-□ Méthode « diviser pour régner »
+🗹 Méthode « diviser pour régner »
 
 
 

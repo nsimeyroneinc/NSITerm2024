@@ -123,10 +123,22 @@
   text-align: left;
 }
 
+.numBAC {
+  color : rgb(240, 237, 231);
+  background-color:brown;
+  font-weight: bold;
+  padding-left: 5px;
+  padding-right: 2px;
+  text-align: left;
+}
+
 .devoir {
   color : forestgreen
 }
 
+.BAC {
+  color : forestgreen
+}
 
 # light theme:
   --correction-color: #f82e2e;

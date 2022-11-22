@@ -1,20 +1,13 @@
----
-title : Thème 1 - Structure de données
-subtitle: P.O.O - BAC - Correction
-subsubtitle: Terminale NSI
-author : M.Meyroneinc-Condy
-numbersections: true
-fontsize: 10pt
-geometry:
-- top=20mm
-- left=20mm
-- right=20mm
-- heightrounded    
---- 
 
-POO : Exercices BAC - Correction
-===
+{% set num = 4 %}
+{% set titre = "Programmation Orientée Objet" %}
+{% set theme = "BAC" %}
+{% set niveau = "terminale" %}
 
+
+{{ titre_chapitre(num,titre,theme,niveau)}}
+
+{{ initexo(0) }}
 
 ## Exercice n°1 : Métropole J1 : Ex.5 - 2022
 !!! exo "P.O.O "

@@ -17,35 +17,35 @@ nav:
     #- Test : Notebook.ipynb
 
     - T1 - Struct. de données :
-      - T1_1 P.O.O : StructureDonnees/T1_1_Programmation_Orientee_Objet.md
-      - T1_2 POO Exercices : StructureDonnees/T1_2_TD_POO.md
-      - T1_3 TD POO BAC : StructureDonnees/T1_3_BAC_Capytale.md     
-      - T1_4 Sujet POO BAC : StructureDonnees/POO_BAC_correction.md
-      - T2_1 Listes, Piles et Files : StructureDonnees/T2_1_Listes_Piles_et_Files.md
+      - C4 P.O.O : StructureDonnees/T1_1_Programmation_Orientee_Objet.md
+      - T4 POO Exercices : StructureDonnees/T1_2_TD_POO.md
+      - TD POO BAC : StructureDonnees/T1_3_BAC_Capytale.md     
+      - S4 Sujet POO BAC : StructureDonnees/POO_BAC_correction.md
+      - C5 Listes, Piles et Files : StructureDonnees/T2_1_Listes_Piles_et_Files.md
       #- T2_2 BAC - Listes, Piles et Files : StructureDonnees/T2_2_Pile_File_BAC.md
       - T2_2 BAC Correction - Listes, Piles et Files : StructureDonnees/T2_2_Pile_File_BAC_Correction.md
-      - Arbre binaire : StructureDonnees/T3_1_arbre.md
 
     
     - T2 - Bases de données :  
-      - TP 01 Modèle relationnel : BasesDonnees/Modele_Relationnel.md
-      - TP 02 Langage SQL : BasesDonnees/Cours_TP_SQL.md
-      - BAC SQL : BasesDonnees/SQL_BAC.md
-      - BAC SQL Correction : BasesDonnees/SQL_BAC_correction.md
+      - C1 Modèle relationnel : BasesDonnees/Modele_Relationnel.md
+      - C2 Langage SQL : BasesDonnees/Cours_TP_SQL.md
+      - S2 BAC SQL : BasesDonnees/SQL_BAC.md
+      - S2 BAC SQL Correction : BasesDonnees/SQL_BAC_correction.md
     
     - T3 - Archi. matèrielle :
-      - T3_1 Protocole de routage : Archi_Materielle/T3_1_Routage.md
-      - T3_1 BAC Protocole de routage : Archi_Materielle/T3_1_Routage_BAC.md
-      - T3_1 BAC Correction Protocole de routage : Archi_Materielle/T3_1_Routage_BAC_Correction.md
+      - C6 Protocole de routage : Archi_Materielle/T3_1_Routage.md
+      #- T3_1 BAC Protocole de routage : Archi_Materielle/T3_1_Routage_BAC.md
+      - S6 BAC Correction Protocole de routage : Archi_Materielle/T3_1_Routage_BAC_Correction.md
     
     - T4 - Prog. :
-      - Récursivité  :  Programmation/T1_1_Recursivite.md
+      - C3 Récursivité  :  Programmation/T1_1_Recursivite.md
       
     #   - Récursivité : Programmation/T4_1_TP_Recursivite_correction.md
 
     - T5 Algo. : 
-      - Tri 1ère : Algo/T5_2_algo_tri.md
-      - Diviser pour régner : Algo/T5_3_Diviser_pour_regner.md
+      - C7 Tri 1ère : Algo/T5_2_algo_tri.md
+      - C8 Diviser pour régner : Algo/T5_3_Diviser_pour_regner.md
+      - S8 Diviser pour régner BAC : Algo/T5_4_Diviser_pour_regner_BAC.md
 
     
     - BAC 📝:
@@ -193,8 +193,6 @@ markdown_extensions: # https://squidfunk.github.io/mkdocs-material/reference/abb
             "SQL": "🗂️ Requête SQL"
 
     - pymdownx.inlinehilite         # pour  `#!python  <python en ligne>`
-    - pymdownx.highlight:
-         anchor_linenums: true
     - pymdownx.snippets             # Inclusion de fichiers externe.
     - pymdownx.tasklist:            # Cases à cocher  - [ ]  et - [x]
         custom_checkbox:    false   #   avec cases d'origine

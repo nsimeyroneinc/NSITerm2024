@@ -71,10 +71,18 @@
     linkStyle 4 stroke:#FFFFFF,stroke-width:0px
     linkStyle 5 stroke:#FFFFFF,stroke-width:0px
     linkStyle 13 stroke:#FFFFFF,stroke-width:0px
+<<<<<<< HEAD
     style W1 fill:#FFFFFF, stroke:#FFFFFF
     style W2 fill:#FFFFFF, stroke:#FFFFFF
     style T fill:#FFFFFF, stroke:#FFFFFF
     style W fill:#FFFFFF, stroke:#FFFFFF
+=======
+    style W1 opacity:0;
+    style W2 opacity:0;
+    style T opacity:0;
+    style W opacity:0;
+
+>>>>>>> 7f300ba8 (22/11)
 
 ```
 
@@ -97,7 +105,11 @@
     * le fils droit d'un noeud porte le numéro de son père suivi d'un 1.
 
 On a entamé la numérotation de l'arbre binaire ci-dessous, recopier cet arbre et compléter cette numérotation.
+<<<<<<< HEAD
 <div class="centre">
+=======
+
+>>>>>>> 7f300ba8 (22/11)
 ```mermaid
     graph TD
     A["A : 1"] --> B["B : 10"]
@@ -106,16 +118,40 @@ On a entamé la numérotation de l'arbre binaire ci-dessous, recopier cet arbre 
     B --> E["E : 101"]
     C --> V1[" "]
     C --> F["F: ..."]
+<<<<<<< HEAD
+=======
+    V1 --> V2[" "]
+    V1 --> V3[" "]
+>>>>>>> 7f300ba8 (22/11)
     D --> G["G: ..."]
     D --> H["H: ..."]
     F --> I["I: ..."]
     F --> V2[" "]
+<<<<<<< HEAD
     style V1 fill:#FFFFFF, stroke:#FFFFFF
     linkStyle 4 stroke:#FFFFFF,stroke-width:0px
     style V2 fill:#FFFFFF, stroke:#FFFFFF
     linkStyle 9 stroke:#FFFFFF,stroke-width:0px
 ```
 </div>
+=======
+    E --> V4[" "]
+    E --> V5[" "]
+    style V1 opacity:0;
+    linkStyle 4 stroke:#FFFFFF,stroke-width:0px
+    style V2 opacity:0;
+    linkStyle 6 stroke:#FFFFFF,stroke-width:0px
+    style V3 opacity:0;
+    linkStyle 7 stroke:#FFFFFF,stroke-width:0px
+    style V2 opacity:0;
+    linkStyle 11 stroke:#FFFFFF,stroke-width:0px
+    style V4 opacity:0;
+    linkStyle 12 stroke:#FFFFFF,stroke-width:0px
+    style V5 opacity:0;
+    linkStyle 13 stroke:#FFFFFF,stroke-width:0px
+```
+
+>>>>>>> 7f300ba8 (22/11)
 
 3. Justifier que sur un niveau donné de l'arbre tous les numéros de noeud ont le même nombre de caractères.
 4. En déduire en fonction de $h$, le nombre de caractères formant le numéro des feuilles
@@ -373,9 +409,15 @@ On considère l'arbre ci-dessous :
     R --> E["E"]
     I --> S["S"]
     I --> V2[" "]
+<<<<<<< HEAD
     style V1 fill:#FFFFFF, stroke:#FFFFFF
     linkStyle 4 stroke:#FFFFFF,stroke-width:0px
     style V2 fill:#FFFFFF, stroke:#FFFFFF
+=======
+    style V1 opacity:0;
+    linkStyle 4 stroke:#FFFFFF,stroke-width:0px
+    style V2 opacity:0;
+>>>>>>> 7f300ba8 (22/11)
     linkStyle 11 stroke:#FFFFFF,stroke-width:0px
 ```
 
@@ -413,3 +455,7 @@ Pour chacun de ces arbres :
 1. Faire un schéma pour le représenter.
 2. Donner sa taille, sa hauteur, son nombre de feuilles.
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 7f300ba8 (22/11)

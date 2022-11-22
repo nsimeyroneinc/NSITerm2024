@@ -8,12 +8,14 @@ def define_env(env):
     env.variables['transversal']=["histoire","projet","typesconstruits","python"]
     env.variables['projet'] = {"icone":":fontawesome-solid-lightbulb:","style":"projet"}
     env.variables['devoir'] = {"icone":":fontawesome-solid-pen-to-square:","style":"devoir"}
+    env.variables['BAC'] = {"icone":":fontawesome-solid-pen-to-square:","style":"BAC"}
     env.variables['typesconstruits'] = {"icone":":fontawesome-solid-cubes:","style":"typesconstruits"}
     env.variables['python'] = {"icone":":fontawesome-brands-python:","style":"python"}
     env.variables['themes']={
         "histoire":"Histoire de l'informatique",
         "projet":"Projet",
         "devoir":"Devoir",
+        "BAC":"BAC",
         "sd":"Structures de données",
         "db":"Bases de données",
         "os":"Architectures matérielles, systèmes d'exploitation et réseaux",
@@ -28,6 +30,7 @@ def define_env(env):
         "histoire":':fontawesome-solid-building-columns:{title="'+env.variables['themes']['histoire']+'"}',
         "projet":':fontawesome-solid-lightbulb:{title="'+env.variables['themes']['projet']+'"}',
         "devoir":':fontawesome-solid-pen-to-square:{title="'+env.variables['themes']['devoir']+'"}',
+        "BAC":':fontawesome-solid-pen-to-square:{title="'+env.variables['themes']['BAC']+'"}',
         "sd":':fontawesome-solid-diagram-project:{title="'+env.variables['themes']['sd']+'"}',
         "db":':fontawesome-solid-database:{title="'+env.variables['themes']['db']+'"}',
         "os":':fontawesome-solid-microchip:{title="'+env.variables['themes']['os']+'"}',
@@ -117,6 +120,31 @@ def define_env(env):
         #19 : ["algorithmique","Diviser pour régner",1,"diviser.md"]
     }
 
+    env.variables['BAC_terminale']={
+        #1 : ["devoir","Langage SQL","","Evaluations/BDD_Devoir_Corrige.md"],
+        #2 : ["devoir","Pile-File et Protocole de Routage",'16/11/2023',"Evaluations/DS_Pile_File_Routage.md"],
+        3 : ["BAC","Langage SQL",1,"BasesDonnees/SQL_BAC_correction.md"],
+        #3 : ["python","Récursivité",1,"Programmation/T1_1_Recursivite.md"],
+        4 : ["BAC","Programmation Orientée Objet",2,"StructureDonnees/POO_BAC_correction.md"],
+        5 : ["BAC","Piles et Files",2,"StructureDonnees/T2_2_Pile_File_BAC_Correction.md"],
+        6 : ["BAC","Protocole de routage",1,"Archi_Materielle/T3_1_Routage_BAC_Correction.md"],
+        #7 : ["algorithmique","Algorithmes de tri",1,"Algo/T5_2_algo_tri.md"],
+        #8 : ["algorithmique","Diviser pour régner",1,"T5_2_Diviser_pour_regner.md"]
+        #6 : ["os","Protocole de Routage",1,""],
+        #7 : ["python","Notions de programmation orienté objet",2,"poo.md"],
+        8 : ["BAC","Diviser pour régner",2,"Algo/T5_4_Diviser_pour_regner_BAC.md"],
+        9 : ["BAC","Les arbres - Partie 1",1,"StructureDonnees/T3_2_arbre_BAC.md"]
+        #10 : ["sd","Arbres",2,"arbres.md"],
+        #11 : ["db","Schéma relationnel d'une base de données",2,"sgbd.md"],
+        #12: ["algorithmique","Algorithmes sur les arbres",2,"algoarbre.md"],
+        #13: ["sd","Graphes",2,"graphes.md"],
+        #14: ["os","Protocoles de routage",2,"routage.md"],
+        #15: ["algorithmique","Recherche textuelle",2,"texte.md"],
+        #16: ["python","Calculabilité, décidabilité",2,"calculabilite.md"],
+        #17: ["os","Sécurisation des communications",2,"cryptographie.md"],
+        #18:["python","Récursivité",2,"Programmation/T1_1_Recursivite.md"],
+        #19 : ["algorithmique","Diviser pour régner",1,"diviser.md"]
+    }
 
 
     @env.macro
@@ -284,6 +312,44 @@ Vous pouvez télécharger une copie au format pdf du diaporama de synthèse de c
 
 #--------------------------------------------------------------------------------------        
 
+
+#------------------BAC--------------------------
+    @env.macro
+    def BAC(num,theme,titre,duree,lien):
+        icone = env.variables["icones"][theme]
+        return f"|{icone}|[Sujet BAC {num}- {titre}]({lien}) | {duree}\n" 
+
+
+    @env.macro
+    def sec_BAC(theme,BAC):
+            icone = env.variables.icones[theme]
+            return f"### {icone} &nbsp; {BAC}"
+
+    @env.macro
+    def devoir_chapitre(numero,devoir,theme,niveau):
+        # Position de l'ancre pour repérage dans la page
+        titre_bis = env.variables['BAC_'+niveau][numero][1]
+        ligne=f"# <span class='numBAC'>Sujet BAC-{numero}</span> {titre_bis} "
+        ligne+=f"<span style='float:right;'>{env.variables.icones[theme]}</span>"
+        return ligne
+
+    @env.macro
+    def affiche_BAC(niveau):
+        ret='''
+| |BAC      | Le  |
+|-|-------------|-------|
+        '''
+        if niveau=="premiere":
+            var_projet = env.variables.BAC_premiere
+        else:
+            var_projet = env.variables.BAC_terminale
+        for k in var_projet:
+           ret+=BAC(k,env.variables['BAC_'+niveau][k][0],env.variables['BAC_'+niveau][k][1],env.variables['BAC_'+niveau][k][2],env.variables['BAC_'+niveau][k][3])
+        return ret
+
+#--------------------------------------------------------------------------------------        
+
+    
     @env.macro
     def initexo(n):
         env.variables['compteur_exo'] = n
@@ -475,6 +541,10 @@ Vous pouvez télécharger une copie au format pdf du diaporama de synthèse de c
         if theme=="devoir":
             titre_bis = env.variables['devoir_'+niveau][numero][1]
             ligne=f"# <span class='numdevoir'>Devoir {numero} : </span>  {titre_bis} "
+            ligne+=f"<span style='float:right;'>{env.variables.icones[theme]}</span>"
+        elif theme=="BAC":
+            titre_bis = env.variables['BAC_'+niveau][numero][1]
+            ligne=f"# <span class='numBAC'>Sujet BAC {numero} : </span> &nbsp; {titre_bis} "
             ligne+=f"<span style='float:right;'>{env.variables.icones[theme]}</span>"
         else:
             titre_bis = env.variables['progression_'+niveau][numero][1]

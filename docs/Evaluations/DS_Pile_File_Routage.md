@@ -26,13 +26,13 @@ On munit la structure de données Pile de quatre fonctions primitives définies 
     Opérations :
     
     - `creer_pile_vide` :  $\varnothing$ $\rightarrow$ Pile
-        - `creer_pile_vide()` renvoie une pile vide
+        - `creer_pile_vide()` renvoie une file vide
     - `est_vide` : Pile $\rightarrow$ Booléen
         - `est_vide(pile)` renvoie True si pile est vide, False sinon
     - `empiler` : Pile, Élément $\rightarrow$ Rien
         - `empiler(pile, element)` ajoute element au sommet de la pile
     - `depiler` : Pile $\rightarrow$ Élément
-        - `depiler(pile)` renvoie l’élément au sommet de la pile en le retirant de la pile
+        - `depiler(pile)` renvoie l’élément eau sommet de la pile en le retirant de la pile
 
 1.  On suppose dans cette question que le contenu de la pile P est le suivant  (les élèments étant empilés par le haut) :  
 
@@ -47,9 +47,7 @@ On munit la structure de données Pile de quatre fonctions primitives définies 
     while not est_vide(P):
         empiler(Q, depiler(P))
     ```
-    ??? check "Réponse"
-        ![](data/DS0011_exo1_q1.png)
-    
+   
 2.  
     1.   On appelle **hauteur** d’une pile le nombre d’éléments qu’elle contient. La fonction `hauteur_pile` prend en paramètre une pile P et renvoie sa hauteur.  Après appel de cette fonction, la pile P doit avoir retrouvé son état d’origine.
         
@@ -70,49 +68,14 @@ On munit la structure de données Pile de quatre fonctions primitives définies 
                 empiler(P,x)
             return ???
         ```
-    
-    ??? check "Réponse"
-        ```python
-        def hauteur_pile(P):
-            Q=creer_pile_vide()
-            n=0
-            while not est_vide(P):
-                n+=1
-                x=depiler(P)
-                empiler(Q,x)
-            while not est_vide(Q):
-                x=depiler(Q)
-                empiler(P,x)
-            return n
-        ```
-
+ 
     2.  Créer une fonction `max_pile` ayant pour paramètre une pile P et un entier i. Cette fonction renvoie la position j de l’élément maximum de la pile P.
         
         Après appel de cette fonction, la pile P devra avoir retrouvé son état d’origine.  La position du sommet de la pile est 1.  
 
         **Exemple :** 
         si P est la pile de la question 1 : `max_pile(P,2)` = 1.
-    
-    ??? check "Réponse"
-        ```python 
-        def max_pile(P,i):
-            Q=creer_pile_vide()
-            indice=1
-            indiceDuMax=1
-            max=depiler(P)
-            empiler(Q,max)
-            while indice<i: #On a inégalité stricte car on par de l ' indice 2 pour la boucle
-                x=depiler(P)
-                indice+=1
-                if x>max:
-                    max=x
-                    indiceDuMax=indice
-                empiler(Q,x)
-            while not est_vide(Q):
-                x=depiler(Q)
-                empiler(P,x)
-            return indiceDuMax
-        ```
+
 
 3.   Créer une fonction `retourner` ayant pour paramètres une pile P et un entier j. Cette fonction inverse l’ordre des j derniers éléments empilés et ne renvoie rien. On pourra utiliser deux piles auxiliaires.  
 
@@ -123,24 +86,6 @@ On munit la structure de données Pile de quatre fonctions primitives définies 
      {{ pile([8,4,2,5])}}
      </center>
 
-    ??? check "Réponse"
-        ```python 
-        def retourner_v(P,j):
-            Q=creer_pile_vide()
-            Z=creer_pile_vide()
-
-            for i in range(j):
-                if not est_vide(P):
-                    affiche(P)
-                    affiche(Q)
-                    affiche(Z)
-                    empiler(Q,depiler(P))
-                    empiler(Z,depiler(Q))
-
-            while not est_vide(Z):
-                empiler(P,depiler(Z))
-            return P
-        ```
 
 4.  L’objectif de cette question est de trier une pile de crêpes. On modélise une pile de crêpes par une pile d’entiers représentant le diamètre de chaque crêpe. On souhaite réordonner les crêpes de la plus grande (placée en bas de la pile) à la plus petite (placée en haut de la pile).  
     On dispose uniquement d’une spatule que l’on peut insérer dans la pile de crêpes de façon à retourner l’ensemble des crêpes qui lui sont au-dessus.  
@@ -160,17 +105,6 @@ On munit la structure de données Pile de quatre fonctions primitives définies 
     
     Exemple : Si la pile P est   {{ pile([8,5,12,14,7])}} ,après l’appel de `tri_crepes(P)`, la pile P devient   {{ pile([14,12,8,7,5])}}.
 
-    ??? check "Réponse"
-        ```python
-        def tri_crepe(P):
-            k=hauteur_pile(P)
-            while k >0:
-                i=max_pile(P,k)
-                retourner(P,i)
-                retourner(P,k)
-                k-=1
-            return P
-        ```
 
 !!! exo "Routage"
 
@@ -185,48 +119,12 @@ Voir ANNEXE
 1.  Le routeur R2 doit envoyer un paquet de données au routeur R7 qui accuse réception.  
     Déterminer le chemin parcouru par le paquet de données ainsi que celui parcouru par l'éaccusé de réception.  
 
-    ??? check "Réponse"
-        
-        - paquet de données : R2 → R1 → R4 → R7  
-        - accusé de réception : R7 → R4 → R3 → R2 
-
 2.  a.  Indiquer la faiblesse que représente ce réseau en cas de panne du routeur R4.  
     b. Proposer une solution pour y remédier.  
-
-    ??? check "Réponse"
-        
-        a. Dans le cas d’une panne du routeur R4 le groupe de routeur (R1, R2, R3) n’est plus capable d’atteindre le groupe de routeur (R5, R6, R7)    
-        b.On pourrait, entre autre, établir une liaison entre le routeur R1 et R6.  
 
 3.  Dans cette question uniquement, on décide de rajouter un routeur R8 qui sera relié aux routeurs R2 et R6.  
     a. Donner la table de routage pour R8 qui minimise le nombre de saut.  
     b. Donner une nouvelle table de routage pour R2.  
-
-    ??? check "Réponse" 
-
-        a.Table de routage R8  
-
-        |Destination|Lien|Distance|
-        |:---:|:---:|:----:|
-        | R1|R2|2|
-        | R2|R2|1|
-        | R3|R2|2|
-        | R4|R6|2|
-        | R5|R6|2|
-        | R6|R6|1|
-        | R7|R6|2|
-        
-        b.Table de routage R2  
-
-        |Destination|Lien|Distance|
-        |:---:|:---:|:----:|
-        | R1|R1|1|
-        | R3|R3|1|
-        | R4|R1|2|
-        | R5|R3|3|
-        | R6|R8|2|
-        | R7|R1|3|
-        | R8|R8|1|
 
 4. **Pour la suite de l'exercice on considère le réseau sans le routeur R8**.  
     Il a été décidé de modifier les règles de routage de ce réseau en appliquant le protocole de routage OSPF qui pren en compte la bande passante.  
@@ -252,23 +150,6 @@ Voir ANNEXE
 
     Le coût d'un chemin est la somme des coûts des liaisons rencontrés. Donner en justifiant le chemin le moins coûteux pour relier R2 à R5. Préciser le coût.
 
-    ??? check "Réponse"
-
-        a.  A rédiger :  
-        - Bande passante Fast Ethernet = $10^8$b/s soit 100 Mb/s  
-        - Bande passante Ethernet = $\dfrac{10^8}{10^7}$= 10  
-    
-        b. R2 → R3 → R4 → R7 → R6 → R5 avec un coût égale à 87 (65+10+1+1+10).  
-        Tous les autres trajets entre R2 et R5 ont un coût supérieur (**à faire**)
-
-
 ANNEXE :  
 
 ![](data/22-NSIJ1AN1-exo_routage.png){:.center}
-
-
-
-
-
-
-    

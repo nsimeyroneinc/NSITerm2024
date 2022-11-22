@@ -15,7 +15,7 @@
       
       
       <link rel="icon" href="../../images/dragon.svg">
-      <meta name="generator" content="mkdocs-1.4.1, mkdocs-material-8.5.10">
+      <meta name="generator" content="mkdocs-1.4.1, mkdocs-material-8.5.7">
     
     
       
@@ -23,10 +23,10 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.472b142f.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.20d9efc8.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.08040f6c.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.cbb835fc.min.css">
         
       
       
@@ -111,7 +111,6 @@
         
           
           
-          
           <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Basculer en mode sombre"  type="radio" name="__palette" id="__palette_1">
           
             <label class="md-header__button md-icon" title="Basculer en mode sombre" for="__palette_2" hidden>
@@ -119,7 +118,6 @@
             </label>
           
         
-          
           
           
           <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="brown" data-md-color-accent="brown"  aria-label="Basculer en mode clair"  type="radio" name="__palette" id="__palette_2">
@@ -1830,7 +1828,7 @@
   
     <li class="md-nav__item">
       <a href="../BDD_Devoir/" class="md-nav__link">
-        DS 0001
+        DS 01
       </a>
     </li>
   
@@ -1851,7 +1849,7 @@
       
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        DS 0011
+        DS 03
       </a>
       
     </li>
@@ -1984,7 +1982,7 @@
                   
 
 
-  <h1>DS 0011</h1>
+  <h1>DS 03</h1>
 
 <p><br></p>
 <table  class="redTable">
@@ -2027,9 +2025,7 @@
 <ol>
 <li>
 <p>On suppose dans cette question que le contenu de la pile P est le suivant  (les élèments étant empilés par le haut) :  </p>
-<p><center>
-<table class="pile"><tr><td>4</td></tr><tr><td>2</td></tr><tr><td>5</td></tr><tr><td>8</td></tr></table>
-</center></p>
+<p><img alt="" class="center" src="../data/21-sujet0-exo1_2.png" /></p>
 <p>Quel serait le contenu de la pile Q aprés l'exécution de la suite d'instruction suivante ?</p>
 <div class="highlight"><span class="filename">🐍 Script Python</span><pre><span></span><code><span class="n">Q</span><span class="o">=</span><span class="n">creer_pile_vide</span><span class="p">()</span>
 <span class="k">while</span> <span class="ow">not</span> <span class="n">est_vide</span><span class="p">(</span><span class="n">P</span><span class="p">):</span>
@@ -2067,9 +2063,7 @@ si P est la pile de la question 1 : <code>max_pile(P,2)</code> = 1.</p>
 <p>Créer une fonction <code>retourner</code> ayant pour paramètres une pile P et un entier j. Cette fonction inverse l’ordre des j derniers éléments empilés et ne renvoie rien. On pourra utiliser deux piles auxiliaires.  </p>
 <p><strong>Exemple :</strong><br />
 si P est la pile de la question 1(a), après l’appel de <code>retourner(P, 3)</code>, l’état de la pile P sera :</p>
-<p><center>
- <table class="pile"><tr><td>5</td></tr><tr><td>2</td></tr><tr><td>4</td></tr><tr><td>8</td></tr></table>
- </center></p>
+<p><img alt="" src="../data/21-sujet0-exo1_3.png" /></p>
 </li>
 <li>
 <p>L’objectif de cette question est de trier une pile de crêpes. On modélise une pile de crêpes par une pile d’entiers représentant le diamètre de chaque crêpe. On souhaite réordonner les crêpes de la plus grande (placée en bas de la pile) à la plus petite (placée en haut de la pile).<br />
@@ -2085,14 +2079,14 @@ si P est la pile de la question 1(a), après l’appel de <code>retourner(P, 3)<
 <img alt="" src="../data/21-sujet0-exo1_4.png" /></p>
 <p>Créer la fonction <code>tri_crepes</code> ayant pour paramètre une pile P. Cette fonction trie la pile P selon la méthode du tri crêpes et ne renvoie rien.  </p>
 <p>On utilisera les fonctions créées dans les questions précédentes.   </p>
-<p>Exemple : Si la pile P est   <table class="pile"><tr><td>7</td></tr><tr><td>14</td></tr><tr><td>12</td></tr><tr><td>5</td></tr><tr><td>8</td></tr></table> ,après l’appel de <code>tri_crepes(P)</code>, la pile P devient   <table class="pile"><tr><td>5</td></tr><tr><td>7</td></tr><tr><td>8</td></tr><tr><td>12</td></tr><tr><td>14</td></tr></table>.</p>
+<p>Exemple : Si la pile P est  <img alt="" src="../data/21-sujet0-exo1_5.png" /> ,après l’appel de <code>tri_crepes(P)</code>, la pile P devient  <img alt="" src="../data/21-sujet0-exo1_6.png" />.</p>
 </li>
 </ol>
 <div class="admonition exo">
 <p class="admonition-title">Routage</p>
 </div>
 <p>On considère le réseau suivant composé de sept routeurs.</p>
-<p><img alt="" class="center" src="../data/exo_graph.svg" width="50%" /></p>
+<p><img alt="" class="center" src="../data/exo_graph.svg" /></p>
 <p>On donne les tables de routage préalablement construites ci-dessous avec le protocole RIP (Routing Information Protocole). Le protocole RIP permet de construire les tables de routage des différents routeurs, en indiquant pour chaque routeur, la distance, en nombr de sauts, qui le sépare d'un autre routeur.  </p>
 <p>Voir ANNEXE</p>
 <ol>
@@ -2227,7 +2221,7 @@ si P est la pile de la question 1(a), après l’appel de <code>retourner(P, 3)<
     <nav class="md-footer__inner md-grid" aria-label="Pied de page" >
       
         
-        <a href="../BDD_Devoir/" class="md-footer__link md-footer__link--prev" aria-label="Précédent: DS 0001" rel="prev">
+        <a href="../BDD_Devoir/" class="md-footer__link md-footer__link--prev" aria-label="Précédent: DS 01" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -2236,7 +2230,7 @@ si P est la pile de la question 1(a), après l’appel de <code>retourner(P, 3)<
               <span class="md-footer__direction">
                 Précédent
               </span>
-              DS 0001
+              DS 01
             </div>
           </div>
         </a>
@@ -2287,7 +2281,7 @@ si P est la pile de la question 1(a), après l’appel de <code>retourner(P, 3)<
     <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.tabs", "navigation.tabs.sticky", "navigation.expand", "navigation.top", "navigation.sections", "navigation.indexes", "navigation.tracking", "header.autohide", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.config.lang": "fr", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Rechercher", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version.title": "S\u00e9lectionner la version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.d6c3db9e.min.js"></script>
+      <script src="../../assets/javascripts/bundle.8492ddcf.min.js"></script>
       
         <script src="../../xtra/mathjax.js"></script>
       

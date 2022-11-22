@@ -15,7 +15,7 @@
       
       
       <link rel="icon" href="../../../images/dragon.svg">
-      <meta name="generator" content="mkdocs-1.4.1, mkdocs-material-8.5.10">
+      <meta name="generator" content="mkdocs-1.4.1, mkdocs-material-8.5.7">
     
     
       
@@ -23,10 +23,10 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.472b142f.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.20d9efc8.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.08040f6c.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.cbb835fc.min.css">
         
       
       
@@ -111,7 +111,6 @@
         
           
           
-          
           <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Basculer en mode sombre"  type="radio" name="__palette" id="__palette_1">
           
             <label class="md-header__button md-icon" title="Basculer en mode sombre" for="__palette_2" hidden>
@@ -119,7 +118,6 @@
             </label>
           
         
-          
           
           
           <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="brown" data-md-color-accent="brown"  aria-label="Basculer en mode clair"  type="radio" name="__palette" id="__palette_2">
@@ -1826,7 +1824,7 @@
   
     <li class="md-nav__item">
       <a href="../../../Evaluations/BDD_Devoir/" class="md-nav__link">
-        DS 0001
+        DS 01
       </a>
     </li>
   
@@ -1840,7 +1838,7 @@
   
     <li class="md-nav__item">
       <a href="../../../Evaluations/DS_Pile_File_Routage/" class="md-nav__link">
-        DS 0011
+        DS 03
       </a>
     </li>
   
@@ -3029,7 +3027,7 @@ Licensed under the Apache License, Version 2.0.
                 </div>
             </clipboard-copy>
         </div>
-            <div class="highlight-ipynb hl-sql"><pre><span></span><span class="k">from</span><span class="w"> </span><span class="n">random</span><span class="w"> </span><span class="n">import</span><span class="w"> </span><span class="n">randint</span><span class="w"></span>
+            <div class="highlight-ipynb hl-python"><pre><span></span><span class="kn">from</span> <span class="nn">random</span> <span class="kn">import</span> <span class="n">randint</span>
 </pre></div>
 <div id="cell-1" class="clipboard-copy-txt">from random import randint</div>
     
@@ -3061,8 +3059,8 @@ Licensed under the Apache License, Version 2.0.
                 </div>
             </clipboard-copy>
         </div>
-            <div class="highlight-ipynb hl-sql"><pre><span></span><span class="n">def</span><span class="w"> </span><span class="n">echange</span><span class="p">(</span><span class="n">liste</span><span class="p">,</span><span class="n">i</span><span class="p">,</span><span class="n">j</span><span class="p">):</span><span class="w"></span>
-<span class="w">    </span><span class="n">liste</span><span class="p">[</span><span class="n">i</span><span class="p">],</span><span class="n">liste</span><span class="p">[</span><span class="n">j</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">liste</span><span class="p">[</span><span class="n">j</span><span class="p">],</span><span class="n">liste</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="w"></span>
+            <div class="highlight-ipynb hl-python"><pre><span></span><span class="k">def</span> <span class="nf">echange</span><span class="p">(</span><span class="n">liste</span><span class="p">,</span><span class="n">i</span><span class="p">,</span><span class="n">j</span><span class="p">):</span>
+    <span class="n">liste</span><span class="p">[</span><span class="n">i</span><span class="p">],</span><span class="n">liste</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="n">liste</span><span class="p">[</span><span class="n">j</span><span class="p">],</span><span class="n">liste</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
 </pre></div>
 <div id="cell-2" class="clipboard-copy-txt">def echange(liste,i,j):
     liste[i],liste[j] = liste[j],liste[i]</div>
@@ -3095,15 +3093,15 @@ Licensed under the Apache License, Version 2.0.
                 </div>
             </clipboard-copy>
         </div>
-            <div class="highlight-ipynb hl-sql"><pre><span></span><span class="o">#</span><span class="w"> </span><span class="n">Tri</span><span class="w"> </span><span class="n">par</span><span class="w"> </span><span class="n">insertion</span><span class="w"></span>
-<span class="n">def</span><span class="w"> </span><span class="n">tri_insertion</span><span class="p">(</span><span class="n">liste</span><span class="p">):</span><span class="w"></span>
-<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="n">ind</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="n">range</span><span class="p">(</span><span class="n">len</span><span class="p">(</span><span class="n">liste</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="p">):</span><span class="w"></span>
-<span class="w">        </span><span class="n">j</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ind</span><span class="w"></span>
-<span class="w">        </span>
-<span class="w">        </span><span class="n">while</span><span class="w"> </span><span class="n">liste</span><span class="p">[</span><span class="n">j</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span><span class="o">&lt;</span><span class="n">liste</span><span class="p">[</span><span class="n">j</span><span class="p">]</span><span class="w"> </span><span class="k">and</span><span class="w"> </span><span class="n">j</span><span class="o">&gt;=</span><span class="mi">0</span><span class="p">:</span><span class="w"></span>
-<span class="w">            </span><span class="n">print</span><span class="p">(</span><span class="n">liste</span><span class="p">)</span><span class="w"></span>
-<span class="w">            </span><span class="n">echange</span><span class="p">(</span><span class="n">liste</span><span class="p">,</span><span class="n">j</span><span class="p">,</span><span class="n">j</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span><span class="w"></span>
-<span class="w">            </span><span class="n">j</span><span class="o">=</span><span class="n">j</span><span class="o">-</span><span class="mi">1</span><span class="w"></span>
+            <div class="highlight-ipynb hl-python"><pre><span></span><span class="c1"># Tri par insertion</span>
+<span class="k">def</span> <span class="nf">tri_insertion</span><span class="p">(</span><span class="n">liste</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">ind</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">liste</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="p">):</span>
+        <span class="n">j</span> <span class="o">=</span> <span class="n">ind</span>
+        
+        <span class="k">while</span> <span class="n">liste</span><span class="p">[</span><span class="n">j</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span><span class="o">&lt;</span><span class="n">liste</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="ow">and</span> <span class="n">j</span><span class="o">&gt;=</span><span class="mi">0</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="n">liste</span><span class="p">)</span>
+            <span class="n">echange</span><span class="p">(</span><span class="n">liste</span><span class="p">,</span><span class="n">j</span><span class="p">,</span><span class="n">j</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>
+            <span class="n">j</span><span class="o">=</span><span class="n">j</span><span class="o">-</span><span class="mi">1</span>
 </pre></div>
 <div id="cell-3" class="clipboard-copy-txt"># Tri par insertion
 def tri_insertion(liste):
@@ -3143,10 +3141,10 @@ def tri_insertion(liste):
                 </div>
             </clipboard-copy>
         </div>
-            <div class="highlight-ipynb hl-sql"><pre><span></span><span class="n">ex_liste</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">100</span><span class="p">)</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="n">_</span><span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="n">range</span><span class="p">(</span><span class="mi">50</span><span class="p">)]</span><span class="w"></span>
-<span class="n">L</span><span class="o">=</span><span class="p">[</span><span class="ss">&quot;P&quot;</span><span class="p">,</span><span class="ss">&quot;R&quot;</span><span class="p">,</span><span class="ss">&quot;O&quot;</span><span class="p">,</span><span class="ss">&quot;G&quot;</span><span class="p">,</span><span class="ss">&quot;R&quot;</span><span class="p">,</span><span class="ss">&quot;A&quot;</span><span class="p">,</span><span class="ss">&quot;M&quot;</span><span class="p">,</span><span class="ss">&quot;M&quot;</span><span class="p">,</span><span class="ss">&quot;E&quot;</span><span class="p">]</span><span class="w"></span>
-<span class="n">tri_insertion</span><span class="p">(</span><span class="n">L</span><span class="p">)</span><span class="w"></span>
-<span class="n">print</span><span class="p">(</span><span class="n">L</span><span class="p">)</span><span class="w"></span>
+            <div class="highlight-ipynb hl-python"><pre><span></span><span class="n">ex_liste</span> <span class="o">=</span> <span class="p">[</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">100</span><span class="p">)</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">50</span><span class="p">)]</span>
+<span class="n">L</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;P&quot;</span><span class="p">,</span><span class="s2">&quot;R&quot;</span><span class="p">,</span><span class="s2">&quot;O&quot;</span><span class="p">,</span><span class="s2">&quot;G&quot;</span><span class="p">,</span><span class="s2">&quot;R&quot;</span><span class="p">,</span><span class="s2">&quot;A&quot;</span><span class="p">,</span><span class="s2">&quot;M&quot;</span><span class="p">,</span><span class="s2">&quot;M&quot;</span><span class="p">,</span><span class="s2">&quot;E&quot;</span><span class="p">]</span>
+<span class="n">tri_insertion</span><span class="p">(</span><span class="n">L</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">L</span><span class="p">)</span>
 </pre></div>
 <div id="cell-4" class="clipboard-copy-txt">ex_liste = [randint(1,100) for _ in range(50)]
 L=["P","R","O","G","R","A","M","M","E"]
@@ -3257,7 +3255,7 @@ print(L)</div>
     <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.instant", "navigation.tabs", "navigation.tabs.sticky", "navigation.expand", "navigation.top", "navigation.sections", "navigation.indexes", "navigation.tracking", "header.autohide", "content.code.annotate"], "search": "../../../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.config.lang": "fr", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Rechercher", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version.title": "S\u00e9lectionner la version"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.d6c3db9e.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.8492ddcf.min.js"></script>
       
         <script src="../../../xtra/mathjax.js"></script>
       

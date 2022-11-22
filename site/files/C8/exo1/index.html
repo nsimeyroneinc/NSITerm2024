@@ -15,7 +15,7 @@
       
       
       <link rel="icon" href="../../../images/dragon.svg">
-      <meta name="generator" content="mkdocs-1.4.1, mkdocs-material-8.5.10">
+      <meta name="generator" content="mkdocs-1.4.1, mkdocs-material-8.5.7">
     
     
       
@@ -23,10 +23,10 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.472b142f.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.20d9efc8.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.08040f6c.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.cbb835fc.min.css">
         
       
       
@@ -111,7 +111,6 @@
         
           
           
-          
           <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Basculer en mode sombre"  type="radio" name="__palette" id="__palette_1">
           
             <label class="md-header__button md-icon" title="Basculer en mode sombre" for="__palette_2" hidden>
@@ -119,7 +118,6 @@
             </label>
           
         
-          
           
           
           <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="brown" data-md-color-accent="brown"  aria-label="Basculer en mode clair"  type="radio" name="__palette" id="__palette_2">
@@ -1826,7 +1824,7 @@
   
     <li class="md-nav__item">
       <a href="../../../Evaluations/BDD_Devoir/" class="md-nav__link">
-        DS 0001
+        DS 01
       </a>
     </li>
   
@@ -1840,7 +1838,7 @@
   
     <li class="md-nav__item">
       <a href="../../../Evaluations/DS_Pile_File_Routage/" class="md-nav__link">
-        DS 0011
+        DS 03
       </a>
     </li>
   
@@ -3029,18 +3027,18 @@ Licensed under the Apache License, Version 2.0.
                 </div>
             </clipboard-copy>
         </div>
-            <div class="highlight-ipynb hl-sql"><pre><span></span><span class="n">def</span><span class="w"> </span><span class="n">maxi</span><span class="p">(</span><span class="n">liste</span><span class="p">):</span><span class="w"></span>
-<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="n">len</span><span class="p">(</span><span class="n">liste</span><span class="p">)</span><span class="o">==</span><span class="mi">1</span><span class="p">:</span><span class="w"></span>
-<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">liste</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="w"></span>
-<span class="w">    </span><span class="n">i_centre</span><span class="o">=</span><span class="p">(</span><span class="n">len</span><span class="p">(</span><span class="n">liste</span><span class="p">))</span><span class="o">//</span><span class="mi">2</span><span class="w"></span>
-<span class="w">    </span><span class="n">l1</span><span class="o">=</span><span class="n">liste</span><span class="p">[:</span><span class="n">i_centre</span><span class="p">]</span><span class="w"></span>
-<span class="w">    </span><span class="n">l2</span><span class="o">=</span><span class="n">liste</span><span class="p">[</span><span class="n">i_centre</span><span class="p">:]</span><span class="w"></span>
-<span class="w">    </span><span class="n">m1</span><span class="o">=</span><span class="n">maxi</span><span class="p">(</span><span class="n">l1</span><span class="p">)</span><span class="w"></span>
-<span class="w">    </span><span class="n">m2</span><span class="o">=</span><span class="n">maxi</span><span class="p">(</span><span class="n">l2</span><span class="p">)</span><span class="w"></span>
-<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="n">m1</span><span class="o">&gt;</span><span class="n">m2</span><span class="p">:</span><span class="w"></span>
-<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">m1</span><span class="w"></span>
-<span class="w">    </span><span class="k">else</span><span class="p">:</span><span class="w"> </span>
-<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="n">m2</span><span class="w"></span>
+            <div class="highlight-ipynb hl-python"><pre><span></span><span class="k">def</span> <span class="nf">maxi</span><span class="p">(</span><span class="n">liste</span><span class="p">):</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">liste</span><span class="p">)</span><span class="o">==</span><span class="mi">1</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">liste</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+    <span class="n">i_centre</span><span class="o">=</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">liste</span><span class="p">))</span><span class="o">//</span><span class="mi">2</span>
+    <span class="n">l1</span><span class="o">=</span><span class="n">liste</span><span class="p">[:</span><span class="n">i_centre</span><span class="p">]</span>
+    <span class="n">l2</span><span class="o">=</span><span class="n">liste</span><span class="p">[</span><span class="n">i_centre</span><span class="p">:]</span>
+    <span class="n">m1</span><span class="o">=</span><span class="n">maxi</span><span class="p">(</span><span class="n">l1</span><span class="p">)</span>
+    <span class="n">m2</span><span class="o">=</span><span class="n">maxi</span><span class="p">(</span><span class="n">l2</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">m1</span><span class="o">&gt;</span><span class="n">m2</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">m1</span>
+    <span class="k">else</span><span class="p">:</span> 
+        <span class="k">return</span> <span class="n">m2</span>
 </pre></div>
 <div id="cell-1" class="clipboard-copy-txt">def maxi(liste):
     if len(liste)==1:
@@ -3083,7 +3081,7 @@ Licensed under the Apache License, Version 2.0.
                 </div>
             </clipboard-copy>
         </div>
-            <div class="highlight-ipynb hl-sql"><pre><span></span>
+            <div class="highlight-ipynb hl-python"><pre><span></span>
 </pre></div>
 <div id="cell-2" class="clipboard-copy-txt"></div>
     
@@ -3115,7 +3113,7 @@ Licensed under the Apache License, Version 2.0.
                 </div>
             </clipboard-copy>
         </div>
-            <div class="highlight-ipynb hl-sql"><pre><span></span>
+            <div class="highlight-ipynb hl-python"><pre><span></span>
 </pre></div>
 <div id="cell-3" class="clipboard-copy-txt">        </div>
     
@@ -3147,7 +3145,7 @@ Licensed under the Apache License, Version 2.0.
                 </div>
             </clipboard-copy>
         </div>
-            <div class="highlight-ipynb hl-sql"><pre><span></span><span class="n">L</span><span class="o">=</span><span class="p">[</span><span class="mi">152</span><span class="p">,</span><span class="mi">19</span><span class="p">,</span><span class="mi">120</span><span class="p">,</span><span class="mi">33</span><span class="p">,</span><span class="mi">11</span><span class="p">,</span><span class="mi">15</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">14</span><span class="p">,</span><span class="mi">57</span><span class="p">]</span><span class="w"></span>
+            <div class="highlight-ipynb hl-python"><pre><span></span><span class="n">L</span><span class="o">=</span><span class="p">[</span><span class="mi">152</span><span class="p">,</span><span class="mi">19</span><span class="p">,</span><span class="mi">120</span><span class="p">,</span><span class="mi">33</span><span class="p">,</span><span class="mi">11</span><span class="p">,</span><span class="mi">15</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">14</span><span class="p">,</span><span class="mi">57</span><span class="p">]</span>
 </pre></div>
 <div id="cell-4" class="clipboard-copy-txt">L=[152,19,120,33,11,15,9,14,57]</div>
     
@@ -3179,7 +3177,7 @@ Licensed under the Apache License, Version 2.0.
                 </div>
             </clipboard-copy>
         </div>
-            <div class="highlight-ipynb hl-sql"><pre><span></span><span class="n">print</span><span class="p">(</span><span class="n">maxi</span><span class="p">(</span><span class="n">L</span><span class="p">))</span><span class="w"></span>
+            <div class="highlight-ipynb hl-python"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">maxi</span><span class="p">(</span><span class="n">L</span><span class="p">))</span>
 </pre></div>
 <div id="cell-5" class="clipboard-copy-txt">print(maxi(L))</div>
     
@@ -3287,7 +3285,7 @@ Licensed under the Apache License, Version 2.0.
     <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.instant", "navigation.tabs", "navigation.tabs.sticky", "navigation.expand", "navigation.top", "navigation.sections", "navigation.indexes", "navigation.tracking", "header.autohide", "content.code.annotate"], "search": "../../../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.config.lang": "fr", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Rechercher", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version.title": "S\u00e9lectionner la version"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.d6c3db9e.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.8492ddcf.min.js"></script>
       
         <script src="../../../xtra/mathjax.js"></script>
       
