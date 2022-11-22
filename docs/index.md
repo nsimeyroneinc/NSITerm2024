@@ -68,4 +68,7 @@ Le sujet de l’épreuve écrite de la spécialité numérique et sciences infor
 
 [Fiche pour calculer sa note au BAC 2023](divers/data/el-ve-de-premiere-comment-calculer-note-bac-2022-94490.pdf){:target="_blank"} 
 
+![](divers/data/calculer_sa_note_BAC.png)
+
+
 ![](r-partition-de-la-note-finale.jpg)
