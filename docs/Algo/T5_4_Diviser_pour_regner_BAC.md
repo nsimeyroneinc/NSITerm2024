@@ -291,7 +291,8 @@ source : Wikipedia
 
 !!! fabquestion "Question C.1"
     === "Enoncé"
-	Cet algorithme est-il itératif ou récursif ? Justifier en une phrase.
+	    Cet algorithme est-il itératif ou récursif ? Justifier en une phrase.
+
     === "Solution"
         {{ correction(True, 
         "
@@ -369,7 +370,7 @@ Voici une illustration des étapes d’un tri effectué sur la liste `[3, 41, 52
 
 !!! fabquestion "Question D.2" 
     === "Enoncé"
-	    Identifier le tri qui a une complexité, dans le pire des cas, en O(n2) et identifier le tri qui a une complexité, dans le pire des cas, en O(n log2 n).  
+	    Identifier le tri qui a une complexité, dans le pire des cas, en $O(n^2)$ et identifier le tri qui a une complexité, dans le pire des cas, en $O(n log_2 n)$.  
 	    Remarque : n représente la longueur de la liste à trier.
     === "Solution"  
         {{ correction(Truee, 
@@ -386,8 +387,8 @@ Voici une illustration des étapes d’un tri effectué sur la liste `[3, 41, 52
         {{ correction(True, 
         "
 
-        - Le tri par insertion utilise 2 boucles imbriquées, soit dans le pire des cas ~ $1/2n(n+1)$ opérations.  
-        - Le tri par fusion, divise la liste à trier par 2 pour chaque itérations, soit ~ $log_2 n$ opérations.
+        - Le tri par insertion utilise 2 boucles imbriquées, soit dans le pire des cas ~ $\dfrac{1}{2} \times n(n+1)$ opérations soir $O(n^2)$.  
+        - Le tri par fusion, divise la liste à trier par 2 pour chaque itérations, soit ~ $log_2 n$ opérations d'où une complexité global $O(n.log_2 n)$.
         ")}}
 
 !!! exo "Inversions dans une liste : FRANCE CANDIDAT LIBRE SUJET 1"
