@@ -77,7 +77,8 @@ def define_env(env):
         6 : ["os","Protocole de routage",1,"Archi_Materielle/T3_1_Routage.md"],
         7 : ["algorithmique","Algorithmes de tri",1,"Algo/T5_2_algo_tri.md"],
         8 : ["algorithmique","Diviser pour régner",1,"Algo/T5_3_Diviser_pour_regner.md"],
-        9 : ["sd","Les arbres",2,"StructureDonnees/T3_1_arbre.md"]
+        9 : ["sd","Les Dictionnaires - Révision",1,"StructureDonnees/T4_1_Dictionnaires.md"],
+        10 : ["sd","Les arbres",2,"StructureDonnees/T3_1_arbre.md"]
         #6 : ["os","Protocole de Routage",1,""],
         #7 : ["python","Notions de programmation orienté objet",2,"poo.md"],
         #8 : ["sd","Structures de données linéaires",2,"sl.md"],
@@ -133,7 +134,7 @@ def define_env(env):
         #6 : ["os","Protocole de Routage",1,""],
         #7 : ["python","Notions de programmation orienté objet",2,"poo.md"],
         8 : ["BAC","Diviser pour régner",2,"Algo/T5_4_Diviser_pour_regner_BAC.md"],
-        9 : ["BAC","Les arbres - Partie 1",1,"StructureDonnees/T3_2_arbre_BAC.md"]
+        10 : ["BAC","Les arbres - Partie 1",1,"StructureDonnees/T3_2_arbre_BAC.md"]
         #10 : ["sd","Arbres",2,"arbres.md"],
         #11 : ["db","Schéma relationnel d'une base de données",2,"sgbd.md"],
         #12: ["algorithmique","Algorithmes sur les arbres",2,"algoarbre.md"],

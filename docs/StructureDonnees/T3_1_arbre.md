@@ -1,5 +1,5 @@
 
-{% set num = 9 %}
+{% set num = 10 %}
 {% set titre = "Les arbres"%}
 {% set theme = "sd" %}
 {% set niveau = "terminale"%} 
