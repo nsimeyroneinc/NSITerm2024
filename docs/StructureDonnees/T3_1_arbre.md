@@ -66,23 +66,15 @@
         F --> I["I"]
         F --> T[" "]
     end
-    style W fill:#FFFFFF, stroke:#FFFFFF
+    style W opacity:0
     linkStyle 2 stroke:#FFFFFF,stroke-width:0px
     linkStyle 4 stroke:#FFFFFF,stroke-width:0px
     linkStyle 5 stroke:#FFFFFF,stroke-width:0px
     linkStyle 13 stroke:#FFFFFF,stroke-width:0px
-<<<<<<< HEAD
-    style W1 fill:#FFFFFF, stroke:#FFFFFF
-    style W2 fill:#FFFFFF, stroke:#FFFFFF
-    style T fill:#FFFFFF, stroke:#FFFFFF
-    style W fill:#FFFFFF, stroke:#FFFFFF
-=======
-    style W1 opacity:0;
-    style W2 opacity:0;
-    style T opacity:0;
-    style W opacity:0;
-
->>>>>>> 7f300ba8 (22/11)
+    style W1 opacity:0
+    style W2 opacity:0
+    style T opacity:0
+    style W opacity:0
 
 ```
 
@@ -105,11 +97,7 @@
     * le fils droit d'un noeud porte le numéro de son père suivi d'un 1.
 
 On a entamé la numérotation de l'arbre binaire ci-dessous, recopier cet arbre et compléter cette numérotation.
-<<<<<<< HEAD
-<div class="centre">
-=======
 
->>>>>>> 7f300ba8 (22/11)
 ```mermaid
     graph TD
     A["A : 1"] --> B["B : 10"]
@@ -118,23 +106,12 @@ On a entamé la numérotation de l'arbre binaire ci-dessous, recopier cet arbre 
     B --> E["E : 101"]
     C --> V1[" "]
     C --> F["F: ..."]
-<<<<<<< HEAD
-=======
     V1 --> V2[" "]
     V1 --> V3[" "]
->>>>>>> 7f300ba8 (22/11)
     D --> G["G: ..."]
     D --> H["H: ..."]
     F --> I["I: ..."]
     F --> V2[" "]
-<<<<<<< HEAD
-    style V1 fill:#FFFFFF, stroke:#FFFFFF
-    linkStyle 4 stroke:#FFFFFF,stroke-width:0px
-    style V2 fill:#FFFFFF, stroke:#FFFFFF
-    linkStyle 9 stroke:#FFFFFF,stroke-width:0px
-```
-</div>
-=======
     E --> V4[" "]
     E --> V5[" "]
     style V1 opacity:0;
@@ -151,7 +128,6 @@ On a entamé la numérotation de l'arbre binaire ci-dessous, recopier cet arbre 
     linkStyle 13 stroke:#FFFFFF,stroke-width:0px
 ```
 
->>>>>>> 7f300ba8 (22/11)
 
 3. Justifier que sur un niveau donné de l'arbre tous les numéros de noeud ont le même nombre de caractères.
 4. En déduire en fonction de $h$, le nombre de caractères formant le numéro des feuilles
@@ -174,13 +150,60 @@ L'ordre des lettres parcourues est donc T-Y-O-P-H-N.
 
 1. Indiquez dans quel ordre les noeuds sont explorés dans le cas d'un parcours en largeur de l'arbre `A1` suivant.
 
-    ![ab2.png](data/ab2.png){:.center}
+    ```mermaid
+        graph TD
+        A["2"] --> B["8"]
+        A --> C["9"]
+        B --> D["4"]
+        B --> E["5"]
+        C --> V1[" "]
+        C --> F["3"]
+        V1 --> V2[" "]
+        V1 --> V3[" "]
+        style V1 opacity:0;
+        linkStyle 4 stroke:#FFFFFF,stroke-width:0px
+        style V2 opacity:0;
+        linkStyle 6 stroke:#FFFFFF,stroke-width:0px
+        style V3 opacity:0;
+        linkStyle 7 stroke:#FFFFFF,stroke-width:0px
+        style V2 opacity:0;
+    ```
+
 
 2. Indiquez dans quel ordre les noeuds sont explorés dans le cas d'un parcours en largeur de l'arbre `A2` suivant.
 
-    ![ab10.png](data/ab10.png){:.center width=35%}
-
-           
+    ```mermaid
+        graph TD
+        A["1"] --> B["2"]
+        A --> C["5"]
+        B --> D["3"]
+        B --> E["4"]
+        C --> V1["6"]
+        C --> F[" "]
+        V1 --> V2["7"]
+        V1 --> V3["8"]
+        D --> G[" "]
+        D --> H[" "]
+        F --> I[" "]
+        F --> V6[" "]
+        E --> V4[" "]
+        E --> V5[" "]
+        style F opacity:0;
+        linkStyle 5 stroke:#FFFFFF,stroke-width:0px
+        style G opacity:0;
+        linkStyle 8 stroke:#FFFFFF,stroke-width:0px
+        style H opacity:0;
+        linkStyle 9 stroke:#FFFFFF,stroke-width:0px
+        style I opacity:0;
+        linkStyle 10 stroke:#FFFFFF,stroke-width:0px
+        style V6 opacity:0;
+        linkStyle 11 stroke:#FFFFFF,stroke-width:0px
+        style V4 opacity:0;
+        linkStyle 12 stroke:#FFFFFF,stroke-width:0px
+        style V5 opacity:0;
+        linkStyle 13 stroke:#FFFFFF,stroke-width:0px
+    ```
+    
 
 {{ titre_activite("Parcours en profondeur d'un arbre binaire",[]) }}
 
@@ -409,15 +432,9 @@ On considère l'arbre ci-dessous :
     R --> E["E"]
     I --> S["S"]
     I --> V2[" "]
-<<<<<<< HEAD
-    style V1 fill:#FFFFFF, stroke:#FFFFFF
-    linkStyle 4 stroke:#FFFFFF,stroke-width:0px
-    style V2 fill:#FFFFFF, stroke:#FFFFFF
-=======
     style V1 opacity:0;
     linkStyle 4 stroke:#FFFFFF,stroke-width:0px
     style V2 opacity:0;
->>>>>>> 7f300ba8 (22/11)
     linkStyle 11 stroke:#FFFFFF,stroke-width:0px
 ```
 
@@ -455,7 +472,3 @@ Pour chacun de ces arbres :
 1. Faire un schéma pour le représenter.
 2. Donner sa taille, sa hauteur, son nombre de feuilles.
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 7f300ba8 (22/11)

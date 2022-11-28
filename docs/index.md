@@ -4,7 +4,7 @@ Les notebooks sont corrigés et les cellules peuvent être copiées pour être t
 
 
 !!! info "Actualités" 
-    - **Thème en cours** : [Diviser pour régner](Algo/T5_3_Diviser_pour_regner.md)   
+    - **Thème en cours** : [Les dictionnaires](StructureDonnees/T4_1_Dictionnaires.md)   Corrigé disponible.  
     - **Sujet BAC :** [BAC - Diviser pour régner](Algo/T5_4_Diviser_pour_regner_BAC.md)
     - **&#127381; :** un onglet annales de BAC épreuves écrites avec les sujets 2022 corrigés.  
 
