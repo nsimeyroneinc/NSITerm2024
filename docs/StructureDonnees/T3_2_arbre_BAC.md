@@ -714,15 +714,19 @@ Recopier et compléter les lignes 6, 8, 14 et 18 du code suivant sur votre copie
 def symptomes(arb, mal):
     if arb['sag'] != {} :
         symptomes(arb['sag'],mal)
+
     if arb['sad'] != {} :
         symptomes(...)
+
     if ... ... ... ... :
         arb['surChemin'] = True
         print('symptômes de', arb['etiquette'],':')
+
     else :
         if arb['sad'] != {} and arb['sad']['surChemin'] :
             print(...)
             arb['surChemin'] = True
+            
         if arb['sag'] != {} and arb['sag']['surChemin'] :
             print(...)
             arb['surChemin'] = True
