@@ -45,7 +45,7 @@ graph TD
 
 
 ??? success "Réponse" 
-    {{ correction(False, 
+    {{ correction(True, 
     "
     Avec cette définition, la hauteur de cet arbre binaire est 3.
     ")}}
@@ -53,7 +53,7 @@ graph TD
 **1.b.** Dessiner sur la copie un arbre binaire de hauteur $5$.
 
 ??? success "Réponse"
-    {{ correction(False, 
+    {{ correction(True, 
     "
     Avec cette définition, voici un arbre binaire de hauteur $5$.
 
@@ -110,7 +110,7 @@ On considère un arbre binaire `R` dont on note `G` le sous-arbre à gauche et `
 **3.a.** Justifier le fait que `D` n'est pas l'arbre vide et déterminer sa hauteur.
 
 ??? success "Réponse"
-    {{ correction(False, 
+    {{ correction(True, 
     "
     Si `D` est égal à l'arbre vide, alors la hauteur de `R` est égale à `1 + hauteur(G)` qui est égal à $1+3=4$, or `R` est de hauteur $5$. Contradiction.
 
@@ -127,7 +127,7 @@ On considère un arbre binaire `R` dont on note `G` le sous-arbre à gauche et `
 **3.b.** Illustrer cette situation par un dessin.
 
 ??? success "Réponse"
-    {{ correction(False, 
+    {{ correction(True, 
     "
     - Cet arbre est de hauteur $5$,
     - son sous arbre à gauche est de hauteur $3$,
@@ -160,7 +160,7 @@ Soit un arbre binaire non vide de hauteur `h`. On note `n` le nombre de nœuds d
 **4.a.** Vérifier ces inégalités sur l'arbre binaire de la question **1.a.**.
 
 ??? success "Réponse"
-    {{ correction(False, 
+    {{ correction(True, 
     "
     Dans la question **1.a.**, l'arbre binaire possède $n = 4$ nœuds et a une hauteur $h = 3$.
 
@@ -171,7 +171,7 @@ Soit un arbre binaire non vide de hauteur `h`. On note `n` le nombre de nœuds d
 **4.b.** Expliquer comment construire un arbre binaire de hauteur `h` quelconque ayant `h` nœuds.
 
 ??? success "Réponse"
-    {{ correction(False, 
+    {{ correction(True, 
     "
     Il **suffit**, par exemple, de construire un arbre binaire où pour chaque nœud, soit le sous arbre à gauche est vide, soit celui à droite.
 
@@ -185,7 +185,7 @@ Soit un arbre binaire non vide de hauteur `h`. On note `n` le nombre de nœuds d
 > _Indication_ : $2^h - 1 = 1+2+4+...+2^{h-1}$.
 
 ??? success "Réponse"
-    {{ correction(False, 
+    {{ correction(True, 
     "
     Il **faut**, dans ce cas, construire un arbre binaire complet ; les sous-arbres vides sont tous à la même profondeur.
     "
@@ -217,7 +217,7 @@ graph TD
 ```
 
 ??? success "Réponse"
-   {{ correction(False, 
+   {{ correction(True, 
     "
     ```mermaid
     graph TD
@@ -326,7 +326,7 @@ graph TD
 **1.** Donner la somme de l'arbre précédent. Justifier la réponse en explicitant le calcul qui a permis de l'obtenir.
 
 ??? success "Réponse"
-    {{ correction(False, 
+    {{ correction(True, 
     "
     La somme de l'arbre est $3 + 6 + 2 + 7 + 4 + 9 + 1 = 32$
     "
@@ -358,7 +358,7 @@ flowchart TD
 ```
 
 ??? success "Réponse"
-    {{ correction(False, 
+    {{ correction(True, 
     "
     | Lettre | Nom    |
     |:---:|:---------:|
@@ -378,7 +378,7 @@ flowchart TD
 - **Proposition D** : 7 - 4 - 6 - 9 - 1 - 2 - 3
 
 ??? success "Réponse"
-    {{ correction(False, 
+    {{ correction(True, 
     "
     On lit chaque niveau, de la gauche vers la droite.
 
@@ -442,7 +442,7 @@ parcourir(A):
 Donner le type de parcours obtenu grâce à la fonction `parcourir`.
 
 ??? success "Réponse"
-    {{ correction(False, 
+    {{ correction(True, 
     "
     Si, à un moment du traitement, la file ne contient que des éléments d'un certain niveau, **puis** (éventuellement) du niveau suivant, alors on enfile pendant le traitement des éléments du niveau suivant, ce qui fait que cette propriété est conservée.
 
@@ -462,7 +462,7 @@ Donner le type de parcours obtenu grâce à la fonction `parcourir`.
 - **Proposition D** : découper un problème initial en sous-problèmes, à résoudre, puis combiner leurs solutions
 
 ??? success "Réponse"
-    {{ correction(False, 
+    {{ correction(True, 
     "
     **Proposition D**
     
@@ -494,7 +494,7 @@ Indiquer dans l'esprit de « diviser pour régner » l'égalité donnant la somm
 
 
 ??? success "Réponse"
-    {{ correction(False, 
+    {{ correction(True, 
     "
     `somme(arbre)` est égal à `valeur_racine(arbre) + somme(SAG(arbre)) + somme(SAD(arbre))`
     "
@@ -510,7 +510,7 @@ Les fonctions suivantes sont disponibles :
 - `arbre_droite(arbre)` : renvoie le sous arbre à droite de `arbre`.
 
 ??? success "Réponse"
-    {{ correction(False, 
+    {{ correction(True, 
     "
     ```python
     def somme(arbre):
