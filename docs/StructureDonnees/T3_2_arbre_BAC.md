@@ -1,5 +1,5 @@
 
-{% set num = 12 %}
+{% set num = 10 %}
 {% set titre = "Les Arbres - Partie 1" %}
 {% set theme = "BAC" %}
 {% set niveau = "terminale" %}
@@ -8,6 +8,7 @@
 {{ titre_chapitre(num,titre,theme,niveau)}}
 
 {{ initexo(0) }}
+
 
 ## 2022, Polynésie, J1, Ex. 5
 
@@ -19,6 +20,7 @@ On manipule ici les arbres binaires avec trois fonctions :
 - `est_vide(A)` renvoie `True` si l'arbre binaire `A` est vide, `False` s'il ne l'est pas ;
 
 - Pour un arbre binaire `A` **non vide** :
+
     - `sous_arbre_gauche(A)` renvoie le sous-arbre à gauche de `A` ;
     - `sous_arbre_droite(A)` renvoie le sous-arbre à droite de `A`.
 
