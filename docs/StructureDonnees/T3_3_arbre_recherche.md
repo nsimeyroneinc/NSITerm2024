@@ -9,7 +9,6 @@
 
 
 
-
 ## Arbres binaires de recherche (ABR)
 
 !!! jeretiens "Définition d'un ABR :heart:"

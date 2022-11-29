@@ -34,8 +34,8 @@ Le sujet de l’épreuve écrite de la spécialité numérique et sciences infor
 🗹 Structure de données abstraites( file) : interface et implémentation  
 🗹 Vocabulaire de la programmation objet : classes, attributs, méthodes, objets 
 🗹 Listes, piles, files : structures linéaires. 
-□ Dictionnaires, index et clé  
-□ Arbres : structures hiérarchiques. Arbres binaires : nœuds, racines, feuilles, sous-arbres gauches, sous-arbres droits
+🗹 Dictionnaires, index et clé  
+🗹 Arbres : structures hiérarchiques. Arbres binaires : nœuds, racines, feuilles, sous-arbres gauches, sous-arbres droits
 
 
 ### &#10145; Thème : Base de données  
