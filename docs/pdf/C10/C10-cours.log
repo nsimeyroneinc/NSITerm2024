@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2022.11.4)  28 NOV 2022 10:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2022.11.4)  29 NOV 2022 09:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1855,22 +1855,6 @@ Package fancyhdr Warning: \footskip is too small (11.2459pt):
 [6
 
 ]
-Package epstopdf Info: Source file: <org.gv.eps>
-(epstopdf)                    date: 2022-10-24 14:45:34
-(epstopdf)                    size: 11144 bytes
-(epstopdf)             Output file: <org.gv-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-20 16:26:39
-(epstopdf)                    size: 7917 bytes
-(epstopdf)             Command: <repstopdf --outfile=org.gv-eps-converted-to.pd
-f org.gv.eps>
-(epstopdf)             \includegraphics on input line 46.
-Package epstopdf Info: Output file is already uptodate.
-<org.gv-eps-converted-to.pdf, id=113, 691.58376pt x 260.975pt>
-File: org.gv-eps-converted-to.pdf Graphic file (type pdf)
-<use org.gv-eps-converted-to.pdf>
-Package pdftex.def Info: org.gv-eps-converted-to.pdf  used on input line 46.
-(pdftex.def)             Requested size: 207.47672pt x 78.29309pt.
-
 
 Package fancyhdr Warning: \headheight is too small (0.0pt): 
 (fancyhdr)                Make it at least 12.0pt, for example:
@@ -1886,22 +1870,7 @@ Package fancyhdr Warning: \footskip is too small (11.2459pt):
 
 [7
 
- <./org.gv-eps-converted-to.pdf>]
-Package epstopdf Info: Source file: <org.gv.eps>
-(epstopdf)                    date: 2022-10-24 14:45:34
-(epstopdf)                    size: 11144 bytes
-(epstopdf)             Output file: <org.gv-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-20 16:26:39
-(epstopdf)                    size: 7917 bytes
-(epstopdf)             Command: <repstopdf --outfile=org.gv-eps-converted-to.pd
-f org.gv.eps>
-(epstopdf)             \includegraphics on input line 46.
-Package epstopdf Info: Output file is already uptodate.
-File: org.gv-eps-converted-to.pdf Graphic file (type pdf)
-<use org.gv-eps-converted-to.pdf>
-Package pdftex.def Info: org.gv-eps-converted-to.pdf  used on input line 46.
-(pdftex.def)             Requested size: 207.47672pt x 78.29309pt.
-
+]
 
 Package fancyhdr Warning: \headheight is too small (0.0pt): 
 (fancyhdr)                Make it at least 12.0pt, for example:
@@ -1918,21 +1887,6 @@ Package fancyhdr Warning: \footskip is too small (11.2459pt):
 [8
 
 ]
-Package epstopdf Info: Source file: <org.gv.eps>
-(epstopdf)                    date: 2022-10-24 14:45:34
-(epstopdf)                    size: 11144 bytes
-(epstopdf)             Output file: <org.gv-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-20 16:26:39
-(epstopdf)                    size: 7917 bytes
-(epstopdf)             Command: <repstopdf --outfile=org.gv-eps-converted-to.pd
-f org.gv.eps>
-(epstopdf)             \includegraphics on input line 46.
-Package epstopdf Info: Output file is already uptodate.
-File: org.gv-eps-converted-to.pdf Graphic file (type pdf)
-<use org.gv-eps-converted-to.pdf>
-Package pdftex.def Info: org.gv-eps-converted-to.pdf  used on input line 46.
-(pdftex.def)             Requested size: 207.47672pt x 78.29309pt.
-
 
 Package fancyhdr Warning: \headheight is too small (0.0pt): 
 (fancyhdr)                Make it at least 12.0pt, for example:
@@ -1949,21 +1903,6 @@ Package fancyhdr Warning: \footskip is too small (11.2459pt):
 [9
 
 ]
-Package epstopdf Info: Source file: <org.gv.eps>
-(epstopdf)                    date: 2022-10-24 14:45:34
-(epstopdf)                    size: 11144 bytes
-(epstopdf)             Output file: <org.gv-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-20 16:26:39
-(epstopdf)                    size: 7917 bytes
-(epstopdf)             Command: <repstopdf --outfile=org.gv-eps-converted-to.pd
-f org.gv.eps>
-(epstopdf)             \includegraphics on input line 46.
-Package epstopdf Info: Output file is already uptodate.
-File: org.gv-eps-converted-to.pdf Graphic file (type pdf)
-<use org.gv-eps-converted-to.pdf>
-Package pdftex.def Info: org.gv-eps-converted-to.pdf  used on input line 46.
-(pdftex.def)             Requested size: 207.47672pt x 78.29309pt.
-
 
 Package fancyhdr Warning: \headheight is too small (0.0pt): 
 (fancyhdr)                Make it at least 12.0pt, for example:
@@ -1980,21 +1919,6 @@ Package fancyhdr Warning: \footskip is too small (11.2459pt):
 [10
 
 ]
-Package epstopdf Info: Source file: <org.gv.eps>
-(epstopdf)                    date: 2022-10-24 14:45:34
-(epstopdf)                    size: 11144 bytes
-(epstopdf)             Output file: <org.gv-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-20 16:26:39
-(epstopdf)                    size: 7917 bytes
-(epstopdf)             Command: <repstopdf --outfile=org.gv-eps-converted-to.pd
-f org.gv.eps>
-(epstopdf)             \includegraphics on input line 46.
-Package epstopdf Info: Output file is already uptodate.
-File: org.gv-eps-converted-to.pdf Graphic file (type pdf)
-<use org.gv-eps-converted-to.pdf>
-Package pdftex.def Info: org.gv-eps-converted-to.pdf  used on input line 46.
-(pdftex.def)             Requested size: 207.47672pt x 78.29309pt.
-
 
 Package fancyhdr Warning: \headheight is too small (0.0pt): 
 (fancyhdr)                Make it at least 12.0pt, for example:
@@ -2027,6 +1951,34 @@ Package fancyhdr Warning: \footskip is too small (11.2459pt):
 [12
 
 ]
+LaTeX Font Info:    Trying to load font information for U+msa on input line 59.
+
+ (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 59.
+
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Trying to load font information for U+rsfs on input line 59
+.
+
+(/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd
+File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
+)
+LaTeX Font Info:    Trying to load font information for U+stmry on input line 5
+9.
+
+(/usr/share/texlive/texmf-dist/tex/latex/stmaryrd/Ustmry.fd)
+LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on inp
+ut line 59.
+
+(/usr/share/texlive/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
+File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/ma
+thkerncmss.
+)
 
 Package fancyhdr Warning: \headheight is too small (0.0pt): 
 (fancyhdr)                Make it at least 12.0pt, for example:
@@ -2123,6 +2075,36 @@ Package fancyhdr Warning: \footskip is too small (11.2459pt):
 [18
 
 ]
+Package epstopdf Info: Source file: <ab.gv.eps>
+(epstopdf)                    date: 2022-10-24 14:45:34
+(epstopdf)                    size: 6898 bytes
+(epstopdf)             Output file: <ab.gv-eps-converted-to.pdf>
+(epstopdf)                    date: 2022-11-20 16:26:40
+(epstopdf)                    size: 4567 bytes
+(epstopdf)             Command: <repstopdf --outfile=ab.gv-eps-converted-to.pdf
+ ab.gv.eps>
+(epstopdf)             \includegraphics on input line 78.
+Package epstopdf Info: Output file is already uptodate.
+<ab.gv-eps-converted-to.pdf, id=293, 170.6375pt x 260.975pt>
+File: ab.gv-eps-converted-to.pdf Graphic file (type pdf)
+<use ab.gv-eps-converted-to.pdf>
+Package pdftex.def Info: ab.gv-eps-converted-to.pdf  used on input line 78.
+(pdftex.def)             Requested size: 85.31853pt x 130.48718pt.
+Package epstopdf Info: Source file: <ab.gv.eps>
+(epstopdf)                    date: 2022-10-24 14:45:34
+(epstopdf)                    size: 6898 bytes
+(epstopdf)             Output file: <ab.gv-eps-converted-to.pdf>
+(epstopdf)                    date: 2022-11-20 16:26:40
+(epstopdf)                    size: 4567 bytes
+(epstopdf)             Command: <repstopdf --outfile=ab.gv-eps-converted-to.pdf
+ ab.gv.eps>
+(epstopdf)             \includegraphics on input line 78.
+Package epstopdf Info: Output file is already uptodate.
+File: ab.gv-eps-converted-to.pdf Graphic file (type pdf)
+<use ab.gv-eps-converted-to.pdf>
+Package pdftex.def Info: ab.gv-eps-converted-to.pdf  used on input line 78.
+(pdftex.def)             Requested size: 85.31853pt x 130.48718pt.
+
 
 Package fancyhdr Warning: \headheight is too small (0.0pt): 
 (fancyhdr)                Make it at least 12.0pt, for example:
@@ -2138,7 +2120,7 @@ Package fancyhdr Warning: \footskip is too small (11.2459pt):
 
 [19
 
-]
+ <./ab.gv-eps-converted-to.pdf>]
 
 Package fancyhdr Warning: \headheight is too small (0.0pt): 
 (fancyhdr)                Make it at least 12.0pt, for example:
@@ -2155,34 +2137,6 @@ Package fancyhdr Warning: \footskip is too small (11.2459pt):
 [20
 
 ]
-LaTeX Font Info:    Trying to load font information for U+msa on input line 82.
-
- (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 82.
-
-
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 82
-.
-
-(/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd
-File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
-)
-LaTeX Font Info:    Trying to load font information for U+stmry on input line 8
-2.
-
-(/usr/share/texlive/texmf-dist/tex/latex/stmaryrd/Ustmry.fd)
-LaTeX Font Info:    Trying to load font information for OT1+mathkerncmss on inp
-ut line 82.
-
-(/usr/share/texlive/texmf-dist/tex/latex/sansmathaccent/ot1mathkerncmss.fd
-File: ot1mathkerncmss.fd 2020/01/31 Fontinst v1.933 font definitions for OT1/ma
-thkerncmss.
-)
 
 Package fancyhdr Warning: \headheight is too small (0.0pt): 
 (fancyhdr)                Make it at least 12.0pt, for example:
@@ -2279,36 +2233,6 @@ Package fancyhdr Warning: \footskip is too small (11.2459pt):
 [26
 
 ]
-Package epstopdf Info: Source file: <ab.gv.eps>
-(epstopdf)                    date: 2022-10-24 14:45:34
-(epstopdf)                    size: 6898 bytes
-(epstopdf)             Output file: <ab.gv-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-20 16:26:40
-(epstopdf)                    size: 4567 bytes
-(epstopdf)             Command: <repstopdf --outfile=ab.gv-eps-converted-to.pdf
- ab.gv.eps>
-(epstopdf)             \includegraphics on input line 101.
-Package epstopdf Info: Output file is already uptodate.
-<ab.gv-eps-converted-to.pdf, id=501, 170.6375pt x 260.975pt>
-File: ab.gv-eps-converted-to.pdf Graphic file (type pdf)
-<use ab.gv-eps-converted-to.pdf>
-Package pdftex.def Info: ab.gv-eps-converted-to.pdf  used on input line 101.
-(pdftex.def)             Requested size: 85.31853pt x 130.48718pt.
-Package epstopdf Info: Source file: <ab.gv.eps>
-(epstopdf)                    date: 2022-10-24 14:45:34
-(epstopdf)                    size: 6898 bytes
-(epstopdf)             Output file: <ab.gv-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-20 16:26:40
-(epstopdf)                    size: 4567 bytes
-(epstopdf)             Command: <repstopdf --outfile=ab.gv-eps-converted-to.pdf
- ab.gv.eps>
-(epstopdf)             \includegraphics on input line 101.
-Package epstopdf Info: Output file is already uptodate.
-File: ab.gv-eps-converted-to.pdf Graphic file (type pdf)
-<use ab.gv-eps-converted-to.pdf>
-Package pdftex.def Info: ab.gv-eps-converted-to.pdf  used on input line 101.
-(pdftex.def)             Requested size: 85.31853pt x 130.48718pt.
-
 
 Package fancyhdr Warning: \headheight is too small (0.0pt): 
 (fancyhdr)                Make it at least 12.0pt, for example:
@@ -2324,7 +2248,7 @@ Package fancyhdr Warning: \footskip is too small (11.2459pt):
 
 [27
 
- <./ab.gv-eps-converted-to.pdf>]
+]
 
 Package fancyhdr Warning: \headheight is too small (0.0pt): 
 (fancyhdr)                Make it at least 12.0pt, for example:
@@ -2421,134 +2345,6 @@ Package fancyhdr Warning: \footskip is too small (11.2459pt):
 [33
 
 ]
-
-Package fancyhdr Warning: \headheight is too small (0.0pt): 
-(fancyhdr)                Make it at least 12.0pt, for example:
-(fancyhdr)                \setlength{\headheight}{12.0pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-12.0pt}.
-
-
-Package fancyhdr Warning: \footskip is too small (11.2459pt): 
-(fancyhdr)                Make it at least 12.0pt, for example:
-(fancyhdr)                \setlength{\footskip}{12.0pt}.
-
-[34
-
-]
-
-Package fancyhdr Warning: \headheight is too small (0.0pt): 
-(fancyhdr)                Make it at least 12.0pt, for example:
-(fancyhdr)                \setlength{\headheight}{12.0pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-12.0pt}.
-
-
-Package fancyhdr Warning: \footskip is too small (11.2459pt): 
-(fancyhdr)                Make it at least 12.0pt, for example:
-(fancyhdr)                \setlength{\footskip}{12.0pt}.
-
-[35
-
-]
-
-Package fancyhdr Warning: \headheight is too small (0.0pt): 
-(fancyhdr)                Make it at least 12.0pt, for example:
-(fancyhdr)                \setlength{\headheight}{12.0pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-12.0pt}.
-
-
-Package fancyhdr Warning: \footskip is too small (11.2459pt): 
-(fancyhdr)                Make it at least 12.0pt, for example:
-(fancyhdr)                \setlength{\footskip}{12.0pt}.
-
-[36
-
-]
-
-Package fancyhdr Warning: \headheight is too small (0.0pt): 
-(fancyhdr)                Make it at least 12.0pt, for example:
-(fancyhdr)                \setlength{\headheight}{12.0pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-12.0pt}.
-
-
-Package fancyhdr Warning: \footskip is too small (11.2459pt): 
-(fancyhdr)                Make it at least 12.0pt, for example:
-(fancyhdr)                \setlength{\footskip}{12.0pt}.
-
-[37
-
-]
-
-Package fancyhdr Warning: \headheight is too small (0.0pt): 
-(fancyhdr)                Make it at least 12.0pt, for example:
-(fancyhdr)                \setlength{\headheight}{12.0pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-12.0pt}.
-
-
-Package fancyhdr Warning: \footskip is too small (11.2459pt): 
-(fancyhdr)                Make it at least 12.0pt, for example:
-(fancyhdr)                \setlength{\footskip}{12.0pt}.
-
-[38
-
-]
-
-Package fancyhdr Warning: \headheight is too small (0.0pt): 
-(fancyhdr)                Make it at least 12.0pt, for example:
-(fancyhdr)                \setlength{\headheight}{12.0pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-12.0pt}.
-
-
-Package fancyhdr Warning: \footskip is too small (11.2459pt): 
-(fancyhdr)                Make it at least 12.0pt, for example:
-(fancyhdr)                \setlength{\footskip}{12.0pt}.
-
-[39
-
-]
-
-Package fancyhdr Warning: \headheight is too small (0.0pt): 
-(fancyhdr)                Make it at least 12.0pt, for example:
-(fancyhdr)                \setlength{\headheight}{12.0pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-12.0pt}.
-
-
-Package fancyhdr Warning: \footskip is too small (11.2459pt): 
-(fancyhdr)                Make it at least 12.0pt, for example:
-(fancyhdr)                \setlength{\footskip}{12.0pt}.
-
-[40
-
-]
-
-Package fancyhdr Warning: \headheight is too small (0.0pt): 
-(fancyhdr)                Make it at least 12.0pt, for example:
-(fancyhdr)                \setlength{\headheight}{12.0pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-
-(fancyhdr)                \addtolength{\topmargin}{-12.0pt}.
-
-
-Package fancyhdr Warning: \footskip is too small (11.2459pt): 
-(fancyhdr)                Make it at least 12.0pt, for example:
-(fancyhdr)                \setlength{\footskip}{12.0pt}.
-
-[41
-
-]
 \tf@nav=\write9
 \openout9 = `C10-cours.nav'.
 
@@ -2563,10 +2359,10 @@ Package rerunfilecheck Info: File `C10-cours.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 62259 strings out of 478023
- 1427169 string characters out of 5841208
- 2313330 words of memory out of 5000000
- 79669 multiletter control sequences out of 15000+600000
+ 62222 strings out of 478023
+ 1426265 string characters out of 5841208
+ 2304330 words of memory out of 5000000
+ 79649 multiletter control sequences out of 15000+600000
  482918 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  128i,16n,122p,676b,1733s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -2583,10 +2379,10 @@ fss1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss1200.pfb></usr/sh
 are/texmf/fonts/type1/public/cm-super/sfss1440.pfb></usr/share/texmf/fonts/type
 1/public/cm-super/sfsx1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sf
 sx1440.pfb>
-Output written on C10-cours.pdf (41 pages, 268634 bytes).
+Output written on C10-cours.pdf (33 pages, 233360 bytes).
 PDF statistics:
- 821 PDF objects out of 1000 (max. 8388607)
- 472 compressed objects within 5 object streams
- 83 named destinations out of 1000 (max. 500000)
- 1631 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 609 PDF objects out of 1000 (max. 8388607)
+ 358 compressed objects within 4 object streams
+ 67 named destinations out of 1000 (max. 500000)
+ 1104 words of extra memory for PDF output out of 10000 (max. 10000000)
 

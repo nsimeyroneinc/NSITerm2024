@@ -78,7 +78,9 @@ def define_env(env):
         7 : ["algorithmique","Algorithmes de tri",1,"Algo/T5_2_algo_tri.md"],
         8 : ["algorithmique","Diviser pour régner",1,"Algo/T5_3_Diviser_pour_regner.md"],
         9 : ["sd","Les Dictionnaires - Révision",1,"StructureDonnees/T4_1_Dictionnaires.md"],
-        10 : ["sd","Les arbres",2,"StructureDonnees/T3_1_arbre.md"]
+        10 : ["sd","Les arbres",2,"StructureDonnees/T3_1_arbre.md"],
+        #11: ["algorithmique","Algorithmes sur les arbres",2,"algoarbre.md"]
+        12: ["algorithmique","arbres binaires de recherche",1,"T3_3_arbre_recherche.md"]
         #6 : ["os","Protocole de Routage",1,""],
         #7 : ["python","Notions de programmation orienté objet",2,"poo.md"],
         #8 : ["sd","Structures de données linéaires",2,"sl.md"],

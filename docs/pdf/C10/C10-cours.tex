@@ -28,22 +28,6 @@
 	\end{alertblock}
 \end{frame}
 
-% Exemple
-\begin{frame}
-	\mframe{\AB}
-	\begin{exampleblock}{Exemple}
-		On représente l'organigramme d'une société par un arbre :
-		\begin{center}
-			\includegraphics[scale=0.3]{org.gv.eps}
-		\end{center}
-		\begin{itemize}[label=\textbullet]
-			\item<2-> Citer trois noeuds de cet arbre.
-			\item<3-> Donner la racine de cet arbre.
-			\item<4-> Donner les feuilles de cet arbre.
-			\item<5-> Donner une branche de longueur 3 dans cet arbre
-		\end{itemize}
-	\end{exampleblock}
-\end{frame}
 
 % Définiton : taille, arité, hauteur
 \begin{frame}
@@ -58,13 +42,6 @@
 			      \onslide<6->{\begin{small} \textcolor{gray}{On parle aussi de l'arité (ou degré) d'un noeud, il s'agit alors du nombre de fils de ce noeud} \end{small}}
 		\end{itemize}
 	\end{alertblock}
-	\begin{exampleblock}{Exemple}
-		\begin{itemize}[label=\textbullet]
-			\item<7-> Quelle est la taille de l'arbre représentant l'organigramme d'une société ci-dessus ?
-			\item<8-> Sa hauteur ?
-			\item<9-> Son arité ?
-		\end{itemize}
-	\end{exampleblock}
 \end{frame}
 
 % Arbre binaire
@@ -159,7 +136,7 @@
 			\onslide<3-> \textcolor{gray}{L'implémentation de ce parcours peut 
 			se faire à l'aide d'une file dans laquelle on stocke les noeuds 
 			restants à parcourir. A chaque fois qu'on traite un noeud, on le 
-			defile et on enfile ses fils (voir la fiche d'activité).}
+			defile et on enfile ses fils.}
 			\item<3-> En profondeur, on tire alors partie de la structure 
 			récursive des arbres. Pour parcourir l'arbre $T=(e,sag,sad)$ on 
 			doit relancer le parcours sur $sag$ et $sad$. On distingue alors 

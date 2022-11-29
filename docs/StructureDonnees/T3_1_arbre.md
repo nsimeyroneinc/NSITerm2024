@@ -289,7 +289,23 @@ Un parcours préfixe commencera toujours par la racine, alors qu'un parcours pos
 
 !!! exo "Exercice"
     === "Énoncé" 
-        ![exo_parcours.png](data/exo_parcours.png){:.center}
+        ```mermaid
+        graph TD  
+            A(1) --> B(2) 
+            B --> C(4)
+            B --> D(5)
+            A --> E(3)
+            D --> F(7)
+            D --> G(8)
+            E --> H(" ")
+            E --> I(6)
+            I --> J(9)
+            I --> K(" ")
+            linkStyle 6 stroke-width:0px;
+            style H opacity:0;
+            linkStyle 9 stroke-width:0px;
+            style K opacity:0;
+        ```
 
         Donner le rendu de chaque parcours :
 
@@ -328,6 +344,24 @@ Un parcours préfixe commencera toujours par la racine, alors qu'un parcours pos
 
 !!! exo "Exercice"
     === "Énoncé"
+        ```mermaid
+        graph TD  
+            A(9) --> B(8) 
+            B --> C(6)
+            B --> D(2)
+            A --> E(7)
+            D --> F(1)
+            D --> G(" ")
+            E --> H(" ")
+            E --> I(5)
+            I --> J(4)
+            I --> K(3)
+            linkStyle 5 stroke-width:0px;
+            style G opacity:0;
+            linkStyle 6 stroke-width:0px;
+            style H opacity:0;
+        ```
+
         Donner le rendu de chaque parcours :
 
         1. Parcours en largeur 
@@ -361,7 +395,7 @@ Un parcours préfixe commencera toujours par la racine, alors qu'un parcours pos
 
 
 
-    ![exo_2.png](data/exo_2.png)
+    
 
 
 ## Cours
