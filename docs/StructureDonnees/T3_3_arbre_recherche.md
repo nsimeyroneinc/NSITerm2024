@@ -87,7 +87,7 @@ False
 ```
 
 
-### 5.2 Rechercher une clé dans un ABR
+### Rechercher une clé dans un ABR
 
 Un arbre binaire de taille $n$ contient $n$ clés (pas forcément différentes). Pour savoir si une valeur particulière fait partie des clés, on peut parcourir tous les nœuds de l'arbre, jusqu'à trouver (ou pas) cette valeur dans l'arbre. Dans le pire des cas, il faut donc faire $n$ comparaisons.
 
