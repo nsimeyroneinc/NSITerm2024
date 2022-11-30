@@ -767,7 +767,7 @@ Pour cela, on modifie la structure précédente en ajoutant une clé `surChemin`
 La clé `surChemin` est initialisée à False pour tous les nœuds.  
 ```python
 arbre = {'etiquette': 'valeur' ,
-        'surChemin ': False ,
+        'surChemin': False ,
         'sag': 'sous-arbre gauche' ,
         'sad': 'sous-arbre droit' }
 ```

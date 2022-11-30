@@ -57,7 +57,6 @@ def parcours(arb):
 def parcours_maladies(arb): 
         if arb=={}: 
             return None 
-        print('intermediaire : ',arb['etiquette'])
         parcours_maladies (arb['sag']) 
         parcours_maladies (arb['sad']) 
         if arb['sag'] == {} and arb['sad'] == {}: 
@@ -65,44 +64,44 @@ def parcours_maladies(arb):
 
 
 arb_decision={'etiquette' :'Conjonctivie jaune',
-    'surChemin ': False ,
+    'surChemin': False ,
     'sag':{'etiquette' :'hypercaroténémie',
-        'surChemin ': False ,
+        'surChemin': False ,
         'sag':{},
         'sad':{}
           },
     'sad' : {'etiquette' : 'bilirubine',
-        'surChemin ': False ,
+        'surChemin': False ,
             'sag' : {'etiquette' : 'spiénomégalie',
-                'surChemin ': False ,
+                'surChemin': False ,
                'sag' : {'etiquette' : 'maladie de Gilbert par défaut de glycuro-conjugaison',
-                   'surChemin ': False ,
+                   'surChemin': False ,
                     'sag' : {},
                     'sad' : {}}
                     },
                'sad' : {'etiquette' : 'anémie hémolytique',
-                    'surChemin ': False ,
+                    'surChemin': False ,
                     'sag' : {},
                     'sad' : {}
                     }
                 },
             'sad' : {'etiquette' : 'hépatomégalie',
-                'surChemin ': False ,
+                'surChemin': False ,
                 'sag' : {'etiquette' : 'hépatie',
-                    'surChemin ': False ,
+                    'surChemin': False ,
                     'sag' : {},
                     'sad' : {}
                         },
                 'sad' : { 'etiquette' : 'douleur et fièvre',
-                    'surChemin ': False ,
+                    'surChemin': False ,
                     'sag' : {'etiquette' : 'cancer de la tête du pancréas',
-                        'surChemin ': False ,
+                        'surChemin': False ,
                         'sag' : {},
                         'sad' : {}
                             }
                         },
                     'sad' : {'etiquette' : 'lithiase du cholédoque',
-                    'surChemin ': False ,
+                    'surChemin': False ,
                         'sag' : {},
                         'sad' : {}
                             }
@@ -131,7 +130,7 @@ def symptomes(arb, mal):
             print('pas de ',arb['etiquette']) 
             arb['surChemin'] = True
 
-print(arb_decision)
+#print(arb_decision)
 #parcours(arbre1)
-parcours_maladies(arbre1)
-symptomes(arb_decision, "anémie hémolytique")
+#parcours_maladies(arbre1)
+symptomes(arb_decision, 'anémie hémolytique')
