@@ -778,26 +778,4 @@ def symptomes(arb, mal):
 ??? success "Réponse"
     {{ correction(False, 
     "
-    ```python linenums="1"
-    def symptomes(arb, mal): 
-        if arb['sag'] != {}: 
-            symptomes(arb['sag'], mal) 
-
-        if arb['sad'] != {}: 
-            symptomes(arb['sad'], mal) 
-
-        if arb['etiquette'] == mal: 
-            arb['surChemin'] = True 
-            print('symptômes de', arb['etiquette'],':') 
-
-        else : 
-            if arb['sad'] != {} and arb['sad']['surChemin']: 
-                print(arb['etiquette']) 
-                arb['surChemin'] = True 
-
-            if arb['sag'] != {} and arb['sag']['surChemin']: 
-                print('pas de ',arb['etiquette']) 
-                arb['surChemin'] = True
-    ```
-
     ")}}
