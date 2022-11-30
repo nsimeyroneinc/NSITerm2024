@@ -549,8 +549,7 @@ graph TD
     N8 --> |oui| N10("lithiase <br> du cholédoque")
 ```
 
-_Arbre de décision en présence d’une jaunisse   
-(peau anormalement jaune) chez un patient._
+_Arbre de décision en présence d’une jaunisse (peau anormalement jaune) chez un patient._
 
 
 **Rappels :**
@@ -568,29 +567,29 @@ Dans l’arbre de décision en présence d’une jaunisse chez un patient,
 - un nœud représente un symptôme dont le médecin doit étudier la présence ou l’absence ; la réponse ne peut être que oui ou non ;  
 - le sous-arbre gauche d’un nœud donné décrit la démarche à adopter si le symptôme est absent ;  
 - le sous-arbre droit d’un nœud donné décrit la démarche à adopter si le symptôme est présent ;  
-- l'étiquette d'une feuille est la maladie induite par le chemin parcouru.  
+- l'étiquette d'une feuille est la maladie induite par le chemin parcouru.
+
+Questions : 
 
 1. Déterminer la taille et la hauteur de l’arbre donné en exemple en introduction (arbre de décision en présence d’une jaunisse).  
 
-??? success "Réponse"
-    {{ correction(True, 
-    "
-    - Taille = 11  
-    - hauteur = 5
-    ")}}
+
+    ??? success "Réponse"
+        {{ correction(True, 
+        "
+        - Taille = 11  
+        - hauteur = 5
+        ")}}
 
 
 2. On choisit d’implémenter un arbre binaire à l’aide d’un dictionnaire.  
-
 ```python
 arbre_vide = {}
 arbre = {'etiquette': 'valeur' ,
         'sag': sous_arbre_gauche ,
         'sad': sous_arbre_droit }
 ```
-
-Le code ci-dessous représente un arbre selon le modèle précédent.
-
+Le code ci-dessous représente un arbre selon le modèle précédent.  
 ```python
 {'etiquette' :'a',
     'sag':{'etiquette' :'b',
@@ -604,82 +603,101 @@ Le code ci-dessous représente un arbre selon le modèle précédent.
             'sad' : {}},
         'sad' : {} }}
 ```
+    a. À quelle représentation graphique correspond la structure implémentée ci-dessus ?   
+    - arbre 1 :  
+        ```mermaid
+        graph TD  
+            A("a") --> B("b") 
+            B --> d("d")
+            B --> d1(" ")
+            A --> F("f")
+            F --> G("g")
+            F --> G1(" ")
+            linkStyle 2 stroke-width:0px;
+            style d1 opacity:0;
+            linkStyle 5 stroke-width:0px;
+            style G1 opacity:0;
+        ```
 
-a. À quelle représentation graphique correspond la structure implémentée ci-dessus ?  
+    - arbre 2 :  
+        ```mermaid
+        graph TD
+            A("a") --> B("b") 
+            B --> d(" ")
+            B --> d1("d")
+            A --> F("f")
+            F --> G("g")
+            F --> G1(" ")
+            linkStyle 1 stroke-width:0px;
+            style d opacity:0;
+            linkStyle 5 stroke-width:0px;
+            style G1 opacity:0;
+        ```
 
-- arbre 1 :  
-```mermaid
-graph TD  
-    A("a") --> B("b") 
-    B --> d("d")
-    B --> d1(" ")
-    A --> F("f")
-    F --> G("g")
-    F --> G1(" ")
-    linkStyle 2 stroke-width:0px;
-    style d1 opacity:0;
-    linkStyle 5 stroke-width:0px;
-    style G1 opacity:0;
-```
+    - arbre 3 :    
+        ```mermaid
+        graph TD
+            A("a") --> B("b") 
+            B --> d(" ")
+            B --> d1("d")
+            A --> F("f")
+            F --> G(" ")
+            F --> G1("g")
+            linkStyle 1 stroke-width:0px;
+            style d opacity:0;
+            linkStyle 4 stroke-width:0px;
+            style G opacity:0;
+        ```
 
-- arbre 2 :  
-```mermaid
-graph TD
-    A("a") --> B("b") 
-    B --> d(" ")
-    B --> d1("d")
-    A --> F("f")
-    F --> G("g")
-    F --> G1(" ")
-    linkStyle 1 stroke-width:0px;
-    style d opacity:0;
-    linkStyle 5 stroke-width:0px;
-    style G1 opacity:0;
-```
+    ??? success "Réponse"
+        {{ correction(True, 
+        "
+        Arbre 2 
+        ")}}
 
-- arbre 3 :    
-```mermaid
-graph TD
-    A("a") --> B("b") 
-    B --> d(" ")
-    B --> d1("d")
-    A --> F("f")
-    F --> G(" ")
-    F --> G1("g")
-    linkStyle 1 stroke-width:0px;
-    style d opacity:0;
-    linkStyle 4 stroke-width:0px;
-    style G opacity:0;
-```
-
-??? success "Réponse"
-    {{ correction(True, 
-    "
-    Arbre 2 
-    ")}}
-
-b. Représenter graphiquement l’arbre correspondant au code ci-dessous.
-```python 
-{'etiquette' :'H',
-'sag':{ 'etiquette' :'G',
-'sag': {'etiquette' : 'E',
-'sag' : {},
-'sad' : {}},
-'sad' : {'etiquette' : 'D',
-'sag' : {},
-'sad' : {'etiquette' : 'B',
-'sag' : {},
-'sad' : {} }}},
-'sad': {'etiquette' :'F',
-'sag' : {'etiquette' : 'C',
-'sag' : {},
-'sad' : {'etiquette' : 'A',
-'sag' : {} ,
-'sad' : {}}},
-'sad' : {} }}
-```
+    b. Représenter graphiquement l’arbre correspondant au code ci-dessous.
+        ```python 
+        {'etiquette' :'H',
+        'sag':{ 'etiquette' :'G',
+        'sag': {'etiquette' : 'E',
+        'sag' : {},
+        'sad' : {}},
+        'sad' : {'etiquette' : 'D',
+        'sag' : {},
+        'sad' : {'etiquette' : 'B',
+        'sag' : {},
+        'sad' : {} }}},
+        'sad': {'etiquette' :'F',
+        'sag' : {'etiquette' : 'C',
+        'sag' : {},
+        'sad' : {'etiquette' : 'A',
+        'sag' : {} ,
+        'sad' : {}}},
+        'sad' : {} }}
+        ```
 
 
+
+    ??? success "Réponse"
+        ```mermaid
+        graph TD  
+            H("H") --> G("G") 
+            G --> E("E")
+            G --> D("D")
+            H --> F("F")
+            F --> C("C")
+            F --> F1(" ")
+            D --> D1(" ")
+            D --> B("B")
+            C --> C1(" ")
+            C --> A("A")
+            linkStyle 5 stroke-width:0px;
+            style F1 opacity:0;
+            linkStyle 6 stroke-width:0px;
+            style D1 opacity:0;
+            linkStyle 8 stroke-width:0px;
+            style C1 opacity:0;
+        ```
 
 3. La fonction parcours(arb) ci-dessous permet de réaliser le parcours des nœuds d’un arbre binaire arb donné en argument.  
 ```python
@@ -690,44 +708,43 @@ def parcours(arb):
     parcours(arb['sad'])
     print(arb['etiquette'])
 ```
-a. Donner l'affichage après l'appel de la fonction parcours avec l'arbre dont une représentation graphique est ci-dessous.   
 
-```mermaid
-graph TD  
-    A("a") --> B("b") 
-    B --> d("d")
-    B --> d1(" ")
-    A --> F("f")
-    F --> G("g")
-    F --> G1(" ")
-    linkStyle 2 stroke-width:0px;
-    style d1 opacity:0;
-    linkStyle 5 stroke-width:0px;
-    style G1 opacity:0;
-```
+    a. Donner l'affichage après l'appel de la fonction parcours avec l'arbre dont une représentation graphique est ci-dessous.   
 
-??? success "Réponse"
-    {{ correction(True, 
-    "
-    Parcours suffixe : d-b-g-f-a
-    ")}}
-
-b. Écrire une fonction `parcours_maladies(arb)` qui n’affiche que les feuilles de l’arbre binaire non vide arb passé en argument, ce qui correspond aux maladies possiblement induites par l’arbre de décision.
-
-
-??? success "Réponse"
-    {{ correction(False, 
-    "
-    ```python
-    def parcours_maladies(arb): 
-        if arb=={}: 
-            return None 
-        parcours_maladies (arb['sag']) 
-        parcours_maladies (arb['sad']) 
-        if arb['sag'] == {} and arb['sad'] == {}: 
-            print(arb['etiquette'])
+    ```mermaid
+    graph TD  
+        A("a") --> B("b") 
+        B --> d("d")
+        B --> d1(" ")
+        A --> F("f")
+        F --> G("g")
+        F --> G1(" ")
+        linkStyle 2 stroke-width:0px;
+        style d1 opacity:0;
+        linkStyle 5 stroke-width:0px;
+        style G1 opacity:0;
     ```
-    ")}}
+
+    ??? success "Réponse"
+        {{ correction(True, 
+        "
+        Parcours suffixe : d-b-g-f-a
+        ")}}
+
+    b. Écrire une fonction `parcours_maladies(arb)` qui n’affiche que les feuilles de l’arbre binaire non vide arb passé en argument, ce qui correspond aux maladies possiblement induites par l’arbre de décision.
+
+
+    ??? success "Réponse"
+        ```python
+        def parcours_maladies(arb): 
+            if arb=={}: 
+                return None 
+            parcours_maladies (arb['sag']) 
+            parcours_maladies (arb['sad']) 
+            if arb['sag'] == {} and arb['sad'] == {}: 
+                print(arb['etiquette'])
+        ```
+
 
 4. On souhaite maintenant afficher l'ensemble des symptômes relatifs à une maladie. On considère la fonction `symptomes(arbre, mal)` avec comme argument arbre un arbre de décision binaire et mal le nom d'une maladie. 
 
@@ -776,6 +793,24 @@ def symptomes(arb, mal):
 
 
 ??? success "Réponse"
-    {{ correction(False, 
-    "
-    ")}}
+    ```python linenums="1"
+    def symptomes(arb, mal): 
+        if arb['sag'] != {}: 
+            symptomes(arb['sag'], mal) 
+
+        if arb['sad'] != {}: 
+            symptomes(arb['sad'], mal) 
+
+        if arb['etiquette'] == mal: 
+            arb['surChemin'] = True 
+            print('symptômes de', arb['etiquette'],':') 
+
+        else : 
+            if arb['sad'] != {} and arb['sad']['surChemin']: 
+                print(arb['etiquette']) 
+                arb['surChemin'] = True 
+
+            if arb['sag'] != {} and arb['sag']['surChemin']: 
+                print('pas de ',arb['etiquette']) 
+                arb['surChemin'] = True
+    ```
