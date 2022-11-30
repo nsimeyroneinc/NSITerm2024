@@ -571,6 +571,15 @@ Dans l’arbre de décision en présence d’une jaunisse chez un patient,
 - l'étiquette d'une feuille est la maladie induite par le chemin parcouru.  
 
 1. Déterminer la taille et la hauteur de l’arbre donné en exemple en introduction (arbre de décision en présence d’une jaunisse).  
+
+??? success "Réponse"
+    {{ correction(True, 
+    "
+    - Taille = 11  
+    - hauteur = 5
+    ")}}
+
+
 2. On choisit d’implémenter un arbre binaire à l’aide d’un dictionnaire.  
 
 ```python
@@ -597,6 +606,7 @@ Le code ci-dessous représente un arbre selon le modèle précédent.
 ```
 
 a. À quelle représentation graphique correspond la structure implémentée ci-dessus ?  
+
 - arbre 1 :  
 ```mermaid
 graph TD  
@@ -642,6 +652,12 @@ graph TD
     style G opacity:0;
 ```
 
+??? success "Réponse"
+    {{ correction(True, 
+    "
+    Arbre 2 
+    ")}}
+
 b. Représenter graphiquement l’arbre correspondant au code ci-dessous.
 ```python 
 {'etiquette' :'H',
@@ -662,6 +678,30 @@ b. Représenter graphiquement l’arbre correspondant au code ci-dessous.
 'sad' : {}}},
 'sad' : {} }}
 ```
+
+??? success "Réponse"
+    {{ correction(True, 
+    "
+    ```mermaid
+    graph TD  
+        H("H") --> G("G") 
+        G --> E("E")
+        G --> D("D")
+        H --> F("F")
+        F --> C("C")
+        F --> F1(" ")
+        D --> D1(" ")
+        D --> B("B")
+        C --> C1(" ")
+        C --> A("A")
+        linkStyle 5 stroke-width:0px;
+        style F1 opacity:0;
+        linkStyle 6 stroke-width:0px;
+        style D1 opacity:0;
+        linkStyle 8 stroke-width:0px;
+        style C1 opacity:0;
+    ```
+    ")}}
 
 3. La fonction parcours(arb) ci-dessous permet de réaliser le parcours des nœuds d’un arbre binaire arb donné en argument.  
 ```python
@@ -688,9 +728,31 @@ graph TD
     style G1 opacity:0;
 ```
 
+??? success "Réponse"
+    {{ correction(True, 
+    "
+    Parcours suffixe : d-b-g-f-a
+    ")}}
+
 b. Écrire une fonction `parcours_maladies(arb)` qui n’affiche que les feuilles de l’arbre binaire non vide arb passé en argument, ce qui correspond aux maladies possiblement induites par l’arbre de décision.
 
-4. On souhaite maintenant afficher l'ensemble des symptômes relatifs à une maladie. On considère la fonction `symptomes(arbre, mal)` avec comme argument arbre un arbre de décision binaire et mal le nom d'une maladie.  
+
+??? success "Réponse"
+    {{ correction(True, 
+    "
+    ```python
+    def parcours_maladies(arb): 
+        if arb=={}: 
+            return None 
+        parcours_maladies (arb['sag']) 
+        parcours_maladies (arb['sad']) 
+        if arb['sag'] == {} and arb['sad'] == {}: 
+            print(arb['etiquette'])
+    ```
+    ")}}
+
+4. On souhaite maintenant afficher l'ensemble des symptômes relatifs à une maladie. On considère la fonction `symptomes(arbre, mal)` avec comme argument arbre un arbre de décision binaire et mal le nom d'une maladie. 
+
 L'appel de cette fonction sur l'arbre de décision `arb_decision` de l'introduction fournit les affichages suivants.
 
 ```python
@@ -709,7 +771,9 @@ arbre = {'etiquette': 'valeur' ,
         'sag': 'sous-arbre gauche' ,
         'sad': 'sous-arbre droit' }
 ```
-Recopier et compléter les lignes 6, 8, 14 et 18 du code suivant sur votre copie.
+
+Recopier et compléter les lignes 6, 8, 14 et 18 du code suivant sur votre copie.  
+
 ``` python linenums="1"
 def symptomes(arb, mal):
     if arb['sag'] != {} :
@@ -731,3 +795,31 @@ def symptomes(arb, mal):
             print(...)
             arb['surChemin'] = True
 ```
+
+
+??? success "Réponse"
+    {{ correction(True, 
+    "
+    ```python linenums="1"
+    def symptomes(arb, mal): 
+        if arb['sag'] != {}: 
+            symptomes(arb['sag'], mal) 
+
+        if arb['sad'] != {}: 
+            symptomes(arb['sad'], mal) 
+
+        if arb['etiquette'] == mal: 
+            arb['surChemin'] = True 
+            print('symptômes de', arb['etiquette'],':') 
+
+        else : 
+            if arb['sad'] != {} and arb['sad']['surChemin']: 
+                print(arb['etiquette']) 
+                arb['surChemin'] = True 
+
+            if arb['sag'] != {} and arb['sag']['surChemin']: 
+                print('pas de ',arb['etiquette']) 
+                arb['surChemin'] = True
+    ```
+
+    ")}}

@@ -1,35 +1,19 @@
 ```mermaid
 graph TD  
-    A(9) --> B(8) 
-    B --> C(6)
-    B --> D(2)
-    A --> E(7)
-    D --> F(1)
-    D --> G(" ")
-    E --> H(" ")
-    E --> I(5)
-    I --> J(4)
-    I --> K(3)
+    H("H") --> G("G") 
+    G --> E("E")
+    G --> D("D")
+    H --> F("F")
+    F --> C("C")
+    F --> F1(" ")
+    D --> D1(" ")
+    D --> B("B")
+    C --> C1(" ")
+    C --> A("A")
     linkStyle 5 stroke-width:0px;
-    style G opacity:0;
+    style F1 opacity:0;
     linkStyle 6 stroke-width:0px;
-    style H opacity:0;
-```
-
-```mermaid
-graph TD  
-    A(9) --> B(8) 
-    B --> C(6)
-    B --> D(2)
-    A --> E(7)
-    D --> F(1)
-    D --> G(" ")
-    E --> H(" ")
-    E --> I(5)
-    I --> J(4)
-    I --> K(3)
-    linkStyle 5 stroke-width:0px;
-    style G opacity:0;
-    linkStyle 6 stroke-width:0px;
-    style H opacity:0;
+    style D1 opacity:0;
+    linkStyle 8 stroke-width:0px;
+    style C1 opacity:0;
 ```
