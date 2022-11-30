@@ -716,7 +716,7 @@ b. Écrire une fonction `parcours_maladies(arb)` qui n’affiche que les feuille
 
 
 ??? success "Réponse"
-    {{ correction(True, 
+    {{ correction(False, 
     "
     ```python
     def parcours_maladies(arb): 
@@ -776,7 +776,7 @@ def symptomes(arb, mal):
 
 
 ??? success "Réponse"
-    {{ correction(True, 
+    {{ correction(False, 
     "
     ```python linenums="1"
     def symptomes(arb, mal): 
