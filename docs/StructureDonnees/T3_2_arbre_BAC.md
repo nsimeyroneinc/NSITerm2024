@@ -679,29 +679,7 @@ b. Représenter graphiquement l’arbre correspondant au code ci-dessous.
 'sad' : {} }}
 ```
 
-??? success "Réponse"
-    {{ correction(True, 
-    "
-    ```mermaid
-    graph TD  
-        H("H") --> G("G") 
-        G --> E("E")
-        G --> D("D")
-        H --> F("F")
-        F --> C("C")
-        F --> F1(" ")
-        D --> D1(" ")
-        D --> B("B")
-        C --> C1(" ")
-        C --> A("A")
-        linkStyle 5 stroke-width:0px;
-        style F1 opacity:0;
-        linkStyle 6 stroke-width:0px;
-        style D1 opacity:0;
-        linkStyle 8 stroke-width:0px;
-        style C1 opacity:0;
-    ```
-    ")}}
+
 
 3. La fonction parcours(arb) ci-dessous permet de réaliser le parcours des nœuds d’un arbre binaire arb donné en argument.  
 ```python
@@ -738,7 +716,7 @@ b. Écrire une fonction `parcours_maladies(arb)` qui n’affiche que les feuille
 
 
 ??? success "Réponse"
-    {{ correction(True, 
+    {{ correction(False, 
     "
     ```python
     def parcours_maladies(arb): 
@@ -798,28 +776,6 @@ def symptomes(arb, mal):
 
 
 ??? success "Réponse"
-    {{ correction(True, 
+    {{ correction(False, 
     "
-    ```python linenums="1"
-    def symptomes(arb, mal): 
-        if arb['sag'] != {}: 
-            symptomes(arb['sag'], mal) 
-
-        if arb['sad'] != {}: 
-            symptomes(arb['sad'], mal) 
-
-        if arb['etiquette'] == mal: 
-            arb['surChemin'] = True 
-            print('symptômes de', arb['etiquette'],':') 
-
-        else : 
-            if arb['sad'] != {} and arb['sad']['surChemin']: 
-                print(arb['etiquette']) 
-                arb['surChemin'] = True 
-
-            if arb['sag'] != {} and arb['sag']['surChemin']: 
-                print('pas de ',arb['etiquette']) 
-                arb['surChemin'] = True
-    ```
-
     ")}}
