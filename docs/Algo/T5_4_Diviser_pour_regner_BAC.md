@@ -26,12 +26,13 @@ _Cet exercice porte sur l’algorithme de tri fusion, qui s’appuie sur la mét
         {{ correction(True, 
         "
         a. $O(nlog_2(n))$  
-        b. L’algorithme de tri par insertion a une complexité en temps dans le pire des cas en O(n2).
-        L’algorithme du tri par insertion est moins efficace que l’algorithme de tri fusion.
-        L’algorithme de tri fusion utilise deux fonctions moitie_gauche et moitie_droite qui prennent en argument une liste L et renvoient respectivement : 
+        b. L’algorithme de tri par insertion a une complexité en temps dans le pire des cas en $O(n^2)$.
+        L’algorithme du tri par insertion est moins efficace que l’algorithme de tri fusion.  
         "
         ) }}
 
+L’algorithme de tri fusion utilise deux fonctions moitie_gauche et moitie_droite qui prennent en argument une liste L et renvoient respectivement : 
+        
  - la sous-liste de L formée des éléments d’indice strictement inférieur à `len(L)//2` ;  
  - la sous-liste de L formée des éléments d’indice supérieur ou égal à `len(L)//2`.  
 

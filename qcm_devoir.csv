@@ -1,0 +1,5 @@
+num,enonce,reponseA,reponseB,reponseC,reponseD,bonne_reponse,domaine,chapitre,image
+1,"On applique l'algorithme du tri par sélection à la liste `[8,12,6,19]`, après la première étape, le contenu de la liste sera :","`[12,8,6,19]`","`[6,12,8,19]`","`[19,12,6,9]`",Aucune des propositions ci-dessus,B,Algorithmique,4,
+2,"On applique l'algorithme du tri par insertion à la liste `[9,11,7,16]`, quel sera le contenu de la liste après le premier échange ?","`[11,9,7,16]`","`[9,11,16,7]`","`[9,7,11,16]`",Aucune des propositions ci-dessus,C,Algorithmique,4,
+3,L'algorithme du tri par sélection a une complexité :,logarithmique,linéaire,quadratique,exponentielle,C,Algorithmique,4,
+4,"Un programme de tri par insertion prend environ 1/10 seconde pour trier une liste de $1\,000$ éléments, combien de temps prendra-t-il environ pour trier une liste de $100\,000$ éléments ?",1 seconde,10 secondes,100 secondes,1000 secondes,D,Algorithmique,4,

@@ -100,8 +100,8 @@ def define_env(env):
     env.variables['devoir_terminale']={
         1 : ["devoir","Langage SQL","","Evaluations/BDD_Devoir_Corrige.md"],
         #2 : ["devoir","Pile-File et Protocole de Routage",'16/11/2023',"Evaluations/DS_Pile_File_Routage.md"],
-        3 : ["devoir","Pile-File et Protocole de Routage",'16/11/2023',"Evaluations/DS_Pile_File_Routage.md"]
-        #3 : ["python","Récursivité",1,"Programmation/T1_1_Recursivite.md"],
+        3 : ["devoir","Pile-File et Protocole de Routage",'16/11/2023',"Evaluations/DS_Pile_File_Routage.md"],
+        4 : ["devoir","Les tris - Diviser pour régner","02/12/2023","Evaluations/DS_Diviser_pour_regner_tris.md"]
         #4 : ["sd","Programmation Orientée Objet",2,"StructureDonnees/T1_1_Programmation_Orientee_Objet.md"],
         #5 : ["os","Listes et Piles",2,"StructureDonnees/T2_1_Listes_Piles_et_Files.md"],
         #6 : ["os","Protocole de routage",1,"Archi_Materielle/T3_1_Routage.md"],
@@ -227,6 +227,54 @@ def define_env(env):
                 qcmc+=affiche_question(num,index)
                 index+=1
         return qcmc
+
+#---------------------------------------------- QCM sans réponse ---------------------------
+
+    with open("qcm_devoir.csv","r",encoding="utf-8") as f:
+        questions = list(csv.DictReader(f,delimiter=","))
+    env.variables['qcm']=questions
+
+    @env.macro
+    def affiche_question_devoir(num,index):
+        lenonce = env.variables.qcm[num]["enonce"]
+        # Traitement si enoncé sur plusieurs lignes
+        nl = lenonce.find('\n')
+        if nl>0:
+            lenonce=lenonce.replace("\n",'"\n',1)
+            lenonce=lenonce.replace("\n",'\n    ')
+        else:
+            lenonce+='"'
+        # Traitement si image
+        limg = env.variables.qcm[num]["image"]
+        if limg!='':
+            lenonce+=f'\n \t ![illustration](./images/C{env.variables.qcm[num]["chapitre"]}/{limg})'
+            lenonce+='{: .imgcentre}\n'
+        modele = f'''
+!!! fabquestion "**{index}.** {lenonce}
+    - [ ] a) {env.variables.qcm[num]["reponseA"]}
+    - [ ] b) {env.variables.qcm[num]["reponseB"]}
+    - [ ] c) {env.variables.qcm[num]["reponseC"]}
+    - [ ] d) {env.variables.qcm[num]["reponseD"]}
+'''
+        return modele
+
+    @env.macro
+    def affiche_qcm_devoir(liste_question):
+        qcm = ""
+        for index in range(len(liste_question)):
+            qcm+=affiche_question_devoir(liste_question[index],index+1)
+        return qcm
+    
+    @env.macro
+    def qcm_chapitre_devoir(num_chap):
+        index=1
+        qcmc=""
+        for num in range(len(env.variables.qcm)):
+            if int(env.variables.qcm[num]["chapitre"])==num_chap:
+                qcmc+=affiche_question_devoir(num,index)
+                index+=1
+        return qcmc
+#-------------------------------------    
 
     @env.macro
     def exo(titre,licones,numero=1):
