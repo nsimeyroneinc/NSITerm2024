@@ -197,7 +197,18 @@ Le tri par insertion est un algorithme efficace qui s'inspire de la façon dont 
                 liste[i + 1] = element_a_inserer
     ```
 
-
+??? success "Réponse"
+    ```python
+    def tri_insertion(liste):
+    for indice_courant in range(1, len(liste)):
+        element_a_inserer = liste[indice_courant]
+        i = indice_courant - 1
+        while i >= 0 and liste[i] > element_a_inserer:
+            liste[i+1] = liste[i]
+            i=i-1
+        liste[i + 1] = element_a_inserer
+    ```
+    
 On a écrit dans la console les instructions suivantes :
 ```python
 notes = [8, 7, 18, 14, 12, 9, 17, 3]
