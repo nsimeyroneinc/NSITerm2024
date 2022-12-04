@@ -1,19 +1,19 @@
 ```mermaid
 graph TD  
-    H("H") --> G("G") 
-    G --> E("E")
-    G --> D("D")
-    H --> F("F")
-    F --> C("C")
-    F --> F1(" ")
-    D --> D1(" ")
-    D --> B("B")
-    C --> C1(" ")
-    C --> A("A")
-    linkStyle 5 stroke-width:0px;
-    style F1 opacity:0;
-    linkStyle 6 stroke-width:0px;
-    style D1 opacity:0;
-    linkStyle 8 stroke-width:0px;
-    style C1 opacity:0;
+    A("Albert <br> Normand") --> B("Jules <br> Normand <br> Père") 
+    B --> D("Michel <br> Normand <br> (Père)")
+    B --> E("Hélène <br> Breton <br> (Mère)")
+    A --> C("Marie <br> Comtois <br> (Mère)")
+    C --> C1("Thibaut <br> Comtois <br> (Père)")
+    C --> C2("Gabrielle <br> Savoyard <br> (Mère)")
+    D --> D1("Jules <br> Normand <br> (Père)")
+    D --> D2("Odile <br> Picard <br> (Mère)")
+    E --> F("Evariste <br> Breton <br> (Père)")
+    E --> E1("Camèlia <br> Charentais <br> (Mère)")
+    C1 --> C3("Léo <br> Comtois <br> (Père)")
+    C1 --> C4("Eulalie <br> Lorrain <br> (Mère)")
+    C2 --> C5("Guillaume <br> Savoyard <br> (Père)")
+    C2 --> C6("Janet <br> Chesterfield <br> (Mère)")
 ```
+
+
