@@ -21,11 +21,8 @@ Les notebooks sont corrigés et les cellules peuvent être copiées pour être t
     - Les épreuves de spécialité se dérouleront les 20 et 21 mars 2023 pour la N.S.I.  
     - Les épreuves pratiques seront organisées je Jeudi 30 mars 2023.
 
-Le sujet de l’épreuve écrite de la spécialité numérique et sciences informatiques, comporte trois exercices indépendants les uns des autres, qui permettent d’évaluer les connaissances et compétences des candidats. Le sujet comprend obligatoirement au moins un exercice relatif à chacune des trois rubriques suivantes :   
-
-- traitement de données en tables et bases de données;  
-- architectures matérielles, systèmes d’exploitation et réseaux;   
-- algorithmique, langages et programmation.  
+!!! note 
+    Le sujet de l’épreuve écrite de la spécialité numérique et sciences informatiques, **comporte trois exercices indépendants les uns des autres**, qui permettent d’évaluer les connaissances et compétences des candidats. 
  
 ## Notions à l'épreuve écrite de Mars 2023 (mis à jours 30/09/2022): 
 
