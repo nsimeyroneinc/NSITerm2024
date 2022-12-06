@@ -196,7 +196,36 @@ a.right.right = Arbre(8)
 
 La valeur 4 a donc bien été insérée au bon endroit.
 
+## Exercices : 
 
+!!! exo 
+    1. Dessiner un arbre binaire de recherche *complet*, contenant les valeurs suivantes : 2,7,10,15,19,24,25.
+    2. Même question lorsque l'arbre à la structure suivante :
+    ```mermaid
+        graph TD
+        A[" "] --> B[" "]
+        A --> C[" "]
+        B --> D[" "]
+        B --> E[" "]
+        C --> V1[" "]
+        C --> F[" "]
+        D --> V2[" "]
+        D --> G[" "]
+        style V1 fill:#FFFFFF, stroke:#FFFFFF
+        linkStyle 4 stroke:#FFFFFF,stroke-width:0px
+        style V2 fill:#FFFFFF, stroke:#FFFFFF
+        linkStyle 6 stroke:#FFFFFF,stroke-width:0px
+    ```
+
+!!! exo "Tri par arbre binaire de recherche"
+
+    On souhaite trier un ensemble de valeurs entières distinctes grâce à un arbre binaire de
+    recherche. Pour cela, on ajoute un à un les éléments de l’ensemble dans un arbre
+    initialement vide. Il ne reste plus qu’à parcourir l’arbre afin de lire et de stocker dans un
+    tableau résultat les valeurs dans l’ordre croissant.
+
+    Donner le nom du parcours qui permet de visiter les valeurs d’un arbre binaire de
+    recherche dans l’ordre croissant.
 
 ---
 ## Bibliographie
