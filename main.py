@@ -137,8 +137,8 @@ def define_env(env):
         #7 : ["python","Notions de programmation orienté objet",2,"poo.md"],
         8 : ["BAC","Diviser pour régner",2,"Algo/T5_4_Diviser_pour_regner_BAC.md"],
         10 : ["BAC","Les arbres - Partie 1",1,"StructureDonnees/T3_2_arbre_BAC.md"],
-        11 : ["BAC","Algorihtmes Arbres Binaires",1,"Algo/T5_6_algo_arbre_BAC.md"]
-        #11 : ["db","Schéma relationnel d'une base de données",2,"sgbd.md"],
+        11 : ["BAC","Algorihtmes Arbres Binaires",1,"Algo/T5_6_algo_arbre_BAC.md"],
+        12 : ["BAC","Arbres Binaires de Recherche",2,"StructureDonnees/T3_4_arbre_recherche_BAC.md"]
         #12: ["algorithmique","Algorithmes sur les arbres",2,"algoarbre.md"],
         #13: ["sd","Graphes",2,"graphes.md"],
         #14: ["os","Protocoles de routage",2,"routage.md"],
