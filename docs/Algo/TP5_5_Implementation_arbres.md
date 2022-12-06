@@ -91,9 +91,9 @@ a = Arbre(4)
 a.ajout_gauche(Arbre(3))
 a.ajout_droit(Arbre(1))
 a.get_droit().ajout_gauche(Arbre(2))
-a.get_right().ajout_droit(Arbre(7))
-a.get_left().ajout_gauche(Arbre(6))
-a.get_right().get_right().ajout_gauche(Arbre(9))
+a.get_droit().ajout_droit(Arbre(7))
+a.get_gauche().ajout_gauche(Arbre(6))
+a.get_droit().get_droit().ajout_gauche(Arbre(9))
 a.affiche()
 ```
 
