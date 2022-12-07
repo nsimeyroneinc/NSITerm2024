@@ -145,7 +145,7 @@ Enfin, la plus graande somme racine-feuille d'un arbre est la plus grande somme 
 
 
 !!! fabquestion "Question 3"
-    S'inspirer du code de la méthode `niveau` pour écrire une méthode récursive `gde_somme` qui renvoie la plus grande somme racine-feuille d'un arbre.
+    S'inspirer du code de la méthode `niveau` pour écrire une méthode récursive `pgde_somme` qui renvoie la plus grande somme racine-feuille d'un arbre.
 
 ??? success "Réponse"
     ```python
@@ -167,7 +167,7 @@ Enfin, la plus graande somme racine-feuille d'un arbre est la plus grande somme 
     a. Recopier et compléter l'arbre ci-dessous pour qu'il soit magique.
     ```mermaid
     graph TD  
-        A("2") --> B("...") 
+        A("5") --> B("...") 
         B --> D("4")
         B --> E("...")
         A --> C("5")
@@ -176,7 +176,7 @@ Enfin, la plus graande somme racine-feuille d'un arbre est la plus grande somme 
         D --> D1("2")
         D --> D2("...")
         E --> F("...")
-        E --> E1("5")
+        E --> E1("3")
         linkStyle 8 stroke-width:0px;
         style F opacity:0;
         C1 --> C3("...")
@@ -197,7 +197,7 @@ Enfin, la plus graande somme racine-feuille d'un arbre est la plus grande somme 
     a. Arbre complété :
     ```mermaid
         graph TD
-        A["5"] --> B["3"]
+        A["2"] --> B["3"]
         A --> C["5"]
         B --> D["4"]
         B --> E["3"]
@@ -206,7 +206,7 @@ Enfin, la plus graande somme racine-feuille d'un arbre est la plus grande somme 
         D --> H["2"]
         D --> I["2"]
         E --> V1[" "]
-        E --> J["3"]
+        E --> J["5"]
         F --> V2[" "]
         F --> K["1"]
         style V1 opacity:0;
