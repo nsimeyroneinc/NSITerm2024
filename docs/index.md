@@ -15,7 +15,10 @@ Les notebooks sont corrigés et les cellules peuvent être copiées pour être t
 ### Liste des chapitres 
 
 {{ affiche_progression("terminale") }}
-    
+
+### Liste des sujets BAC
+
+{{ affiche_BAC("terminale") }}
 
 !!! info  "Epreuve BAC 2023"  
     - Les épreuves de spécialité se dérouleront les 20 et 21 mars 2023 pour la N.S.I.  
