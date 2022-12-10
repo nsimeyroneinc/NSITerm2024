@@ -59,7 +59,7 @@ L = [3, 5, 2, 7, 1, 9, 0]
 
 
 
-#tri_fusion([7, 4, 2, 1, 8, 5, 6, 3])
+tri_fusion([9,5,3,1,7,6,10,3])
 
 def tri_insertion(liste):
     for indice_courant in range(1, len(liste)):

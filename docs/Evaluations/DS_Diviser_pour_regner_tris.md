@@ -87,13 +87,13 @@ def tri_fusion(L):
 
 ??? success "Réponse"
     ```python
-    [7, 4, 2, 1, 8, 5, 6, 3]
-    [7, 4, 2, 1]
-    [7, 4]
-    [2, 1]
-    [8, 5, 6, 3]
-    [8, 5]
-    [6, 3]   
+    [9, 5, 3, 1, 7, 6, 10, 3]
+    [9, 5, 3, 1]
+    [9, 5]
+    [3, 1]
+    [7, 6, 10, 3]
+    [7, 6]
+    [10, 3]  
     ``` 
 
 
@@ -153,7 +153,7 @@ On s’intéresse désormais à différentes fonctions appelées par `tri_fusion
 
 ??? success "Réponse"
 
-    ```python
+    ```python linenums="1" hl_lines="7 9 10 17 18 19 20 21 22"
     def fusion(L1, L2):
         L=[]
         n1 = len(L1)

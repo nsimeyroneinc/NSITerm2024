@@ -109,7 +109,7 @@ geometry:
         ```
 
     === "Solution" 
-        ```python
+        ```python linenums="1" hl_lines="7 8 10 12 13  14 16 17"
         def dichotomie(tab, x):
             """
             tab : tableau d’entiers trié dans l’ordre croissant

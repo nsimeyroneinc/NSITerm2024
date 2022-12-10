@@ -104,7 +104,7 @@ geometry:
         ```
 
     === "Solution"
-        ```python
+        ```python linenums="1" hl_lines="2 4 5 7 13 14 15 16"
         def depouille(urne):
             resultat = {}
             for bulletin in urne:
