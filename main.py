@@ -231,12 +231,12 @@ def define_env(env):
 #---------------------------------------------- QCM sans réponse ---------------------------
 
     with open("qcm_devoir.csv","r",encoding="utf-8") as f:
-        questions = list(csv.DictReader(f,delimiter=","))
-    env.variables['qcm']=questions
+        questions_devoir = list(csv.DictReader(f,delimiter=","))
+    env.variables['qcm_devoir']=questions_devoir
 
     @env.macro
     def affiche_question_devoir(num,index):
-        lenonce = env.variables.qcm[num]["enonce"]
+        lenonce = env.variables.qcm_devoir[num]["enonce"]
         # Traitement si enoncé sur plusieurs lignes
         nl = lenonce.find('\n')
         if nl>0:
@@ -247,30 +247,30 @@ def define_env(env):
         # Traitement si image
         limg = env.variables.qcm[num]["image"]
         if limg!='':
-            lenonce+=f'\n \t ![illustration](./images/C{env.variables.qcm[num]["chapitre"]}/{limg})'
+            lenonce+=f'\n \t ![illustration](./images/C{env.variables.qcm_devoir[num]["chapitre"]}/{limg})'
             lenonce+='{: .imgcentre}\n'
         modele = f'''
 !!! fabquestion "**{index}.** {lenonce}
-    - [ ] a) {env.variables.qcm[num]["reponseA"]}
-    - [ ] b) {env.variables.qcm[num]["reponseB"]}
-    - [ ] c) {env.variables.qcm[num]["reponseC"]}
-    - [ ] d) {env.variables.qcm[num]["reponseD"]}
+    - [ ] a) {env.variables.qcm_devoir[num]["reponseA"]}
+    - [ ] b) {env.variables.qcm_devoir[num]["reponseB"]}
+    - [ ] c) {env.variables.qcm_devoir[num]["reponseC"]}
+    - [ ] d) {env.variables.qcm_devoir[num]["reponseD"]}
 '''
         return modele
 
     @env.macro
-    def affiche_qcm_devoir(liste_question):
-        qcm = ""
-        for index in range(len(liste_question)):
-            qcm+=affiche_question_devoir(liste_question[index],index+1)
-        return qcm
+    def affiche_qcm_devoir(liste_question_devoir):
+        qcm_devoir = ""
+        for index in range(len(liste_question_devoir)):
+            qcm_devoir+=affiche_question_devoir(liste_question_devoir[index],index+1)
+        return qcm_devoir
     
     @env.macro
     def qcm_chapitre_devoir(num_chap):
         index=1
         qcmc=""
-        for num in range(len(env.variables.qcm)):
-            if int(env.variables.qcm[num]["chapitre"])==num_chap:
+        for num in range(len(env.variables.qcm_devoir)):
+            if int(env.variables.qcm_devoir[num]["chapitre"])==num_chap:
                 qcmc+=affiche_question_devoir(num,index)
                 index+=1
         return qcmc

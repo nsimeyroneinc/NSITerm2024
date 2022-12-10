@@ -89,7 +89,7 @@ Enfin, la plus graande somme racine-feuille d'un arbre est la plus grande somme 
             self.sad = None
         
         def niveau(self):
-            if self.sag != None ans self.sad != None:
+            if self.sag != None and self.sad != None:
                 hg = self.sag.niveau()
                 hd = self.sad.niveau()
                 return 1 + max(hg,hd)
@@ -489,6 +489,8 @@ class Bim:
     
     a. Dans cette question, on suppose que l'arbre binaire abr a la forme ci-dessous : 
     
+    ![](data/exo5_1.png)
+
     Donner la liste les biens b1, b2, b3, b4, b5, b6 triée dans l'ordre croissant de leur surface.  
     b. Recopier et compléter le code de la fonction récursive contient donnée ci-dessous, qui prend en arguments un nombre surface de type float et un arbre binaire de recherche abr contenant des éléments de type Bim ordonnés selon leur attribut de surface sf. La fonction `contient(surface, abr)` renvoie `True` s'il existe un bien dans abr d'une surface supérieure ou égale à surface et `False` sinon.  
     ```python
@@ -503,7 +505,7 @@ class Bim:
 
 
 ??? success "Réponse"
-    a. on effectue un parcours infixe : b2 - b4 - b1 - b5 - b3 - b6  
+    a. on effectue un parcours infixe : b2 - b4 - b1 - b5 - b3 - b6    
     b. 
     ```python
     def contient(surface,abr): 
