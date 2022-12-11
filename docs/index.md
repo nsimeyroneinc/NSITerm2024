@@ -2,14 +2,23 @@ Ce site est dédié aux élèves de Terminales NSI du Lycée Murat à Issoire af
 
 Les notebooks sont corrigés et les cellules peuvent être copiées pour être testées dans vos notebooks Capytale.
 
+!!! abstract "Actualités"
+    - :star: :star: :star: [Advent of code 2022](https://adventofcode.com/2022) :star: :star: :star: a démarré !
+        - vous pouvez joindre le leaderboard NSI-Murat avec le code 2817159-e8bb5792.
+        - quelques conseils [ici](Projet/AOC/cours/){. target="_blank"}
+        
 
 !!! info "Actualités" 
     - **Thème en cours** : [Les arbres](StructureDonnees/T3_1_arbre.md).
-    - **Thème en cours** : [Les dictionnaires](StructureDonnees/T4_1_Dictionnaires.md)   Corrigé disponible.  
-    - **Sujet BAC :** [BAC - Diviser pour régner](Algo/T5_4_Diviser_pour_regner_BAC.md)
-    - **&#127381; :** un onglet annales de BAC épreuves écrites avec les sujets 2022 corrigés.  
 
+!!! info  "Epreuve BAC 2023"  
+    - 2 «sujets 0» correspondant à la nouvelle maquette du bac version 2023 (3 exos) ont été publiés. À retrouver 
+        - [sujet A](Annales/2023/2023-sujet_0-a.pdf){. target="_blank"}.  
+        - [sujet B](Annales/2023/2023-sujet_0-b.pdf){. target="_blank"}.  
 
+    - Les épreuves de spécialité se dérouleront les 20 et 21 mars 2023 pour la N.S.I.  
+    - Les épreuves pratiques seront organisées je Jeudi 30 mars 2023.
+    
 ## Progression sur l'année
 
 ### Liste des chapitres 
@@ -20,9 +29,10 @@ Les notebooks sont corrigés et les cellules peuvent être copiées pour être t
 
 {{ affiche_BAC("terminale") }}
 
-!!! info  "Epreuve BAC 2023"  
-    - Les épreuves de spécialité se dérouleront les 20 et 21 mars 2023 pour la N.S.I.  
-    - Les épreuves pratiques seront organisées je Jeudi 30 mars 2023.
+
+        
+
+
 
 !!! note 
     Le sujet de l’épreuve écrite de la spécialité numérique et sciences informatiques, **comporte trois exercices indépendants les uns des autres**, qui permettent d’évaluer les connaissances et compétences des candidats. 

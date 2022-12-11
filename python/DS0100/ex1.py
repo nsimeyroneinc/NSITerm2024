@@ -57,9 +57,25 @@ M = [4, 1, 11, 7]
 
 L = [3, 5, 2, 7, 1, 9, 0]
 
+def moitie_gauche2(L):
+    half=len(L)//2
+    return L[:half]
 
 
-tri_fusion([9,5,3,1,7,6,10,3])
+def moitie_gauche3(L):
+    n=len(L)
+    nvx_tab=  []
+    if n==0:
+        return []
+    mil=n//2
+
+    for i in range(mil):
+        nvx_tab.append(L[i])
+    return nvx_tab
+
+
+print(moitie_gauche3(L))
+#tri_fusion([9,5,3,1,7,6,10,3])
 
 def tri_insertion(liste):
     for indice_courant in range(1, len(liste)):
@@ -68,8 +84,23 @@ def tri_insertion(liste):
         while i >= 0 and liste[i] > element_a_inserer:
             liste[i+1] = liste[i]
             i=i-1
+            print(f"Passage {indice_courant} : {liste}")
+        liste[i + 1] = element_a_inserer
+        print(f"Passage {indice_courant} : {liste}")
+            
+
+notes = [8, 7, 18, 14, 12, 9, 17, 3]
+tri_insertion(notes)
+
+
+def tri_insertion2(liste):
+    for indice_courant in range(1, len(liste)):
+        element_a_inserer = liste[indice_courant]
+        i = indice_courant - 1
+        while i >= 0 and liste[i] > liste[i+1]:
+            liste[i],liste[i+1]=liste[i+1],liste[i]
+            i=i-1
         liste[i + 1] = element_a_inserer
         print(f"Passage {indice_courant} : {liste}")
 
 notes = [8, 7, 18, 14, 12, 9, 17, 3]
-tri_insertion(notes)
