@@ -413,9 +413,18 @@ Vous pouvez télécharger une copie au format pdf du diaporama de synthèse de c
         exo_bac = list(csv.DictReader(f,delimiter=","))
     env.variables['exo_bac']=exo_bac
     
+    # Les sujets de bac avant 2023 (format 5 exos)
     with open("sujet_bac.csv","r",encoding="utf-8") as f:
-        sujet_bac = list(csv.DictReader(f,delimiter=";"))
-    env.variables['sujet_bac']=sujet_bac
+        sujet_bac_5exos = list(csv.DictReader(f,delimiter=";"))
+        sujet_bac_5exos = sorted(sujet_bac_5exos,key = lambda x : x['Repere'])
+    env.variables['sujet_bac']=sujet_bac_5exos
+
+    # Les sujets de bac après 2022 (format 3 exos)
+    with open("sujet_bac2.csv","r",encoding="utf-8") as f:
+        sujet_bac_3exos = list(csv.DictReader(f,delimiter=";"))
+        sujet_bac_3exos = sorted(sujet_bac_3exos,key = lambda x : x['Repere'])
+    env.variables['sujet_bac']=sujet_bac_3exos
+
 
     env.variables['compteur_exo'] = 0
     @env.macro
@@ -704,7 +713,7 @@ Vous pouvez télécharger une copie au format pdf du diaporama de synthèse de c
                 exo = env.variables.exo_bac[index]
                 if exo["Correction"]=='1':
                     aff += ":fontawesome-solid-check:{.vert title='Compatible'}"
-                    aff+= f"[{exo['Theme']}](../../Corriges/{repere}-{num_exo}) \n"
+                    aff+= f"[{exo['Theme']}](../Corriges/{repere}-{num_exo}) \n"
                 else:
                     aff+= ":fontawesome-solid-xmark:{.rouge title='Non disponible'}"
                     aff+= f"{exo['Theme']}\n"
@@ -718,6 +727,10 @@ Vous pouvez télécharger une copie au format pdf du diaporama de synthèse de c
     
     @env.macro
     def corrige_ecrit(annee):
+        if int(annee)<2023:
+            nb_exos,sujet_bac = 5,sujet_bac_5exos
+        else:
+            nb_exos,sujet_bac = 3,sujet_bac_3exos
         aff = f"#<span class='numchapitre'>{annee}</span> Correction épreuves écrites\n \n"
         aff += ''' 
 
@@ -732,7 +745,7 @@ Vous pouvez télécharger une copie au format pdf du diaporama de synthèse de c
         for s in sujet_bac:
             if s['Annee']==annee:
                 corr = ''
-                for num in range(1,6):
+                for num in range(1,nb_exos+1):
                     if s["Correction"][num-1]=="1":
                         corr += ":material-numeric-"+str(num)+"-circle-outline:{.vert title='exercice"+str(num)+"corrigé'}"
                     else:
@@ -747,14 +760,31 @@ Vous pouvez télécharger une copie au format pdf du diaporama de synthèse de c
     
     @env.macro
     def liste_sujets(annee):
-        aff = f'#<span class="numchapitre">{annee}</span> : Epreuves écrites \n \n'
+        if int(annee)<2023:
+            nb_exos,sujet_bac = 5,sujet_bac_5exos
+        else:
+            nb_exos,sujet_bac = 3,sujet_bac_3exos
+        aff = ""
         for s in sujet_bac:
             if s['Annee']==annee:
-                aff+=f"##{s['Centre']} - jour {s['Jour']} : *{s['Repere']}*\n"
+                aff+=f"##{s['Centre']} - jour {s['Jour']} : <a id={s['Repere']}>*{s['Repere']}*</a>\n"
+                aff+=f"### Enoncé \n"
                 aff+=telecharger(s['Repere'],f"../../officiels/Annales/EE/{annee}/{s['Repere']}.pdf")
                 aff+='\n \n'
-                for i in range(1,6):
-                    aff+=f"* **Exercice {i}** : *{s['Ex'+str(i)]}* \n \n"
+                for i in range(1,nb_exos+1):
+                    if nb_exos==3:
+                        aff+=f"* **Exercice {i} [{s['Pts'+str(i)]} points]** : *{s['Ex'+str(i)]}* \n \n"
+                    else:
+                        aff+=f"* **Exercice {i} ** : *{s['Ex'+str(i)]}* \n \n"
+                corr = ""
+                for num in range(1,nb_exos+1):
+                    if s["Correction"][num-1]=="1":
+                        corr += ":material-numeric-"+str(num)+"-circle-outline:{.vert title='exercice "+str(num)+" corrigé'}"
+                    else:
+                        corr += ":material-numeric-"+str(num)+"-circle-outline:{.rouge title='exercice "+str(num)+" non corrigé'}"                
+                corr = f"### Correction  [{corr}](../../Annales/Corriges/{s['Repere']}) \n \n"
+                aff = aff+corr
+                #aff+=f"|{s['Repere']}|{s['Centre']}|{s['Jour']}|[{s['Repere']}](../../../officiels/Annales/EE/{annee}/{s['Repere']}.pdf)|[{corr}](../../../Annales/Corriges/{s['Repere']})|\n"
         return aff
 
     @env.macro
@@ -769,22 +799,36 @@ Vous pouvez télécharger une copie au format pdf du diaporama de synthèse de c
                 return aff
     
     @env.macro
-    def enonce_sujetbac(repere):
-        aff = f'#<span class="numchapitre">{repere}</span> : Enoncé \n'
+    def corrige_sujetbac(repere):
+        annee = 2000 + int(repere[0:2])
+        if int(annee)<2023:
+            nb_exos,sujet_bac = 5,sujet_bac_5exos
+        else:
+            nb_exos,sujet_bac = 3,sujet_bac_3exos
+        aff = f'#<span class="numchapitre">{repere}</span> : Corrigé \n'
         for s in sujet_bac:
             if s['Repere']==repere:
                 aff += f"Année : **{s['Annee']}** <br>"
                 aff += f"Centre : **{s['Centre']}** <br>"
                 aff += f"Jour : **{s['Jour']}** <br>"
-                aff += f"Enoncé : [:fontawesome-solid-file-pdf:](../../officiels/Annales/EE/{s['Annee']}/{s['Repere']}.pdf)<br>"
+                aff += f"Enoncé : [:fontawesome-solid-file-pdf:](../../../officiels/Annales/EE/{s['Annee']}/{s['Repere']}.pdf)<br>"
+                aff = f"[:material-arrow-left-circle: Index des sujets {s['Annee']}](../../{s['Annee']}/EE) \n \n" + aff
                 return aff
 
     @env.macro
     def corrige_exobac(repere,num):
-        aff = f'##Exercice {num} : '
+        annee = 2000 + int(repere[0:2])
+        if int(annee)<2023:
+            nb_exos,sujet_bac = 5,sujet_bac_5exos
+        else:
+            nb_exos,sujet_bac = 3,sujet_bac_3exos
+        aff = f'##Exercice {num} '
         for s in sujet_bac:
             if s['Repere']==repere:
-                aff+=f"<span class='theme_exo'>*{s['Ex'+str(num)]}*</span> \n"
+                if annee<2023:
+                    aff+=f" \n <span class='theme_exo'>*{s['Ex'+str(num)]}*</span> \n"
+                else:
+                    aff+=f"({s['Pts'+str(num)]} points) \n <span class='theme_exo'>*{s['Ex'+str(num)]}*</span> \n"
                 return aff
     
     @env.macro

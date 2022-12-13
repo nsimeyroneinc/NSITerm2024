@@ -58,6 +58,8 @@ nav:
     
     - BAC 📝:
       #- index_annales.md
+      - '2023': 
+        - "Epreuves écrites" : Annales/2023/EE.md
       - '2022': 
         - "Epreuves écrites" : Annales/2022/EE.md
       - '2021': 
@@ -124,9 +126,11 @@ nav:
       - Index : progression.md
       - DS 0001 : Evaluations/BDD_Devoir_Corrige.md
       - DS 0011 : Evaluations/DS_Pile_File_Routage.md
-      - DS 0100 : Evaluations/DS_Diviser_pour_regner_tris.md
+      #- DS 0100 : Evaluations/DS_Diviser_pour_regner_tris.md
+      - DS 0100 : Evaluations/DS0100bis.md
       - Eval EP1 : Evaluations/DS_EP1.md
       - Eval EP2 : Evaluations/DS_EP2.md
+      - Eval EP3 : Evaluations/DS_EP3.md
 
 
     - Extras :
