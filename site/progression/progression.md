@@ -1,11 +1,5 @@
-# Progression sur l'année
+## Devoirs sur l'année
 
-## Liste des chapitres 
 
-{{ affiche_progression("terminale") }}
+{{ affiche_devoir("terminale") }}
 
-## Thèmes traités sur l'année :
-
-{{ sec_titre("histoire","Histoire de l'informatique")}}
-
-{{ sec_titre("projet","Projet")}}

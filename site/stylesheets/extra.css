@@ -114,6 +114,32 @@
 }
 
 
+.numdevoir {
+  color : rgb(240, 237, 231);
+  background-color:brown;
+  font-weight: bold;
+  padding-left: 5px;
+  padding-right: 2px;
+  text-align: left;
+}
+
+.numBAC {
+  color : rgb(240, 237, 231);
+  background-color:brown;
+  font-weight: bold;
+  padding-left: 5px;
+  padding-right: 2px;
+  text-align: left;
+}
+
+.devoir {
+  color : forestgreen
+}
+
+.BAC {
+  color : forestgreen
+}
+
 # light theme:
   --correction-color: #f82e2e;
 # dark theme:
@@ -826,6 +852,8 @@ Orange : rgb(255, 145, 0)
 Violet : rgb(124, 77, 255)
 Gray : rgb(158, 158, 158)
 */
+
+
 
 
 .cle_primaire {

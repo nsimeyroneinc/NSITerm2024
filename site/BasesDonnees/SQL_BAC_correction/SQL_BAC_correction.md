@@ -1,38 +1,17 @@
----
-title : Thème 4 - Base de données
-subtitle: Langage SQL - Sujet BAC - Correction
-subsubtitle: Terminale NSI
-author : M.Meyroneinc-Condy
-numbersections: true
-fontsize: 10pt
-geometry:
-- top=20mm
-- left=20mm
-- right=20mm
-- heightrounded    
---- 
 
-SQL : Exercices BAC - Correction
-===
+{% set num = 3 %}
+{% set titre = "Langage SQL" %}
+{% set theme = "BAC" %}
+{% set niveau = "terminale" %}
 
-<table  class="yellowTable">
-        <tr >
-            <th  class="yellowTh";width="100%"; style="text-align:center;border:none;font-size:15pt;">Thème 2 : Base de données</th>
-        </tr>
-</table>
-<br>
 
-<table  class="yellowTable">
-        <tr >
-            <th width="20%"; style="background-color: #3B444B;color:white;text-align:center;border:none;font-size:40pt;">
-            03
-            </th>
-            <th  class="yellowTh";width="80%"; style="text-align:center;border:none;font-size:25pt;">BAC : langage SQL</th>
-        </tr>
-</table>
-<br>
+{{ titre_chapitre(num,titre,theme,niveau)}}
 
-!!! exo "Exercice n°1 : Métropole J1 : Base de données cinématographique"
+{{ initexo(0) }}
+
+## Métropole J1 : Base de données cinématographique
+
+!!! exo "Métropole J1 : Base de données cinématographique"
 
     - 3 relations dans une base de données sur le cinéma
     - 2 tables : **`individu`** et **`realisation`**
@@ -196,8 +175,9 @@ On veillera à n'afficher que la description des emplois et non les films associ
     WHERE prenom = 'Denis' AND nom = 'Johnson';
     ```
 
+ ## D'après 2022, Métropole, J2
 
-!!! exo "Exercice n°2 : D'après 2022, Métropole, J2"
+!!! exo D'après 2022, Métropole, J2"
 
     - 2 relations dans une base de données sur la musique
     - 2 tables : **`morceaux`** et **`interpretes`**
@@ -384,6 +364,7 @@ VALUES (1, 'Trust', 'France');
     WHERE interpretes.pays = 'États-Unis';
     ```
 
+## Métropole, Candidats libres, J2 2021
 
 !!! exo "Exercice n°3 : Métropole, Candidats libres, J2 2021"
 

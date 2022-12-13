@@ -2,30 +2,40 @@ Ce site est dédié aux élèves de Terminales NSI du Lycée Murat à Issoire af
 
 Les notebooks sont corrigés et les cellules peuvent être copiées pour être testées dans vos notebooks Capytale.
 
+!!! abstract "Actualités"
+    - :star: :star: :star: [Advent of code 2022](https://adventofcode.com/2022) :star: :star: :star: a démarré !
+        - vous pouvez joindre le leaderboard NSI-Murat avec le code 2817159-e8bb5792.
+        - quelques conseils [ici](Projet/AOC/cours/){. target="_blank"}
+        
 
 !!! info "Actualités" 
-    - **Thème en cours** : [T5 - Les tris](https://nsimeyroneinc.github.io/NSITerm/Algo/T5_2_algo_tri/)   
-    - [Correction des exercices BAC Routage disponibles](https://nsimeyroneinc.github.io/NSITerm/Archi_Materielle/T3_1_Routage_BAC_Correction/)   
-    - [Correction des exercices BAC Piles et Files disponibles](StructureDonnees/T2_2_Pile_File_BAC_Correction.md)  
-    - **&#127381; : Bientôt disponible** un onglet annales de BAC épreuves écrites.  
+    - **Thème en cours** : [Les arbres](StructureDonnees/T3_1_arbre.md).
 
+!!! info  "Epreuve BAC 2023"  
+    - 2 «sujets 0» correspondant à la nouvelle maquette du bac version 2023 (3 exos) ont été publiés. À retrouver 
+        - [sujet A](Annales/2023/2023-sujet_0-a.pdf){. target="_blank"}.  
+        - [sujet B](Annales/2023/2023-sujet_0-b.pdf){. target="_blank"}.  
 
+    - Les épreuves de spécialité se dérouleront les 20 et 21 mars 2023 pour la N.S.I.  
+    - Les épreuves pratiques seront organisées je Jeudi 30 mars 2023.
+    
 ## Progression sur l'année
 
 ### Liste des chapitres 
 
 {{ affiche_progression("terminale") }}
-    
 
-!!! info  "Epreuve BAC 2023"  
-    - Les épreuves de spécialité se dérouleront les 20 et 21 mars 2023 pour la N.S.I.  
-    - Les épreuves pratiques seront organisées je Jeudi 30 mars 2023.
+### Liste des sujets BAC
 
-Le sujet de l’épreuve écrite de la spécialité numérique et sciences informatiques, comporte trois exercices indépendants les uns des autres, qui permettent d’évaluer les connaissances et compétences des candidats. Le sujet comprend obligatoirement au moins un exercice relatif à chacune des trois rubriques suivantes :   
+{{ affiche_BAC("terminale") }}
 
-- traitement de données en tables et bases de données;  
-- architectures matérielles, systèmes d’exploitation et réseaux;   
-- algorithmique, langages et programmation.  
+
+        
+
+
+
+!!! note 
+    Le sujet de l’épreuve écrite de la spécialité numérique et sciences informatiques, **comporte trois exercices indépendants les uns des autres**, qui permettent d’évaluer les connaissances et compétences des candidats. 
  
 ## Notions à l'épreuve écrite de Mars 2023 (mis à jours 30/09/2022): 
 
@@ -34,8 +44,8 @@ Le sujet de l’épreuve écrite de la spécialité numérique et sciences infor
 🗹 Structure de données abstraites( file) : interface et implémentation  
 🗹 Vocabulaire de la programmation objet : classes, attributs, méthodes, objets 
 🗹 Listes, piles, files : structures linéaires. 
-□ Dictionnaires, index et clé  
-□ Arbres : structures hiérarchiques. Arbres binaires : nœuds, racines, feuilles, sous-arbres gauches, sous-arbres droits
+🗹 Dictionnaires, index et clé  
+🗹 Arbres : structures hiérarchiques. Arbres binaires : nœuds, racines, feuilles, sous-arbres gauches, sous-arbres droits
 
 
 ### &#10145; Thème : Base de données  
@@ -60,7 +70,7 @@ Le sujet de l’épreuve écrite de la spécialité numérique et sciences infor
 
 □ Algorithmes sur les arbres binaires et sur les arbres binaires de recherche.
 
-□ Méthode « diviser pour régner »
+🗹 Méthode « diviser pour régner »
 
 
 
@@ -68,5 +78,8 @@ Le sujet de l’épreuve écrite de la spécialité numérique et sciences infor
 ## Comment calculer sa note au BAC 2023 et Répartition des notes :
 
 [Fiche pour calculer sa note au BAC 2023](divers/data/el-ve-de-premiere-comment-calculer-note-bac-2022-94490.pdf){:target="_blank"} 
+
+![](divers/data/calculer_sa_note_BAC.png)
+
 
 ![](r-partition-de-la-note-finale.jpg)

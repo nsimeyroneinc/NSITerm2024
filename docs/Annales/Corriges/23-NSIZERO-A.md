@@ -54,7 +54,7 @@ def recherche_nom(musiciens):
 
 1. L'adresse réseau  de la configuration d'Alice est `172.16.2.0/24`, donc tous les ordinateurs de cette configuration ont une adresse IP qui commence par les 24 même premiers bits (i.e. les 3 premiers octets) : `172.16.2`. Cette configuration appartient donc à l'ordinateur d'Alice.
 
-2. On applique la formule donnée dans l'énoncé avec un débit du réseau de $1\,000$ Mbits/s :
+2. On applique la formule donnée dans l'énoncé avec un débit du réseau de $1\,000$ Mbits/s :  
 $\textnormal{cout} = \dfrac{10\,000}{1\,000} = 10$
 Le cout du réseau WAN8 est donc 10.
 
@@ -80,6 +80,7 @@ Le cout du réseau WAN8 est donc 10.
 
 {{ corrige_exobac(repere_sujet,3) }}
 
+
 1. Ce fonctionnement traduit le comportement d'une **file** c'est à dire que le premier élément qui entre dans la structure de données est aussi le premier à en sortir (*FIFO* pour *First In, First Out*). Dans une pile, la dernier élément entré est le premier à sortir (*LIFO* pour *Last In, First Out*)
 
 2.  a. C'est la **taille** de l'arbre (c'est à dire le nombre total de noeuds de l'arbre)
@@ -99,86 +100,96 @@ Le cout du réseau WAN8 est donc 10.
 
     d. 
     
-    * Arbre initial
-    ```mermaid
-        graph TD
-        S12["12"] --> S6["6"]
-        S12 --> S14["14"]
-        S6 --> V1[" "]
-        S6 --> S10["10"]
-        S10 --> S8["8"]
-        S10 --> V2[" "]
-        S14 --> S13["13"]
-        S14 --> V3[" "]
-        style V1 opacity:0;
-        style V2 opacity:0;
-        style V3 opacity:0;
-        linkStyle 2 stroke:#FFFFFF,stroke-width:0px
-        linkStyle 5 stroke:#FFFFFF,stroke-width:0px
-        linkStyle 7 stroke:#FFFFFF,stroke-width:0px
-    ```
 
-    * Après insertion du 11
-    ```mermaid
-        graph TD
-        S12["12"] --> S6["6"]
-        S12 --> S14["14"]
-        S6 --> V1[" "]
-        S6 --> S10["10"]
-        S10 --> S8["8"]
-        S10 --> S11["11"]
-        S14 --> S13["13"]
-        S14 --> V3[" "]
-        style V1 opacity:0;
-        style V3 opacity:0;
-        linkStyle 2 stroke:#FFFFFF,stroke-width:0px
-        linkStyle 7 stroke:#FFFFFF,stroke-width:0px
-    ```
+    !!! note "État initial"
 
-    * Après insertion du 5
-    ```mermaid
-        graph TD
-        S12["12"] --> S6["6"]
-        S12 --> S14["14"]
-        S6 --> S5["5"]
-        S6 --> S10["10"]
-        S10 --> S8["8"]
-        S10 --> S11["11"]
-        S14 --> S13["13"]
-        S14 --> V3[" "]
-        style V3 opacity:0;
-        linkStyle 7 stroke:#FFFFFF,stroke-width:0px
-    ```
+        ```mermaid
+            graph TD
+            N("12") --> Ng("6")
+            N       --> Nd("14")
+            Ng --> Ngg(" ")
+            Ng --> Ngd("10")
+            Ngd --> Ngdg("8")
+            Ngd --> Ngdd(" ")
+            Nd --> Ndg("13")
+            Nd --> Ndd(" ")
+            style Ngg fill:none, stroke-width:0px
+            style Ngdd fill:none, stroke-width:0px
+            style Ndd fill:none, stroke-width:0px
+            
+            linkStyle 2 stroke-width:0px
+            linkStyle 5 stroke-width:0px
+            linkStyle 7 stroke-width:0px
+        ```
 
-    * Après insertion du 16
-    ```mermaid
-        graph TD
-        S12["12"] --> S6["6"]
-        S12 --> S14["14"]
-        S6 --> S5["5"]
-        S6 --> S10["10"]
-        S10 --> S8["8"]
-        S10 --> S11["11"]
-        S14 --> S13["13"]
-        S14 --> S16["16"]
-    ```
+    !!! note "Après l'insertion de 11"
 
-    * Après insertion du 7
-    ```mermaid
-        graph TD
-        S12["12"] --> S6["6"]
-        S12 --> S14["14"]
-        S6 --> S5["5"]
-        S6 --> S10["10"]
-        S10 --> S8["8"]
-        S10 --> S11["11"]
-        S14 --> S13["13"]
-        S14 --> S16["16"]
-        S8 --> S7["7"]
-        S8 --> V1[" "]
-        style V1 opacity:0;
-        linkStyle 9 stroke:#FFFFFF,stroke-width:0px
-    ```
+        ```mermaid
+            graph TD
+            N("12") --> Ng("6")
+            N       --> Nd("14")
+            Ng --> Ngg(" ")
+            Ng --> Ngd("10")
+            Ngd --> Ngdg("8")
+            Ngd --> Ngdd("11")
+            Nd --> Ndg("13")
+            Nd --> Ndd(" ")
+            style Ngg fill:none, stroke-width:0px
+            style Ndd fill:none, stroke-width:0px
+            
+            linkStyle 2 stroke-width:0px
+            linkStyle 7 stroke-width:0px
+        ```
+
+    !!! note "Après l'insertion de 5"
+
+        ```mermaid
+            graph TD
+            N("12") --> Ng("6")
+            N       --> Nd("14")
+            Ng --> Ngg("5")
+            Ng --> Ngd("10")
+            Ngd --> Ngdg("8")
+            Ngd --> Ngdd("11")
+            Nd --> Ndg("13")
+            Nd --> Ndd(" ")
+
+            style Ndd fill:none, stroke-width:0px
+            linkStyle 7 stroke-width:0px
+        ```
+
+    !!! note "Après l'insertion de 16"
+
+        ```mermaid
+            graph TD
+            N("12") --> Ng("6")
+            N       --> Nd("14")
+            Ng --> Ngg("5")
+            Ng --> Ngd("10")
+            Ngd --> Ngdg("8")
+            Ngd --> Ngdd("11")
+            Nd --> Ndg("13")
+            Nd --> Ndd("16")
+        ```
+
+    !!! note "Après l'insertion de 7"
+
+        ```mermaid
+            graph TD
+            N("12") --> Ng("6")
+            N       --> Nd("14")
+            Ng --> Ngg("5")
+            Ng --> Ngd("10")
+            Ngd --> Ngdg("8")
+            Ngdg --> Ngdgg("7")
+            Ngdg --> Ngdgd(" ")
+            Ngd --> Ngdd("11")
+            Nd --> Ndg("13")
+            Nd --> Ndd("16")
+
+            style Ngdgd fill:none, stroke-width:0px
+            linkStyle 6 stroke-width:0px
+        ```
 4. 
 ```python linenums='41'
 def est_present(self,indice_recherche):
@@ -193,6 +204,8 @@ def est_present(self,indice_recherche):
         else:
             return self.racine.droite.est_present()
 ```
+
+
 
 5.  a. On rappelle que dans un parcours *infixe*, on parcourt le sous arbre gauche, puis la racine, puis le sous arbre droit. Dans le cas de l'arbre de la figure 1, on obtient : {{ route(["6","8","10","12","13","14"]) }}
 
@@ -210,98 +223,125 @@ def tache_prioritaire(self):
 
 7.  
 
-    * Etape 1 : tâche d'indice 14 à accomplir
+
+!!! note "Étape 1 : ajout de 14"
+
     ```mermaid
         graph TD
-        S14["14"]
+        N("14")
     ```
 
-    * Etape 2 : tâche d'indice 11 à accomplir
+!!! note "Étape 2 : ajout de 11"
+
     ```mermaid
         graph TD
-        S14["14"] --> S11["11"]
-        S14 --> V1[" "]
-        style V1 opacity:0;
-        linkStyle 1 stroke:#FFFFFF,stroke-width:0px
+        N("14")
+        N --> Ng("11")
+        N --> Nd(" ")
+        style Nd fill:none, stroke-width:0px
+        linkStyle 1 stroke-width:0px
     ```
 
-    * Etape 3 : tâche d'indice 8 à accomplir
+!!! note "Étape 3 : ajout de 8"
+
     ```mermaid
         graph TD
-        S14["14"] --> S11["11"]
-        S14 --> V1[" "]
-        S11 --> S8["8"]
-        S11 --> V2[" "]
-        style V1 opacity:0;
-        style V2 opacity:0;
-        linkStyle 1 stroke:#FFFFFF,stroke-width:0px
-        linkStyle 3 stroke:#FFFFFF,stroke-width:0px
+        N("14")
+        N --> Ng("11")
+        N --> Nd(" ")
+        Ng --> Ngg("8")
+        Ng --> Ngd(" ")
+        style Nd fill:none, stroke-width:0px
+        linkStyle 1 stroke-width:0px
+        style Ngd fill:none, stroke-width:0px
+        linkStyle 3 stroke-width:0px
     ```
 
-    * Etape 4 : accomplir la tâche prioritaire (8) 
+!!! note "Étape 4 : traiter 8 qui est prioritaire"
+
     ```mermaid
         graph TD
-        S14["14"] --> S11["11"]
-        S14 --> V1[" "]
-        style V1 opacity:0;
-        linkStyle 1 stroke:#FFFFFF,stroke-width:0px
+        N("14")
+        N --> Ng("11")
+        N --> Nd(" ")
+        style Nd fill:none, stroke-width:0px
+        linkStyle 1 stroke-width:0px
     ```
 
-    * Etape 5 : tâche d'indice 12 à accomplir
+
+!!! note "Étape 5 : ajout de 12"
+
     ```mermaid
         graph TD
-        S14["14"] --> S11["11"]
-        S14 --> V1[" "]
-        S11 --> V2[" "]
-        S11 --> S12["12"]
-        style V1 opacity:0;
-        style V2 opacity:0;
-        linkStyle 1 stroke:#FFFFFF,stroke-width:0px
-        linkStyle 2 stroke:#FFFFFF,stroke-width:0px
+        N("14")
+        N --> Ng("11")
+        N --> Nd(" ")
+        Ng --> Ngg(" ")
+        Ng --> Ngd("12")
+        style Nd fill:none, stroke-width:0px
+        linkStyle 1 stroke-width:0px
+        style Ngg fill:none, stroke-width:0px
+        linkStyle 2 stroke-width:0px
     ```
 
-    * Etape 6 : accomplir la tâche prioritaire (11) 
+
+
+!!! note "Étape 6 : traiter 11 qui est prioritaire"
+
     ```mermaid
         graph TD
-        S14["14"] --> S12["12"]
-        S14 --> V1[" "]
-        style V1 opacity:0;
-        linkStyle 1 stroke:#FFFFFF,stroke-width:0px
+        N("14")
+        N --> Ng("12")
+        N --> Nd(" ")
+        style Nd fill:none, stroke-width:0px
+        linkStyle 1 stroke-width:0px
+    ``` 
+
+
+
+!!! note "Étape 7 : traiter 12 qui est prioritaire"
+
+    ```mermaid
+        graph TD
+        N("14")
     ```
 
-    * Etape 7 : accomplir la tâche prioritaire (12) 
+
+!!! note "Étape 8 : ajout de 15"
+
     ```mermaid
         graph TD
-        S14["14"]
+        N("14")
+        N --> Ng(" ")
+        N --> Nd("15")
+        style Ng fill:none, stroke-width:0px
+        linkStyle 0 stroke-width:0px
     ```
 
-    * Etape 8 : tâche d'indice 15 à accomplir
+
+!!! note "Étape 9 : ajout de 19"
+
     ```mermaid
         graph TD
-        S14["14"] --> V1[" "]
-        S14 --> S15["15"]
-        style V1 opacity:0;
-        linkStyle 0 stroke:#FFFFFF,stroke-width:0px
+        N("14")
+        N --> Ng(" ")
+        N --> Nd("15")
+        Nd --> Ndg(" ")
+        Nd --> Ndd("19")
+        style Ng fill:none, stroke-width:0px
+        linkStyle 0 stroke-width:0px
+        style Ndg fill:none, stroke-width:0px
+        linkStyle 2 stroke-width:0px
     ```
 
-    * Etape 9 : tâche d'indice 19 à accomplir
-    ```mermaid
-        graph TD
-        S14["14"] --> V1[" "]
-        S14 --> S15["15"]
-        S15 --> V2[" "]
-        S15 --> S19["19"]
-        style V1 opacity:0;
-        linkStyle 0 stroke:#FFFFFF,stroke-width:0px
-        style V2 opacity:0;
-        linkStyle 2 stroke:#FFFFFF,stroke-width:0px
-    ```
 
-    * Etape 10 : accomplir la tâche prioritaire (14)
+!!! note "Étape 10 : traiter 14 qui est prioritaire"
+
     ```mermaid
         graph TD
-        S15["15"] --> V1[" "]
-        S15 --> S19["19"]
-        style V1 opacity:0;
-        linkStyle 0 stroke:#FFFFFF,stroke-width:0px
+        N("15")
+        N --> Ng(" ")
+        N --> Nd("19")
+        style Ng fill:none, stroke-width:0px
+        linkStyle 0 stroke-width:0px
     ```
