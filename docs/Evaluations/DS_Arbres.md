@@ -250,9 +250,9 @@ Pour rechercher une clé dans un ABR, il faut comparer la clé donnée avec la c
 ??? success "Réponse"
     a. En parcours en profondeur infixe, on liste de façon récursive les clé du sous arbre gauche, puis la racine, puis les clé du sous arbre droit. On obtient donc : $1 - 2 - 3 - 5 - 6 - 7 - 8 - 9 - 10$
 
-    b. En parcours préfixe, on liste récursivement la racine puis les noeuds du sous arbre gauche puis ceux du sous arbre droit. On obtient donc : $7 - 2 - 1 - 5 - 3 - 6 - 10 - 8 - 9$.  
+    b. En parcours suffixe, on liste récursivement les noeuds du sous arbre gauche, ceux du sous arbre droit et enfin la racine. Ici, on obtient : $1 - 3 - 6 - 5 - 2 - 9 - 8 - 10 - 7$.
 
-    c. En parcours suffixe, on liste récursivement les noeuds du sous arbre gauche, ceux du sous arbre droit et enfin la racine. Ici, on obtient : $1 - 3 - 6 - 5 - 2 - 9 - 8 - 10 - 7$.
+    c. En parcours préfixe, on liste récursivement la racine puis les noeuds du sous arbre gauche puis ceux du sous arbre droit. On obtient donc : $7 - 2 - 1 - 5 - 3 - 6 - 10 - 8 - 9$.  
 
     d. Le parcours en largeur corresponda à l'ordre de la lecture (de gauche à droite et de haut en bas). Ici on obtient : $7 - 2 - 10 - 1 - 5 - 8 - 3 - 5 - 9$.
 
@@ -410,7 +410,7 @@ On munit la structure de données `ArbreBinaire` des opérations suivantes :
         elif est_vide(gauche(arbre)) or est_vide(droite(arbre)):
             return 'argent'
         else:
-            return 'bronze'
+            return 'or'
     ```
 
     Autre solution, consistant à compter le nombre de sous-arbres non vides qui correspond au nombre de personnes parrainées. On en déduit le profil :

@@ -201,7 +201,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../StructureDonnees/T1_1_Programmation_Orientee_Objet/" class="md-tabs__link">
+      <a href="../../StructureDonnees/acceuil.md" class="md-tabs__link">
         T1 - Struct. de données
       </a>
     </li>
@@ -444,6 +444,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_2">
@@ -457,6 +459,20 @@
           T1 - Struct. de données
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../StructureDonnees/acceuil.md" class="md-nav__link">
+        Acueil
+      </a>
+    </li>
+  
+
+            
           
             
               
@@ -710,6 +726,10 @@
         
           
         
+          
+        
+          
+        
       
       
         <label class="md-nav__link" for="__nav_4">
@@ -746,6 +766,34 @@
     <li class="md-nav__item">
       <a href="../../Archi_Materielle/T3_1_Routage_BAC_Correction/" class="md-nav__link">
         📝 S6 BAC Correction Protocole de routage
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Archi_Materielle/T3_2_gestion_processus/" class="md-nav__link">
+        📓 C13 Gestion Processus
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Archi_Materielle/T3_3_gestion_processus_BAC/" class="md-nav__link">
+        📝 S13 BAC Gestion Processus
       </a>
     </li>
   
@@ -1697,7 +1745,7 @@
           
           
             <div class="md-content" data-md-component="content">
-              <article class="md-content__inner md-typeset">
+              <article class="md-content__inner md-typeset"><a class="md-content__button md-icon" download href="../../pdf/combined.pdf" title="PDF Export"><svg style="height: 1.2rem; width: 1.2rem;" viewBox="0 0 384 512" xmlns="http://www.w3.org/2000/svg"><path d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm76.45 211.36l-96.42 95.7c-6.65 6.61-17.39 6.61-24.04 0l-96.42-95.7C73.42 337.29 80.54 320 94.82 320H160v-80c0-8.84 7.16-16 16-16h32c8.84 0 16 7.16 16 16v80h65.18c14.28 0 21.4 17.29 11.27 27.36zM377 105L279.1 7c-4.5-4.5-10.6-7-17-7H256v128h128v-6.1c0-6.3-2.5-12.4-7-16.9z"></path></svg></a>
                 
 
 
@@ -1715,12 +1763,94 @@
 <div class="admonition question">
 <p class="admonition-title">Question de cours</p>
 <p>On note h la hauteur d'un arbre binaire et n sa taille.<br />
-En utilisant vos connaissances de cours, prouver que <span class="arithmatex">\(n \leqslant h \leqslant 2^h -1\)</span>.</p>
+En utilisant vos connaissances de cours, prouver que <span class="arithmatex">\(h \leqslant n \leqslant 2^h -1\)</span>.</p>
 </div>
-<div style="page-break-after: always; visibility: hidden"> 
-\pagebreak 
-</div>
-
+<details class="success">
+<summary>Réponse</summary>
+<p>On étudie les deux cas de figure "extrème" :</p>
+<ul>
+<li>
+<p><strong>Cas minimaliste</strong> : arbre filiforme
+<pre class="mermaid"><code>graph TD
+    A(" ") --&gt; B(" ") 
+    B --&gt; C(" ")
+    B --&gt; D(" ")
+    C --&gt; E(" ")
+    C --&gt; C1(" ")
+    E --&gt; E1(" ")
+    E --&gt; E2(" ")
+    C1 --&gt; C2(" ")
+    C1 --&gt; C3(" ")
+    A --&gt; F(" ")
+    F --&gt; J(" ")
+    F --&gt; K(" ")
+    J --&gt; L(" ")
+    J --&gt; N(" ")
+    K --&gt; M(" ")
+    style F opacity:0;
+    style D opacity:0;
+    style C1 opacity:0;
+    style C2 opacity:0;
+    style C3 opacity:0;
+    style E2 opacity:0;
+    style J opacity:0;
+    style K opacity:0;
+    style L opacity:0;
+    style N opacity:0;
+    style M opacity:0;
+    linkStyle 2 stroke-width:0px;
+    linkStyle 4 stroke-width:0px;
+    linkStyle 6 stroke-width:0px;
+    linkStyle 7 stroke-width:0px;
+    linkStyle 8 stroke-width:0px;
+    linkStyle 9 stroke-width:0px;
+    linkStyle 10 stroke-width:0px;
+    linkStyle 11 stroke-width:0px;
+    linkStyle 12 stroke-width:0px;
+    linkStyle 13 stroke-width:0px;
+    linkStyle 14 stroke-width:0px;</code></pre>
+On a alors  <span class="arithmatex">\(h = n\)</span>, on en déduit l'inégalité :  <span class="arithmatex">\(h \leqslant n\)</span></p>
+</li>
+<li>
+<p><strong>Cas maximaliste</strong> : arbre complet<br />
+<pre class="mermaid"><code>graph TD
+    A(" ") --&gt; B(" ") 
+    B --&gt; C(" ")
+    B --&gt; D(" ")
+    C --&gt; E(" ")
+    C --&gt; C1(" ")
+    E --&gt; E1(" ")
+    E --&gt; E2(" ")
+    C1 --&gt; C2(" ")
+    C1 --&gt; C3(" ")
+    A --&gt; F(" ")
+    F --&gt; J(" ")
+    F --&gt; K(" ")
+    J --&gt; L(" ")
+    J --&gt; N(" ")
+    D --&gt; D1(" ")
+    D --&gt; D2(" ")
+    D1 --&gt; D3(" ")
+    D1 --&gt; D4(" ")
+    D2 --&gt; D5(" ")
+    D2 --&gt; D6(" ")
+    L --&gt; L3(" ")
+    L --&gt; L4(" ")
+    N --&gt; N1(" ")
+    N --&gt; N2(" ")
+    K --&gt; K1(" ")
+    K --&gt; K2(" ")
+    K1 --&gt; K3(" ")
+    K1 --&gt; K4(" ")
+    K2 --&gt; K5(" ")
+    K2 --&gt; K6(" ") </code></pre>
+Chaque niveau a <span class="arithmatex">\(2^{h-1}\)</span> noeuds donc le nombre total de noeuds est donnée par <span class="arithmatex">\(1 + 2 + 2^2 + 2^3 + ... + 2^{h-1} = 1 \times \dfrac{1-2^h}{1-2}=2^h - 1\)</span>.</p>
+</li>
+<li>
+<p>On obtient alors les inégalités demandées : <span class="arithmatex">\(h \leqslant n \leqslant 2^h -1\)</span></p>
+</li>
+</ul>
+</details>
 <h2 id="dapres-exercice-bac">D'aprés exercice BAC<a class="headerlink" href="#dapres-exercice-bac" title="Permanent link">⚓︎</a></h2>
 <div class="admonition exo">
 <p class="admonition-title">Exo</p>
@@ -1767,6 +1897,10 @@ En utilisant vos connaissances de cours, prouver que <span class="arithmatex">\(
     C --&gt; G(5)</code></pre>
 </div>
 </div>
+<details class="success">
+<summary>Réponse</summary>
+<p>Seul l'arbre 1 est un arbre binaire de recherche. En effet, dans l'arbre 2 la clé 4 apparaît dans le sous arbre droit de la racine de clé 4, or les clé du sous arbre droit doivent être <em>strictement</em> supérieurs à la racine. Pour la même raison, l'arbre 3 n'est pas non plus un arbre binaire de recherche, la valeur 1 figure dans le sous arbre droit du noeud d'étiquette 2.</p>
+</details>
 <h3 id="partie-b-analyse">Partie B : Analyse<a class="headerlink" href="#partie-b-analyse" title="Permanent link">⚓︎</a></h3>
 <p>On considère la structure de données abstraites ABR (Arbre Binaire de Recherche) que l'on munit des opérations suivantes : </p>
 <div class="admonition abstract">
@@ -1784,11 +1918,36 @@ Opérations :<br />
 <p class="admonition-title">Question B.2.a</p>
 <p>Dans un ABR, où se trouve le plus petit élément ? Justifier</p>
 </div>
+<details class="success">
+<summary>Réponse</summary>
+<p>Le plus petit élément se trouve sur la feuille la plus à gauche de l'arbre. En effet en descendant récursivement à gauche, on trouve à chaque étape une valeur inférieure à toutes celles se trouvant à droite.</p>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>La question demande <strong>le</strong> plus petit élément, or les valeurs présentes dans un arbre binaire de recherche ne sont pas forcément uniques. A titre d'exemple, dans l'arbre binaire de recherche suivant, la plus petite valeur apparaît 2 fois :
+<pre class="mermaid"><code>graph TD
+S5(5) --&gt; S6(5)
+S5 --&gt; S8(8)</code></pre></p>
+</div>
+</details>
 <p>Pour rechercher une clé dans un ABR, il faut comparer la clé donnée avec la clé située à la racine. Si cette clé est ç la racine, la fonction renvoie vrai sinon il faut procéder récursivement sur les sous-arbres à gauche ou à droite.   </p>
 <div class="admonition fabquestion">
 <p class="admonition-title">Question B.2.b</p>
 <p>En utilisant les fonctions ci-dessus, écrire une fonction récursive <code>RechercheValeur</code> prenant en arguments la clé recherchée et l'arbre ABR considèré. Cette fonction retourne un booléen (vrai ou faux) indiquant si la clé est présente dans l'arbre ou non..</p>
 </div>
+<details class="success">
+<summary>Réponse</summary>
+<p>Si l'arbre est vide alors il ne contient pas la cle cherchée. Sinon trois cas se présente : la clé cherchée est la racine et on renvoie <code>True</code>, la clé cherchée est inférieure à la racine et on relance la recherche dans le sous arbre gauche (là ou se trouve les valeurs inférieures à la racine), la clé cherchée est supérieure à la racine et on relance la recherche dans le sous arbre droit.  </p>
+<div class="highlight"><span class="filename">🐍 Script Python</span><pre><span></span><code><span class="k">def</span> <span class="nf">RechercheValeur</span><span class="p">(</span><span class="n">cle</span><span class="p">,</span><span class="n">abr</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">est_vide</span><span class="p">(</span><span class="n">abr</span><span class="p">):</span>
+        <span class="k">return</span> <span class="kc">False</span>
+    <span class="k">if</span> <span class="n">racine</span><span class="p">(</span><span class="n">abr</span><span class="p">)</span><span class="o">==</span><span class="n">cle</span><span class="p">:</span>
+        <span class="k">return</span> <span class="kc">True</span>
+    <span class="k">elif</span> <span class="n">racine</span><span class="p">(</span><span class="n">abr</span><span class="p">)</span><span class="o">&gt;</span><span class="n">cle</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">RechercheValeur</span><span class="p">(</span><span class="n">cle</span><span class="p">,</span><span class="n">sous_arbre_gauche</span><span class="p">(</span><span class="n">a</span><span class="p">))</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">RechercheValeur</span><span class="p">(</span><span class="n">cle</span><span class="p">,</span><span class="n">sous_arbre_droit</span><span class="p">(</span><span class="n">a</span><span class="p">))</span>
+</code></pre></div>
+</details>
 <div class="admonition fabquestion">
 <p class="admonition-title">Question B.3</p>
 <p>On considère l'arbre ABR suivant : </p>
@@ -1824,6 +1983,13 @@ b. Donner le parcours suffixe de cette arbre.<br />
 c. Donner le parcours préfixe de cette arbre.<br />
 d. Donner le parcours en largeur d'abord de cette arbre.</p>
 </div>
+<details class="success">
+<summary>Réponse</summary>
+<p>a. En parcours en profondeur infixe, on liste de façon récursive les clé du sous arbre gauche, puis la racine, puis les clé du sous arbre droit. On obtient donc : <span class="arithmatex">\(1 - 2 - 3 - 5 - 6 - 7 - 8 - 9 - 10\)</span></p>
+<p>b. En parcours préfixe, on liste récursivement la racine puis les noeuds du sous arbre gauche puis ceux du sous arbre droit. On obtient donc : <span class="arithmatex">\(7 - 2 - 1 - 5 - 3 - 6 - 10 - 8 - 9\)</span>.  </p>
+<p>c. En parcours suffixe, on liste récursivement les noeuds du sous arbre gauche, ceux du sous arbre droit et enfin la racine. Ici, on obtient : <span class="arithmatex">\(1 - 3 - 6 - 5 - 2 - 9 - 8 - 10 - 7\)</span>.</p>
+<p>d. Le parcours en largeur corresponda à l'ordre de la lecture (de gauche à droite et de haut en bas). Ici on obtient : <span class="arithmatex">\(7 - 2 - 10 - 1 - 5 - 8 - 3 - 5 - 9\)</span>.</p>
+</details>
 <h2 id="dapres-bac">D'aprés BAC<a class="headerlink" href="#dapres-bac" title="Permanent link">⚓︎</a></h2>
 <div class="admonition exo">
 <p class="admonition-title">Club d'Informatique</p>
@@ -1892,6 +2058,31 @@ b) <strong>Recopier</strong> et <strong>compléter</strong> la définition de la
 </code></pre></div></td></tr></table></div>
 c) <strong>Indiquer</strong> le type de la valeur renvoyée par la fonction <code>hauteur</code></p>
 </div>
+<details class="success">
+<summary>Réponse a</summary>
+<p>L'arbre binaire <span class="arithmatex">\(P\)</span> a une hauteur de <span class="arithmatex">\(4\)</span> (par exemple en considérant le chemin qui va de la racine <code>'AnneB'</code> jusqu'à la feuille <code>'Marc'</code>, on dénombre bien <span class="arithmatex">\(4\)</span> nœuds, aucun autre chemin en dénombre plus).</p>
+</details>
+<details class="success">
+<summary>Réponse b</summary>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">hauteur</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">hauteur</span><span class="p">(</span><span class="n">arbre</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">est_vide</span><span class="p">(</span><span class="n">arbre</span><span class="p">)</span> <span class="p">:</span>
+        <span class="k">return</span> <span class="mi">0</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">hauteur_a_gauche</span> <span class="o">=</span> <span class="n">hauteur</span><span class="p">(</span><span class="n">gauche</span><span class="p">(</span><span class="n">arbre</span><span class="p">))</span>
+        <span class="n">hauteur_a_droite</span> <span class="o">=</span> <span class="n">hauteur</span><span class="p">(</span><span class="n">droite</span><span class="p">(</span><span class="n">arbre</span><span class="p">))</span>
+        <span class="k">return</span> <span class="mi">1</span> <span class="o">+</span> <span class="nb">max</span><span class="p">(</span><span class="n">hauteur_a_gauche</span><span class="p">,</span> <span class="n">hauteur_a_droite</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+</details>
+<details class="success">
+<summary>Réponse c</summary>
+<p>Il s'agit d'un entier (type <code>int</code>)</p>
+</details>
 <div class="admonition question">
 <p class="admonition-title">Question 2</p>
 <p>La fonction <code>membres</code> ci-dessous prend un <code>arbre</code> binaire et une <code>liste_membres</code> en paramètres et ajoute, dans un certain ordre, les étiquettes de l'<code>arbre</code> à la <code>liste_membres</code>.</p>
@@ -1908,6 +2099,16 @@ c) <strong>Indiquer</strong> le type de la valeur renvoyée par la fonction <cod
 <p>a) En supposant la liste <code>membres_p</code> initialement vide, <strong>écrire</strong> la valeur de cette liste après l'appel <code>membres(arbre_p, membres_p)</code> où <code>arbre_p</code> référence l'arbre <span class="arithmatex">\(P\)</span>.</p>
 <p>b) <strong>Indiquer</strong> le nom du type de parcours d'arbre binaire réalisé par la fonction <code>membres</code>.</p>
 </div>
+<details class="success">
+<summary>Réponse a</summary>
+<div class="highlight"><span class="filename">🐍 Console Python</span><pre><span></span><code><span class="gp">&gt;&gt;&gt; </span><span class="n">membres_p</span>
+<span class="go">[&#39;AnneB&#39;, &#39;Pedro&#39;, &#39;FredB&#39;, &#39;Sophia&#39;, &#39;Malik2&#39;, &#39;Marc&#39;, &#39;AstridM&#39;, &#39;KevinH&#39;, &#39;Nico&#39;]</span>
+</code></pre></div>
+</details>
+<details class="success">
+<summary>Réponse b</summary>
+<p>Il s'agit d'un parcours <strong>préfixe</strong> (on traite la racine <strong>avant</strong> de traiter les sous-arbres à gauche et à droite).</p>
+</details>
 <div class="admonition question">
 <p class="admonition-title">Question 3</p>
 <p>Dans cette question, on s'intéresse aux profils des membres (or, argent ou bronze).</p>
@@ -1921,6 +2122,48 @@ b) À partir des propositions suivantes, <strong>indiquer</strong> le profil des
 </ul>
 <p>c) <strong>Écrire</strong> la fonction <code>profil</code> qui prend un <code>arbre</code> binaire non vide en paramètre et renvoie le profil du membre dont le pseudonyme est l'étiquette de la racine de l'<code>arbre</code> sous la forme d'une chaine de caractères : <code>'or'</code>, <code>'argent'</code> ou <code>'bronze'</code>. Par exemple, l'appel <code>profil(arbre_p)</code> doit renvoyer <code>'or'</code>qui correspond au profil du membre <code>'AnneB'</code>, racine de <span class="arithmatex">\(P\)</span>.</p>
 </div>
+<details class="success">
+<summary>Réponse a</summary>
+<p>Les feuilles sont : <code>'FredB'</code>, <code>'Marc'</code>, <code>'KevinH'</code> et <code>'Nico'</code></p>
+</details>
+<details class="success">
+<summary>Réponse b</summary>
+<p>Puisqu'il s'agit des feuilles, cela signifie que ces nœuds n'ont pas de successeurs et donc que les membres associés n'ont parrainé personne. La bonne réponse est donc la C : membre bronze.</p>
+</details>
+<details class="success">
+<summary>Réponse c</summary>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">profil</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">profile</span><span class="p">(</span><span class="n">arbre</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">est_vide</span><span class="p">(</span><span class="n">gauche</span><span class="p">(</span><span class="n">arbre</span><span class="p">))</span> <span class="ow">and</span> <span class="n">est_vide</span><span class="p">(</span><span class="n">droite</span><span class="p">(</span><span class="n">arbre</span><span class="p">)):</span>
+        <span class="k">return</span> <span class="s1">&#39;bronze&#39;</span>
+    <span class="k">elif</span> <span class="n">est_vide</span><span class="p">(</span><span class="n">gauche</span><span class="p">(</span><span class="n">arbre</span><span class="p">))</span> <span class="ow">or</span> <span class="n">est_vide</span><span class="p">(</span><span class="n">droite</span><span class="p">(</span><span class="n">arbre</span><span class="p">)):</span>
+        <span class="k">return</span> <span class="s1">&#39;argent&#39;</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="s1">&#39;bronze&#39;</span>
+</code></pre></div></td></tr></table></div>
+<p>Autre solution, consistant à compter le nombre de sous-arbres non vides qui correspond au nombre de personnes parrainées. On en déduit le profil :</p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">profil version 2</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">profile</span><span class="p">(</span><span class="n">arbre</span><span class="p">):</span>
+    <span class="n">les_profiles</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;bronze&#39;</span><span class="p">,</span> <span class="s1">&#39;argent&#39;</span><span class="p">,</span> <span class="s1">&#39;or&#39;</span><span class="p">)</span>
+    <span class="n">nb_parraines</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">est_vide</span><span class="p">(</span><span class="n">gauche</span><span class="p">(</span><span class="n">arbre</span><span class="p">)):</span>
+        <span class="n">nb_parraines</span> <span class="o">+=</span> <span class="mi">1</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">est_vide</span><span class="p">(</span><span class="n">droite</span><span class="p">(</span><span class="n">arbre</span><span class="p">)):</span>
+        <span class="n">nb_parraines</span> <span class="o">+=</span> <span class="mi">1</span>
+    <span class="k">return</span> <span class="n">les_profils</span><span class="p">[</span><span class="n">nb_parraines</span><span class="p">]</span>
+</code></pre></div></td></tr></table></div>
+</details>
 <div class="admonition question">
 <p class="admonition-title">Question 4</p>
 <p>Afin d'obtenir un tableau dont chaque élément est un <em>tuple</em> contenant le pseudonyme d'un membre et son profil, on propose la fonction <code>membres_profils</code> définie ci-dessous :</p>
@@ -1942,6 +2185,23 @@ b) À partir des propositions suivantes, <strong>indiquer</strong> le profil des
 </code></pre></div>
 <p><strong>Dessiner</strong> un arbre possible pouvant correspondre à l'<code>arbre_2</code>.</p>
 </div>
+<details class="success">
+<summary>Réponse</summary>
+<p>Comme pour la question 2b, on a à faire à un parcours préfixe donc <code>'LeaC'</code> est la racine de l'<code>arbre_2</code>. Ensuite à gauche on a <code>'Ali'</code> qui est une feuille (membre bronze). À droite on tombe sur <code>'Tom45'</code> qui a parrainé un seul membre : <code>'Vero'</code>.</p>
+<pre class="mermaid"><code>graph TD
+    A("LeaC") --&gt; B("Ali") 
+    B --&gt; D(" ")
+    B --&gt; E(" ")
+    A --&gt; H("Tom45")
+    H --&gt; I("Vero")
+    H --&gt; J(" ")
+    linkStyle 2 stroke-width:0px;
+    style E opacity:0;
+    linkStyle 1 stroke-width:0px;
+    style D opacity:0;
+    linkStyle 5 stroke-width:0px;
+    style J opacity:0;</code></pre>
+</details>
 <div class="admonition question">
 <p class="admonition-title">Question 5</p>
 <p>Chaque année, les membres versent une cotisation en fonction de leur profil.</p>
@@ -1952,6 +2212,41 @@ b) À partir des propositions suivantes, <strong>indiquer</strong> le profil des
 </ul>
 <p><strong>Écrire</strong> une fonction <code>cotisation</code> qui prend un <code>arbre</code> binaire et renvoie le total des cotisations reçues par le club dont <code>arbre</code> modélise les relations de parrainage. On pourra utiliser la fonction <code>membres_profils</code> de la question précédente.</p>
 </div>
+<details class="success">
+<summary>Réponse</summary>
+<p>On commence par définir un dictionnaire des tarifs de cotisations :</p>
+<div class="highlight"><span class="filename">🐍 Script Python</span><pre><span></span><code><span class="n">tarifs</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;or&#39;</span><span class="p">:</span> <span class="mi">20</span><span class="p">,</span> <span class="s1">&#39;argent&#39;</span><span class="p">:</span> <span class="mi">30</span><span class="p">,</span> <span class="s1">&#39;bronze&#39;</span><span class="p">:</span> <span class="mi">40</span><span class="p">}</span>
+</code></pre></div>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">cotisations</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">cotisations</span><span class="p">(</span><span class="n">arbre</span><span class="p">):</span>
+    <span class="n">total</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">liste_membres_profils</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">membres_profils</span><span class="p">(</span><span class="n">arbre</span><span class="p">,</span> <span class="n">liste_membres_profils</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">_</span><span class="p">,</span> <span class="n">profil</span> <span class="ow">in</span> <span class="n">liste_membres_profils</span><span class="p">:</span>
+        <span class="n">total</span> <span class="o">+=</span> <span class="n">tarifs</span><span class="p">[</span><span class="n">profil</span><span class="p">]</span>
+    <span class="k">return</span> <span class="n">total</span>
+</code></pre></div></td></tr></table></div>
+<p>On peut aussi faire sans la fonction <code>membres_profils</code> :</p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">cotisations version 2</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">cotisations</span><span class="p">(</span><span class="n">arbre</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">est_vide</span><span class="p">(</span><span class="n">arbre</span><span class="p">):</span>
+        <span class="k">return</span> <span class="mi">0</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">a_gauche</span> <span class="o">=</span> <span class="n">cotisations</span><span class="p">(</span><span class="n">gauche</span><span class="p">(</span><span class="n">arbre</span><span class="p">))</span>
+        <span class="n">a_droite</span> <span class="o">=</span> <span class="n">cotisations</span><span class="p">(</span><span class="n">droite</span><span class="p">(</span><span class="n">arbre</span><span class="p">))</span>
+        <span class="k">return</span> <span class="n">tarifs</span><span class="p">[</span><span class="n">profil</span><span class="p">(</span><span class="n">a</span><span class="p">)]</span> <span class="o">+</span> <span class="n">a_gauche</span> <span class="o">+</span> <span class="n">a_droite</span>
+</code></pre></div></td></tr></table></div>
+</details>
 <h2 id="dapres-bac_1">D'aprés BAC<a class="headerlink" href="#dapres-bac_1" title="Permanent link">⚓︎</a></h2>
 <div class="admonition exo">
 <p class="admonition-title">Insertion et valeurs supérieures dans un ABR</p>
@@ -1976,10 +2271,62 @@ N5 --- N8((20))</code></pre>
 <p class="admonition-title">Question 1</p>
 <p>1.a. Donner la taille de cet arbre.<br />
 1.b. Donner la hauteur de cet arbre.<br />
-1.c. Représenter sur la copie le sous-arbre à droite du nœud de valeur 15.
+1.c. Représenter sur la copie le sous-arbre à droite du nœud de valeur 15.<br />
 1.d. Justifier que l'arbre de la figure 1 est un arbre binaire de recherche.<br />
 1.e. On insère la valeur 17 dans l'arbre de la figure 1 de telle sorte que 17 soit une nouvelle feuille de l'arbre et que le nouvel arbre obtenu soit encore un arbre binaire de recherche. Représenter sur la copie ce nouvel arbre.</p>
 </div>
+<details class="success">
+<summary>Réponse 1.a</summary>
+<p>La taille vaut 8.</p>
+</details>
+<details class="success">
+<summary>Réponse 1.b</summary>
+<p>La hauteur vaut 4.</p>
+</details>
+<details class="success">
+<summary>Réponse 1.c</summary>
+<pre class="mermaid"><code>graph
+N2((21)) --- N5((18))
+N2 --- N6((27))
+N5 --- N7(( ))
+linkStyle 2 stroke-width:0px;
+style N7 opacity:0;
+N5 --- N8((20))</code></pre>
+</details>
+<details class="success">
+<summary>Réponse 1.d</summary>
+<p>Un arbre binaire de recherche est un arbre tel que, pour tout nœud <span class="arithmatex">\(n\)</span>, les valeurs associées à tous les nœuds du sous-arbre à gauche sont inférieures à la valeur de <span class="arithmatex">\(n\)</span>, et les valeurs associées à tous les nœuds du sous-arbre à droite sont supérieures à la valeur associée à <span class="arithmatex">\(n\)</span>.</p>
+<p>On vérifie donc :</p>
+<ul>
+<li>15 &gt; 13</li>
+<li>13 &gt; 11</li>
+<li>13 &lt; 14</li>
+<li>15 &lt; 21</li>
+<li>21 &gt; 18</li>
+<li>18 &lt; 20</li>
+<li>21 &lt; 27</li>
+</ul>
+<p>Cette propriété étant récursive, on doit aussi vérifier que l'on a :</p>
+<ul>
+<li>15 &gt; 14</li>
+<li>15 &lt; 18</li>
+<li>15 &lt; 17</li>
+<li>21 &gt; 20</li>
+</ul>
+<p><em>Remarque :</em> Il est inutile de vérifier que l'on a 15 &gt; 11 car on a vérifié 15 &gt; 13 et 13 &gt; 11. De la même façon, la vérification 15 &lt; 27 est inutile.</p>
+</details>
+<details class="success">
+<summary>Réponse 1.e</summary>
+<pre class="mermaid"><code>graph
+N0((15)) --- N1((13))
+N0 --- N2((21))
+N1 --- N3((11))
+N1 --- N4((14))
+N2 --- N5((18))
+N2 --- N6((27))
+N5 --- N7((17))
+N5 --- N8((20))</code></pre>
+</details>
 <p>On considère l'arbre la classe <code>Noeud</code> définie de la façon suivante en Python :</p>
 <div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">🐍 Script Python</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
@@ -2015,13 +2362,45 @@ N0 --- N2((21))</code></pre>
     <span class="k">if</span> <span class="n">abr</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
         <span class="k">return</span> <span class="n">Noeud</span><span class="p">(</span><span class="kc">None</span><span class="p">,</span> <span class="n">v</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
     <span class="k">if</span> <span class="n">v</span> <span class="o">&gt;</span> <span class="n">abr</span><span class="o">.</span><span class="n">valeur</span><span class="p">:</span>
-        <span class="k">return</span> <span class="n">Noeud</span><span class="p">(</span><span class="n">abr</span><span class="o">.</span><span class="n">gauche</span><span class="p">,</span> <span class="n">abr</span><span class="o">.</span><span class="n">valeur</span><span class="p">,</span> <span class="n">ins</span><span class="p">(</span><span class="n">v</span><span class="p">,</span> <span class="n">abr</span><span class="o">.</span><span class="n">droite</span><span class="p">))</span>
+        <span class="k">return</span> <span class="n">Noeud</span><span class="p">(</span><span class="n">abr</span><span class="o">.</span><span class="n">gauche</span><span class="p">,</span> <span class="n">abr</span><span class="o">.</span><span class="n">valeur</span><span class="p">,</span> <span class="n">inserer</span><span class="p">(</span><span class="n">v</span><span class="p">,</span> <span class="n">abr</span><span class="o">.</span><span class="n">droite</span><span class="p">))</span>
     <span class="k">elif</span> <span class="n">v</span> <span class="o">&lt;</span> <span class="n">abr</span><span class="o">.</span><span class="n">valeur</span><span class="p">:</span>
         <span class="k">return</span> <span class="o">...</span>
     <span class="k">else</span><span class="p">:</span>
         <span class="k">return</span> <span class="n">abr</span>
 </code></pre></div></td></tr></table></div>
 </div>
+<details class="success">
+<summary>Réponse 2.a</summary>
+<p>On utilise l'instruction <strong>(C)</strong> :</p>
+<div class="highlight"><span class="filename">🐍 Script Python</span><pre><span></span><code><span class="n">abr</span> <span class="o">=</span> <span class="n">Noeud</span><span class="p">(</span>
+        <span class="n">Noeud</span><span class="p">(</span><span class="kc">None</span><span class="p">,</span> <span class="mi">13</span><span class="p">,</span> <span class="kc">None</span><span class="p">),</span>
+        <span class="mi">15</span><span class="p">,</span>
+        <span class="n">Noeud</span><span class="p">(</span><span class="kc">None</span><span class="p">,</span> <span class="mi">21</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
+<span class="p">)</span>
+</code></pre></div>
+</details>
+<details class="success">
+<summary>Réponse 2.b</summary>
+<p>On propose :</p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">🐍 Script Python</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span>
+<span class="normal">9</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">inserer</span><span class="p">(</span><span class="n">v</span><span class="p">,</span> <span class="n">abr</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">abr</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">Noeud</span><span class="p">(</span><span class="kc">None</span><span class="p">,</span> <span class="n">v</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">v</span> <span class="o">&gt;</span> <span class="n">abr</span><span class="o">.</span><span class="n">valeur</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">Noeud</span><span class="p">(</span><span class="n">abr</span><span class="o">.</span><span class="n">gauche</span><span class="p">,</span> <span class="n">abr</span><span class="o">.</span><span class="n">valeur</span><span class="p">,</span> <span class="n">ins</span><span class="p">(</span><span class="n">v</span><span class="p">,</span> <span class="n">abr</span><span class="o">.</span><span class="n">droite</span><span class="p">))</span>
+    <span class="k">elif</span> <span class="n">v</span> <span class="o">&lt;</span> <span class="n">abr</span><span class="o">.</span><span class="n">valeur</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">Noeud</span><span class="p">(</span><span class="n">ins</span><span class="p">(</span><span class="n">v</span><span class="p">,</span> <span class="n">abr</span><span class="o">.</span><span class="n">gauche</span><span class="p">),</span> <span class="n">abr</span><span class="o">.</span><span class="n">valeur</span><span class="p">,</span> <span class="n">abr</span><span class="o">.</span><span class="n">droite</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">abr</span>
+</code></pre></div></td></tr></table></div>
+</details>
 <p><strong>3.</strong> La fonction <code>nb_sup</code> prend en paramètres une valeur <code>v</code> et un arbre binaire de recherche <code>abr</code> et renvoie le nombre de valeurs supérieures ou égales à la valeur <code>v</code> dans l'arbre <code>abr</code>. </p>
 <p>Le code de cette fonction <code>nb_sup</code> est donné ci-dessous :</p>
 <div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">🐍 Script Python</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
@@ -2044,6 +2423,23 @@ N0 --- N2((21))</code></pre>
 <strong>3.b.</strong> L'arbre passé en paramètre étant un arbre binaire de recherche, on peut améliorer la fonction <code>nb_sup</code> précédente afin de réduire ce nombre d'appels.<br />
 Écrire sur la copie le code modifié de cette fonction.</p>
 </div>
+<details class="success">
+<summary>Réponse 3.a</summary>
+<p>La fonction va faire autant d'appel que l'arbre compte de sous-arbres <strong>y compris les sous-arbres vides</strong>. En comptant l'appel initial cela fait donc 17 appels.</p>
+</details>
+<details class="success">
+<summary>Réponse 3.b</summary>
+<p>Dans la mesure où l'on souhaite compter les valeurs supérieures, il est inutile d'explorer le sous-arbre à gauche si la valeur d'un nœud est inférieure à la valeur passée en argument.</p>
+<p>On peut donc faire :</p>
+<div class="highlight"><span class="filename">🐍 Script Python</span><pre><span></span><code><span class="k">def</span> <span class="nf">nb_sup</span><span class="p">(</span><span class="n">v</span><span class="p">,</span> <span class="n">abr</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">abr</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="k">return</span> <span class="mi">0</span>
+    <span class="k">elif</span> <span class="n">abr</span><span class="o">.</span><span class="n">valeur</span> <span class="o">&gt;=</span> <span class="n">v</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">nb_sup</span><span class="p">(</span><span class="n">v</span><span class="p">,</span> <span class="n">abr</span><span class="o">.</span><span class="n">gauche</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span> <span class="o">+</span> <span class="n">nb_sup</span><span class="p">(</span><span class="n">v</span><span class="p">,</span> <span class="n">abr</span><span class="o">.</span><span class="n">droite</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">nb_sup</span><span class="p">(</span><span class="n">v</span><span class="p">,</span> <span class="n">abr</span><span class="o">.</span><span class="n">droite</span><span class="p">)</span>
+</code></pre></div>
+</details>
 
 
 
