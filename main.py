@@ -80,8 +80,8 @@ def define_env(env):
         9 : ["sd","Les Dictionnaires - Révision",1,"StructureDonnees/T4_1_Dictionnaires.md"],
         10 : ["sd","Les arbres",2,"StructureDonnees/T3_1_arbre.md"],
         11: ["algorithmique","Algorithmes sur les arbres",2,"Algo/TP5_5_Implementation_arbres.md"],
-        12: ["algorithmique","arbres binaires de recherche",1,"StructureDonnees/T3_3_arbre_recherche.md"]
-        #6 : ["os","Protocole de Routage",1,""],
+        12: ["algorithmique","arbres binaires de recherche",1,"StructureDonnees/T3_3_arbre_recherche.md"],
+        13 : ["os","Gestion Processus",1,"Archi_Materielle/T3_2_gestion_processus.md"]
         #7 : ["python","Notions de programmation orienté objet",2,"poo.md"],
         #8 : ["sd","Structures de données linéaires",2,"sl.md"],
         #9 : ["os","Système sur puce",1,"puces.md"],
@@ -101,8 +101,8 @@ def define_env(env):
         1 : ["devoir","Langage SQL","","Evaluations/BDD_Devoir_Corrige.md"],
         #2 : ["devoir","Pile-File et Protocole de Routage",'16/11/2023',"Evaluations/DS_Pile_File_Routage.md"],
         3 : ["devoir","Pile-File et Protocole de Routage",'16/11/2023',"Evaluations/DS_Pile_File_Routage.md"],
-        4 : ["devoir","Les tris - Diviser pour régner","02/12/2023","Evaluations/DS_Diviser_pour_regner_tris.md"]
-        #4 : ["sd","Programmation Orientée Objet",2,"StructureDonnees/T1_1_Programmation_Orientee_Objet.md"],
+        4 : ["devoir","Les tris - Diviser pour régner","02/12/2023","Evaluations/DS_Diviser_pour_regner_tris.md"],
+        5 : ["devoir","Les arbres binaires","16/12/2023","Evaluations/DS_Arbres.md"]
         #5 : ["os","Listes et Piles",2,"StructureDonnees/T2_1_Listes_Piles_et_Files.md"],
         #6 : ["os","Protocole de routage",1,"Archi_Materielle/T3_1_Routage.md"],
         #7 : ["algorithmique","Algorithmes de tri",1,"Algo/T5_2_algo_tri.md"],
@@ -138,9 +138,9 @@ def define_env(env):
         8 : ["BAC","Diviser pour régner","Algo","Algo/T5_4_Diviser_pour_regner_BAC.md"],
         10 : ["BAC","Les arbres - Partie 1","Struc. Données","StructureDonnees/T3_2_arbre_BAC.md"],
         11 : ["BAC","Algorihtmes Arbres Binaires","Algo","Algo/T5_6_algo_arbre_BAC.md"],
-        12 : ["BAC","Arbres Binaires de Recherche","Algo","StructureDonnees/T3_4_arbre_recherche_BAC.md"]
+        12 : ["BAC","Arbres Binaires de Recherche","Algo","StructureDonnees/T3_4_arbre_recherche_BAC.md"],
         #12: ["algorithmique","Algorithmes sur les arbres",2,"algoarbre.md"],
-        #13: ["sd","Graphes",2,"graphes.md"],
+        13: ["os","Gestion Processus","os","Archi_Materielle/T3_3_gestion_processus_BAC.md"]
         #14: ["os","Protocoles de routage",2,"routage.md"],
         #15: ["algorithmique","Recherche textuelle",2,"texte.md"],
         #16: ["python","Calculabilité, décidabilité",2,"calculabilite.md"],

@@ -98,8 +98,7 @@
     1. Dans l’exemple précédent, quel est le numéro en binaire associé au nœud G ?  
     2. Quel est le nœud dont le numéro en binaire vaut 13 en décimal ?  
     3. En notant $h$ la hauteur de l’arbre, sur combien de bits seront numérotés les nœuds les plus en bas ?  
-    4. Justifier que pour tout arbre de hauteur $h$ et de taille $n \geqslant 2$, on a :
-    $$ h \leqslant n \leqslant 2^h-1 $$  
+    4. Justifier que pour tout arbre de hauteur $h$ et de taille $n \geqslant 2$, on a : $h \leqslant n \leqslant 2^h-1$  
 
 ??? success "corrigé"
     1. G est associé à 1010.   
@@ -451,7 +450,7 @@ On considère l’arbre binaire de recherche ci-dessous.
 ```mermaid
 graph TD
     A(12) --> B(10) 
-    B --> D(15)
+    B --> D(5)
     B --> E(" ")
     A --> C(15)
     C --> F(" ")

@@ -1,15 +1,123 @@
+```mermaid
+gantt
+    title My Product Roadmap
+    dateFormat  YYYY-MM-DD
+    section Cool Feature
+    A task           :a1, 2022-02-25, 30d
+    Another task     :after a1, 20d
+    section Rad Feature
+    Task in sequence :2022-03-04, 12d
+    Task, No. 2      :24d
+```
+
+
+
+```mermaid
+graph LR
+    A(".") --> B("bin")
+    A --> C("etc")
+    A --> D("home")
+    A --> E("tmp")
+    C --> F("morgane")
+    F --> G("lycée")
+    G --> H("français")
+    G --> I("NSI")
+    I --> J("info.txt")
+    I --> K("image1.jpg")
+    F --> L("perso")
+```
+
 
 ```mermaid
 graph TD
-    A(5) --> B(2) 
+    A(" ") --> B(" ") 
+    B --> C(" ")
     B --> D(" ")
-    B --> E(3)
-    A --> C(7)
-    C --> F(6)
-    C --> G(8)
+    C --> E(" ")
+    C --> C1(" ")
+    E --> E1(" ")
+    E --> E2(" ")
+    C1 --> C2(" ")
+    C1 --> C3(" ")
+    A --> F(" ")
+    F --> J(" ")
+    F --> K(" ")
+    J --> L(" ")
+    J --> N(" ")
+    D --> D1(" ")
+    D --> D2(" ")
+    D1 --> D3(" ")
+    D1 --> D4(" ")
+    D2 --> D5(" ")
+    D2 --> D6(" ")
+    L --> L3(" ")
+    L --> L4(" ")
+    N --> N1(" ")
+    N --> N2(" ")
+    K --> K1(" ")
+    K --> K2(" ")
+    K1 --> K3(" ")
+    K1 --> K4(" ")
+    K2 --> K5(" ")
+    K2 --> K6(" ") 
+```
+
+
+```mermaid
+graph TD
+    A("LeaC") --> B("Ali") 
+    B --> D(" ")
+    B --> E(" ")
+    A --> H("Tom45")
+    H --> I("Vero")
+    H --> J(" ")
+    linkStyle 2 stroke-width:0px;
+    style E opacity:0;
     linkStyle 1 stroke-width:0px;
     style D opacity:0;
+    linkStyle 5 stroke-width:0px;
+    style J opacity:0;
 ```
+
+
+```mermaid
+graph TD
+    A("AnneB") --> B("Pedro") 
+    B --> D("FredB")
+    B --> E(" ")
+    A --> H("Sophia")
+    H --> I("Malik2")
+    H --> J("AstridM")
+    I --> K("Marc")
+    I --> L(" ")
+    J --> N("KevinH")
+    J --> M("Nico")
+    linkStyle 2 stroke-width:0px;
+    style E opacity:0;
+    linkStyle 7 stroke-width:0px;
+    style L opacity:0;
+```
+
+```mermaid
+graph TD
+    A(7) --> B(2) 
+    B --> D(1)
+    B --> E(3)
+    A --> C(4)
+    C --> F(4)
+    C --> G(5)
+```
+
+```mermaid
+graph TD
+    A(3) --> B(2) 
+    B --> D(1)
+    B --> E(1)
+    A --> C(4)
+    C --> F(3)
+    C --> G(5)
+```
+
 
 
 ```mermaid
