@@ -3,7 +3,13 @@ class Noeud():
         self.ag = None
         self.ad = None
         self.v = v
-            
+
+    def est_vide(self):
+        if self.v is None:
+            return True
+        else:
+            return False  
+                      
     def insere(self, v):
         n = self
         est_insere = False
@@ -29,4 +35,15 @@ class Noeud():
 
 racine = Noeud(18)
 racine.insere_tout([12, 13, 15, 16, 19, 21, 32, 23])
-print(racine)
+
+def RechercheValeur(cle,abr):
+    if abr.est_vide():
+        return False
+    if abr.v==cle:
+        return True
+    elif abr.v>cle:
+        return RechercheValeur(cle,abr.ag)
+    else:
+        return RechercheValeur(cle,abr.ad)
+
+print(RechercheValeur(116,racine))

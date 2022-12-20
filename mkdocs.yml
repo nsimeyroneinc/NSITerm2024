@@ -298,8 +298,8 @@ plugins:
       #debug_html: true
       #show_anchors: true
       #verbose: true
-  - pdf-export:
-      combined: true
+  #- pdf-export:
+      #combined: true
 
   #   headerTemplate : 
   #      title
