@@ -489,7 +489,7 @@ On munit la structure de données `ArbreBinaire` des opérations suivantes :
 
     ou  
 
-    
+
     ```python title="cotisation" linenums="1"
     def cotisations2(arbre):
         a=[]
@@ -658,9 +658,9 @@ class Noeud:
         if abr is None:
             return Noeud(None, v, None)
         if v > abr.valeur:
-            return Noeud(abr.gauche, abr.valeur, ins(v, abr.droite))
+            return Noeud(abr.gauche, abr.valeur, inserer(v, abr.droite))
         elif v < abr.valeur:
-            return Noeud(ins(v, abr.gauche), abr.valeur, abr.droite)
+            return Noeud(inserer(v, abr.gauche), abr.valeur, abr.droite)
         else:
             return abr
     ```

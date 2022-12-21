@@ -17,7 +17,7 @@ nav:
     #- Test : Notebook.ipynb
 
     - T1 - Struct. de données :
-      - Acueil : StructureDonnees/acceuil.md
+      #- Acueil : StructureDonnees/acceuil.md
       - 📓 C4 P.O.O : StructureDonnees/T1_1_Programmation_Orientee_Objet.md
       - 💻 T4 POO Exercices : StructureDonnees/T1_2_TD_POO.md
       - 💻 TD POO BAC : StructureDonnees/T1_3_BAC_Capytale.md     
