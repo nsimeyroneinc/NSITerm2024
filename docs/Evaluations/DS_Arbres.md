@@ -471,21 +471,42 @@ On munit la structure de données `ArbreBinaire` des opérations suivantes :
 
 ??? success "Réponse"
 
-    On commence par définir un dictionnaire des tarifs de cotisations :
+    On commence par définir un dictionnaire des tarifs de cotisation :
 
     ```python
     tarifs = {'or': 20, 'argent': 30, 'bronze': 40}
     ```
 
-    ```python title="cotisations" linenums="1"
-    def cotisations(arbre):
-        total = 0
-        liste_membres_profils = []
-        membres_profils(arbre, liste_membres_profils)
-        for _, profil in liste_membres_profils:
-            total += tarifs[profil]
-        return total
+    ```python title="cotisation" linenums="1"
+    def cotisation(arbre):
+        if est_vide(arbre):
+            return 0
+        else:
+            arbre_gauche = cotisations(gauche(arbre))
+            arbre_droit = cotisations(droite(arbre))
+            return tarifs[profil(arbre)] + arbre_gauche + arbre_droit
     ```
+
+    ou  
+
+    
+    ```python title="cotisation" linenums="1"
+    def cotisations2(arbre):
+        a=[]
+        membres_profils(arbre,a)
+        print(a)
+        prixtotal=0
+        for i in range(len(a)):
+            if a[i][1]=='or':
+                prixtotal+=20
+            elif a[i][1]=='argent':
+                prixtotal+=30
+            else:
+                prixtotal+=40
+        return prixtotal
+    ```
+
+
 
 
 

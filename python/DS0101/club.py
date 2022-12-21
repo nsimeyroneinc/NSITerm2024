@@ -106,10 +106,26 @@ def cotisations(arbre):
     if est_vide(arbre):
         return 0
     else:
-        a_gauche = cotisations(gauche(arbre))
-        a_droite = cotisations(droite(arbre))
-        return tarifs[profil(a)] + a_gauche + a_droite
+        arbre_gauche = cotisations(gauche(arbre))
+        arbre_droit = cotisations(droite(arbre))
+        return tarifs[profil(arbre)] + arbre_gauche + arbre_droit
 
 
 
 print("cotisation : ",cotisations(a))
+
+def cotisations2(arbre):
+    a=[]
+    membres_profils(arbre,a)
+    print(a)
+    n=0
+    for i in range(len(a)):
+        if a[i][1]=='or':
+            n+=20
+        elif a[i][1]=='argent':
+            n+=30
+        else:
+            n+=40
+    return n
+
+print("cotisation : ",cotisations2(a))
