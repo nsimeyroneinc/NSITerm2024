@@ -404,7 +404,7 @@ On munit la structure de données `ArbreBinaire` des opérations suivantes :
 ??? success "Réponse c"
 
     ```python title="profil" linenums="1"
-    def profile(arbre):
+    def profil(arbre):
         if est_vide(gauche(arbre)) and est_vide(droite(arbre)):
             return 'bronze'
         elif est_vide(gauche(arbre)) or est_vide(droite(arbre)):
@@ -412,20 +412,6 @@ On munit la structure de données `ArbreBinaire` des opérations suivantes :
         else:
             return 'or'
     ```
-
-    Autre solution, consistant à compter le nombre de sous-arbres non vides qui correspond au nombre de personnes parrainées. On en déduit le profil :
-
-    ```python title="profil version 2" linenums="1"
-    def profile(arbre):
-        les_profiles = ('bronze', 'argent', 'or')
-        nb_parraines = 0
-        if not est_vide(gauche(arbre)):
-            nb_parraines += 1
-        if not est_vide(droite(arbre)):
-            nb_parraines += 1
-        return les_profils[nb_parraines]
-    ```
-
 
 
 
@@ -435,7 +421,7 @@ On munit la structure de données `ArbreBinaire` des opérations suivantes :
     ```python title="membres_profils" linenums="1"
     def membres_profils(arbre, liste_membres_profils):
         if not est_vide(arbre):
-            liste_membres_profils.append((racine(arbre), profil(A))
+            liste_membres_profils.append((racine(arbre), profil(arbre))
             membres_profils(gauche(arbre), liste_membres_profils)
             membres_profils(droite(arbre), liste_membres_profils)
     ```
@@ -501,17 +487,6 @@ On munit la structure de données `ArbreBinaire` des opérations suivantes :
         return total
     ```
 
-    On peut aussi faire sans la fonction `membres_profils` :
-
-    ```python title="cotisations version 2" linenums="1"
-    def cotisations(arbre):
-        if est_vide(arbre):
-            return 0
-        else:
-            a_gauche = cotisations(gauche(arbre))
-            a_droite = cotisations(droite(arbre))
-            return tarifs[profil(a)] + a_gauche + a_droite
-    ```
 
 
 
