@@ -71,6 +71,18 @@ def nb_sup3(v, abr):
     else:
         return nb_sup3(v, abr.droite)
 
+def nb_sup4(v, abr):
+    if abr is None:
+        return 0
+    elif v > abr.valeur:
+        return nb_sup4(v, abr.droite)
+        
+    else:
+        return 1+ nb_sup4(v, abr.gauche)+nb_sup4(v, abr.droite)
+        
+
+
 print(nb_sup(16,abr))
 print(nb_sup2(16,abr))
 print(nb_sup3(16,abr))
+print(nb_sup4(16,abr))

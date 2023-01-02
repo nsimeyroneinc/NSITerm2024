@@ -129,3 +129,21 @@ def cotisations2(arbre):
     return n
 
 print("cotisation : ",cotisations2(a))
+
+#Antoine
+def cotisations3(arbre):
+    Total=0
+    liste=[]
+    membres_profils(arbre,liste)
+    print(liste)
+    for nom,profils in liste:
+        print(profils)
+        if profils =='or':
+            Total+=20
+        elif profils=='argent':
+            Total+=30
+        else:
+            Total+=40
+    return Total
+
+print("cotisation : ",cotisations3(a))

@@ -17,7 +17,7 @@ nav:
     #- Test : Notebook.ipynb
 
     - T1 - Struct. de données :
-      #- Acueil : StructureDonnees/acceuil.md
+      - Structures de données : StructureDonnees/index_structDonnees.md
       - 📓 C4 P.O.O : StructureDonnees/T1_1_Programmation_Orientee_Objet.md
       - 💻 T4 POO Exercices : StructureDonnees/T1_2_TD_POO.md
       - 💻 TD POO BAC : StructureDonnees/T1_3_BAC_Capytale.md     
@@ -32,12 +32,14 @@ nav:
 
     
     - T2 - Bases de données :  
+      - Base de données : BasesDonnees/index_bd.md
       - 📓 C1 Modèle relationnel : BasesDonnees/Modele_Relationnel.md
       - 📓 C2 Langage SQL : BasesDonnees/Cours_TP_SQL.md
       - 📝 S2 BAC SQL : BasesDonnees/SQL_BAC.md
       - 📝 S2 BAC SQL Correction : BasesDonnees/SQL_BAC_correction.md
     
     - T3 - Archi. matèrielle :
+      - Architecture matérielle et OS : Archi_Materielle/index_archi.md
       - 📓 C6 Protocole de routage : Archi_Materielle/T3_1_Routage.md
       #- T3_1 BAC Protocole de routage : Archi_Materielle/T3_1_Routage_BAC.md
       - 📝 S6 BAC Correction Protocole de routage : Archi_Materielle/T3_1_Routage_BAC_Correction.md
@@ -50,6 +52,7 @@ nav:
     #   - Récursivité : Programmation/T4_1_TP_Recursivite_correction.md
 
     - T5 Algo. : 
+      - Algorithmique : Algo/index_algo.md
       - 📓 C7 Tri 1ère : Algo/T5_2_algo_tri.md
       - 📓 C8 Diviser pour régner : Algo/T5_3_Diviser_pour_regner.md
       - 📝 S8 Diviser pour régner BAC : Algo/T5_4_Diviser_pour_regner_BAC.md
@@ -157,14 +160,14 @@ theme:
 
     palette: # Palettes de couleurs jour/nuit, cf : https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/
       - scheme: default # nom du thème clair
-        primary: indigo # couleur primaire des titres, des liens, ..., à prendre dans la liste
-        accent: indigo # couleur d'accentuation au survol des boutons, desliens, ..., à prendre dans la liste
+        primary: blue # couleur primaire des titres, des liens, ..., à prendre dans la liste
+        accent: blue # couleur d'accentuation au survol des boutons, desliens, ..., à prendre dans la liste
         toggle: # définition du bouton pour switcher de palette
           icon: material/lightbulb # apparence
           name: Basculer en mode sombre # message
       - scheme: slate # nom du thème sombre
-        primary: brown
-        accent: brown
+        primary: blue
+        accent: blue
         toggle:
           icon: material/lightbulb-outline
           name: Basculer en mode clair

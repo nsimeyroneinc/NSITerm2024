@@ -735,8 +735,7 @@ Vous pouvez télécharger une copie au format pdf du diaporama de synthèse de c
         aff += ''' 
 
 !!! note "Remarques :" 
-    * les sujets sont classés dans l'ordre alphabétique de leur repère,
-    * chaque sujet comporte 5 exercices,
+    * les sujets sont classés dans l'ordre alphabétique de leur repère,  
     * si un exercice est corrigé son numéro est indiqué en vert, sinon en rouge
 
 '''

@@ -68,7 +68,7 @@ Les notebooks sont corrigés et les cellules peuvent être copiées pour être t
 
 ### &#10145; Thème : Algorithmique(A)
 
-□ Algorithmes sur les arbres binaires et sur les arbres binaires de recherche.
+🗹 Algorithmes sur les arbres binaires et sur les arbres binaires de recherche.
 
 🗹 Méthode « diviser pour régner »
 

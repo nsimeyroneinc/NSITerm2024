@@ -254,7 +254,7 @@ Pour rechercher une clé dans un ABR, il faut comparer la clé donnée avec la c
 
     c. En parcours préfixe, on liste récursivement la racine puis les noeuds du sous arbre gauche puis ceux du sous arbre droit. On obtient donc : $7 - 2 - 1 - 5 - 3 - 6 - 10 - 8 - 9$.  
 
-    d. Le parcours en largeur corresponda à l'ordre de la lecture (de gauche à droite et de haut en bas). Ici on obtient : $7 - 2 - 10 - 1 - 5 - 8 - 3 - 5 - 9$.
+    d. Le parcours en largeur corresponda à l'ordre de la lecture (de gauche à droite et de haut en bas). Ici on obtient : $7 - 2 - 10 - 1 - 5 - 8 - 3 - 6 - 9$.
 
 
 ## D'aprés BAC 
