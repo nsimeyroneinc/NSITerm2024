@@ -13,9 +13,10 @@ Tout comme les plus grands chefs conçoivent leurs recettes à partir de recette
 
 <!-- ![](../images/AnimeHanoiNB.gif){: .center width=640}  -->
 
-🗹 Algorithmes sur les arbres binaires et sur les arbres binaires de recherche.
+!!! info
+    🗹 Algorithmes sur les arbres binaires et sur les arbres binaires de recherche.
 
-🗹 Méthode « diviser pour régner »
+    🗹 Méthode « diviser pour régner »
 
 <p align="center">
 <iframe width="640" height="360" src="https://www.youtube.com/embed/AgtOCNCejQ8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

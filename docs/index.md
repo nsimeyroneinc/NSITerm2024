@@ -2,14 +2,8 @@ Ce site est dédié aux élèves de Terminales NSI du Lycée Murat à Issoire af
 
 Les notebooks sont corrigés et les cellules peuvent être copiées pour être testées dans vos notebooks Capytale.
 
-!!! abstract "Actualités"
-    - :star: :star: :star: [Advent of code 2022](https://adventofcode.com/2022) :star: :star: :star: a démarré !
-        - vous pouvez joindre le leaderboard NSI-Murat avec le code 2817159-e8bb5792.
-        - quelques conseils [ici](Projet/AOC/cours/){. target="_blank"}
-        
-
 !!! info "Actualités" 
-    - **Thème en cours** : [Les arbres](StructureDonnees/T3_1_arbre.md).
+    - **Thème en cours** : [Gestion de processus](Archi_Materielle/T3_2_gestion_processus.md).
 
 !!! info  "Epreuve BAC 2023"  
     - 2 «sujets 0» correspondant à la nouvelle maquette du bac version 2023 (3 exos) ont été publiés. À retrouver 

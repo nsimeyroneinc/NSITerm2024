@@ -17,7 +17,7 @@ L’accès aux données d’une base de données relationnelle s’effectue grâ
 de mise à jour qui peuvent par exemple être rédigées dans le langage SQL (Structured Query Language). Les
 traitements peuvent conjuguer le recours au langage SQL et à un langage de programmation.
 
-
-🗹 Modèle relationnel : relation, attribut, domaine, clef primaire, clef étrangère, schéma relationnel 
-🗹 Base de données relationnelle et SGBD.  
-🗹 Langage SQL : requêtes d'interrogation et de mise à jour d'une base de données  
+!!! info
+    🗹 Modèle relationnel : relation, attribut, domaine, clef primaire, clef étrangère, schéma relationnel 
+    🗹 Base de données relationnelle et SGBD.  
+    🗹 Langage SQL : requêtes d'interrogation et de mise à jour d'une base de données  

@@ -12,9 +12,9 @@ Pour un type abstrait donné, il faut absolument différencier l'**interface** d
 
 On choisit un type abstrait en fonction du problème à résoudre (choisir le bon type, c'est déjà résoudre la majeure partie du problème) et des méthodes à envisager (et de leur **coût**), appelées également *primitives*.
 
-
-🗹 Structure de données abstraites( file) : interface et implémentation  
-🗹 Vocabulaire de la programmation objet : classes, attributs, méthodes, objets 
-🗹 Listes, piles, files : structures linéaires. 
-🗹 Dictionnaires, index et clé  
-🗹 Arbres : structures hiérarchiques. Arbres binaires : nœuds, racines, feuilles, sous-arbres gauches, sous-arbres droits
+!!! info
+    🗹 Structure de données abstraites( file) : interface et implémentation  
+    🗹 Vocabulaire de la programmation objet : classes, attributs, méthodes, objets 
+    🗹 Listes, piles, files : structures linéaires. 
+    🗹 Dictionnaires, index et clé  
+    🗹 Arbres : structures hiérarchiques. Arbres binaires : nœuds, racines, feuilles, sous-arbres gauches, sous-arbres droits
