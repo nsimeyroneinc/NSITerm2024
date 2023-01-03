@@ -58,29 +58,9 @@ Il est très facile de voir les différents processus s'exécutant sur une machi
 
 Sous GNU/Linux, on peut utiliser la commande `ps` (comme **p**roces**s**, la traduction anglaise de *processus*) pour afficher les informations sur les processus (sous windows : talklist). En passant des options à cette commande on peut obtenir des choses intéressantes.
 
-Pour tester, on peut utiliser : [terminal linux en ligne](https://cocalc.com/auth/try) :  
+Par exemple, en exécutant dans un terminal la commande `ps -aef`, on peut visualiser tous les processus en cours sur notre ordinateur :
 
-1. Commande `ps`
-    1. Consulter l'aide sur la commande `ps`, quel est le rôle de cette commande ?  
-    2. Tester la commande `ps` (sans option) dans un terminal. Qu'est-ce que `PID` du processus ?   
-    1. Lancer un terminal et y taper la commande `ps` sans aucune option, le résultat devrait être semblable à :  
-    ```
-        PID   TTY          TIME CMD
-        19149 pts/3    00:00:00 bash
-        19336 pts/3    00:00:00 ps
-    ```
-    3. Tester les options suivantes de la commande `ps` et indiquer leur  rôle (en consultant l'aide de la commande ou en faisant vos propres recherches sur le *Web*)  
-        1. `ps -e` (ou `ps -A`)  
-        2. `ps -f` quelle est la signification de la colonne `PPID` ?  
-        3. `ps -x`  
-        4. `ps -aef`  
-
-
-
-!!! Remarque
-    La commande `pstree` permet de visualiser les processus sous la forme d'une arboresence.
-
-
+![](data/terminale1.png)
 
 ### Création d'un processus
 
@@ -639,9 +619,7 @@ L'ordonnancement des processus des systèmes d'exploitation actuels est bien plu
     - Les processus se partagent les différentes ressources, on parle d'*accès concurrent* aux ressources. Ce partage des ressources n'est pas sans risque et peut conduire à des problèmes de synchronisation. Ces problèmes peuvent être évités en utilisant un *verrou*, qui permet à un processus de ne pas être interrompu dans sa section critique par un autre processus demandant le même verrou.
     - L'utilisation de plusieurs verrous peut entraîner des *interblocages*, c'est-à-dire des situations où chaque processus attend une ressource détenue par un autre, conduisant à une attente cyclique infinie. L'ordre d'acquisition des verrous est important mais pas toujours évident à écrire dans le cas de problèmes complexes.
 
-## Cours 
 
-{{ aff_cours(num) }}
 
 ## Exercice 3 : Algorithmes d'ordonnancement
 
