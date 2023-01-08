@@ -11,7 +11,6 @@
 
 {{ aff_cours(num) }}
 
-# Exercices sur les piles - Sujet BAC
 
 ## Sujet zéro
 
