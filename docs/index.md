@@ -11,7 +11,7 @@ Les notebooks sont corrigés et les cellules peuvent être copiées pour être t
         - [sujet B](Annales/2023/2023-sujet_0-b.pdf){. target="_blank"}.  
 
     - Les épreuves de spécialité se dérouleront les 20 et 21 mars 2023 pour la N.S.I.  
-    - Les épreuves pratiques seront organisées je Jeudi 30 mars 2023.
+    - Les épreuves pratiques seront organisées le Jeudi 30 mars 2023.
     
 ## Progression sur l'année
 

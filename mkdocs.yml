@@ -47,6 +47,7 @@ nav:
       - 📝 S13 BAC Gestion Processus : Archi_Materielle/T3_3_gestion_processus_BAC.md
     
     - T4 - Prog. :
+      - Programmation : Programmation/index_prog.md
       - 📓 C3 Récursivité  :  Programmation/T1_1_Recursivite.md
       
     #   - Récursivité : Programmation/T4_1_TP_Recursivite_correction.md
@@ -122,8 +123,8 @@ nav:
         #  - "Sujet 39" : Annales/Corriges/2022-S39.md
         #  - "Sujet 40" : Annales/Corriges/2022-S40.md
 
-    #- E.P 💻: 
-    #  - Déroulement : epreuve_pratique.md
+    - Révision Sujet BAC 📝 :  
+      - Piles et Files : BAC/pile_file/compilation_pile_file.md
     #  - Consigne : divers/Consigne_EP.md
     #  - Sujets : divers/EpreuvePratique.md
       #- EP 2022 : BAC/EP_2022.md
