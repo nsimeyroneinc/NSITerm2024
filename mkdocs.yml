@@ -124,6 +124,7 @@ nav:
         #  - "Sujet 40" : Annales/Corriges/2022-S40.md
 
     - Révision Sujet BAC 📝 :  
+      - Acceuil BAC : BAC/index_BAC.md
       - Piles et Files : BAC/pile_file/compilation_pile_file.md
     #  - Consigne : divers/Consigne_EP.md
     #  - Sujets : divers/EpreuvePratique.md
