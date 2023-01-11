@@ -26,6 +26,10 @@ Soit en téléchargement pour travailler dans visualcode :
 
 soit sur Capytale : [K-plus proches voisins Iris](https://capytale2.ac-paris.fr/web/c/87a1-1200508)
 
+## Cours 
+
+{{ aff_cours(num) }}
+
 ## Exercice BAC
 
 !!! exo 

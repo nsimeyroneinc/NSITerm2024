@@ -580,44 +580,6 @@ Ce phénomène d'*attente circulaire*, où chaque processus attend une ressource
 
 De manière générale, dans des problèmes complexes les situations d'interblocage sont difficiles à détecter et il se peut très bien que le programme se comporte bien pendant toute une phase de tests mais bloque lors d'une exécution ultérieure puisque l'on ne peut pas prévoir l'ordonnancement des processus.
 
-### Simulation d'interblocage⚓︎  
-
-Robosomes créé par Alain BUSSER , Sébastien HOARAU (Voir ici : [Robosomes - IREM de la réunion](https://irem.univ-reunion.fr/spip.php?article1128)
-
-![](data/jeu1logo-2.png){:.center}
-
-Le jeu robosomes se joue à un seul joueur sur une grille rectangulaire. Chaque case peut être
-
-- soit vide  
-- soit couverte par un obstacle fixe (en noir comme aux mots croisés)  
-- soit couverte d’un pion pouvant bouger, appelé robot  
-
-Chaque robot peut être tourné dans l’une des quatre directions cardinales ◀▲▶▼. Les robots peuvent bouger tous en même temps de l’une des façons suivantes :
-
-- G : tous les robots tournent vers leur gauche (de 90°) en même temps  
-- D : tous les robots tournent vers leur droite (de 90°) en même temps  
-- A : les robots qui peuvent avancer d’une case, le font. Un robot peut avancer d’une case s’il n’y a pas d’obstacle sur cette case et si aucun robot ne s’apprête à aller sur cette case.
-
-Les cases du bord de la grille sont toutes couvertes d’obstacles fixes, à l’exception de l’une d’entre elles appelée « sortie ». Lorsqu’un robot est sur la case de sortie, tourné vers l’extérieur de la grille, il quitte le jeu et n’est plus soumis aux ordres donnés. Le but du jeu est de faire sortir tous les robots de la grille, en écrivant un mot dans l’alphabet A,G,D, appelé programme et que les robots interpréteront comme décrit ci-dessus.
-
-Voici quelques exemples :
-
-[Un premier exemple](https://irem.univ-reunion.fr/IMG/html/jeu7.html) pour se mettre en route.
-
-[Interblocage](https://irem.univ-reunion.fr/IMG/html/jeu6.html)
-
-[Interblocage 1](https://irem.univ-reunion.fr/IMG/html/jeu1.html)
-
-[Interblocage 2](https://irem.univ-reunion.fr/IMG/html/jeu2.html)
-
-[Interblocage 3](https://irem.univ-reunion.fr/IMG/html/jeu3.html)
-
-[Interblocage 4](https://irem.univ-reunion.fr/IMG/html/jeu4.html)
-
-[Interblocage perpétuel ou pas](https://irem.univ-reunion.fr/IMG/html/jeu5.html)
-
-[Interblocage 8](https://irem.univ-reunion.fr/IMG/html/jeu8.html)
-
 ## Et pour les systèmes multiprocesseurs ?
 
 Les ordinateurs actuels possèdent généralement plusieurs processeurs, ce qui permet à plusieurs processus d'être exécutés parallèlement : un par processeur. Ce parallélisme permet bien évidemment une plus grande puissance de calcul.
