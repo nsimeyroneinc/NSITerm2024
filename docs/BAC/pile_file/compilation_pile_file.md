@@ -57,7 +57,7 @@ Opérations :
     3       empiler (Q , depiler ( P ))
     ```
 ??? solution "Réponse" 
-    ![sujetzero_Ex1_1.png](data/sujet0_Ex1_1.png){:.center}
+    ![sujetzero_Ex1_1.png](data/sujetzero_Ex1_1.png){:.center}
 
 
 !!! question "Question 2 :"

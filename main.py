@@ -81,7 +81,7 @@ def define_env(env):
         10 : ["sd","Les arbres",2,"StructureDonnees/T3_1_arbre.md"],
         11: ["algorithmique","Algorithmes sur les arbres",2,"Algo/TP5_5_Implementation_arbres.md"],
         12: ["algorithmique","arbres binaires de recherche",1,"StructureDonnees/T3_3_arbre_recherche.md"],
-        13 : ["os","Gestion Processus",1,"Archi_Materielle/T3_2_gestion_processus.md"]
+        13 : ["os","Gestion Processus",1,"Archi_Materielle/T3_2_gestion_processus.md"],
         #7 : ["python","Notions de programmation orienté objet",2,"poo.md"],
         #8 : ["sd","Structures de données linéaires",2,"sl.md"],
         #9 : ["os","Système sur puce",1,"puces.md"],
@@ -90,6 +90,7 @@ def define_env(env):
         #12: ["algorithmique","Algorithmes sur les arbres",2,"algoarbre.md"],
         #13: ["sd","Graphes",2,"graphes.md"],
         #14: ["os","Protocoles de routage",2,"routage.md"],
+        15: ["algorithmique","k-plus proches voisins",1,"Algo/TP6_1_kppv.md"]
         #15: ["algorithmique","Recherche textuelle",2,"texte.md"],
         #16: ["python","Calculabilité, décidabilité",2,"calculabilite.md"],
         #17: ["os","Sécurisation des communications",2,"cryptographie.md"],
@@ -142,7 +143,7 @@ def define_env(env):
         #12: ["algorithmique","Algorithmes sur les arbres",2,"algoarbre.md"],
         13: ["os","Gestion Processus","os","Archi_Materielle/T3_3_gestion_processus_BAC.md"],
         14: ["BAC","Piles et Files",2,"BAC/pile_file/compilation_pile_file.md"]
-        #15: ["algorithmique","Recherche textuelle",2,"texte.md"],
+        #15: ["algorithmique","k-plus proches voisins",1,"Algo/TP6_1_kppv.md"]
         #16: ["python","Calculabilité, décidabilité",2,"calculabilite.md"],
         #17: ["os","Sécurisation des communications",2,"cryptographie.md"],
         #18:["python","Récursivité",2,"Programmation/T1_1_Recursivite.md"],
