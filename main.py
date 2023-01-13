@@ -127,22 +127,22 @@ def define_env(env):
     env.variables['BAC_terminale']={
         #1 : ["devoir","Langage SQL","","Evaluations/BDD_Devoir_Corrige.md"],
         #2 : ["devoir","Pile-File et Protocole de Routage",'16/11/2023',"Evaluations/DS_Pile_File_Routage.md"],
-        3 : ["BAC","Langage SQL","SQL","BasesDonnees/SQL_BAC_correction.md"],
+        3 : ["bd","Langage SQL","SQL","BasesDonnees/SQL_BAC_correction.md"],
         #3 : ["python","Récursivité",1,"Programmation/T1_1_Recursivite.md"],
-        4 : ["BAC","Programmation Orientée Objet","POO","StructureDonnees/POO_BAC_correction.md"],
-        5 : ["BAC","Piles et Files","Struc. Données","StructureDonnees/T2_2_Pile_File_BAC_Correction.md"],
-        6 : ["BAC","Protocole de routage","Réseaux","Archi_Materielle/T3_1_Routage_BAC_Correction.md"],
+        4 : ["sd","Programmation Orientée Objet","POO","StructureDonnees/POO_BAC_correction.md"],
+        5 : ["sd","Piles et Files","Struc. Données","StructureDonnees/T2_2_Pile_File_BAC_Correction.md"],
+        6 : ["os","Protocole de routage","Réseaux","Archi_Materielle/T3_1_Routage_BAC_Correction.md"],
         #7 : ["algorithmique","Algorithmes de tri",1,"Algo/T5_2_algo_tri.md"],
         #8 : ["algorithmique","Diviser pour régner",1,"T5_2_Diviser_pour_regner.md"]
         #6 : ["os","Protocole de Routage",1,""],
         #7 : ["python","Notions de programmation orienté objet",2,"poo.md"],
-        8 : ["BAC","Diviser pour régner","Algo","Algo/T5_4_Diviser_pour_regner_BAC.md"],
-        10 : ["BAC","Les arbres - Partie 1","Struc. Données","StructureDonnees/T3_2_arbre_BAC.md"],
-        11 : ["BAC","Algorihtmes Arbres Binaires","Algo","Algo/T5_6_algo_arbre_BAC.md"],
-        12 : ["BAC","Arbres Binaires de Recherche","Algo","StructureDonnees/T3_4_arbre_recherche_BAC.md"],
+        8 : ["algorithmique","Diviser pour régner","Algo","Algo/T5_4_Diviser_pour_regner_BAC.md"],
+        10 : ["sd","Les arbres - Partie 1","Struc. Données","StructureDonnees/T3_2_arbre_BAC.md"],
+        11 : ["algorithmique","Algorihtmes Arbres Binaires","Implémentation arbres binaires","Algo/T5_6_algo_arbre_BAC.md"],
+        12 : ["algorithmique","Arbres Binaires de Recherche","ABR","StructureDonnees/T3_4_arbre_recherche_BAC.md"],
         #12: ["algorithmique","Algorithmes sur les arbres",2,"algoarbre.md"],
-        13: ["os","Gestion Processus","os","Archi_Materielle/T3_3_gestion_processus_BAC.md"],
-        14: ["BAC","Piles et Files",2,"BAC/pile_file/compilation_pile_file.md"]
+        13: ["os","Gestion Processus","Processus","Archi_Materielle/T3_3_gestion_processus_BAC.md"],
+        14: ["sd","Piles et Files","Struc. Données","BAC/pile_file/compilation_pile_file.md"]
         #15: ["algorithmique","k-plus proches voisins",1,"Algo/TP6_1_kppv.md"]
         #16: ["python","Calculabilité, décidabilité",2,"calculabilite.md"],
         #17: ["os","Sécurisation des communications",2,"cryptographie.md"],
