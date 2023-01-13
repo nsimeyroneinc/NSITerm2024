@@ -127,9 +127,9 @@ def define_env(env):
     env.variables['BAC_terminale']={
         #1 : ["devoir","Langage SQL","","Evaluations/BDD_Devoir_Corrige.md"],
         #2 : ["devoir","Pile-File et Protocole de Routage",'16/11/2023',"Evaluations/DS_Pile_File_Routage.md"],
-        3 : ["bd","Langage SQL","SQL","BasesDonnees/SQL_BAC_correction.md"],
+        3 : ["db","Langage SQL","SQL","BasesDonnees/SQL_BAC_correction.md"],
         #3 : ["python","Récursivité",1,"Programmation/T1_1_Recursivite.md"],
-        4 : ["sd","Programmation Orientée Objet","POO","StructureDonnees/POO_BAC_correction.md"],
+        4 : ["sd","Programmation Orientée Objet","P.O.O","StructureDonnees/POO_BAC_correction.md"],
         5 : ["sd","Piles et Files","Struc. Données","StructureDonnees/T2_2_Pile_File_BAC_Correction.md"],
         6 : ["os","Protocole de routage","Réseaux","Archi_Materielle/T3_1_Routage_BAC_Correction.md"],
         #7 : ["algorithmique","Algorithmes de tri",1,"Algo/T5_2_algo_tri.md"],

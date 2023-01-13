@@ -16,7 +16,7 @@ Soit en téléchargement pour travailler dans visualcode :
 
 {{telecharger("k-plus proches voisins - cours","../files/C15/kppv_cours.zip")}}
 
-soit sur Capytale : [K-plus proches voisins Cours](https://capytale2.ac-paris.fr/web/c/0913-1200503)
+soit sur **Capytale** : [K-plus proches voisins Cours](https://capytale2.ac-paris.fr/web/c/0913-1200503)
 
 {{ titre_activite("k-plus proches voisins - IRIS",[]) }}
 
@@ -24,7 +24,7 @@ Soit en téléchargement pour travailler dans visualcode :
 
 {{telecharger("k-plus proches voisins - Iris","../files/C15/kppv_iris.zip")}}
 
-soit sur Capytale : [K-plus proches voisins Iris](https://capytale2.ac-paris.fr/web/c/87a1-1200508)
+soit sur **Capytale** : [K-plus proches voisins Iris](https://capytale2.ac-paris.fr/web/c/87a1-1200508)
 
 ## Cours 
 
