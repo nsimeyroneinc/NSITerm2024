@@ -3,7 +3,10 @@ Ce site est dédié aux élèves de Terminales NSI du Lycée Murat à Issoire af
 Les notebooks sont corrigés et les cellules peuvent être copiées pour être testées dans vos notebooks Capytale.
 
 !!! info "Actualités" 
-    - **Thème en cours** : [Gestion de processus](Archi_Materielle/T3_2_gestion_processus.md).
+    - **Thème en cours** : 
+        - Sujets BAC Piles et Files
+        - Retour sur les k-plus proches voisins (TD Cours et TP Les Iris)
+        - Travail sur les épreuves pratiques en  autonomie.
 
 !!! info  "Epreuve BAC 2023"  
     - 2 «sujets 0» correspondant à la nouvelle maquette du bac version 2023 (3 exos) ont été publiés. À retrouver 
@@ -50,14 +53,14 @@ Les notebooks sont corrigés et les cellules peuvent être copiées pour être t
 
 ### &#10145; Thème : Architectures matérielles, système d’exploitation et réseaux(ARSE)  
 
-□ Gestion des processus et des ressources par un système d'exploitation  
+🗹 Gestion des processus et des ressources par un système d'exploitation  
 🗹 Protocoles de routage  
 
 ### &#10145; Thème : Langage de programmation(LP)  
 	
 🗹 Récursivité  
-□ Modularité  	
-□ Mise au point des programmes. Gestion des bugs.
+🗹 Modularité  	
+🗹 Mise au point des programmes. Gestion des bugs.
 
 
 ### &#10145; Thème : Algorithmique(A)

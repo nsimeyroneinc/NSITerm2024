@@ -4,7 +4,7 @@
 
 !!! info
     🗹 Protocoles de routage  
-    □ Gestion des processus et des ressources par un système d'exploitation  
+    🗹 Gestion des processus et des ressources par un système d'exploitation  
     □ Revoir les principales commandes Linux
 
 
