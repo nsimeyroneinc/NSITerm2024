@@ -4,9 +4,9 @@ Les notebooks sont corrigés et les cellules peuvent être copiées pour être t
 
 !!! info "Actualités" 
     - **Thème en cours** : 
-        - Sujets BAC Piles et Files
-        - Retour sur les k-plus proches voisins (TD Cours et TP Les Iris)
-        - Travail sur les épreuves pratiques en  autonomie.
+        - Sujets BAC : [Piles et Files](BAC/pile_file/compilation_pile_file.md)  
+        - Sujets BAC : [Programmation et **récursivité**](BAC/recursivite/compile_recursivite.md)  
+        - Travail sur les épreuves pratiques en  autonomie.  [EP 2022](Annales/2022/EP.md)
 
 !!! info  "Epreuve BAC 2023"  
     - 2 «sujets 0» correspondant à la nouvelle maquette du bac version 2023 (3 exos) ont été publiés. À retrouver 

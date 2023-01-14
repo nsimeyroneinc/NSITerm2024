@@ -129,7 +129,7 @@ def define_env(env):
         #2 : ["devoir","Pile-File et Protocole de Routage",'16/11/2023',"Evaluations/DS_Pile_File_Routage.md"],
         3 : ["db","Langage SQL","SQL","BasesDonnees/SQL_BAC_correction.md"],
         #3 : ["python","Récursivité",1,"Programmation/T1_1_Recursivite.md"],
-        4 : ["sd","Programmation Orientée Objet","POO","StructureDonnees/POO_BAC_correction.md"],
+        4 : ["sd","Programmation Orientée Objet","P.O.O","StructureDonnees/POO_BAC_correction.md"],
         5 : ["sd","Piles et Files","Struc. Données","StructureDonnees/T2_2_Pile_File_BAC_Correction.md"],
         6 : ["os","Protocole de routage","Réseaux","Archi_Materielle/T3_1_Routage_BAC_Correction.md"],
         #7 : ["algorithmique","Algorithmes de tri",1,"Algo/T5_2_algo_tri.md"],
@@ -142,9 +142,9 @@ def define_env(env):
         12 : ["algorithmique","Arbres Binaires de Recherche","ABR","StructureDonnees/T3_4_arbre_recherche_BAC.md"],
         #12: ["algorithmique","Algorithmes sur les arbres",2,"algoarbre.md"],
         13: ["os","Gestion Processus","Processus","Archi_Materielle/T3_3_gestion_processus_BAC.md"],
-        14: ["sd","Piles et Files","Struc. Données","BAC/pile_file/compilation_pile_file.md"]
-        #15: ["algorithmique","k-plus proches voisins",1,"Algo/TP6_1_kppv.md"]
-        #16: ["python","Calculabilité, décidabilité",2,"calculabilite.md"],
+        14: ["sd","Piles et Files","Struc. Données","BAC/pile_file/compilation_pile_file.md"],
+        15: ["algorithmique","k-plus proches voisins",1,"Algo/TP6_1_kppv.md"],
+        16: ["python","Récursivité",'Programmation',"BAC/recursivite/compile_recursivite.md"]
         #17: ["os","Sécurisation des communications",2,"cryptographie.md"],
         #18:["python","Récursivité",2,"Programmation/T1_1_Recursivite.md"],
         #19 : ["algorithmique","Diviser pour régner",1,"diviser.md"]
