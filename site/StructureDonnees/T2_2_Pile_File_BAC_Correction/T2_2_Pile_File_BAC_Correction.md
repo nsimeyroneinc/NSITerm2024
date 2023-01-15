@@ -9,7 +9,7 @@
 
 {{ initexo(0) }}
 
-{{ initexo(0) }}
+
 
 
 ##  D'après 2022, Métropole, J1, Ex. 1 - Vérification syntaxique de parenthèses ou de balises

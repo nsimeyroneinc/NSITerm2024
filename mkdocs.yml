@@ -128,6 +128,7 @@ nav:
       - Acceuil BAC : BAC/index_BAC.md
       - Piles et Files : BAC/pile_file/compilation_pile_file.md
       - Récursivité : BAC/recursivite/compile_recursivite.md
+      - Programmation Tableaux : BAC/programmation/compilation_programmation.md
     #  - Consigne : divers/Consigne_EP.md
     #  - Sujets : divers/EpreuvePratique.md
       #- EP 2022 : BAC/EP_2022.md
@@ -306,6 +307,9 @@ plugins:
       #show_anchors: true
       #verbose: true
   #- pdf-export:
+  #    verbose: true
+  #    media_type: print
+      #enabled_if_env: ENABLE_PDF_EXPORT
       #combined: true
 
   #   headerTemplate : 

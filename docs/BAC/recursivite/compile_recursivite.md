@@ -823,9 +823,13 @@ On s'intéresse dans cet exercice à un algorithme de mélange des éléments d'
 
 ??? reponse "Réponse"
     À chaque étape, si on net rouve pas l’élément :  
-    - Si `liste[m]>elem` alors $fin_{k+1} = m - 1$ et $debut_{k+1} = debut_k$ or $m≤fin_k$ donc $fin_{k+1}<fin_k$ et ainsi $fin_{k+1} - debut_{k+1} < fin_k - debut_k$
-    - Si `liste[m] < elem` alors $fin_{k+1} =fin_k$ et $debut_{k+1} = m+1$ or $m ≥debut_k$ donc $debut_{k+1} < fin_k$ et ainsi $fin_{k+1}-debut_{k+1} <fin_ - debut_k$  
-    On a donc toujours $fin_{k+1}-debut_{k+1} < fin_k -debut_k$, c’est bien un **variant de boucle**. Il existe donc un $p$ tel que $fin_p < debut_p$ et l’algorithme se termine.  
+
+    - Si `liste[m]>elem` alors $fin_{k+1} = m - 1$ et $debut_{k+1} = debut_k$ or $m≤fin_k$  
+    donc $fin_{k+1}<fin_k$ et ainsi $fin_{k+1} - debut_{k+1} < fin_k - debut_k$  
+    - Si `liste[m] < elem` alors $fin_{k+1} =fin_k$ et $debut_{k+1} = m+1$ or $m ≥debut_k$  
+    donc $debut_{k+1} < fin_k$ et ainsi $fin_{k+1}-debut_{k+1} <fin_ - debut_k$   
+    On a donc toujours $fin_{k+1}-debut_{k+1} < fin_k -debut_k$, c’est bien un **variant de boucle**.  
+    Il existe donc un $p$ tel que $fin_p < debut_p$ et l’algorithme se termine.  
 
 ### Partie B : La recherche dichotomique itérative
 

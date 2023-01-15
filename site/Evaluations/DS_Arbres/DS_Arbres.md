@@ -250,11 +250,11 @@ Pour rechercher une clé dans un ABR, il faut comparer la clé donnée avec la c
 ??? success "Réponse"
     a. En parcours en profondeur infixe, on liste de façon récursive les clé du sous arbre gauche, puis la racine, puis les clé du sous arbre droit. On obtient donc : $1 - 2 - 3 - 5 - 6 - 7 - 8 - 9 - 10$
 
-    b. En parcours préfixe, on liste récursivement la racine puis les noeuds du sous arbre gauche puis ceux du sous arbre droit. On obtient donc : $7 - 2 - 1 - 5 - 3 - 6 - 10 - 8 - 9$.  
+    b. En parcours suffixe, on liste récursivement les noeuds du sous arbre gauche, ceux du sous arbre droit et enfin la racine. Ici, on obtient : $1 - 3 - 6 - 5 - 2 - 9 - 8 - 10 - 7$.
 
-    c. En parcours suffixe, on liste récursivement les noeuds du sous arbre gauche, ceux du sous arbre droit et enfin la racine. Ici, on obtient : $1 - 3 - 6 - 5 - 2 - 9 - 8 - 10 - 7$.
+    c. En parcours préfixe, on liste récursivement la racine puis les noeuds du sous arbre gauche puis ceux du sous arbre droit. On obtient donc : $7 - 2 - 1 - 5 - 3 - 6 - 10 - 8 - 9$.  
 
-    d. Le parcours en largeur corresponda à l'ordre de la lecture (de gauche à droite et de haut en bas). Ici on obtient : $7 - 2 - 10 - 1 - 5 - 8 - 3 - 5 - 9$.
+    d. Le parcours en largeur corresponda à l'ordre de la lecture (de gauche à droite et de haut en bas). Ici on obtient : $7 - 2 - 10 - 1 - 5 - 8 - 3 - 6 - 9$.
 
 
 ## D'aprés BAC 
@@ -404,28 +404,14 @@ On munit la structure de données `ArbreBinaire` des opérations suivantes :
 ??? success "Réponse c"
 
     ```python title="profil" linenums="1"
-    def profile(arbre):
+    def profil(arbre):
         if est_vide(gauche(arbre)) and est_vide(droite(arbre)):
             return 'bronze'
         elif est_vide(gauche(arbre)) or est_vide(droite(arbre)):
             return 'argent'
         else:
-            return 'bronze'
+            return 'or'
     ```
-
-    Autre solution, consistant à compter le nombre de sous-arbres non vides qui correspond au nombre de personnes parrainées. On en déduit le profil :
-
-    ```python title="profil version 2" linenums="1"
-    def profile(arbre):
-        les_profiles = ('bronze', 'argent', 'or')
-        nb_parraines = 0
-        if not est_vide(gauche(arbre)):
-            nb_parraines += 1
-        if not est_vide(droite(arbre)):
-            nb_parraines += 1
-        return les_profils[nb_parraines]
-    ```
-
 
 
 
@@ -435,7 +421,7 @@ On munit la structure de données `ArbreBinaire` des opérations suivantes :
     ```python title="membres_profils" linenums="1"
     def membres_profils(arbre, liste_membres_profils):
         if not est_vide(arbre):
-            liste_membres_profils.append((racine(arbre), profil(A))
+            liste_membres_profils.append((racine(arbre), profil(arbre))
             membres_profils(gauche(arbre), liste_membres_profils)
             membres_profils(droite(arbre), liste_membres_profils)
     ```
@@ -485,33 +471,43 @@ On munit la structure de données `ArbreBinaire` des opérations suivantes :
 
 ??? success "Réponse"
 
-    On commence par définir un dictionnaire des tarifs de cotisations :
+    On commence par définir un dictionnaire des tarifs de cotisation :
 
     ```python
     tarifs = {'or': 20, 'argent': 30, 'bronze': 40}
     ```
 
-    ```python title="cotisations" linenums="1"
-    def cotisations(arbre):
-        total = 0
-        liste_membres_profils = []
-        membres_profils(arbre, liste_membres_profils)
-        for _, profil in liste_membres_profils:
-            total += tarifs[profil]
-        return total
-    ```
-
-    On peut aussi faire sans la fonction `membres_profils` :
-
-    ```python title="cotisations version 2" linenums="1"
-    def cotisations(arbre):
+    ```python title="cotisation" linenums="1"
+    def cotisation(arbre):
         if est_vide(arbre):
             return 0
         else:
-            a_gauche = cotisations(gauche(arbre))
-            a_droite = cotisations(droite(arbre))
-            return tarifs[profil(a)] + a_gauche + a_droite
+            arbre_gauche = cotisations(gauche(arbre))
+            arbre_droit = cotisations(droite(arbre))
+            return tarifs[profil(arbre)] + arbre_gauche + arbre_droit
     ```
+
+    ou  
+
+
+    ```python title="cotisation" linenums="1"
+    def cotisations2(arbre):
+        a=[]
+        membres_profils(arbre,a)
+        print(a)
+        prixtotal=0
+        for i in range(len(a)):
+            if a[i][1]=='or':
+                prixtotal+=20
+            elif a[i][1]=='argent':
+                prixtotal+=30
+            else:
+                prixtotal+=40
+        return prixtotal
+    ```
+
+
+
 
 
 
@@ -662,9 +658,9 @@ class Noeud:
         if abr is None:
             return Noeud(None, v, None)
         if v > abr.valeur:
-            return Noeud(abr.gauche, abr.valeur, ins(v, abr.droite))
+            return Noeud(abr.gauche, abr.valeur, inserer(v, abr.droite))
         elif v < abr.valeur:
-            return Noeud(ins(v, abr.gauche), abr.valeur, abr.droite)
+            return Noeud(inserer(v, abr.gauche), abr.valeur, abr.droite)
         else:
             return abr
     ```

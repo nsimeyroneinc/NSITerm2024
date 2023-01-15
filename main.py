@@ -144,8 +144,8 @@ def define_env(env):
         13: ["os","Gestion Processus","Processus","Archi_Materielle/T3_3_gestion_processus_BAC.md"],
         14: ["sd","Piles et Files","Struc. Données","BAC/pile_file/compilation_pile_file.md"],
         15: ["algorithmique","k-plus proches voisins",1,"Algo/TP6_1_kppv.md"],
-        16: ["python","Récursivité",'Programmation',"BAC/recursivite/compile_recursivite.md"]
-        #17: ["os","Sécurisation des communications",2,"cryptographie.md"],
+        16: ["python","Récursivité",'Programmation',"BAC/recursivite/compile_recursivite.md"],
+        17: ["python","Programmation - Tableaux","Python","BAC/programmation/compilation_programmation.md"]
         #18:["python","Récursivité",2,"Programmation/T1_1_Recursivite.md"],
         #19 : ["algorithmique","Diviser pour régner",1,"diviser.md"]
     }
