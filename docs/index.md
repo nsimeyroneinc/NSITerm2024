@@ -4,11 +4,14 @@ Les notebooks sont corrigés et les cellules peuvent être copiées pour être t
 
 !!! info "Actualités" 
     - **Thème en cours** : 
+        - Devoir Vendredi 20 janvier 2023 :  
+          - Sur feuille : Routage, gestion processus et commande linux  
+          - Epreuve pratique : 1 sujet parmi les 40 de 2022.  
         - Sujets BAC : [Piles et Files](BAC/pile_file/compilation_pile_file.md)  
         - Sujets BAC : [Programmation et **récursivité**](BAC/recursivite/compile_recursivite.md)  
-        - Travail sur les épreuves pratiques en  autonomie.  [EP 2022](Annales/2022/EP.md)
+        - Travail sur les épreuves pratiques en  autonomie.  [EP 2022](Annales/2022/EP.md)  
 
-!!! info  "Epreuve BAC 2023"  
+!!! note  "Epreuve BAC 2023"  
     - 2 «sujets 0» correspondant à la nouvelle maquette du bac version 2023 (3 exos) ont été publiés. À retrouver 
         - [sujet A](Annales/2023/2023-sujet_0-a.pdf){. target="_blank"}.  
         - [sujet B](Annales/2023/2023-sujet_0-b.pdf){. target="_blank"}.  
