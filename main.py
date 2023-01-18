@@ -300,11 +300,11 @@ def define_env(env):
     @env.macro
     def cours(fichier):
         ccours = '''
-Vous pouvez télécharger une copie au format pdf du diaporama de synthèse de cours présenté en classe :
+Vous pouvez télécharger une copie au format pdf du diaporama de synthèse de cours :
 
 <span class='centre'>[Diaporama de cours :fontawesome-regular-file-pdf:](../pdf/'''+fichier+'''){.md-button target=_blank}</span>
 !!! warning "Attention"
-    Ce diaporama ne vous donne que quelques points de repères lors de vos révisions. Il devrait être complété par la relecture attentive de vos **propres** notes de cours et par une révision approfondie des exercices.'''
+    Ce diaporama ne vous donne que quelques points de repères lors de vos révisions. Il devrait être complété par la relecture attentive de vos **propres** notes et par une révision approfondie des exercices.'''
         return ccours
 
     @env.macro

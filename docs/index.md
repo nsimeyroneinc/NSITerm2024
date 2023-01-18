@@ -5,8 +5,8 @@ Les notebooks sont corrigés et les cellules peuvent être copiées pour être t
 !!! info "Actualités" 
     - **Thème en cours** : 
         - Devoir Vendredi 20 janvier 2023 :  
-          - Sur feuille : Routage, gestion processus et commande linux  
-          - Epreuve pratique : 1 sujet parmi les 40 de 2022.  
+            - Sur feuille : Routage, gestion processus et commande linux  
+            - Epreuve pratique : 1 sujet parmi les 40 de 2022.  
         - Sujets BAC : [Piles et Files](BAC/pile_file/compilation_pile_file.md)  
         - Sujets BAC : [Programmation et **récursivité**](BAC/recursivite/compile_recursivite.md)  
         - Travail sur les épreuves pratiques en  autonomie.  [EP 2022](Annales/2022/EP.md)  
