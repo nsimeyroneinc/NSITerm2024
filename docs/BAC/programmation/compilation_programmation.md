@@ -670,7 +670,8 @@ On souhaite programmer une fonction `palindrome` qui prend en paramètre une cha
         for i in range(1, taille -1):
             interieur = interieur + txt[i]
         return (txt[0] == txt[taille - 1]) and (palindrome(interieur))
-
+    ```
+    
     **(a)** Choisir parmie les propositions ci-dessous celle qui convient pour compléter la fonction palindrome (ligne 3 et 4)
 
     - Proposition 1  

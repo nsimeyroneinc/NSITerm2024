@@ -35,7 +35,7 @@ class Piece:
         return self.sup
 
 #villas
-class villa:
+class Villa:
     def __init__(self,a,b,c,d,e):
         self.nom = a #nom de la villa
         self.sejour = b #caracteristiques sejour
@@ -54,11 +54,11 @@ class villa:
 
 #Programme principal
 v=[]
-v.append(Villa("Les quatre vents" , Piece("séjour",40),Piece("Ch1",10),Piece("ch2",20),"eq")))
-v.append(Villa("Les goélands" , Piece("séjour",50),Piece("Ch1",15),Piece("ch2",15),"eq")))
-v.append(Villa("Rêve d'été" , Piece("séjour",30),Piece("Ch1",15),Piece("ch2",20),"non eq")))
-v.append(Villa("Les oliviers" , Piece("séjour",30),Piece("Ch1",10),Piece("ch2",20),"eq")))
-v.append(Villa("Bellevue" , Piece("séjour",30),Piece("Ch1",10),Piece("ch2",20),"non eq")))
+v.append(Villa("Les quatre vents" , Piece("séjour",40),Piece("ch1",10),Piece("ch2",20),"eq"))
+v.append(Villa("Les goélands" , Piece("séjour",50),Piece("ch1",15),Piece("ch2",15),"eq"))
+v.append(Villa("Rêve d'été" , Piece("séjour",30),Piece("ch1",15),Piece("ch2",20),"non eq"))
+v.append(Villa("Les oliviers" , Piece("séjour",30),Piece("ch1",10),Piece("ch2",20),"eq"))
+v.append(Villa("Bellevue" , Piece("séjour",30),Piece("ch1",10),Piece("ch2",20),"non eq"))
 
 ```
 
@@ -106,10 +106,11 @@ Il faut partir d'une liste de villas :
 A la fin du processus, une seule villa est renvoyée.  
 
 Pour écrire cette fonction, dans un premier temps, nous alloons donc distinguer deux cas  :  
+
 - celui àù la liste des villas ne contient qu'un villa : 
 ```
 il faut renvoyer la villa  
-```
+```  
 - celui où la liste en contient au moins deux :  
 ```
 si la surface de la villa v[0] est inférieure à celle de la villa v[1]
