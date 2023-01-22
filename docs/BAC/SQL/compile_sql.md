@@ -120,8 +120,7 @@ WHERE ... ;
 
     ```sql
     SELECT groupes.nom FROM groupes
-    JOIN concerts
-    ON concerts.id_groupe = groupes.id_groupe
+    JOIN concerts ON concerts.id_groupe = groupes.id_groupe
     WHERE concerts.scene = 1;
     ```
 
