@@ -1,4 +1,4 @@
-{% set num = 16 %}
+{% set num = 18 %}
 {% set titre = "Récursivité" %}
 {% set theme = "BAC" %}
 {% set niveau = "terminale" %}
