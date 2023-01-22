@@ -261,7 +261,9 @@ On fournit ci-dessous le contenu des deux relations.
 **2.a.** Qu'affiche la requête suivante ?
 
 ```sql
-SELECT * FROM Centres WHERE altitude > 500;
+SELECT * 
+FROM Centres 
+WHERE altitude > 500;
 ```
 
 ??? success "Réponse"
@@ -281,7 +283,9 @@ SELECT * FROM Centres WHERE altitude > 500;
 ??? success "Réponse"
 
     ```sql
-    SELECT nom_ville FROM Centres WHERE altitude >= 700 AND altitude <= 1200;
+    SELECT nom_ville 
+    FROM Centres 
+    WHERE altitude >= 700 AND altitude <= 1200;
     ```
 
     | `nom_ville`     |
@@ -312,7 +316,9 @@ SELECT * FROM Centres WHERE altitude > 500;
 **3.a.** Qu'affiche la requête suivante ?
 
 ```sql
-SELECT * FROM Mesures WHERE date_mesure = '2021-10-30';
+SELECT * 
+FROM Mesures 
+WHERE date_mesure = '2021-10-30';
 ```
 
 ??? success "Réponse"
@@ -337,7 +343,9 @@ SELECT * FROM Mesures WHERE date_mesure = '2021-10-30';
 **4.a.** Expliquer ce que renvoie la requête SQL suivante ?
 
 ```sql
-SELECT * FROM Centres WHERE latitude = (SELECT MIN(latitude) FROM Centres);
+SELECT * 
+FROM Centres 
+WHERE latitude = (SELECT MIN(latitude) FROM Centres);
 ```
 
 ??? success "Réponse"
@@ -448,7 +456,8 @@ Un extrait de la table **`Evaluations`** est donné ci-dessous :
 ??? success "Réponse"
     
     ```sql
-    INSERT INTO Evaluations VALUES ('EXKVLX886', 'Term7', 'Peltier', '13/10/2021', 1453);
+    INSERT INTO Evaluations 
+    VALUES ('EXKVLX886', 'Term7', 'Peltier', '13/10/2021', 1453);
     ```
 
 **2.** On suppose maintenant que la table **`Evaluations`** contient uniquement les 11 enregistrements présents dans le tableau 1.
@@ -586,7 +595,8 @@ Un extrait de cette table vous est donné ci-dessous :
 ??? success "Réponse"
 
     ```sql
-    SELECT ip, nompage FROM Visites;
+    SELECT ip, nompage 
+    FROM Visites;
     ```
 
 
@@ -595,7 +605,8 @@ Un extrait de cette table vous est donné ci-dessous :
 ??? success "Réponse"
 
     ```sql
-    SELECT DISTINCT ip FROM Visites;
+    SELECT DISTINCT ip 
+    FROM Visites;
     ```
 
 
@@ -604,7 +615,9 @@ Un extrait de cette table vous est donné ci-dessous :
 ??? success "Réponse"
 
     ```sql
-    SELECT nompage FROM Visites WHERE ip = '192.168.1.91';
+    SELECT nompage 
+    FROM Visites 
+    WHERE ip = '192.168.1.91';
     ```
 
 Ce site web met en place, sur chacune de ses pages, un programme en JavaScript qui envoie au serveur, à intervalle régulier de 15 secondes, le temps en secondes (`duree`) de présence sur la page. Ces envois contiennent tous la valeur de `identifiant` correspondant au chargement initial de la page.  
@@ -672,7 +685,9 @@ On envisage ensuite d'optimiser la table en se contentant d'une seule ligne par 
 ??? success "Réponse"
 
     ```sql
-    UPDATE Pings SET duree = 120 WHERE identifiant = 1534;
+    UPDATE Pings 
+    SET duree = 120 
+    WHERE identifiant = 1534;
     ```
 
     Remarque : Dans le cadre de cette optimisation, l'attribut `identifiant` est clé primaire.
@@ -698,7 +713,10 @@ On envisage ensuite d'optimiser la table en se contentant d'une seule ligne par 
 ??? success "Réponse"
 
     ```sql
-    SELECT DISTINCT Visites.nompage FROM Visites JOIN Pings ON Visites.identifiant = Pings.identifiant WHERE Pings.duree > 60;
+    SELECT DISTINCT Visites.nompage 
+    FROM Visites 
+    JOIN Pings ON Visites.identifiant = Pings.identifiant 
+    WHERE Pings.duree > 60;
     ```
     Remarque 1 : le "par au moins un utilisateur" me fait utiliser le `DISTINCT` parce qu'il y aura des doublons si plusieurs utilisateurs ont consultée la même page assez longtemps, indépendamment de l'optimisation ou non.
 
