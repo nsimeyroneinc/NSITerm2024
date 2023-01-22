@@ -13,7 +13,9 @@
 
 {{ aff_cours(num) }}
 
+## TD d'entrainement 
 
+![site web](https://nsimeyroneinc.github.io/TermNSI/)
 
 ## Gestions de musiciens
 
