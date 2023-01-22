@@ -103,8 +103,8 @@ def define_env(env):
         #2 : ["devoir","Pile-File et Protocole de Routage",'16/11/2023',"Evaluations/DS_Pile_File_Routage.md"],
         3 : ["devoir","Pile-File et Protocole de Routage",'16/11/2023',"Evaluations/DS_Pile_File_Routage.md"],
         4 : ["devoir","Les tris - Diviser pour régner","02/12/2023","Evaluations/DS_Diviser_pour_regner_tris.md"],
-        5 : ["devoir","Les arbres binaires","16/12/2023","Evaluations/DS_Arbres.md"]
-        #5 : ["os","Listes et Piles",2,"StructureDonnees/T2_1_Listes_Piles_et_Files.md"],
+        5 : ["devoir","Les arbres binaires","16/12/2023","Evaluations/DS_Arbres.md"],
+        6 : ["devoir","Gestion Processus","19/01/2023","Evaluations/DS0110.md"]
         #6 : ["os","Protocole de routage",1,"Archi_Materielle/T3_1_Routage.md"],
         #7 : ["algorithmique","Algorithmes de tri",1,"Algo/T5_2_algo_tri.md"],
         #8 : ["algorithmique","Diviser pour régner",1,"T5_2_Diviser_pour_regner.md"]

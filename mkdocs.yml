@@ -129,6 +129,7 @@ nav:
       - Piles et Files : BAC/pile_file/compilation_pile_file.md
       - Récursivité : BAC/recursivite/compile_recursivite.md
       - Programmation Tableaux : BAC/programmation/compilation_programmation.md
+      - SQL : BAC/SQL/compile_sql.md
     #  - Consigne : divers/Consigne_EP.md
     #  - Sujets : divers/EpreuvePratique.md
       #- EP 2022 : BAC/EP_2022.md
@@ -143,6 +144,11 @@ nav:
       - Eval EP2 : Evaluations/DS_EP2.md
       - Eval EP3 : Evaluations/DS_EP3.md
       - DS 0101 : Evaluations/DS_Arbres.md
+      - Eval EP4 : Evaluations/DS_EP4.md
+      - Eval EP5 : Evaluations/DS_EP5.md
+      - Eval EP6 : Evaluations/DS_EP6.md
+      - Eval EP7 : Evaluations/DS_EP7.md
+      - DS 0110 : Evaluations/DS0110.md
 
 
     - Extras :
