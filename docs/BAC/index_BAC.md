@@ -8,6 +8,8 @@ Bon courage à tous.
     🗹 Piles et Files  
     🗹 Récursivité  
     🗹 Programmation - Tableaux - Chaînes - Tupples - Parcours.
+    🗹 SQL  
+    
       
     
 

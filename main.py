@@ -782,7 +782,7 @@ Vous pouvez télécharger une copie au format pdf du diaporama de synthèse de c
                         corr += ":material-numeric-"+str(num)+"-circle-outline:{.vert title='exercice "+str(num)+" corrigé'}"
                     else:
                         corr += ":material-numeric-"+str(num)+"-circle-outline:{.rouge title='exercice "+str(num)+" non corrigé'}"                
-                corr = f"### Correction  [{corr}](../../Annales/Corriges/{s['Repere']}) \n \n"
+                corr = f"### Correction  [{corr}](../../Corriges/{s['Repere']}) \n \n"
                 aff = aff+corr
                 #aff+=f"|{s['Repere']}|{s['Centre']}|{s['Jour']}|[{s['Repere']}](../../../officiels/Annales/EE/{annee}/{s['Repere']}.pdf)|[{corr}](../../../Annales/Corriges/{s['Repere']})|\n"
         return aff
