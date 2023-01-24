@@ -90,12 +90,12 @@ def define_env(env):
         #12: ["algorithmique","Algorithmes sur les arbres",2,"algoarbre.md"],
         #13: ["sd","Graphes",2,"graphes.md"],
         #14: ["os","Protocoles de routage",2,"routage.md"],
-        15: ["algorithmique","k-plus proches voisins",1,"Algo/TP6_1_kppv.md"]
+        15: ["algorithmique","k-plus proches voisins",1,"Algo/TP6_1_kppv.md"],
         #15: ["algorithmique","Recherche textuelle",2,"texte.md"],
         #16: ["python","Calculabilité, décidabilité",2,"calculabilite.md"],
         #17: ["os","Sécurisation des communications",2,"cryptographie.md"],
         #18:["python","Récursivité",2,"Programmation/T1_1_Recursivite.md"],
-        #19 : ["algorithmique","Diviser pour régner",1,"diviser.md"]
+        19 : ["sd","Les dictionnaires",1,"StructureDonnees/T4_2_dictionnaires.md"]
     }
 
     env.variables['devoir_terminale']={

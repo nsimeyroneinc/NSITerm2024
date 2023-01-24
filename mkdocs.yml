@@ -16,7 +16,7 @@ nav:
     #- Index : progression.md
     #- Test : Notebook.ipynb
 
-    - T1 - Struct. de données :
+    - T1 - Struct. données :
       - Structures de données : StructureDonnees/index_structDonnees.md
       - 📓 C4 P.O.O : StructureDonnees/T1_1_Programmation_Orientee_Objet.md
       - 💻 T4 POO Exercices : StructureDonnees/T1_2_TD_POO.md
@@ -28,17 +28,18 @@ nav:
       - 📓 C9 Les dictionnaires : StructureDonnees/T4_1_Dictionnaires.md
       - 📓 C10 Les arbres : StructureDonnees/T3_1_arbre.md
       - 📝 S10 BAC Les arbres : StructureDonnees/T3_2_arbre_BAC.md
+      - Les Dictionnaires: StructureDonnees/T4_2_dictionnaires.md
 
 
     
-    - T2 - Bases de données :  
+    - T2 - Bases données :  
       - Base de données : BasesDonnees/index_bd.md
       - 📓 C1 Modèle relationnel : BasesDonnees/Modele_Relationnel.md
       - 📓 C2 Langage SQL : BasesDonnees/Cours_TP_SQL.md
       - 📝 S2 BAC SQL : BasesDonnees/SQL_BAC.md
       - 📝 S2 BAC SQL Correction : BasesDonnees/SQL_BAC_correction.md
     
-    - T3 - Archi. matèrielle :
+    - T3 - Archi. mat. :
       - Architecture matérielle et OS : Archi_Materielle/index_archi.md
       - 📓 C6 Protocole de routage : Archi_Materielle/T3_1_Routage.md
       #- T3_1 BAC Protocole de routage : Archi_Materielle/T3_1_Routage_BAC.md
@@ -65,7 +66,7 @@ nav:
 
     
     - BAC 📝:
-      #- index_annales.md
+      - Information: BAC/bac_explication.md
       - '2023': 
         - "Epreuves écrites" : Annales/2023/EE.md
       - '2022': 
@@ -76,7 +77,7 @@ nav:
 
 
 
-    - Annales du Bac E.P. 💻 :
+    - Annales E.P. 💻 :
       - Déroulement : epreuve_pratique.md
       - Consigne : divers/Consigne_EP.md
       #- index_annales.md
@@ -124,7 +125,7 @@ nav:
         #  - "Sujet 39" : Annales/Corriges/2022-S39.md
         #  - "Sujet 40" : Annales/Corriges/2022-S40.md
 
-    - Révision Sujet BAC 📝 :  
+    - Révision BAC 📝 :  
       - Acceuil BAC : BAC/index_BAC.md
       - Piles et Files : BAC/pile_file/compilation_pile_file.md
       - Récursivité : BAC/recursivite/compile_recursivite.md
@@ -134,7 +135,7 @@ nav:
     #  - Sujets : divers/EpreuvePratique.md
       #- EP 2022 : BAC/EP_2022.md
   
-    - Evaluations :
+    - Eval. :
       - Index : progression.md
       - DS 0001 : Evaluations/BDD_Devoir_Corrige.md
       - DS 0011 : Evaluations/DS_Pile_File_Routage.md
@@ -150,7 +151,8 @@ nav:
       - Eval EP7 : Evaluations/DS_EP7.md
       - DS 0110 : Evaluations/DS0110.md
 
-
+    - Grand Oral:
+      - Grand Oral : oral/oral.md
     - Extras :
       - Mini-Projet : Projet/pygame.md
       - Epreuve GEIPI : divers/sujet0_geipi.pdf
