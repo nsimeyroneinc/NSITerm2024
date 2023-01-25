@@ -57,7 +57,7 @@ def distanceGPS(latA, longA, latB, longB):
  
 #############################################################################
 
-latA,longA =(45.7979357138,3.0466174294755)
-latB,longB = (45.54537315298,3.2493018197819)
+latA,longA =(45.54909280064133, 3.1339889032710375)
+latB,longB = (45.55034640571267, 3.2496815789627)
 dist = distanceGPS(latA, longA, latB, longB)
 print(int(dist))

@@ -3,7 +3,7 @@ Ce site est dédié aux élèves de Terminales NSI du Lycée Murat à Issoire af
 Les notebooks sont corrigés et les cellules peuvent être copiées pour être testées dans vos notebooks Capytale.
 
 !!! info "Actualités" 
-    - **Onglet Grand Oral** disponible.
+    - [**Onglet Grand Oral**](oral/oral.md) disponible.
 
 !!! note  "Epreuve BAC 2023"  
     - 2 «sujets 0» correspondant à la nouvelle maquette du bac version 2023 (3 exos) ont été publiés. À retrouver 
