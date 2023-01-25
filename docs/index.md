@@ -3,6 +3,9 @@ Ce site est dédié aux élèves de Terminales NSI du Lycée Murat à Issoire af
 Les notebooks sont corrigés et les cellules peuvent être copiées pour être testées dans vos notebooks Capytale.
 
 !!! info "Actualités" 
+    - Travail sur [Attaque par force brute](Projet/forcebrute.md)
+    - ou 
+    - Travail sur [cryptographie}(Projet/cryptographie.md) (simple pour commencer)
     - [**Onglet Grand Oral**](oral/oral.md) disponible.
 
 !!! note  "Epreuve BAC 2023"  

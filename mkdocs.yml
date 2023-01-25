@@ -154,6 +154,9 @@ nav:
     - Grand Oral:
       - Grand Oral : oral/oral.md
     - Extras :
+      - Force brute : Projet/forcebrute.md
+      - Cryptographie: Projet/cryptographie.md
+      - pyxel: Projet/pyxel.md
       - Mini-Projet : Projet/pygame.md
       - Epreuve GEIPI : divers/sujet0_geipi.pdf
     - Divers conseils : divers/conseil.md
