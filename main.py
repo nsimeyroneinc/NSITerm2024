@@ -635,7 +635,30 @@ Vous pouvez télécharger une copie au format pdf du diaporama de synthèse de c
 ```'''
         return modele
 
+#------------EP provisoire
+    @env.macro
+    def ep2023(annee):
+        aff="\n"
+        aff+= "|Numéro | | Ancien numéro | Thème exercice 1 | Thème exercice 2  | Code fourni |Correction|\n"
+        aff+= "|-------|-------|-----------------------|------------------|-------------------|-------------|----------|\n"
+        FNAME = f"./docs/officiels/Annales/EP/{annee}/l{annee}.txt"
+        with open(FNAME,"r",encoding="utf-8") as f:
+            nums=1
+            for s in f:
+                lf=s.split(",")
+                if lf[-1][0]=='0':
+                    correction = f"[Sur Pixees](https://pixees.fr/informatiquelycee/term/ep/s{nums}.html)"+"{target=_blank}"
+                else:
+                    correction = f"[{annee}-S{str(nums).zfill(2)}](../../Corriges/{annee}-S{str(nums).zfill(2)}/)"
+                aff+=f"|{nums}| | {lf[1]} |{lf[2]} | {lf[3]} |  |  |\n"
+                nums+=1
+        return aff
 
+    @env.macro
+    def enonce_ep2023(annee,numero):
+        code = f'{str(annee)[-2:]}-NSI-{numero}'
+        return f"<span class='centre'>[Sujet {numero} - 2023 :material-download:](../../officiels/Annales/EP/{annee}/{code}/{code}.pdf)"+"{.md-button}</span>"
+#-------------------------------------
 
     @env.macro
     def ep(annee):

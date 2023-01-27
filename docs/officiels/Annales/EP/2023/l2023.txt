@@ -1,0 +1,45 @@
+23-NSI-01,37,Vérification si une liste est triée ou non,Comptabilisation de votes (dictionnaires),0
+23-NSI-02,16,Maximum et indice d’un élément dans une liste,Structure de données : piles,0
+23-NSI-03,39,Calcul d’une moyenne pondérée,Représentation d’une image par une liste de liste,0
+23-NSI-04,0,Recherche de doublon dans une liste,Démineur matrice,0
+23-NSI-05,0,Paire de 6,Représentation d’une image par une liste de listes,0
+23-NSI-06,36,Dernière occurrence d’un élément dans une liste,Calcul de la distance entre deux points,0
+23-NSI-07,30,Fusion de deux listes déjà triées,Conversion numération romaine,0
+23-NSI-08,23,Maximum des valeurs d’un dictionnaire,POO : pile pour noter une expression arithmétique,0
+23-NSI-09,19,Multiplications avec uniquement additions et soustractions,Recherche dichotomique,0
+23-NSI-10,24,Maximum des éléments d’une liste,POO : expression bien parenthésée et piles,0
+23-NSI-11,33,Conversion binaire décimal,Tri par insertion,0
+23-NSI-12,0,Ajouter un élément dans un ABR,algorithme glouton,0
+23-NSI-13,31,Nombre d’occurrence d’un élément dans une liste,Rendu de monnaie,0
+23-NSI-14,8,Recherche de la première occurrence,Insertion dans une liste triée,0
+23-NSI-15,18,Minimum d’une liste de températures,Palindrome,0
+23-NSI-16,0,Recherche d’indices < = >,Moyenne podérée avec un dictionnaire,0
+23-NSI-17,2,Calcul d’une moyenne,Triangle de Pascal,0
+23-NSI-18,0,Indice de première appartion du max,Chromosome parcours d’une liste,0
+23-NSI-19,11,Recherche dichotomique,Code de César,0
+23-NSI-20,0,Fusion de dictionnaires,Tirage au sort,0
+23-NSI-21,3,Codage par différence,Arbre binaire et expression arithmétique,0
+23-NSI-22,9,Suite de Collatz,Codage d’un mot,0
+23-NSI-23,25,Traitement de données en tables,Recherche récursive dans un tableau,0
+23-NSI-24,10,Nombre d’occurrence avec un dictionnaire,Fusion de deux listes triées,0
+23-NSI-25,0,Occurrence d’un nombre dans une liste,Insertion dans un ABR,0
+23-NSI-26,21,Multiplications avec uniquement additions et soustractions,Recherche dichotomique dans un tableau trié,0
+23-NSI-27,26,Taille d’un arbre binaire représenté par un dictionnaire,Tri par sélection,0
+23-NSI-28,35,Calcul d’une moyenne,Recherche dichotomique,0
+23-NSI-29,0,Taille et hauteur d’un arbre,Insertion dans une liste triée,0
+23-NSI-30,28,Calcul de moyenne,Conversion decimal en binaire,0
+23-NSI-31,15,Nombre d’occurrence d’un élément dans une liste,Rendu de monnaie,0
+23-NSI-32,5,Recherche du minimum et du maximum,POO : cartes et paquet de cartes,0
+23-NSI-33,27,Conversion binaire décimal,Tri par insertion,0
+23-NSI-34,12,Calcul d’une moyenne,Séparation des 0 et des 1 dans une liste,0
+23-NSI-35,20,Ou exclusif entre deux tableaux,POO : Test de carrés magiques,0
+23-NSI-36,4,Entiers consécutifs dans un tableau,Codage d’une image en liste de liste,0
+23-NSI-37,32,Dernière occurrence d’un élément dans une liste,POO : adresse IP,0
+23-NSI-38,14,Mots correspodants à un motif,Recherche d’un cycle,0
+23-NSI-39,29,Termes de la suite de Fibonacci,Recherche de maximum dans une liste,0
+23-NSI-40,0,Compter le nombre de mots,Insertion d’un nœud dans un ABR,0
+23-NSI-41,1,Recherche d’occurrences,Rendu de monnaie récursif,0
+23-NSI-42,38,Tri par sélection,Jeu du nombre mystère,0
+23-NSI-43,7,Conversion binaire/décimal,Tri à bulles,0
+23-NSI-44,22,Ecriture d’une chaîne de caractères à l’envers,Crible d’Eratosthène,0
+23-NSI-45,0,Tri et occurrence d’une liste,Convertir bin → Dec et Dec → Bin,0
