@@ -650,7 +650,7 @@ Vous pouvez télécharger une copie au format pdf du diaporama de synthèse de c
                     correction = f"[Sur Pixees](https://pixees.fr/informatiquelycee/term/ep/s{nums}.html)"+"{target=_blank}"
                 else:
                     correction = f"[{annee}-S{str(nums).zfill(2)}](../../Corriges/{annee}-S{str(nums).zfill(2)}/)"
-                aff+=f"|{nums}| | {lf[1]} |{lf[2]} | {lf[3]} |  |  |\n"
+                aff+=f"|{nums}|[Sujet N°{nums}](../../officiels/Annales/EP/{annee}/{lf[0]}/{lf[0]}.pdf)  | {lf[1]} |{lf[2]} | {lf[3]} |  |  |\n"
                 nums+=1
         return aff
 
