@@ -1,7 +1,12 @@
 # Année 2023 : Sujets d'épreuves pratiques
 
-!!!Danger "Attention"
-    Des erreurs d'énoncé figurent dans certains des sujets, dans la correction ils sont signalés par une mention <span class="rouge">:material-bug:&nbsp;Bug</span>. De la même façon, certains sujets contiennent des techniques de programmation problématiques indiquées par une mention <span class="orange">:fontawesome-solid-triangle-exclamation:&nbsp;Attention</span>.
+
+!!!Danger "Attention : signification des icônes"
+    * :star: : indique un nouveau sujet par rapport à la session 2022, si cette icône n'est pas présente, le sujet est identique ou légèrement différent d'un sujet de le session 2022
+    * <span class='rouge'>:material-bug:</span> : indique que le sujet contient un ou plusieurs bugs
+    * :fontawesome-solid-square-root-variable: : indique que le sujet propose un exercice en rapport avec les mathématiques
+    * <span class='navy'>:material-bomb:</span> : sujet jugé difficile
+    * <span class="orange">:fontawesome-solid-triangle-exclamation:</span> : faire attention, le sujet est hors programme, inhabituel ou contient des techniques de programmations problématiques
 
 
 {{ telecharger("Fichier comportant tous les sujets 2023","enonces/23-NSI-complet-light.pdf") }}

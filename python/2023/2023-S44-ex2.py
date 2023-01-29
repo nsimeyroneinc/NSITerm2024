@@ -1,11 +1,11 @@
-def crible(N):
+def crible(n):
     """renvoie un tableau contenant tous les nombres premiers plus petit que N"""
     premiers = []
-    tab = [True] * N
+    tab = [True] * n
     tab[0], tab[1] = False, False
-    for i in range(2, N): 
+    for i in range(2, n): 
         if tab[i] == True: #(1)
             premiers.append(i)
-            for multiple in range(2*i, N, i): #(2)
+            for multiple in range(2*i, n, i): #(2)
                 tab[multiple] = False #(3)
     return premiers
