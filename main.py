@@ -95,7 +95,8 @@ def define_env(env):
         #16: ["python","Calculabilité, décidabilité",2,"calculabilite.md"],
         #17: ["os","Sécurisation des communications",2,"cryptographie.md"],
         #18:["python","Récursivité",2,"Programmation/T1_1_Recursivite.md"],
-        19 : ["sd","Les dictionnaires",1,"StructureDonnees/T4_2_dictionnaires.md"]
+        19 : ["sd","Les dictionnaires",1,"StructureDonnees/T4_2_dictionnaires.md"],
+        20: ["os","Cryptographie",1,"Projet/cryptographie2.md"]
     }
 
     env.variables['devoir_terminale']={
@@ -150,6 +151,12 @@ def define_env(env):
         #19 : ["algorithmique","Diviser pour régner",1,"diviser.md"]
     }
 
+    @env.macro
+    def capytale(id):
+        lien = "[![logo capytale](../images/capytale.png){.imgcentre width=150px border=2px}]"
+        lien +=f"(https://capytale2.ac-paris.fr/web/c/{id})"
+        lien += "{target=_blank}"
+        return lien
 
     @env.macro
     def icone(theme):
@@ -639,8 +646,8 @@ Vous pouvez télécharger une copie au format pdf du diaporama de synthèse de c
     @env.macro
     def ep2023(annee):
         aff="\n"
-        aff+= "|Numéro | Lien de téléchargement| Thème exercice 1 | Thème exercice 2  | Code fourni |Correction|\n"
-        aff+= "|-------|-----------------------|------------------|-------------------|-------------|----------|\n"
+        aff+= "|Numéro | Num 2022|Lien de téléchargement| Thème exercice 1 | Thème exercice 2  | Code fourni |Correction|\n"
+        aff+= "|-------|---| -----------------------|------------------|-------------------|-------------|----------|\n"
         FNAME = f"./docs/officiels/Annales/EP/{annee}/l{annee}.txt"
         icones = {"N":":star:","B":"<span class='rouge'>:material-bug:</span>","D":"<span class='navy'>:material-bomb:</span>","M":":fontawesome-solid-square-root-variable:","W":"<span class='orange'>:fontawesome-solid-triangle-exclamation:</span>"}
         with open(FNAME,"r",encoding="utf-8") as f:
@@ -655,7 +662,7 @@ Vous pouvez télécharger une copie au format pdf du diaporama de synthèse de c
                 for letter in icones:
                     if letter in lf[4]:
                         dnums = dnums + icones[letter]
-                aff+=f"|{dnums}|[Sujet N°{nums}](../../../officiels/Annales/EP/{annee}/{lf[0]}/{lf[0]}.pdf) | {lf[1]} | {lf[2]} | [:material-download: Code](../../officiels/Annales/EP/{annee}/{lf[0]}/{lf[0]}.py) | {correction} |\n"
+                aff+=f"|{dnums}|{lf[1]} |[Sujet N°{nums}](../../../officiels/Annales/EP/{annee}/{lf[0]}/{lf[0]}.pdf) | {lf[2]} | {lf[3]} | [:material-download: Code](../../officiels/Annales/EP/{annee}/{lf[0]}/{lf[0]}.py) | {correction} |\n"
                 nums+=1
         return aff
 
