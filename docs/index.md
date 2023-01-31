@@ -29,10 +29,6 @@ Les notebooks sont corrigés et les cellules peuvent être copiées pour être t
 {{ affiche_BAC("terminale") }}
 
 
-        
-
-
-
 !!! note 
     Le sujet de l’épreuve écrite de la spécialité numérique et sciences informatiques, **comporte trois exercices indépendants les uns des autres**, qui permettent d’évaluer les connaissances et compétences des candidats. 
  
