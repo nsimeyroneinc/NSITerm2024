@@ -6,6 +6,7 @@ Les notebooks sont corrigés et les cellules peuvent être copiées pour être t
     - Travail sur [Attaque par force brute](Projet/forcebrute.md)  
     ou  
     - Travail sur [cryptographie](Projet/cryptographie.md) (simple pour commencer)  
+    - Travail sur [cryptographie bis](Projet/cryptographie2.md) (RSA)  
     - [**Onglet Grand Oral**](oral/oral.md) disponible.  
 
 !!! note  "Epreuve BAC 2023"  
