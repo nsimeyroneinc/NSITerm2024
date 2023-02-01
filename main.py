@@ -660,7 +660,7 @@ Vous pouvez télécharger une copie au format pdf du diaporama de synthèse de c
                     correction = f"[{annee}-S{str(nums).zfill(2)}](../../Corriges/{annee}-S{str(nums).zfill(2)}/)"
                 dnums ="**" +str(nums)+"** "
                 for letter in icones:
-                    if letter in lf[4]:
+                    if letter in lf[5]:
                         dnums = dnums + icones[letter]
                 aff+=f"|{dnums}|{lf[1]} |[Sujet N°{nums}](../../../officiels/Annales/EP/{annee}/{lf[0]}/{lf[0]}.pdf) | {lf[2]} | {lf[3]} | [:material-download: Code](../../officiels/Annales/EP/{annee}/{lf[0]}/{lf[0]}.py) | {correction} |\n"
                 nums+=1
