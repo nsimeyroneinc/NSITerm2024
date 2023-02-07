@@ -9,12 +9,14 @@
 
 === "Déroulement de l'épreuve"
 
+    ![](images/fiche.jpeg)
     - Cette présentation dure ensuite 5 minutes, pendant lesquelles le candidat expose les motivations qui l’ont conduit à choisir cette question, puis présente la réponse qu’il a élaborée.  
     - À l’issue de ces 5 premières minutes, le candidat et le jury échangent durant 10 minutes. A cette occasion, le jury amène le candidat à préciser et approfondir sa pensée. C’est une opportunité à saisir, pour apporter des compléments à son propos, et montrer sa capacité à écouter, dialoguer, expliciter et argumenter. Enfin, pendant les 5 dernières minutes de l’épreuve, le candidat décrit son projet d’orientation, puis échange avec le jury sur ce projet. 
   
     Pendant l’épreuve le candidat dispose du support qu’il a préparé pendant le temps de préparation (20 minutes), s'il a fait le choix d'en réaliser pour accompagner sa prise de parole.  
     Il s’agit de notes, d’un plan d’exposé, de trame de prise de parole, de mots-clefs ou d’idées directrices. Ces notes peuvent aussi servir de document d’appui à l’argumentation (schéma, courbe, diagramme, tableau, formule mathématique…). Ce support n’a pas vocation à être donné au jury.  
-    Il n’est pas évalué ; il ne sert qu’à appuyer le propos du candidat, si celui-ci le juge nécessaire. Le candidat peut par ailleurs recourir à ce support pour éclairer ses réponses aux questions du jury.
+    Il n’est pas évalué ; il ne sert qu’à appuyer le propos du candidat, si celui-ci le juge nécessaire. Le candidat peut par ailleurs recourir à ce support pour éclairer ses réponses aux questions du jury.  
+    - si la salle d’examen dispose d’un tableau, son utilisation durant ce deuxième temps est interdite 
 
 
     ![](images/GO2.png){: .center} 

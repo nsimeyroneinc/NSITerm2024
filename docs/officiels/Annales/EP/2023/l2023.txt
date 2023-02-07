@@ -22,11 +22,11 @@
 23-NSI-22,9, Calcul de puissances avec multiplication successives,Codage d'un mot,1,WM
 23-NSI-23,26, Traitement de données en table (animaux et enclos), Recherche récursive dans un tableau, 1,D
 23-NSI-24,10, Nombre d'occurrences des caractères (dictionnaire), Fusion de deux listes déjà triées,1,DB
-23-NSI-25, ,Enumération des positions des éléments dans une liste (dictionnaire),Arbre binaire (récursivité),1,NWD
+23-NSI-25,0 , Enumération des positions des éléments dans une liste (dictionnaire),Arbre binaire (récursivité),1,NWD
 23-NSI-26,21, Multiplications avec uniquement additions et soustractions, Recherche par dichotomique,1,
 23-NSI-27,26, Première occurence du minimum, Separation des 0 et des 1 dans un tableau, 1,
 23-NSI-28,35, Moyenne des éléments d'un tableau, Recherche par dichotomie, 1,
-23-NSI-29, ,Taille d'un arbre binaire, Insertion d'un élément dans une liste à une position donnée,1, ND
+23-NSI-29,0 ,Taille d'un arbre binaire, Insertion d'un élément dans une liste à une position donnée,1, ND
 23-NSI-30,28, Calcul de moyenne, Conversion du décimal vers le binaire, 1,
 23-NSI-31,15, Nombre d'occurrences d'un élément dans une liste, Conversion du décimal vers le binaire, 1,
 23-NSI-32,5, Minimum et maximum des éléments d'un tableau, Classe représentant des cartes (POO), 1,
