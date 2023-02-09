@@ -12,39 +12,39 @@
 \newcommand{\DB}{\cnum Bases de données et SQL}
 
 % BDD aspect historique
-\begin{frame}
-	\mframe{\DB}
-	\begin{alertblock}{Aspect historique}
-		\begin{itemize}
-			\item<1-> En 1970, \textcolor{blue}{Edgar Codd} invente le \textit{modèle relationnel} pour les bases de données.
-			\item<2-> En 1973, première version du langage \textbf{SQL} (\textbf{S}tructured \textbf{Q}uery \textbf{L}anguage). C'est un langage de requêtes permettant d'interagir avec une base de données.
-			\item<3-> En 1979, apparition du premier \textbf{S}ystème de \textbf{G}estion de \textbf{B}ase de \textbf{D}onnées ({\sc sgbd}) : Oracle qui fera la fortune de ses trois fondateurs (L. Ellison, E. Oats et B. Miner).
-			\item<4-> En 1995 (et 1996), première version d'importants {\sc sgbd} \textcolor{blue}{libres} MySQL (et PostGreSQL).
-			\item<5-> En 2020, Le volume mondial de données stockées est estimé à 47 milliards de téra-octets ($47 \times 10^{21}$ octets) et a été multiplié par 20 en 10 ans.
-		\end{itemize}
-	\end{alertblock}
-\end{frame}
+%\begin{frame}
+%	\mframe{\DB}
+%	\begin{alertblock}{Aspect historique}
+%		\begin{itemize}
+%			\item<1-> En 1970, \textcolor{blue}{Edgar Codd} invente le \textit{modèle relationnel} pour les bases de données.
+%			\item<2-> En 1973, première version du langage \textbf{SQL} (\textbf{S}tructured \textbf{Q}uery \textbf{L}anguage). C'est un langage de requêtes permettant d'interagir avec une base de données.
+%			\item<3-> En 1979, apparition du premier \textbf{S}ystème de \textbf{G}estion de \textbf{B}ase de \textbf{D}onnées ({\sc sgbd}) : Oracle qui fera la fortune de ses trois fondateurs (L. Ellison, E. Oats et B. Miner).
+%			\item<4-> En 1995 (et 1996), première version d'importants {\sc sgbd} \textcolor{blue}{libres} MySQL (et PostGreSQL).
+%			\item<5-> En 2020, Le volume mondial de données stockées est estimé à 47 milliards de téra-octets ($47 \times 10^{21}$ octets) et a été multiplié par 20 en 10 ans.
+%		\end{itemize}
+%	\end{alertblock}
+%\end{frame}
 
 
 % BDD > outils traditionnels
-\begin{frame}
-	\mframe{\DB}
-	\begin{block}{Apport des bases de données}
-		Les bases de données corrigent de nombreux défauts des outils traditionnels de gestion des données. En effet :
-		\begin{itemize}
-			\item<1-> Les accès simultanés par plusieurs programmes aux mêmes données pouvaient générer des conflits.
-			\item<2-> Pour lire (ou modifier) les données il fallait savoir comment elles étaient représentées.
-			\item<3-> Les utilisateurs devaient s'assurer de  l'intégrité des données avant de les stocker. C'est à dire que c'est l'utilisateur qui était chargé du contrôle de la validité de ses données.
-		\end{itemize}
-	\end{block}
-\end{frame}
+%\begin{frame}
+%	\mframe{\DB}
+%	\begin{block}{Apport des bases de données}
+%		Les bases de données corrigent de nombreux défauts des outils traditionnels de gestion des données. En effet :
+%		\begin{itemize}
+%			\item<1-> Les accès simultanés par plusieurs programmes aux mêmes données pouvaient générer des conflits.
+%			\item<2-> Pour lire (ou modifier) les données il fallait savoir comment elles étaient représentées.
+%			\item<3-> Les utilisateurs devaient s'assurer de  l'intégrité des données avant de les stocker. C'est à dire que c'est l'utilisateur qui était chargé du contrôle de la validité de ses données.
+%		\end{itemize}
+%	\end{block}
+%\end{frame}
 
 % BDD > principes
 \begin{frame}
 	\mframe{\DB}
 	\begin{block}{Principes des bases de données}
 		Plusieurs aspects des bases de données viennent corriger les limitations des outils traditionnels :
-		\begin{itemize}
+		\begin{itemize}[label=\textbullet]
 			\item<1-> Principe d'\textcolor{red}{unicité} : un enregistrement doit être unique (une donnée qui apparaît plusieurs fois est dite \textit{redondante}). \\
 			      \onslide<2->{Ici intervient la notion de \textcolor{red}{clé primaire}, c'est à dire dans une table une identification unique de l'enregistrement.}
 			\item<3-> Principe d'\textcolor{red}{intégrité} : le contrôle de la validité des données est effectué par le {\sc sgbd}. \\
@@ -70,7 +70,7 @@
 					Boole    & George & 1815      \\
 					\hline
 				\end{tabular}} \end{center}
-		\begin{itemize}
+		\begin{itemize}[label=\textbullet]
 			\item<1->	Il est certes peu probable (mais pas impossible) que deux personnes portant les mêmes noms et prénoms naissent la même année, afin de respecter le \textcolor{blue}{principe d'unicité}, nous devons adjoindre à chaque enregistrement un champ (par exemple {\tt id}) unique qui servira de clé primaire.
 			\item<2-> Les champs {\tt Nom} et {\tt Prénom} sont au format texte, le champ {\tt Naissance} est un entier.
 			\item<3-> On peut par exemple préciser les contraintes d'intégrité suivantes : {\tt Nom} doit être non vide, {\tt Naissance} doit être supérieur à 0.
@@ -88,7 +88,7 @@
 	\end{alertblock}
 	\begin{exampleblock}{Exemple}
 		\onslide<2->{Le schéma relationnel de la table {\tt personne} peut s'écrire :}
-		\begin{itemize}
+		\begin{itemize}[label=\textbullet]
 			\item<3-> Sous forme de liste : \\
 			      \onslide<4->  \textbf{personnes} {\tt (\underline{id} : {\sc int},  {\tt Nom} : {\sc text}, {\tt Prenom} : {\sc text}, {\tt Naissance} : {\sc int})}
 			\item<5-> {Sous forme de tableau : \\
@@ -113,7 +113,7 @@
 \begin{frame}
 	\mframe{\DB}
 	\begin{alertblock}{Premiers pas en SQL}
-		\begin{itemize}
+		\begin{itemize}[label=\textbullet]
 			\item<1-> Pour récupérer la totalité des champs d'une table {\tt table} on utilise la syntaxe : \\
 			      \onslide<2->{\textcolor{blue}{\sc select} * \textcolor{blue}{\sc from} {\tt table}} \\
 			\item<3-> Pour récupérer simplement les champs {\tt champ1, champ2,...} on utilise : \\
@@ -121,7 +121,7 @@
 		\end{itemize}
 	\end{alertblock}
 	\begin{exampleblock}{Exemples}
-		\begin{itemize}
+		\begin{itemize}[label=\textbullet]
 			\item<5-> {{\sc select} {\tt Nom, Naissance} {\sc from} {\tt exemple}} \\
 			      {\footnotesize \begin{tabular}{|c|c|}
 				      \hline
@@ -141,14 +141,14 @@
 	\mframe{\DB}
 	\begin{alertblock}{Clause {\sc where}}
 		Une instruction \textcolor{blue}{\sc select} peut être suivie d'une clause \textcolor{blue}{\sc where} qui permet de rechercher les enregistrements correspondants à certains conditions. Ces conditions s'expriment à l'aide des opérateurs suivant :
-		\begin{itemize}
+		\begin{itemize}[label=\textbullet]
 			\item<2-> Comparaison : {\tt \textcolor{blue}{=}, \textcolor{blue}{<}, \textcolor{blue}{>}, \textcolor{blue}{<=}, \textcolor{blue}{>=},}  {\tt \textcolor{blue}{<>}} (différent)  et \textcolor{blue}{{\sc between}} (entre)
 			\item<3-> Logique : \textcolor{blue}{\tt and}, \textcolor{blue}{\tt or} et \textcolor{blue}{\tt not}
 			\item<4-> Modèle de chaines de caractères : \textcolor{blue}{\sc like} où \textcolor{blue}{\tt \%} désigne n'importe quel suite de caractères et \textcolor{blue}{\tt \_} un unique caractère.
 		\end{itemize}
 	\end{alertblock}
 	\begin{exampleblock}{Exemples}
-		\begin{itemize}
+		\begin{itemize}[label=\textbullet]
 			\item<5-> Pour chercher dans la table les personnes nées après 1789 :\\
 			      \onslide<6->{{\sc select * from} {\tt exemple} {\sc where} {\tt naissance > 1789}}
 			\item<7-> Pour chercher dans la table les personnes dont la deuxième lettre du nom est un e :\\
@@ -180,13 +180,13 @@
 \begin{frame}
 	\mframe{\DB}
 	\begin{alertblock}{Clause {\sc distinct} et {\sc limit}}
-		\begin{itemize}
+		\begin{itemize}[label=\textbullet]
 			\item<2-> Une instruction \textcolor{blue}{\sc select} peut être \textit{directement} suivie d'une clause \textcolor{blue}{\sc distinct} {\tt champ} qui indique que {\tt champ} ne doit apparaître qu'une fois dans les résultats
 			\item<3-> Une instruction \textcolor{blue}{\sc select} peut être suivie d'une clause \textcolor{blue}{\sc limit} qui indique le nombre maximal d'enregistrement à renvoyer. Cette clause est particulièrement utile en relation avec \textcolor{blue}{\sc order by}.
 		\end{itemize}
 	\end{alertblock}
 	\begin{exampleblock}{Exemples}
-		\begin{itemize}
+		\begin{itemize}[label=\textbullet]
 			\item<5-> Pour afficher les années de naissance sans répétitions :\\
 			      \onslide<6->{{\sc select distinct} {\tt naissance} {\sc from} {\tt exemple}}
 			\item<7-> Pour afficher les trois plus jeunes personnes de la table :\\
@@ -201,7 +201,7 @@
 	\mframe{\DB}
 	\begin{alertblock}{Agrégation}
 		Le langage {\sc sql} offre des opérateurs appelés \textcolor{blue}{fonction d'agrégation} permettant de calculer une valeur à partir d'un ensemble d'enregistrement :
-		\begin{itemize}
+		\begin{itemize}[label=\textbullet]
 			\item<2-> {\sc min} pour obtenir le minimum (d'un champ sur un ensemble d'enregistrement)
 			\item<3-> {\sc max} pour obtenir le max
 			\item<4-> {\sc sum} pour obtenir la somme
