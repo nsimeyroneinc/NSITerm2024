@@ -1,6 +1,7 @@
 # Grand Oral
 
-=== "Qu'est-ce que c'est?"
+=== "Qu'est-ce que c'est?"  
+
     - Vous devez préparer deux sujets, dont au moins un a un rapport avec le programme de NSI. 
     - Ce sujet peut être croisé avec l'autre spécialité.
     - L'oral dure 20 minutes (5 minutes d'exposé et 10 + 5 minutes d'échanges avec le jury) après une préparation de 20 minutes.
@@ -9,7 +10,8 @@
 
 === "Déroulement de l'épreuve"
 
-    ![](images/fiche.jpeg)
+    ![](images/fiche.jpeg  
+    )
     - Cette présentation dure ensuite 5 minutes, pendant lesquelles le candidat expose les motivations qui l’ont conduit à choisir cette question, puis présente la réponse qu’il a élaborée.  
     - À l’issue de ces 5 premières minutes, le candidat et le jury échangent durant 10 minutes. A cette occasion, le jury amène le candidat à préciser et approfondir sa pensée. C’est une opportunité à saisir, pour apporter des compléments à son propos, et montrer sa capacité à écouter, dialoguer, expliciter et argumenter. Enfin, pendant les 5 dernières minutes de l’épreuve, le candidat décrit son projet d’orientation, puis échange avec le jury sur ce projet. 
   
