@@ -119,10 +119,10 @@ nav:
       - Cryptographie: Projet/cryptographie.md
       - Cryptographie bis: Projet/cryptographie2.md
       - pyxel: Projet/pyxel.md
-      - Life & Death : Projet/life_and_death.md
+      #- Life & Death : Projet/life_and_death.md
       - Mini-Projet : Projet/pygame.md
       - Epreuve GEIPI : divers/sujet0_geipi.pdf
-    - A propos : credit.md
+    - Crédits : credit.md
     - Divers conseils : divers/conseil.md
     
 
