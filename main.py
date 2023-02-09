@@ -311,7 +311,7 @@ Vous pouvez télécharger une copie au format pdf du diaporama de synthèse de c
 
 <span class='centre'>[Diaporama de cours :fontawesome-regular-file-pdf:](../pdf/'''+fichier+'''){.md-button target=_blank}</span>
 !!! warning "Attention"
-    Ce diaporama ne vous donne que quelques points de repères lors de vos révisions. Il devrait être complété par la relecture attentive de vos **propres** notes et par une révision approfondie des exercices.'''
+    Ce diaporama n'est qu'un résumé des notions vues en cours et ne donne que quelques points de repères pour de vos révisions.'''
         return ccours
 
     @env.macro
