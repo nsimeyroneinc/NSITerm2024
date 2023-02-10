@@ -3,8 +3,8 @@
 # Informations du site 
 site_name: NSI Terminale 2022-2023
 site_description: Cours et TD de l'année en cours
-site_author: "Michael Meyroneinc-condy" 
-copyright: 2023 sous licence <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.fr" target="_blank">CC BY-NC-SA 4.0</a> 
+#site_author: "Michael Meyroneinc-condy" 
+#copyright: 2023 sous licence <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.fr" target="_blank">CC BY-NC-SA 4.0</a> 
 site_url: 
 
 # Structure des dossiers :

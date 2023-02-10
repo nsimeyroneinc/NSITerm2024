@@ -1,11 +1,7 @@
-Ce site est dédié aux élèves de Terminales NSI du Lycée Murat à Issoire afin de retrouver les divers TP & TD travaillés en classe.  
 
-Les notebooks sont corrigés et les cellules peuvent être copiées pour être testées dans vos notebooks Capytale.
 
 !!! info "Actualités" 
-    - Travail sur [Attaque par force brute](Projet/forcebrute.md)  
-    ou  
-    - Travail sur [cryptographie](Projet/cryptographie.md) (simple pour commencer)  
+
     - Travail sur [cryptographie bis](Projet/cryptographie2.md) (RSA)  
     - [**Onglet Grand Oral**](oral/oral.md) disponible.  
 
@@ -16,8 +12,7 @@ Les notebooks sont corrigés et les cellules peuvent être copiées pour être t
 
     - Les épreuves de spécialité se dérouleront les 20 et 21 mars 2023 pour la N.S.I.  
     - Les épreuves pratiques seront organisées le Jeudi 30 mars 2023.
-    - **IMPORTANT** les sujets de l'épreuves pratiques eront disponibles à partir du 25 janvier 2023.
-    
+  
 ## Progression sur l'année
 
 ### Liste des chapitres 
