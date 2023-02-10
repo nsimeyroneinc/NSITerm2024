@@ -95,3 +95,8 @@ Ecrire un programme Python permettant de générer des mots de passe aléatoires
 ## Etape 5 : pour aller plus loin
 
 Ecrire un programme Python permettant de déterminer le temps approximatif nécessaire pour trouver un mot de passe par une attaque par force brute en fonction de la longueur du mot de passe et du type de caractère utilisé.
+
+
+Bilbliographie :  
+
+- Ce cours s'inspire largement de celui de Fabrice Nativel.
