@@ -80,6 +80,8 @@ nav:
     - Annales E.P. 💻 :
       - Déroulement : epreuve_pratique.md
       - Consigne : divers/Consigne_EP.md
+      - S'entrainer en ligne pour l'épreuve pratique: divers/lien.md
+
       #- index_annales.md
       - '2022': 
         - "Epreuves pratiques" : Annales/2022/EP.md
@@ -96,6 +98,10 @@ nav:
     #  - Sujets : divers/EpreuvePratique.md
       #- EP 2022 : BAC/EP_2022.md
   
+
+    - Grand Oral:
+      - Grand Oral : oral/oral.md
+
     - Eval. :
       - Index : progression.md
       - DS 0001 : Evaluations/BDD_Devoir_Corrige.md
@@ -111,10 +117,9 @@ nav:
       - Eval EP6 : Evaluations/DS_EP6.md
       - Eval EP7 : Evaluations/DS_EP7.md
       - DS 0110 : Evaluations/DS0110.md
-
-    - Grand Oral:
-      - Grand Oral : oral/oral.md
+    
     - Extras :
+      - Divers concours programmation: divers/prog.md
       - Force brute : Projet/forcebrute.md
       - Cryptographie: Projet/cryptographie.md
       - Cryptographie bis: Projet/cryptographie2.md
@@ -122,8 +127,9 @@ nav:
       #- Life & Death : Projet/life_and_death.md
       - Mini-Projet : Projet/pygame.md
       - Epreuve GEIPI : divers/sujet0_geipi.pdf
+    
     - Crédits : credit.md
-    - Divers conseils : divers/conseil.md
+    #- Divers conseils : divers/conseil.md
     
 
     

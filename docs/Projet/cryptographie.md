@@ -69,3 +69,9 @@ Une autre méthode de décryptage consiste à utiliser une **attaque par force b
 Faire des recherches sur le codage de Vigenère, expliquer son fonctionnement, détailler un exemple de codage avec cette méthode. Ce code résiste-t-il à une approche par analyse fréquentielle ? Justifier. 
 
 Proposer un programme Python permettant de coder et de décoder un texte avec la méthode de chiffrement de Vigenère.
+
+
+
+**Bilbliographie :**  
+
+- Ce cours s'inspire largement de celui de Fabrice Nativel.

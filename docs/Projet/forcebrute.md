@@ -1,5 +1,6 @@
 # Attaque par force brute
 
+
 La première partie du projet consiste à déterminer des mots de passe en utilisant une [*attaque par force brute*](https://www.cnil.fr/fr/definition/force-brute-attaque-informatique){target=_blank}. Les mots de passe protègent des fichiers `pdf` et il faudra utiliser Python pour générer des mots de passe et les tester jusqu'à trouver le bon. Une seconde partie du projet est la création d'un programme Python permettant de générer automatiquement des mots de passe forts.
 
 On utilise dans ce projet le module `pymupdf` de Python permettant d'interagir avec des fichiers au format `pdf`. Pour installer ce module, écrire en ligne de commande : 
@@ -97,6 +98,6 @@ Ecrire un programme Python permettant de générer des mots de passe aléatoires
 Ecrire un programme Python permettant de déterminer le temps approximatif nécessaire pour trouver un mot de passe par une attaque par force brute en fonction de la longueur du mot de passe et du type de caractère utilisé.
 
 
-Bilbliographie :  
+**Bilbliographie :**  
 
 - Ce cours s'inspire largement de celui de Fabrice Nativel.
