@@ -12,3 +12,10 @@ def min_liste(liste):
             ......
     return elt_min
 ```",La ligne 2 est `elt_min=liste[1]` et la ligne 5 est `elt_min=elt`,La ligne 2 est `elt_min=liste[1]` et la ligne 5 est `elt=elt_min`,La ligne 2 est `elt_min=liste[0]` et la ligne 5 est `elt=elt_min`,La ligne 2 est `elt_min=liste[0]` et la ligne 5 est `elt_min=elt`,D,Algorithmique,7,
+6,"Parmi les éléments suivants d'un ordinateur, lequel n'est pas un périphérique d'entrée ?",Souris,Ecran,Disque dur,Clé usb,B,Architectures matérielles et systèmes d'exploitation,4,
+7,"Dans le modèle d'architecture de Von Neumann, quel est le rôle de l'unité de contrôle ?",Gérer le séquençage (l'ordre) des opérations,Effectuer les opérations,Lire les données,Stocker les données,A,Architectures matérielles et systèmes d'exploitation,21,
+8,"Dans le modèle d'architecture de Von Neumann, que signifie UAL ?",Unité Active de Lecture,Unité Additive et Logique,Unité Arithmétique et Logique,Unité Active et logique,C,Architectures matérielles et systèmes d'exploitation,21,
+9,Quel est le rôle de l'unité arithmétique et logique dans un ordinateur ?,Afficher les informations,Définir l'ordre des opérations,Effectuer les opérations,Stocker les informations,C,Architectures matérielles et systèmes d'exploitation,21,
+10,"Le composant élémentaire d'un ordinateur, circuit électronique ne pouvant être que dans deux états (0 ou 1) s'appelle :",Un transistor,Une radio,Un processeur,Une porte logique,A,Architectures matérielles et systèmes d'exploitation,21,
+
+

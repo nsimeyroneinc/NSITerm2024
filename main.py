@@ -96,7 +96,8 @@ def define_env(env):
         #17: ["os","Sécurisation des communications",2,"cryptographie.md"],
         #18:["python","Récursivité",2,"Programmation/T1_1_Recursivite.md"],
         19 : ["sd","Les dictionnaires",1,"StructureDonnees/T4_2_dictionnaires.md"],
-        20: ["os","Cryptographie",1,"Projet/cryptographie2.md"]
+        20: ["os","Cryptographie",1,"Projet/cryptographie2.md"],
+        21: ["os","Système à puces",1,"Archi_Materielle/T3_5_systeme_sur_puce.md"]
     }
 
     env.variables['devoir_terminale']={
@@ -311,7 +312,7 @@ Vous pouvez télécharger une copie au format pdf du diaporama de synthèse de c
 
 <span class='centre'>[Diaporama de cours :fontawesome-regular-file-pdf:](../pdf/'''+fichier+'''){.md-button target=_blank}</span>
 !!! warning "Attention"
-    Ce diaporama n'est qu'un résumé des notions vues en cours et ne donne que quelques points de repères pour de vos révisions.'''
+    Ce diaporama n'est qu'une synthèse de cours et ne donne que quelques points de repères pour de vos révisions.'''
         return ccours
 
     @env.macro
