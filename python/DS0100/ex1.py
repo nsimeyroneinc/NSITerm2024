@@ -104,3 +104,17 @@ def tri_insertion2(liste):
         print(f"Passage {indice_courant} : {liste}")
 
 notes = [8, 7, 18, 14, 12, 9, 17, 3]
+
+
+def moitie_gauche_lucas(tab):
+    tab_gauche=[]
+    if len(tab) % 2 ==0:
+        for i in range(0,len(tab)//2):
+            tab_gauche.append(tab[i])
+        return tab_gauche
+    else:
+        for i in range(0,(len(tab)+1)//2):
+            tab_gauche.append(tab[i])
+        return tab_gauche
+
+print(moitie_gauche_lucas([4,8,3,7,9,45]))

@@ -15,7 +15,9 @@ def tri_insertion(liste):
             j=j-1
 
 
-ex_liste = [randint(1,100) for _ in range(50)]
-L=["P","R","O","G","R","A","M","M","E"]
+#ex_liste = [randint(1,100) for _ in range(50)]
+#L=["P","R","O","G","R","A","M","M","E"]
+
+L=[9,11,7,16]
 tri_insertion(L)
 print(L)

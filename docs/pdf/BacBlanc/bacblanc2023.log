@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.1.20)  17 FEB 2023 07:40
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.1.20)  19 FEB 2023 15:42
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1029,7 +1029,7 @@ File: l3backend-pdftex.def 2022-01-12 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count364
 \l__pdf_internal_box=\box76
 )
-No file bacblanc2023.aux.
+(./bacblanc2023.aux)
 \openout1 = `bacblanc2023.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 173.
@@ -1059,6 +1059,7 @@ Package french.ldf Info: Setting StandardEnumerateEnv=true for
 (french.ldf)             reported on input line 173.
 LaTeX Info: Redefining \up on input line 173.
 Package hyperref Info: Link coloring OFF on input line 173.
+
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
 
@@ -1073,6 +1074,8 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 173.
 LaTeX Info: Redefining \pageref on input line 173.
 LaTeX Info: Redefining \nameref on input line 173.
+
+(./bacblanc2023.out) (./bacblanc2023.out)
 \@outlinefile=\write6
 \openout6 = `bacblanc2023.out'.
 
@@ -1192,19 +1195,6 @@ LaTeX Font Info:    Trying to load font information for U+rsfs on input line 17
 (/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-
-LaTeX Warning: Reference `LastPage' on page 1 undefined on input line 192.
-
-
-LaTeX Warning: Reference `LastPage' on page 1 undefined on input line 192.
-
-
-LaTeX Warning: Reference `LastPage' on page 1 undefined on input line 192.
-
-
-LaTeX Warning: Reference `LastPage' on page 1 undefined on input line 192.
-
-
 Overfull \hbox (15.0pt too wide) in paragraph at lines 195--197
 [][] 
  []
@@ -1216,19 +1206,22 @@ Overfull \hbox (15.0pt too wide) in paragraph at lines 200--202
 
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <5> on input line 205.
-
-LaTeX Warning: Reference `LastPage' on page 1 undefined on input line 205.
-
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 ]
 \openout5 = `bacblanc2023.pyg'.
 
-runsystem(pygmentize -S default -f latex -P commandprefix=PYG > _minted-bacblan
-c2023/default.pygstyle)...executed.
-
 
 (./_minted-bacblanc2023/default.pygstyle)
+(./_minted-bacblanc2023/5EFA902DF4499E745AD9AA30D606FBAF686449F39ACBDA17E66AE1F
+EB834C73A.pygtex
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 1
+.
+ (/usr/share/texmf/tex/latex/lm/t1lmtt.fd
+File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
+))
+\openout5 = `bacblanc2023.pyg'.
+
 runsystem(which python3 && touch bacblanc2023.aex)...executed.
 
 runsystem(rm bacblanc2023.aex)...executed.
@@ -1244,57 +1237,17 @@ is not None else None; fvstartnum = 0; fvstopnum = -1; s = max(0, fvstartnum-1)
 ent(\"\".join(x))) for x in (t_opt[0:s], t_opt[s:e], t_opt[e:]) if x and t is n
 ot None]; f.close() if t is not None else os.remove(tmpfname);")...executed.
 
-runsystem(pygmentize -l text -f latex -P commandprefix=PYG -F tokenmerge -P str
-ipnl=False -o _minted-bacblanc2023/5EFA902DF4499E745AD9AA30D606FBAF686449F39ACB
-DA17E66AE1FEB834C73A.pygtex bacblanc2023.pyg)...executed.
-
-
-(./_minted-bacblanc2023/5EFA902DF4499E745AD9AA30D606FBAF686449F39ACBDA17E66AE1F
-EB834C73A.pygtex
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 1
-.
- (/usr/share/texmf/tex/latex/lm/t1lmtt.fd
-File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-))
-\openout5 = `bacblanc2023.pyg'.
-
-runsystem(python3 -c "import sys; import os; import textwrap; from io import op
-en; fname = os.path.expanduser(os.path.expandvars(\"bacblanc2023.pyg\")); f = o
-pen(fname, \"r\", encoding=\"UTF8\") if os.path.isfile(fname) else None; t = f.
-readlines() if f is not None else None; t_opt = t if t is not None else []; f.c
-lose() if f is not None else None; tmpfname = os.path.expanduser(os.path.expand
-vars(\"bacblanc2023.pyg\")); f = open(tmpfname, \"w\", encoding=\"UTF8\") if t 
-is not None else None; fvstartnum = 0; fvstopnum = -1; s = max(0, fvstartnum-1)
-; e = min(s, fvstopnum if fvstopnum > 0 else len(t_opt)); [f.write(textwrap.ded
-ent(\"\".join(x))) for x in (t_opt[0:s], t_opt[s:e], t_opt[e:]) if x and t is n
-ot None]; f.close() if t is not None else os.remove(tmpfname);")...executed.
-
 runsystem(pygmentize -l SQL -f latex -P commandprefix=PYG -F tokenmerge -P stri
-pnl=False -o _minted-bacblanc2023/C39C4B48ADDAEC53F3F50EFB5FCC3A07251A7DAFAACBC
+pnl=False -o _minted-bacblanc2023/1F8FE921229D8FA0BA4368B83FE5903A251A7DAFAACBC
 2427FE44CD5936D8ECC.pygtex bacblanc2023.pyg)...executed.
 
 
-(./_minted-bacblanc2023/C39C4B48ADDAEC53F3F50EFB5FCC3A07251A7DAFAACBC2427FE44CD
+(./_minted-bacblanc2023/1F8FE921229D8FA0BA4368B83FE5903A251A7DAFAACBC2427FE44CD
 5936D8ECC.pygtex
 LaTeX Font Info:    Font shape `T1/lmtt/bx/n' in size <10.95> not available
 (Font)              Font shape `T1/lmtt/b/n' tried instead on input line 2.
 )
 \openout5 = `bacblanc2023.pyg'.
-
-runsystem(python3 -c "import sys; import os; import textwrap; from io import op
-en; fname = os.path.expanduser(os.path.expandvars(\"bacblanc2023.pyg\")); f = o
-pen(fname, \"r\", encoding=\"UTF8\") if os.path.isfile(fname) else None; t = f.
-readlines() if f is not None else None; t_opt = t if t is not None else []; f.c
-lose() if f is not None else None; tmpfname = os.path.expanduser(os.path.expand
-vars(\"bacblanc2023.pyg\")); f = open(tmpfname, \"w\", encoding=\"UTF8\") if t 
-is not None else None; fvstartnum = 0; fvstopnum = -1; s = max(0, fvstartnum-1)
-; e = min(s, fvstopnum if fvstopnum > 0 else len(t_opt)); [f.write(textwrap.ded
-ent(\"\".join(x))) for x in (t_opt[0:s], t_opt[s:e], t_opt[e:]) if x and t is n
-ot None]; f.close() if t is not None else os.remove(tmpfname);")...executed.
-
-runsystem(pygmentize -l SQL -f latex -P commandprefix=PYG -F tokenmerge -P stri
-pnl=False -o _minted-bacblanc2023/BC9F1BDB702EC8BD9FF3E7C7D0CFB4DB251A7DAFAACBC
-2427FE44CD5936D8ECC.pygtex bacblanc2023.pyg)...executed.
 
 
 (./_minted-bacblanc2023/BC9F1BDB702EC8BD9FF3E7C7D0CFB4DB251A7DAFAACBC2427FE44CD
@@ -1306,240 +1259,82 @@ File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 \openout5 = `bacblanc2023.pyg'.
 
-runsystem(python3 -c "import sys; import os; import textwrap; from io import op
-en; fname = os.path.expanduser(os.path.expandvars(\"bacblanc2023.pyg\")); f = o
-pen(fname, \"r\", encoding=\"UTF8\") if os.path.isfile(fname) else None; t = f.
-readlines() if f is not None else None; t_opt = t if t is not None else []; f.c
-lose() if f is not None else None; tmpfname = os.path.expanduser(os.path.expand
-vars(\"bacblanc2023.pyg\")); f = open(tmpfname, \"w\", encoding=\"UTF8\") if t 
-is not None else None; fvstartnum = 0; fvstopnum = -1; s = max(0, fvstartnum-1)
-; e = min(s, fvstopnum if fvstopnum > 0 else len(t_opt)); [f.write(textwrap.ded
-ent(\"\".join(x))) for x in (t_opt[0:s], t_opt[s:e], t_opt[e:]) if x and t is n
-ot None]; f.close() if t is not None else os.remove(tmpfname);")...executed.
-
-runsystem(pygmentize -l SQL -f latex -P commandprefix=PYG -F tokenmerge -P stri
-pnl=False -o _minted-bacblanc2023/647E220CC1C296C3BDBCF0BBC06A7857251A7DAFAACBC
-2427FE44CD5936D8ECC.pygtex bacblanc2023.pyg)...executed.
-
-
-(./_minted-bacblanc2023/647E220CC1C296C3BDBCF0BBC06A7857251A7DAFAACBC2427FE44CD
-5936D8ECC.pygtex)
-\openout5 = `bacblanc2023.pyg'.
-
-runsystem(python3 -c "import sys; import os; import textwrap; from io import op
-en; fname = os.path.expanduser(os.path.expandvars(\"bacblanc2023.pyg\")); f = o
-pen(fname, \"r\", encoding=\"UTF8\") if os.path.isfile(fname) else None; t = f.
-readlines() if f is not None else None; t_opt = t if t is not None else []; f.c
-lose() if f is not None else None; tmpfname = os.path.expanduser(os.path.expand
-vars(\"bacblanc2023.pyg\")); f = open(tmpfname, \"w\", encoding=\"UTF8\") if t 
-is not None else None; fvstartnum = 0; fvstopnum = -1; s = max(0, fvstartnum-1)
-; e = min(s, fvstopnum if fvstopnum > 0 else len(t_opt)); [f.write(textwrap.ded
-ent(\"\".join(x))) for x in (t_opt[0:s], t_opt[s:e], t_opt[e:]) if x and t is n
-ot None]; f.close() if t is not None else os.remove(tmpfname);")...executed.
-
-runsystem(pygmentize -l SQL -f latex -P commandprefix=PYG -F tokenmerge -P stri
-pnl=False -o _minted-bacblanc2023/66B0C02B8C545AD972118E0DB23CFD4E251A7DAFAACBC
-2427FE44CD5936D8ECC.pygtex bacblanc2023.pyg)...executed.
-
-
-(./_minted-bacblanc2023/66B0C02B8C545AD972118E0DB23CFD4E251A7DAFAACBC2427FE44CD
-5936D8ECC.pygtex)
-\openout5 = `bacblanc2023.pyg'.
-
-runsystem(python3 -c "import sys; import os; import textwrap; from io import op
-en; fname = os.path.expanduser(os.path.expandvars(\"bacblanc2023.pyg\")); f = o
-pen(fname, \"r\", encoding=\"UTF8\") if os.path.isfile(fname) else None; t = f.
-readlines() if f is not None else None; t_opt = t if t is not None else []; f.c
-lose() if f is not None else None; tmpfname = os.path.expanduser(os.path.expand
-vars(\"bacblanc2023.pyg\")); f = open(tmpfname, \"w\", encoding=\"UTF8\") if t 
-is not None else None; fvstartnum = 0; fvstopnum = -1; s = max(0, fvstartnum-1)
-; e = min(s, fvstopnum if fvstopnum > 0 else len(t_opt)); [f.write(textwrap.ded
-ent(\"\".join(x))) for x in (t_opt[0:s], t_opt[s:e], t_opt[e:]) if x and t is n
-ot None]; f.close() if t is not None else os.remove(tmpfname);")...executed.
-
-runsystem(pygmentize -l SQL -f latex -P commandprefix=PYG -F tokenmerge -P stri
-pnl=False -o _minted-bacblanc2023/C13F88942B4B289E4F5592016441CEA6251A7DAFAACBC
-2427FE44CD5936D8ECC.pygtex bacblanc2023.pyg)...executed.
-
-
-(./_minted-bacblanc2023/C13F88942B4B289E4F5592016441CEA6251A7DAFAACBC2427FE44CD
-5936D8ECC.pygtex)
-\openout5 = `bacblanc2023.pyg'.
-
-runsystem(python3 -c "import sys; import os; import textwrap; from io import op
-en; fname = os.path.expanduser(os.path.expandvars(\"bacblanc2023.pyg\")); f = o
-pen(fname, \"r\", encoding=\"UTF8\") if os.path.isfile(fname) else None; t = f.
-readlines() if f is not None else None; t_opt = t if t is not None else []; f.c
-lose() if f is not None else None; tmpfname = os.path.expanduser(os.path.expand
-vars(\"bacblanc2023.pyg\")); f = open(tmpfname, \"w\", encoding=\"UTF8\") if t 
-is not None else None; fvstartnum = 0; fvstopnum = -1; s = max(0, fvstartnum-1)
-; e = min(s, fvstopnum if fvstopnum > 0 else len(t_opt)); [f.write(textwrap.ded
-ent(\"\".join(x))) for x in (t_opt[0:s], t_opt[s:e], t_opt[e:]) if x and t is n
-ot None]; f.close() if t is not None else os.remove(tmpfname);")...executed.
-
-runsystem(pygmentize -l SQL -f latex -P commandprefix=PYG -F tokenmerge -P stri
-pnl=False -o _minted-bacblanc2023/3546DCE31AD98E89813BF777A501CA44251A7DAFAACBC
-2427FE44CD5936D8ECC.pygtex bacblanc2023.pyg)...executed.
-
-
-(./_minted-bacblanc2023/3546DCE31AD98E89813BF777A501CA44251A7DAFAACBC2427FE44CD
-5936D8ECC.pygtex)
-\openout5 = `bacblanc2023.pyg'.
-
-runsystem(python3 -c "import sys; import os; import textwrap; from io import op
-en; fname = os.path.expanduser(os.path.expandvars(\"bacblanc2023.pyg\")); f = o
-pen(fname, \"r\", encoding=\"UTF8\") if os.path.isfile(fname) else None; t = f.
-readlines() if f is not None else None; t_opt = t if t is not None else []; f.c
-lose() if f is not None else None; tmpfname = os.path.expanduser(os.path.expand
-vars(\"bacblanc2023.pyg\")); f = open(tmpfname, \"w\", encoding=\"UTF8\") if t 
-is not None else None; fvstartnum = 0; fvstopnum = -1; s = max(0, fvstartnum-1)
-; e = min(s, fvstopnum if fvstopnum > 0 else len(t_opt)); [f.write(textwrap.ded
-ent(\"\".join(x))) for x in (t_opt[0:s], t_opt[s:e], t_opt[e:]) if x and t is n
-ot None]; f.close() if t is not None else os.remove(tmpfname);")...executed.
-
-runsystem(pygmentize -l SQL -f latex -P commandprefix=PYG -F tokenmerge -P stri
-pnl=False -o _minted-bacblanc2023/552DACB15F2019C8F3F74C55BEFA242C251A7DAFAACBC
-2427FE44CD5936D8ECC.pygtex bacblanc2023.pyg)...executed.
-
-
-(./_minted-bacblanc2023/552DACB15F2019C8F3F74C55BEFA242C251A7DAFAACBC2427FE44CD
-5936D8ECC.pygtex)
-\openout5 = `bacblanc2023.pyg'.
-
-runsystem(python3 -c "import sys; import os; import textwrap; from io import op
-en; fname = os.path.expanduser(os.path.expandvars(\"bacblanc2023.pyg\")); f = o
-pen(fname, \"r\", encoding=\"UTF8\") if os.path.isfile(fname) else None; t = f.
-readlines() if f is not None else None; t_opt = t if t is not None else []; f.c
-lose() if f is not None else None; tmpfname = os.path.expanduser(os.path.expand
-vars(\"bacblanc2023.pyg\")); f = open(tmpfname, \"w\", encoding=\"UTF8\") if t 
-is not None else None; fvstartnum = 0; fvstopnum = -1; s = max(0, fvstartnum-1)
-; e = min(s, fvstopnum if fvstopnum > 0 else len(t_opt)); [f.write(textwrap.ded
-ent(\"\".join(x))) for x in (t_opt[0:s], t_opt[s:e], t_opt[e:]) if x and t is n
-ot None]; f.close() if t is not None else os.remove(tmpfname);")...executed.
-
-runsystem(pygmentize -l SQL -f latex -P commandprefix=PYG -F tokenmerge -P stri
-pnl=False -o _minted-bacblanc2023/6BC318CCDDF88CD00BBB6EABC8699753251A7DAFAACBC
-2427FE44CD5936D8ECC.pygtex bacblanc2023.pyg)...executed.
-
-
-(./_minted-bacblanc2023/6BC318CCDDF88CD00BBB6EABC8699753251A7DAFAACBC2427FE44CD
-5936D8ECC.pygtex)
-\openout5 = `bacblanc2023.pyg'.
-
-runsystem(python3 -c "import sys; import os; import textwrap; from io import op
-en; fname = os.path.expanduser(os.path.expandvars(\"bacblanc2023.pyg\")); f = o
-pen(fname, \"r\", encoding=\"UTF8\") if os.path.isfile(fname) else None; t = f.
-readlines() if f is not None else None; t_opt = t if t is not None else []; f.c
-lose() if f is not None else None; tmpfname = os.path.expanduser(os.path.expand
-vars(\"bacblanc2023.pyg\")); f = open(tmpfname, \"w\", encoding=\"UTF8\") if t 
-is not None else None; fvstartnum = 0; fvstopnum = -1; s = max(0, fvstartnum-1)
-; e = min(s, fvstopnum if fvstopnum > 0 else len(t_opt)); [f.write(textwrap.ded
-ent(\"\".join(x))) for x in (t_opt[0:s], t_opt[s:e], t_opt[e:]) if x and t is n
-ot None]; f.close() if t is not None else os.remove(tmpfname);")...executed.
-
-runsystem(pygmentize -l SQL -f latex -P commandprefix=PYG -F tokenmerge -P stri
-pnl=False -o _minted-bacblanc2023/0B512BC4021BAF4BC62AC3BA6A636D6C251A7DAFAACBC
-2427FE44CD5936D8ECC.pygtex bacblanc2023.pyg)...executed.
-
 
 (./_minted-bacblanc2023/0B512BC4021BAF4BC62AC3BA6A636D6C251A7DAFAACBC2427FE44CD
 5936D8ECC.pygtex)
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10.95> on input line 224.
 \openout5 = `bacblanc2023.pyg'.
 
-runsystem(python3 -c "import sys; import os; import textwrap; from io import op
-en; fname = os.path.expanduser(os.path.expandvars(\"bacblanc2023.pyg\")); f = o
-pen(fname, \"r\", encoding=\"UTF8\") if os.path.isfile(fname) else None; t = f.
-readlines() if f is not None else None; t_opt = t if t is not None else []; f.c
-lose() if f is not None else None; tmpfname = os.path.expanduser(os.path.expand
-vars(\"bacblanc2023.pyg\")); f = open(tmpfname, \"w\", encoding=\"UTF8\") if t 
-is not None else None; fvstartnum = 0; fvstopnum = -1; s = max(0, fvstartnum-1)
-; e = min(s, fvstopnum if fvstopnum > 0 else len(t_opt)); [f.write(textwrap.ded
-ent(\"\".join(x))) for x in (t_opt[0:s], t_opt[s:e], t_opt[e:]) if x and t is n
-ot None]; f.close() if t is not None else os.remove(tmpfname);")...executed.
 
-runsystem(pygmentize -l SQL -f latex -P commandprefix=PYG -F tokenmerge -P stri
-pnl=False -o _minted-bacblanc2023/245295B1B43FF7D9385DD6C3E6D70A01251A7DAFAACBC
-2427FE44CD5936D8ECC.pygtex bacblanc2023.pyg)...executed.
-
-
-(./_minted-bacblanc2023/245295B1B43FF7D9385DD6C3E6D70A01251A7DAFAACBC2427FE44CD
+(./_minted-bacblanc2023/78466265A0BE44AFFE4FDE7BFE194ED0251A7DAFAACBC2427FE44CD
 5936D8ECC.pygtex)
 \openout5 = `bacblanc2023.pyg'.
-
-runsystem(python3 -c "import sys; import os; import textwrap; from io import op
-en; fname = os.path.expanduser(os.path.expandvars(\"bacblanc2023.pyg\")); f = o
-pen(fname, \"r\", encoding=\"UTF8\") if os.path.isfile(fname) else None; t = f.
-readlines() if f is not None else None; t_opt = t if t is not None else []; f.c
-lose() if f is not None else None; tmpfname = os.path.expanduser(os.path.expand
-vars(\"bacblanc2023.pyg\")); f = open(tmpfname, \"w\", encoding=\"UTF8\") if t 
-is not None else None; fvstartnum = 0; fvstopnum = -1; s = max(0, fvstartnum-1)
-; e = min(s, fvstopnum if fvstopnum > 0 else len(t_opt)); [f.write(textwrap.ded
-ent(\"\".join(x))) for x in (t_opt[0:s], t_opt[s:e], t_opt[e:]) if x and t is n
-ot None]; f.close() if t is not None else os.remove(tmpfname);")...executed.
-
-runsystem(pygmentize -l SQL -f latex -P commandprefix=PYG -F tokenmerge -P stri
-pnl=False -o _minted-bacblanc2023/775B4E1D44E054D2AFD229B0BC8C787B251A7DAFAACBC
-2427FE44CD5936D8ECC.pygtex bacblanc2023.pyg)...executed.
 
 
 (./_minted-bacblanc2023/775B4E1D44E054D2AFD229B0BC8C787B251A7DAFAACBC2427FE44CD
 5936D8ECC.pygtex)
 \openout5 = `bacblanc2023.pyg'.
 
-runsystem(python3 -c "import sys; import os; import textwrap; from io import op
-en; fname = os.path.expanduser(os.path.expandvars(\"bacblanc2023.pyg\")); f = o
-pen(fname, \"r\", encoding=\"UTF8\") if os.path.isfile(fname) else None; t = f.
-readlines() if f is not None else None; t_opt = t if t is not None else []; f.c
-lose() if f is not None else None; tmpfname = os.path.expanduser(os.path.expand
-vars(\"bacblanc2023.pyg\")); f = open(tmpfname, \"w\", encoding=\"UTF8\") if t 
-is not None else None; fvstartnum = 0; fvstopnum = -1; s = max(0, fvstartnum-1)
-; e = min(s, fvstopnum if fvstopnum > 0 else len(t_opt)); [f.write(textwrap.ded
-ent(\"\".join(x))) for x in (t_opt[0:s], t_opt[s:e], t_opt[e:]) if x and t is n
-ot None]; f.close() if t is not None else os.remove(tmpfname);")...executed.
 
-runsystem(pygmentize -l SQL -f latex -P commandprefix=PYG -F tokenmerge -P stri
-pnl=False -o _minted-bacblanc2023/BE2C8CB1747B8720B3EDF5B20C6065B5251A7DAFAACBC
-2427FE44CD5936D8ECC.pygtex bacblanc2023.pyg)...executed.
-
-
-(./_minted-bacblanc2023/BE2C8CB1747B8720B3EDF5B20C6065B5251A7DAFAACBC2427FE44CD
+(./_minted-bacblanc2023/D3450B7D6AD5A5CAC387A14549B9B682251A7DAFAACBC2427FE44CD
 5936D8ECC.pygtex)
 \openout5 = `bacblanc2023.pyg'.
 
-runsystem(python3 -c "import sys; import os; import textwrap; from io import op
-en; fname = os.path.expanduser(os.path.expandvars(\"bacblanc2023.pyg\")); f = o
-pen(fname, \"r\", encoding=\"UTF8\") if os.path.isfile(fname) else None; t = f.
-readlines() if f is not None else None; t_opt = t if t is not None else []; f.c
-lose() if f is not None else None; tmpfname = os.path.expanduser(os.path.expand
-vars(\"bacblanc2023.pyg\")); f = open(tmpfname, \"w\", encoding=\"UTF8\") if t 
-is not None else None; fvstartnum = 0; fvstopnum = -1; s = max(0, fvstartnum-1)
-; e = min(s, fvstopnum if fvstopnum > 0 else len(t_opt)); [f.write(textwrap.ded
-ent(\"\".join(x))) for x in (t_opt[0:s], t_opt[s:e], t_opt[e:]) if x and t is n
-ot None]; f.close() if t is not None else os.remove(tmpfname);")...executed.
 
-runsystem(pygmentize -l SQL -f latex -P commandprefix=PYG -F tokenmerge -P stri
-pnl=False -o _minted-bacblanc2023/0B4D7424C86C769520C0B73A623753F7251A7DAFAACBC
-2427FE44CD5936D8ECC.pygtex bacblanc2023.pyg)...executed.
+(./_minted-bacblanc2023/4CC42AA969596F5A1E3B73BB0CBC630E251A7DAFAACBC2427FE44CD
+5936D8ECC.pygtex)
+\openout5 = `bacblanc2023.pyg'.
+
+
+(./_minted-bacblanc2023/471749BD6B2F83DAAECE636241EBA26B251A7DAFAACBC2427FE44CD
+5936D8ECC.pygtex)
+\openout5 = `bacblanc2023.pyg'.
 
 
 (./_minted-bacblanc2023/0B4D7424C86C769520C0B73A623753F7251A7DAFAACBC2427FE44CD
 5936D8ECC.pygtex)
 \openout5 = `bacblanc2023.pyg'.
 
-runsystem(python3 -c "import sys; import os; import textwrap; from io import op
-en; fname = os.path.expanduser(os.path.expandvars(\"bacblanc2023.pyg\")); f = o
-pen(fname, \"r\", encoding=\"UTF8\") if os.path.isfile(fname) else None; t = f.
-readlines() if f is not None else None; t_opt = t if t is not None else []; f.c
-lose() if f is not None else None; tmpfname = os.path.expanduser(os.path.expand
-vars(\"bacblanc2023.pyg\")); f = open(tmpfname, \"w\", encoding=\"UTF8\") if t 
-is not None else None; fvstartnum = 0; fvstopnum = -1; s = max(0, fvstartnum-1)
-; e = min(s, fvstopnum if fvstopnum > 0 else len(t_opt)); [f.write(textwrap.ded
-ent(\"\".join(x))) for x in (t_opt[0:s], t_opt[s:e], t_opt[e:]) if x and t is n
-ot None]; f.close() if t is not None else os.remove(tmpfname);")...executed.
 
-runsystem(pygmentize -l SQL -f latex -P commandprefix=PYG -F tokenmerge -P stri
-pnl=False -o _minted-bacblanc2023/883342F12A7F6943672C3FA6609EF4BB251A7DAFAACBC
-2427FE44CD5936D8ECC.pygtex bacblanc2023.pyg)...executed.
+(./_minted-bacblanc2023/E70C35DA68895F6C3E2BD84249DF7D6B251A7DAFAACBC2427FE44CD
+5936D8ECC.pygtex)
+\openout5 = `bacblanc2023.pyg'.
+
+
+(./_minted-bacblanc2023/552DACB15F2019C8F3F74C55BEFA242C251A7DAFAACBC2427FE44CD
+5936D8ECC.pygtex)
+\openout5 = `bacblanc2023.pyg'.
+
+
+(./_minted-bacblanc2023/6BC318CCDDF88CD00BBB6EABC8699753251A7DAFAACBC2427FE44CD
+5936D8ECC.pygtex)
+\openout5 = `bacblanc2023.pyg'.
+
+
+(./_minted-bacblanc2023/0B512BC4021BAF4BC62AC3BA6A636D6C251A7DAFAACBC2427FE44CD
+5936D8ECC.pygtex)
+\openout5 = `bacblanc2023.pyg'.
+
+
+(./_minted-bacblanc2023/245295B1B43FF7D9385DD6C3E6D70A01251A7DAFAACBC2427FE44CD
+5936D8ECC.pygtex)
+\openout5 = `bacblanc2023.pyg'.
+
+
+(./_minted-bacblanc2023/775B4E1D44E054D2AFD229B0BC8C787B251A7DAFAACBC2427FE44CD
+5936D8ECC.pygtex)
+\openout5 = `bacblanc2023.pyg'.
+
+
+(./_minted-bacblanc2023/BE2C8CB1747B8720B3EDF5B20C6065B5251A7DAFAACBC2427FE44CD
+5936D8ECC.pygtex)
+\openout5 = `bacblanc2023.pyg'.
+
+
+(./_minted-bacblanc2023/0B4D7424C86C769520C0B73A623753F7251A7DAFAACBC2427FE44CD
+5936D8ECC.pygtex)
+\openout5 = `bacblanc2023.pyg'.
 
 
 (./_minted-bacblanc2023/883342F12A7F6943672C3FA6609EF4BB251A7DAFAACBC2427FE44CD
@@ -1557,21 +1352,6 @@ n-gère fai-sant ré-fé-rence à l'at-tri-but \T1/lmtt/m/n/10.95 idArticle
 
 \openout5 = `bacblanc2023.pyg'.
 
-runsystem(python3 -c "import sys; import os; import textwrap; from io import op
-en; fname = os.path.expanduser(os.path.expandvars(\"bacblanc2023.pyg\")); f = o
-pen(fname, \"r\", encoding=\"UTF8\") if os.path.isfile(fname) else None; t = f.
-readlines() if f is not None else None; t_opt = t if t is not None else []; f.c
-lose() if f is not None else None; tmpfname = os.path.expanduser(os.path.expand
-vars(\"bacblanc2023.pyg\")); f = open(tmpfname, \"w\", encoding=\"UTF8\") if t 
-is not None else None; fvstartnum = 0; fvstopnum = -1; s = max(0, fvstartnum-1)
-; e = min(s, fvstopnum if fvstopnum > 0 else len(t_opt)); [f.write(textwrap.ded
-ent(\"\".join(x))) for x in (t_opt[0:s], t_opt[s:e], t_opt[e:]) if x and t is n
-ot None]; f.close() if t is not None else os.remove(tmpfname);")...executed.
-
-runsystem(pygmentize -l SQL -f latex -P commandprefix=PYG -F tokenmerge -P stri
-pnl=False -o _minted-bacblanc2023/EB1FC3A7CED83282C437CB3A34B95377251A7DAFAACBC
-2427FE44CD5936D8ECC.pygtex bacblanc2023.pyg)...executed.
-
 
 (./_minted-bacblanc2023/EB1FC3A7CED83282C437CB3A34B95377251A7DAFAACBC2427FE44CD
 5936D8ECC.pygtex)
@@ -1582,120 +1362,30 @@ pnl=False -o _minted-bacblanc2023/EB1FC3A7CED83282C437CB3A34B95377251A7DAFAACBC
 5936D8ECC.pygtex)
 \openout5 = `bacblanc2023.pyg'.
 
-runsystem(python3 -c "import sys; import os; import textwrap; from io import op
-en; fname = os.path.expanduser(os.path.expandvars(\"bacblanc2023.pyg\")); f = o
-pen(fname, \"r\", encoding=\"UTF8\") if os.path.isfile(fname) else None; t = f.
-readlines() if f is not None else None; t_opt = t if t is not None else []; f.c
-lose() if f is not None else None; tmpfname = os.path.expanduser(os.path.expand
-vars(\"bacblanc2023.pyg\")); f = open(tmpfname, \"w\", encoding=\"UTF8\") if t 
-is not None else None; fvstartnum = 0; fvstopnum = -1; s = max(0, fvstartnum-1)
-; e = min(s, fvstopnum if fvstopnum > 0 else len(t_opt)); [f.write(textwrap.ded
-ent(\"\".join(x))) for x in (t_opt[0:s], t_opt[s:e], t_opt[e:]) if x and t is n
-ot None]; f.close() if t is not None else os.remove(tmpfname);")...executed.
-
-runsystem(pygmentize -l SQL -f latex -P commandprefix=PYG -F tokenmerge -P stri
-pnl=False -o _minted-bacblanc2023/F6776E4763025899A8F55A88667B1449251A7DAFAACBC
-2427FE44CD5936D8ECC.pygtex bacblanc2023.pyg)...executed.
-
 
 (./_minted-bacblanc2023/F6776E4763025899A8F55A88667B1449251A7DAFAACBC2427FE44CD
 5936D8ECC.pygtex)
 \openout5 = `bacblanc2023.pyg'.
-
-runsystem(python3 -c "import sys; import os; import textwrap; from io import op
-en; fname = os.path.expanduser(os.path.expandvars(\"bacblanc2023.pyg\")); f = o
-pen(fname, \"r\", encoding=\"UTF8\") if os.path.isfile(fname) else None; t = f.
-readlines() if f is not None else None; t_opt = t if t is not None else []; f.c
-lose() if f is not None else None; tmpfname = os.path.expanduser(os.path.expand
-vars(\"bacblanc2023.pyg\")); f = open(tmpfname, \"w\", encoding=\"UTF8\") if t 
-is not None else None; fvstartnum = 0; fvstopnum = -1; s = max(0, fvstartnum-1)
-; e = min(s, fvstopnum if fvstopnum > 0 else len(t_opt)); [f.write(textwrap.ded
-ent(\"\".join(x))) for x in (t_opt[0:s], t_opt[s:e], t_opt[e:]) if x and t is n
-ot None]; f.close() if t is not None else os.remove(tmpfname);")...executed.
-
-runsystem(pygmentize -l SQL -f latex -P commandprefix=PYG -F tokenmerge -P stri
-pnl=False -o _minted-bacblanc2023/4CC42AA969596F5A1E3B73BB0CBC630E251A7DAFAACBC
-2427FE44CD5936D8ECC.pygtex bacblanc2023.pyg)...executed.
 
 
 (./_minted-bacblanc2023/4CC42AA969596F5A1E3B73BB0CBC630E251A7DAFAACBC2427FE44CD
 5936D8ECC.pygtex)
 \openout5 = `bacblanc2023.pyg'.
 
-runsystem(python3 -c "import sys; import os; import textwrap; from io import op
-en; fname = os.path.expanduser(os.path.expandvars(\"bacblanc2023.pyg\")); f = o
-pen(fname, \"r\", encoding=\"UTF8\") if os.path.isfile(fname) else None; t = f.
-readlines() if f is not None else None; t_opt = t if t is not None else []; f.c
-lose() if f is not None else None; tmpfname = os.path.expanduser(os.path.expand
-vars(\"bacblanc2023.pyg\")); f = open(tmpfname, \"w\", encoding=\"UTF8\") if t 
-is not None else None; fvstartnum = 0; fvstopnum = -1; s = max(0, fvstartnum-1)
-; e = min(s, fvstopnum if fvstopnum > 0 else len(t_opt)); [f.write(textwrap.ded
-ent(\"\".join(x))) for x in (t_opt[0:s], t_opt[s:e], t_opt[e:]) if x and t is n
-ot None]; f.close() if t is not None else os.remove(tmpfname);")...executed.
-
-runsystem(pygmentize -l SQL -f latex -P commandprefix=PYG -F tokenmerge -P stri
-pnl=False -o _minted-bacblanc2023/49F96038F20AA062772267B640A18D79251A7DAFAACBC
-2427FE44CD5936D8ECC.pygtex bacblanc2023.pyg)...executed.
-
 
 (./_minted-bacblanc2023/49F96038F20AA062772267B640A18D79251A7DAFAACBC2427FE44CD
 5936D8ECC.pygtex)
 \openout5 = `bacblanc2023.pyg'.
-
-runsystem(python3 -c "import sys; import os; import textwrap; from io import op
-en; fname = os.path.expanduser(os.path.expandvars(\"bacblanc2023.pyg\")); f = o
-pen(fname, \"r\", encoding=\"UTF8\") if os.path.isfile(fname) else None; t = f.
-readlines() if f is not None else None; t_opt = t if t is not None else []; f.c
-lose() if f is not None else None; tmpfname = os.path.expanduser(os.path.expand
-vars(\"bacblanc2023.pyg\")); f = open(tmpfname, \"w\", encoding=\"UTF8\") if t 
-is not None else None; fvstartnum = 0; fvstopnum = -1; s = max(0, fvstartnum-1)
-; e = min(s, fvstopnum if fvstopnum > 0 else len(t_opt)); [f.write(textwrap.ded
-ent(\"\".join(x))) for x in (t_opt[0:s], t_opt[s:e], t_opt[e:]) if x and t is n
-ot None]; f.close() if t is not None else os.remove(tmpfname);")...executed.
-
-runsystem(pygmentize -l SQL -f latex -P commandprefix=PYG -F tokenmerge -P stri
-pnl=False -o _minted-bacblanc2023/D2600B9BC400903D59D36BF6CC4F3BA9251A7DAFAACBC
-2427FE44CD5936D8ECC.pygtex bacblanc2023.pyg)...executed.
 
 
 (./_minted-bacblanc2023/D2600B9BC400903D59D36BF6CC4F3BA9251A7DAFAACBC2427FE44CD
 5936D8ECC.pygtex)
 \openout5 = `bacblanc2023.pyg'.
 
-runsystem(python3 -c "import sys; import os; import textwrap; from io import op
-en; fname = os.path.expanduser(os.path.expandvars(\"bacblanc2023.pyg\")); f = o
-pen(fname, \"r\", encoding=\"UTF8\") if os.path.isfile(fname) else None; t = f.
-readlines() if f is not None else None; t_opt = t if t is not None else []; f.c
-lose() if f is not None else None; tmpfname = os.path.expanduser(os.path.expand
-vars(\"bacblanc2023.pyg\")); f = open(tmpfname, \"w\", encoding=\"UTF8\") if t 
-is not None else None; fvstartnum = 0; fvstopnum = -1; s = max(0, fvstartnum-1)
-; e = min(s, fvstopnum if fvstopnum > 0 else len(t_opt)); [f.write(textwrap.ded
-ent(\"\".join(x))) for x in (t_opt[0:s], t_opt[s:e], t_opt[e:]) if x and t is n
-ot None]; f.close() if t is not None else os.remove(tmpfname);")...executed.
-
-runsystem(pygmentize -l SQL -f latex -P commandprefix=PYG -F tokenmerge -P stri
-pnl=False -o _minted-bacblanc2023/506D30A0D0FBB5B3C12D677B0A708BE9251A7DAFAACBC
-2427FE44CD5936D8ECC.pygtex bacblanc2023.pyg)...executed.
-
 
 (./_minted-bacblanc2023/506D30A0D0FBB5B3C12D677B0A708BE9251A7DAFAACBC2427FE44CD
 5936D8ECC.pygtex)
 \openout5 = `bacblanc2023.pyg'.
-
-runsystem(python3 -c "import sys; import os; import textwrap; from io import op
-en; fname = os.path.expanduser(os.path.expandvars(\"bacblanc2023.pyg\")); f = o
-pen(fname, \"r\", encoding=\"UTF8\") if os.path.isfile(fname) else None; t = f.
-readlines() if f is not None else None; t_opt = t if t is not None else []; f.c
-lose() if f is not None else None; tmpfname = os.path.expanduser(os.path.expand
-vars(\"bacblanc2023.pyg\")); f = open(tmpfname, \"w\", encoding=\"UTF8\") if t 
-is not None else None; fvstartnum = 0; fvstopnum = -1; s = max(0, fvstartnum-1)
-; e = min(s, fvstopnum if fvstopnum > 0 else len(t_opt)); [f.write(textwrap.ded
-ent(\"\".join(x))) for x in (t_opt[0:s], t_opt[s:e], t_opt[e:]) if x and t is n
-ot None]; f.close() if t is not None else os.remove(tmpfname);")...executed.
-
-runsystem(pygmentize -l SQL -f latex -P commandprefix=PYG -F tokenmerge -P stri
-pnl=False -o _minted-bacblanc2023/E2DF688248B87B84B47F31AEBC8C9ABB251A7DAFAACBC
-2427FE44CD5936D8ECC.pygtex bacblanc2023.pyg)...executed.
 
 
 (./_minted-bacblanc2023/E2DF688248B87B84B47F31AEBC8C9ABB251A7DAFAACBC2427FE44CD
@@ -1725,50 +1415,13 @@ m/n/10.95 id \T1/lmr/m/n/10.95 sont des nombres en-tiers ainsi que l'at-tri-but
 
 
 (./_minted-bacblanc2023/4CC42AA969596F5A1E3B73BB0CBC630E251A7DAFAACBC2427FE44CD
-5936D8ECC.pygtex)
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 265.
-
-
-LaTeX Warning: Reference `LastPage' on page 2 undefined on input line 324.
-
-[2]
+5936D8ECC.pygtex) [2]
 \openout5 = `bacblanc2023.pyg'.
-
-runsystem(python3 -c "import sys; import os; import textwrap; from io import op
-en; fname = os.path.expanduser(os.path.expandvars(\"bacblanc2023.pyg\")); f = o
-pen(fname, \"r\", encoding=\"UTF8\") if os.path.isfile(fname) else None; t = f.
-readlines() if f is not None else None; t_opt = t if t is not None else []; f.c
-lose() if f is not None else None; tmpfname = os.path.expanduser(os.path.expand
-vars(\"bacblanc2023.pyg\")); f = open(tmpfname, \"w\", encoding=\"UTF8\") if t 
-is not None else None; fvstartnum = 0; fvstopnum = -1; s = max(0, fvstartnum-1)
-; e = min(s, fvstopnum if fvstopnum > 0 else len(t_opt)); [f.write(textwrap.ded
-ent(\"\".join(x))) for x in (t_opt[0:s], t_opt[s:e], t_opt[e:]) if x and t is n
-ot None]; f.close() if t is not None else os.remove(tmpfname);")...executed.
-
-runsystem(pygmentize -l SQL -f latex -P commandprefix=PYG -F tokenmerge -P stri
-pnl=False -o _minted-bacblanc2023/5EFA902DF4499E745AD9AA30D606FBAF251A7DAFAACBC
-2427FE44CD5936D8ECC.pygtex bacblanc2023.pyg)...executed.
 
 
 (./_minted-bacblanc2023/5EFA902DF4499E745AD9AA30D606FBAF251A7DAFAACBC2427FE44CD
 5936D8ECC.pygtex)
 \openout5 = `bacblanc2023.pyg'.
-
-runsystem(python3 -c "import sys; import os; import textwrap; from io import op
-en; fname = os.path.expanduser(os.path.expandvars(\"bacblanc2023.pyg\")); f = o
-pen(fname, \"r\", encoding=\"UTF8\") if os.path.isfile(fname) else None; t = f.
-readlines() if f is not None else None; t_opt = t if t is not None else []; f.c
-lose() if f is not None else None; tmpfname = os.path.expanduser(os.path.expand
-vars(\"bacblanc2023.pyg\")); f = open(tmpfname, \"w\", encoding=\"UTF8\") if t 
-is not None else None; fvstartnum = 0; fvstopnum = -1; s = max(0, fvstartnum-1)
-; e = min(s, fvstopnum if fvstopnum > 0 else len(t_opt)); [f.write(textwrap.ded
-ent(\"\".join(x))) for x in (t_opt[0:s], t_opt[s:e], t_opt[e:]) if x and t is n
-ot None]; f.close() if t is not None else os.remove(tmpfname);")...executed.
-
-runsystem(pygmentize -l SQL -f latex -P commandprefix=PYG -F tokenmerge -P stri
-pnl=False -o _minted-bacblanc2023/9EB64B35728D660F0139E5C90AA906C7251A7DAFAACBC
-2427FE44CD5936D8ECC.pygtex bacblanc2023.pyg)...executed.
 
 
 (./_minted-bacblanc2023/9EB64B35728D660F0139E5C90AA906C7251A7DAFAACBC2427FE44CD
@@ -1802,21 +1455,6 @@ icle dans la table (ou re-la-tion) \T1/lmtt/m/n/10.95 Traitements\T1/lmr/m/n/10
 5936D8ECC.pygtex)
 \openout5 = `bacblanc2023.pyg'.
 
-runsystem(python3 -c "import sys; import os; import textwrap; from io import op
-en; fname = os.path.expanduser(os.path.expandvars(\"bacblanc2023.pyg\")); f = o
-pen(fname, \"r\", encoding=\"UTF8\") if os.path.isfile(fname) else None; t = f.
-readlines() if f is not None else None; t_opt = t if t is not None else []; f.c
-lose() if f is not None else None; tmpfname = os.path.expanduser(os.path.expand
-vars(\"bacblanc2023.pyg\")); f = open(tmpfname, \"w\", encoding=\"UTF8\") if t 
-is not None else None; fvstartnum = 0; fvstopnum = -1; s = max(0, fvstartnum-1)
-; e = min(s, fvstopnum if fvstopnum > 0 else len(t_opt)); [f.write(textwrap.ded
-ent(\"\".join(x))) for x in (t_opt[0:s], t_opt[s:e], t_opt[e:]) if x and t is n
-ot None]; f.close() if t is not None else os.remove(tmpfname);")...executed.
-
-runsystem(pygmentize -l SQL -f latex -P commandprefix=PYG -F tokenmerge -P stri
-pnl=False -o _minted-bacblanc2023/6D7FCE9FEE471194AA8B5B6E47267F03251A7DAFAACBC
-2427FE44CD5936D8ECC.pygtex bacblanc2023.pyg)...executed.
-
 
 (./_minted-bacblanc2023/6D7FCE9FEE471194AA8B5B6E47267F03251A7DAFAACBC2427FE44CD
 5936D8ECC.pygtex)
@@ -1829,36 +1467,8 @@ pnl=False -o _minted-bacblanc2023/6D7FCE9FEE471194AA8B5B6E47267F03251A7DAFAACBC
 
 
 (./_minted-bacblanc2023/245295B1B43FF7D9385DD6C3E6D70A01251A7DAFAACBC2427FE44CD
-5936D8ECC.pygtex)
-
-LaTeX Warning: Reference `equilibre' on page 3 undefined on input line 357.
-
-
-LaTeX Warning: Reference `equilibre' on page 3 undefined on input line 419.
-
-
-LaTeX Warning: Reference `arbreQ1' on page 3 undefined on input line 426.
-
-
-LaTeX Warning: Reference `LastPage' on page 3 undefined on input line 465.
-
-[3]
+5936D8ECC.pygtex) [3]
 \openout5 = `bacblanc2023.pyg'.
-
-runsystem(python3 -c "import sys; import os; import textwrap; from io import op
-en; fname = os.path.expanduser(os.path.expandvars(\"bacblanc2023.pyg\")); f = o
-pen(fname, \"r\", encoding=\"UTF8\") if os.path.isfile(fname) else None; t = f.
-readlines() if f is not None else None; t_opt = t if t is not None else []; f.c
-lose() if f is not None else None; tmpfname = os.path.expanduser(os.path.expand
-vars(\"bacblanc2023.pyg\")); f = open(tmpfname, \"w\", encoding=\"UTF8\") if t 
-is not None else None; fvstartnum = 0; fvstopnum = -1; s = max(0, fvstartnum-1)
-; e = min(s, fvstopnum if fvstopnum > 0 else len(t_opt)); [f.write(textwrap.ded
-ent(\"\".join(x))) for x in (t_opt[0:s], t_opt[s:e], t_opt[e:]) if x and t is n
-ot None]; f.close() if t is not None else os.remove(tmpfname);")...executed.
-
-runsystem(pygmentize -l python -f latex -P commandprefix=PYG -F tokenmerge -P s
-tripnl=False -o _minted-bacblanc2023/08E9DE24AB150D083240557CEC091D53E37ADB1602
-7FD3115A6451498DD020A3.pygtex bacblanc2023.pyg)...executed.
 
 
 (./_minted-bacblanc2023/08E9DE24AB150D083240557CEC091D53E37ADB16027FD3115A64514
@@ -1866,156 +1476,37 @@ tripnl=False -o _minted-bacblanc2023/08E9DE24AB150D083240557CEC091D53E37ADB1602
 \c@index=\count372
 \openout5 = `bacblanc2023.pyg'.
 
-runsystem(python3 -c "import sys; import os; import textwrap; from io import op
-en; fname = os.path.expanduser(os.path.expandvars(\"bacblanc2023.pyg\")); f = o
-pen(fname, \"r\", encoding=\"UTF8\") if os.path.isfile(fname) else None; t = f.
-readlines() if f is not None else None; t_opt = t if t is not None else []; f.c
-lose() if f is not None else None; tmpfname = os.path.expanduser(os.path.expand
-vars(\"bacblanc2023.pyg\")); f = open(tmpfname, \"w\", encoding=\"UTF8\") if t 
-is not None else None; fvstartnum = 0; fvstopnum = -1; s = max(0, fvstartnum-1)
-; e = min(s, fvstopnum if fvstopnum > 0 else len(t_opt)); [f.write(textwrap.ded
-ent(\"\".join(x))) for x in (t_opt[0:s], t_opt[s:e], t_opt[e:]) if x and t is n
-ot None]; f.close() if t is not None else os.remove(tmpfname);")...executed.
-
-runsystem(pygmentize -l python -f latex -P commandprefix=PYG -F tokenmerge -P s
-tripnl=False -o _minted-bacblanc2023/CB6D11562B75A971055C2CD52D5B0131E37ADB1602
-7FD3115A6451498DD020A3.pygtex bacblanc2023.pyg)...executed.
-
 
 (./_minted-bacblanc2023/CB6D11562B75A971055C2CD52D5B0131E37ADB16027FD3115A64514
 98DD020A3.pygtex)
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <9> on input line 501.
-
-
-LaTeX Warning: Reference `arbreQ1' on page 4 undefined on input line 505.
-
-
-LaTeX Warning: Reference `arbreQ1' on page 4 undefined on input line 505.
-
-
-LaTeX Warning: Reference `arbreQ2' on page 4 undefined on input line 510.
-
 \openout5 = `bacblanc2023.pyg'.
-
-runsystem(python3 -c "import sys; import os; import textwrap; from io import op
-en; fname = os.path.expanduser(os.path.expandvars(\"bacblanc2023.pyg\")); f = o
-pen(fname, \"r\", encoding=\"UTF8\") if os.path.isfile(fname) else None; t = f.
-readlines() if f is not None else None; t_opt = t if t is not None else []; f.c
-lose() if f is not None else None; tmpfname = os.path.expanduser(os.path.expand
-vars(\"bacblanc2023.pyg\")); f = open(tmpfname, \"w\", encoding=\"UTF8\") if t 
-is not None else None; fvstartnum = 0; fvstopnum = -1; s = max(0, fvstartnum-1)
-; e = min(s, fvstopnum if fvstopnum > 0 else len(t_opt)); [f.write(textwrap.ded
-ent(\"\".join(x))) for x in (t_opt[0:s], t_opt[s:e], t_opt[e:]) if x and t is n
-ot None]; f.close() if t is not None else os.remove(tmpfname);")...executed.
-
-runsystem(pygmentize -l python -f latex -P commandprefix=PYG -F tokenmerge -P s
-tripnl=False -o _minted-bacblanc2023/F55E9A6441150E3039ADBAC74DB6E823E37ADB1602
-7FD3115A6451498DD020A3.pygtex bacblanc2023.pyg)...executed.
 
 
 (./_minted-bacblanc2023/F55E9A6441150E3039ADBAC74DB6E823E37ADB16027FD3115A64514
 98DD020A3.pygtex)
 \openout5 = `bacblanc2023.pyg'.
 
-runsystem(python3 -c "import sys; import os; import textwrap; from io import op
-en; fname = os.path.expanduser(os.path.expandvars(\"bacblanc2023.pyg\")); f = o
-pen(fname, \"r\", encoding=\"UTF8\") if os.path.isfile(fname) else None; t = f.
-readlines() if f is not None else None; t_opt = t if t is not None else []; f.c
-lose() if f is not None else None; tmpfname = os.path.expanduser(os.path.expand
-vars(\"bacblanc2023.pyg\")); f = open(tmpfname, \"w\", encoding=\"UTF8\") if t 
-is not None else None; fvstartnum = 0; fvstopnum = -1; s = max(0, fvstartnum-1)
-; e = min(s, fvstopnum if fvstopnum > 0 else len(t_opt)); [f.write(textwrap.ded
-ent(\"\".join(x))) for x in (t_opt[0:s], t_opt[s:e], t_opt[e:]) if x and t is n
-ot None]; f.close() if t is not None else os.remove(tmpfname);")...executed.
-
-runsystem(pygmentize -l python -f latex -P commandprefix=PYG -F tokenmerge -P s
-tripnl=False -o _minted-bacblanc2023/9A8AD92C50CAE39AA2C5604FD0AB6D8CE37ADB1602
-7FD3115A6451498DD020A3.pygtex bacblanc2023.pyg)...executed.
-
 
 (./_minted-bacblanc2023/9A8AD92C50CAE39AA2C5604FD0AB6D8CE37ADB16027FD3115A64514
 98DD020A3.pygtex)
 \openout4 = `bacblanc2023.pyg'.
 
-runsystem(python3 -c "import sys; import os; import textwrap; from io import op
-en; fname = os.path.expanduser(os.path.expandvars(\"bacblanc2023.pyg\")); f = o
-pen(fname, \"r\", encoding=\"UTF8\") if os.path.isfile(fname) else None; t = f.
-readlines() if f is not None else None; t_opt = t if t is not None else []; f.c
-lose() if f is not None else None; tmpfname = os.path.expanduser(os.path.expand
-vars(\"bacblanc2023.pyg\")); f = open(tmpfname, \"w\", encoding=\"UTF8\") if t 
-is not None else None; fvstartnum = 0; fvstopnum = -1; s = max(0, fvstartnum-1)
-; e = min(s, fvstopnum if fvstopnum > 0 else len(t_opt)); [f.write(textwrap.ded
-ent(\"\".join(x))) for x in (t_opt[0:s], t_opt[s:e], t_opt[e:]) if x and t is n
-ot None]; f.close() if t is not None else os.remove(tmpfname);")...executed.
-
-runsystem(pygmentize -l python -f latex -P commandprefix=PYG -F tokenmerge -P s
-tripnl=False -o _minted-bacblanc2023/8F94BC56E52930B4DF52A565BCDF98FAE37ADB1602
-7FD3115A6451498DD020A3.pygtex bacblanc2023.pyg)...executed.
-
 
 (./_minted-bacblanc2023/8F94BC56E52930B4DF52A565BCDF98FAE37ADB16027FD3115A64514
-98DD020A3.pygtex
-
-LaTeX Warning: Reference `LastPage' on page 4 undefined on input line 8.
-
-[4])
+98DD020A3.pygtex [4])
 \openout5 = `bacblanc2023.pyg'.
-
-runsystem(python3 -c "import sys; import os; import textwrap; from io import op
-en; fname = os.path.expanduser(os.path.expandvars(\"bacblanc2023.pyg\")); f = o
-pen(fname, \"r\", encoding=\"UTF8\") if os.path.isfile(fname) else None; t = f.
-readlines() if f is not None else None; t_opt = t if t is not None else []; f.c
-lose() if f is not None else None; tmpfname = os.path.expanduser(os.path.expand
-vars(\"bacblanc2023.pyg\")); f = open(tmpfname, \"w\", encoding=\"UTF8\") if t 
-is not None else None; fvstartnum = 0; fvstopnum = -1; s = max(0, fvstartnum-1)
-; e = min(s, fvstopnum if fvstopnum > 0 else len(t_opt)); [f.write(textwrap.ded
-ent(\"\".join(x))) for x in (t_opt[0:s], t_opt[s:e], t_opt[e:]) if x and t is n
-ot None]; f.close() if t is not None else os.remove(tmpfname);")...executed.
-
-runsystem(pygmentize -l python -f latex -P commandprefix=PYG -F tokenmerge -P s
-tripnl=False -o _minted-bacblanc2023/4FA27ED85E4507C20C708E2D5AB3A63AE37ADB1602
-7FD3115A6451498DD020A3.pygtex bacblanc2023.pyg)...executed.
 
 
 (./_minted-bacblanc2023/4FA27ED85E4507C20C708E2D5AB3A63AE37ADB16027FD3115A64514
 98DD020A3.pygtex)
 \openout5 = `bacblanc2023.pyg'.
 
-runsystem(python3 -c "import sys; import os; import textwrap; from io import op
-en; fname = os.path.expanduser(os.path.expandvars(\"bacblanc2023.pyg\")); f = o
-pen(fname, \"r\", encoding=\"UTF8\") if os.path.isfile(fname) else None; t = f.
-readlines() if f is not None else None; t_opt = t if t is not None else []; f.c
-lose() if f is not None else None; tmpfname = os.path.expanduser(os.path.expand
-vars(\"bacblanc2023.pyg\")); f = open(tmpfname, \"w\", encoding=\"UTF8\") if t 
-is not None else None; fvstartnum = 0; fvstopnum = -1; s = max(0, fvstartnum-1)
-; e = min(s, fvstopnum if fvstopnum > 0 else len(t_opt)); [f.write(textwrap.ded
-ent(\"\".join(x))) for x in (t_opt[0:s], t_opt[s:e], t_opt[e:]) if x and t is n
-ot None]; f.close() if t is not None else os.remove(tmpfname);")...executed.
-
-runsystem(pygmentize -l python -f latex -P commandprefix=PYG -F tokenmerge -P s
-tripnl=False -o _minted-bacblanc2023/AF0CA60E916A93D34295D8997ABCE287E37ADB1602
-7FD3115A6451498DD020A3.pygtex bacblanc2023.pyg)...executed.
-
 
 (./_minted-bacblanc2023/AF0CA60E916A93D34295D8997ABCE287E37ADB16027FD3115A64514
 98DD020A3.pygtex)
 \openout5 = `bacblanc2023.pyg'.
-
-runsystem(python3 -c "import sys; import os; import textwrap; from io import op
-en; fname = os.path.expanduser(os.path.expandvars(\"bacblanc2023.pyg\")); f = o
-pen(fname, \"r\", encoding=\"UTF8\") if os.path.isfile(fname) else None; t = f.
-readlines() if f is not None else None; t_opt = t if t is not None else []; f.c
-lose() if f is not None else None; tmpfname = os.path.expanduser(os.path.expand
-vars(\"bacblanc2023.pyg\")); f = open(tmpfname, \"w\", encoding=\"UTF8\") if t 
-is not None else None; fvstartnum = 0; fvstopnum = -1; s = max(0, fvstartnum-1)
-; e = min(s, fvstopnum if fvstopnum > 0 else len(t_opt)); [f.write(textwrap.ded
-ent(\"\".join(x))) for x in (t_opt[0:s], t_opt[s:e], t_opt[e:]) if x and t is n
-ot None]; f.close() if t is not None else os.remove(tmpfname);")...executed.
-
-runsystem(pygmentize -l python -f latex -P commandprefix=PYG -F tokenmerge -P s
-tripnl=False -o _minted-bacblanc2023/AC567DEA7C4E70E46A67A51634179FAAE37ADB1602
-7FD3115A6451498DD020A3.pygtex bacblanc2023.pyg)...executed.
 
 
 (./_minted-bacblanc2023/AC567DEA7C4E70E46A67A51634179FAAE37ADB16027FD3115A64514
@@ -2032,40 +1523,10 @@ tripnl=False -o _minted-bacblanc2023/AC567DEA7C4E70E46A67A51634179FAAE37ADB1602
 98DD020A3.pygtex)
 \openout5 = `bacblanc2023.pyg'.
 
-runsystem(python3 -c "import sys; import os; import textwrap; from io import op
-en; fname = os.path.expanduser(os.path.expandvars(\"bacblanc2023.pyg\")); f = o
-pen(fname, \"r\", encoding=\"UTF8\") if os.path.isfile(fname) else None; t = f.
-readlines() if f is not None else None; t_opt = t if t is not None else []; f.c
-lose() if f is not None else None; tmpfname = os.path.expanduser(os.path.expand
-vars(\"bacblanc2023.pyg\")); f = open(tmpfname, \"w\", encoding=\"UTF8\") if t 
-is not None else None; fvstartnum = 0; fvstopnum = -1; s = max(0, fvstartnum-1)
-; e = min(s, fvstopnum if fvstopnum > 0 else len(t_opt)); [f.write(textwrap.ded
-ent(\"\".join(x))) for x in (t_opt[0:s], t_opt[s:e], t_opt[e:]) if x and t is n
-ot None]; f.close() if t is not None else os.remove(tmpfname);")...executed.
-
-runsystem(pygmentize -l python -f latex -P commandprefix=PYG -F tokenmerge -P s
-tripnl=False -o _minted-bacblanc2023/372E25F23B5A8AE33C7BA203412ACE30E37ADB1602
-7FD3115A6451498DD020A3.pygtex bacblanc2023.pyg)...executed.
-
 
 (./_minted-bacblanc2023/372E25F23B5A8AE33C7BA203412ACE30E37ADB16027FD3115A64514
 98DD020A3.pygtex)
 \openout4 = `bacblanc2023.pyg'.
-
-runsystem(python3 -c "import sys; import os; import textwrap; from io import op
-en; fname = os.path.expanduser(os.path.expandvars(\"bacblanc2023.pyg\")); f = o
-pen(fname, \"r\", encoding=\"UTF8\") if os.path.isfile(fname) else None; t = f.
-readlines() if f is not None else None; t_opt = t if t is not None else []; f.c
-lose() if f is not None else None; tmpfname = os.path.expanduser(os.path.expand
-vars(\"bacblanc2023.pyg\")); f = open(tmpfname, \"w\", encoding=\"UTF8\") if t 
-is not None else None; fvstartnum = 0; fvstopnum = -1; s = max(0, fvstartnum-1)
-; e = min(s, fvstopnum if fvstopnum > 0 else len(t_opt)); [f.write(textwrap.ded
-ent(\"\".join(x))) for x in (t_opt[0:s], t_opt[s:e], t_opt[e:]) if x and t is n
-ot None]; f.close() if t is not None else os.remove(tmpfname);")...executed.
-
-runsystem(pygmentize -l python -f latex -P commandprefix=PYG -F tokenmerge -P s
-tripnl=False -o _minted-bacblanc2023/EB8973645DD9E6D1F201F65DF4293F6BE37ADB1602
-7FD3115A6451498DD020A3.pygtex bacblanc2023.pyg)...executed.
 
 
 (./_minted-bacblanc2023/EB8973645DD9E6D1F201F65DF4293F6BE37ADB16027FD3115A64514
@@ -2075,45 +1536,12 @@ ame{question.2.1}) has been already used, duplicate ignored
                    \relax 
 l.587   \begin{Question}
                         
-
-LaTeX Warning: Reference `arbreQ2' on page 5 undefined on input line 588.
-
 \openout5 = `bacblanc2023.pyg'.
-
-runsystem(python3 -c "import sys; import os; import textwrap; from io import op
-en; fname = os.path.expanduser(os.path.expandvars(\"bacblanc2023.pyg\")); f = o
-pen(fname, \"r\", encoding=\"UTF8\") if os.path.isfile(fname) else None; t = f.
-readlines() if f is not None else None; t_opt = t if t is not None else []; f.c
-lose() if f is not None else None; tmpfname = os.path.expanduser(os.path.expand
-vars(\"bacblanc2023.pyg\")); f = open(tmpfname, \"w\", encoding=\"UTF8\") if t 
-is not None else None; fvstartnum = 0; fvstopnum = -1; s = max(0, fvstartnum-1)
-; e = min(s, fvstopnum if fvstopnum > 0 else len(t_opt)); [f.write(textwrap.ded
-ent(\"\".join(x))) for x in (t_opt[0:s], t_opt[s:e], t_opt[e:]) if x and t is n
-ot None]; f.close() if t is not None else os.remove(tmpfname);")...executed.
-
-runsystem(pygmentize -l python -f latex -P commandprefix=PYG -F tokenmerge -P s
-tripnl=False -o _minted-bacblanc2023/356C1D1945EEEBFCD4129090AD27D170E37ADB1602
-7FD3115A6451498DD020A3.pygtex bacblanc2023.pyg)...executed.
 
 
 (./_minted-bacblanc2023/356C1D1945EEEBFCD4129090AD27D170E37ADB16027FD3115A64514
 98DD020A3.pygtex)
 \openout5 = `bacblanc2023.pyg'.
-
-runsystem(python3 -c "import sys; import os; import textwrap; from io import op
-en; fname = os.path.expanduser(os.path.expandvars(\"bacblanc2023.pyg\")); f = o
-pen(fname, \"r\", encoding=\"UTF8\") if os.path.isfile(fname) else None; t = f.
-readlines() if f is not None else None; t_opt = t if t is not None else []; f.c
-lose() if f is not None else None; tmpfname = os.path.expanduser(os.path.expand
-vars(\"bacblanc2023.pyg\")); f = open(tmpfname, \"w\", encoding=\"UTF8\") if t 
-is not None else None; fvstartnum = 0; fvstopnum = -1; s = max(0, fvstartnum-1)
-; e = min(s, fvstopnum if fvstopnum > 0 else len(t_opt)); [f.write(textwrap.ded
-ent(\"\".join(x))) for x in (t_opt[0:s], t_opt[s:e], t_opt[e:]) if x and t is n
-ot None]; f.close() if t is not None else os.remove(tmpfname);")...executed.
-
-runsystem(pygmentize -l python -f latex -P commandprefix=PYG -F tokenmerge -P s
-tripnl=False -o _minted-bacblanc2023/423BFA11945D912C96157C7579E93E7FE37ADB1602
-7FD3115A6451498DD020A3.pygtex bacblanc2023.pyg)...executed.
 
 
 (./_minted-bacblanc2023/423BFA11945D912C96157C7579E93E7FE37ADB16027FD3115A64514
@@ -2134,21 +1562,6 @@ tripnl=False -o _minted-bacblanc2023/423BFA11945D912C96157C7579E93E7FE37ADB1602
 (./_minted-bacblanc2023/423BFA11945D912C96157C7579E93E7FE37ADB16027FD3115A64514
 98DD020A3.pygtex)
 \openout5 = `bacblanc2023.pyg'.
-
-runsystem(python3 -c "import sys; import os; import textwrap; from io import op
-en; fname = os.path.expanduser(os.path.expandvars(\"bacblanc2023.pyg\")); f = o
-pen(fname, \"r\", encoding=\"UTF8\") if os.path.isfile(fname) else None; t = f.
-readlines() if f is not None else None; t_opt = t if t is not None else []; f.c
-lose() if f is not None else None; tmpfname = os.path.expanduser(os.path.expand
-vars(\"bacblanc2023.pyg\")); f = open(tmpfname, \"w\", encoding=\"UTF8\") if t 
-is not None else None; fvstartnum = 0; fvstopnum = -1; s = max(0, fvstartnum-1)
-; e = min(s, fvstopnum if fvstopnum > 0 else len(t_opt)); [f.write(textwrap.ded
-ent(\"\".join(x))) for x in (t_opt[0:s], t_opt[s:e], t_opt[e:]) if x and t is n
-ot None]; f.close() if t is not None else os.remove(tmpfname);")...executed.
-
-runsystem(pygmentize -l python -f latex -P commandprefix=PYG -F tokenmerge -P s
-tripnl=False -o _minted-bacblanc2023/AFD9ADED87D513250C08F1CFFC9807F9E37ADB1602
-7FD3115A6451498DD020A3.pygtex bacblanc2023.pyg)...executed.
 
 
 (./_minted-bacblanc2023/AFD9ADED87D513250C08F1CFFC9807F9E37ADB16027FD3115A64514
@@ -2165,21 +1578,6 @@ tripnl=False -o _minted-bacblanc2023/AFD9ADED87D513250C08F1CFFC9807F9E37ADB1602
 98DD020A3.pygtex)
 \openout5 = `bacblanc2023.pyg'.
 
-runsystem(python3 -c "import sys; import os; import textwrap; from io import op
-en; fname = os.path.expanduser(os.path.expandvars(\"bacblanc2023.pyg\")); f = o
-pen(fname, \"r\", encoding=\"UTF8\") if os.path.isfile(fname) else None; t = f.
-readlines() if f is not None else None; t_opt = t if t is not None else []; f.c
-lose() if f is not None else None; tmpfname = os.path.expanduser(os.path.expand
-vars(\"bacblanc2023.pyg\")); f = open(tmpfname, \"w\", encoding=\"UTF8\") if t 
-is not None else None; fvstartnum = 0; fvstopnum = -1; s = max(0, fvstartnum-1)
-; e = min(s, fvstopnum if fvstopnum > 0 else len(t_opt)); [f.write(textwrap.ded
-ent(\"\".join(x))) for x in (t_opt[0:s], t_opt[s:e], t_opt[e:]) if x and t is n
-ot None]; f.close() if t is not None else os.remove(tmpfname);")...executed.
-
-runsystem(pygmentize -l python -f latex -P commandprefix=PYG -F tokenmerge -P s
-tripnl=False -o _minted-bacblanc2023/8B71595F8141C11DFA34F90F04F07D34E37ADB1602
-7FD3115A6451498DD020A3.pygtex bacblanc2023.pyg)...executed.
-
 
 (./_minted-bacblanc2023/8B71595F8141C11DFA34F90F04F07D34E37ADB16027FD3115A64514
 98DD020A3.pygtex)
@@ -2190,100 +1588,25 @@ tripnl=False -o _minted-bacblanc2023/8B71595F8141C11DFA34F90F04F07D34E37ADB1602
 98DD020A3.pygtex)
 \openout5 = `bacblanc2023.pyg'.
 
-runsystem(python3 -c "import sys; import os; import textwrap; from io import op
-en; fname = os.path.expanduser(os.path.expandvars(\"bacblanc2023.pyg\")); f = o
-pen(fname, \"r\", encoding=\"UTF8\") if os.path.isfile(fname) else None; t = f.
-readlines() if f is not None else None; t_opt = t if t is not None else []; f.c
-lose() if f is not None else None; tmpfname = os.path.expanduser(os.path.expand
-vars(\"bacblanc2023.pyg\")); f = open(tmpfname, \"w\", encoding=\"UTF8\") if t 
-is not None else None; fvstartnum = 0; fvstopnum = -1; s = max(0, fvstartnum-1)
-; e = min(s, fvstopnum if fvstopnum > 0 else len(t_opt)); [f.write(textwrap.ded
-ent(\"\".join(x))) for x in (t_opt[0:s], t_opt[s:e], t_opt[e:]) if x and t is n
-ot None]; f.close() if t is not None else os.remove(tmpfname);")...executed.
-
-runsystem(pygmentize -l python -f latex -P commandprefix=PYG -F tokenmerge -P s
-tripnl=False -o _minted-bacblanc2023/6A5968DD8B3930354441BA4583810B52E37ADB1602
-7FD3115A6451498DD020A3.pygtex bacblanc2023.pyg)...executed.
-
 
 (./_minted-bacblanc2023/6A5968DD8B3930354441BA4583810B52E37ADB16027FD3115A64514
 98DD020A3.pygtex)
 \openout5 = `bacblanc2023.pyg'.
-
-runsystem(python3 -c "import sys; import os; import textwrap; from io import op
-en; fname = os.path.expanduser(os.path.expandvars(\"bacblanc2023.pyg\")); f = o
-pen(fname, \"r\", encoding=\"UTF8\") if os.path.isfile(fname) else None; t = f.
-readlines() if f is not None else None; t_opt = t if t is not None else []; f.c
-lose() if f is not None else None; tmpfname = os.path.expanduser(os.path.expand
-vars(\"bacblanc2023.pyg\")); f = open(tmpfname, \"w\", encoding=\"UTF8\") if t 
-is not None else None; fvstartnum = 0; fvstopnum = -1; s = max(0, fvstartnum-1)
-; e = min(s, fvstopnum if fvstopnum > 0 else len(t_opt)); [f.write(textwrap.ded
-ent(\"\".join(x))) for x in (t_opt[0:s], t_opt[s:e], t_opt[e:]) if x and t is n
-ot None]; f.close() if t is not None else os.remove(tmpfname);")...executed.
-
-runsystem(pygmentize -l python -f latex -P commandprefix=PYG -F tokenmerge -P s
-tripnl=False -o _minted-bacblanc2023/EE47F093A5B3AF2BDAFF7884A927062EE37ADB1602
-7FD3115A6451498DD020A3.pygtex bacblanc2023.pyg)...executed.
 
 
 (./_minted-bacblanc2023/EE47F093A5B3AF2BDAFF7884A927062EE37ADB16027FD3115A64514
 98DD020A3.pygtex)
 \openout5 = `bacblanc2023.pyg'.
 
-runsystem(python3 -c "import sys; import os; import textwrap; from io import op
-en; fname = os.path.expanduser(os.path.expandvars(\"bacblanc2023.pyg\")); f = o
-pen(fname, \"r\", encoding=\"UTF8\") if os.path.isfile(fname) else None; t = f.
-readlines() if f is not None else None; t_opt = t if t is not None else []; f.c
-lose() if f is not None else None; tmpfname = os.path.expanduser(os.path.expand
-vars(\"bacblanc2023.pyg\")); f = open(tmpfname, \"w\", encoding=\"UTF8\") if t 
-is not None else None; fvstartnum = 0; fvstopnum = -1; s = max(0, fvstartnum-1)
-; e = min(s, fvstopnum if fvstopnum > 0 else len(t_opt)); [f.write(textwrap.ded
-ent(\"\".join(x))) for x in (t_opt[0:s], t_opt[s:e], t_opt[e:]) if x and t is n
-ot None]; f.close() if t is not None else os.remove(tmpfname);")...executed.
-
-runsystem(pygmentize -l python -f latex -P commandprefix=PYG -F tokenmerge -P s
-tripnl=False -o _minted-bacblanc2023/8688D5E9779440604ECFF5E534B50A6EE37ADB1602
-7FD3115A6451498DD020A3.pygtex bacblanc2023.pyg)...executed.
-
 
 (./_minted-bacblanc2023/8688D5E9779440604ECFF5E534B50A6EE37ADB16027FD3115A64514
 98DD020A3.pygtex)
 \openout5 = `bacblanc2023.pyg'.
 
-runsystem(python3 -c "import sys; import os; import textwrap; from io import op
-en; fname = os.path.expanduser(os.path.expandvars(\"bacblanc2023.pyg\")); f = o
-pen(fname, \"r\", encoding=\"UTF8\") if os.path.isfile(fname) else None; t = f.
-readlines() if f is not None else None; t_opt = t if t is not None else []; f.c
-lose() if f is not None else None; tmpfname = os.path.expanduser(os.path.expand
-vars(\"bacblanc2023.pyg\")); f = open(tmpfname, \"w\", encoding=\"UTF8\") if t 
-is not None else None; fvstartnum = 0; fvstopnum = -1; s = max(0, fvstartnum-1)
-; e = min(s, fvstopnum if fvstopnum > 0 else len(t_opt)); [f.write(textwrap.ded
-ent(\"\".join(x))) for x in (t_opt[0:s], t_opt[s:e], t_opt[e:]) if x and t is n
-ot None]; f.close() if t is not None else os.remove(tmpfname);")...executed.
-
-runsystem(pygmentize -l python -f latex -P commandprefix=PYG -F tokenmerge -P s
-tripnl=False -o _minted-bacblanc2023/011D54E1FFA131C203356908F73F94C4E37ADB1602
-7FD3115A6451498DD020A3.pygtex bacblanc2023.pyg)...executed.
-
 
 (./_minted-bacblanc2023/011D54E1FFA131C203356908F73F94C4E37ADB16027FD3115A64514
 98DD020A3.pygtex)
 \openout5 = `bacblanc2023.pyg'.
-
-runsystem(python3 -c "import sys; import os; import textwrap; from io import op
-en; fname = os.path.expanduser(os.path.expandvars(\"bacblanc2023.pyg\")); f = o
-pen(fname, \"r\", encoding=\"UTF8\") if os.path.isfile(fname) else None; t = f.
-readlines() if f is not None else None; t_opt = t if t is not None else []; f.c
-lose() if f is not None else None; tmpfname = os.path.expanduser(os.path.expand
-vars(\"bacblanc2023.pyg\")); f = open(tmpfname, \"w\", encoding=\"UTF8\") if t 
-is not None else None; fvstartnum = 0; fvstopnum = -1; s = max(0, fvstartnum-1)
-; e = min(s, fvstopnum if fvstopnum > 0 else len(t_opt)); [f.write(textwrap.ded
-ent(\"\".join(x))) for x in (t_opt[0:s], t_opt[s:e], t_opt[e:]) if x and t is n
-ot None]; f.close() if t is not None else os.remove(tmpfname);")...executed.
-
-runsystem(pygmentize -l python -f latex -P commandprefix=PYG -F tokenmerge -P s
-tripnl=False -o _minted-bacblanc2023/B5394FACC4685AF88FDD32A047BA5010E37ADB1602
-7FD3115A6451498DD020A3.pygtex bacblanc2023.pyg)...executed.
 
 
 (./_minted-bacblanc2023/B5394FACC4685AF88FDD32A047BA5010E37ADB16027FD3115A64514
@@ -2305,40 +1628,10 @@ tripnl=False -o _minted-bacblanc2023/B5394FACC4685AF88FDD32A047BA5010E37ADB1602
 98DD020A3.pygtex)
 \openout5 = `bacblanc2023.pyg'.
 
-runsystem(python3 -c "import sys; import os; import textwrap; from io import op
-en; fname = os.path.expanduser(os.path.expandvars(\"bacblanc2023.pyg\")); f = o
-pen(fname, \"r\", encoding=\"UTF8\") if os.path.isfile(fname) else None; t = f.
-readlines() if f is not None else None; t_opt = t if t is not None else []; f.c
-lose() if f is not None else None; tmpfname = os.path.expanduser(os.path.expand
-vars(\"bacblanc2023.pyg\")); f = open(tmpfname, \"w\", encoding=\"UTF8\") if t 
-is not None else None; fvstartnum = 0; fvstopnum = -1; s = max(0, fvstartnum-1)
-; e = min(s, fvstopnum if fvstopnum > 0 else len(t_opt)); [f.write(textwrap.ded
-ent(\"\".join(x))) for x in (t_opt[0:s], t_opt[s:e], t_opt[e:]) if x and t is n
-ot None]; f.close() if t is not None else os.remove(tmpfname);")...executed.
-
-runsystem(pygmentize -l python -f latex -P commandprefix=PYG -F tokenmerge -P s
-tripnl=False -o _minted-bacblanc2023/7994EF1C7836D52F7ADF543979015D47E37ADB1602
-7FD3115A6451498DD020A3.pygtex bacblanc2023.pyg)...executed.
-
 
 (./_minted-bacblanc2023/7994EF1C7836D52F7ADF543979015D47E37ADB16027FD3115A64514
 98DD020A3.pygtex)
 \openout5 = `bacblanc2023.pyg'.
-
-runsystem(python3 -c "import sys; import os; import textwrap; from io import op
-en; fname = os.path.expanduser(os.path.expandvars(\"bacblanc2023.pyg\")); f = o
-pen(fname, \"r\", encoding=\"UTF8\") if os.path.isfile(fname) else None; t = f.
-readlines() if f is not None else None; t_opt = t if t is not None else []; f.c
-lose() if f is not None else None; tmpfname = os.path.expanduser(os.path.expand
-vars(\"bacblanc2023.pyg\")); f = open(tmpfname, \"w\", encoding=\"UTF8\") if t 
-is not None else None; fvstartnum = 0; fvstopnum = -1; s = max(0, fvstartnum-1)
-; e = min(s, fvstopnum if fvstopnum > 0 else len(t_opt)); [f.write(textwrap.ded
-ent(\"\".join(x))) for x in (t_opt[0:s], t_opt[s:e], t_opt[e:]) if x and t is n
-ot None]; f.close() if t is not None else os.remove(tmpfname);")...executed.
-
-runsystem(pygmentize -l python -f latex -P commandprefix=PYG -F tokenmerge -P s
-tripnl=False -o _minted-bacblanc2023/BE78C8414153235259388DC29610409AE37ADB1602
-7FD3115A6451498DD020A3.pygtex bacblanc2023.pyg)...executed.
 
 
 (./_minted-bacblanc2023/BE78C8414153235259388DC29610409AE37ADB16027FD3115A64514
@@ -2351,89 +1644,25 @@ dre)[]//[][]2[]]
 
 \openout5 = `bacblanc2023.pyg'.
 
-runsystem(python3 -c "import sys; import os; import textwrap; from io import op
-en; fname = os.path.expanduser(os.path.expandvars(\"bacblanc2023.pyg\")); f = o
-pen(fname, \"r\", encoding=\"UTF8\") if os.path.isfile(fname) else None; t = f.
-readlines() if f is not None else None; t_opt = t if t is not None else []; f.c
-lose() if f is not None else None; tmpfname = os.path.expanduser(os.path.expand
-vars(\"bacblanc2023.pyg\")); f = open(tmpfname, \"w\", encoding=\"UTF8\") if t 
-is not None else None; fvstartnum = 0; fvstopnum = -1; s = max(0, fvstartnum-1)
-; e = min(s, fvstopnum if fvstopnum > 0 else len(t_opt)); [f.write(textwrap.ded
-ent(\"\".join(x))) for x in (t_opt[0:s], t_opt[s:e], t_opt[e:]) if x and t is n
-ot None]; f.close() if t is not None else os.remove(tmpfname);")...executed.
-
-runsystem(pygmentize -l python -f latex -P commandprefix=PYG -F tokenmerge -P s
-tripnl=False -o _minted-bacblanc2023/817BDECB768038DD5145B5039757B777E37ADB1602
-7FD3115A6451498DD020A3.pygtex bacblanc2023.pyg)...executed.
-
 
 (./_minted-bacblanc2023/817BDECB768038DD5145B5039757B777E37ADB16027FD3115A64514
 98DD020A3.pygtex)
 \openout5 = `bacblanc2023.pyg'.
 
-runsystem(python3 -c "import sys; import os; import textwrap; from io import op
-en; fname = os.path.expanduser(os.path.expandvars(\"bacblanc2023.pyg\")); f = o
-pen(fname, \"r\", encoding=\"UTF8\") if os.path.isfile(fname) else None; t = f.
-readlines() if f is not None else None; t_opt = t if t is not None else []; f.c
-lose() if f is not None else None; tmpfname = os.path.expanduser(os.path.expand
-vars(\"bacblanc2023.pyg\")); f = open(tmpfname, \"w\", encoding=\"UTF8\") if t 
-is not None else None; fvstartnum = 0; fvstopnum = -1; s = max(0, fvstartnum-1)
-; e = min(s, fvstopnum if fvstopnum > 0 else len(t_opt)); [f.write(textwrap.ded
-ent(\"\".join(x))) for x in (t_opt[0:s], t_opt[s:e], t_opt[e:]) if x and t is n
-ot None]; f.close() if t is not None else os.remove(tmpfname);")...executed.
-
-runsystem(pygmentize -l python -f latex -P commandprefix=PYG -F tokenmerge -P s
-tripnl=False -o _minted-bacblanc2023/9BD245B7305739B2162D04C151AAEDACE37ADB1602
-7FD3115A6451498DD020A3.pygtex bacblanc2023.pyg)...executed.
-
 
 (./_minted-bacblanc2023/9BD245B7305739B2162D04C151AAEDACE37ADB16027FD3115A64514
-98DD020A3.pygtex)
-
-LaTeX Warning: Reference `LastPage' on page 5 undefined on input line 653.
-
-[5]pdfTeX warning (ext4): destination with the same identifier (name{question.2
-.2}) has been already used, duplicate ignored
+98DD020A3.pygtex) [5]pdfTeX warning (ext4): destination with the same identifie
+r (name{question.2.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.656   \begin{Question}
                         
 \openout5 = `bacblanc2023.pyg'.
 
-runsystem(python3 -c "import sys; import os; import textwrap; from io import op
-en; fname = os.path.expanduser(os.path.expandvars(\"bacblanc2023.pyg\")); f = o
-pen(fname, \"r\", encoding=\"UTF8\") if os.path.isfile(fname) else None; t = f.
-readlines() if f is not None else None; t_opt = t if t is not None else []; f.c
-lose() if f is not None else None; tmpfname = os.path.expanduser(os.path.expand
-vars(\"bacblanc2023.pyg\")); f = open(tmpfname, \"w\", encoding=\"UTF8\") if t 
-is not None else None; fvstartnum = 0; fvstopnum = -1; s = max(0, fvstartnum-1)
-; e = min(s, fvstopnum if fvstopnum > 0 else len(t_opt)); [f.write(textwrap.ded
-ent(\"\".join(x))) for x in (t_opt[0:s], t_opt[s:e], t_opt[e:]) if x and t is n
-ot None]; f.close() if t is not None else os.remove(tmpfname);")...executed.
-
-runsystem(pygmentize -l python -f latex -P commandprefix=PYG -F tokenmerge -P s
-tripnl=False -o _minted-bacblanc2023/86AE84983029A9B7F4AACD88E9EDDA90E37ADB1602
-7FD3115A6451498DD020A3.pygtex bacblanc2023.pyg)...executed.
-
 
 (./_minted-bacblanc2023/86AE84983029A9B7F4AACD88E9EDDA90E37ADB16027FD3115A64514
 98DD020A3.pygtex)
 \openout4 = `bacblanc2023.pyg'.
-
-runsystem(python3 -c "import sys; import os; import textwrap; from io import op
-en; fname = os.path.expanduser(os.path.expandvars(\"bacblanc2023.pyg\")); f = o
-pen(fname, \"r\", encoding=\"UTF8\") if os.path.isfile(fname) else None; t = f.
-readlines() if f is not None else None; t_opt = t if t is not None else []; f.c
-lose() if f is not None else None; tmpfname = os.path.expanduser(os.path.expand
-vars(\"bacblanc2023.pyg\")); f = open(tmpfname, \"w\", encoding=\"UTF8\") if t 
-is not None else None; fvstartnum = 0; fvstopnum = -1; s = max(0, fvstartnum-1)
-; e = min(s, fvstopnum if fvstopnum > 0 else len(t_opt)); [f.write(textwrap.ded
-ent(\"\".join(x))) for x in (t_opt[0:s], t_opt[s:e], t_opt[e:]) if x and t is n
-ot None]; f.close() if t is not None else os.remove(tmpfname);")...executed.
-
-runsystem(pygmentize -l text -f latex -P commandprefix=PYG -F tokenmerge -P str
-ipnl=False -o _minted-bacblanc2023/C054BC0E1DD60A455FDC361D45D36593686449F39ACB
-DA17E66AE1FEB834C73A.pygtex bacblanc2023.pyg)...executed.
 
 
 (./_minted-bacblanc2023/C054BC0E1DD60A455FDC361D45D36593686449F39ACBDA17E66AE1F
@@ -2455,75 +1684,49 @@ l.683   \begin{Question}
                         
 \openout5 = `bacblanc2023.pyg'.
 
-runsystem(python3 -c "import sys; import os; import textwrap; from io import op
-en; fname = os.path.expanduser(os.path.expandvars(\"bacblanc2023.pyg\")); f = o
-pen(fname, \"r\", encoding=\"UTF8\") if os.path.isfile(fname) else None; t = f.
-readlines() if f is not None else None; t_opt = t if t is not None else []; f.c
-lose() if f is not None else None; tmpfname = os.path.expanduser(os.path.expand
-vars(\"bacblanc2023.pyg\")); f = open(tmpfname, \"w\", encoding=\"UTF8\") if t 
-is not None else None; fvstartnum = 0; fvstopnum = -1; s = max(0, fvstartnum-1)
-; e = min(s, fvstopnum if fvstopnum > 0 else len(t_opt)); [f.write(textwrap.ded
-ent(\"\".join(x))) for x in (t_opt[0:s], t_opt[s:e], t_opt[e:]) if x and t is n
-ot None]; f.close() if t is not None else os.remove(tmpfname);")...executed.
-
-runsystem(pygmentize -l python -f latex -P commandprefix=PYG -F tokenmerge -P s
-tripnl=False -o _minted-bacblanc2023/6E450673DEBFD6A59DDF817FE08F8C06E37ADB1602
-7FD3115A6451498DD020A3.pygtex bacblanc2023.pyg)...executed.
-
 
 (./_minted-bacblanc2023/6E450673DEBFD6A59DDF817FE08F8C06E37ADB16027FD3115A64514
 98DD020A3.pygtex) 
 AED: lastpage setting LastPage
+[6]
+runsystem(rm _minted-bacblanc2023/C39C4B48ADDAEC53F3F50EFB5FCC3A07251A7DAFAACBC
+2427FE44CD5936D8ECC.pygtex)...executed.
 
-LaTeX Warning: Reference `LastPage' on page 6 undefined on input line 689.
-
-[6] (./bacblanc2023.aux)
+ (./bacblanc2023.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
-Package rerunfilecheck Warning: File `bacblanc2023.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `bacblanc2023.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  D41D8CD98F00B204E9800998ECF8427E;0.
+Package rerunfilecheck Info: File `bacblanc2023.out' has not changed.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 runsystem(rm bacblanc2023.pyg)...executed.
 
  ) 
 Here is how much of TeX's memory you used:
- 39980 strings out of 478287
- 937106 string characters out of 5849289
- 1316538 words of memory out of 5000000
- 57258 multiletter control sequences out of 15000+600000
- 548245 words of font info for 87 fonts, out of 8000000 for 9000
+ 39995 strings out of 478287
+ 938191 string characters out of 5849289
+ 1321804 words of memory out of 5000000
+ 57259 multiletter control sequences out of 15000+600000
+ 545250 words of font info for 86 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,14n,103p,733b,1588s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 99i,14n,103p,733b,1596s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc}{/usr/share/texmf/fonts/enc/d
 vips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/shar
 e/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/l
 m-rm.enc}</usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf/f
-onts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx8.p
-fb></usr/share/texmf/fonts/type1/public/lm/lmcsc10.pfb></usr/share/texmf/fonts/
-type1/public/lm/lmmi10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></
-usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/p
-ublic/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr6.pfb></usr/share
-/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/l
-mr9.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fo
-nts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmri9.pf
-b></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/ty
-pe1/public/lm/lmtk10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt10.pfb>
-Output written on bacblanc2023.pdf (6 pages, 368317 bytes).
+onts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmcsc10
+.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi10.pfb></usr/share/texmf/fonts
+/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></
+usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/p
+ublic/lm/lmr6.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/
+texmf/fonts/type1/public/lm/lmr9.pfb></usr/share/texmf/fonts/type1/public/lm/lm
+ri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/f
+onts/type1/public/lm/lmri9.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.p
+fb></usr/share/texmf/fonts/type1/public/lm/lmtk10.pfb></usr/share/texmf/fonts/t
+ype1/public/lm/lmtt10.pfb>
+Output written on bacblanc2023.pdf (6 pages, 347793 bytes).
 PDF statistics:
- 188 PDF objects out of 1000 (max. 8388607)
- 140 compressed objects within 2 object streams
+ 200 PDF objects out of 1000 (max. 8388607)
+ 153 compressed objects within 2 object streams
  46 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 

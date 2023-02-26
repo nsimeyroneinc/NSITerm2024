@@ -2,10 +2,10 @@
 
 \title{
   \rule{\linewidth}{0.8pt}
-  \Large{\scshape{\textbf{Numérique et Science Informatique}}}
+  \Large{\scshape{\textbf{Numérique et Sciences Informatiques}}}
 
   \vspace{0.5cm}
-  \large{\textit{Bac Blanc}}
+  \large{\textit{Épreuve type BAC}}
 
   \rule[10pt]{\linewidth}{0.8pt}
     }
@@ -211,20 +211,20 @@ Ce sujet comporte \pageref{LastPage} pages numérotées de 1/\pageref{LastPage} 
 % \newpage
 
 
-\begin{Exercice}[\textit{Base de données}]
+\begin{Exercice}[\textit{Base de données}\hfill 8 points]
 
   Dans cet exercice, on pourra utiliser les mots clés suivants du langage \mintinlinetext{SQL} : \mintinline{SQL}{SELECT, FROM, WHERE, JOIN, ON, INSERT INTO, UPDATE,
- SET, VALUES, COUNT, OR, AND}.
+ SET, VALUES, COUNT, OR, AND, LIKE}.
 
   Les articles d'un journal sont recensés dans une base de données \mintinline{SQL}{Journal}. Cette base contient des informations sur chaque article (titre,
   auteur et date de parution). Chaque auteur est caractérisé par son nom et son prénom. On associe de plus à certains articles des thèmes.
 
   Le schéma relationnel de la base de données est donné ci-dessous :
   \begin{itemize}
-    \item \mintinline{SQL}{Articles (#idArticle, titre, #auteur, dateParution)}
-    \item \mintinline{SQL}{Auteurs (#idAuteur, nom, prenom)}
-    \item \mintinline{SQL}{Themes (#idTheme, theme)}
-    \item \mintinline{SQL}{Traitements (#idTraitement, #article, #theme)}
+    \item \mintinline{SQL}{Articles} (\underline{idArticle}, \mintinline{SQL}{titre, #auteur, dateParution)}
+    \item \mintinline{SQL}{Auteurs} (\underline{idAuteur} \mintinline{SQL}{, nom, prenom)}
+    \item \mintinline{SQL}{Themes} (\underline{idTheme} \mintinline{SQL}{, theme)}
+    \item \mintinline{SQL}{Traitements} (\underline{idTraitement} \mintinline{SQL}{, #article, #theme)}
   \end{itemize}
 
   Dans ce schéma, les clés primaires sont soulignées et les clés étrangères sont précédées du symbole \mintinline{SQL}{#}.
@@ -350,7 +350,7 @@ Ce sujet comporte \pageref{LastPage} pages numérotées de 1/\pageref{LastPage} 
 
 \end{Exercice}
 
-\begin{Exercice}[\textit{Arbres binaires équilibrés}]
+\begin{Exercice}[\textit{Arbres binaires équilibrés}\hfill 12 points]
   On s'intéresse dans cet exercice aux arbres binaires \textbf{équilibrés}.
 
   On dit qu'un arbre binaire est équilibré si, quel que soit le nœud considéré, les hauteurs des sous-arbres issus de ses fils gauche
@@ -565,7 +565,7 @@ def f(arbre: list, i: int) -> int:
   \end{Question}
 
   \begin{Question}
-    Compléter sur cet énoncé le code de la fonction suivante indiquant si un arbre est équilibré ou non. On rappelle que par définition un arbre vide est équilibré. \mintinlinepy{arbre} est la liste \python\ contenant un arbre et \mintinlinepy{i} l'indice d'un nœud, racine du du sous-arbre étudié.
+    Compléter sur cet énoncé le code de la fonction suivante indiquant si un arbre est équilibré ou non. On rappelle que par définition un arbre vide est équilibré. \mintinlinepy{arbre} est la liste \python\ contenant un arbre et \mintinlinepy{i} l'indice d'un nœud, racine du sous-arbre étudié.
     \begin{minted}[baselinestretch=1.2, samepage]{python}
 def estEquilibre(arbre: list, i : int) -> bool:
    if i >= len(arbre) or arbre[i] is None:
