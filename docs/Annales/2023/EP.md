@@ -6,7 +6,8 @@
     * <span class='rouge'>:material-bug:</span> : indique que le sujet contient un ou plusieurs bugs
     * :fontawesome-solid-square-root-variable: : indique que le sujet propose un exercice en rapport avec les mathématiques
 
-
+ 
+ 
 
 {{ telecharger("Fichier comportant tous les sujets 2023","enonces/23-NSI-complet-light.pdf") }}
 

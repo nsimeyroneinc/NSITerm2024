@@ -2,8 +2,8 @@
 
 !!! info "Actualités" 
 
-    - Travail sur [cryptographie bis](Projet/cryptographie2.md) (RSA)  
-    - [**Onglet Grand Oral**](oral/oral.md) disponible.  
+    - [Sujet et corrigé Polynésie 2023 disponible](Annales/Corriges/23-NSIJ1PO1.md)   
+    - [Sujet et corrigé Centres-Etrangers 2023 disponible](Annales/Corriges/23-NSIJ1G11.md)
 
 !!! note  "Epreuve BAC 2023"  
     - 2 «sujets 0» correspondant à la nouvelle maquette du bac version 2023 (3 exos) ont été publiés. À retrouver 
