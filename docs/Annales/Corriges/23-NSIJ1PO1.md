@@ -47,7 +47,7 @@ la contrainte d’unicité
     ```
 
 3.  a. On peut proposer le schéma relationnel suivant : 
-    la relation {{ Match("id_match : INT", "date : DATE", "#id_equipe_domicile : INT", "#id_equipe_deplacement : INT","score_domicile : INT","score_deplacement : INT") }}
+    {{relation("Match","id_match : INT", "date : DATE", "#id_equipe_domicile : INT", "#id_equipe_deplacement : INT","score_domicile : INT","score_deplacement : INT") }}
     
     #id_equipe_domicile et #id_equipe_deplacement sont des clés étrangères qui font référence à la relation Equipe. 
 
@@ -57,7 +57,7 @@ la contrainte d’unicité
     ```
 
 4. a. On peut proposer le schéma relationnel suivant :
-    la relation {{ Statistiques("id_stats : INT", "#id_joueuse : INT", "#id_match : INT","points : INT","passes_decisives : INT") }}
+    {{ relation("Statistiques","id_stats : INT", "#id_joueuse : INT", "#id_match : INT","points : INT","passes_decisives : INT") }}
 
     b.
     ```sql
