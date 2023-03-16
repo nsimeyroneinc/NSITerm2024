@@ -79,33 +79,34 @@ graph TD
     style J opacity:0;
 ```
 
+```mermaid
+graph TD
+    A("9617") --> B("9794") 
+    A --> D("9750")
+    A --> E("9697")
+    A --> H("9657")
+    B --> I("9795")
+```
+
 
 ```mermaid
 graph TD
-    A("AnneB") --> B("Pedro") 
-    B --> D("FredB")
-    B --> E(" ")
-    A --> H("Sophia")
-    H --> I("Malik2")
-    H --> J("AstridM")
-    I --> K("Marc")
-    I --> L(" ")
-    J --> N("KevinH")
-    J --> M("Nico")
-    linkStyle 2 stroke-width:0px;
-    style E opacity:0;
-    linkStyle 7 stroke-width:0px;
-    style L opacity:0;
+    A("construire(0,8)") --> B("construire(0,4)") 
+    B --> D("construire(0,2)")
+    B --> E("construire(2,4)")
+    A --> H("construire(4,8)")
+    H --> I("construire(4,6)")
+    H --> J("construire(6,8)")
 ```
 
 ```mermaid
 graph TD
-    A(7) --> B(2) 
+    A(4) --> B(2) 
     B --> D(1)
     B --> E(3)
-    A --> C(4)
-    C --> F(4)
-    C --> G(5)
+    A --> C(6)
+    C --> F(5)
+    C --> G()
 ```
 
 ```mermaid
@@ -115,7 +116,7 @@ graph TD
     B --> E(1)
     A --> C(4)
     C --> F(3)
-    C --> G(5)
+    C --> G(7)
 ```
 
 
