@@ -9,7 +9,7 @@ class Segment:
 def liste_segments(liste_points):
     n = len(liste_points)
     segments = []
-    for i in range(n):
+    for i in range(n-1):
         for j in range(i+1, n):
             # On construit le segment à partir des points i et j.
             seg = Segment(liste_points[i],liste_points[j])
