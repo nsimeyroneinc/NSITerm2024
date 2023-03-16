@@ -186,7 +186,7 @@ hide: - navigation  in docs.md
             mini = len(liste_attente[0])
             indice = 0
             # On parcourt les processus dans la liste d'attente
-            for i in range(1, len(liste_attente):
+            for i in range(1, len(liste_attente)):
                 # Si on trouve un processus court
                 if len(liste_attente[i]) < mini:
                     indice = i # On retient son indice
