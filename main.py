@@ -154,7 +154,7 @@ def define_env(env):
 
     @env.macro
     def capytale(id):
-        lien = "[![logo capytale](../images/capytale.png){.imgcentre width=150px border=2px}]"
+        lien = "[![logo capytale](./images/capytale.png){.imgcentre width=150px border=2px}]"
         lien +=f"(https://capytale2.ac-paris.fr/web/c/{id})"
         lien += "{target=_blank}"
         return lien
