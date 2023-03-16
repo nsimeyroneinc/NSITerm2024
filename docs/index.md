@@ -2,13 +2,11 @@
 
 !!! info "Actualités" 
 
-    - [Sujet et corrigé Polynésie 2023 disponible](Annales/Corriges/23-NSIJ1PO1.md)   
-    - [Sujet et corrigé Centres-Etrangers 2023 disponible](Annales/Corriges/23-NSIJ1G11.md)
+    - 4 sujets 2023 sont disponibles dans l'onglet BAC et 2023  
+    - Le sujet Polynésie 2023 J2 est intéressant à faire pour réviser (notamment l'exercice 3 : gestion processus)
+    - Les corrigés seront disponible au plus tard vendredi 17 mars.
 
 !!! note  "Epreuve BAC 2023"  
-    - 2 «sujets 0» correspondant à la nouvelle maquette du bac version 2023 (3 exos) ont été publiés. À retrouver 
-        - [sujet A](Annales/2023/2023-sujet_0-a.pdf){. target="_blank"}.  
-        - [sujet B](Annales/2023/2023-sujet_0-b.pdf){. target="_blank"}.  
 
     - Les épreuves de spécialité se dérouleront les 20 et 21 mars 2023 pour la N.S.I.  
     - Les épreuves pratiques seront organisées le Jeudi 30 mars 2023.
