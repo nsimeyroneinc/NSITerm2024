@@ -149,7 +149,7 @@ hide: - navigation  in docs.md
 
 
 2.  a. 
-    ![](data/23-NSIJ2PO1-ex3.png)
+    ![](data/23-NSIJ2PO1-ex3.png){width:50%}
 
     b. Les temps d’exécution des quatre processus sont :
 
@@ -162,7 +162,7 @@ hide: - navigation  in docs.md
 
     On obtient le temps d’exécution moyen : $\dfrac{12+16+2+2}{4}=8$
 
-    c. ![](data/23-NSIJ2PO1-ex3-2.png)
+    c. P1-P1-P1-P1-P3-P3-P1-P1-P1-P1-P4-P4-P2-P2-P2-P2-P2-P2
 
     d. Les temps d’exécution des quatre processus sont :
 
@@ -194,7 +194,7 @@ hide: - navigation  in docs.md
     ```
 
     b.
-     ```python linenums='1' hl_lines='7 8 9 10 11'
+    ```python linenums='1' hl_lines='7 8 9 10 11'
     def ordonnancement(liste_proc):
         """Exécute l'algorithme d'ordonnancement
         liste_proc -- liste des processus
