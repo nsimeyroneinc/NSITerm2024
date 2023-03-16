@@ -49,7 +49,7 @@ la contrainte d’unicité
 3.  a. On peut proposer le schéma relationnel suivant : 
     {{relation("Match","id_match : INT", "date : DATE", "#id_equipe_domicile : INT", "#id_equipe_deplacement : INT","score_domicile : INT","score_deplacement : INT") }}
     
-    #id_equipe_domicile et #id_equipe_deplacement sont des clés étrangères qui font référence à la relation Equipe. 
+    \#id_equipe_domicile et #id_equipe_deplacement sont des clés étrangères qui font référence à la relation Equipe. 
 
     b.
     ```sql
