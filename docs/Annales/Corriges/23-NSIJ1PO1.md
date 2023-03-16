@@ -176,7 +176,7 @@ la contrainte d’unicité
 
     b. 
     ```python
-    segment=plus_court_segment(liste_segments(liste_points))
+    segment=plus_court_segment(liste_segments(nuage_points))
 
     print((segment.p1[0],segment.p1[1]),(segment.p2[0],segment.p2[1]))
     ```
