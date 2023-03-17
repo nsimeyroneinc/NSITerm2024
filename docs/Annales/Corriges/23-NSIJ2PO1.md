@@ -48,7 +48,7 @@ hide: - navigation  in docs.md
 
     e. Le parcours inﬁxe de l’arbre binaire obtenu dans la question 2.c est :  
     1, 2, 3, 4, 5, 6, 7  
-    C’est un arbre binaire de recherche car le parcours inﬁxe trie les valeurs des nœuds dans l’ordre croissant  
+    C’est un arbre binaire de recherche car le parcours inﬁxe parcours les valeurs des nœuds dans l’ordre croissant  
 
     f.
     ```python linenums='1' hl_lines='5 7'
@@ -70,7 +70,7 @@ hide: - navigation  in docs.md
     []
     ```
 
-    b. La fonction mystere permet de déterminer le chemin vers la valeur x entrée en paramètre en partant de la racine de l’arbre si elle existe. Si la valeur x n’est pas dans l’arbre binaire de cherche, cette fonction renvoie une liste vide.
+    b. La fonction `mystere` permet de déterminer le chemin vers la valeur x entrée en paramètre en partant de la racine de l’arbre si elle existe. Si la valeur x n’est pas dans l’arbre binaire de recherche, cette fonction renvoie une liste vide.
 
   
     ```
@@ -153,7 +153,7 @@ hide: - navigation  in docs.md
 
     b. Les temps d’exécution des quatre processus sont :
 
-    | Processus|Instant d’arrivé |Instant de terminaison | Temps d’exécution| 
+    | Processus|Instant d’arrivée |Instant de terminaison | Temps d’exécution| 
     | :---:| :---:| :---:| :---:|
     | 1| 0| 12| $12-0=12$| 
     | 2| 2| 18| $18-2=16$| 
@@ -166,7 +166,7 @@ hide: - navigation  in docs.md
 
     d. Les temps d’exécution des quatre processus sont :
 
-    | Processus|Instant d’arrivé |Instant de terminaison | Temps d’exécution| 
+    | Processus|Instant d’arrivée |Instant de terminaison | Temps d’exécution| 
     | :---:| :---:| :---:| :---:|
     | 1| 0| 10| $10-0=10$| 
     | 2| 2| 18| $18-2=16$| 
@@ -187,9 +187,10 @@ hide: - navigation  in docs.md
             indice = 0
             # On parcourt les processus dans la liste d'attente
             for i in range(1, len(liste_attente)):
-                # Si on trouve un processus court
+                # Si on trouve un processus plus court
                 if len(liste_attente[i]) < mini:
                     indice = i # On retient son indice
+                    mini = len(liste_attente[i])
             return indice
     ```
 
