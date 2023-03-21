@@ -74,7 +74,7 @@ WHERE Commandes.date ="30/04/2021"
 |site C | R2 | 2 |
 |site D | R3 | 2 |
 
-4. Dans le protocole RIP de nombreux chemins passent par la liaison 2, donc si elle a un débit très inférieur aux autres il n'est pas judicieux de l’utiliser.  Le choix du protocole RIP n'est donc pas judicieux ici.
+4. Dans le protocole RIP de nombreux chemins passent par la liaison 2, donc si elle a un débit très inférieur aux autres il n est pas judicieux de l’utiliser.  Le choix du protocole RIP n'est donc pas judicieux ici.
 
 5.  a. On cherche la liaison dont le débit est le plus faible ce qui revient à chercher le coût est le plus élevé : 
 - La liaison 2 a le coût le plus élevé donc le débit le plus faible : D$=\dfrac{10^{10}}{10^4}=10$ kbit/s.
@@ -117,8 +117,6 @@ WHERE Commandes.date ="30/04/2021"
 4. 
 ```python
 def renvoie_premiere_couleur_disponible(self): 
-    '''Renvoie la première couleur du tableau des couleurs disponibles supposé non vide. 
-    : return (str)'''
     return self.tab_couleurs_disponibles[0]
 ```
 
@@ -126,16 +124,12 @@ def renvoie_premiere_couleur_disponible(self):
 
 ```python
 def renvoie_nb_voisines(self) :
-    '''Renvoie le nombre de régions voisines. 
-    : return (int) '''
     return len(self.tab_voisines)
 ```
 
 6. 
 ```python
 def est_coloriee(self): 
-    ''' Renvoie True si une couleur a été attribuée à cette région et False sinon. 
-    : return (bool) '''
     if self.couleur_attribuee == None :
         return False
     else :
@@ -145,11 +139,6 @@ def est_coloriee(self):
 7. 
 ```python
 def retire_couleur(self, couleur):
-    ''' Retire couleur du tableau de couleurs disponibles de la région si elle est dans ce tableau.
-    Ne fait rien sinon. 
-    : param couleur (str) 
-    : ne renvoie rien 
-    : effet de bord sur le tableau des couleurs disponibles ''' 
     if couleur in self.tab_couleurs_disponibles:
         self.tab_couleurs_disponibles.remove(couleur)
 ```
@@ -157,9 +146,6 @@ def retire_couleur(self, couleur):
 8.  
 ```python
 def est_voisine(self, region):
-    ''' Renvoie True si la region passée en paramètre est une voisine et False sinon. 
-    : param region (Region) 
-    : return (bool) '''
     for i in range(len(self.tab_voisines)) :
         if region == self.tab_voisines[i] :
             return True
@@ -169,8 +155,6 @@ def est_voisine(self, region):
 9. 
 ```python
 def renvoie_tab_regions_non_coloriees(self): 
-    ''' Renvoie un tableau dont les éléments sont les régions du pays sans couleur attribuée. :
-    return (list) tableau d’instances de la classe Region '''
     L=[]
     for region in self.tab_regions :
         if est_coloriee(region) == False :
@@ -178,7 +162,7 @@ def renvoie_tab_regions_non_coloriees(self):
     return L
 ```
 
-10. a. La méthode renvoie `None` dans le cas où tout est colorié.
+10. a. La méthode renvoie `None` dans le cas ou tout est colorié.
 
     b. La région renvoyée est la région qui a le plus de voisines parmi celles qui ne sont pas coloriées.
 
