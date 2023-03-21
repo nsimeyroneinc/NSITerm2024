@@ -74,7 +74,7 @@ WHERE Commandes.date ="30/04/2021"
 |site C | R2 | 2 |
 |site D | R3 | 2 |
 
-4. Dans le protocole RIP de nombreux chemins passent par la liaison 2, donc si elle a un débit très inférieur aux autres il n’est pas judicieux de l’utiliser.  Le choix du protocole RIP n'est donc pas judicieux ici.
+4. Dans le protocole RIP de nombreux chemins passent par la liaison 2, donc si elle a un débit très inférieur aux autres il n'est pas judicieux de l’utiliser.  Le choix du protocole RIP n'est donc pas judicieux ici.
 
 5.  a. On cherche la liaison dont le débit est le plus faible ce qui revient à chercher le coût est le plus élevé : 
 - La liaison 2 a le coût le plus élevé donc le débit le plus faible : D$=\dfrac{10^{10}}{10^4}=10$ kbit/s.
@@ -117,8 +117,8 @@ WHERE Commandes.date ="30/04/2021"
 4. 
 ```python
 def renvoie_premiere_couleur_disponible(self): 
-    ''' Renvoie la première couleur du tableau des couleurs disponibles supposé non vide. 
-    : return (str) '''
+    '''Renvoie la première couleur du tableau des couleurs disponibles supposé non vide. 
+    : return (str)'''
     return self.tab_couleurs_disponibles[0]
 ```
 
@@ -126,7 +126,7 @@ def renvoie_premiere_couleur_disponible(self):
 
 ```python
 def renvoie_nb_voisines(self) :
-    ''' Renvoie le nombre de régions voisines. 
+    '''Renvoie le nombre de régions voisines. 
     : return (int) '''
     return len(self.tab_voisines)
 ```
