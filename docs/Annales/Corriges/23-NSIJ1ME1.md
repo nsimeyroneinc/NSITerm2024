@@ -43,7 +43,7 @@ WHERE intitule = "hylla"
 INSERT INTO Meubles
 (id, intitule, prix, stock, description)
 VALUES
-(65, 'matta', 95.99, 25, 'Tapis vert à pois rouges')
+(65, "matta", 95.99, 25, "Tapis vert à pois rouges")
 ```
 
 6. 
@@ -51,7 +51,7 @@ VALUES
 SELECT Clients.nom, Clients.prenom
 FROM Clients
 JOIN Commandes ON Commandes.idclient = Clients.id
-WHERE Commandes.date ='30/04/2021'
+WHERE Commandes.date ="30/04/2021"
 ```
 
 
