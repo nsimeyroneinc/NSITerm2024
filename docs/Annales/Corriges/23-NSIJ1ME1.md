@@ -16,12 +16,12 @@ hide: - navigation  in docs.md
     - la clé étrangère `idMeuble` met en relation avec la table `Meuble` et sa clé primaire `id` 
 
 
-    c. {{relation ('Meubles","id : INT", "intitule : VARCHAR", "prix : FLOAT", "stock : INT", "description : VARCHAR")}}
+    c. {{relation('Meubles","id : INT", "intitule : VARCHAR", "prix : FLOAT", "stock : INT", "description : VARCHAR")}}
 
 2.  La requête renvoie :  
 
-    62 - 2 - 'Armoire blanche 3 portes'  
-    63 - 3 - 'Armoire noire 3 portes'   
+    62 - 2 - Armoire blanche 3 portes  
+    63 - 3 - Armoire noire 3 portes   
 
 3. 
 ```sql
