@@ -24,17 +24,18 @@ hide: - navigation  in docs.md
     63 - 3 - Armoire noire 3 portes   
 
 3. 
+
 ```sql
 SELECT nom, prenom
 FROM Clients
-WHERE ville = 'Paris'
+WHERE ville = "Paris"
 ```
 
 4. 
 ```sql
 UPDATE Meubles
 SET stock = 50
-WHERE intitule = 'hylla'
+WHERE intitule = "hylla"
 ```
 
 5. 
