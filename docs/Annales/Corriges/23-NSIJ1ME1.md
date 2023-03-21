@@ -74,7 +74,7 @@ WHERE Commandes.date ="30/04/2021"
 |site C | R2 | 2 |
 |site D | R3 | 2 |
 
-4. Dans le protocole RIP de nombreux chemins passent par la liaison 2, donc si elle a un débit très inférieur aux autres il n est pas judicieux de l’utiliser.  Le choix du protocole RIP n'est donc pas judicieux ici.
+4. Dans le protocole RIP de nombreux chemins passent par la liaison 2, donc si elle a un débit très inférieur aux autres il n est pas judicieux de l’utiliser.  Le choix du protocole RIP n est donc pas judicieux ici.
 
 5.  a. On cherche la liaison dont le débit est le plus faible ce qui revient à chercher le coût est le plus élevé : 
 - La liaison 2 a le coût le plus élevé donc le débit le plus faible : D$=\dfrac{10^{10}}{10^4}=10$ kbit/s.
