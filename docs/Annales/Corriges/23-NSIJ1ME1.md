@@ -20,7 +20,7 @@ hide: - navigation  in docs.md
 
 2.  La requête renvoie :  
 
-      id |stock | description  |  
+    | id |stock | description  |  
     |:---:|:---:|:---:|  
     | 62 |2 |'Armoire blanche 3 portes'  |
     | 63 |3 |'Armoire noire 3 portes'  |  
