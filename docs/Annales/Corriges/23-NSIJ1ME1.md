@@ -112,7 +112,7 @@ WHERE Commandes.date ="30/04/2021"
 
 2. `nom_region` est de type `str` : chaîne de caractère.
 
-3.  `ge = Region ('Grand Est')`
+3.  `ge = Region ("Grand Est")`
 
 4. 
 ```python
