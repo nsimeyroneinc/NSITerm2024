@@ -33,63 +33,7 @@ Ces deux algorithmes ont pour particularité de :
 
 
 
-## Activités 
-
-{{ titre_activite("Tri par sélection",[],0) }}
-
-0. Commencer par télécharger une application Python :
-
-    * {{telecharger("Tri par sélection","../files/C7/activite1.zip")}}
-    * Copier ce fichier dans le répertoire de votre choix
-    * Faire un clic droit sur le fichier compressé et choisir *Extraire ici*
-    * Lancer le programme Python `activite1.py`.
-
-1. Dans cette activité, on doit ranger des cartes par ordre croissant mais **sans les voir**, on dispose par contre de deux boutons :
-
-    * Un bouton <span class=encadre>Trouver la plus petit carte depuis l'emplacement</span> qui permet de savoir quelle carte est la plus petite à partir de l'emplacement qu'on sélectionne dans le menu déroulant à côté.
-    * Un bouton <span class=encadre>Echanger les cartes situés aux emplacements</span> qui permet d'échanger les cartes situés aux emplacements sélectionnés dans les menus déroulants.
-
-
-    Voici une capture d'écran de l'application dans laquelle on vient de sélectionner la plus petite carte depuis l'emplacement 0, elle est alors indiquée par une flèche rouge au-dessus (emplacement 6) :
-    ![capture](../images/C7/act1.png){: .centre}
-
-2. Proposer un algorithme permettant à un ordinateur de ranger une suite de nombres par ordre croissant.
-
-3. Implémentation en python
-
-    1. Ecrire une fonction `echange(liste,i,j)` qui échange les éléments d'indice `i` et `j` de la liste `liste` par exemple si `liste=[12,17,10,11,32]` alors après `echange(liste,0,2)` le contenu de `liste` sera `[10,17,12,11,32]`.
-    2. Ecrire une fonction `min_depuis(liste,i)` qui renvoie le minimum de la liste `liste` à partir de l'indice `i` par exemple `min_depuis([10,17,12,11,32],2)` renvoie `11`.
-    3. En utilisant ces deux fonctions, proposer une implémentation en Python de l'algorithme du tri par sélection.
-
-
-
-{{ titre_activite("Tri par insertion",[]) }}
-
-1. De même que dans l'activité précédente, commencer par télécharger une application Python :
-
-    * {{telecharger("Tri par insertion","../files/C7/activite2.zip")}}
-    * Copier ce fichier dans le répertoire de votre choix
-    * Faire un clic droit sur le fichier compressé et choisir *Extraire ici*
-    * Lancer le programme Python `activite2.py`.
-
-2. De même que dans l'activité précédente, il faut ranger les cartes dans l'ordre *sans les voir*, on dispose d'un unique bouton permettant d'échanger une carte dont on donne le numéro avec sa voisine *si elles ne sont pas dans le bon ordre*
-
-3. Proposer un algorithme permettant de ranger une liste par ordre croissant en utilisant comme seul *"ingrédient"* l'échange de deux cartes dont on donne les emplacements.
-
-    !!! aide
-        Bien évidemment, des boucles et des tests seront aussi nécessaires
-
-
-4. Proposer une implémentation en Python de cet algorithme 
-
-    !!! aide
-        On pourra utiliser la fonction `echange` définie dans l'activité précédente.
-
-5. Tester cette fonction
-
-
-
-## Cours
+## Diaporama résumé
 
 {{ aff_cours(num) }}
 
