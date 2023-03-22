@@ -65,18 +65,18 @@ graph TD
 
 ```mermaid
 graph TD
-    A("LeaC") --> B("Ali") 
-    B --> D(" ")
-    B --> E(" ")
-    A --> H("Tom45")
-    H --> I("Vero")
-    H --> J(" ")
-    linkStyle 2 stroke-width:0px;
-    style E opacity:0;
-    linkStyle 1 stroke-width:0px;
-    style D opacity:0;
-    linkStyle 5 stroke-width:0px;
-    style J opacity:0;
+    A("dfifi") --> B("annieji") 
+    B --> D("aalice")
+    B --> E("celine")
+    A --> H("helene")
+    E --> F(" ")
+    E -->G("davaidbg")
+    H --> I(" ")
+    H --> J("papicoeur")
+    linkStyle 4 stroke-width:0px;
+    style F opacity:0;
+    linkStyle 6 stroke-width:0px;
+    style I opacity:0;
 ```
 
 ```mermaid
@@ -99,15 +99,7 @@ graph TD
     H --> J("construire(6,8)")
 ```
 
-```mermaid
-graph TD
-    A(4) --> B(2) 
-    B --> D(1)
-    B --> E(3)
-    A --> C(6)
-    C --> F(5)
-    C --> G()
-```
+
 
 ```mermaid
 graph TD
@@ -154,21 +146,3 @@ graph TD
 ```
 
 
-    linkStyle 2 stroke-width:0px;
-    style E opacity:0;
-    linkStyle 4 stroke-width:0px;
-    style F opacity:0;
-    linkStyle 2 stroke-width:0px;
-    style E opacity:0;
-    linkStyle 8 stroke-width:0px;
-    style E1 opacity:0;
-    linkStyle 9 stroke-width:0px;
-    style E2 opacity:0;
-    linkStyle 10 stroke-width:0px;
-    style M opacity:0;
-    linkStyle 11 stroke-width:0px;
-    style F1 opacity:0;
-    linkStyle 12 stroke-width:0px;
-    style G1 opacity:0;
-    linkStyle 13 stroke-width:0px;
-    style G2 opacity:0;
