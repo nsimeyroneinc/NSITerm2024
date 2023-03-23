@@ -146,7 +146,7 @@ theme:
     font: false  # RGPD ; pas de fonte Google
     language: fr # français
     icon:
-      logo: fontawesome/solid/spider
+      logo: fontawesome/solid/dragon
     favicon : images/dragon.svg
 
     palette: # Palettes de couleurs jour/nuit, cf : https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/
