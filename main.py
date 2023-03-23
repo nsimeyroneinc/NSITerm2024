@@ -97,7 +97,10 @@ def define_env(env):
         #18:["python","Récursivité",2,"Programmation/T1_1_Recursivite.md"],
         19 : ["sd","Les dictionnaires",1,"StructureDonnees/T4_2_dictionnaires.md"],
         20: ["os","Cryptographie",1,"Projet/cryptographie2.md"],
-        21: ["os","Système à puces",1,"Archi_Materielle/T3_5_systeme_sur_puce.md"]
+        21: ["os","Système à puces",1,"Archi_Materielle/T3_5_systeme_sur_puce.md"],
+        22: ["sd","Les Graphes",2,"Graphe/TD_Graphe.md"],
+        23: ["sd","Les Graphes - Parcours",2,"Graphe/TD_Graphe_Parcours.md"],
+        24: ["sd","Les Graphes - Exercices",2,"Graphe/TD_Graphe_Exercices.md"]
     }
 
     env.variables['devoir_terminale']={
