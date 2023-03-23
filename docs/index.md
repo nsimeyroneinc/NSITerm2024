@@ -1,14 +1,14 @@
 
 
 !!! info "Actualités" 
+    - Les graphes 
+        - [Cours](Graphe/TD_Graphe.md)  
+        - [Parcours](Graphe/TD_Graphe_Parcours.md) 
+        - [Exercices](Graphe/TD_Graphe_Exercices.md) 
 
-    - 4 sujets 2023 sont disponibles dans l'onglet BAC et 2023  
-    - Le sujet Polynésie 2023 J2 est intéressant à faire pour réviser (notamment l'exercice 3 : gestion processus)
-    - Les corrigés seront disponible au plus tard vendredi 17 mars.
 
 !!! note  "Epreuve BAC 2023"  
 
-    - Les épreuves de spécialité se dérouleront les 20 et 21 mars 2023 pour la N.S.I.  
     - Les épreuves pratiques seront organisées le Jeudi 30 mars 2023.
   
 ## Progression sur l'année
@@ -61,7 +61,11 @@
 🗹 Méthode « diviser pour régner »
 
 
+## Notions aux programmes mais non au BAC (écrit)
 
+- Les graphes  
+- Algorithme de Boyer Moore  
+- Programmation dynamique  
 
 ## Comment calculer sa note au BAC 2023 et Répartition des notes :
 
