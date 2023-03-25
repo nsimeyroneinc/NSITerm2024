@@ -87,8 +87,8 @@ nav:
       - S'entrainer en ligne pour l'épreuve pratique: divers/lien.md
 
       #- index_annales.md
-      - '2022': 
-        - "Epreuves pratiques" : Annales/2022/EP.md
+      #- '2022': 
+      #  - "Epreuves pratiques" : Annales/2022/EP.md
       - '2023': 
         - "Epreuves pratiques" : Annales/2023/EP.md
         
