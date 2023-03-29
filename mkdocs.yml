@@ -66,8 +66,8 @@ nav:
       - 📝 S12 Arbres binaires de recherche BAC : StructureDonnees/T3_4_arbre_recherche_BAC.md
       - k-plus proches voisins : Algo/TP6_1_kppv.md
       - Les Graphes Cours : Graphe/Graphe.md
-      - Les Graphes Parcours : Graphe/TD_Graphe_Parcours.md
-      - Les Graphes Exercices : Graphe/TD_Graphe_Exercices.md
+      #- Les Graphes Parcours : Graphe/TD_Graphe_Parcours.md
+      #- Les Graphes Exercices : Graphe/TD_Graphe_Exercices.md
 
     
     - BAC 📝:
