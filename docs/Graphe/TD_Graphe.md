@@ -1,13 +1,4 @@
 
-{% set num = 22 %}
-{% set titre = "Les Graphes"%}
-{% set theme = "sd" %}
-{% set niveau = "terminale"%} 
-
-
-{{ titre_chapitre(num,titre,theme,niveau)}}
-
-
 
 Le programme de N.S.I en Terminale :
 
@@ -113,15 +104,8 @@ les arêtes pourront être parcourues dans les deux sens.
 
 ## Réseaux sociaux : modélisation par un graphe 
 
-Au premier trimestre 2020, Facebook© revendiquait 2,6 milliards
-d'utilisateurs actifs chaque mois, en hausse de 9,2% par rapport à début
-2019. Le réseau social américain a passé la barre symbolique des 2
-milliards au deuxième trimestre 2017. A noter que 42% des utilisateurs
-actifs mensuels de Facebook viennent d'Asie-Pacifique, 15,6% sont
-Européens et 9,7% sont Nord-américains. Facebook permet à ses
-utilisateurs d'entrer des informations personnelles et d'interagir avec
-d'autres utilisateurs. Les interactions entre utilisateurs reposent sur
-la notion « d'amis ».
+Au premier trimestre 2020, Facebook© revendiquait 2,6 milliards d'utilisateurs actifs chaque mois, en hausse de 9,2% par rapport à début 2019. Le réseau social américain a passé la barre symbolique des 2 milliards au deuxième trimestre 2017. A noter que 42% des utilisateurs actifs mensuels de Facebook viennent d'Asie-Pacifique, 15,6% sont Européens et 9,7% sont Nord-américains. Facebook permet à ses utilisateurs d'entrer des informations personnelles et d'interagir avec
+d'autres utilisateurs. Les interactions entre utilisateurs reposent sur la notion « d'amis ».
 
 ### Principe de la modélisation par un graphe non orienté
 

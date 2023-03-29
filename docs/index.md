@@ -2,9 +2,8 @@
 
 !!! info "Actualités" 
     - Les graphes 
-        - [Cours](Graphe/TD_Graphe.md)  
-        - [Parcours](Graphe/TD_Graphe_Parcours.md) 
-        - [Exercices](Graphe/TD_Graphe_Exercices.md) 
+        - [Cours](Graphe/Graphe.md)  
+
 
 
 !!! note  "Epreuve BAC 2023"  
