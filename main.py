@@ -753,7 +753,7 @@ Vous pouvez télécharger une copie au format pdf du diaporama de synthèse de c
 
     @env.macro
     def ok():
-        return ":fontawesome-solid-check:{.vert title='Compatible'}"
+        return ":fontawesome-solid-check:{.bleu title='Compatible'}"
     
     @env.macro
     def nok():
@@ -777,7 +777,7 @@ Vous pouvez télécharger une copie au format pdf du diaporama de synthèse de c
                 aff += f"* Exercice {num_exo} : "
                 exo = env.variables.exo_bac[index]
                 if exo["Correction"]=='1':
-                    aff += ":fontawesome-solid-check:{.vert title='Compatible'}"
+                    aff += ":fontawesome-solid-check:{.bleu title='Compatible'}"
                     aff+= f"[{exo['Theme']}](../Corriges/{repere}-{num_exo}) \n"
                 else:
                     aff+= ":fontawesome-solid-xmark:{.rouge title='Non disponible'}"
@@ -794,29 +794,48 @@ Vous pouvez télécharger une copie au format pdf du diaporama de synthèse de c
     def corrige_ecrit(annee):
         if int(annee)<2023:
             nb_exos,sujet_bac = 5,sujet_bac_5exos
-        else:
-            nb_exos,sujet_bac = 3,sujet_bac_3exos
-        aff = f"#<span class='numchapitre'>{annee}</span> Correction épreuves écrites\n \n"
-        aff += ''' 
+            aff = f"#<span class='numchapitre'>{annee}</span> Correction épreuves écrites\n \n"
+            aff += ''' 
 
 !!! note "Remarques :" 
-    * les sujets sont classés dans l'ordre alphabétique de leur repère,  
-    * si un exercice est corrigé son numéro est indiqué en vert, sinon en rouge
+    * si un exercice est corrigé son numéro est indiqué en bleu, sinon en rouge
 
 '''
-        aff+= "|Repère | Centre | Jour | Téléchargement |Correction|\n"
-        aff+= "|-------|--------|------|----------------|----------|\n"
-        for s in sujet_bac:
-            if s['Annee']==annee:
-                corr = ''
-                for num in range(1,nb_exos+1):
-                    if s["Correction"][num-1]=="1":
-                        corr += ":material-numeric-"+str(num)+"-circle-outline:{.vert title='exercice"+str(num)+"corrigé'}"
-                    else:
-                        corr += ":material-numeric-"+str(num)+"-circle-outline:{.rouge title='exercice"+str(num)+"non corrigé'}"
-                aff+=f"|{s['Repere']}|{s['Centre']}|{s['Jour']}|[{s['Repere']}](../../officiels/Annales/EE/{annee}/{s['Repere']}.pdf)|[{corr}](../../Corriges/{s['Repere']})|\n"
-        return aff
+            aff+= "| Centre | Jour | Téléchargement | Correction|\n"
+            aff+= "|--------|------|----------------|-----------|\n"
+            for s in sujet_bac:
+                if s['Annee']==annee:
+                    corr = ''
+                    for num in range(1,nb_exos+1):
+                        if s["Correction"][num-1]=="1":
+                            corr += ":material-numeric-"+str(num)+"-circle-outline:{.bleu title='exercice"+str(num)+"corrigé'}"
+                        else:
+                            corr += ":material-numeric-"+str(num)+"-circle-outline:{.rouge title='exercice"+str(num)+"non corrigé'}"
+                    aff+=f"|[{s['Centre']}](#{s['Repere']})|{s['Jour']}|[{s['Repere']}](../../officiels/Annales/EE/{annee}/{s['Repere']}.pdf)|[{corr}](../../Corriges/{s['Repere']})|\n"
+            return aff
     
+        else:
+            nb_exos,sujet_bac = 3,sujet_bac_3exos
+            aff = f"#<span class='numchapitre'>{annee}</span> Correction épreuves écrites\n \n"
+            aff += ''' 
+
+!!! note "Remarques :" 
+    * si un exercice est corrigé son numéro est indiqué en bleu, sinon en rouge
+
+'''
+            aff+= "| Centre | Jour | Téléchargement |Exerciec 1 | Exercice 2 | Exercice 3 | Correction|\n"
+            aff+= "|--------|------|----------------|----------|-----------|-----------|-----------|\n"
+            for s in sujet_bac:
+                if s['Annee']==annee:
+                    corr = ''
+                    for num in range(1,nb_exos+1):
+                        if s["Correction"][num-1]=="1":
+                            corr += ":material-numeric-"+str(num)+"-circle-outline:{.bleu title='exercice"+str(num)+"corrigé'}"
+                        else:
+                            corr += ":material-numeric-"+str(num)+"-circle-outline:{.rouge title='exercice"+str(num)+"non corrigé'}"
+                    aff+=f"|[{s['Centre']}](#{s['Repere']})|{s['Jour']}|[{s['Repere']}](../../officiels/Annales/EE/{annee}/{s['Repere']}.pdf)|{s['Ex1']}|{s['Ex2']}|{s['Ex3']}|[{corr}](../../Corriges/{s['Repere']})|\n"
+            return aff
+        
     @env.macro
     def corrige_exo(repere,numero):
         aff = f"#<span class='numchapitre'>{repere}</span> Correction épreuves écrites\n"
@@ -843,7 +862,7 @@ Vous pouvez télécharger une copie au format pdf du diaporama de synthèse de c
                 corr = ""
                 for num in range(1,nb_exos+1):
                     if s["Correction"][num-1]=="1":
-                        corr += ":material-numeric-"+str(num)+"-circle-outline:{.vert title='exercice "+str(num)+" corrigé'}"
+                        corr += ":material-numeric-"+str(num)+"-circle-outline:{.bleu title='exercice "+str(num)+" corrigé'}"
                     else:
                         corr += ":material-numeric-"+str(num)+"-circle-outline:{.rouge title='exercice "+str(num)+" non corrigé'}"                
                 corr = f"### Correction  [{corr}](../../Corriges/{s['Repere']}) \n \n"

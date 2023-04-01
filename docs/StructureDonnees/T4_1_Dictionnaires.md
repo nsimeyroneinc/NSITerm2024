@@ -33,6 +33,7 @@ dictionnaire.</td>
     
 
 [Ref1](https://notebooks.lecluse.fr/python/nsi/terminale/structure_donnees/tp/2020/04/15/nsi_t_dictionnaires.html), 
+
 [Ref2](https://www.tresfacile.net/exercices-sur-les-dictionnaires-en-python/)
 
 ## Révision
@@ -749,80 +750,3 @@ Vous le constatez d'après les expériences ci-dessus : le temps de recherche da
 
 
 Le dictionnaire est donc une structure de données optimisée pour la recherche sur les clés.
-
-Le dictionnaire utilise une fonction de hachage.
-
-## Complément  hash  (hors programme)
-
-
-
-La notion de Hachage est omniprésente en informatique et est au cœur du fonctionnement des dictionnaires. Le hachage est un mécanisme permettant de transformer la clé en un nombre unique permettant l'accès à la donnée, un peu à la manière d'un indice dans un tableau.
-
-
-### Définition d'une fonction de hachage
-
-Une fonction de hachage est une fonction qui va calculer une empreinte unique à partir de la donnée fournie en entrée. Elle doit respecter les règles suivantes :
-
-- La longueur de l'empreinte (valeur retournée par la fonction de hachage) doit être toujours la même, indépendamment de la donnée fournie en entrée.
-- Connaissant l'empreinte, il ne doit pas être possible de reconstituer la donnée d'origine
-- des données différentes doivent donner dans la mesure du possible des empreintes différentes.
-- des données identiques doivent donner des empreintes identiques.
-
-
-
-### Quelques utilisations du hachage
-
-L'utilisation la plus courante est le stockage des mots de passe dans un système informatique un peu sécurisé.  
-En effet, lorsqu'on crée un compte sur un service en ligne, le mot de passe ne doit pas être stocké en clair, une empreinte est générée afin que si le service est piraté et que les comptes sont dérobés, il ne soit pas possible de reconstituer le mot de passe à partir de l'empreinte. Voici un exemple de fonctionnement d'une fonction de hachage. 
-
-
-Nous utiliserons le hachage **sha256**.
-
-
-```python
-from hashlib import sha256
-
-h1=sha256(b"Simpson Homer")   # b"Simpson Homer" est un objet de type  bytes
-print (h1.hexdigest())
-
-8d167108dff6b68905c7154c04152a1218511d6b84bc839395e7d653222912f3
-```
-
-
-```python
-h2=sha256(b"Simpson Homer")
-print(h2.hexdigest())
-
-
-8d167108dff6b68905c7154c04152a1218511d6b84bc839395e7d653222912f3
-```
-
-
-```python
-h3=sha256(b"Simpson  Homer")
-print(h3.hexdigest())
-
-
-5c9fe022bd1d6dd652e32e0cd871920f7212124cba31532442211599fe634adf
-```
-
-Ce n'est pas une valeur au hasard. Un hash donne une même valeur  pour un même  texte.
-
-Voici un texte qui vous permettra de comprendre le principe des fonctions de hachages : [c'est quoi le hachage](https://www.culture-informatique.net/cest-quoi-hachage/).  
-
-Pour avoir quelques idées sur le principe des tables de hachages, je vous recommande le visionnage de ces deux vidéos:
-
-On constate bien sur cet exemple que :
-
-- un petit changement dans la valeur d'entrée fournit une empreinte totalement différentes
-- toutes les empreintes ont la même longueur  64 caractères hexadécimal donc  32 octets et donc $32\times8=256$ bit. 
-
-
-??? video 
-    <iframe width="1280" height="720" src="https://www.youtube.com/embed/IhJo8sXLfVw" title="3.3 Tables de hash" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-
-
-Vous avez déjà compris que l'algorithme de recherche dans une table de hachage a une complexité $O(1)$ (le temps de recherche ne dépend pas du nombre d'éléments présents dans la table de hachage), alors que la complexité de l'algorithme de recherche dans un tableau non trié est $O(n)$.   
-
-Comme l'implémentation des dictionnaires s'appuie sur les tables de hachage, on peut dire que l'algorithme de recherche d'un élément dans un dictionnaire a une complexité $O(1)$ alors que l'algorithme de recherche d'un élément dans un tableau non trié a une complexité $O(n)$.

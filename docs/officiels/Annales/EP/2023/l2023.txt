@@ -37,7 +37,7 @@
 23-NSI-37,32, Indice de la dernière occurence, Classe des adresse Ip (POO), 1,
 23-NSI-38,14, Mots correspondants à un motif, Recherche d'un cycle, 1 ,
 23-NSI-39,29, Calcul des termes de la suite de Fibonacci, Liste des élèves ayant obtenu la note maximale, 1,M
-23-NSI-40,, Nombnre de mots dans une phrase, Arbre binaire (POO), 1, N
+23-NSI-40,, Nombre de mots dans une phrase, Arbre binaire (POO), 1, N
 23-NSI-41,1, Nombre d'occurrences d'un caractères dans une chaine, Rendu de monnaie en récursif, 1,
 23-NSI-42,38, Tri par sélection, Jeu du plus ou moins, 1,
 23-NSI-43,7, Conversion du décimal vers le binaire, Tri à bulles, 1,

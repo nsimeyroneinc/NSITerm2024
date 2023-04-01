@@ -1,9 +1,13 @@
 Repere;Annee;Centre;Jour;Ex1;Pts1;Ex2;Pts2;Ex3;Pts3;Correction
-23-NSIZERO-A;2023;Sujet Zéro-A;x;bases de données et types construits de données;3;architecture matérielle, réseaux et systèmes d'exploitation;3;arbres binaires de recherche et programmation objet;6;111
-23-NSIZERO-B;2023;Sujet Zéro-B;x;ligne de commande sous Linux, traitement de données en tables et bases de données;4;analyse et écriture de programmes récursifs;4;arbres binaires de recherche et notion d'objet;4;111
-23-NSIJ1ME1;2023;Métropole;J1;Langage SQL;3;Routage;3;Programmation et POO;6;111
-23-NSIJ1PO1;2023;Polynésie ;J1;langage SQL;4;Processus et P.O.O;4;POO et diviser pour régner;4;111
-23-NSIJ1G11;2023;Centres-Etrangers;J1;Langage SQL;3;Réséaux et protocoles de routages;3;Structures de Files;6;111
-23-NSIJ2ME1;2023;Métropole;J2;Réseaux et routage;3;Langage SQL;3;Arbres binaires et POO;6;111
-23-NSIJ2PO1;2023;Polynésie;J2;Arbres binaires, ABR, POO et récursivité;4;Langage SQL;4;Programmation python;4;111
-23-NSIJ2G11;2023;Centres-Etrangers;J2;Adressage Ip et routages;4;Langage SQL;4;Architecture matérille - Gestion processus et programmation;4;111
+23-NSIZERO-A;2023;Sujet Zéro-A;x;Bases de données et types construits de données;3;Architecture matérielle, Réseaux et systèmes d'exploitation;3;ABR et programmation objet;6;111
+23-NSIZERO-B;2023;Sujet Zéro-B;x;Ligne de commande sous Linux, traitement de données en tables et bases de données;4;Analyse et écriture de programmes récursifs;4;ABR et POO;4;111
+23-NSIJ1ME1;2023;Métropole;J1;SQL;3;Routage;3;Programmation et POO;6;111
+23-NSIJ1PO1;2023;Polynésie ;J1;SQL;4;Processus et POO;4;POO et diviser pour régner;4;111
+23-NSIJ1G11;2023;Centres-Etrangers;J1;SQL;3;Réséaux et protocoles de routages;3;Structures de Files;6;111
+23-NSIJ1LR1;2023;Réunion;J1;Réseaux et protocole routage;4;POO et dictionnaires;4;SQL;4;000
+23-NSIJ1LI1;2023;Liban;J1;Algorithmique et programmation;3;SQL, représentation données et réseaux;5;Piles, arbres et algorithmique;4;000
+23-NSIJ2ME1;2023;Métropole;J2;Réseaux et routage;3;SQL;3;Arbres binaires et POO;6;111
+23-NSIJ2PO1;2023;Polynésie;J2;Arbres binaires, ABR, POO et récursivité;4;SQL;4;Programmation python;4;111
+23-NSIJ2G11;2023;Centres-Etrangers;J2;Adressage IP et routages;4;SQL;4;Architecture matérille - Gestion processus et programmation;4;111
+23-NSIJ2LR1;2023;Réunion;J2;ABR, POO et récursivité;4;Réseaux et protocoles routage;4;SQL;4;000
+23-NSIJ2LI1;2023;Liban;J2;SQL;4;Réseaux, programmation python;3;Arbres et algorithmique;5;000
