@@ -227,7 +227,7 @@ Scratch, C, Python, Java, Basic, Haskell, Brainfuck... tous ces langages sont th
 L'étude de la calculabilité d'une fonction (à prendre au sens le plus large, c'est-à-dire un algorithme) ne se limite pas à un choix binaire : «calculable» vs «non calculable».  
 Parmi les fonctions calculables, certaines peuvent l'être rapidement, et d'autre beaucoup moins.
 
-On retrouve alors la notion bien connue de **complexité** algorithmique, qui permet de classifier les algorithmes suivant leur dépendance à la taille de leurs données d'entrée (voir le [cours](https://glassus.github.io/premiere_nsi/T4_Algorithmique/4.2_Complexite/cours/){. target="_blank"} de Première).
+On retrouve alors la notion bien connue de **complexité** algorithmique, qui permet de classifier les algorithmes suivant leur dépendance à la taille de leurs données d'entrée.
 
 On peut regrouper les problèmes suivant la complexité de l'algorithme qui permet de les résoudre.
 
