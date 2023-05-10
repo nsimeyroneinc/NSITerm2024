@@ -7,8 +7,8 @@
 {{ titre_chapitre(num,titre,theme,niveau)}}
 
 
-Fichier pdf disponibvle : 
-{{telecharger("Calculabilité, Décidabilité","./files/C23/calculabilite.pdf")}}
+Fichier pdf disponible : 
+{{telecharger("Calculabilité, Décidabilité","../files/C23/calculabilite.pdf")}}
 
 ## Un programme comme paramètre d'un programme
 
