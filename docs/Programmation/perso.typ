@@ -49,4 +49,4 @@
 
 #let probleme = (a,b)=>{genericFramedText("Problème : ",a,b,darkblue)}
 
-
+#let conclusion = (a)=>{genericFramedText("Conclusion","",a,red)}
