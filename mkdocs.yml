@@ -52,6 +52,7 @@ nav:
     - T4 - Prog. :
       - Programmation : Programmation/index_prog.md
       - 📓 C3 Récursivité  :  Programmation/T1_1_Recursivite.md
+      - Calculabilité, décidabilité : Programmation/calculabilite.md
       
     #   - Récursivité : Programmation/T4_1_TP_Recursivite_correction.md
 

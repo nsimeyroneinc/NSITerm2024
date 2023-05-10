@@ -98,7 +98,8 @@ def define_env(env):
         19 : ["sd","Les dictionnaires",1,"StructureDonnees/T4_2_dictionnaires.md"],
         20: ["os","Cryptographie",1,"Projet/cryptographie2.md"],
         21: ["os","Système à puces",1,"Archi_Materielle/T3_5_systeme_sur_puce.md"],
-        22: ["sd","Les Graphes",2,"Graphe/Graphe.md"]
+        22: ["sd","Les Graphes",2,"Graphe/Graphe.md"],
+        23: ["python","Calculabilité, décidabilité",2,"Programmation/calculabilite.md"]
         #23: ["sd","Les Graphes - Parcours",2,"Graphe/TD_Graphe_Parcours.md"],
         #24: ["sd","Les Graphes - Exercices",2,"Graphe/TD_Graphe_Exercices.md"]
     }
