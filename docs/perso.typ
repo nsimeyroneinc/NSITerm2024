@@ -49,4 +49,6 @@
 
 #let probleme = (a,b)=>{genericFramedText("Problème : ",a,b,darkblue)}
 
+#let conclusion = (a)=>{genericFramedText("Conclusion","",a,red)}
 
+#let note = (a,b)=>{genericFramedText("A noter",a,b,darkgreen)}
