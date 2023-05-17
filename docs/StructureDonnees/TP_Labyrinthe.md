@@ -30,7 +30,7 @@ Proposer deux «formes» possibles pour ce graphe.
 
 ## Implémentation du graphe en Python
 
-En utilisant la classe ```Graphe``` créée en cours, implémenter le graphe de ce labyrinthe.
+En utilisant une classe ```Graphe```, implémenter le graphe de ce labyrinthe.
 
 
 
