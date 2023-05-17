@@ -3,6 +3,9 @@
 !!! info "Actualités" 
     - Les graphes - TP labyrinthe
         - [TP](StructureDonnees/TP_Labyrinthe.md)  
+    - Idée projet :
+      - [Gomoku](Projet/gomoku.md)
+      - [Le problème des huit reines](Projet/reines.md)
 
 
 
