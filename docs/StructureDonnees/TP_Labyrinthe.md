@@ -121,9 +121,9 @@ En utilisant la fonction ```recherche_chemin``` du cours, établir le plus court
 
 Sur un labyrinthe un peu plus imposant, voici l'illustration de notre méthode de résolution :
 
-<center>
-<gif-player src="https://nsimeyroneinc.github.io/NSITerm/StructureDonnees/data/sol_laby.gif" speed="1" play></gif-player>
-</center>
+
+<gif-player src="data/sol_laby.gif" speed="1" play></gif-player>
+
 
 
 - le parcours en largeur part découvrir les cases dans toutes les directions.
