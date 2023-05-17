@@ -1,14 +1,11 @@
 
 
 !!! info "Actualités" 
-    - Les graphes 
-        - [Cours](Graphe/Graphe.md)  
+    - Les graphes - TP labyrinthe
+        - [TP](StructureDonnees/TP_Labyrinthe.md)  
 
 
 
-!!! note  "Epreuve BAC 2023"  
-
-    - Les épreuves pratiques seront organisées le Jeudi 30 mars 2023.
   
 ## Progression sur l'année
 
