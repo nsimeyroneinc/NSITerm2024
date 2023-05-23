@@ -232,13 +232,13 @@ markdown_extensions: # https://squidfunk.github.io/mkdocs-material/reference/abb
 
 plugins:
   #- page-to-pdf : 
-      #disable: False
-      #disableOnServe: False
-      #displayHeaderFooter: True
+  #    disable: False
+  #    disableOnServe: False
+  #    displayHeaderFooter: True
   #    printBackground: True
   #    scale : 1.0
   #    landscape : False
-      #margin: {'top': '0.75cm', 'bottom': '0.75cm', 'right': '0.5cm','left': '0.5cm'}
+  #    margin: {'top': '0.75cm', 'bottom': '0.75cm', 'right': '0.5cm','left': '0.5cm'}
   #    headerTemplate: '<header style="width:100%;heigth:45px;font-size:10px;font-weight:600;color:white;background:#A19162;margin-top:-20px;padding:10px;padding-bottom:0;-webkit-print-color-adjust: exact">
   #                     <span style="display:inline-block;vertical-align:middle;margin-top:-4px;margin-left:10px;">N.S.I : Terminale - 2022 - 2023</span>
   #                    </header>'
