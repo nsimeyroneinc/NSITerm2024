@@ -1,24 +1,10 @@
 
 
 !!! info "Actualités" 
-    - Les graphes - TP labyrinthe
-        - [TP](StructureDonnees/TP_Labyrinthe.md)  
-    - Idée projet :
-      - [Gomoku](Projet/gomoku.md)
-      - [Le problème des huit reines](Projet/reines.md)
+    - Langage SQL
 
 
 
-  
-## Progression sur l'année
-
-### Liste des chapitres 
-
-{{ affiche_progression("terminale") }}
-
-### Liste des sujets BAC
-
-{{ affiche_BAC("terminale") }}
 
 
 !!! note 
