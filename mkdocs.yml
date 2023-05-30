@@ -1,7 +1,7 @@
 # Fichier de configuration du site à personnaliser
 
 # Informations du site 
-site_name: NSI Terminale 2022-2023
+site_name: NSI Terminale 2023-2024
 site_description: Cours et TD de l'année en cours
 #site_author: "Michael Meyroneinc-condy" 
 #copyright: 2023 sous licence <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.fr" target="_blank">CC BY-NC-SA 4.0</a> 
@@ -18,7 +18,7 @@ nav:
 
     - T1 - Struct. données :
       - Structures de données : StructureDonnees/index_structDonnees.md
-      - 📓 C4 P.O.O : StructureDonnees/T1_1_Programmation_Orientee_Objet.md
+      #- 📓 C4 P.O.O : StructureDonnees/T1_1_Programmation_Orientee_Objet.md
       #- 💻 T4 POO Exercices : StructureDonnees/T1_2_TD_POO.md
       #- 💻 TD POO BAC : StructureDonnees/T1_3_BAC_Capytale.md     
       #- 📝 S4 Sujet POO BAC : StructureDonnees/POO_BAC_correction.md
