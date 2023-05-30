@@ -1,3 +1,3 @@
 # TermNSI : site
 
-adresse du site :  https://nsimeyroneinc.github.io/NSITerm/
+adresse du site :  https://nsimeyroneinc.github.io/NSITerm2024
