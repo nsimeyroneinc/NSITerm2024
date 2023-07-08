@@ -1,0 +1,2898 @@
+<!-- Ajout pour le bouton de téléchargement et le style des jupyter notebook   https://github.com/danielfrg/mkdocs-jupyter -->
+
+
+<!doctype html>
+<html lang="fr" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Cours et TD de l'année en cours">
+      
+      
+        <meta name="author" content="M.Meyroneinc-Condy">
+      
+      
+      
+      
+      <link rel="icon" href="../../images/dragon.svg">
+      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.18">
+    
+    
+      
+        <title>Projet - NSI Terminale 2023-2024</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.26e3688c.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ecc896b0.min.css">
+      
+      
+
+    
+    
+    
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rod2ik/cdn@main/mkdocs/css/massilia-admonitions.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="blue">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#projet" class="md-skip">
+          Aller au contenu
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="En-tête">
+    <a href="../.." title="NSI Terminale 2023-2024" class="md-header__button md-logo" aria-label="NSI Terminale 2023-2024" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="m352 124.5-51.9-13c-6.5-1.6-11.3-7.1-12-13.8s2.8-13.1 8.7-16.1l40.8-20.4-43.2-32.4c-5.5-4.1-7.8-11.3-5.6-17.9S297.1 0 304 0h160c30.2 0 58.7 14.2 76.8 38.4l57.6 76.8c6.2 8.3 9.6 18.4 9.6 28.8 0 26.5-21.5 48-48 48h-21.5c-17 0-33.3-6.7-45.3-18.7L480 160h-32v21.5c0 24.8 12.8 47.9 33.8 61.1l106.6 66.6c32.1 20.1 51.6 55.2 51.6 93.1 0 60.6-49.1 109.7-109.8 109.7H32.3c-3.3 0-6.6-.4-9.6-1.4-9.2-2.8-16.7-9.6-20.3-18.5C1 488.7.2 485.2 0 481.4c-.2-3.7.3-7.3 1.3-10.7 2.8-9.2 9.6-16.7 18.6-20.4 3-1.2 6.2-2 9.5-2.2L433.3 412c8.3-.7 14.7-7.7 14.7-16.1 0-4.3-1.7-8.4-4.7-11.4l-44.4-44.4c-30-30-46.9-70.7-46.9-113.1V124.5zm160-52.2v-.6.6zm-1.3 7.4-46.4-11.6c-.2 1.3-.3 2.6-.3 3.9 0 13.3 10.7 24 24 24 10.6 0 19.5-6.8 22.7-16.3zm-379.8 36.8c16.3-14.5 40.4-16.2 58.5-4.1l130.6 87V227c0 32.8 8.4 64.8 24 93H112c-6.7 0-12.7-4.2-15-10.4s-.5-13.3 4.6-17.7l69.4-59.6-152.6 23.5c-7 1.1-13.9-2.6-16.9-9S0 232.7 5.3 228l125.6-111.5z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            NSI Terminale 2023-2024
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Projet
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+          
+            
+            
+            
+            <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="blue"  aria-label="Basculer en mode sombre"  type="radio" name="__palette" id="__palette_1">
+            
+              <label class="md-header__button md-icon" title="Basculer en mode sombre" for="__palette_2" hidden>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 2.38 1.19 4.47 3 5.74V17a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-2.26c1.81-1.27 3-3.36 3-5.74a7 7 0 0 0-7-7M9 21a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-1H9v1Z"/></svg>
+              </label>
+            
+          
+            
+            
+            
+            <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="blue"  aria-label="Basculer en mode clair"  type="radio" name="__palette" id="__palette_2">
+            
+              <label class="md-header__button md-icon" title="Basculer en mode clair" for="__palette_1" hidden>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 1 7 7c0 2.38-1.19 4.47-3 5.74V17a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 0 1 7-7M9 21v-1h6v1a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1m3-17a5 5 0 0 0-5 5c0 2.05 1.23 3.81 3 4.58V16h4v-2.42c1.77-.77 3-2.53 3-4.58a5 5 0 0 0-5-5Z"/></svg>
+              </label>
+            
+          
+        </form>
+      
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Rechercher" placeholder="Rechercher" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Recherche">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Effacer" aria-label="Effacer" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initialisation de la recherche
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Onglets" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../.." class="md-tabs__link">
+      Accueil
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../StructureDonnees/index_structDonnees/" class="md-tabs__link">
+        T1 - Struct. données
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../T2_BasesDonnees/index_bd/" class="md-tabs__link">
+        T2 - Bases données
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../Archi_Materielle/index_archi/" class="md-tabs__link">
+        T3 - Archi. mat.
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../Programmation/index_prog/" class="md-tabs__link">
+        T4 - Prog.
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../Algo/index_algo/" class="md-tabs__link">
+        T5 Algo.
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../BAC/bac_explication/" class="md-tabs__link">
+        BAC 📝
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../epreuve_pratique/" class="md-tabs__link">
+        Annales E.P. 💻
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../oral/oral/" class="md-tabs__link">
+        Grand Oral
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../divers/prog/" class="md-tabs__link">
+        Extras
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../credit/" class="md-tabs__link">
+      Crédits
+    </a>
+  </li>
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="NSI Terminale 2023-2024" class="md-nav__button md-logo" aria-label="NSI Terminale 2023-2024" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="m352 124.5-51.9-13c-6.5-1.6-11.3-7.1-12-13.8s2.8-13.1 8.7-16.1l40.8-20.4-43.2-32.4c-5.5-4.1-7.8-11.3-5.6-17.9S297.1 0 304 0h160c30.2 0 58.7 14.2 76.8 38.4l57.6 76.8c6.2 8.3 9.6 18.4 9.6 28.8 0 26.5-21.5 48-48 48h-21.5c-17 0-33.3-6.7-45.3-18.7L480 160h-32v21.5c0 24.8 12.8 47.9 33.8 61.1l106.6 66.6c32.1 20.1 51.6 55.2 51.6 93.1 0 60.6-49.1 109.7-109.8 109.7H32.3c-3.3 0-6.6-.4-9.6-1.4-9.2-2.8-16.7-9.6-20.3-18.5C1 488.7.2 485.2 0 481.4c-.2-3.7.3-7.3 1.3-10.7 2.8-9.2 9.6-16.7 18.6-20.4 3-1.2 6.2-2 9.5-2.2L433.3 412c8.3-.7 14.7-7.7 14.7-16.1 0-4.3-1.7-8.4-4.7-11.4l-44.4-44.4c-30-30-46.9-70.7-46.9-113.1V124.5zm160-52.2v-.6.6zm-1.3 7.4-46.4-11.6c-.2 1.3-.3 2.6-.3 3.9 0 13.3 10.7 24 24 24 10.6 0 19.5-6.8 22.7-16.3zm-379.8 36.8c16.3-14.5 40.4-16.2 58.5-4.1l130.6 87V227c0 32.8 8.4 64.8 24 93H112c-6.7 0-12.7-4.2-15-10.4s-.5-13.3 4.6-17.7l69.4-59.6-152.6 23.5c-7 1.1-13.9-2.6-16.9-9S0 232.7 5.3 228l125.6-111.5z"/></svg>
+
+    </a>
+    NSI Terminale 2023-2024
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Accueil
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+        
+      
+      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          T1 - Struct. données
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          T1 - Struct. données
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../StructureDonnees/index_structDonnees/" class="md-nav__link">
+        Structures de données
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+        
+      
+      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+      
+      
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          T2 - Bases données
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          T2 - Bases données
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../T2_BasesDonnees/index_bd/" class="md-nav__link">
+        Base de données
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../T2_BasesDonnees/Modele_Relationnel/" class="md-nav__link">
+        📓 C1 Modèle relationnel
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+        
+      
+      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+          T3 - Archi. mat.
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          T3 - Archi. mat.
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Archi_Materielle/index_archi/" class="md-nav__link">
+        Architecture matérielle et OS
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+        
+      
+      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+          T4 - Prog.
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          T4 - Prog.
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Programmation/index_prog/" class="md-nav__link">
+        Programmation
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+        
+      
+      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+          T5 Algo.
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          T5 Algo.
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Algo/index_algo/" class="md-nav__link">
+        Algorithmique
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+        
+      
+      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+          BAC 📝
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_7">
+          <span class="md-nav__icon md-icon"></span>
+          BAC 📝
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../BAC/bac_explication/" class="md-nav__link">
+        Information
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+      
+      
+        
+      
+      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7_2" >
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_7_2" id="__nav_7_2_label" tabindex="0">
+          2023
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_7_2">
+          <span class="md-nav__icon md-icon"></span>
+          2023
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Annales/2023/EE/" class="md-nav__link">
+        Epreuves écrites
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+      
+      
+        
+      
+      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7_3" >
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_7_3" id="__nav_7_3_label" tabindex="0">
+          2022
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_3_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_7_3">
+          <span class="md-nav__icon md-icon"></span>
+          2022
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Annales/2022/EE/" class="md-nav__link">
+        Epreuves écrites
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+      
+      
+        
+      
+      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7_4" >
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_7_4" id="__nav_7_4_label" tabindex="0">
+          2021
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_4_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_7_4">
+          <span class="md-nav__icon md-icon"></span>
+          2021
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Annales/2021/EE/" class="md-nav__link">
+        Epreuves écrites
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+        
+      
+      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8" >
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+          Annales E.P. 💻
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_8">
+          <span class="md-nav__icon md-icon"></span>
+          Annales E.P. 💻
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../epreuve_pratique/" class="md-nav__link">
+        Déroulement
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../divers/Consigne_EP/" class="md-nav__link">
+        Consigne
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../divers/lien/" class="md-nav__link">
+        S'entrainer en ligne pour l'épreuve pratique
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+      
+      
+        
+      
+      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8_4" >
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_8_4" id="__nav_8_4_label" tabindex="0">
+          2023
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_4_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_8_4">
+          <span class="md-nav__icon md-icon"></span>
+          2023
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Annales/2023/EP/" class="md-nav__link">
+        Epreuves pratiques
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+        
+      
+      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_9" >
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+          Grand Oral
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_9">
+          <span class="md-nav__icon md-icon"></span>
+          Grand Oral
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../oral/oral/" class="md-nav__link">
+        Grand Oral
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+        
+      
+      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_10" >
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
+          Extras
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_10">
+          <span class="md-nav__icon md-icon"></span>
+          Extras
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../divers/prog/" class="md-nav__link">
+        Divers concours programmation
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../credit/" class="md-nav__link">
+        Crédits
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#preambule" class="md-nav__link">
+    Preambule
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#apparition-dun-personnage" class="md-nav__link">
+    Apparition d'un personnage
+  </a>
+  
+    <nav class="md-nav" aria-label="Apparition d'un personnage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#telechargement-de-limage" class="md-nav__link">
+    Téléchargement de l'image
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#importation-de-limage-dans-la-fenetre" class="md-nav__link">
+    Importation de l'image dans la fenêtre
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#affichage-de-limage" class="md-nav__link">
+    Affichage de l'image
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gestion-des-evenements" class="md-nav__link">
+    Gestion des évènements
+  </a>
+  
+    <nav class="md-nav" aria-label="Gestion des évènements">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#comment-les-capturer" class="md-nav__link">
+    Comment les capturer ?
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#evenements-clavier" class="md-nav__link">
+    Évènements clavier
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#evenements-souris" class="md-nav__link">
+    Évènements souris
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deplacement-du-personnage" class="md-nav__link">
+    Déplacement du personnage
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deplacement-absolu" class="md-nav__link">
+    Déplacement absolu
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#le-jeu-de-tennis-a-la-pong" class="md-nav__link">
+    Le jeu de tennis (à la Pong)
+  </a>
+  
+    <nav class="md-nav" aria-label="Le jeu de tennis (à la Pong)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#les-packages-utilises" class="md-nav__link">
+    Les packages utilisés
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#les-constantes-du-jeu-fichier-constantespy" class="md-nav__link">
+    Les constantes du jeu : fichier constantes.py
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#le-jeu" class="md-nav__link">
+    Le jeu
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#le-jeu-pong-en-lui-meme" class="md-nav__link">
+    Le jeu Pong en lui-même
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#snake-en-python-le-plus-simplement-possible" class="md-nav__link">
+    SNAKE en Python, le plus simplement possible
+  </a>
+  
+    <nav class="md-nav" aria-label="SNAKE en Python, le plus simplement possible">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#version-0" class="md-nav__link">
+    Version 0
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#version-1" class="md-nav__link">
+    Version 1
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#version-2" class="md-nav__link">
+    Version 2
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#version-4" class="md-nav__link">
+    Version 4
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#version-5" class="md-nav__link">
+    Version 5
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    Conclusion
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mini-tetris" class="md-nav__link">
+    Mini-Tetris
+  </a>
+  
+    <nav class="md-nav" aria-label="Mini-Tetris">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#presentation-du-code" class="md-nav__link">
+    Présentation du code
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#affichage-du-decors" class="md-nav__link">
+    Affichage du décors :
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deplacement-des-pieces" class="md-nav__link">
+    Déplacement des pièces :
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset"><a class="md-content__button md-icon" download href="pygame.pdf" title="PDF"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 10.5h1v3h-1v-3m-5 1h1v-1H7v1M20 6v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2M9.5 10.5A1.5 1.5 0 0 0 8 9H5.5v6H7v-2h1a1.5 1.5 0 0 0 1.5-1.5v-1m5 0A1.5 1.5 0 0 0 13 9h-2.5v6H13a1.5 1.5 0 0 0 1.5-1.5v-3m4-1.5h-3v6H17v-2h1.5v-1.5H17v-1h1.5V9z"></path></svg></a>
+                
+
+
+
+
+
+                  
+
+
+<h1 id="projet">Projet<a class="headerlink" href="#projet" title="Permanent link">⚓︎</a></h1>
+<p><br></p>
+<table  class="redTable">
+        <tr >
+            <th width="20%"; style="background-color: #3B444B;color:white;text-align:center;border:none;font-size:40pt;">
+            Projet
+            </th>
+            <th class="redTh"; width="80%"; style="text-align:center;border:none;font-size:25pt;">Pygame : Initiation</th>
+        </tr>
+</table>
+
+<p><img alt="" src="../data/logopygame.png" /></p>
+<h2 id="preambule">Preambule<a class="headerlink" href="#preambule" title="Permanent link">⚓︎</a></h2>
+<p>Pygame est un package de Python facilitant la création de jeux basés une interface graphique. Vous pouvez :</p>
+<ul>
+<li>l'installer sur votre distribution Python, par <code>pip3 install pygame</code>.  </li>
+<li>le tester directement via https://repl.it/, en choisissant <code>pygame</code> dans la liste des langages proposés.</li>
+</ul>
+<div class="highlight"><span class="filename">🐍 Script Python</span><pre><span></span><code><span class="kn">import</span> <span class="nn">pygame</span><span class="o">,</span> <span class="nn">sys</span>
+<span class="kn">from</span> <span class="nn">pygame.locals</span> <span class="kn">import</span> <span class="o">*</span>
+
+<span class="n">pygame</span><span class="o">.</span><span class="n">init</span><span class="p">()</span>
+
+<span class="c1">#ecran = pygame.display.set_mode((0, 0), pygame.FULLSCREEN)</span>
+<span class="n">ecran</span> <span class="o">=</span> <span class="n">pygame</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">set_mode</span><span class="p">((</span><span class="mi">640</span><span class="p">,</span> <span class="mi">480</span><span class="p">))</span>
+<span class="n">ecran</span><span class="o">.</span><span class="n">fill</span><span class="p">([</span><span class="mi">10</span><span class="p">,</span><span class="mi">186</span><span class="p">,</span><span class="mi">181</span><span class="p">])</span>
+
+<span class="n">continuer</span> <span class="o">=</span> <span class="kc">True</span>
+
+<span class="k">while</span> <span class="n">continuer</span><span class="p">:</span>
+    <span class="k">for</span> <span class="n">event</span> <span class="ow">in</span> <span class="n">pygame</span><span class="o">.</span><span class="n">event</span><span class="o">.</span><span class="n">get</span><span class="p">():</span>
+          <span class="k">if</span> <span class="n">event</span><span class="o">.</span><span class="n">type</span> <span class="o">==</span> <span class="n">KEYDOWN</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">event</span><span class="o">.</span><span class="n">key</span> <span class="o">==</span> <span class="n">K_RIGHT</span><span class="p">:</span>
+                <span class="n">continuer</span> <span class="o">=</span> <span class="kc">False</span>
+
+    <span class="n">pygame</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">flip</span><span class="p">()</span>
+
+<span class="n">pygame</span><span class="o">.</span><span class="n">quit</span><span class="p">()</span>
+</code></pre></div>
+<p><strong>Commentaires</strong></p>
+<ul>
+<li>Durant tout le code, notre scène de travail sera l'objet <code>ecran</code>, dans lequel nous viendrons coller de nouveaux éléments.   </li>
+</ul>
+<p><strong>Éléments structurants d'un code <code>pygame</code> :</strong></p>
+<ul>
+<li><code>pygame.init()</code>  effectue une initialisation globale de tous les modules <code>pygame</code> importés. À mettre au début du code.  </li>
+<li><code>while continue :</code> comme très souvent dans les jeux, la structure essentielle est une boucle infinie dont on ne sortira que par un appui sur la flèche bas où continue passe en <code>False</code>.</li>
+</ul>
+<h2 id="apparition-dun-personnage">Apparition d'un personnage<a class="headerlink" href="#apparition-dun-personnage" title="Permanent link">⚓︎</a></h2>
+<h3 id="telechargement-de-limage">Téléchargement de l'image<a class="headerlink" href="#telechargement-de-limage" title="Permanent link">⚓︎</a></h3>
+<p>Nous allons travailler avec le sprite ci-dessous, nommé <code>perso.png</code>. </p>
+<p><img alt="image" class="center" src="../data/Paragoomba.png" width="100px" /></p>
+<p><a href="https://mario.wiki.gallery/images/thumb/8/8e/ParagoombaNSMBU.png/1200px-ParagoombaNSMBU.png">Téléchargez-le</a> pour le mettre dans le même dossier que votre code <code>pygame</code>.  A redéfinir avec une bonne dimension.</p>
+<p>Vous pouvez trouver sur internet un grand nombre de sprites libres de droits, au format <code>png</code> (donc gérant la transparence), dans de multiples positions (ce qui permet de simuler des mouvements fluides). Ici nous travaillerons avec un sprite unique.</p>
+<h3 id="importation-de-limage-dans-la-fenetre">Importation de l'image dans la fenêtre<a class="headerlink" href="#importation-de-limage-dans-la-fenetre" title="Permanent link">⚓︎</a></h3>
+<p><div class="highlight"><span class="filename">🐍 Script Python</span><pre><span></span><code><span class="n">perso</span> <span class="o">=</span> <span class="n">pygame</span><span class="o">.</span><span class="n">image</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="s2">&quot;Paragoomba.png&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">convert_alpha</span><span class="p">()</span>
+</code></pre></div>
+La fonction <code>convert_alpha()</code> est appelée pour que soit correctement traité le canal de transparence (canal <em>alpha</em>) de notre image.</p>
+<h3 id="affichage-de-limage">Affichage de l'image<a class="headerlink" href="#affichage-de-limage" title="Permanent link">⚓︎</a></h3>
+<p>À ce stade, <code>perso</code> est un objet <code>pygame</code> de type <code>Surface</code> .</p>
+<p>Afin de facilement pouvoir le déplacer, nous allons stocker la position de cet objet dans une variable <code>position_perso</code>,  qui sera de type <code>rect</code>. </p>
+<p><div class="highlight"><span class="filename">🐍 Script Python</span><pre><span></span><code><span class="n">position_perso</span> <span class="o">=</span> <span class="n">perso</span><span class="o">.</span><span class="n">get_rect</span><span class="p">()</span>
+</code></pre></div>
+Pour afficher cette image, nous allons venir le superposer aux éléments graphiques déjà dessinés (en l'occurence : rien) avec l'instruction <code>blit()</code> :</p>
+<div class="highlight"><span class="filename">🐍 Script Python</span><pre><span></span><code><span class="n">fenetre</span><span class="o">.</span><span class="n">blit</span><span class="p">(</span><span class="n">perso</span><span class="p">,</span> <span class="n">position_perso</span><span class="p">)</span>
+</code></pre></div>
+<p><strong>▸ récapitulatif du code</strong></p>
+<div class="highlight"><span class="filename">🐍 Script Python</span><pre><span></span><code><span class="kn">import</span> <span class="nn">pygame</span><span class="o">,</span> <span class="nn">sys</span>
+<span class="kn">from</span> <span class="nn">pygame.locals</span> <span class="kn">import</span> <span class="o">*</span>
+
+<span class="n">pygame</span><span class="o">.</span><span class="n">init</span><span class="p">()</span>
+
+<span class="c1">#ecran = pygame.display.set_mode((0, 0), pygame.FULLSCREEN)</span>
+<span class="n">ecran</span> <span class="o">=</span> <span class="n">pygame</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">set_mode</span><span class="p">((</span><span class="mi">640</span><span class="p">,</span> <span class="mi">480</span><span class="p">))</span>
+<span class="n">ecran</span><span class="o">.</span><span class="n">fill</span><span class="p">([</span><span class="mi">10</span><span class="p">,</span><span class="mi">186</span><span class="p">,</span><span class="mi">181</span><span class="p">])</span>
+
+<span class="n">continuer</span> <span class="o">=</span> <span class="kc">True</span>
+
+<span class="n">perso</span> <span class="o">=</span> <span class="n">pygame</span><span class="o">.</span><span class="n">image</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="s2">&quot;Paragoomba1.png&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">convert_alpha</span><span class="p">()</span>
+<span class="n">position_perso</span> <span class="o">=</span> <span class="n">perso</span><span class="o">.</span><span class="n">get_rect</span><span class="p">()</span>
+
+
+
+<span class="k">while</span> <span class="n">continuer</span><span class="p">:</span>
+    <span class="n">ecran</span><span class="o">.</span><span class="n">blit</span><span class="p">(</span><span class="n">perso</span><span class="p">,</span> <span class="n">position_perso</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">event</span> <span class="ow">in</span> <span class="n">pygame</span><span class="o">.</span><span class="n">event</span><span class="o">.</span><span class="n">get</span><span class="p">():</span>
+        <span class="k">if</span> <span class="n">event</span><span class="o">.</span><span class="n">type</span> <span class="o">==</span> <span class="n">KEYDOWN</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">event</span><span class="o">.</span><span class="n">key</span> <span class="o">==</span> <span class="n">K_RIGHT</span><span class="p">:</span>
+                <span class="n">continuer</span> <span class="o">=</span> <span class="kc">False</span>
+
+    <span class="n">pygame</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">flip</span><span class="p">()</span>
+
+<span class="n">pygame</span><span class="o">.</span><span class="n">quit</span><span class="p">()</span>
+</code></pre></div>
+<h2 id="gestion-des-evenements">Gestion des évènements<a class="headerlink" href="#gestion-des-evenements" title="Permanent link">⚓︎</a></h2>
+<p>En informatique, un événement peut être une entrée clavier (soit l’appui soit le relâchement d’une touche), le déplacement de votre souris, un clic (encore une fois, appui ou relâchement, qui seront traités comme deux événements distincts). Un bouton de votre joystick peut aussi engendrer un événement, et même la fermeture de votre fenêtre est considéré comme un événement !</p>
+<p>Pour Pygame, un événement est représenté par un type et divers autres attributs que nous allons détailler dans ce chapitre.</p>
+<p>De plus, il faut savoir que chaque événement créé est envoyé sur une file (ou queue), en attendant d’être traité. Quand un événement entre dans cette queue, il est placé à la fin de celle-ci. Vous l’aurez donc compris, le premier événement transmis à Pygame sera traité en premier ! Cette notion est très importante, puisque nous allons nous en servir sous peu !</p>
+<p>Ce type de queue est dit FIFO.  </p>
+<h3 id="comment-les-capturer">Comment les capturer ?<a class="headerlink" href="#comment-les-capturer" title="Permanent link">⚓︎</a></h3>
+<p>On utilise le module event de Pygame.</p>
+<p>Voici ce que nous dit la documentation à propos de ce module :</p>
+<details class="check">
+<summary>Afficher/Masquer la documentation</summary>
+<ul>
+<li>pygame.event  </li>
+<li>pygame module for interacting with events and queues  </li>
+<li>pygame.event.pump — internally process pygame event handlers  </li>
+<li>pygame.event.get — get events from the queue  </li>
+<li>pygame.event.poll — get a single event from the queue  </li>
+<li>pygame.event.wait — wait for a single event from the queue  </li>
+<li>pygame.event.peek — test if event types are waiting on the queue  </li>
+<li>pygame.event.clear — remove all events from the queue  </li>
+<li>pygame.event.event_name — get the string name from and event id  </li>
+<li>pygame.event.set_blocked — control which events are allowed on the queue  </li>
+<li>pygame.event.set_allowed — control which events are allowed on the queue  </li>
+<li>pygame.event.get_blocked — test if a type of event is blocked from the queue  </li>
+<li>pygame.event.set_grab — control the sharing of input devices with other applications  </li>
+<li>pygame.event.get_grab — test if the program is sharing input devices  </li>
+<li>pygame.event.post — place a new event on the queue  </li>
+<li>pygame.event.Event — create a new event object  </li>
+<li>
+<p>pygame.event.EventType — pygame object for representing SDL events</p>
+</li>
+<li>
+<p><a href="http://www.pygame.org/docs/ref/event.html">event</a>  </p>
+</li>
+</ul>
+</details>
+<p>Et comme on peut le voir, le module event ne permet pas que d’intercepter des événements. Il nous permet aussi de créer des événements. Et même d’en bloquer !</p>
+<ul>
+<li>Lorsqu'un programme <code>pygame</code> est lancé, la variable interne <code>pygame.event.get()</code> reçoit en continu les évènements des périphériques gérés par le système d'exploitation.  </li>
+<li>Nous allons nous intéresser aux évènements de type <code>KEYDOWN</code> (touche de clavier appuyée) ou de type <code>MOUSEBUTTONDOWN</code> (boutons de souris appuyé).</li>
+</ul>
+<h3 id="evenements-clavier">Évènements clavier<a class="headerlink" href="#evenements-clavier" title="Permanent link">⚓︎</a></h3>
+<h4 id="exemple-de-code">Exemple de code<a class="headerlink" href="#exemple-de-code" title="Permanent link">⚓︎</a></h4>
+<p>La structure de code pour détecter l'appui sur une touche de clavier est, dans le cas de la détection de la touche «Flèche droite» :</p>
+<p><div class="highlight"><span class="filename">🐍 Script Python</span><pre><span></span><code><span class="k">for</span> <span class="n">event</span> <span class="ow">in</span> <span class="n">pygame</span><span class="o">.</span><span class="n">event</span><span class="o">.</span><span class="n">get</span><span class="p">():</span>   
+  <span class="k">if</span> <span class="n">event</span><span class="o">.</span><span class="n">type</span> <span class="o">==</span> <span class="n">KEYDOWN</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">event</span><span class="o">.</span><span class="n">key</span> <span class="o">==</span> <span class="n">K_RIGHT</span><span class="p">:</span>
+      <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;flèche droite appuyée&quot;</span><span class="p">)</span>
+</code></pre></div>
+La touche (en anglais <em>key</em>) «Flèche Droite» est appelée <code>K_RIGHT</code> par <code>pygame</code>. </p>
+<p>Le nom de toutes les touches peut être retrouvé à l'adresse <a href="https://www.pygame.org/docs/ref/key.html.">pygame ref</a></p>
+<p><strong>Remarque :</strong> c'est grâce à la ligne initiale<br />
+<div class="highlight"><span class="filename">🐍 Script Python</span><pre><span></span><code><span class="kn">from</span> <span class="nn">pygame.locals</span> <span class="kn">import</span> <span class="o">*</span>
+</code></pre></div>
+que la variable <code>K_RIGHT</code> (et toutes les autres) est reconnue.</p>
+<h4 id="probleme-de-la-remanence">Problème de la rémanence<a class="headerlink" href="#probleme-de-la-remanence" title="Permanent link">⚓︎</a></h4>
+<p>Quand une touche de clavier est appuyée, elle le reste un certain temps. Parfois volontairement (sur un intervalle long) quand l'utilisateur décide de la laisser appuyée, mais aussi involontairement (sur un intervalle très court), lors d'un appui «classique».<br />
+Il existe donc toujours un intervalle de temps pendant lequel la touche reste appuyée. Que doit faire notre programme pendant ce temps ? Deux options sont possibles :</p>
+<ul>
+<li><strong>option 1 :</strong> considérer que la touche appuyée correspond à un seul et unique évènement, quelle que soit la durée de l'appui sur la touche.</li>
+<li><strong>option 2 :</strong> considérer qu'au bout d'un certain délai, la touche encore appuyée doit déclencher un nouvel évènement.</li>
+</ul>
+<p>Par défaut,<code>pygame</code> est réglé sur l'option 1. Néanmoins, il est classique pour les jeux vidéos de vouloir que «laisser la touche appuyée» continue à faire avancer le personnage. Nous allons donc faire en sorte que toutes les 50 millisecondes, un nouvel appui soit détecté si la touche est restée enfoncée. Cela se fera par l'expression :</p>
+<div class="highlight"><span class="filename">🐍 Script Python</span><pre><span></span><code><span class="n">pygame</span><span class="o">.</span><span class="n">key</span><span class="o">.</span><span class="n">set_repeat</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
+</code></pre></div>
+<h3 id="evenements-souris">Évènements souris<a class="headerlink" href="#evenements-souris" title="Permanent link">⚓︎</a></h3>
+<h4 id="exemple-de-code_1">Exemple de code<a class="headerlink" href="#exemple-de-code_1" title="Permanent link">⚓︎</a></h4>
+<p>La structure de code pour détecter l'appui sur un bouton de la souris est, dans le cas de la détection du bouton de gauche (le bouton 1)  :</p>
+<div class="highlight"><span class="filename">🐍 Script Python</span><pre><span></span><code><span class="k">for</span> <span class="n">event</span> <span class="ow">in</span> <span class="n">pygame</span><span class="o">.</span><span class="n">event</span><span class="o">.</span><span class="n">get</span><span class="p">():</span>    
+  <span class="k">if</span> <span class="n">event</span><span class="o">.</span><span class="n">type</span> <span class="o">==</span> <span class="n">MOUSEBUTTONDOWN</span> <span class="ow">and</span> <span class="n">event</span><span class="o">.</span><span class="n">button</span> <span class="o">==</span> <span class="mi">1</span> <span class="p">:</span>
+      <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;clic gauche détecté&quot;</span><span class="p">)</span>
+</code></pre></div>
+<h4 id="recuperation-des-coordonnees-de-la-souris">Récupération des coordonnées de la souris<a class="headerlink" href="#recuperation-des-coordonnees-de-la-souris" title="Permanent link">⚓︎</a></h4>
+<p>Le tuple <code>(abscisse, ordonnée)</code> des coordonnées de la souris sera récupéré avec l'instruction <code>pygame.mouse.get_pos()</code>.</p>
+<h3 id="deplacement-du-personnage">Déplacement du personnage<a class="headerlink" href="#deplacement-du-personnage" title="Permanent link">⚓︎</a></h3>
+<p>Le déplacement d'un personnage se fera toujours par modification de ses coordonnées (et visuellement, par effacement de la dernière position).<br />
+Ce déplacement pourra être :<br />
+- absolu : on donne de nouvelles coordonnées au personnage.<br />
+- relatif : on indique de combien le personnage doit se décaler par rapport à sa position initiale.  </p>
+<h3 id="deplacement-absolu">Déplacement absolu<a class="headerlink" href="#deplacement-absolu" title="Permanent link">⚓︎</a></h3>
+<p>Pour afficher le personnage à la position <code>(100,200)</code>, on écrira :<br />
+<div class="highlight"><span class="filename">🐍 Script Python</span><pre><span></span><code><span class="n">position_perso</span><span class="o">.</span><span class="n">topleft</span> <span class="o">=</span> <span class="p">(</span><span class="mi">100</span><span class="p">,</span><span class="mi">200</span><span class="p">)</span>
+</code></pre></div></p>
+<p>où <code>position_perso</code> est l'objet de type <code>rect</code>  contenant les coordonnées.</p>
+<div class="admonition exo">
+<p class="admonition-title">Exo</p>
+<p>Coder un script pour déplacer Paragoomba à la souris (Paragoomba doit toujours suivre la souris) (<code>MOUSEMOTION</code>)</p>
+</div>
+<details class="correction">
+<summary>Correction</summary>
+<div class="highlight"><span class="filename">🐍 Script Python</span><pre><span></span><code><span class="kn">import</span> <span class="nn">pygame</span><span class="o">,</span> <span class="nn">sys</span>
+<span class="kn">from</span> <span class="nn">pygame.locals</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">random</span> <span class="kn">import</span> <span class="n">randint</span>
+
+<span class="n">pygame</span><span class="o">.</span><span class="n">init</span><span class="p">()</span>
+
+<span class="c1">#ecran = pygame.display.set_mode((0, 0), pygame.FULLSCREEN)</span>
+<span class="n">ecran</span> <span class="o">=</span> <span class="n">pygame</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">set_mode</span><span class="p">((</span><span class="mi">640</span><span class="p">,</span> <span class="mi">480</span><span class="p">))</span>
+<span class="n">ecran</span><span class="o">.</span><span class="n">fill</span><span class="p">([</span><span class="mi">10</span><span class="p">,</span><span class="mi">186</span><span class="p">,</span><span class="mi">181</span><span class="p">])</span>
+
+<span class="n">continuer</span> <span class="o">=</span> <span class="kc">True</span>
+
+<span class="n">perso</span> <span class="o">=</span> <span class="n">pygame</span><span class="o">.</span><span class="n">image</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="s2">&quot;Paragoomba1.png&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">convert_alpha</span><span class="p">()</span>
+<span class="n">position_perso</span> <span class="o">=</span> <span class="n">perso</span><span class="o">.</span><span class="n">get_rect</span><span class="p">()</span>
+<span class="n">position_perso</span><span class="o">.</span><span class="n">topleft</span> <span class="o">=</span> <span class="p">(</span><span class="mi">100</span><span class="p">,</span><span class="mi">200</span><span class="p">)</span>
+
+<span class="k">while</span> <span class="n">continuer</span><span class="p">:</span>
+  <span class="n">pygame</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">rect</span><span class="p">(</span><span class="n">ecran</span><span class="p">,</span> <span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">186</span><span class="p">,</span><span class="mi">181</span><span class="p">),</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">640</span><span class="p">,</span> <span class="mi">480</span><span class="p">))</span>
+  <span class="k">for</span> <span class="n">event</span> <span class="ow">in</span> <span class="n">pygame</span><span class="o">.</span><span class="n">event</span><span class="o">.</span><span class="n">get</span><span class="p">():</span>
+    <span class="k">if</span> <span class="n">event</span><span class="o">.</span><span class="n">type</span> <span class="o">==</span> <span class="n">pygame</span><span class="o">.</span><span class="n">MOUSEMOTION</span><span class="p">:</span>
+      <span class="n">position_perso</span> <span class="o">=</span> <span class="n">event</span><span class="o">.</span><span class="n">pos</span>
+      <span class="k">if</span> <span class="n">event</span><span class="o">.</span><span class="n">type</span> <span class="o">==</span> <span class="n">KEYDOWN</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">event</span><span class="o">.</span><span class="n">key</span> <span class="o">==</span> <span class="n">K_RIGHT</span><span class="p">:</span>
+          <span class="n">continuer</span> <span class="o">=</span> <span class="kc">False</span>
+  <span class="n">ecran</span><span class="o">.</span><span class="n">blit</span><span class="p">(</span><span class="n">perso</span><span class="p">,</span> <span class="n">position_perso</span><span class="p">)</span>
+  <span class="n">pygame</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">flip</span><span class="p">()</span>
+
+<span class="n">pygame</span><span class="o">.</span><span class="n">quit</span><span class="p">()</span>
+</code></pre></div>
+</details>
+<div class="admonition exo">
+<p class="admonition-title">Exo</p>
+</div>
+<p>Coder un script pour dessiner un rectangle sur l’écran au relâchement d’un bouton de la souris.</p>
+<details class="correction">
+<summary>Correction</summary>
+<div class="highlight"><span class="filename">🐍 Script Python</span><pre><span></span><code><span class="kn">import</span> <span class="nn">pygame</span><span class="o">,</span> <span class="nn">sys</span>
+<span class="kn">from</span> <span class="nn">pygame.locals</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">random</span> <span class="kn">import</span> <span class="n">randint</span>
+
+<span class="n">pygame</span><span class="o">.</span><span class="n">init</span><span class="p">()</span>
+
+<span class="c1">#ecran = pygame.display.set_mode((0, 0), pygame.FULLSCREEN)</span>
+<span class="n">ecran</span> <span class="o">=</span> <span class="n">pygame</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">set_mode</span><span class="p">((</span><span class="mi">640</span><span class="p">,</span> <span class="mi">480</span><span class="p">))</span>
+<span class="n">ecran</span><span class="o">.</span><span class="n">fill</span><span class="p">([</span><span class="mi">10</span><span class="p">,</span><span class="mi">186</span><span class="p">,</span><span class="mi">181</span><span class="p">])</span>
+
+<span class="n">continuer</span> <span class="o">=</span> <span class="kc">True</span>
+
+<span class="n">perso</span> <span class="o">=</span> <span class="n">pygame</span><span class="o">.</span><span class="n">image</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="s2">&quot;Paragoomba1.png&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">convert_alpha</span><span class="p">()</span>
+<span class="n">position_perso</span> <span class="o">=</span> <span class="n">perso</span><span class="o">.</span><span class="n">get_rect</span><span class="p">()</span>
+<span class="n">position_perso</span><span class="o">.</span><span class="n">topleft</span> <span class="o">=</span> <span class="p">(</span><span class="mi">100</span><span class="p">,</span><span class="mi">200</span><span class="p">)</span>
+
+<span class="n">largeur</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="n">hauteur</span> <span class="o">=</span> <span class="mi">10</span>
+<span class="n">couleur</span> <span class="o">=</span> <span class="p">(</span><span class="mi">200</span><span class="p">,</span> <span class="mi">80</span><span class="p">,</span> <span class="mi">20</span><span class="p">)</span>
+
+<span class="k">while</span> <span class="n">continuer</span><span class="p">:</span>
+  <span class="k">for</span> <span class="n">event</span> <span class="ow">in</span> <span class="n">pygame</span><span class="o">.</span><span class="n">event</span><span class="o">.</span><span class="n">get</span><span class="p">():</span>
+    <span class="k">if</span> <span class="n">event</span><span class="o">.</span><span class="n">type</span> <span class="o">==</span> <span class="n">pygame</span><span class="o">.</span><span class="n">MOUSEBUTTONUP</span><span class="p">:</span>
+      <span class="n">x</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">event</span><span class="o">.</span><span class="n">pos</span>
+      <span class="n">pygame</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">rect</span><span class="p">(</span><span class="n">ecran</span><span class="p">,</span> <span class="n">couleur</span><span class="p">,</span> <span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">largeur</span><span class="p">,</span> <span class="n">hauteur</span><span class="p">))</span>
+    <span class="k">if</span> <span class="n">event</span><span class="o">.</span><span class="n">type</span> <span class="o">==</span> <span class="n">KEYDOWN</span><span class="p">:</span>
+      <span class="k">if</span> <span class="n">event</span><span class="o">.</span><span class="n">key</span> <span class="o">==</span> <span class="n">K_RIGHT</span><span class="p">:</span>
+        <span class="n">continuer</span> <span class="o">=</span> <span class="kc">False</span>
+  <span class="n">ecran</span><span class="o">.</span><span class="n">blit</span><span class="p">(</span><span class="n">perso</span><span class="p">,</span> <span class="n">position_perso</span><span class="p">)</span>
+  <span class="n">pygame</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">flip</span><span class="p">()</span>
+</code></pre></div>
+</details>
+<h2 id="le-jeu-de-tennis-a-la-pong">Le jeu de tennis (à la Pong) <img alt="" src="../data/niveau1.png" width="25px" /><a class="headerlink" href="#le-jeu-de-tennis-a-la-pong" title="Permanent link">⚓︎</a></h2>
+<p>Pour la création du jeu de tennis, nous allons organiser notre code en plusieurs fichiers :</p>
+<ul>
+<li>un fichier tennis.py qui sera le programme principal  </li>
+<li>un fichier constantes.py qui contiendra les constantes utilisées par les autres fichiers (hauteur et largeur de fenêtre, couleurs), certaines fonctions...  </li>
+</ul>
+<h3 id="les-packages-utilises">Les packages utilisés<a class="headerlink" href="#les-packages-utilises" title="Permanent link">⚓︎</a></h3>
+<p>On commence par introduire les packages (bibliothèques) qui seront utilisées :</p>
+<div class="highlight"><span class="filename">🐍 Script Python</span><pre><span></span><code><span class="kn">import</span> <span class="nn">pygame</span>
+<span class="kn">from</span> <span class="nn">pygame.locals</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">constantes</span> <span class="kn">import</span> <span class="o">*</span>
+</code></pre></div>
+<h3 id="les-constantes-du-jeu-fichier-constantespy">Les constantes du jeu : fichier constantes.py<a class="headerlink" href="#les-constantes-du-jeu-fichier-constantespy" title="Permanent link">⚓︎</a></h3>
+<p>On définit la hauteur et la largeur de la fenêtre ainsi que l'abscisse du mur qui sera situé à droite.</p>
+<p>On définit également un jeu de couleurs.</p>
+<details class="check">
+<summary>Fichier constantes.py</summary>
+<div class="highlight"><span class="filename">🐍 Script Python</span><pre><span></span><code><span class="kn">import</span> <span class="nn">pygame</span>
+<span class="kn">from</span> <span class="nn">pygame.locals</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">constantes</span> <span class="kn">import</span> <span class="o">*</span>
+
+
+<span class="c1"># initialisation de l&#39;écran de jeu</span>
+<span class="n">pygame</span><span class="o">.</span><span class="n">init</span><span class="p">()</span>
+
+
+
+<span class="n">police</span> <span class="o">=</span> <span class="n">pygame</span><span class="o">.</span><span class="n">font</span><span class="o">.</span><span class="n">SysFont</span><span class="p">(</span><span class="s2">&quot;Arial&quot;</span><span class="p">,</span> <span class="mi">25</span><span class="p">)</span>
+<span class="n">fonte</span> <span class="o">=</span> <span class="n">pygame</span><span class="o">.</span><span class="n">font</span><span class="o">.</span><span class="n">Font</span><span class="p">(</span><span class="kc">None</span><span class="p">,</span> <span class="mi">30</span><span class="p">)</span> 
+
+
+<span class="c1"># Initialise la fenêtre de jeu</span>
+<span class="n">largeur_ecran</span> <span class="o">=</span> <span class="mi">600</span>
+<span class="n">hauteur_ecran</span> <span class="o">=</span> <span class="mi">400</span>
+
+<span class="n">screen</span> <span class="o">=</span> <span class="n">pygame</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">set_mode</span><span class="p">((</span><span class="n">largeur_ecran</span><span class="p">,</span><span class="n">hauteur_ecran</span><span class="p">))</span>
+<span class="n">pygame</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">set_caption</span><span class="p">(</span><span class="s2">&quot;Tennis&quot;</span><span class="p">)</span>
+
+<span class="c1"># variables d&#39;état</span>
+
+<span class="n">hauteur_raquette</span><span class="o">=</span><span class="mi">50</span>
+
+<span class="n">largeur_raquette</span> <span class="o">=</span><span class="mi">10</span>
+<span class="n">dist_mur</span>   <span class="o">=</span> <span class="mi">20</span>  <span class="c1"># distance du mur au bord de la raquette</span>
+
+
+<span class="n">raquette_G_x</span> <span class="o">=</span> <span class="n">dist_mur</span>
+<span class="n">raquette_G_y</span> <span class="o">=</span> <span class="mi">50</span>
+
+
+<span class="n">ball_x</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">largeur_ecran</span> <span class="o">/</span> <span class="mi">2</span><span class="p">)</span>
+<span class="n">ball_y</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">hauteur_ecran</span> <span class="o">/</span> <span class="mi">2</span><span class="p">)</span>
+<span class="n">ball_speed_x</span> <span class="o">=</span> <span class="o">-</span><span class="mi">4</span>
+<span class="n">ball_speed_y</span> <span class="o">=</span> <span class="o">-</span><span class="mi">4</span>
+<span class="n">ball_rayon</span>  <span class="o">=</span> <span class="mi">10</span>
+
+<span class="n">score</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">vie</span><span class="o">=</span><span class="mi">2</span>
+
+<span class="n">COORD_X_MUR</span> <span class="o">=</span> <span class="n">largeur_ecran</span><span class="o">-</span><span class="mi">20</span>
+
+
+<span class="c1"># Definit des couleurs RGB</span>
+<span class="n">BLACK</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span>
+<span class="n">WHITE</span> <span class="o">=</span> <span class="p">[</span><span class="mi">255</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">255</span><span class="p">]</span>
+<span class="n">GREEN</span> <span class="o">=</span> <span class="p">[</span><span class="mi">24</span><span class="p">,</span> <span class="mi">161</span><span class="p">,</span> <span class="mi">80</span><span class="p">]</span>
+<span class="n">RED</span>   <span class="o">=</span> <span class="p">[</span><span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span>
+<span class="n">BLUE</span>  <span class="o">=</span> <span class="p">[</span><span class="mi">30</span> <span class="p">,</span> <span class="mi">36</span> <span class="p">,</span> <span class="mi">161</span><span class="p">]</span>
+<span class="n">ORANGE</span> <span class="o">=</span> <span class="p">[</span><span class="mi">196</span> <span class="p">,</span> <span class="mi">92</span> <span class="p">,</span> <span class="mi">54</span><span class="p">]</span>
+
+<span class="c1">#fonctions permettant de dessiner la balle et les deux raquettes</span>
+<span class="k">def</span> <span class="nf">Raquette</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
+  <span class="n">R</span> <span class="o">=</span> <span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">largeur_raquette</span><span class="p">,</span><span class="n">hauteur_raquette</span><span class="p">)</span>
+  <span class="n">pygame</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">rect</span><span class="p">(</span><span class="n">screen</span><span class="p">,</span> <span class="n">WHITE</span><span class="p">,</span> <span class="n">R</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">Balle</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">):</span>
+  <span class="n">pygame</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">circle</span><span class="p">(</span><span class="n">screen</span><span class="p">,</span> <span class="n">WHITE</span><span class="p">,</span> <span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">),</span><span class="mi">10</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">Mur</span><span class="p">():</span>
+  <span class="n">R</span> <span class="o">=</span> <span class="p">(</span><span class="n">COORD_X_MUR</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">20</span><span class="p">,</span><span class="n">hauteur_ecran</span><span class="p">)</span>
+  <span class="n">pygame</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">rect</span><span class="p">(</span><span class="n">screen</span><span class="p">,</span> <span class="n">GREEN</span><span class="p">,</span> <span class="n">R</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+
+
+
+<span class="k">def</span> <span class="nf">touche_clavier</span><span class="p">():</span>
+  <span class="k">for</span> <span class="n">event</span> <span class="ow">in</span> <span class="n">pygame</span><span class="o">.</span><span class="n">event</span><span class="o">.</span><span class="n">get</span><span class="p">():</span>
+    <span class="k">if</span> <span class="n">event</span><span class="o">.</span><span class="n">type</span> <span class="o">==</span> <span class="n">KEYDOWN</span><span class="p">:</span>
+      <span class="c1"># Ctrl-C pour quitter le jeu</span>
+      <span class="k">if</span> <span class="n">event</span><span class="o">.</span><span class="n">key</span> <span class="o">==</span> <span class="n">pygame</span><span class="o">.</span><span class="n">K_c</span> <span class="ow">and</span> <span class="n">pygame</span><span class="o">.</span><span class="n">key</span><span class="o">.</span><span class="n">get_mods</span><span class="p">()</span> <span class="o">&amp;</span> <span class="n">pygame</span><span class="o">.</span><span class="n">KMOD_CTRL</span><span class="p">:</span>
+        <span class="n">quitter</span><span class="p">()</span>
+      <span class="c1"># retourner la touche pressée </span>
+      <span class="k">return</span> <span class="n">event</span><span class="o">.</span><span class="n">key</span>
+    <span class="c1"># sinon, ne rien retourner (valeur nulle)</span>
+    <span class="k">return</span> <span class="kc">None</span>    
+
+<span class="k">def</span> <span class="nf">attente</span><span class="p">():</span>
+  <span class="k">while</span> <span class="n">touche_clavier</span><span class="p">()</span> <span class="o">==</span> <span class="kc">None</span><span class="p">:</span>
+      <span class="n">pygame</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">update</span><span class="p">()</span>
+
+<span class="c1"># initialisation de l&#39;écran de jeu</span>
+<span class="n">pygame</span><span class="o">.</span><span class="n">init</span><span class="p">()</span>
+
+
+
+
+<span class="k">def</span> <span class="nf">affiche_texte_centre</span><span class="p">(</span><span class="n">texte</span><span class="p">,</span> <span class="n">y</span><span class="o">=-</span><span class="mi">1</span><span class="p">,</span> <span class="n">couleur</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+  <span class="k">if</span> <span class="n">couleur</span> <span class="o">==</span> <span class="kc">None</span><span class="p">:</span>
+    <span class="n">couleur</span> <span class="o">=</span> <span class="n">ORANGE</span>
+  <span class="n">rendu</span> <span class="o">=</span> <span class="n">fonte</span><span class="o">.</span><span class="n">render</span><span class="p">(</span><span class="n">texte</span><span class="p">,</span> <span class="kc">True</span><span class="p">,</span> <span class="n">couleur</span><span class="p">)</span>
+  <span class="n">rectangle</span> <span class="o">=</span> <span class="n">rendu</span><span class="o">.</span><span class="n">get_rect</span><span class="p">()</span>
+  <span class="k">if</span> <span class="n">y</span> <span class="o">==</span> <span class="o">-</span><span class="mi">1</span><span class="p">:</span>
+    <span class="n">rectangle</span><span class="o">.</span><span class="n">center</span> <span class="o">=</span> <span class="p">((</span><span class="n">largeur_ecran</span><span class="p">)</span> <span class="o">/</span> <span class="mi">2</span> <span class="p">,</span> <span class="p">(</span><span class="n">hauteur_ecran</span><span class="p">)</span> <span class="o">/</span> <span class="mi">2</span><span class="p">)</span>
+  <span class="k">else</span><span class="p">:</span>
+    <span class="n">rectangle</span><span class="o">.</span><span class="n">center</span> <span class="o">=</span> <span class="p">((</span><span class="n">largeur_ecran</span><span class="p">)</span> <span class="o">/</span> <span class="mi">2</span> <span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+  <span class="n">screen</span><span class="o">.</span><span class="n">blit</span><span class="p">(</span><span class="n">rendu</span><span class="p">,</span> <span class="n">rectangle</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">affiche_texte</span><span class="p">(</span><span class="n">texte</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">couleur</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+  <span class="k">if</span> <span class="n">couleur</span> <span class="o">==</span> <span class="kc">None</span><span class="p">:</span>
+    <span class="n">couleur</span> <span class="o">=</span> <span class="n">WHITE</span>
+  <span class="n">rendu</span> <span class="o">=</span> <span class="n">fonte</span><span class="o">.</span><span class="n">render</span><span class="p">(</span><span class="n">texte</span><span class="p">,</span> <span class="kc">True</span><span class="p">,</span> <span class="n">couleur</span><span class="p">)</span>
+  <span class="n">rectangle</span> <span class="o">=</span> <span class="n">rendu</span><span class="o">.</span><span class="n">get_rect</span><span class="p">()</span>
+  <span class="n">rectangle</span><span class="o">.</span><span class="n">center</span> <span class="o">=</span> <span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+  <span class="n">screen</span><span class="o">.</span><span class="n">blit</span><span class="p">(</span><span class="n">rendu</span><span class="p">,</span> <span class="n">rectangle</span><span class="p">)</span>
+</code></pre></div>
+</details>
+<h3 id="le-jeu">Le jeu<a class="headerlink" href="#le-jeu" title="Permanent link">⚓︎</a></h3>
+<p>On crée la fenêtre de jeu, on utilise la fonte courante et on charge les sons qui seront utilisé pour le jeu :</p>
+<ul>
+<li>la musique d'ambiance music.mp3  </li>
+<li>et le bruit de verre brisé glass_break.wav qui indique la fin du jeu  </li>
+</ul>
+<p>Le jeu se compose de trois parties :</p>
+<ul>
+<li>l'écran d'accueil qui indique quelles sont les touches pour jouer  </li>
+<li>le jeu de tennis  </li>
+<li>la fin de partie qui affiche le score obtenu par le joueur  </li>
+</ul>
+<details class="check">
+<summary>tennis.py</summary>
+<div class="highlight"><span class="filename">🐍 Script Python</span><pre><span></span><code><span class="kn">import</span> <span class="nn">pygame</span>
+<span class="kn">from</span> <span class="nn">pygame.locals</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">constantes</span> <span class="kn">import</span> <span class="o">*</span>
+
+
+
+
+
+
+
+
+<span class="c1"># Gestion du rafraichissement de l&#39;écran</span>
+<span class="n">clock</span> <span class="o">=</span> <span class="n">pygame</span><span class="o">.</span><span class="n">time</span><span class="o">.</span><span class="n">Clock</span><span class="p">()</span>
+
+<span class="c1"># Cache le pointeur de la souris</span>
+<span class="n">pygame</span><span class="o">.</span><span class="n">mouse</span><span class="o">.</span><span class="n">set_visible</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+
+
+
+
+<span class="c1">###########################################################</span>
+<span class="c1"># écran d&#39;accueil</span>
+<span class="c1">###########################################################</span>
+<span class="n">screen</span><span class="o">.</span><span class="n">fill</span><span class="p">(</span><span class="n">BLACK</span><span class="p">)</span>
+<span class="n">affiche_texte_centre</span><span class="p">(</span><span class="s2">&quot;Appuyez sur une touche pour commencer&quot;</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
+<span class="n">affiche_texte_centre</span><span class="p">(</span><span class="s2">&quot;Flèche haut pour faire monter la raquette&quot;</span><span class="p">,</span> <span class="mi">140</span><span class="p">)</span>
+<span class="n">affiche_texte_centre</span><span class="p">(</span><span class="s2">&quot;Flèche bas pour faire descendre la raquette&quot;</span><span class="p">,</span> <span class="mi">170</span><span class="p">)</span>
+
+<span class="n">attente</span><span class="p">()</span>
+
+<span class="c1"># Le jeu continue tant que l&#39;utilisateur ne ferme pas la fenêtre</span>
+<span class="n">Termine</span> <span class="o">=</span> <span class="kc">False</span>
+
+<span class="c1"># Boucle principale de jeu</span>
+<span class="k">while</span> <span class="ow">not</span> <span class="n">Termine</span><span class="p">:</span>
+  <span class="c1"># recupère la liste des évènements du joueur</span>
+  <span class="n">event</span> <span class="o">=</span> <span class="n">pygame</span><span class="o">.</span><span class="n">event</span><span class="o">.</span><span class="n">Event</span><span class="p">(</span><span class="n">pygame</span><span class="o">.</span><span class="n">USEREVENT</span><span class="p">)</span>
+
+  <span class="c1"># dessine le mur de droite</span>
+
+  <span class="c1"># EVENEMENTS</span>
+  <span class="c1"># détecte le clic sur le bouton close de la fenêtrepygame.Rect</span>
+  <span class="k">for</span> <span class="n">event</span> <span class="ow">in</span> <span class="n">pygame</span><span class="o">.</span><span class="n">event</span><span class="o">.</span><span class="n">get</span><span class="p">():</span>
+      <span class="k">if</span> <span class="n">event</span><span class="o">.</span><span class="n">type</span> <span class="o">==</span> <span class="n">pygame</span><span class="o">.</span><span class="n">QUIT</span><span class="p">:</span>
+        <span class="n">Termine</span> <span class="o">=</span> <span class="kc">True</span>
+
+  <span class="c1"># récupère la liste des touches claviers appuyeées sous la forme d&#39;une liste de booléens</span>
+  <span class="n">KeysPressed</span> <span class="o">=</span> <span class="n">pygame</span><span class="o">.</span><span class="n">key</span><span class="o">.</span><span class="n">get_pressed</span><span class="p">()</span>
+
+  <span class="c1"># LOGIQUE</span>
+  <span class="c1"># déplacement du palet gauche</span>
+
+  <span class="k">if</span> <span class="n">KeysPressed</span><span class="p">[</span><span class="n">pygame</span><span class="o">.</span><span class="n">K_UP</span><span class="p">]:</span>
+      <span class="n">raquette_G_y</span> <span class="o">-=</span> <span class="mi">3</span>
+
+  <span class="k">if</span> <span class="n">KeysPressed</span><span class="p">[</span><span class="n">pygame</span><span class="o">.</span><span class="n">K_DOWN</span><span class="p">]:</span>
+      <span class="n">raquette_G_y</span> <span class="o">+=</span> <span class="mi">3</span>
+
+
+  <span class="k">if</span> <span class="n">raquette_G_y</span> <span class="o">&lt;</span> <span class="mi">0</span> <span class="p">:</span>
+      <span class="n">raquette_G_y</span> <span class="o">=</span> <span class="mi">0</span>
+
+
+  <span class="k">if</span> <span class="n">raquette_G_y</span> <span class="o">&gt;</span> <span class="n">hauteur_ecran</span> <span class="o">-</span> <span class="n">hauteur_raquette</span> <span class="p">:</span>
+      <span class="n">raquette_G_y</span> <span class="o">=</span> <span class="n">hauteur_ecran</span> <span class="o">-</span> <span class="n">hauteur_raquette</span>
+
+  <span class="c1"># Déplacement de la balle</span>
+  <span class="n">ball_x</span> <span class="o">+=</span> <span class="n">ball_speed_x</span>
+  <span class="n">ball_y</span> <span class="o">+=</span> <span class="n">ball_speed_y</span>
+
+  <span class="k">if</span> <span class="n">ball_y</span> <span class="o">&lt;</span> <span class="n">ball_rayon</span> <span class="ow">or</span> <span class="n">ball_y</span> <span class="o">&gt;</span> <span class="n">hauteur_ecran</span> <span class="o">-</span> <span class="n">ball_rayon</span> <span class="p">:</span>
+      <span class="n">ball_speed_y</span> <span class="o">*=</span> <span class="o">-</span><span class="mi">1</span>
+
+  <span class="c1"># collision entre la balle et le palet de gauche</span>
+  <span class="k">if</span> <span class="n">ball_x</span>  <span class="o">&lt;</span>  <span class="n">dist_mur</span> <span class="o">+</span> <span class="n">largeur_raquette</span> <span class="o">+</span> <span class="n">ball_rayon</span> <span class="p">:</span>
+      <span class="k">if</span> <span class="n">ball_y</span> <span class="o">&gt;</span> <span class="n">raquette_G_y</span>  <span class="ow">and</span>  <span class="n">ball_y</span>  <span class="o">&lt;</span>  <span class="n">raquette_G_y</span> <span class="o">+</span> <span class="n">hauteur_raquette</span> <span class="p">:</span>
+          <span class="n">ball_speed_x</span> <span class="o">*=</span> <span class="o">-</span><span class="mi">1</span>
+          <span class="n">score</span><span class="o">+=</span><span class="mi">1</span>
+
+
+
+  <span class="c1"># collision avec les murs gauche et droit</span>
+  <span class="k">if</span> <span class="n">ball_x</span> <span class="o">&lt;</span> <span class="n">ball_rayon</span> <span class="p">:</span>
+      <span class="n">ball_x</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">largeur_ecran</span> <span class="o">/</span> <span class="mi">2</span><span class="p">)</span>
+      <span class="n">ball_y</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">hauteur_ecran</span> <span class="o">/</span> <span class="mi">2</span><span class="p">)</span>
+      <span class="n">vie</span><span class="o">-=</span><span class="mi">1</span>
+
+
+  <span class="k">if</span> <span class="n">ball_x</span> <span class="o">&gt;</span> <span class="n">largeur_ecran</span> <span class="o">-</span> <span class="n">ball_rayon</span> <span class="p">:</span>
+      <span class="n">ball_speed_x</span> <span class="o">*=</span> <span class="o">-</span><span class="mi">1</span>
+
+
+
+  <span class="c1"># AFFICHAGE</span>
+  <span class="c1"># Dessine le fond</span>
+  <span class="n">screen</span><span class="o">.</span><span class="n">fill</span><span class="p">(</span><span class="n">BLACK</span><span class="p">)</span>
+  <span class="n">Mur</span><span class="p">()</span>
+  <span class="n">Raquette</span><span class="p">(</span><span class="n">raquette_G_x</span><span class="p">,</span> <span class="n">raquette_G_y</span><span class="p">)</span>
+
+  <span class="n">Balle</span><span class="p">(</span><span class="n">ball_x</span><span class="p">,</span><span class="n">ball_y</span><span class="p">)</span>
+
+  <span class="c1">#  dessine le texte dans une zone de rendu à part</span>
+  <span class="n">texte</span> <span class="o">=</span> <span class="s2">&quot;Votre score : &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">score</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot; Vie : &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">vie</span><span class="p">)</span>
+  <span class="k">if</span> <span class="n">score</span> <span class="o">==</span> <span class="mi">15</span> <span class="p">:</span>
+      <span class="n">texte</span> <span class="o">=</span> <span class="s2">&quot;Joueur GAGNANT&quot;</span>
+      <span class="n">Termine</span><span class="o">=</span><span class="kc">True</span>
+  <span class="k">if</span> <span class="n">vie</span><span class="o">&lt;=</span><span class="mi">0</span><span class="p">:</span>
+      <span class="n">texte</span> <span class="o">=</span> <span class="s1">&#39;PERDU&#39;</span> 
+      <span class="n">Termine</span><span class="o">=</span><span class="kc">True</span>
+
+
+  <span class="n">zone</span> <span class="o">=</span> <span class="n">police</span><span class="o">.</span><span class="n">render</span><span class="p">(</span> <span class="n">texte</span><span class="p">,</span> <span class="kc">True</span><span class="p">,</span> <span class="n">GREEN</span><span class="p">)</span>
+  <span class="c1"># affiche la zone de rendu au dessus de fenetre de jeu</span>
+  <span class="n">screen</span><span class="o">.</span><span class="n">blit</span><span class="p">(</span><span class="n">zone</span><span class="p">,(</span><span class="mi">280</span><span class="p">,</span><span class="mi">10</span><span class="p">))</span>
+
+
+
+  <span class="c1"># Bascule l&#39;image dessinée à l&#39;écran</span>
+  <span class="n">pygame</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">flip</span><span class="p">()</span>
+
+    <span class="c1"># Demande à pygame de se caler sur 30 FPS</span>
+  <span class="n">clock</span><span class="o">.</span><span class="n">tick</span><span class="p">(</span><span class="mi">30</span><span class="p">)</span>
+
+<span class="n">screen</span><span class="o">.</span><span class="n">fill</span><span class="p">(</span> <span class="s1">&#39;black&#39;</span><span class="p">)</span>
+<span class="n">texte</span> <span class="o">=</span> <span class="s2">&quot;Votre score est de </span><span class="si">{}</span><span class="s2"> points&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">score</span><span class="p">)</span>
+<span class="n">affiche_texte_centre</span><span class="p">(</span><span class="n">texte</span><span class="p">,</span><span class="mi">150</span><span class="p">)</span>
+<span class="n">affiche_texte_centre</span><span class="p">(</span><span class="s2">&quot;Appuyez sur une touche pour terminer&quot;</span><span class="p">,</span> <span class="mi">200</span><span class="p">)</span>
+<span class="n">attente</span><span class="p">()</span>
+
+<span class="c1"># Ferme la fenêtre</span>
+<span class="k">del</span><span class="p">(</span><span class="n">police</span><span class="p">)</span>
+<span class="n">pygame</span><span class="o">.</span><span class="n">quit</span><span class="p">()</span>
+</code></pre></div>
+</details>
+<h3 id="le-jeu-pong-en-lui-meme">Le jeu Pong en lui-même<a class="headerlink" href="#le-jeu-pong-en-lui-meme" title="Permanent link">⚓︎</a></h3>
+<div class="admonition exo">
+<p class="admonition-title">A vous</p>
+</div>
+<p>Faites votre propre jeu avec une deuxième raquette, meilleur gestion des rebonds, changement de vitesses....</p>
+<h2 id="snake-en-python-le-plus-simplement-possible">SNAKE en Python, le plus simplement possible <img alt="" src="../data/niveau2.png" width="25px" /><a class="headerlink" href="#snake-en-python-le-plus-simplement-possible" title="Permanent link">⚓︎</a></h2>
+<h3 id="version-0">Version 0<a class="headerlink" href="#version-0" title="Permanent link">⚓︎</a></h3>
+<h4 id="pygame">Pygame<a class="headerlink" href="#pygame" title="Permanent link">⚓︎</a></h4>
+<p>On importe pygame avec :</p>
+<div class="highlight"><span class="filename">🐍 Script Python</span><pre><span></span><code><span class="kn">import</span> <span class="nn">pygame</span>
+<span class="kn">from</span> <span class="nn">pygame.locals</span> <span class="kn">import</span> <span class="o">*</span>
+</code></pre></div>
+<p>Le second import sert à quitter le jeu propremement.</p>
+<h4 id="constantes">Constantes<a class="headerlink" href="#constantes" title="Permanent link">⚓︎</a></h4>
+<p>On crée quelques constantes :</p>
+<div class="highlight"><span class="filename">🐍 Script Python</span><pre><span></span><code><span class="n">HAUTEUR</span> <span class="o">=</span> <span class="mi">600</span>  <span class="c1"># hauteur de la fenetre</span>
+<span class="n">LARGEUR</span> <span class="o">=</span> <span class="mi">600</span>  <span class="c1"># largeur de la fenetre</span>
+<span class="n">BLOC</span> <span class="o">=</span> <span class="mi">20</span>
+
+<span class="c1"># Les couleurs utilisées</span>
+<span class="n">NOIR</span> <span class="o">=</span> <span class="p">(</span><span class="o">...</span><span class="p">,</span> <span class="o">...</span><span class="p">,</span> <span class="o">...</span><span class="p">)</span>  <span class="c1"># fond</span>
+<span class="n">ROUGE</span> <span class="o">=</span> <span class="p">(</span><span class="o">...</span><span class="p">,</span> <span class="o">...</span><span class="p">,</span> <span class="o">...</span><span class="p">)</span> <span class="c1"># pomme</span>
+<span class="n">JAUNE</span> <span class="o">=</span> <span class="p">(</span><span class="o">...</span><span class="p">,</span> <span class="o">...</span><span class="p">,</span> <span class="o">...</span><span class="p">)</span>  <span class="c1"># tête</span>
+<span class="n">VERT</span> <span class="o">=</span> <span class="p">(</span><span class="o">...</span><span class="p">,</span> <span class="o">...</span><span class="p">,</span> <span class="o">...</span><span class="p">)</span>  <span class="c1"># corps</span>
+<span class="n">CYAN</span> <span class="o">=</span> <span class="p">(</span><span class="o">...</span><span class="p">,</span> <span class="o">...</span><span class="p">,</span> <span class="o">...</span><span class="p">)</span>  <span class="c1"># texte</span>
+
+<span class="n">FPS</span> <span class="o">=</span> <span class="mi">30</span>
+</code></pre></div>
+<h4 id="initialisation">initialisation<a class="headerlink" href="#initialisation" title="Permanent link">⚓︎</a></h4>
+<p>On initialise le jeu :</p>
+<div class="highlight"><span class="filename">🐍 Script Python</span><pre><span></span><code><span class="n">pygame</span><span class="o">.</span><span class="n">init</span><span class="p">()</span>
+<span class="n">horloge</span> <span class="o">=</span> <span class="n">pygame</span><span class="o">.</span><span class="n">time</span><span class="o">.</span><span class="n">Clock</span><span class="p">()</span>
+<span class="n">fenetre</span> <span class="o">=</span> <span class="n">pygame</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">set_mode</span><span class="p">((</span><span class="n">LARGEUR</span><span class="p">,</span> <span class="n">HAUTEUR</span><span class="p">))</span>
+<span class="n">pygame</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">set_caption</span><span class="p">(</span><span class="s1">&#39;Snake&#39;</span><span class="p">)</span>
+
+<span class="n">pygame</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">update</span><span class="p">()</span>
+</code></pre></div>
+<h4 id="boucle-infinie">Boucle Infinie<a class="headerlink" href="#boucle-infinie" title="Permanent link">⚓︎</a></h4>
+<p>Tous les jeux comportent une boucle infinie. Celle-ci ne contient pas grand chose :</p>
+<ul>
+<li>quitter le jeu,  </li>
+<li>remplir la fenêtre de noir  </li>
+<li>faire avancer l'horloge  </li>
+<li>mettre à jour les affichages  </li>
+</ul>
+<h4 id="boucle-infinie_1">Boucle infinie<a class="headerlink" href="#boucle-infinie_1" title="Permanent link">⚓︎</a></h4>
+<div class="highlight"><span class="filename">🐍 Script Python</span><pre><span></span><code><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+    <span class="k">for</span> <span class="n">event</span> <span class="ow">in</span> <span class="n">pygame</span><span class="o">.</span><span class="n">event</span><span class="o">.</span><span class="n">get</span><span class="p">():</span>
+        <span class="k">if</span> <span class="n">event</span><span class="o">.</span><span class="n">type</span> <span class="o">==</span> <span class="n">QUIT</span><span class="p">:</span>
+            <span class="n">pygame</span><span class="o">.</span><span class="n">quit</span><span class="p">()</span>
+        <span class="k">if</span> <span class="n">event</span><span class="o">.</span><span class="n">type</span> <span class="o">==</span> <span class="n">KEYDOWN</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">event</span><span class="o">.</span><span class="n">key</span> <span class="o">==</span> <span class="n">K_ESCAPE</span><span class="p">:</span>
+                <span class="n">pygame</span><span class="o">.</span><span class="n">quit</span><span class="p">()</span>
+    <span class="n">fenetre</span><span class="o">.</span><span class="n">fill</span><span class="p">(</span><span class="n">NOIR</span><span class="p">)</span>
+    <span class="n">horloge</span><span class="o">.</span><span class="n">tick</span><span class="p">(</span><span class="n">FPS</span><span class="p">)</span>
+    <span class="n">pygame</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">update</span><span class="p">()</span>
+</code></pre></div>
+<h4 id="boucle-infinie_2">Boucle infinie<a class="headerlink" href="#boucle-infinie_2" title="Permanent link">⚓︎</a></h4>
+<ul>
+<li>
+<p>La boucle <code>for event in...</code> permet de récupérer les événements "cliquer sur la croix" ou "appuyer sur Escape" et quitte le jeu dans ce cas.</p>
+</li>
+<li>
+<p>Ensuite on dessine la fenêtre, remplie de noir</p>
+</li>
+<li>On fait avancer l'horloge</li>
+<li>On affiche tout ça</li>
+</ul>
+<h3 id="version-1">Version 1<a class="headerlink" href="#version-1" title="Permanent link">⚓︎</a></h3>
+<h4 id="ecrire-du-texte">Ecrire du texte<a class="headerlink" href="#ecrire-du-texte" title="Permanent link">⚓︎</a></h4>
+<p>Cette fonction nous permettra d'écrire facilement le score</p>
+<div class="highlight"><span class="filename">🐍 Script Python</span><pre><span></span><code><span class="k">def</span> <span class="nf">drawText</span><span class="p">(</span><span class="n">text</span><span class="p">,</span> <span class="n">font</span><span class="p">,</span> <span class="n">surface</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
+    <span class="n">textobj</span> <span class="o">=</span> <span class="n">font</span><span class="o">.</span><span class="n">render</span><span class="p">(</span><span class="n">text</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">CYAN</span><span class="p">)</span>
+    <span class="n">textrect</span> <span class="o">=</span> <span class="n">textobj</span><span class="o">.</span><span class="n">get_rect</span><span class="p">()</span>
+    <span class="n">textrect</span><span class="o">.</span><span class="n">topleft</span> <span class="o">=</span> <span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+    <span class="n">surface</span><span class="o">.</span><span class="n">blit</span><span class="p">(</span><span class="n">textobj</span><span class="p">,</span> <span class="n">textrect</span><span class="p">)</span>
+</code></pre></div>
+<h4 id="taille-de-la-police-valeur-du-score">Taille de la police, valeur du score<a class="headerlink" href="#taille-de-la-police-valeur-du-score" title="Permanent link">⚓︎</a></h4>
+<div class="highlight"><span class="filename">🐍 Script Python</span><pre><span></span><code><span class="n">font</span> <span class="o">=</span> <span class="n">pygame</span><span class="o">.</span><span class="n">font</span><span class="o">.</span><span class="n">SysFont</span><span class="p">(</span><span class="kc">None</span><span class="p">,</span> <span class="mi">48</span><span class="p">)</span>
+</code></pre></div>
+<p>et</p>
+<div class="highlight"><span class="filename">🐍 Script Python</span><pre><span></span><code><span class="n">score</span> <span class="o">=</span> <span class="mi">0</span>
+</code></pre></div>
+<h4 id="le-serpent">Le serpent<a class="headerlink" href="#le-serpent" title="Permanent link">⚓︎</a></h4>
+<p>Le serpent est une double liste</p>
+<div class="highlight"><span class="filename">🐍 Script Python</span><pre><span></span><code><span class="n">snake</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">]]</span>
+</code></pre></div>
+<p>Le premier élément est sa tête, elle est en <code>[3,3]</code> ensuite vient son
+corps. Il commence donc avec une taille de 3.</p>
+<h4 id="dessiner-le-serpent">Dessiner le serpent<a class="headerlink" href="#dessiner-le-serpent" title="Permanent link">⚓︎</a></h4>
+<p>Dans la boucle infinie, avant l'horloge :</p>
+<div class="highlight"><span class="filename">🐍 Script Python</span><pre><span></span><code>  <span class="k">for</span> <span class="n">elt</span> <span class="ow">in</span> <span class="n">snake</span><span class="p">[</span><span class="mi">1</span><span class="p">:]:</span>
+      <span class="n">pygame</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">rect</span><span class="p">(</span><span class="n">fenetre</span><span class="p">,</span> <span class="n">VERT</span><span class="p">,</span> <span class="p">(</span><span class="n">elt</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="n">BLOC</span><span class="p">,</span> <span class="n">elt</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">*</span> <span class="n">BLOC</span><span class="p">,</span>  <span class="n">BLOC</span><span class="p">,</span> <span class="n">BLOC</span><span class="p">))</span>
+  <span class="n">pygame</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">rect</span><span class="p">(</span><span class="n">fenetre</span><span class="p">,</span> <span class="n">JAUNE</span><span class="p">,</span> <span class="p">(</span><span class="n">snake</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="n">BLOC</span><span class="p">,</span> <span class="n">snake</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">*</span> <span class="n">BLOC</span><span class="p">,</span> <span class="n">BLOC</span><span class="p">,</span> <span class="n">BLOC</span><span class="p">))</span>
+</code></pre></div>
+<p>Le corps est vert et la tête jaune.</p>
+<h4 id="afficher-le-score">Afficher le score<a class="headerlink" href="#afficher-le-score" title="Permanent link">⚓︎</a></h4>
+<p>On utilise notre fonction crée plus tôt :</p>
+<div class="highlight"><span class="filename">🐍 Script Python</span><pre><span></span><code><span class="n">drawText</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">score</span><span class="p">),</span> <span class="n">font</span><span class="p">,</span> <span class="n">fenetre</span><span class="p">,</span> <span class="mf">0.2</span><span class="o">*</span><span class="n">LARGEUR</span><span class="p">,</span> <span class="mf">0.2</span><span class="o">*</span><span class="n">HAUTEUR</span><span class="p">)</span>
+</code></pre></div>
+<h3 id="version-2">Version 2<a class="headerlink" href="#version-2" title="Permanent link">⚓︎</a></h3>
+<p>On ne capturait que "Escape" et le clic sur la croix. On ajoute les flêches.</p>
+<h4 id="capturer-les-touches-du-jeu">Capturer les touches du jeu<a class="headerlink" href="#capturer-les-touches-du-jeu" title="Permanent link">⚓︎</a></h4>
+<h4 id="diminuer-la-vitesse-de-rafaichissement">Diminuer la vitesse de rafaîchissement<a class="headerlink" href="#diminuer-la-vitesse-de-rafaichissement" title="Permanent link">⚓︎</a></h4>
+<div class="highlight"><span class="filename">🐍 Script Python</span><pre><span></span><code><span class="n">FPS</span> <span class="o">=</span> <span class="mi">5</span>
+</code></pre></div>
+<h4 id="deplacer-le-serpent">Déplacer le serpent<a class="headerlink" href="#deplacer-le-serpent" title="Permanent link">⚓︎</a></h4>
+<p>On commence par créer une direction (= la vitesse) en dehors de la boucle infinie</p>
+<div class="highlight"><span class="filename">🐍 Script Python</span><pre><span></span><code><span class="n">direction</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+</code></pre></div>
+<h4 id="deplacer-le-serpent_1">Déplacer le serpent<a class="headerlink" href="#deplacer-le-serpent_1" title="Permanent link">⚓︎</a></h4>
+<p>Chaque pression d'une flêche change la direction :</p>
+<div class="highlight"><span class="filename">🐍 Script Python</span><pre><span></span><code>    <span class="n">key</span> <span class="o">=</span> <span class="n">pygame</span><span class="o">.</span><span class="n">key</span><span class="o">.</span><span class="n">get_pressed</span><span class="p">()</span>
+    <span class="k">if</span> <span class="n">key</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">key</span><span class="p">[</span><span class="n">pygame</span><span class="o">.</span><span class="n">K_UP</span><span class="p">]:</span>
+            <span class="n">direction</span> <span class="o">=</span> <span class="p">(</span><span class="o">...</span><span class="p">,</span> <span class="o">...</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">key</span><span class="p">[</span><span class="n">pygame</span><span class="o">.</span><span class="n">K_DOWN</span><span class="p">]:</span>
+            <span class="n">direction</span> <span class="o">=</span> <span class="p">(</span><span class="o">...</span><span class="p">,</span> <span class="o">...</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">key</span><span class="p">[</span><span class="n">pygame</span><span class="o">.</span><span class="n">K_LEFT</span><span class="p">]:</span>
+            <span class="n">direction</span> <span class="o">=</span> <span class="p">(</span><span class="o">...</span><span class="p">,</span> <span class="o">...</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">key</span><span class="p">[</span><span class="n">pygame</span><span class="o">.</span><span class="n">K_RIGHT</span><span class="p">]:</span>
+            <span class="n">direction</span> <span class="o">=</span> <span class="p">(</span><span class="o">...</span><span class="p">,</span> <span class="o">...</span><span class="p">)</span>
+</code></pre></div>
+<h4 id="deplacer-le-serpent_2">Déplacer le serpent<a class="headerlink" href="#deplacer-le-serpent_2" title="Permanent link">⚓︎</a></h4>
+<p>Ensuite la tête.</p>
+<p>C'est l'ancienne tête, qui s'est déplacée :</p>
+<div class="highlight"><span class="filename">🐍 Script Python</span><pre><span></span><code>  <span class="n">head</span> <span class="o">=</span> <span class="p">[</span><span class="n">snake</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="n">direction</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">snake</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">direction</span><span class="p">[</span><span class="mi">1</span><span class="p">]]</span>
+</code></pre></div>
+<h4 id="deplacer-le-serpent_3">Déplacer le serpent<a class="headerlink" href="#deplacer-le-serpent_3" title="Permanent link">⚓︎</a></h4>
+<p>Le corps se déplace.</p>
+<ol>
+<li>On ajoute la tête au début :</li>
+</ol>
+<details class="correction">
+<summary>Correction</summary>
+<div class="highlight"><span class="filename">🐍 Script Python</span><pre><span></span><code>  <span class="n">snake</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">head</span><span class="p">)</span>
+</code></pre></div>
+</details>
+<ol>
+<li>On perd un élément de fin :</li>
+</ol>
+<details class="correction">
+<summary>Correction</summary>
+<div class="highlight"><span class="filename">🐍 Script Python</span><pre><span></span><code>  <span class="n">snake</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+</code></pre></div>
+</details>
+<h3 id="version-4">Version 4<a class="headerlink" href="#version-4" title="Permanent link">⚓︎</a></h3>
+<h4 id="la-mort-du-serpent">La mort du serpent<a class="headerlink" href="#la-mort-du-serpent" title="Permanent link">⚓︎</a></h4>
+<p>Il meurt :</p>
+<ul>
+<li>s'il quitte l'écran  </li>
+<li>si sa tête est dans son corps  </li>
+</ul>
+<h4 id="la-mort-du-serpent_1">La mort du serpent<a class="headerlink" href="#la-mort-du-serpent_1" title="Permanent link">⚓︎</a></h4>
+<details class="correction">
+<summary>Correction</summary>
+<div class="highlight"><span class="filename">🐍 Script Python</span><pre><span></span><code>  <span class="k">if</span> <span class="n">head</span> <span class="ow">in</span> <span class="n">snake</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span> <span class="ow">or</span> <span class="n">head</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">&lt;</span> <span class="mi">0</span> <span class="ow">or</span> <span class="n">head</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">LARGEUR</span> <span class="o">/</span> <span class="n">BLOC</span> <span class="o">-</span> <span class="mi">1</span> <span class="ow">or</span> <span class="n">head</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">&lt;</span> <span class="mi">0</span> <span class="ow">or</span> <span class="n">head</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">HAUTEUR</span> <span class="o">/</span> <span class="n">BLOC</span> <span class="o">-</span> <span class="mi">1</span><span class="p">:</span>
+   <span class="n">pygame</span><span class="o">.</span><span class="n">quit</span><span class="p">()</span>
+</code></pre></div>
+</details>
+<h3 id="version-5">Version 5<a class="headerlink" href="#version-5" title="Permanent link">⚓︎</a></h3>
+<h4 id="fluidite">Fluidité<a class="headerlink" href="#fluidite" title="Permanent link">⚓︎</a></h4>
+<p>Le jeu n'est pas fluide.</p>
+<p>On va mettre à jour les éléments du jeux toutes les 1.5 secondes et afficher 30 frames par secondes.</p>
+<p>Il nous faut deux variables supplémentaires :</p>
+<ol>
+<li>Une valeur pour décider quand mettre à jour  </li>
+<li>Un compteur  </li>
+</ol>
+<h4 id="fluidite_1">Fluidité<a class="headerlink" href="#fluidite_1" title="Permanent link">⚓︎</a></h4>
+<div class="highlight"><span class="filename">🐍 Script Python</span><pre><span></span><code><span class="n">FPS</span> <span class="o">=</span> <span class="mi">30</span>
+<span class="n">MAJ</span> <span class="o">=</span> <span class="mi">10</span>
+
+<span class="c1"># ...</span>
+
+<span class="c1"># juste avant la boucle infinie</span>
+<span class="n">compteur</span> <span class="o">=</span> <span class="mi">0</span>
+</code></pre></div>
+<h4 id="fluidite_2">Fluidité<a class="headerlink" href="#fluidite_2" title="Permanent link">⚓︎</a></h4>
+<p>Dans la boucle infinie</p>
+<div class="highlight"><span class="filename">🐍 Script Python</span><pre><span></span><code>  <span class="k">if</span> <span class="n">compteur</span> <span class="o">==</span> <span class="n">MAJ</span><span class="p">:</span>
+    <span class="n">compteur</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">head</span> <span class="o">=</span> <span class="p">[</span><span class="n">snake</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="n">direction</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">snake</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">direction</span><span class="p">[</span><span class="mi">1</span><span class="p">]]</span>
+    <span class="c1"># mettre les autres événements concernant le snake</span>
+
+  <span class="c1"># On augmente le compteur</span>
+  <span class="c1"># tout à la fin de la boucle infinie</span>
+  <span class="n">compteur</span> <span class="o">+=</span> <span class="mi">1</span>
+</code></pre></div>
+<h4 id="nourriture">Nourriture<a class="headerlink" href="#nourriture" title="Permanent link">⚓︎</a></h4>
+<p>On crée d'abord une nouvelle liste :</p>
+<div class="highlight"><span class="filename">🐍 Script Python</span><pre><span></span><code><span class="n">pomme</span> <span class="o">=</span> <span class="p">[</span><span class="mi">8</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
+</code></pre></div>
+<h4 id="nourriture_1">Nourriture<a class="headerlink" href="#nourriture_1" title="Permanent link">⚓︎</a></h4>
+<p>On dessine la pomme comme la tête, mais en rouge</p>
+<details class="correction">
+<summary>Correction</summary>
+<div class="highlight"><span class="filename">🐍 Script Python</span><pre><span></span><code><span class="n">pygame</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">rect</span><span class="p">(</span><span class="n">fenetre</span><span class="p">,</span> <span class="n">ROUGE</span><span class="p">,(</span><span class="n">pomme</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="n">BLOC</span><span class="p">,</span> <span class="n">pomme</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">*</span> <span class="n">BLOC</span><span class="p">,</span> <span class="n">BLOC</span><span class="p">,</span> <span class="n">BLOC</span><span class="p">))</span>
+</code></pre></div>
+</details>
+<h4 id="nourriture_2">Nourriture<a class="headerlink" href="#nourriture_2" title="Permanent link">⚓︎</a></h4>
+<p>Puis on détecte la collision avec la pomme.</p>
+<p>En cas de collision :</p>
+<ol>
+<li>Le score augmente  </li>
+<li>Une nouvelle pomme est crée.  </li>
+</ol>
+<p>La boucle <code>while</code> empêche la pomme d'apparaître sur le serpent</p>
+<h4 id="nourriture_3">Nourriture<a class="headerlink" href="#nourriture_3" title="Permanent link">⚓︎</a></h4>
+<details class="correction">
+<summary>Correction</summary>
+<div class="highlight"><span class="filename">🐍 Script Python</span><pre><span></span><code><span class="kn">from</span> <span class="nn">random</span> <span class="kn">import</span> <span class="n">randint</span>
+  <span class="c1"># ...</span>
+
+  <span class="c1"># Dans la boucle infinie</span>
+  <span class="k">if</span> <span class="n">snake</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="n">pomme</span><span class="p">:</span>
+    <span class="n">score</span> <span class="o">+=</span> <span class="mi">1</span>
+    <span class="k">while</span> <span class="n">pomme</span> <span class="ow">in</span> <span class="n">snake</span><span class="p">:</span>
+        <span class="n">pomme</span> <span class="o">=</span> <span class="p">[</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">LARGEUR</span> <span class="o">/</span> <span class="n">BLOC</span> <span class="o">-</span> <span class="mi">1</span><span class="p">),</span>
+                <span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">HAUTEUR</span> <span class="o">/</span> <span class="n">BLOC</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)]</span>
+</code></pre></div>
+</details>
+<h4 id="nourriture_4">Nourriture<a class="headerlink" href="#nourriture_4" title="Permanent link">⚓︎</a></h4>
+<p>S'il n'y a pas de collision le serpent diminue, sinon il conserve sa taille</p>
+<div class="highlight"><span class="filename">🐍 Script Python</span><pre><span></span><code>  <span class="k">else</span><span class="p">:</span>
+    <span class="n">snake</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+</code></pre></div>
+<h3 id="conclusion">Conclusion<a class="headerlink" href="#conclusion" title="Permanent link">⚓︎</a></h3>
+<p>C'est terminé...</p>
+<p>Snake en 100 lignes (peu commentées) avec le minimum d'instructions.
+On peut faire beaucoup plus court mais c'est déjà très simple</p>
+<ul>
+<li>Python permet notamment de créer des jeux,  </li>
+<li>Créer un jeu avec Pygame n'est pas difficile,  </li>
+<li>Il nous faut quelques constantes, quelques éléments de jeu (serpent, tête)  </li>
+<li>Une boucle infinie dans laquelle  </li>
+<li>On lit les saisies de l'utilisateur  </li>
+<li>On effectue les calculs (nouvelle tête, collisions etc.)  </li>
+<li>On met à jour les éléments graphiques  </li>
+</ul>
+<details class="check">
+<summary>Code final</summary>
+<div class="highlight"><span class="filename">🐍 Script Python</span><pre><span></span><code><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">Snake simple</span>
+<span class="sd">Snake réalisé &quot;simplement&quot; en Pygame avec Python 3.</span>
+<span class="sd">Nécessite Pygame et Python 3.7</span>
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="c1"># -*- coding: utf-8 -*-</span>
+
+<span class="c1"># pour choisir où faire apparaître la nouvelle pomme</span>
+<span class="kn">from</span> <span class="nn">random</span> <span class="kn">import</span> <span class="n">randint</span>
+<span class="c1"># la librairie pygame</span>
+<span class="kn">import</span> <span class="nn">pygame</span>
+<span class="c1"># afin de quitter le jeu proprement</span>
+<span class="kn">from</span> <span class="nn">pygame.locals</span> <span class="kn">import</span> <span class="o">*</span>
+
+
+<span class="c1"># Les dimensions de la fenêtre</span>
+<span class="n">HAUTEUR</span> <span class="o">=</span> <span class="mi">600</span>  <span class="c1"># hauteur de la fenetre</span>
+<span class="n">LARGEUR</span> <span class="o">=</span> <span class="mi">600</span>  <span class="c1"># largeur de la fenetre</span>
+<span class="c1"># Ainsi que celle d&#39;un carré à l&#39;écran : 20 pixels</span>
+<span class="n">BLOC</span> <span class="o">=</span> <span class="mi">20</span>
+
+<span class="c1"># Les couleurs utilisées</span>
+<span class="n">NOIR</span> <span class="o">=</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>  <span class="c1"># fond</span>
+<span class="n">ROUGE</span> <span class="o">=</span> <span class="p">(</span><span class="mi">193</span><span class="p">,</span> <span class="mi">68</span><span class="p">,</span> <span class="mi">51</span><span class="p">)</span>  <span class="c1"># pomme</span>
+<span class="n">JAUNE</span> <span class="o">=</span> <span class="p">(</span><span class="mi">208</span><span class="p">,</span> <span class="mi">210</span><span class="p">,</span> <span class="mi">62</span><span class="p">)</span>  <span class="c1"># tête</span>
+<span class="n">VERT</span> <span class="o">=</span> <span class="p">(</span><span class="mi">97</span><span class="p">,</span> <span class="mi">195</span><span class="p">,</span> <span class="mi">73</span><span class="p">)</span>  <span class="c1"># corps</span>
+<span class="n">CYAN</span> <span class="o">=</span> <span class="p">(</span><span class="mi">51</span><span class="p">,</span> <span class="mi">133</span><span class="p">,</span> <span class="mi">193</span><span class="p">)</span>  <span class="c1"># texte</span>
+
+<span class="c1"># Vitesse de rafaîchissement du jeu</span>
+<span class="n">FPS</span> <span class="o">=</span> <span class="mi">60</span>
+<span class="c1"># On effectue les calculs toutes les 15 frames</span>
+<span class="n">MAJ</span> <span class="o">=</span> <span class="mi">15</span>
+
+
+<span class="c1">############################################################</span>
+<span class="c1">#####################   Fonctions             ##############</span>
+<span class="c1">############################################################</span>
+
+
+<span class="k">def</span> <span class="nf">drawText</span><span class="p">(</span><span class="n">text</span><span class="p">,</span> <span class="n">font</span><span class="p">,</span> <span class="n">surface</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">    Dessine du texte à l&#39;écran</span>
+<span class="sd">    @param text: (str) le texte</span>
+<span class="sd">    @param font: (pygame.font) la police</span>
+<span class="sd">    @param surface: (pygame.surface) la surface sur laquelle écrire</span>
+<span class="sd">    @param x, y: (int) les coordonnées du texte</span>
+<span class="sd">    &#39;&#39;&#39;</span>
+    <span class="n">textobj</span> <span class="o">=</span> <span class="n">font</span><span class="o">.</span><span class="n">render</span><span class="p">(</span><span class="n">text</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">CYAN</span><span class="p">)</span>
+    <span class="n">textrect</span> <span class="o">=</span> <span class="n">textobj</span><span class="o">.</span><span class="n">get_rect</span><span class="p">()</span>
+    <span class="n">textrect</span><span class="o">.</span><span class="n">topleft</span> <span class="o">=</span> <span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+    <span class="n">surface</span><span class="o">.</span><span class="n">blit</span><span class="p">(</span><span class="n">textobj</span><span class="p">,</span> <span class="n">textrect</span><span class="p">)</span>
+
+
+<span class="c1">############################################################</span>
+<span class="c1">#####################   GAME INITIALISATION   ##############</span>
+<span class="c1">############################################################</span>
+
+
+<span class="c1"># pygame</span>
+<span class="c1"># les éléments indispensables sont init, time.Clock()  et un</span>
+<span class="c1"># display</span>
+<span class="n">pygame</span><span class="o">.</span><span class="n">init</span><span class="p">()</span>
+<span class="n">horloge</span> <span class="o">=</span> <span class="n">pygame</span><span class="o">.</span><span class="n">time</span><span class="o">.</span><span class="n">Clock</span><span class="p">()</span>
+<span class="n">fenetre</span> <span class="o">=</span> <span class="n">pygame</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">set_mode</span><span class="p">((</span><span class="n">LARGEUR</span><span class="p">,</span> <span class="n">HAUTEUR</span><span class="p">))</span>
+<span class="c1"># titre de la fenêtre</span>
+<span class="n">pygame</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">set_caption</span><span class="p">(</span><span class="s1">&#39;Snake&#39;</span><span class="p">)</span>
+
+<span class="c1"># taille et type de la fonte</span>
+<span class="n">font</span> <span class="o">=</span> <span class="n">pygame</span><span class="o">.</span><span class="n">font</span><span class="o">.</span><span class="n">SysFont</span><span class="p">(</span><span class="kc">None</span><span class="p">,</span> <span class="mi">48</span><span class="p">)</span>
+
+<span class="c1"># on met immédiatement à jour avant de commencer</span>
+<span class="n">pygame</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">update</span><span class="p">()</span>
+
+<span class="c1">############################################################</span>
+<span class="c1">#####################   GAME LOOP    #######################</span>
+<span class="c1">############################################################</span>
+
+<span class="c1"># les éléments du jeu</span>
+<span class="c1"># le serpent est un tableau à 2 dimensions.</span>
+<span class="c1"># le premier est la tête, les suivants le corps</span>
+<span class="c1"># chaque élément est une liste de cooordonnées [abs, ord]</span>
+<span class="n">snake</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">]]</span>
+<span class="n">direction</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+<span class="n">pomme</span> <span class="o">=</span> <span class="p">[</span><span class="mi">8</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
+
+<span class="c1"># le score est un entier</span>
+<span class="n">score</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="c1"># compteur de frame pour les mises à jour</span>
+<span class="n">compteur</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+    <span class="c1"># Saisies de l&#39;utilisateur</span>
+
+    <span class="c1"># quitter le jeu</span>
+    <span class="k">for</span> <span class="n">event</span> <span class="ow">in</span> <span class="n">pygame</span><span class="o">.</span><span class="n">event</span><span class="o">.</span><span class="n">get</span><span class="p">():</span>
+        <span class="k">if</span> <span class="n">event</span><span class="o">.</span><span class="n">type</span> <span class="o">==</span> <span class="n">QUIT</span><span class="p">:</span>
+            <span class="n">pygame</span><span class="o">.</span><span class="n">quit</span><span class="p">()</span>
+
+        <span class="k">if</span> <span class="n">event</span><span class="o">.</span><span class="n">type</span> <span class="o">==</span> <span class="n">KEYDOWN</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">event</span><span class="o">.</span><span class="n">key</span> <span class="o">==</span> <span class="n">K_ESCAPE</span><span class="p">:</span>
+                <span class="n">pygame</span><span class="o">.</span><span class="n">quit</span><span class="p">()</span>
+
+    <span class="c1"># déplacer le serpent</span>
+    <span class="n">key</span> <span class="o">=</span> <span class="n">pygame</span><span class="o">.</span><span class="n">key</span><span class="o">.</span><span class="n">get_pressed</span><span class="p">()</span>
+    <span class="k">if</span> <span class="n">key</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">key</span><span class="p">[</span><span class="n">pygame</span><span class="o">.</span><span class="n">K_UP</span><span class="p">]:</span>
+            <span class="c1"># on change la direction vers le haut</span>
+            <span class="n">direction</span> <span class="o">=</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">key</span><span class="p">[</span><span class="n">pygame</span><span class="o">.</span><span class="n">K_DOWN</span><span class="p">]:</span>
+            <span class="c1"># on change la direction vers le bas</span>
+            <span class="n">direction</span> <span class="o">=</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">key</span><span class="p">[</span><span class="n">pygame</span><span class="o">.</span><span class="n">K_LEFT</span><span class="p">]:</span>
+            <span class="c1"># on change la direction vers la gauche</span>
+            <span class="n">direction</span> <span class="o">=</span> <span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">key</span><span class="p">[</span><span class="n">pygame</span><span class="o">.</span><span class="n">K_RIGHT</span><span class="p">]:</span>
+            <span class="c1"># on change la direction vers la droite</span>
+            <span class="n">direction</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+
+    <span class="c1"># Calculs</span>
+    <span class="c1"># ils ne sont effectués que toutes les 15 frames</span>
+    <span class="k">if</span> <span class="n">compteur</span> <span class="o">==</span> <span class="n">MAJ</span><span class="p">:</span>
+        <span class="c1"># on reset le compteur</span>
+        <span class="n">compteur</span> <span class="o">=</span> <span class="mi">0</span>
+
+        <span class="c1"># la nouvelle tête est l&#39;ancienne, déplacée dans la direction</span>
+        <span class="n">head</span> <span class="o">=</span> <span class="p">[</span><span class="n">snake</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="n">direction</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">snake</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="n">direction</span><span class="p">[</span><span class="mi">1</span><span class="p">]]</span>
+
+        <span class="c1"># on l&#39;insère au début</span>
+        <span class="n">snake</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">head</span><span class="p">)</span>
+
+        <span class="c1"># collision tête / pomme</span>
+        <span class="k">if</span> <span class="n">snake</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="n">pomme</span><span class="p">:</span>
+            <span class="c1"># on augmente le score</span>
+            <span class="n">score</span> <span class="o">+=</span> <span class="mi">1</span>
+            <span class="c1"># on déplace la pomme en dehors du corps</span>
+            <span class="k">while</span> <span class="n">pomme</span> <span class="ow">in</span> <span class="n">snake</span><span class="p">:</span>
+                <span class="c1"># nécessaire de tirer plusieurs fois si on n&#39;a</span>
+                <span class="c1"># pas de chance !</span>
+                <span class="n">pomme</span> <span class="o">=</span> <span class="p">[</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">LARGEUR</span> <span class="o">/</span> <span class="n">BLOC</span> <span class="o">-</span> <span class="mi">1</span><span class="p">),</span>
+                        <span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">HAUTEUR</span> <span class="o">/</span> <span class="n">BLOC</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)]</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="c1"># si le serpent n&#39;a pas mangé la pomme, il diminue</span>
+            <span class="n">snake</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+
+        <span class="c1"># mort du serpent</span>
+        <span class="c1"># s&#39;il touche son corps</span>
+        <span class="c1"># ou s&#39;il quitte l&#39;écran</span>
+        <span class="k">if</span> <span class="n">head</span> <span class="ow">in</span> <span class="n">snake</span><span class="p">[</span><span class="mi">1</span><span class="p">:]</span> \
+                <span class="ow">or</span> <span class="n">head</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">&lt;</span> <span class="mi">0</span> \
+                <span class="ow">or</span> <span class="n">head</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">LARGEUR</span> <span class="o">/</span> <span class="n">BLOC</span> <span class="o">-</span> <span class="mi">1</span> \
+                <span class="ow">or</span> <span class="n">head</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">&lt;</span> <span class="mi">0</span> \
+                <span class="ow">or</span> <span class="n">head</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">HAUTEUR</span> <span class="o">/</span> <span class="n">BLOC</span> <span class="o">-</span> <span class="mi">1</span><span class="p">:</span>
+            <span class="n">pygame</span><span class="o">.</span><span class="n">quit</span><span class="p">()</span>
+
+    <span class="c1"># Graphiques</span>
+
+    <span class="c1"># d&#39;abord on remplit de noir pour cacher les images précédentes</span>
+    <span class="n">fenetre</span><span class="o">.</span><span class="n">fill</span><span class="p">(</span><span class="n">NOIR</span><span class="p">)</span>
+    <span class="c1"># Ensuite on dessine le corps en vert</span>
+    <span class="k">for</span> <span class="n">elt</span> <span class="ow">in</span> <span class="n">snake</span><span class="p">[</span><span class="mi">1</span><span class="p">:]:</span>
+        <span class="n">pygame</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">rect</span><span class="p">(</span><span class="n">fenetre</span><span class="p">,</span> <span class="n">VERT</span><span class="p">,</span>
+                        <span class="p">(</span><span class="n">elt</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="n">BLOC</span><span class="p">,</span> <span class="n">elt</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">*</span> <span class="n">BLOC</span><span class="p">,</span> <span class="n">BLOC</span><span class="p">,</span> <span class="n">BLOC</span><span class="p">))</span>
+
+    <span class="c1"># la tête en jaune</span>
+    <span class="n">pygame</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">rect</span><span class="p">(</span><span class="n">fenetre</span><span class="p">,</span> <span class="n">JAUNE</span><span class="p">,</span>
+                    <span class="p">(</span><span class="n">snake</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="n">BLOC</span><span class="p">,</span> <span class="n">snake</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">*</span> <span class="n">BLOC</span><span class="p">,</span> <span class="n">BLOC</span><span class="p">,</span> <span class="n">BLOC</span><span class="p">))</span>
+
+    <span class="c1"># la pomme en rouge</span>
+    <span class="n">pygame</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">rect</span><span class="p">(</span><span class="n">fenetre</span><span class="p">,</span> <span class="n">ROUGE</span><span class="p">,</span>
+                    <span class="p">(</span><span class="n">pomme</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="n">BLOC</span><span class="p">,</span> <span class="n">pomme</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">*</span> <span class="n">BLOC</span><span class="p">,</span> <span class="n">BLOC</span><span class="p">,</span> <span class="n">BLOC</span><span class="p">))</span>
+
+    <span class="c1"># le score dans le coin de l&#39;écran</span>
+    <span class="n">drawText</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">score</span><span class="p">),</span> <span class="n">font</span><span class="p">,</span> <span class="n">fenetre</span><span class="p">,</span> <span class="mf">0.2</span> <span class="o">*</span> <span class="n">LARGEUR</span><span class="p">,</span> <span class="mf">0.2</span> <span class="o">*</span> <span class="n">HAUTEUR</span><span class="p">)</span>
+
+    <span class="c1"># On met pygame à jour</span>
+    <span class="c1"># en avançant l&#39;horloge</span>
+    <span class="n">horloge</span><span class="o">.</span><span class="n">tick</span><span class="p">(</span><span class="n">FPS</span><span class="p">)</span>
+    <span class="c1"># en dessinant les éléments</span>
+    <span class="n">pygame</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">update</span><span class="p">()</span>
+    <span class="c1"># et comptant les frames</span>
+    <span class="n">compteur</span> <span class="o">+=</span> <span class="mi">1</span>
+</code></pre></div>
+</details>
+<h2 id="mini-tetris">Mini-Tetris <img alt="" src="../data/niveau3.png" width="25px" /><a class="headerlink" href="#mini-tetris" title="Permanent link">⚓︎</a></h2>
+<div class="admonition histoire">
+<p class="admonition-title">Un peu d’histoire</p>
+</div>
+<p>Tetris est un jeu vidéo entre arcade et puzzle, conçu par Alekseï Pajitnov en juin 1984. Le succès devient planétaire et tous les consoles qui suivront posséderont leur version de Tetris. Il fait partie des jeux les plus addictifs de l’époque, avec Pacman.</p>
+<details class="check">
+<summary>Code mini-tetris - Le début</summary>
+<div class="highlight"><span class="filename">🐍 Script Python</span><pre><span></span><code><span class="kn">import</span> <span class="nn">pygame</span>
+<span class="kn">import</span> <span class="nn">copy</span>
+<span class="kn">import</span> <span class="nn">random</span>
+
+<span class="c1"># initialisation de l&#39;écran de jeu</span>
+<span class="n">pygame</span><span class="o">.</span><span class="n">init</span><span class="p">()</span>
+
+<span class="c1"># Definit des couleurs RGB</span>
+<span class="n">NOIR</span>  <span class="o">=</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+<span class="n">VERT</span>  <span class="o">=</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+<span class="n">ROUGE</span> <span class="o">=</span> <span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+<span class="n">BLEU</span>  <span class="o">=</span> <span class="p">(</span><span class="mi">0</span> <span class="p">,</span> <span class="mi">0</span> <span class="p">,</span> <span class="mi">255</span><span class="p">)</span>
+<span class="n">GRIS</span>  <span class="o">=</span> <span class="p">(</span><span class="mi">128</span><span class="p">,</span><span class="mi">128</span><span class="p">,</span><span class="mi">128</span><span class="p">)</span>
+<span class="n">CYAN</span>  <span class="o">=</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">255</span><span class="p">,</span><span class="mi">255</span><span class="p">)</span>
+<span class="n">JAUNE</span> <span class="o">=</span> <span class="p">(</span><span class="mi">255</span><span class="p">,</span><span class="mi">255</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">ORANGE</span><span class="o">=</span> <span class="p">(</span><span class="mi">255</span><span class="p">,</span><span class="mi">150</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">VERT</span>  <span class="o">=</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">255</span><span class="p">,</span><span class="mi">255</span><span class="p">)</span>
+<span class="n">MAUVE</span> <span class="o">=</span> <span class="p">(</span><span class="mi">180</span><span class="p">,</span><span class="mi">80</span><span class="p">,</span><span class="mi">255</span><span class="p">)</span>
+<span class="n">LCoul</span> <span class="o">=</span> <span class="p">[</span> <span class="n">NOIR</span><span class="p">,</span> <span class="n">GRIS</span><span class="p">,</span> <span class="n">CYAN</span><span class="p">,</span> <span class="n">JAUNE</span><span class="p">,</span> <span class="n">MAUVE</span><span class="p">,</span> <span class="n">ORANGE</span><span class="p">,</span> <span class="n">BLEU</span><span class="p">,</span> <span class="n">ROUGE</span><span class="p">,</span> <span class="n">VERT</span> <span class="p">]</span>
+
+<span class="c1"># PIECES</span>
+<span class="n">P_I</span> <span class="o">=</span> <span class="p">[</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">0</span><span class="p">],</span>
+        <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">0</span><span class="p">],</span>
+        <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span> <span class="p">]</span>
+
+<span class="n">P_T</span> <span class="o">=</span> <span class="p">[</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">],</span>
+        <span class="p">[</span><span class="mi">4</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">4</span><span class="p">],</span>
+        <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">0</span><span class="p">]]</span>
+
+<span class="n">P_O</span> <span class="o">=</span> <span class="p">[</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">0</span><span class="p">],</span>
+        <span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">0</span><span class="p">],</span>
+        <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span> <span class="p">]</span>
+
+<span class="n">P_L</span> <span class="o">=</span> <span class="p">[</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">],</span>
+        <span class="p">[</span><span class="mi">5</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">5</span><span class="p">],</span>
+        <span class="p">[</span><span class="mi">5</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span> <span class="p">]</span>
+
+<span class="n">P_J</span> <span class="o">=</span> <span class="p">[</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">],</span>
+        <span class="p">[</span><span class="mi">6</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">6</span><span class="p">],</span>
+        <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">6</span><span class="p">]]</span>
+
+<span class="n">P_Z</span> <span class="o">=</span> <span class="p">[</span> <span class="p">[</span><span class="mi">7</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">0</span><span class="p">],</span>
+        <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">7</span><span class="p">],</span>
+        <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span> <span class="p">]</span>
+
+<span class="n">P_S</span> <span class="o">=</span> <span class="p">[</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">8</span><span class="p">],</span>
+        <span class="p">[</span><span class="mi">8</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">0</span><span class="p">],</span>
+        <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]]</span>
+
+<span class="n">LP</span>  <span class="o">=</span> <span class="p">[</span> <span class="n">P_I</span><span class="p">,</span> <span class="n">P_T</span><span class="p">,</span> <span class="n">P_O</span><span class="p">,</span> <span class="n">P_L</span><span class="p">,</span> <span class="n">P_J</span><span class="p">,</span> <span class="n">P_Z</span><span class="p">,</span> <span class="n">P_S</span><span class="p">]</span>
+
+
+<span class="k">def</span> <span class="nf">AffPiece</span><span class="p">():</span>
+    <span class="n">P</span> <span class="o">=</span> <span class="n">LP</span><span class="p">[</span><span class="n">idpiece</span><span class="p">]</span>
+    <span class="k">for</span> <span class="n">dx</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">):</span>
+        <span class="k">for</span> <span class="n">dy</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">):</span>
+            <span class="n">c</span> <span class="o">=</span> <span class="n">P</span><span class="p">[</span><span class="n">dy</span><span class="p">][</span><span class="n">dx</span><span class="p">]</span>
+            <span class="k">if</span> <span class="n">c</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
+              <span class="n">idcoul</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">c</span><span class="p">)</span>
+              <span class="n">xx</span> <span class="o">=</span> <span class="p">(</span><span class="n">px</span><span class="o">+</span><span class="n">dx</span><span class="p">)</span> <span class="o">*</span> <span class="n">LCASE</span>
+              <span class="n">yy</span> <span class="o">=</span> <span class="p">(</span><span class="n">py</span><span class="o">+</span><span class="n">dy</span><span class="p">)</span> <span class="o">*</span> <span class="n">LCASE</span>
+              <span class="n">R</span> <span class="o">=</span> <span class="p">(</span><span class="n">xx</span><span class="p">,</span><span class="n">yy</span><span class="p">,</span><span class="n">LCASE</span><span class="p">,</span><span class="n">LCASE</span><span class="p">)</span>
+              <span class="n">pygame</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">rect</span><span class="p">(</span><span class="n">screen</span><span class="p">,</span><span class="n">LCoul</span><span class="p">[</span><span class="n">idcoul</span><span class="p">],</span><span class="n">R</span><span class="p">)</span>
+
+
+
+<span class="c1"># DECORS</span>
+<span class="n">LIGNE_VIDE</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">*</span><span class="mi">11</span> <span class="o">+</span> <span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">*</span><span class="mi">2</span>
+<span class="n">DECOR</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">16</span><span class="p">):</span>
+    <span class="n">DECOR</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">LIGNE_VIDE</span><span class="o">.</span><span class="n">copy</span><span class="p">())</span>
+<span class="n">DECOR</span><span class="o">.</span><span class="n">append</span><span class="p">([</span><span class="mi">1</span><span class="p">]</span><span class="o">*</span><span class="mi">15</span><span class="p">)</span>
+<span class="n">DECOR</span><span class="o">.</span><span class="n">append</span><span class="p">([</span><span class="mi">1</span><span class="p">]</span><span class="o">*</span><span class="mi">15</span><span class="p">)</span>
+
+<span class="n">LCASE</span> <span class="o">=</span> <span class="mi">20</span>
+<span class="k">def</span> <span class="nf">AfficheDecors</span><span class="p">():</span>
+    <span class="k">for</span> <span class="n">y</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">DECOR</span><span class="p">))</span> <span class="p">:</span>
+        <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">DECOR</span><span class="p">[</span><span class="mi">0</span><span class="p">])):</span>
+            <span class="n">xx</span> <span class="o">=</span> <span class="n">x</span> <span class="o">*</span> <span class="n">LCASE</span>
+            <span class="n">yy</span> <span class="o">=</span> <span class="n">y</span> <span class="o">*</span> <span class="n">LCASE</span>
+            <span class="nb">id</span> <span class="o">=</span> <span class="n">DECOR</span><span class="p">[</span><span class="n">y</span><span class="p">][</span><span class="n">x</span><span class="p">]</span>
+
+            <span class="n">pygame</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">rect</span><span class="p">(</span><span class="n">screen</span><span class="p">,</span><span class="n">LCoul</span><span class="p">[</span><span class="nb">id</span><span class="p">],(</span><span class="n">xx</span><span class="p">,</span><span class="n">yy</span><span class="p">,</span><span class="n">LCASE</span><span class="p">,</span><span class="n">LCASE</span><span class="p">))</span>
+            <span class="n">pygame</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">rect</span><span class="p">(</span><span class="n">screen</span><span class="p">,</span><span class="n">NOIR</span><span class="p">,(</span><span class="n">xx</span><span class="p">,</span><span class="n">yy</span><span class="p">,</span><span class="n">LCASE</span><span class="p">,</span><span class="n">LCASE</span><span class="p">),</span><span class="mi">1</span><span class="p">)</span>
+
+
+<span class="c1"># Initialise la fenêtre de jeu</span>
+<span class="n">screenWidth</span> <span class="o">=</span> <span class="mi">300</span>
+<span class="n">screenHeight</span> <span class="o">=</span> <span class="mi">360</span>
+<span class="n">screen</span> <span class="o">=</span> <span class="n">pygame</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">set_mode</span><span class="p">((</span><span class="n">screenWidth</span><span class="p">,</span><span class="n">screenHeight</span><span class="p">))</span>
+<span class="n">pygame</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">set_caption</span><span class="p">(</span><span class="s2">&quot;MINI TETRIS&quot;</span><span class="p">)</span>
+
+
+<span class="c1"># Gestion du rafraichissement de l&#39;écran</span>
+<span class="n">clock</span> <span class="o">=</span> <span class="n">pygame</span><span class="o">.</span><span class="n">time</span><span class="o">.</span><span class="n">Clock</span><span class="p">()</span>
+<span class="c1"># Cache le pointeur de la souris</span>
+<span class="n">pygame</span><span class="o">.</span><span class="n">mouse</span><span class="o">.</span><span class="n">set_visible</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+
+
+<span class="c1"># variables d&#39;état</span>
+<span class="c1"># piece courante</span>
+<span class="n">idpiece</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">px</span>  <span class="o">=</span> <span class="mi">6</span>
+<span class="n">py</span>  <span class="o">=</span> <span class="mi">0</span>
+<span class="n">rot</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="c1">#Touches</span>
+<span class="n">KEyDown</span>  <span class="o">=</span> <span class="mi">0</span>
+<span class="n">KeyUp</span>    <span class="o">=</span> <span class="mi">0</span>
+<span class="n">KeyLeft</span>  <span class="o">=</span> <span class="mi">0</span>
+<span class="n">KeyRight</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="c1">#compteur d&#39;affichage</span>
+<span class="n">comptage</span> <span class="o">=</span> <span class="mi">0</span>
+
+
+<span class="c1"># Le jeu continue tant que l&#39;utilisateur ne ferme pas la fenêtre</span>
+<span class="n">Termine</span> <span class="o">=</span> <span class="kc">False</span>
+
+<span class="c1"># Boucle principale de jeu</span>
+<span class="k">while</span> <span class="ow">not</span> <span class="n">Termine</span><span class="p">:</span>
+  <span class="c1"># recupère la liste des évènements du joueur</span>
+  <span class="n">event</span> <span class="o">=</span> <span class="n">pygame</span><span class="o">.</span><span class="n">event</span><span class="o">.</span><span class="n">Event</span><span class="p">(</span><span class="n">pygame</span><span class="o">.</span><span class="n">USEREVENT</span><span class="p">)</span>
+
+  <span class="c1"># EVENEMENTS</span>
+  <span class="c1"># détecte le clic sur le bouton close de la fenêtre</span>
+  <span class="k">for</span> <span class="n">event</span> <span class="ow">in</span> <span class="n">pygame</span><span class="o">.</span><span class="n">event</span><span class="o">.</span><span class="n">get</span><span class="p">():</span>
+      <span class="k">if</span> <span class="n">event</span><span class="o">.</span><span class="n">type</span> <span class="o">==</span> <span class="n">pygame</span><span class="o">.</span><span class="n">QUIT</span><span class="p">:</span>
+        <span class="n">Termine</span> <span class="o">=</span> <span class="kc">True</span>
+
+  <span class="c1"># récupère la liste des touches claviers appuyeées sous la forme d&#39;une liste de booléens</span>
+  <span class="n">KeysPressed</span> <span class="o">=</span> <span class="n">pygame</span><span class="o">.</span><span class="n">key</span><span class="o">.</span><span class="n">get_pressed</span><span class="p">()</span>
+
+  <span class="c1"># LOGIQUE</span>
+  <span class="c1"># déplacement de la pièce</span>
+  <span class="n">comptage</span> <span class="o">+=</span> <span class="mi">1</span>
+  <span class="k">if</span> <span class="n">comptage</span> <span class="o">%</span> <span class="mi">20</span> <span class="o">==</span> <span class="mi">0</span> <span class="p">:</span>
+          <span class="n">py</span> <span class="o">+=</span> <span class="mi">1</span>
+
+
+  <span class="k">if</span> <span class="n">KeysPressed</span><span class="p">[</span><span class="n">pygame</span><span class="o">.</span><span class="n">K_UP</span><span class="p">]</span> <span class="ow">and</span> <span class="n">KeyUp</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="k">pass</span>
+
+  <span class="k">if</span> <span class="n">KeysPressed</span><span class="p">[</span><span class="n">pygame</span><span class="o">.</span><span class="n">K_LEFT</span><span class="p">]</span> <span class="ow">and</span> <span class="n">KeyLeft</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="k">pass</span>
+
+  <span class="k">if</span> <span class="n">KeysPressed</span><span class="p">[</span><span class="n">pygame</span><span class="o">.</span><span class="n">K_RIGHT</span><span class="p">]</span> <span class="ow">and</span> <span class="n">KeyRight</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="k">pass</span>
+
+  <span class="k">if</span> <span class="n">KeysPressed</span><span class="p">[</span><span class="n">pygame</span><span class="o">.</span><span class="n">K_DOWN</span><span class="p">]</span> <span class="ow">and</span> <span class="n">KeyDown</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="k">pass</span>
+
+
+  <span class="n">KeyDown</span>  <span class="o">=</span> <span class="n">KeysPressed</span><span class="p">[</span><span class="n">pygame</span><span class="o">.</span><span class="n">K_DOWN</span><span class="p">]</span>
+  <span class="n">KeyUp</span>    <span class="o">=</span> <span class="n">KeysPressed</span><span class="p">[</span><span class="n">pygame</span><span class="o">.</span><span class="n">K_UP</span><span class="p">]</span>
+  <span class="n">KeyLeft</span>  <span class="o">=</span> <span class="n">KeysPressed</span><span class="p">[</span><span class="n">pygame</span><span class="o">.</span><span class="n">K_LEFT</span><span class="p">]</span>
+  <span class="n">KeyRight</span> <span class="o">=</span> <span class="n">KeysPressed</span><span class="p">[</span><span class="n">pygame</span><span class="o">.</span><span class="n">K_RIGHT</span><span class="p">]</span>
+
+
+
+  <span class="c1"># AFFICHAGE</span>
+  <span class="c1"># Dessine le fond</span>
+  <span class="n">AfficheDecors</span><span class="p">()</span>
+  <span class="n">AffPiece</span><span class="p">()</span>
+
+  <span class="c1"># Bascule l&#39;image dessinée à l&#39;écran</span>
+  <span class="n">pygame</span><span class="o">.</span><span class="n">display</span><span class="o">.</span><span class="n">flip</span><span class="p">()</span>
+
+    <span class="c1"># Demande à pygame de se caler sur 30 FPS</span>
+  <span class="n">clock</span><span class="o">.</span><span class="n">tick</span><span class="p">(</span><span class="mi">30</span><span class="p">)</span>
+
+<span class="c1"># Ferme la fenêtre</span>
+<span class="n">pygame</span><span class="o">.</span><span class="n">quit</span><span class="p">()</span>
+</code></pre></div>
+</details>
+<p>Le jeu est fonctionnel que dans une petite partie : une pièce descend mais il est impossible de la déplacer.</p>
+<h3 id="presentation-du-code">Présentation du code<a class="headerlink" href="#presentation-du-code" title="Permanent link">⚓︎</a></h3>
+<p>#### Les constantes couleurs :</p>
+<div class="highlight"><span class="filename">🐍 Script Python</span><pre><span></span><code><span class="c1"># Definit des couleurs RGB</span>
+<span class="n">NOIR</span>  <span class="o">=</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+<span class="n">VERT</span>  <span class="o">=</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+<span class="n">ROUGE</span> <span class="o">=</span> <span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+<span class="n">BLEU</span>  <span class="o">=</span> <span class="p">(</span><span class="mi">0</span> <span class="p">,</span> <span class="mi">0</span> <span class="p">,</span> <span class="mi">255</span><span class="p">)</span>
+<span class="n">GRIS</span>  <span class="o">=</span> <span class="p">(</span><span class="mi">128</span><span class="p">,</span><span class="mi">128</span><span class="p">,</span><span class="mi">128</span><span class="p">)</span>
+<span class="n">CYAN</span>  <span class="o">=</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">255</span><span class="p">,</span><span class="mi">255</span><span class="p">)</span>
+<span class="n">JAUNE</span> <span class="o">=</span> <span class="p">(</span><span class="mi">255</span><span class="p">,</span><span class="mi">255</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">ORANGE</span><span class="o">=</span> <span class="p">(</span><span class="mi">255</span><span class="p">,</span><span class="mi">150</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">MAUVE</span> <span class="o">=</span> <span class="p">(</span><span class="mi">180</span><span class="p">,</span><span class="mi">80</span><span class="p">,</span><span class="mi">255</span><span class="p">)</span>
+<span class="n">LCoul</span> <span class="o">=</span> <span class="p">[</span> <span class="n">NOIR</span><span class="p">,</span> <span class="n">GRIS</span><span class="p">,</span> <span class="n">CYAN</span><span class="p">,</span> <span class="n">JAUNE</span><span class="p">,</span> <span class="n">MAUVE</span><span class="p">,</span> <span class="n">ORANGE</span><span class="p">,</span> <span class="n">BLEU</span><span class="p">,</span> <span class="n">ROUGE</span><span class="p">,</span> <span class="n">VERT</span> <span class="p">]</span>
+</code></pre></div>
+<p>Le fond noir est associé à la valeur d'indice  0, les murs gris à la valeur d'indice 1 et chaque pièce du jeu est associée avec la couleur d'indice compris entre 2 et 8.</p>
+<h4 id="les-differentes-pieces">Les différentes pièces :<a class="headerlink" href="#les-differentes-pieces" title="Permanent link">⚓︎</a></h4>
+<p>Pour simplifier les algorithmes, on va utiliser des combinaisons de carrés qui s'inscrivent dans une grille 3 <span class="arithmatex">\(\times\)</span> 3</p>
+<p><img alt="piece" src="../data/tetris_pieces.png" /></p>
+<p><strong>Toutes les pièces</strong> sont stockées dans des listes de 3 <span class="arithmatex">\(\times\)</span> 3 éléments. Une valeur nulle correspond à une case vide et une valeur non nulle indique une case pleine ainsi que sa couleur. L'ensemble des pièces est stocké dans une liste nommée LP : </p>
+<div class="highlight"><span class="filename">🐍 Script Python</span><pre><span></span><code><span class="c1"># PIECES</span>
+<span class="n">P_I</span> <span class="o">=</span> <span class="p">[</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">0</span><span class="p">],</span>
+        <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">0</span><span class="p">],</span>
+        <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span> <span class="p">]</span>
+
+<span class="n">P_O</span> <span class="o">=</span> <span class="p">[</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">0</span><span class="p">],</span>
+        <span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">0</span><span class="p">],</span>
+        <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span> <span class="p">]</span>
+
+<span class="n">P_T</span> <span class="o">=</span> <span class="p">[</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">],</span>
+        <span class="p">[</span><span class="mi">4</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">4</span><span class="p">],</span>
+        <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">0</span><span class="p">]]</span>
+
+<span class="n">P_L</span> <span class="o">=</span> <span class="p">[</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">],</span>
+        <span class="p">[</span><span class="mi">5</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">5</span><span class="p">],</span>
+        <span class="p">[</span><span class="mi">5</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span> <span class="p">]</span>
+
+<span class="n">P_J</span> <span class="o">=</span> <span class="p">[</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">],</span>
+        <span class="p">[</span><span class="mi">6</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">6</span><span class="p">],</span>
+        <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">6</span><span class="p">]]</span>
+
+<span class="n">P_Z</span> <span class="o">=</span> <span class="p">[</span> <span class="p">[</span><span class="mi">7</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">0</span><span class="p">],</span>
+        <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">7</span><span class="p">],</span>
+        <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span> <span class="p">]</span>
+
+<span class="n">P_S</span> <span class="o">=</span> <span class="p">[</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">8</span><span class="p">],</span>
+        <span class="p">[</span><span class="mi">8</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">0</span><span class="p">],</span>
+        <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]]</span>
+
+<span class="n">LP</span>  <span class="o">=</span> <span class="p">[</span> <span class="n">P_I</span><span class="p">,</span> <span class="n">P_O</span><span class="p">,</span> <span class="n">P_T</span><span class="p">,</span> <span class="n">P_L</span><span class="p">,</span> <span class="n">P_J</span><span class="p">,</span> <span class="n">P_Z</span><span class="p">,</span> <span class="n">P_S</span><span class="p">]</span>
+</code></pre></div>
+<p><strong>Les variables d'état</strong> sont présentées ci-dessous. </p>
+<div class="highlight"><span class="filename">🐍 Script Python</span><pre><span></span><code><span class="c1"># variables d&#39;état</span>
+<span class="c1"># piece courante</span>
+<span class="n">idpiece</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">px</span>  <span class="o">=</span> <span class="mi">6</span>
+<span class="n">py</span>  <span class="o">=</span> <span class="mi">0</span>
+<span class="n">rot</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="c1">#Touches</span>
+<span class="n">KeyDown</span>  <span class="o">=</span> <span class="mi">0</span>
+<span class="n">KeyUp</span>    <span class="o">=</span> <span class="mi">0</span>
+<span class="n">KeyLeft</span>  <span class="o">=</span> <span class="mi">0</span>
+<span class="n">KeyRight</span> <span class="o">=</span> <span class="mi">0</span>
+</code></pre></div>
+<p>La variable <code>idpiece</code> indique l'indice de la pièce courante dans la liste <code>LP</code>. Ainsi le jeu démarre avec la pièce T.<br />
+Les variable <code>px</code>, <code>py</code> et <code>rot</code> indique la position en <span class="arithmatex">\(x\)</span>, et <span class="arithmatex">\(y\)</span> da la pièce dans la grille, ainsi que sa rotation : 0 pour <span class="arithmatex">\(0^{\circ}\)</span> et 1 pour <span class="arithmatex">\(90^{\circ}\)</span> .<br />
+Et quatre variables pour stocker l'état précédent des touches fléchées : enfoncé ou non. L'intérêt des de pouvoir détecter les appuis sur ces touches.</p>
+<h3 id="affichage-du-decors">Affichage du décors :<a class="headerlink" href="#affichage-du-decors" title="Permanent link">⚓︎</a></h3>
+<div class="highlight"><span class="filename">🐍 Script Python</span><pre><span></span><code><span class="c1"># DECORS</span>
+<span class="n">LIGNE_VIDE</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">*</span><span class="mi">11</span> <span class="o">+</span> <span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">*</span><span class="mi">2</span>
+<span class="n">DECOR</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">16</span><span class="p">):</span>
+    <span class="n">DECOR</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">LIGNE_VIDE</span><span class="o">.</span><span class="n">copy</span><span class="p">())</span>
+<span class="n">DECOR</span><span class="o">.</span><span class="n">append</span><span class="p">([</span><span class="mi">1</span><span class="p">]</span><span class="o">*</span><span class="mi">15</span><span class="p">)</span>
+<span class="n">DECOR</span><span class="o">.</span><span class="n">append</span><span class="p">([</span><span class="mi">1</span><span class="p">]</span><span class="o">*</span><span class="mi">15</span><span class="p">)</span>
+
+
+<span class="n">LCASE</span> <span class="o">=</span> <span class="mi">20</span>
+<span class="k">def</span> <span class="nf">AfficheDecors</span><span class="p">():</span>
+    <span class="k">for</span> <span class="n">y</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">DECOR</span><span class="p">))</span> <span class="p">:</span>
+        <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">DECOR</span><span class="p">[</span><span class="mi">0</span><span class="p">])):</span>
+            <span class="n">xx</span> <span class="o">=</span> <span class="n">x</span> <span class="o">*</span> <span class="n">LCASE</span>
+            <span class="n">yy</span> <span class="o">=</span> <span class="n">y</span> <span class="o">*</span> <span class="n">LCASE</span>
+            <span class="nb">id</span> <span class="o">=</span> <span class="n">DECOR</span><span class="p">[</span><span class="n">y</span><span class="p">][</span><span class="n">x</span><span class="p">]</span>
+
+            <span class="n">pygame</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">rect</span><span class="p">(</span><span class="n">screen</span><span class="p">,</span><span class="n">LCoul</span><span class="p">[</span><span class="nb">id</span><span class="p">],(</span><span class="n">xx</span><span class="p">,</span><span class="n">yy</span><span class="p">,</span><span class="n">LCASE</span><span class="p">,</span><span class="n">LCASE</span><span class="p">))</span>
+            <span class="n">pygame</span><span class="o">.</span><span class="n">draw</span><span class="o">.</span><span class="n">rect</span><span class="p">(</span><span class="n">screen</span><span class="p">,</span><span class="n">NOIR</span><span class="p">,(</span><span class="n">xx</span><span class="p">,</span><span class="n">yy</span><span class="p">,</span><span class="n">LCASE</span><span class="p">,</span><span class="n">LCASE</span><span class="p">),</span><span class="mi">1</span><span class="p">)</span>
+</code></pre></div>
+<p>Le décor est stocké dans une grille de 15 cases de large pour 18 de haut. Comme la largeur des cases fait 20 pixels, on a donc une fenêtre de taille 300 <span class="arithmatex">\(\times\)</span> 360 pixels. On définit une constante <code>LIGNE_VIDE</code> composée de 2 colonnes sur la gauche et sur la droite, qui marquent les bords avec des cases grises,donc de code couleur associé 1. Les 11 cases centrales vides sont remplies avec la valeur 0? Le décor est défini comme une liste de 18 lignes.<br />
+Les 16 premières sont des lignes vides, et les 2 dernières sont remplies de 1. Pour créer les 16 lignes vides, nous utilisons la liste <code>LIGNE_VIDE</code> qu'on copie avec la fonction <code>copy()</code>. Ceci est très important car chaque ligne doit être indépendante !\</p>
+<p><img alt="" class="center" src="../data/tetris_interface.png" /></p>
+<p>Les valeurs sont stockées dans une liste de listes intitulée <code>DECOR</code>. Ainsi <code>len(DECOR)</code> correspond au nombre de lignes et <code>len(DECOR[0])</code> au nombre de colonnes du jeu.<br />
+En écrivant <code>DECOR[y][x]</code> on accède à l'indice de couleur pour la case de coordonnées (x,y). L'origine du décor (0,0) est positionnée en haut à gauche de l'écran.<br />
+La variable <code>LCASE</code> définit la largeur d'une case en pixels. Pour dessiner entièrement la grille, on utilise un double boucle en x et y.  </p>
+<p>On dessine un carré plein grâce à la première fonction <code>draw.rect()</code>, puis les bords noirs avec le deuxième appel.</p>
+<h3 id="deplacement-des-pieces">Déplacement des pièces :<a class="headerlink" href="#deplacement-des-pieces" title="Permanent link">⚓︎</a></h3>
+<p>On déplace la pièce courante avec une technique particulière. On utilise une variable comptage qui comptabilise le nombre d'affichages effectués. Le test effectué est : <code>comptage % 20 == 0</code>,  ce qui produit 20 affichages. Comme on est à 30 FPS, cela se produit toutes les 0,66 seconde. a ce moment-là, on fait descendre la pièce d'une ligne vers le bas. (A ce niveau aucune collision n'est pas gérée) </p>
+<div class="highlight"><span class="filename">🐍 Script Python</span><pre><span></span><code>   <span class="c1"># LOGIQUE</span>
+   <span class="c1"># déplacement de la pièce</span>
+   <span class="n">comptage</span> <span class="o">+=</span> <span class="mi">1</span>
+   <span class="k">if</span> <span class="n">comptage</span> <span class="o">%</span> <span class="mi">20</span> <span class="o">==</span> <span class="mi">0</span> <span class="p">:</span>
+           <span class="n">py</span> <span class="o">+=</span> <span class="mi">1</span>
+</code></pre></div>
+<p>Dans la partie gérant la logique du jeu, on trouve cette ligne</p>
+<div class="highlight"><span class="filename">🐍 Script Python</span><pre><span></span><code>   <span class="k">if</span> <span class="n">KeysPressed</span><span class="p">[</span><span class="n">pygame</span><span class="o">.</span><span class="n">K_UP</span><span class="p">]</span> <span class="ow">and</span> <span class="n">KeyUp</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="k">pass</span>
+</code></pre></div>
+<p>La variable <code>KeyUp</code> stocke l'état de la touche <code>[Flèche Haut]</code> lors de l'affichage précédent. Dans cette condition, on détecte si le joueur vient d'appuyer sur cette touche. Pour l'instant cette condition ne déclenche rien mais cela va changer par la suite.</p>
+<div class="admonition fabquestion">
+<p class="admonition-title">Gestion de la rotation</p>
+<p>Vous allez gérer la rotation de la pièce courante. Tout d'abord après la condition gérant l'appui sur la touche <code>[Flèche Haut]</code>, vous allez modifier la valeur de la variable <code>rot</code>. Chaque appui doit augmenter la variable <code>rot</code> de 1. Il serait judicieux d'appliquer un modulo 4 pour faire en sorte que cette variable ne puisse prendre que des valeurs entre 0 et 3. Dans le jeu orignal, les pièces ne tournent que dans un sens.</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Question 1</label><label for="__tabbed_1_2">Question 2</label><label for="__tabbed_1_3">Question 3</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>Créez une fonction <code>Rot90Droite(P)</code> qui, à partir d'une pièce 3 <span class="arithmatex">\(\times\)</span> 3 tourne cette pièce de <span class="arithmatex">\(90^{\circ}\)</span>. La pièce P correspond à une liste de listes, cette pièce ne doit pas être modifiée. Vous allez construire une nouvelle pièce et la retourner. Voici quelques conseils :      </p>
+<ul>
+<li>Pour créer une nouvelle pièce, vous pouvez l'initialiser à partir d'une liste de listes contenant des 0 ou appliquer la fonction <code>copy.deepcopy()</code> sur la pièce P actuelle. Le contenu n'a pas d'importance, car de toute façon, il va être écrasé  </li>
+<li>Il faut programmer la rotation de <span class="arithmatex">\(90^{\circ}\)</span>. Voici un exemple avec la pièce P en entrée et la pièce R à calculer à droite.<br />
+Dans tous les cas, la case centrale ne change pas.</li>
+</ul>
+<p><img alt="" src="../data/piece.png" /></p>
+<ul>
+<li>Option 1 : écrivez une instruction pour chacune des huit cases. Par exemple, pour la case 1 en haut à gauche : <code>R[0][0]=P[2][0]</code>, et pour la case 2 : <code>R[0][1]=P[1][0]</code>.  </li>
+<li>Option 2 : faites une liste des positions des huit cases des bords, ceci en tournant dans le sens des aiguilles d'une montre : <code>L=((0,0) , (1,0) , (2,0), (2,1) ( (2,2) , (1,2) ...]</code> Ainsi en créant une boucle for d'indice i allant de 0 à 7 , vous savez que la case à la position <code>R[i]</code> doit être initialisée avec la case <code>L[(i-2)%8]</code>.</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<p>Créez une fonction <code>Rotn(P,nb)</code> qui calcul la pièce P après nb rotations.<br />
+Pour cela :  </p>
+<ul>
+<li>Initialiser une pièce 3 <span class="arithmatex">\(\times\)</span> 3 sous forme de liste de listes. Il est judicieux d'utiliser la fonction <code>copy.deepcopy()</code> pour cloner la pièce P, car si la variable nb vaut 0, il n'y aura aucune rotation effectuée et c'est la copie de la pièce initiale qui sera retournée.  </li>
+<li>Effectuez autant de rotations que nécessaire. Pour cela utiliser la fonction <code>Rot90Droite()</code>.  </li>
+<li>Retournez le résultat.</li>
+</ul>
+</div>
+<div class="tabbed-block">
+<p>Modifier la fonction <code>AffPiece()</code> pour qu'elle tienne compte de la variable rot et affichez la pièce en tenant compte de ce paramètre. Maintenant, lorsque vous appuyer sur la touche [Flèche Haut], vous devez voir la pièce tourner.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="admonition fabquestion">
+<p class="admonition-title">Déplacement latéraux</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">Question 1</label><label for="__tabbed_2_2">Question 2</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>Écrivez une fonction <code>DetectColission()</code> qui détermine suivant une pièce, une rotation et une position (x,y) données s'il y a collision avec le décor ou non. Voici quelques conseils : </p>
+<ul>
+<li>Appliquer la rotation sur la pièce pour obtenir sa bonne orientation  </li>
+<li>Créez une double boucle d'indices dx et dy pour parcourir les cases de la pièce.  </li>
+<li>Comparer chaque case <code>(dx,dy)</code> de la pièce avec la case <code>(x+dx,y+dy)</code> du décor. Si les deux cases sont non vides, alors il y a collision, et retournez vrai dans ce cas.  </li>
+</ul>
+</div>
+<div class="tabbed-block">
+<p>Complétez le code gérant l'appui sur les touches <code>[Flèche Droite]</code> et <code>[Flèche Gauche]</code>. Par exemple, lors de l'appui sur <code>[Flèche Gauche]</code>, vérifiez d'abord que la futur place de la pièce n'est pas en collision avec le décor. Si aucune collision n'est détectée, alors modifier la position de la pièce en faisant : <span class="arithmatex">\(px-=1\)</span>.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="admonition fabquestion">
+<p class="admonition-title">Gestion de la descente</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="3:5"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><input id="__tabbed_3_3" name="__tabbed_3" type="radio" /><input id="__tabbed_3_4" name="__tabbed_3" type="radio" /><input id="__tabbed_3_5" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">Question 1</label><label for="__tabbed_3_2">Question 2</label><label for="__tabbed_3_3">Question 3</label><label for="__tabbed_3_4">Question 4</label><label for="__tabbed_3_5">Question 5</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>Écrivez une fonction <code>FusionDecor()</code> qui, suivant une pièce, une rotation et une position (x,y) donnée, fixe cette pièce dans le décor. Cette fonction est comparable à la fonction <code>DetectCollision()</code>, sauf qu'il n'y a pas à faire de test, mais juste un transfert des cases colorées de la pièce vers les cases de la grille.  </p>
+</div>
+<div class="tabbed-block">
+<p>Écrivez une fonction <code>NextPiece()</code> qui initialise une nouvelle pièce. Pour cela, grâce au package <code>random</code>, choisissez une pièce au hasard. Sa position sera forcément la ligne 0 et au milieu de la grille, c'est-à-dire à l'abscisse 6. Par contre vous pouvez choisir sa rotation aléatoirement.  </p>
+</div>
+<div class="tabbed-block">
+<p>Tous les 20 affichages, la pièce courante descend automatiquement d'une ligne, gérez la collision avec le décor. Lorsque la pièce est susceptible de descendre, examinez si sa position futur produit une collision. Dans ce cas-là, elle ne doit pas descendre, car elle est stoppée par quelque chose. Appelez cette fonction <code>FusionDecor()</code> pour figer la pièce.<br />
+Après cela générez une nouvelle pièce.  </p>
+</div>
+<div class="tabbed-block">
+<p>Vous pouvez maintenant gérer l'appui sur la touche <code>[Flèche BAS]</code>. Le mécanisme est identique à celui de la descente automatique. </p>
+</div>
+<div class="tabbed-block">
+<p>Il reste un mécanisme à mettre en  place : le retrait des lignes pleines. Cet événement peut arriver après la fusion d'une pièce avec le décor. Il se peut qu'une ou plusieurs lignes pleines apparaissent. Écrivez une fonction <code>RetraitLigne()</code> dont l'objectif est de retirer l'ensemble des lignes pleines du décor.  </p>
+<ul>
+<li>Créez une boucle for avec un indice partant de 0 jusqu'à 15 compris. Les deux dernières lignes ne doivent pas être traitées.  </li>
+<li>Faites un calcul pour trouver la valeur de l'indice qui parcourt les lignes en sens inverse, c'est-à-dire de l'indice 15 à 0.  </li>
+<li>Testez la ligne associée à ce nouvel indice pour savoir si elle est pleine :  <ul>
+<li>Pour cela, il suffit de détecter si une valeur 0 est présente dans la ligne courante. utilisez le test <code>0 in MaLigneCourante</code> qui retourne Vrai ou Faux  </li>
+<li>Si la ligne est pleine, retirez-la grâce à la fonction <code>DECOR.pop(index)</code>.  </li>
+<li>Une fois le parcours terminé, des lignes ont pu être supprimées. Ainsi tant que le nombre de lignes dans la liste <code>DECOR</code> est insuffisant, rajoutez des lignes vides à l'indice 0 grâce à la fonction <code>DECOR.insert(0,...)</code>. Pensez à insérer une ligne vide qui soit indépendante de la constante <code>LIGNE_VIDE</code> définie dans le programme.</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+
+                
+
+<style>
+    .jp-RenderedHTMLCommon p {
+        font-size: 0.8rem;
+        line-height: 1.6;
+    }
+
+    .jp-RenderedHTMLCommon li {
+        font-size: .8rem;
+        line-height: 1.6;
+    }
+
+    .jp-RenderedHTMLCommon h1 {
+        margin: 0 0 1.25em;
+        color: var(--md-default-fg-color--light);
+        font-weight: 300;
+        font-size: 2em;
+        line-height: 1.3;
+        letter-spacing: -0.01em;
+    }
+
+    .jp-RenderedHTMLCommon h2 {
+        margin: 1.6em 0 .64em;
+        font-weight: 300;
+        font-size: 1.965em;
+        line-height: 1.4;
+        letter-spacing: -0.01em;
+    }
+
+    .jp-RenderedHTMLCommon h3 {
+        margin: 1.6em 0 .8em;
+        font-weight: 400;
+        font-size: 1.57em;
+        line-height: 1.5;
+        letter-spacing: -0.01em;
+    }
+
+    .jp-RenderedHTMLCommon hr {
+        border: none;
+    }
+</style>
+
+
+
+              </article>
+            </div>
+          
+          
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+            Retour en haut de la page
+          </button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.tabs", "navigation.tabs.sticky", "navigation.expand", "navigation.top", "navigation.sections", "navigation.indexes", "navigation.tracking", "header.autohide", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.74e28a9f.min.js", "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version": "S\u00e9lectionner la version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.220ee61c.min.js"></script>
+      
+        
+          <script src="../../xtra/mathjax.js"></script>
+        
+      
+        
+          <script src="../../javascripts/config.js"></script>
+        
+      
+        
+          <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        
+      
+        
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
+        
+      
+        
+          <script src="https://cdn.jsdelivr.net/gh/rod2ik/cdn@main/mkdocs/javascripts/massilia-admonitions.js"></script>
+        
+      
+    
+  </body>
+</html>

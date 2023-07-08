@@ -1,0 +1,2392 @@
+<!-- Ajout pour le bouton de téléchargement et le style des jupyter notebook   https://github.com/danielfrg/mkdocs-jupyter -->
+
+
+<!doctype html>
+<html lang="fr" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Cours et TD de l'année en cours">
+      
+      
+      
+      
+      
+      <link rel="icon" href="../../images/dragon.svg">
+      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.18">
+    
+    
+      
+        <title>T3 3 gestion processus BAC - NSI Terminale 2023-2024</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.26e3688c.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ecc896b0.min.css">
+      
+      
+
+    
+    
+    
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rod2ik/cdn@main/mkdocs/css/massilia-admonitions.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="blue">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#sujet-bac-13-gestion-processus" class="md-skip">
+          Aller au contenu
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="En-tête">
+    <a href="../.." title="NSI Terminale 2023-2024" class="md-header__button md-logo" aria-label="NSI Terminale 2023-2024" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="m352 124.5-51.9-13c-6.5-1.6-11.3-7.1-12-13.8s2.8-13.1 8.7-16.1l40.8-20.4-43.2-32.4c-5.5-4.1-7.8-11.3-5.6-17.9S297.1 0 304 0h160c30.2 0 58.7 14.2 76.8 38.4l57.6 76.8c6.2 8.3 9.6 18.4 9.6 28.8 0 26.5-21.5 48-48 48h-21.5c-17 0-33.3-6.7-45.3-18.7L480 160h-32v21.5c0 24.8 12.8 47.9 33.8 61.1l106.6 66.6c32.1 20.1 51.6 55.2 51.6 93.1 0 60.6-49.1 109.7-109.8 109.7H32.3c-3.3 0-6.6-.4-9.6-1.4-9.2-2.8-16.7-9.6-20.3-18.5C1 488.7.2 485.2 0 481.4c-.2-3.7.3-7.3 1.3-10.7 2.8-9.2 9.6-16.7 18.6-20.4 3-1.2 6.2-2 9.5-2.2L433.3 412c8.3-.7 14.7-7.7 14.7-16.1 0-4.3-1.7-8.4-4.7-11.4l-44.4-44.4c-30-30-46.9-70.7-46.9-113.1V124.5zm160-52.2v-.6.6zm-1.3 7.4-46.4-11.6c-.2 1.3-.3 2.6-.3 3.9 0 13.3 10.7 24 24 24 10.6 0 19.5-6.8 22.7-16.3zm-379.8 36.8c16.3-14.5 40.4-16.2 58.5-4.1l130.6 87V227c0 32.8 8.4 64.8 24 93H112c-6.7 0-12.7-4.2-15-10.4s-.5-13.3 4.6-17.7l69.4-59.6-152.6 23.5c-7 1.1-13.9-2.6-16.9-9S0 232.7 5.3 228l125.6-111.5z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            NSI Terminale 2023-2024
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              T3 3 gestion processus BAC
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+          
+            
+            
+            
+            <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="blue"  aria-label="Basculer en mode sombre"  type="radio" name="__palette" id="__palette_1">
+            
+              <label class="md-header__button md-icon" title="Basculer en mode sombre" for="__palette_2" hidden>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 2.38 1.19 4.47 3 5.74V17a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-2.26c1.81-1.27 3-3.36 3-5.74a7 7 0 0 0-7-7M9 21a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-1H9v1Z"/></svg>
+              </label>
+            
+          
+            
+            
+            
+            <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="blue"  aria-label="Basculer en mode clair"  type="radio" name="__palette" id="__palette_2">
+            
+              <label class="md-header__button md-icon" title="Basculer en mode clair" for="__palette_1" hidden>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 1 7 7c0 2.38-1.19 4.47-3 5.74V17a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 0 1 7-7M9 21v-1h6v1a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1m3-17a5 5 0 0 0-5 5c0 2.05 1.23 3.81 3 4.58V16h4v-2.42c1.77-.77 3-2.53 3-4.58a5 5 0 0 0-5-5Z"/></svg>
+              </label>
+            
+          
+        </form>
+      
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Rechercher" placeholder="Rechercher" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Recherche">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Effacer" aria-label="Effacer" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initialisation de la recherche
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Onglets" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../.." class="md-tabs__link">
+      Accueil
+    </a>
+  </li>
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../StructureDonnees/index_structDonnees/" class="md-tabs__link">
+        T1 - Struct. données
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../T2_BasesDonnees/index_bd/" class="md-tabs__link">
+        T2 - Bases données
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../index_archi/" class="md-tabs__link">
+        T3 - Archi. mat.
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../Programmation/index_prog/" class="md-tabs__link">
+        T4 - Prog.
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../Algo/index_algo/" class="md-tabs__link">
+        T5 Algo.
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../BAC/bac_explication/" class="md-tabs__link">
+        BAC 📝
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../epreuve_pratique/" class="md-tabs__link">
+        Annales E.P. 💻
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../oral/oral/" class="md-tabs__link">
+        Grand Oral
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../divers/prog/" class="md-tabs__link">
+        Extras
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../../credit/" class="md-tabs__link">
+      Crédits
+    </a>
+  </li>
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="NSI Terminale 2023-2024" class="md-nav__button md-logo" aria-label="NSI Terminale 2023-2024" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="m352 124.5-51.9-13c-6.5-1.6-11.3-7.1-12-13.8s2.8-13.1 8.7-16.1l40.8-20.4-43.2-32.4c-5.5-4.1-7.8-11.3-5.6-17.9S297.1 0 304 0h160c30.2 0 58.7 14.2 76.8 38.4l57.6 76.8c6.2 8.3 9.6 18.4 9.6 28.8 0 26.5-21.5 48-48 48h-21.5c-17 0-33.3-6.7-45.3-18.7L480 160h-32v21.5c0 24.8 12.8 47.9 33.8 61.1l106.6 66.6c32.1 20.1 51.6 55.2 51.6 93.1 0 60.6-49.1 109.7-109.8 109.7H32.3c-3.3 0-6.6-.4-9.6-1.4-9.2-2.8-16.7-9.6-20.3-18.5C1 488.7.2 485.2 0 481.4c-.2-3.7.3-7.3 1.3-10.7 2.8-9.2 9.6-16.7 18.6-20.4 3-1.2 6.2-2 9.5-2.2L433.3 412c8.3-.7 14.7-7.7 14.7-16.1 0-4.3-1.7-8.4-4.7-11.4l-44.4-44.4c-30-30-46.9-70.7-46.9-113.1V124.5zm160-52.2v-.6.6zm-1.3 7.4-46.4-11.6c-.2 1.3-.3 2.6-.3 3.9 0 13.3 10.7 24 24 24 10.6 0 19.5-6.8 22.7-16.3zm-379.8 36.8c16.3-14.5 40.4-16.2 58.5-4.1l130.6 87V227c0 32.8 8.4 64.8 24 93H112c-6.7 0-12.7-4.2-15-10.4s-.5-13.3 4.6-17.7l69.4-59.6-152.6 23.5c-7 1.1-13.9-2.6-16.9-9S0 232.7 5.3 228l125.6-111.5z"/></svg>
+
+    </a>
+    NSI Terminale 2023-2024
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        Accueil
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+        
+      
+      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          T1 - Struct. données
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          T1 - Struct. données
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../StructureDonnees/index_structDonnees/" class="md-nav__link">
+        Structures de données
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+        
+      
+      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+      
+      
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          T2 - Bases données
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          T2 - Bases données
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../T2_BasesDonnees/index_bd/" class="md-nav__link">
+        Base de données
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../T2_BasesDonnees/Modele_Relationnel/" class="md-nav__link">
+        📓 C1 Modèle relationnel
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+        
+      
+      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+          T3 - Archi. mat.
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          T3 - Archi. mat.
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../index_archi/" class="md-nav__link">
+        Architecture matérielle et OS
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+        
+      
+      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+          T4 - Prog.
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          T4 - Prog.
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Programmation/index_prog/" class="md-nav__link">
+        Programmation
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+        
+      
+      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+          T5 Algo.
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_6">
+          <span class="md-nav__icon md-icon"></span>
+          T5 Algo.
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Algo/index_algo/" class="md-nav__link">
+        Algorithmique
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+        
+      
+      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+          BAC 📝
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_7">
+          <span class="md-nav__icon md-icon"></span>
+          BAC 📝
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../BAC/bac_explication/" class="md-nav__link">
+        Information
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+      
+      
+        
+      
+      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7_2" >
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_7_2" id="__nav_7_2_label" tabindex="0">
+          2023
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_7_2">
+          <span class="md-nav__icon md-icon"></span>
+          2023
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Annales/2023/EE/" class="md-nav__link">
+        Epreuves écrites
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+      
+      
+        
+      
+      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7_3" >
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_7_3" id="__nav_7_3_label" tabindex="0">
+          2022
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_3_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_7_3">
+          <span class="md-nav__icon md-icon"></span>
+          2022
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Annales/2022/EE/" class="md-nav__link">
+        Epreuves écrites
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+      
+      
+        
+      
+      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7_4" >
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_7_4" id="__nav_7_4_label" tabindex="0">
+          2021
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_4_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_7_4">
+          <span class="md-nav__icon md-icon"></span>
+          2021
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Annales/2021/EE/" class="md-nav__link">
+        Epreuves écrites
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+        
+      
+      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8" >
+      
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+          Annales E.P. 💻
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_8">
+          <span class="md-nav__icon md-icon"></span>
+          Annales E.P. 💻
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../epreuve_pratique/" class="md-nav__link">
+        Déroulement
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../divers/Consigne_EP/" class="md-nav__link">
+        Consigne
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../divers/lien/" class="md-nav__link">
+        S'entrainer en ligne pour l'épreuve pratique
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+      
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+      
+      
+      
+        
+      
+      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8_4" >
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_8_4" id="__nav_8_4_label" tabindex="0">
+          2023
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_4_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_8_4">
+          <span class="md-nav__icon md-icon"></span>
+          2023
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Annales/2023/EP/" class="md-nav__link">
+        Epreuves pratiques
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+        
+      
+      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_9" >
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+          Grand Oral
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_9">
+          <span class="md-nav__icon md-icon"></span>
+          Grand Oral
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../oral/oral/" class="md-nav__link">
+        Grand Oral
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+        
+      
+      <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_10" >
+      
+      
+        
+          
+        
+      
+      
+        <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
+          Extras
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_10">
+          <span class="md-nav__icon md-icon"></span>
+          Extras
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../divers/prog/" class="md-nav__link">
+        Divers concours programmation
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../credit/" class="md-nav__link">
+        Crédits
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#2021-france-sujet-1" class="md-nav__link">
+    2021, France sujet 1
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2021-france-sujet-annule" class="md-nav__link">
+    2021, France sujet annulé
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2021-france-candidat-libre" class="md-nav__link">
+    2021, France candidat libre
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2023-polynesie-j1" class="md-nav__link">
+    2023, Polynésie, J1
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2022-amerique-du-nord-j2" class="md-nav__link">
+    2022, Amérique du Nord, J2
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset"><a class="md-content__button md-icon" download href="T3_3_gestion_processus_BAC.pdf" title="PDF"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 10.5h1v3h-1v-3m-5 1h1v-1H7v1M20 6v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2M9.5 10.5A1.5 1.5 0 0 0 8 9H5.5v6H7v-2h1a1.5 1.5 0 0 0 1.5-1.5v-1m5 0A1.5 1.5 0 0 0 13 9h-2.5v6H13a1.5 1.5 0 0 0 1.5-1.5v-3m4-1.5h-3v6H17v-2h1.5v-1.5H17v-1h1.5V9z"></path></svg></a>
+                
+
+
+
+
+
+                  
+
+
+<h1 id="sujet-bac-13-gestion-processus"><span class='numBAC'>Sujet BAC 13 : </span> &nbsp; Gestion Processus <span style='float:right;'><span class="twemoji" title="BAC"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M471.6 21.7c-21.9-21.9-57.3-21.9-79.2 0l-30.1 30 97.9 97.9 30.1-30.1c21.9-21.9 21.9-57.3 0-79.2l-18.7-18.6zm-299.2 220c-6.1 6.1-10.8 13.6-13.5 21.9l-29.6 88.8c-2.9 8.6-.6 18.1 5.8 24.6s15.9 8.7 24.6 5.8l88.8-29.6c8.2-2.7 15.7-7.4 21.9-13.5l167.3-167.4-98-98-167.3 167.4zM96 64c-53 0-96 43-96 96v256c0 53 43 96 96 96h256c53 0 96-43 96-96v-96c0-17.7-14.3-32-32-32s-32 14.3-32 32v96c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V160c0-17.7 14.3-32 32-32h96c17.7 0 32-14.3 32-32s-14.3-32-32-32H96z"/></svg></span></span><a class="headerlink" href="#sujet-bac-13-gestion-processus" title="Permanent link">⚓︎</a></h1>
+<h2 id="2021-france-sujet-1">2021, France sujet 1<a class="headerlink" href="#2021-france-sujet-1" title="Permanent link">⚓︎</a></h2>
+<div class="admonition exo">
+<p class="admonition-title">Exo</p>
+</div>
+<p><strong>Partie A</strong></p>
+<p>Cette partie est un questionnaire à choix multiples (QCM).
+Pour chacune des questions, une seule des quatre réponses est exacte. Le candidat indiquera sur sa copie le numéro de la question et la lettre correspondant à la réponse exacte.
+Aucune justification n’est demandée. Une réponse fausse ou une absence de réponse n’enlève aucun point.</p>
+<div class="admonition question">
+<p class="admonition-title">Question 1</p>
+<p>Parmi les commandes ci-dessous, laquelle permet d’afficher les processus en cours d’exécution ?</p>
+<div class="highlight"><span class="filename">📋 Texte</span><pre><span></span><code>a. dir  
+b. ps  
+c. man  
+d. ls
+</code></pre></div>
+</div>
+<div class="admonition question">
+<p class="admonition-title">Question 2</p>
+<p>Quelle abréviation désigne l’identifiant d’un processus dans un système d’exploitation de type UNIX ? </p>
+<div class="highlight"><span class="filename">📋 Texte</span><pre><span></span><code>a. PIX  
+b. SIG  
+c. PID  
+d. SID
+</code></pre></div>
+</div>
+<div class="admonition question">
+<p class="admonition-title">Question 3</p>
+<p>Comment s’appelle la gestion du partage du processeur entre différents processus ?</p>
+<div class="highlight"><span class="filename">📋 Texte</span><pre><span></span><code>a. L’interblocage  
+b. L’ordonnancement  
+c. La planification  
+d. La priorisation
+</code></pre></div>
+</div>
+<div class="admonition question">
+<p class="admonition-title">Question 4</p>
+<p>Quelle commande permet d’interrompre un processus dans un système d’exploitation de type UNIX ?</p>
+<div class="highlight"><span class="filename">📋 Texte</span><pre><span></span><code>a. stop  
+b. interrupt  
+c. end  
+d. kill
+</code></pre></div>
+</div>
+<details class="tip">
+<summary>Correction</summary>
+<p>1.b<br />
+2.c<br />
+3.b<br />
+4.d  </p>
+</details>
+<p><strong>Partie B</strong></p>
+<div class="admonition question">
+<p class="admonition-title">Question 1</p>
+<p>Un processeur choisit à chaque cycle d’exécution le processus qui doit être exécuté. Le tableau ci-dessous donne pour trois processus P1, P2, P3 :</p>
+<ul>
+<li>
+<p>la durée d’exécution (en nombre de cycles),</p>
+</li>
+<li>
+<p>l’instant d’arrivée sur le processeur (exprimé en nombre de cycles à partir de 0),</p>
+</li>
+<li>
+<p>le numéro de priorité.</p>
+</li>
+</ul>
+<p>Le numéro de priorité est d’autant plus petit que la priorité est grande. On suppose qu’à chaque instant, c’est le processus qui a le plus petit numéro de priorité qui est exécuté, ce qui peut provoquer la suspension d’un autre processus, lequel reprendra lorsqu’il sera le plus prioritaire.</p>
+<p><img alt="" src="../data/c19e_3.png" /></p>
+<p>Reproduire le tableau ci-dessous sur la copie et indiquer dans chacune des cases le processus exécuté à chaque cycle.</p>
+<p><img alt="" src="../data/c19e_4.png" /></p>
+</div>
+<details class="tip">
+<summary>Correction</summary>
+<p><img alt="" src="../data/c19e_4_cor.png" /></p>
+</details>
+<div class="admonition question">
+<p class="admonition-title">Question 1</p>
+<p>On suppose maintenant que les trois processus précédents s’exécutent et utilisent une ou plusieurs ressources parmi R1, R2 et R3.
+Parmi les scénarios suivants, lequel provoque un interblocage ? Justifier.</p>
+<p><img alt="" src="../data/c19e_5.png" /></p>
+</div>
+<details class="tip">
+<summary>Correction</summary>
+<p>Il s’agit du scénario 2 car nous nous retrouvons dans la situation où P1 possède R1 et attend R2 avant de pouvoir continuer et P3 possède R2 et attend R1 avant de pouvoir continuer.</p>
+</details>
+<p><strong>Partie C</strong>  </p>
+<p>Dans cette partie, pour une meilleure lisibilité, des espaces sont placées dans les écritures
+binaires des nombres. Il ne faut pas les prendre en compte dans les calculs.<br />
+Pour chiffrer un message, une méthode, dite du masque jetable, consiste à le combiner avec une
+chaîne de caractères de longueur comparable.<br />
+Une implémentation possible utilise l’opérateur XOR (ou exclusif) dont voici la table de vérité :</p>
+<table>
+<thead>
+<tr>
+<th align="center">a</th>
+<th align="center">b</th>
+<th align="center">a XOR b</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">0</td>
+</tr>
+<tr>
+<td align="center">0</td>
+<td align="center">1</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="center">1</td>
+<td align="center">0</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="center">1</td>
+<td align="center">1</td>
+<td align="center">0</td>
+</tr>
+</tbody>
+</table>
+<p>Dans la suite, les nombres écrits en binaire seront précédés du préfixe 0b.</p>
+<div class="admonition question">
+<p class="admonition-title">Question 1</p>
+<p>Pour chiffrer un message, on convertit chacun de ses caractères en binaire (à l’aide du format Unicode), et on réalise l’opération XOR bit à bit avec la clé.<br />
+Après conversion en binaire, et avant que l’opération XOR bit à bit avec la clé n’ait été effectuée, Alice obtient le message suivant :  </p>
+<p><code>m = 0b 0110 0011 0100 0110</code></p>
+<p><strong>a.</strong> Le message m correspond à deux caractères codés chacun sur 8 bits : déterminer quels sont ces caractères. On fournit pour cela la table ci-dessous qui associe à l’écriture hexadécimale d’un octet le caractère correspondant (figure 2). Exemple de lecture : le caractère correspondant à l’octet codé 4A en hexadécimal est la lettre J.</p>
+<p><img alt="" class="center" src="../data/tableasciiBAC.png" /></p>
+</div>
+<details class="tip">
+<summary>Correction</summary>
+<p>0100 0110 =&gt; 46 en hexa =&gt; caractère F<br />
+0110 0011 =&gt; 63 en hexa =&gt; caractère c  </p>
+<p>donc cF</p>
+</details>
+<div class="admonition question">
+<p class="admonition-title">Question 1.b</p>
+<p>Pour chiffrer le message d’Alice, on réalise l’opération XOR bit à bit avec la clé suivante :<br />
+<code>k = 0b 1110 1110 1111 0000</code>  </p>
+<p>Donner l’écriture binaire du message obtenu.</p>
+</div>
+<details class="tip">
+<summary>Correction</summary>
+<p><code>0b 1000 1101 1011 0110</code></p>
+</details>
+<div class="admonition question">
+<p class="admonition-title">Question 2.a</p>
+<p>Dresser la table de vérité de l’expression booléenne suivante : </p>
+<p><code>(a XOR b) XOR b</code></p>
+</div>
+<details class="tip">
+<summary>Correction</summary>
+<table>
+<thead>
+<tr>
+<th align="center">a</th>
+<th align="center">b</th>
+<th align="center">(a XOR b) XOR b</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">0</td>
+</tr>
+<tr>
+<td align="center">0</td>
+<td align="center">1</td>
+<td align="center">0</td>
+</tr>
+<tr>
+<td align="center">1</td>
+<td align="center">0</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="center">1</td>
+<td align="center">1</td>
+<td align="center">1</td>
+</tr>
+</tbody>
+</table>
+</details>
+<div class="admonition question">
+<p class="admonition-title">Question 2.b</p>
+<p>Bob connaît la chaîne de caractères utilisée par Alice pour chiffrer le message. Quelle opération doit-il réaliser pour déchiffrer son message ?</p>
+</div>
+<details class="tip">
+<summary>Correction</summary>
+<p>On peut remarquer que (a xor b) xor b permet de retrouver a, donc si a correspond au message non chiffré et a xor b correspond au message chiffré, un (a xor b) xor b permet donc de retrouver le message non chiffré. Si on appelle m le message non chiffré, m’ le message chiffré et k la clé de chiffrement, un m’ xor k permettra de retrouver m.</p>
+</details>
+<h2 id="2021-france-sujet-annule">2021, France sujet annulé<a class="headerlink" href="#2021-france-sujet-annule" title="Permanent link">⚓︎</a></h2>
+<div class="admonition exo">
+<p class="admonition-title">d'après le sujet du bac NSI 2021</p>
+</div>
+<p><em>Cet exercice porte sur les systèmes d’exploitation : gestion des processus et des ressources.</em>  <br />
+<em>Les parties A et B peuvent être traitées indépendamment</em></p>
+<p><strong>Partie A</strong>  </p>
+<div class="admonition question">
+<p class="admonition-title">Question 1</p>
+<p>La commande ps suivie éventuellement de diverses options permet de lister les processus actifs ou en attente sur une machine.
+Sur une machine équipée du système d’exploitation GNU/Linux, la commande “ps -aef” permet d’obtenir la sortie suivante (extrait) :</p>
+<p><img alt="" src="../data/c19e_1.png" /></p>
+<p><strong>a)</strong> Quelle est la particularité de l’utilisateur “root” ?</p>
+<p><strong>b)</strong> Quel est le processus parent du processus ayant pour PID 3383</p>
+</div>
+<details class="tip">
+<summary>Correction</summary>
+</details>
+<p>Dans un bureau d’architectes, on dispose de certaines ressources qui ne peuvent être utilisées simultanément par plus d’un processus, comme l’imprimante, la table traçante, le modem. Chaque programme, lorsqu’il s’exécute, demande l’allocation des ressources qui lui sont nécessaires. Lorsqu’il a fini de s’exécuter, il libère ses ressources.</p>
+<p><img alt="" src="../data/c19e_2.png" /></p>
+<div class="admonition question">
+<p class="admonition-title">Question 2</p>
+<p>On appelle p1, p2 et p3 les processus associés respectivement aux programmes 1, 2 et 3.</p>
+<p><strong>a)</strong> Justifier qu'une situation d'interblocage peut se produire.</p>
+<p><strong>b)</strong> Modifier l'ordre des instructions du programme 3 pour qu'une telle situation ne puisse pas se produire.</p>
+</div>
+<details class="tip">
+<summary>Correction</summary>
+<p><strong>2.a</strong> Pour passer à l’exécution, le Programme 1 a besoin du modem, mais le modem est déjà utilisé par le Programme 2. Le processus p1 est donc bloqué. Pour passer à l’exécution, le Programme 2 a besoin de l’imprimante, mais l’imprimante est déjà utilisée par le Programme 3. Le processus p2 est donc bloqué. Pour passer à l’exécution, le Programme 3 a besoin de la table traçante, mais la table traçante est déjà utilisée par le Programme 1. Le processus p3 est donc bloqué. Les 3 processus sont bloqués et ne pourront pas libérer les ressources attendues par les autres processus (la libération des ressources se faisant après l’exécution), nous sommes bien en situation d’interblocage.  </p>
+<p><strong>2.b</strong>  </p>
+<table>
+<thead>
+<tr>
+<th align="center">Programme 3</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">demander (table traçante)</td>
+</tr>
+<tr>
+<td align="center">demander (imprimante)</td>
+</tr>
+<tr>
+<td align="center">exécution</td>
+</tr>
+<tr>
+<td align="center">libérer (imprimante)</td>
+</tr>
+<tr>
+<td align="center">libérer (table traçante)</td>
+</tr>
+</tbody>
+</table>
+</details>
+<div class="admonition question">
+<p class="admonition-title">Question 3</p>
+<p>Supposons que le processus p1 demande la table traçante alors qu'elle est en cours d'utilisation par le processus p3. Parmi les états suivants, quel sera l'état du processus p1 tant que la table traçante n'est pas disponible :  </p>
+<p>a) élu<br />
+b) bloqué<br />
+c) prêt<br />
+d) terminé  </p>
+</div>
+<details class="tip">
+<summary>Correction</summary>
+<p>bloqué</p>
+</details>
+<p><strong>Partie B</strong>  </p>
+<p>Avec une ligne de commande dans un terminal sous Linux, on obtient l'affichage suivant :</p>
+<p><img alt="" src="../data/psBAC.png" /></p>
+<p>La documentation Linux donne la signification des différents champs :</p>
+<ul>
+<li>UID : identifiant utilisateur effectif ;  </li>
+<li>PID : identifiant de processus ;  </li>
+<li>PPID : PID du processus parent ;  </li>
+<li>C : partie entière du pourcentage d'utilisation du processeur par rapport au temps de vie des  processus ;  </li>
+<li>STIME : l'heure de lancement du processus ;  </li>
+<li>TTY : terminal de contrôle  </li>
+<li>TIME : temps d'exécution  </li>
+<li>CMD : nom de la commande du processus  </li>
+</ul>
+<div class="admonition question">
+<p class="admonition-title">Question 1</p>
+<p>Parmi les quatre commandes suivantes, laquelle a permis cet affichage ?  </p>
+<p>a) ls -l<br />
+b) ps –ef<br />
+c) cd ..<br />
+d) chmod 741 processus.txt  </p>
+</div>
+<details class="tip">
+<summary>Correction</summary>
+<p>ps -ef</p>
+</details>
+<div class="admonition question">
+<p class="admonition-title">Question 2</p>
+<p>Quel est l'identifiant du processus parent à l'origine de tous les processus concernant le navigateur Web (chromium-browser) ?</p>
+</div>
+<details class="tip">
+<summary>Correction</summary>
+<p>L’identifiant du processus parent à l’origine de tous les processus concernant le navigateur Web est 831</p>
+</details>
+<div class="admonition question">
+<p class="admonition-title">Question 3</p>
+<p>Quel est l'identifiant du processus dont le temps d'exécution est le plus long ?</p>
+</div>
+<details class="tip">
+<summary>Correction</summary>
+<p>L’identifiant du processus dont le temps d’exécution est le plus long est 6211 (00:01:16)</p>
+</details>
+<h2 id="2021-france-candidat-libre">2021, France candidat libre<a class="headerlink" href="#2021-france-candidat-libre" title="Permanent link">⚓︎</a></h2>
+<div class="admonition exo">
+<p class="admonition-title">Extrait sujet BAC 2021</p>
+</div>
+<p><em>Cet exercice porte sur la gestion des processus par un système d’exploitation.</em></p>
+<p><strong>Partie A : Processus</strong>  </p>
+<p>La commande UNIX ps présente un cliché instantané des processus en cours d'exécution.<br />
+Avec l’option −eo pid,ppid,stat,command, cette commande affiche dans l’ordre l’identifiant du processus PID (process identifier), le PPID (parent process identifier), l’état STAT et le nom de la commande à l’origine du processus.  </p>
+<p>Les valeurs du champ STAT indique l’état des processus :  </p>
+<ul>
+<li>R : processus en cours d’exécution  </li>
+<li>S : processus endormi  </li>
+</ul>
+<p>Sur un ordinateur, on exécute la commande ps −eo pid,ppid,stat,command et on obtient un affichage dont on donne ci-dessous un extrait. </p>
+<p><img alt="" src="../data/extraitBAC.png" /></p>
+<p>À l'aide de cet affichage, répondre aux questions ci-dessous.</p>
+<div class="admonition question">
+<p class="admonition-title">Question 1</p>
+<p>Quel est le nom de la première commande exécutée par le système d'exploitation lors du démarrage ?</p>
+</div>
+<details class="tip">
+<summary>Correction</summary>
+<p>La première commande exécutée par le système d’exploitation lors du démarrage est la commande init</p>
+</details>
+<div class="admonition question">
+<p class="admonition-title">Question 2</p>
+<p>Quels sont les identifiants des processus actifs sur cet ordinateur au moment de l’appel de la commande ps ? Justifier la réponse.  </p>
+</div>
+<details class="tip">
+<summary>Correction</summary>
+<p>Les processus actifs sont les processus ayant pour PID 5440 et 5450 (présence de l’indicateur R dans la colonne STAT pour ces 2 processus).</p>
+</details>
+<div class="admonition question">
+<p class="admonition-title">Question 3</p>
+<p>Depuis quelle application a-t-on exécuté la commande ps ?<br />
+Donner les autres commandes qui ont été exécutées à partir de cette application.  </p>
+</div>
+<details class="tip">
+<summary>Correction</summary>
+<p>La commande ps a été exécutée depuis l’application Bash (car le processus ps a pour PPID 1912 qui correspond au PID de Bash).<br />
+Deux autres processus Bash (PID 2014 et PID 2013) et un processus python programme1.py (PID 5437) ont été lancés depuis le processus Bash de PID 1912.</p>
+</details>
+<div class="admonition question">
+<p class="admonition-title">Question 4</p>
+<p>Expliquer l'ordre dans lequel les deux commandes python programme1.py et python programme2.py ont été exécutées.  </p>
+</div>
+<details class="tip">
+<summary>Correction</summary>
+<p>Le processus python programme1.py a un PID de 5437 alors que le processus python programme2.py a un PID de 5440. python programme1.py a été exécuté avant python programme2.py.</p>
+</details>
+<div class="admonition question">
+<p class="admonition-title">Question 5</p>
+<p>Peut-on prédire que l'une des deux commandes python programme1.py et python programme2.py finira avant l’autre ?</p>
+</div>
+<details class="tip">
+<summary>Correction</summary>
+<p>Non, aucune prédiction n’est possible.</p>
+</details>
+<h2 id="2023-polynesie-j1">2023, Polynésie, J1<a class="headerlink" href="#2023-polynesie-j1" title="Permanent link">⚓︎</a></h2>
+<div class="admonition exo">
+<p class="admonition-title">Ordonnanceur avec liste d'attente</p>
+</div>
+<p>Un système est composé de 4 périphériques, numérotés de 0 à 3, et d'une mémoire, reliés entre eux par un bus auquel est également connecté un dispositif ordonnanceur. À l'aide d'un signal spécifique envoyé sur le bus, l'ordonnanceur sollicite à tour de rôle les périphériques pour qu'ils indiquent le type d'opération (lecture ou écriture) qu'ils souhaitent effectuer, et l'adresse mémoire concernée.</p>
+<p>Un tour a lieu quand les 4 périphériques ont été sollicités. <strong>Au début d'un nouveau tour, on considère que toutes les adresses sont disponibles en lecture et écriture.</strong></p>
+<p>Si un périphérique demande l'écriture à une adresse mémoire <strong>à laquelle on n'a pas encore accédé</strong> pendant le tour, l'ordonnanceur répond <code>"OK"</code> et l'écriture a lieu. Si on a déjà demandé la lecture ou l'écriture à cette adresse, l'ordonnanceur répond <code>"ATT"</code> et l'opération n'a pas lieu.</p>
+<p>Si un périphérique demande la lecture à une adresse à laquelle on n'a pas encore accédé en écriture pendant le tour, l'ordonnanceur répond <code>"OK"</code> et la lecture a lieu. Plusieurs lectures peuvent avoir donc lieu pendant le même tour à la même adresse.</p>
+<p>Si un périphérique demande la lecture à une adresse à laquelle on a déjà accédé en écriture, l'ordonnanceur répond <code>"ATT"</code> et la lecture n'a pas lieu.</p>
+<p>Ainsi, pendant un tour, une adresse peut être utilisée soit une seule fois en écriture, soit autant de fois qu'on veut en lecture, soit pas utilisée.</p>
+<p>Si un périphérique ne peut pas effectuer une opération à une adresse, il demande la même opération à la même adresse au tour suivant.</p>
+<p><strong>1.</strong> Le tableau donné en annexe 1 indique, sur chaque ligne, le périphérique sélectionné, l'adresse à laquelle il souhaite accéder et l'opération à effectuer sur cette adresse. Compléter dans la dernière colonne de cette annexe, à rendre avec la copie, la réponse donnée par l'ordonnanceur pour chaque opération.</p>
+<div class="admonition abstract">
+<p class="admonition-title">Annexe 1</p>
+<table>
+<thead>
+<tr>
+<th align="left">N° périphérique</th>
+<th align="left">Adresse</th>
+<th align="left">Opération</th>
+<th align="left">Réponse de l'ordonnanceur</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">0</td>
+<td align="left"><code>10</code></td>
+<td align="left">écriture</td>
+<td align="left"><code>"OK"</code></td>
+</tr>
+<tr>
+<td align="left">1</td>
+<td align="left"><code>11</code></td>
+<td align="left">lecture</td>
+<td align="left"><code>"OK"</code></td>
+</tr>
+<tr>
+<td align="left">2</td>
+<td align="left"><code>10</code></td>
+<td align="left">lecture</td>
+<td align="left"><code>"ATT"</code></td>
+</tr>
+<tr>
+<td align="left">3</td>
+<td align="left"><code>10</code></td>
+<td align="left">écriture</td>
+<td align="left"><code>"ATT"</code></td>
+</tr>
+<tr>
+<td align="left">0</td>
+<td align="left"><code>12</code></td>
+<td align="left">lecture</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">1</td>
+<td align="left"><code>10</code></td>
+<td align="left">lecture</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">2</td>
+<td align="left"><code>10</code></td>
+<td align="left">lecture</td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">3</td>
+<td align="left"><code>10</code></td>
+<td align="left">écriture</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<details class="success">
+<summary>Réponse</summary>
+<table>
+<thead>
+<tr>
+<th align="left">N° périphérique</th>
+<th align="left">Adresse</th>
+<th align="left">Opération</th>
+<th align="left">Réponse de l'ordonnanceur</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">0</td>
+<td align="left"><code>10</code></td>
+<td align="left">écriture</td>
+<td align="left"><code>"OK"</code></td>
+</tr>
+<tr>
+<td align="left">1</td>
+<td align="left"><code>11</code></td>
+<td align="left">lecture</td>
+<td align="left"><code>"OK"</code></td>
+</tr>
+<tr>
+<td align="left">2</td>
+<td align="left"><code>10</code></td>
+<td align="left">lecture</td>
+<td align="left"><code>"ATT"</code></td>
+</tr>
+<tr>
+<td align="left">3</td>
+<td align="left"><code>10</code></td>
+<td align="left">écriture</td>
+<td align="left"><code>"ATT"</code></td>
+</tr>
+<tr>
+<td align="left">0</td>
+<td align="left"><code>12</code></td>
+<td align="left">lecture</td>
+<td align="left"><code>"OK"</code></td>
+</tr>
+<tr>
+<td align="left">1</td>
+<td align="left"><code>10</code></td>
+<td align="left">lecture</td>
+<td align="left"><code>"OK"</code></td>
+</tr>
+<tr>
+<td align="left">2</td>
+<td align="left"><code>10</code></td>
+<td align="left">lecture</td>
+<td align="left"><code>"OK"</code></td>
+</tr>
+<tr>
+<td align="left">3</td>
+<td align="left"><code>10</code></td>
+<td align="left">écriture</td>
+<td align="left"><code>"ATT"</code></td>
+</tr>
+</tbody>
+</table>
+<p>Il s'agit d'un nouveau tour, les lectures sont possibles, la première écriture ne l'est pas, on a déjà accédé en lecture pendant le tour à l'adresse demandée.</p>
+</details>
+<p>On suppose dans toute la suite que :</p>
+<ul>
+<li>le périphérique 0 écrit systématiquement à l'adresse <code>10</code> ;</li>
+<li>le périphérique 1 lit systématiquement à l'adresse <code>10</code> ;</li>
+<li>le périphérique 2 écrit alternativement aux adresses <code>11</code> et <code>12</code> ;</li>
+<li>le périphérique 3 lit alternativement aux adresses <code>11</code> et <code>12</code> ;</li>
+</ul>
+<p>Pour les périphériques 2 et 3, le changement d'adresse n'est effectif que lorsque l'opération est réalisée.</p>
+<p><strong>2.</strong> On suppose que les périphériques sont sélectionnés à chaque tour dans l'ordre 0 ; 1 ; 2 ; 3. Expliquer ce qu'il se passe pour le périphérique 1.</p>
+<details class="success">
+<summary>Réponse</summary>
+<ul>
+<li>À chaque début de tour, le périphérique 0 demande à écrire à l'adresse <code>10</code> ; c'est accepté.</li>
+<li>Juste après, le périphérique 1 demande à lire à l'adresse <code>10</code> ; c'est refusé.</li>
+</ul>
+<p>Le périphérique 1 ne pourra jamais lire l'adresse <code>10</code>.</p>
+</details>
+<p>Les périphériques sont sollicités de la manière suivante lors de quatre tours successifs :</p>
+<ul>
+<li>au premier tour, ils sont sollicités dans l'ordre 0 ; 1 ; 2 ; 3 ;</li>
+<li>au deuxième tour, dans l'ordre 1 ; 2 ; 3 ; 0 ;</li>
+<li>au troisième tour, 2 ; 3 ; 0 ; 1 ;</li>
+<li>puis 3 ; 0 ; 1 ; 2 au dernier tour.</li>
+<li>Et on recommence...</li>
+</ul>
+<p><strong>3.a.</strong> Préciser pour chacun de ces tours si le périphérique 0 peut écrire et si le périphérique 1 peut lire.</p>
+<details class="success">
+<summary>Réponse</summary>
+<ul>
+<li><strong>Tour 1</strong> : 0 ; 1 ; 2 ; 3<ul>
+<li>0 peut écrire, puis</li>
+<li>1 ne peut pas lire</li>
+</ul>
+</li>
+<li><strong>Tour 2</strong> : 1 ; 2 ; 3 ; 0<ul>
+<li>1 peut lire, puis</li>
+<li>0 ne peut pas écrire</li>
+</ul>
+</li>
+<li><strong>Tour 3</strong> : 2 ; 3 ; 0 ; 1<ul>
+<li>0 peut écrire, puis</li>
+<li>1 ne peut pas lire</li>
+</ul>
+</li>
+<li><strong>Tour 4</strong> : 3 ; 0 ; 1 ; 2<ul>
+<li>0 peut écrire, puis</li>
+<li>1 ne peut pas lire</li>
+</ul>
+</li>
+</ul>
+</details>
+<p><strong>3.b.</strong> En déduire la proportion des valeurs écrites par le périphérique 0 qui sont effectivement lues par le périphérique 1.</p>
+<details class="success">
+<summary>Réponse</summary>
+<ul>
+<li>Au tour 1, la valeur écrite par le périphérique 0 sera lue par le périphérique 1 au tour suivant.</li>
+<li>Au tour 2, rien n'est écrit par le périphérique 0.</li>
+<li>Au tour 3, la valeur écrite par le périphérique 0 <strong>ne sera jamais</strong> lue par le périphérique 1 ; en effet, une autre écriture intervient avant la prochaine lecture.</li>
+<li>Au tour 4, la valeur écrite par le périphérique 0 <strong>ne sera jamais</strong> lue par le périphérique 1 ; en effet, une autre écriture intervient avant la prochaine lecture.</li>
+</ul>
+<p>Ainsi, une seule valeur sur trois sera effectivement lue. La proportion est <span class="arithmatex">\(\frac13\)</span>.</p>
+</details>
+<p>On change la méthode d'ordonnancement : on détermine l'ordre des périphériques au cours d'un tour à l'aide de deux listes d'attente <code>ATT_L</code> et <code>ATT_E</code> établies au tour précédent.</p>
+<p>Au cours d'un tour, on place dans la liste <code>ATT_L</code> toutes les opérations de lecture mises en attente, et dans la liste d'attente <code>ATT_E</code> toutes les opérations d'écriture mises en attente.</p>
+<p>Au début du tour suivant, on établit l'ordre d'interrogation des périphériques en procédant ainsi :</p>
+<ul>
+<li>on interroge ceux présents dans la liste <code>ATT_L</code>, par ordre croissant d'adresse,</li>
+<li>on interroge ensuite ceux présents dans la liste <code>ATT_E</code>, par ordre croissant
+d'adresse,</li>
+<li>puis on interroge les périphériques restants, par ordre croissant d'adresse.</li>
+</ul>
+<p><strong>4.</strong> Compléter et rendre avec la copie le tableau fourni en annexe 2, en utilisant l'ordonnancement décrit ci-dessus, sur 3 tours.</p>
+<div class="admonition abstract">
+<p class="admonition-title">Annexe 2</p>
+<table>
+<thead>
+<tr>
+<th align="left">Tour</th>
+<th align="left">N° périphérique</th>
+<th align="left">Adresse</th>
+<th align="left">Opération</th>
+<th align="left">Réponse ordonnanceur</th>
+<th align="left"><code>ATT_L</code></th>
+<th align="left"><code>ATT_E</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">1</td>
+<td align="left">0</td>
+<td align="left"><code>10</code></td>
+<td align="left">écriture</td>
+<td align="left"><code>"OK"</code></td>
+<td align="left">vide</td>
+<td align="left">vide</td>
+</tr>
+<tr>
+<td align="left">1</td>
+<td align="left">1</td>
+<td align="left"><code>10</code></td>
+<td align="left">lecture</td>
+<td align="left"><code>"ATT"</code></td>
+<td align="left"><code>(1, 10)</code></td>
+<td align="left">vide</td>
+</tr>
+<tr>
+<td align="left">1</td>
+<td align="left">2</td>
+<td align="left"><code>11</code></td>
+<td align="left">écriture</td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">1</td>
+<td align="left">3</td>
+<td align="left"><code>11</code></td>
+<td align="left">lecture</td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">2</td>
+<td align="left">1</td>
+<td align="left"><code>10</code></td>
+<td align="left">lecture</td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">vide</td>
+</tr>
+<tr>
+<td align="left">2</td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">2</td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">2</td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">3</td>
+<td align="left">0</td>
+<td align="left"><code>10</code></td>
+<td align="left">écriture</td>
+<td align="left"></td>
+<td align="left">vide</td>
+<td align="left">vide</td>
+</tr>
+<tr>
+<td align="left">3</td>
+<td align="left">1</td>
+<td align="left"><code>10</code></td>
+<td align="left">lecture</td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left">vide</td>
+</tr>
+<tr>
+<td align="left">3</td>
+<td align="left">2</td>
+<td align="left"><code>11</code></td>
+<td align="left">écriture</td>
+<td align="left"><code>"OK"</code></td>
+<td align="left"><code>(1, 10)</code></td>
+<td align="left">vide</td>
+</tr>
+<tr>
+<td align="left">3</td>
+<td align="left">3</td>
+<td align="left"><code>12</code></td>
+<td align="left">lecture</td>
+<td align="left"></td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+</div>
+<details class="success">
+<summary>Réponse</summary>
+<table>
+<thead>
+<tr>
+<th align="left">Tour</th>
+<th align="left">N° périphérique</th>
+<th align="left">Adresse</th>
+<th align="left">Opération</th>
+<th align="left">Réponse ordonnanceur</th>
+<th align="left"><code>ATT_L</code></th>
+<th align="left"><code>ATT_E</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">1</td>
+<td align="left">0</td>
+<td align="left"><code>10</code></td>
+<td align="left">écriture</td>
+<td align="left"><code>"OK"</code></td>
+<td align="left">vide</td>
+<td align="left">vide</td>
+</tr>
+<tr>
+<td align="left">1</td>
+<td align="left">1</td>
+<td align="left"><code>10</code></td>
+<td align="left">lecture</td>
+<td align="left"><code>"ATT"</code></td>
+<td align="left"><code>(1, 10)</code></td>
+<td align="left">vide</td>
+</tr>
+<tr>
+<td align="left">1</td>
+<td align="left">2</td>
+<td align="left"><code>11</code></td>
+<td align="left">écriture</td>
+<td align="left"><code>"OK"</code></td>
+<td align="left"><code>(1, 10)</code></td>
+<td align="left">vide</td>
+</tr>
+<tr>
+<td align="left">1</td>
+<td align="left">3</td>
+<td align="left"><code>11</code></td>
+<td align="left">lecture</td>
+<td align="left"><code>"ATT"</code></td>
+<td align="left"><code>(1, 10), (3, 11)</code></td>
+<td align="left">vide</td>
+</tr>
+<tr>
+<td align="left">2</td>
+<td align="left">1</td>
+<td align="left"><code>10</code></td>
+<td align="left">lecture</td>
+<td align="left"><code>"OK"</code></td>
+<td align="left"><code>(3, 11)</code></td>
+<td align="left">vide</td>
+</tr>
+<tr>
+<td align="left">2</td>
+<td align="left">3</td>
+<td align="left"><code>11</code></td>
+<td align="left">lecture</td>
+<td align="left"><code>"OK"</code></td>
+<td align="left">vide</td>
+<td align="left">vide</td>
+</tr>
+<tr>
+<td align="left">2</td>
+<td align="left">0</td>
+<td align="left"><code>10</code></td>
+<td align="left">écriture</td>
+<td align="left"><code>"ATT"</code></td>
+<td align="left">vide</td>
+<td align="left"><code>(0, 10)</code></td>
+</tr>
+<tr>
+<td align="left">2</td>
+<td align="left">2</td>
+<td align="left"><code>12</code></td>
+<td align="left">écriture</td>
+<td align="left"><code>"OK"</code></td>
+<td align="left">vide</td>
+<td align="left"><code>(0, 10)</code></td>
+</tr>
+<tr>
+<td align="left">3</td>
+<td align="left">0</td>
+<td align="left"><code>10</code></td>
+<td align="left">écriture</td>
+<td align="left"><code>"OK"</code></td>
+<td align="left">vide</td>
+<td align="left">vide</td>
+</tr>
+<tr>
+<td align="left">3</td>
+<td align="left">1</td>
+<td align="left"><code>10</code></td>
+<td align="left">lecture</td>
+<td align="left"><code>"ATT"</code></td>
+<td align="left"><code>(1, 10)</code></td>
+<td align="left">vide</td>
+</tr>
+<tr>
+<td align="left">3</td>
+<td align="left">2</td>
+<td align="left"><code>11</code></td>
+<td align="left">écriture</td>
+<td align="left"><code>"OK"</code></td>
+<td align="left"><code>(1, 10)</code></td>
+<td align="left">vide</td>
+</tr>
+<tr>
+<td align="left">3</td>
+<td align="left">3</td>
+<td align="left"><code>12</code></td>
+<td align="left">lecture</td>
+<td align="left"><code>"OK"</code></td>
+<td align="left"><code>(1, 10)</code></td>
+<td align="left">vide</td>
+</tr>
+</tbody>
+</table>
+</details>
+<p>Les colonnes <strong>e0</strong> et <strong>e1</strong> du tableau suivant recensent les deux chiffres de l'écriture binaire de l'entier <strong>n</strong> de la première colonne.</p>
+<table>
+<thead>
+<tr>
+<th align="center">nombre n</th>
+<th align="center">écriture binaire de n sur deux bits</th>
+<th align="center">e1</th>
+<th align="center">e0</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">0</td>
+<td align="center">00</td>
+<td align="center">0</td>
+<td align="center">0</td>
+</tr>
+<tr>
+<td align="center">1</td>
+<td align="center">01</td>
+<td align="center">0</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="center">2</td>
+<td align="center">10</td>
+<td align="center">1</td>
+<td align="center">0</td>
+</tr>
+<tr>
+<td align="center">3</td>
+<td align="center">11</td>
+<td align="center">1</td>
+<td align="center">1</td>
+</tr>
+</tbody>
+</table>
+<p>L'ordonnanceur attribue à deux signaux sur le bus de données les valeurs de <strong>e0</strong> et <strong>e1</strong> associées au numéro du circuit qu'il veut sélectionner. On souhaite construire à l'aide des portes ET, OU et NON un circuit pour chaque périphérique.<br />
+Chacun des quatre circuits à construire prend en entrée deux signaux <strong>e0</strong> et <strong>e1</strong>, le signal de sortie <strong>s</strong> valant 1 uniquement lorsque les niveaux de <strong>e0</strong> et <strong>e1</strong> correspondent aux bits de l'écriture en binaire du numéro du périphérique correspondant.</p>
+<p>Par exemple, le circuit ci-dessous réalise la sélection du périphérique 3. En effet, le signal <strong>s</strong> vaut 1 si et seulement si <strong>e0</strong> et <strong>e1</strong> valent tous les deux 1.</p>
+<pre class="mermaid"><code>flowchart LR
+    e0---ET(ET)
+    e1---ET
+    ET---s
+    style e0 stroke-width:0px,opacity:0
+    style e1 stroke-width:0px,opacity:0
+    style s stroke-width:0px,opacity:0</code></pre>
+<p><strong>5.a.</strong> Recopier sur la copie et indiquer dans le circuit ci-dessous les entrées <strong>e0</strong> et <strong>e1</strong> de façon que ce circuit sélectionne le périphérique 1.</p>
+<pre class="mermaid"><code>flowchart LR
+    ea( )---NON(NON)---ET(ET)
+    eb( )----ET
+    ET---s
+    style ea stroke-width:0px,opacity:0
+    style eb stroke-width:0px,opacity:0
+    style s stroke-width:0px,opacity:0</code></pre>
+<details class="success">
+<summary>Réponse</summary>
+<pre class="mermaid"><code>flowchart LR
+    ea(e1)---NON(NON)---ET(ET)
+    eb(e0)----ET
+    ET---s
+    style ea stroke-width:0px,opacity:0
+    style eb stroke-width:0px,opacity:0
+    style s stroke-width:0px,opacity:0</code></pre>
+</details>
+<p><strong>5.b.</strong> Dessiner un circuit constitué d'une porte ET et d'une porte NON, qui sélectionne le périphérique 2.</p>
+<details class="success">
+<summary>Réponse</summary>
+<pre class="mermaid"><code>flowchart LR
+    ea(e1)----ET(ET)
+    eb(e0)---NON(NON)---ET
+    ET---s
+    style ea stroke-width:0px,opacity:0
+    style eb stroke-width:0px,opacity:0
+    style s stroke-width:0px,opacity:0</code></pre>
+</details>
+<p><strong>5.c.</strong> Dessiner un circuit permettant de sélectionner le périphérique 0.</p>
+<details class="success">
+<summary>Réponse</summary>
+<pre class="mermaid"><code>flowchart LR
+    ea(e0)---NON1(NON)---ET(ET)
+    eb(e1)---NON2(NON)---ET
+    ET---s
+    style ea stroke-width:0px,opacity:0
+    style eb stroke-width:0px,opacity:0
+    style s stroke-width:0px,opacity:0</code></pre>
+</details>
+<h2 id="2022-amerique-du-nord-j2">2022, Amérique du Nord, J2<a class="headerlink" href="#2022-amerique-du-nord-j2" title="Permanent link">⚓︎</a></h2>
+<div class="admonition exo">
+<p class="admonition-title">Exo</p>
+</div>
+<p>Cet exercice pourra utiliser des commandes de système d'exploitation de type UNIX telles que <code>cd, ls, mkdir, rm, rmd, mv, cat</code>.  </p>
+<div class="admonition question">
+<p class="admonition-title">Question 1</p>
+<p>Dans un système d'exploitation de type UNIX, on considère l'arborescence des fichiers suivante dans laquelle les noms de dossiers sont en italique et ceux des fichiers qui sont en gras :</p>
+<p><img alt="" class="center" src="../data/arborescence.png" width:250px="width:250px" /></p>
+<p>On souhaite, grâce à l'utilisation du terminal de commande, explorer et modifier les répertoires et fichiers présents.<br />
+On suppose qu'on se trouve actuellement à l'emplacement <em>/home/morgane</em>  </p>
+<p><strong>(a)</strong> Parmi les quatre propositions suivantes, donner celle correspondant à l'affichage obtenu lors se l'utilisation de la commande <code>ls</code>.  </p>
+<ul>
+<li><strong>Proposition 1 :</strong> lycee francais NSI info.txt image1.jpg perso  </li>
+<li><strong>Proposition 2 :</strong> lycee perso  </li>
+<li><strong>Proposition 3 :</strong> morgane  </li>
+<li><strong>Proposition 4 :</strong> bin etc home tmp  </li>
+</ul>
+<p><strong>(b)</strong> Ecrire la commande qui permet, à partir de cet emplacement, d'attendre le répertoire <strong>lycee</strong>.<br />
+On suppose maintenant qu'on se trouve dans le repertoire <code>/home/morgane/lycee/NSI</code>  </p>
+<p><strong>(c)</strong> Ecrire la commande qui permet de créer à cet emplacement un répertoire nommé <code>algorithmique</code>.  </p>
+<p><strong>(d)</strong>  Ecrire la commande qui permet, à partir de cet emplacement, de supprimer le fichier <code>image1.jpg</code>.  </p>
+</div>
+<div class="admonition question">
+<p class="admonition-title">Quesiton 2</p>
+<p>On rappelle qu'un processus est une instance d'application. Un processus peut être démarré par l'utilisateur, par un périphérique ou par un autre processus appelé parent.<br />
+La commande UNIX <code>pa</code> présente un cliché instantané des procesus en cours d'exécution.<br />
+On a exécuté la commande <code>ps</code> (avec quelques options qu'il n'est pas nécessaire de connaître pour la réussite de cet exercice). Un extrait du résultat de la commande est présenté ci-dessous :  </p>
+<p><img alt="" class="center" src="../data/processus.png" width:250px="width:250px" />  </p>
+<p>On rappelle que :  </p>
+<ul>
+<li>l'UID est l'identifiant de l'utilisateur propriétaire du processus;  </li>
+<li>le PID est l'identifiant du processus parent;  </li>
+<li>le PPID est l'identifiant du provessus parent;  </li>
+<li>C indique l'utilisation processeur;  </li>
+<li>STIME est l'heure de démarrage du processus;  </li>
+<li>TTy est le nom du terminal de commande auquel le processus est attaché;  </li>
+<li>TIME est la durée d'utilisation du processus par le processeur;  </li>
+<li>CMD le nom de commande utilisé pour démarrer le processus.  </li>
+</ul>
+<p><strong>(a)</strong> Donner le PID du parent du processus démarré par la commande <code>vi</code>.<br />
+<strong>(b)</strong> Donner le PID d'un processus enfant du processus démarré par la commande <code>xfce4-terminal</code>.<br />
+<strong>(c)</strong> Citer le PID de deux processus qui ont le même parent.<br />
+<strong>(d)</strong> Parmi tous les processus affichés, citer le PID des deux qui ont consommé le plus de temps.  </p>
+</div>
+<div class="admonition question">
+<p class="admonition-title">Question 3</p>
+<p>On considère les trois processus P1, P2, P3, tous soumis à l'instant 0 dans l'ordre 1, 2, 3 :  </p>
+<table>
+<thead>
+<tr>
+<th align="center">Nom du processus</th>
+<th align="center">Durée d'exécution <br> en unité de temps</th>
+<th align="center">Ordre de soumission</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">P1</td>
+<td align="center">3</td>
+<td align="center">1</td>
+</tr>
+<tr>
+<td align="center">P2</td>
+<td align="center">1</td>
+<td align="center">2</td>
+</tr>
+<tr>
+<td align="center">P3</td>
+<td align="center">4</td>
+<td align="center">3</td>
+</tr>
+</tbody>
+</table>
+<p><strong>(a)</strong> Dans cette question, on considère que les processus sont exécutés de manière concurrente selon la politique du tourniquet : le temps est découpé en tranches nommées <em>quantums de temps</em>.<br />
+Les processus prêts à être exécutés sont placés dans une file d'attente selon leur ordre de soumission.<br />
+Lorsqu'un processus est élu, il s'exécute au plus durant un quantum de temps. Si le processus n'a pas terminé son exécution à l'issue du quantum de temps, il réintègre la file des processus prêts (coté entrée). Un autre processus, désormais en tête de la file (coté sortie) des processus prêts, est alors à son tour élu pour une durée égale à un quantum de temps maximum.  </p>
+<p><img alt="" src="../data/entree_sortie.png" /></p>
+<p>Reproduire le tableau ci-dessous sur la copie et indiquer dans chacune des cases le processus exécuté à chaque cycle. Le quantum correspond à une unité de temps.  </p>
+<p><img alt="" src="../data/processus2.png" /></p>
+<p><strong>(b)</strong> Dans cette question, on considère que les processus sont exécutés en appliquant la politique du plus court d'abord : les processus sont exécutés complétement dans l'ordre croissant de leurs temps d'exécution, le plus court étant exécuté en premier.<br />
+Reproduire le tableau ci-dessous sur la copie et indiquer dans chacune des cases le processus excécuté à chaque cycle.  </p>
+<p><img alt="" src="../data/processus3.png" /></p>
+</div>
+<div class="admonition question">
+<p class="admonition-title">Question 4</p>
+<p>On considère trois ressources R1, R2 et R3 et trois processus P1,P2 et P3 dont les files d'exécution des instructions élèmentaires sont indiquées ci-dessous : </p>
+<p><img alt="" src="../data/processus4.png" />  </p>
+<p><strong>(a)</strong> Rappeler les différens états d'un processus et expliquer pourquoi il y a ici risque d'interblocage, en proposant un ordre d'exécution des instructions élèmentaires le provoquant.<br />
+<strong>(b)</strong> Proposer un ordre d'exécution des instructions élèmentaires sans interblocage.</p>
+</div>
+
+
+
+
+
+                
+
+<style>
+    .jp-RenderedHTMLCommon p {
+        font-size: 0.8rem;
+        line-height: 1.6;
+    }
+
+    .jp-RenderedHTMLCommon li {
+        font-size: .8rem;
+        line-height: 1.6;
+    }
+
+    .jp-RenderedHTMLCommon h1 {
+        margin: 0 0 1.25em;
+        color: var(--md-default-fg-color--light);
+        font-weight: 300;
+        font-size: 2em;
+        line-height: 1.3;
+        letter-spacing: -0.01em;
+    }
+
+    .jp-RenderedHTMLCommon h2 {
+        margin: 1.6em 0 .64em;
+        font-weight: 300;
+        font-size: 1.965em;
+        line-height: 1.4;
+        letter-spacing: -0.01em;
+    }
+
+    .jp-RenderedHTMLCommon h3 {
+        margin: 1.6em 0 .8em;
+        font-weight: 400;
+        font-size: 1.57em;
+        line-height: 1.5;
+        letter-spacing: -0.01em;
+    }
+
+    .jp-RenderedHTMLCommon hr {
+        border: none;
+    }
+</style>
+
+
+
+              </article>
+            </div>
+          
+          
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+            Retour en haut de la page
+          </button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.tabs", "navigation.tabs.sticky", "navigation.expand", "navigation.top", "navigation.sections", "navigation.indexes", "navigation.tracking", "header.autohide", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.74e28a9f.min.js", "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version": "S\u00e9lectionner la version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.220ee61c.min.js"></script>
+      
+        
+          <script src="../../xtra/mathjax.js"></script>
+        
+      
+        
+          <script src="../../javascripts/config.js"></script>
+        
+      
+        
+          <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        
+      
+        
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
+        
+      
+        
+          <script src="https://cdn.jsdelivr.net/gh/rod2ik/cdn@main/mkdocs/javascripts/massilia-admonitions.js"></script>
+        
+      
+    
+  </body>
+</html>
