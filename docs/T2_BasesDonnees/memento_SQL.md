@@ -7,7 +7,7 @@
 
 # Memento `SQL`
 
-{{telecharger("Sujets BAC - SQL","../pdf/fiches/SQL/memento_SQL.pdf")}}
+{{telecharger("Memento - SQL","../pdf/fiches/SQL/memento_SQL.pdf")}}
 
 Ce document n'a pas la vocation d'être exhaustif. On pourra se référer à [ce site](https://sql.sh) afin de le compléter et avoir plus de détails.
 
@@ -15,21 +15,21 @@ Dans certains *dialectes* `SQL`, les points-virgules en fin de ligne sont indisp
 
 ## Liens directs :
 
-* [Création d'une base de données](memento_sql.md#creation-dune-base-de-donnees)
+* [Création d'une base de données](memento_SQL.md#creation-dune-base-de-donnees)
   
-* [Création de tables](memento_sql.md#creation-de-tables)
+* [Création de tables](memento_SQL.md#creation-de-tables)
 
-* [Afficher toute une table](memento_sql.md#afficher-toute-une-table)
+* [Afficher toute une table](memento_SQL.md#afficher-toute-une-table)
   
-* [Effacer une base, une table](memento_sql.md#effacer-une-base-une-table)
+* [Effacer une base, une table](memento_SQL.md#effacer-une-base-une-table)
 
-* [Insertion de valeurs](memento_sql.md#insertion-de-valeurs)
+* [Insertion de valeurs](memento_SQL.md#insertion-de-valeurs)
 
-* [Suppression de valeurs](memento_sql.md#suppression-de-valeurs)
+* [Suppression de valeurs](memento_SQL.md#suppression-de-valeurs)
 
-* [Mise à jour de valeurs](memento_sql.md#mise-a-jour-de-valeurs)
+* [Mise à jour de valeurs](memento_SQL.md#mise-a-jour-de-valeurs)
 
-* [Sélections](memento_sql.md#selections)
+* [Sélections](memento_SQL.md#selections)
 
 
 ## Création d'une base de données

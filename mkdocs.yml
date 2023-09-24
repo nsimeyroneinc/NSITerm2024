@@ -191,7 +191,7 @@ markdown_extensions: # https://squidfunk.github.io/mkdocs-material/reference/abb
     - footnotes                     # Notes[^1] de bas de page.  [^1]: ma note.
     - admonition                    # Blocs colorés  !!! info "ma remarque"
     - toc: # Table des matières
-        permalink: ⚓︎
+        permalink: ⚓︎ 
         toc_depth: 3
     # extensions de python-markdown https://facelessuser.github.io/pymdown-extensions/
     - pymdownx.details              #   qui peuvent se plier/déplier.
