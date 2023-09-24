@@ -7,6 +7,8 @@
 
 # Memento `SQL`
 
+{{telecharger("Sujets BAC - SQL","../pdf/fiches/SQL/memento_SQL.pdf")}}
+
 Ce document n'a pas la vocation d'être exhaustif. On pourra se référer à [ce site](https://sql.sh) afin de le compléter et avoir plus de détails.
 
 Dans certains *dialectes* `SQL`, les points-virgules en fin de ligne sont indispensables même s'il n'y a qu'une seule instruction. Bien que n'utilisions ici que des instructions uniques, on écrit tout de même les points-virgules en fin de ligne.

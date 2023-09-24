@@ -8,7 +8,8 @@
 
 {{ initexo(0) }}
 
-{{telecharger("Sujets BAC - SQL","site/T2_BasesDonnees/SQL_BAC/SQL_BAC.pdf")}}
+
+{{telecharger("Sujets BAC - SQL","../pdf/fiches/SQL/SQL_BAC.pdf")}}
 
 ## Exercice n°1 : Centres-Etrangers 2023  
 
