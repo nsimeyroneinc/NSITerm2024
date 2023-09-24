@@ -36,8 +36,9 @@ nav:
     - T2 - Bases données :  
       - Base de données : T2_BasesDonnees/index_bd.md
       - 📓 C1 Modèle relationnel : T2_BasesDonnees/Modele_Relationnel.md
+      - 📓 Memento Langage SQL : T2_BasesDonnees/memento_SQL.md
       #- 📓 C2 Langage SQL : BasesDonnees/Cours_TP_SQL.md
-      #- 📝 S2 BAC SQL : BasesDonnees/SQL_BAC.md
+      - 📝 S2 BAC SQL : T2_BasesDonnees/SQL_BAC.md
       #- 📝 S2 BAC SQL Correction : BasesDonnees/SQL_BAC_correction.md
     
     - T3 - Archi. mat. :
@@ -231,27 +232,27 @@ markdown_extensions: # https://squidfunk.github.io/mkdocs-material/reference/abb
 
 
 plugins:
-  - page-to-pdf : 
-      disable: False
-      disableOnServe: False
-      displayHeaderFooter: True
-      printBackground: True
-      scale : 1.0
-      landscape : False
-      margin: {'top': '0.75cm', 'bottom': '0.75cm', 'right': '0.5cm','left': '0.5cm'}
-      headerTemplate: '<header style="width:100%;heigth:45px;font-size:10px;font-weight:600;color:white;background:#A19162;margin-top:-20px;padding:10px;padding-bottom:0;-webkit-print-color-adjust: exact">
-                       <span style="display:inline-block;vertical-align:middle;margin-top:-4px;margin-left:10px;">N.S.I : Terminale - 2023 - 2024</span>
-                      </header>'
-      footerTemplate: '<footer style="position:relative;width:100%;font-size:8px;color:#3B444B;margin:10px 20px;-webkit-print-color-adjust: exact">
-                        <span>M.Meyroneinc-Condy | CCBY | 2023</span>
-                        <span class="page" style="position:absolute;bottom:0;right:0;">
-                         <span class="pageNumber"></span>/<span class="totalPages"></span>
-                        </span>'
+  #- page-to-pdf : 
+  #    disable: False
+  #    disableOnServe: False
+  #    displayHeaderFooter: True
+  #    printBackground: True
+  #    scale : 1.0
+  #    landscape : False
+  #    margin: {'top': '0.75cm', 'bottom': '0.75cm', 'right': '0.5cm','left': '0.5cm'}
+  #    headerTemplate: '<header style="width:100%;heigth:45px;font-size:10px;font-weight:600;color:white;background:#A19162;margin-top:-20px;padding:10px;padding-bottom:0;-webkit-print-color-adjust: exact">
+  #                     <span style="display:inline-block;vertical-align:middle;margin-top:-4px;margin-left:10px;">N.S.I : Terminale - 2023 - 2024</span>
+  #                    </header>'
+  #    footerTemplate: '<footer style="position:relative;width:100%;font-size:8px;color:#3B444B;margin:10px 20px;-webkit-print-color-adjust: exact">
+  #                      <span>M.Meyroneinc-Condy | CCBY | 2023</span>
+  #                      <span class="page" style="position:absolute;bottom:0;right:0;">
+  #                       <span class="pageNumber"></span>/<span class="totalPages"></span>
+  #                      </span>'
   - search # Inclure une barre de recherche
-  - mkdocs-jupyter: # Convertir les fichiers .ipynb et .py en pages du site https://github.com/danielfrg/mkdocs-jupyter
-      kernel_name: python3
-      execute: False
-      include_source: True
+  #- mkdocs-jupyter: # Convertir les fichiers .ipynb et .py en pages du site https://github.com/danielfrg/mkdocs-jupyter
+  #    kernel_name: python3
+  #    execute: False
+  #    include_source: True
   - macros
   - awesome-pages:
       collapse_single_pages: true

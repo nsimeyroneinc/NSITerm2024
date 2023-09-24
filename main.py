@@ -69,8 +69,8 @@ def define_env(env):
     env.variables['num_act']=1
 
     env.variables['progression_terminale']={
-        1 : ["db","Le Modéle relationnel",1,"T2_BasesDonnees/index_bd.md"]
-        #2 : ["python","Langage SQL",2,"BasesDonnees/Cours_TP_SQL.md"],
+        1 : ["db","Le Modéle relationnel",1,"T2_BasesDonnees/index_bd.md"],
+        2 : ["db","Langage SQL",2,"T2_BasesDonnees/memento_SQL.md"]
         #3 : ["python","Récursivité",1,"Programmation/T1_1_Recursivite.md"],
         #4 : ["sd","Programmation Orientée Objet",2,"StructureDonnees/T1_1_Programmation_Orientee_Objet.md"],
         #5 : ["os","Listes et Piles",2,"StructureDonnees/T2_1_Listes_Piles_et_Files.md"],
@@ -105,7 +105,7 @@ def define_env(env):
     }
 
     env.variables['devoir_terminale']={
-        1 : ["devoir","Langage SQL","","Evaluations/BDD_Devoir_Corrige.md"],
+        1 : ["devoir","Langage SQL","SQL","Evaluations/BDD_Devoir_Corrige.md"],
         #2 : ["devoir","Pile-File et Protocole de Routage",'16/11/2023',"Evaluations/DS_Pile_File_Routage.md"],
         3 : ["devoir","Pile-File et Protocole de Routage",'16/11/2023',"Evaluations/DS_Pile_File_Routage.md"],
         4 : ["devoir","Les tris - Diviser pour régner","02/12/2023","Evaluations/DS_Diviser_pour_regner_tris.md"],
@@ -133,7 +133,7 @@ def define_env(env):
     env.variables['BAC_terminale']={
         #1 : ["devoir","Langage SQL","","Evaluations/BDD_Devoir_Corrige.md"],
         #2 : ["devoir","Pile-File et Protocole de Routage",'16/11/2023',"Evaluations/DS_Pile_File_Routage.md"],
-        3 : ["db","Langage SQL","SQL","BasesDonnees/SQL_BAC_correction.md"],
+        1 : ["db","Langage SQL","SQL","T2_BasesDonnees/SQL_BAC.md"],
         #3 : ["python","Récursivité",1,"Programmation/T1_1_Recursivite.md"],
         4 : ["sd","Programmation Orientée Objet","P.O.O","StructureDonnees/POO_BAC_correction.md"],
         5 : ["sd","Piles et Files","Struc. Données","StructureDonnees/T2_2_Pile_File_BAC_Correction.md"],
