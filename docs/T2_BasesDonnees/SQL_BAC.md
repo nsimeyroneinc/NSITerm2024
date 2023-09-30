@@ -83,6 +83,51 @@ L'attribut **id\_emission** de la relation **podcast** fait directement référe
 
     c. Écrire une requête permettant de lister les thèmes, le nom des émissions et le résumé des podcasts pour lesquels la durée est strictement inférieure à 5 minutes.
 
+
+??? correction "Correction"
+    1. {{ relation("description","id_description : INT", "resume : TEXT", "duree : INT", "#id_emission : INT") }}
+    2.  a. Cette requête permet d’obtenir les informations suivantes :  
+    Le système d’enseignement supérieur français est-il juste et efficace , 2022  
+    Trois innovations pour la croissance future (⅓) : La révolution blockchain , 2021  
+        b.
+        ```sql
+        SELECT theme
+        FROM podcast
+        WHERE annee = 2019
+        ```
+        c. 
+        ```sql
+        SELECT theme, annee
+        FROM podcast
+        ORDER BY annee
+        ```
+    3. 
+        a. Cette requête permet d’obtenir les thèmes des podcasts sans doublon (si le même thème apparait plusieurs fois, cette requête permet de l’afficher une seule fois)
+        b. 
+        ```sql
+        DELETE FROM podcast 
+        WHERE id_podcast = 40
+            ```
+    4.  a.
+        ```sql 
+        UPDATE emission
+        SET animateur = 'Emanuel L.'
+        WHERE nom = 'Le Temps du débat'
+        ```
+        b. 
+        ```sql
+        INSERT INTO emission
+        VALUES (12850, 'Hashtag', 'France inter', 'Mathieu V.')
+        ```
+    5.
+    ```sql
+    SELECT theme, nom, resume
+    FROM emission
+    JOIN podcast ON emission.id_emission = podcast.id_emission
+    JOIN description ON emission.id_emission = description.id_emission
+    WHERE duree < 5
+    ```
+
 ## Exercice n°2 : France 2023 - J1
 
 _Cet exercice porte sur la notion de base de données relationnelle et le langage SQL._
@@ -151,7 +196,40 @@ Figure 1 - Extrait de la relation Meubles
 6. Donner la requête SQL permettant de récupérer le nom et le prénom des différents clients qui ont passé une commande le 30 avril 2021.  
 	On précise que, dans la relation **Commandes**, les dates sont des chaînes de caractères, par exemple **'21/08/2002'**.  
 
-   
+??? correction "Correction"
+    1.  a. L’attribut doit être unique afin de pouvoir distinguer 2 entrées de la table.
+        b. L’attribut idClient permet de lier la table Commandes et la table Clients  
+        L’attribut idMeuble permet de lier la table Commandes et la table Meubles  
+        c. 
+        {{ relation ("Meubles","id : INT", "intitule : TEXT", "prix : FLOAT", "stock : INT",  "description : TEXT")}}  
+    2. On obtient :  
+    62, 2, 'Armoire blanche 3 portes'  
+    63, 3, 'Armoire noire 3 portes'  
+    3.  
+    ```SQL
+    SELECT nom, prenom
+    FROM Clients
+    WHERE ville = 'Paris'
+    ```
+    4. 
+    ```sql
+    UPDATE Meubles
+    SET stock = 50
+    WHERE id = 98
+    ```
+    5. 
+    ```sql
+    INSERT INTO Meubles
+    VALUES
+    (65, ‘matta’, 95.99, 25, ‘Tapis vert à pois rouges')
+    ```
+    6. 
+    ```sql 
+    SELECT nom, prenom
+    FROM Clients
+    JOIN Commandes ON Clients.id = Commandes.idClient
+    WHERE date = ‘30/04/2002’
+    ```
 
 ## Exercice n°3 : France 2023 J2 
 
@@ -267,7 +345,38 @@ COUNT, FROM, INSERT, INTO, JOIN ON, ORDER BY, SELECT, VALUES, WHERE.
     ```
 	b. Écrire une requête SQL permettant d'obtenir le nom et le prénom des astronautes ayant décollé le '25/10/2022'.
 	
-
+??? correction "Correction"
+    1.  a. Une clé primaire est un attribut dont la valeur permet d'identifier de manière unique un t-uplet de la relation  
+        b. La valeur 3 a déjà été utilisé pour l’attribut id_astronaute de la table     Astronaute. Nous allons donc avoir une erreur puisque id_astronaute est la clé primaire de la table Astronaute  
+        c. {{relation("Fusee","id_fusee : int", "modele : TEXT", "constructeur : TEXT", "nb_places : INT")}}  
+    2.  a. Cette requête renvoie 2  
+        b. 
+        ```sql
+        SELECT modele, constructeur
+        FROM Fusee
+        WHERE nb_places > 3
+        ```
+        c. 
+        ```sql
+        SELECT nom, prenom
+        FROM Astronaute
+        ORDER BY nom
+        ```
+    3.  a. 
+        ```sql 
+        INSERT INTO Vol VALUES(5, 3, '12/04/2023');
+        INSERT INTO Equipe VALUES(5, 1);
+        INSERT INTO Equipe VALUES(5, 4);
+        ```
+        b. 
+        ```sql 
+        SELECT nom, prenom
+        FROM Equipe
+        JOIN Vol ON Vol.id_vol = Equipe.id_vol
+        JOIN Astronaute ON Astronaute.id_astronaute =
+        Equipe.id_astronaute
+        WHERE Date = '25/10/2022'
+        ```
 
 ## Exercice n°4 : Métropole J1 : Base de données cinématographique
 !!! exo "SQL "
@@ -370,6 +479,54 @@ WHERE emploi.description = 'Acteur(James Bond)';
 **4.b.** Fournir une requête SQL permettant de trouver toutes les descriptions des emplois de Denis Johnson (Denis est son prénom et Johnson est son nom).  
 On veillera à n'afficher que la description des emplois et non les films associés à ces emplois.
 
+??? correction "Correction"
+
+    1.  a. La requête renvoie les nom, prénom et date de naissance de tous les individus qui portent Crog comme nom de famille. Dans la mesure où l'on ne fournit que des extraits des tables, on ne peut pas fournir le résultat de cette requête de façon certaine.  
+        b. 
+        ```sql
+        SELECT titre, id_rea
+        FROM realisation
+        WHERE annee > 2020;
+        ```
+    2. a. Compte tenu de l'extrait fourni de la table `individu`, l'identifiant **`688`** est déjà utilisé pour un enregistrement et il ne peut pas y avoir de doublon pour les clés primaires, ainsi **la requête 2 provoquera une erreur**.
+
+        La requête 1 est correcte.
+
+        Bien que valide cette requête peut être simplifiée en n'utilisant que la clé primaire de la table :
+
+        ```sql title="🗂️ Requête SQL 1"
+        UPDATE individu
+        SET naissance = '02-03-1968'
+        WHERE id_ind = 688;
+        ```
+
+        b. Aucun des champs correspondant ne possède la contrainte **`UNIQUE`** (_hypothèse réaliste_). Les deux individus n'auront donc pas le même identifiant ! Ainsi, **oui**, la relation **`individu`** peut accepter deux tels individus.
+
+    3.  a. 
+        ```sql
+        INSERT INTO emploi
+        VALUES (5400, 'Acteur(James Bond)', 688, 105);
+
+        INSERT INTO emploi
+        VALUES (5401, 'Acteur(James Bond)', 688, 325);
+        ```
+        b. Il faut d'abord créer l'enregistrement du film dans la relation **`realisation`**, car l'identifiant du film doit être connu afin d'être utilisé comme clé étrangère dans la relation **`emploi`**.
+    4.  a. 
+        ```sql
+        SELECT nom, titre, annee
+        FROM emploi
+        JOIN individu ON emploi.id_ind = individu.id_ind
+        JOIN realisation ON emploi.id_rea = realisation.id_rea
+        WHERE emploi.description = 'Acteur(James Bond)';
+        ```
+
+        b. 
+        ```sql
+        SELECT description
+        FROM emploi
+        JOIN individu ON emploi.id_ind = individu.id_ind
+        WHERE prenom = 'Denis' AND nom = 'Johnson';
+        ```
 
 ## Exercice n°5 : D'après 2022, Métropole, J2
 !!! exo "SQL"
@@ -464,6 +621,79 @@ VALUES (1, 'Trust', 'France');
 
 **4.** Écrire une requête permettant de lister les titres des interprètes venant des États-Unis.
 
+??? correction "Correction" 
+
+    1.  a. On obtient les titres `'Hey Jude'` et `'I Want To hold Your Hand'`.  
+        b. 
+        ```SQL
+        SELECT nom 
+        FROM interpretes
+        WHERE pays = 'Angleterre';
+        ```
+        c. On obtient :
+
+        | `titre`                  | `annee` |
+        | :----------------------- | :-----: |
+        | I Want To hold Your Hand |  1963   |
+        | Like a Rolling Stone     |  1965   |
+        | Respect                  |  1967   |
+        | Hey Jude                 |  1968   |
+        | Imagine                  |  1970   |
+        | Smells Like Teen Spirit  |  1991   |
+
+        d. 
+        ```SQL
+        SELECT COUNT(*) 
+        FROM morceaux;
+        ```
+        e. 
+        ```SQL
+        SELECT titre
+        FROM morceaux
+        ORDER BY titre;
+        ```
+    2.  a. La clé étrangère est `id_interprete` qui fait référence à un attribut de la table **`interpretes`**.  
+        b. On propose :
+        * {{ relation("morceaux", "id_morceau", "titre", "annee", "#id_interprete") }}  
+        * {{ relation("interpretes", "id_interprete", "nom", "pays") }}  
+
+        Les clés primaires sont soulignées (`id_morceau` et `id_interprete`). Dans la table `morceaux`, l'attribut `id_interprete` est précédé d'un # : c'est une clé étrangère faisant référence à l'attribut `id_interprete` de la table **`interpretes`**.
+
+        c. La table contient déjà une entrée dont l'attribut `id_interprete` vaut `1`. Comme il s'agit de la clé primaire cela provoque une erreur.
+
+    3.  a. On utilise la clé primaire du morceau afin d'éviter toute méprise :      
+        ```SQL
+        UPDATE morceaux
+        SET annee = 1971
+        WHERE id_morceau = 3;
+        ```
+
+        Si l'on considère que les tables fournies représentent l'ensemble des données (le sujet est ambigu à ce titre), on peut aussi se contenter de :
+
+        ```SQL
+        UPDATE morceaux
+        SET annee = 1971
+        WHERE titre = 'Imagine';
+        ```
+
+        b. 
+        ```SQL
+        INSERT INTO interpretes
+        VALUES (6, 'The Who', 'Angleterre');
+        ```
+        c. 
+        ```SQL
+        INSERT INTO morceaux
+        VALUES (7, 'My Generation', 1965, 6);
+        ```
+    4. On utilise une jointure :  
+
+    ```SQL
+    SELECT titre
+    FROM morceaux
+    JOIN interpretes ON interpretes.id_interprete = morceaux.id_interprete
+    WHERE interpretes.pays = 'États-Unis';
+    ```
 
 ## Exercice n°6 : Métropole, Candidats libres, J2 2021
 
@@ -542,3 +772,41 @@ AND Eleves.classe = 'T2' ;
 
 **7.** Écrire une requête SQL qui permet de lister les noms et prénoms des élèves qui
 ont emprunté le livre « *Les misérables* ».
+
+
+??? correction "Correction"
+    1. On insère deux entrées dans lesquelles l'attribut `idEleve` est égal à `128`. Or cet attribut est la clé primaire de la table, il ne peut pas exister en doublon.  
+    2. Il s'agit de la clé étrangère `idEleve` qui doit respecter la contrainte d'intégrité référentielle.  
+    3. 
+    ```SQL
+    SELECT titre
+    FROM Livres
+    WHERE auteur = 'Molière'
+    ```
+    4. On compte les élèves de la table `Eleves` dont la classe est la `'T2'`.  
+    5. 
+
+    ```SQL
+    UPDATE Emprunts
+    SET dateRetour = '2020-09-30'
+    WHERE idEmprunt = 640
+    ```
+
+    6. On récupère les noms et prénoms des élèves de la classe `'T2'` qui ont déjà emprunté un livre.  
+    7. On propose (en utilisant l'ISBN cité dans la question 5) :  
+   
+    ```SQL
+    SELECT nom, prenom
+    FROM Eleves
+    JOIN Emprunts ON Eleves.idEleves = Emprunts.idEleves
+    WHERE Emprunts.isbn = 192
+    ```
+    Sans l'ISBN :
+
+    ```SQL
+    SELECT nom, prenom
+    FROM Eleves
+    JOIN Emprunts ON Eleves.idEleves = Emprunts.idEleves
+    JOIN Livres ON Livres.isbn = Emprunts.isbn
+    WHERE Livres.titre = 'Les Misérables'
+    ```
