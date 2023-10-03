@@ -4,13 +4,15 @@
     - Langage SQL
 
 
+### Liste des chapitres 
 
+{{ affiche_progression("terminale") }}
 
 
 !!! note 
     Le sujet de l’épreuve écrite de la spécialité numérique et sciences informatiques, **comporte trois exercices indépendants les uns des autres**, qui permettent d’évaluer les connaissances et compétences des candidats. 
  
-## Notions à l'épreuve écrite de Mars 2023 (mis à jours 30/09/2022): 
+## Notions à l'épreuve écrite de Juuin 2024 : 
 
 ### &#10145; Thème : Structure de données  
 
@@ -19,7 +21,7 @@
 □ Listes, piles, files : structures linéaires. 
 □ Dictionnaires, index et clé  
 □ Arbres : structures hiérarchiques. Arbres binaires : nœuds, racines, feuilles, sous-arbres gauches, sous-arbres droits
-
+□ Les graphes
 
 ### &#10145; Thème : Base de données  
 
@@ -37,20 +39,14 @@
 □ Récursivité  
 □ Modularité  	
 □ Mise au point des programmes. Gestion des bugs.
-
+□ Programmation dynamique 
 
 ### &#10145; Thème : Algorithmique(A)
 
-□ Algorithmes sur les arbres binaires et sur les arbres binaires de recherche.
-
-□ Méthode « diviser pour régner »
-
-
-## Notions aux programmes mais non au BAC (écrit)
-
-□ Les graphes  
-□ Algorithme de Boyer Moore  
-□ Programmation dynamique  
+□ Algorithmes sur les arbres binaires et sur les arbres binaires de recherche.  
+□ Méthode « diviser pour régner »  
+□ Algorithme de Boyer Moore   
+  
 
 ## Comment calculer sa note au BAC 2023 et Répartition des notes :
 

@@ -39,6 +39,7 @@ nav:
       - 📓 Memento Langage SQL : T2_BasesDonnees/memento_SQL.md
       #- 📓 C2 Langage SQL : BasesDonnees/Cours_TP_SQL.md
       - 📝 S2 BAC SQL : T2_BasesDonnees/SQL_BAC.md
+      #- 📝 S2 BAC SQL : T2_BasesDonnees/SQL_BAC_BIS.md
       #- 📝 S2 BAC SQL Correction : BasesDonnees/SQL_BAC_correction.md
     
     - T3 - Archi. mat. :
@@ -52,7 +53,8 @@ nav:
     
     - T4 - Prog. :
       - Programmation : Programmation/index_prog.md
-      #- 📓 C3 Récursivité  :  Programmation/T1_1_Recursivite.md
+      #- 📓 C3 Récursivité  :  T5_Programmation/T4_1_Cours_TP_Recursivite_2023_2024_PROF.ipynb
+      - 📓 C4 POO BAC  :  T5_Programmation/POO_BAC.md
       #- Calculabilité, décidabilité : Programmation/calculabilite.md
       
     #   - Récursivité : Programmation/T4_1_TP_Recursivite_correction.md
@@ -249,7 +251,7 @@ plugins:
   #                       <span class="pageNumber"></span>/<span class="totalPages"></span>
   #                      </span>'
   - search # Inclure une barre de recherche
-  #- mkdocs-jupyter: # Convertir les fichiers .ipynb et .py en pages du site https://github.com/danielfrg/mkdocs-jupyter
+  #- mkdocs-jupyter # Convertir les fichiers .ipynb et .py en pages du site https://github.com/danielfrg/mkdocs-jupyter
   #    kernel_name: python3
   #    execute: False
   #    include_source: True

@@ -70,9 +70,10 @@ def define_env(env):
 
     env.variables['progression_terminale']={
         1 : ["db","Le Modéle relationnel",1,"T2_BasesDonnees/index_bd.md"],
-        2 : ["db","Langage SQL",2,"T2_BasesDonnees/memento_SQL.md"]
+        2 : ["db","Langage SQL",2,"T2_BasesDonnees/memento_SQL.md"],
+        #3 : ["db","Langage SQL",2,"T2_BasesDonnees/memento_SQL_BIS.md"]
         #3 : ["python","Récursivité",1,"Programmation/T1_1_Recursivite.md"],
-        #4 : ["sd","Programmation Orientée Objet",2,"StructureDonnees/T1_1_Programmation_Orientee_Objet.md"],
+        4 : ["sd","Programmation Orientée Objet",2,"T5_Programmation/POO.md"]
         #5 : ["os","Listes et Piles",2,"StructureDonnees/T2_1_Listes_Piles_et_Files.md"],
         #6 : ["os","Protocole de routage",1,"Archi_Materielle/T3_1_Routage.md"],
         #7 : ["algorithmique","Algorithmes de tri",1,"Algo/T5_2_algo_tri.md"],
@@ -135,30 +136,30 @@ def define_env(env):
         #2 : ["devoir","Pile-File et Protocole de Routage",'16/11/2023',"Evaluations/DS_Pile_File_Routage.md"],
         1 : ["db","Langage SQL","SQL","T2_BasesDonnees/SQL_BAC.md"],
         #3 : ["python","Récursivité",1,"Programmation/T1_1_Recursivite.md"],
-        4 : ["sd","Programmation Orientée Objet","P.O.O","StructureDonnees/POO_BAC_correction.md"],
-        5 : ["sd","Piles et Files","Struc. Données","StructureDonnees/T2_2_Pile_File_BAC_Correction.md"],
-        6 : ["os","Protocole de routage","Réseaux","Archi_Materielle/T3_1_Routage_BAC_Correction.md"],
+        3 : ["sd","Programmation Orientée Objet","P.O.O","T5_Programmation/POO_BAC.md"]
+        #5 : ["sd","Piles et Files","Struc. Données","StructureDonnees/T2_2_Pile_File_BAC_Correction.md"],
+        #6 : ["os","Protocole de routage","Réseaux","Archi_Materielle/T3_1_Routage_BAC_Correction.md"],
         #7 : ["algorithmique","Algorithmes de tri",1,"Algo/T5_2_algo_tri.md"],
         #8 : ["algorithmique","Diviser pour régner",1,"T5_2_Diviser_pour_regner.md"]
         #6 : ["os","Protocole de Routage",1,""],
         #7 : ["python","Notions de programmation orienté objet",2,"poo.md"],
-        8 : ["algorithmique","Diviser pour régner","Algo","Algo/T5_4_Diviser_pour_regner_BAC.md"],
-        10 : ["sd","Les arbres - Partie 1","Struc. Données","StructureDonnees/T3_2_arbre_BAC.md"],
-        11 : ["algorithmique","Algorihtmes Arbres Binaires","Implémentation arbres binaires","Algo/T5_6_algo_arbre_BAC.md"],
-        12 : ["algorithmique","Arbres Binaires de Recherche","ABR","StructureDonnees/T3_4_arbre_recherche_BAC.md"],
+        #8 : ["algorithmique","Diviser pour régner","Algo","Algo/T5_4_Diviser_pour_regner_BAC.md"],
+        #10 : ["sd","Les arbres - Partie 1","Struc. Données","StructureDonnees/T3_2_arbre_BAC.md"],
+        #11 : ["algorithmique","Algorihtmes Arbres Binaires","Implémentation arbres binaires","Algo/T5_6_algo_arbre_BAC.md"],
+        #12 : ["algorithmique","Arbres Binaires de Recherche","ABR","StructureDonnees/T3_4_arbre_recherche_BAC.md"],
         #12: ["algorithmique","Algorithmes sur les arbres",2,"algoarbre.md"],
-        13: ["os","Gestion Processus","Processus","Archi_Materielle/T3_3_gestion_processus_BAC.md"],
-        14: ["sd","Piles et Files","Struc. Données","BAC/pile_file/compilation_pile_file.md"],
-        15: ["algorithmique","k-plus proches voisins",1,"Algo/TP6_1_kppv.md"],
-        16: ["python","Récursivité",'Programmation',"BAC/recursivite/compile_recursivite.md"],
-        17: ["python","Programmation - Tableaux","Python","BAC/programmation/compilation_programmation.md"],
-        18: ["db","SQL","SQL","BAC/SQL/compile_sql.md"]
+        #13: ["os","Gestion Processus","Processus","Archi_Materielle/T3_3_gestion_processus_BAC.md"],
+        #14: ["sd","Piles et Files","Struc. Données","BAC/pile_file/compilation_pile_file.md"],
+        #15: ["algorithmique","k-plus proches voisins",1,"Algo/TP6_1_kppv.md"],
+        #16: ["python","Récursivité",'Programmation',"BAC/recursivite/compile_recursivite.md"],
+        #17: ["python","Programmation - Tableaux","Python","BAC/programmation/compilation_programmation.md"],
+        #18: ["db","SQL","SQL","BAC/SQL/compile_sql.md"]
         #19 : ["algorithmique","Diviser pour régner",1,"diviser.md"]
     }
 
     @env.macro
     def capytale(id):
-        lien = "[![logo capytale](./images/capytale.png){.imgcentre width=150px border=2px}]"
+        lien = "[![logo capytale](capytale.png){.imgcentre width=150px border=2px}]"
         lien +=f"(https://capytale2.ac-paris.fr/web/c/{id})"
         lien += "{target=_blank}"
         return lien
