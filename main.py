@@ -73,7 +73,8 @@ def define_env(env):
         2 : ["db","Langage SQL",2,"T2_BasesDonnees/memento_SQL.md"],
         #3 : ["db","Langage SQL",2,"T2_BasesDonnees/memento_SQL_BIS.md"]
         #3 : ["python","Récursivité",1,"Programmation/T1_1_Recursivite.md"],
-        4 : ["sd","Programmation Orientée Objet",2,"T5_Programmation/POO.md"]
+        4 : ["sd","Programmation Orientée Objet",2,"T5_Programmation/POO.md"],
+        #20: ["os","Cryptographie",1,"Projet/cryptographie2.md"],
         #5 : ["os","Listes et Piles",2,"StructureDonnees/T2_1_Listes_Piles_et_Files.md"],
         #6 : ["os","Protocole de routage",1,"Archi_Materielle/T3_1_Routage.md"],
         #7 : ["algorithmique","Algorithmes de tri",1,"Algo/T5_2_algo_tri.md"],
@@ -157,6 +158,28 @@ def define_env(env):
         #19 : ["algorithmique","Diviser pour régner",1,"diviser.md"]
     }
 
+    env.variables['projet_terminale']={
+        1 : ["projet","POO : Calcul sur les fractions",1,"Projet/POO_projet.md"]
+        #2 : ["projet","Dessine ta rue","17/11/2023","T08_Extras/5MiniProjet/dessine_ta_rue.md"]
+        #2 : ["python","Les fonction en Python",1,"T06_Python/T6.1_Python/T6_1_2_Les_fonctions_en_Python.md"],
+        #3 : ["python","Les Boucles FOR",1,"T06_Python/T6.1_Python/T6_1_3_Boucle_FOR_en_Python.md"],
+        #4 : ["typesbase","Représentation des entiers positifs",1,"T01_TypesBase/T1.1_Bases/T1_1_Codage_Entiers.md"],
+        #5 : ["typesbase","Représentation des entiers négatifs",1,"T01_TypesBase/T1.2_Relatifs/T1_2_Relatifs.md"],
+        #6 : ["typesbase","Représentation des flottants",1,"T01_TypesBase/T1.3_Flottants/T1_3_Flottants.md"],
+        #7 : ["python","Les boucles WHILE",1,"T06_Python/T6.1_Python/T6_1_4_WHILE.md"],
+        #8 : ["python","Les instructions conditionnelles",1,"T06_Python/T6.1_Python/T6_1_5_Instructions_conditionnelles.md"],
+        #9 : ["python","Exercices Bilan Python",1,"T06_Python/T6.1_Python/T6_1_6_Exercices_Bilan_Bases.md"]
+        #8 : ["web","Le web",2,"leweb.md"],
+        #9 : ["algorithmique","Algorithmes de tri",2,"algostri.md"],
+        #10 : ["typesbase","Représentation des entiers négatifs",1,"negatifs.md"],
+        #11: ["os","Réseau",1,"reseau.md"],
+        #12: ["web","Interaction dans une page web",1,"interactionweb.md"],
+        #13: ["algorithmique","Algorithmes gloutons",2,"gloutons.md"],
+        #14: ["donneestable","Fusion de tables",1,"fusiontable.md"],
+        #15: ["os","Interface homme-machine",2,"interface.md"],
+        #16: ["typesbase","Notion de nombre flottant",1,"flottant.md"],
+        #17: ["algorithmique","Algorithme des k plus proches voisinumchapitrens",2,"knn.md"]
+    }
     @env.macro
     def capytale(id):
         lien = "[![logo capytale](capytale.png){.imgcentre width=150px border=2px}]"
@@ -182,6 +205,46 @@ def define_env(env):
            ret+=chapitre(k,env.variables['progression_'+niveau][k][0],env.variables['progression_'+niveau][k][1],env.variables['progression_'+niveau][k][2],env.variables['progression_'+niveau][k][3])
         return ret
     
+
+
+
+    #--------------------------------------------
+    @env.macro
+    def sec_projet(theme,projet):
+            icone = env.variables.icones[theme]
+            return f"### {icone} &nbsp; {projet}"
+
+    @env.macro
+
+    @env.macro
+    def projet_c(num,theme,titre,duree,lien):
+        icone = env.variables["icones"][theme]
+        return f"|{icone}|[Mini-Projet {num}- {titre}]({lien}) | {duree}\n"      
+
+    def projet_chapitre(numero,projet,theme,niveau):
+        # Position de l'ancre pour repérage dans la page
+        titre_bis = env.variables['projet_'+niveau][numero][1]
+        ligne=f"# <span class='numprojet'>Mini-projet-{numero}</span> {titre_bis} "
+        ligne+=f"<span style='float:right;'>{env.variables.icones[theme]}</span>"
+        return ligne
+
+    @env.macro
+    def affiche_projet(niveau):
+        ret='''
+| |Mini-Projet        | Pour le  |
+|-|-------------|-------|
+        '''
+        if niveau=="premiere":
+            var_projet = env.variables.projet_premiere
+        else:
+            var_projet = env.variables.projet_terminale
+        for k in var_projet:
+           ret+=projet_c(k,env.variables['projet_'+niveau][k][0],env.variables['projet_'+niveau][k][1],env.variables['projet_'+niveau][k][2],env.variables['projet_'+niveau][k][3])
+        return ret
+#--------------------------------------------------------
+
+
+
     @env.macro
     def genere_nav():
         ret='''```\n'''

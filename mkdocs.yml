@@ -55,6 +55,7 @@ nav:
       - Programmation : Programmation/index_prog.md
       #- 📓 C3 Récursivité  :  T5_Programmation/T4_1_Cours_TP_Recursivite_2023_2024_PROF.ipynb
       - 📓 C4 POO BAC  :  T5_Programmation/POO_BAC.md
+
       #- Calculabilité, décidabilité : Programmation/calculabilite.md
       
     #   - Récursivité : Programmation/T4_1_TP_Recursivite_correction.md
@@ -73,7 +74,8 @@ nav:
       #- Les Graphes Parcours : Graphe/TD_Graphe_Parcours.md
       #- Les Graphes Exercices : Graphe/TD_Graphe_Exercices.md
 
-    
+    - Mini-Projet : 
+      - POO  mini-projet : Projet/POO_projet.md
     - BAC 📝:
       - Information: BAC/bac_explication.md
       - '2023': 

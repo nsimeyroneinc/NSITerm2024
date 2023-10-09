@@ -1,13 +1,18 @@
 
 
-!!! info "Actualités" 
-    - Langage SQL
+!!! info "Thème en cours" 
+    - Programmation Orientée Objet
 
 
 ### Liste des chapitres 
 
 {{ affiche_progression("terminale") }}
 
+### Mini-Projet
+
+{{ affiche_projet("terminale") }}
+
+## Info
 
 !!! note 
     Le sujet de l’épreuve écrite de la spécialité numérique et sciences informatiques, **comporte trois exercices indépendants les uns des autres**, qui permettent d’évaluer les connaissances et compétences des candidats. 
