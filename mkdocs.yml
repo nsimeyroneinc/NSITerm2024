@@ -18,7 +18,8 @@ nav:
 
     - T1 - Struct. données :
       - Structures de données : StructureDonnees/index_structDonnees.md
-      #- 📓 C4 P.O.O : StructureDonnees/T1_1_Programmation_Orientee_Objet.md
+      - 📓 C4 P.O.O : T1_Structure_Donnees/POO.md
+      - 📓 S4 P.O.O BAC  :  T1_Structure_Donnees/POO_BAC.md
       #- 💻 T4 POO Exercices : StructureDonnees/T1_2_TD_POO.md
       #- 💻 TD POO BAC : StructureDonnees/T1_3_BAC_Capytale.md     
       #- 📝 S4 Sujet POO BAC : StructureDonnees/POO_BAC_correction.md

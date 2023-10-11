@@ -73,7 +73,7 @@ def define_env(env):
         2 : ["db","Langage SQL",2,"T2_BasesDonnees/memento_SQL.md"],
         #3 : ["db","Langage SQL",2,"T2_BasesDonnees/memento_SQL_BIS.md"]
         #3 : ["python","Récursivité",1,"Programmation/T1_1_Recursivite.md"],
-        4 : ["sd","Programmation Orientée Objet",2,"T5_Programmation/POO.md"],
+        4 : ["sd","Programmation Orientée Objet",2,"T1_Structure_Donnees/POO.md"],
         #20: ["os","Cryptographie",1,"Projet/cryptographie2.md"],
         #5 : ["os","Listes et Piles",2,"StructureDonnees/T2_1_Listes_Piles_et_Files.md"],
         #6 : ["os","Protocole de routage",1,"Archi_Materielle/T3_1_Routage.md"],
@@ -107,7 +107,7 @@ def define_env(env):
     }
 
     env.variables['devoir_terminale']={
-        1 : ["devoir","Langage SQL","SQL","Evaluations/DS1_correction.md"]
+        1 : ["devoir","Langage SQL","10/10/2023","Evaluations/DS1_correction.md"]
         #2 : ["devoir","Pile-File et Protocole de Routage",'16/11/2023',"Evaluations/DS_Pile_File_Routage.md"],
         #3 : ["devoir","Pile-File et Protocole de Routage",'16/11/2023',"Evaluations/DS_Pile_File_Routage.md"],
         #4 : ["devoir","Les tris - Diviser pour régner","02/12/2023","Evaluations/DS_Diviser_pour_regner_tris.md"],
@@ -137,7 +137,7 @@ def define_env(env):
         #2 : ["devoir","Pile-File et Protocole de Routage",'16/11/2023',"Evaluations/DS_Pile_File_Routage.md"],
         1 : ["db","Langage SQL","SQL","T2_BasesDonnees/SQL_BAC.md"],
         #3 : ["python","Récursivité",1,"Programmation/T1_1_Recursivite.md"],
-        3 : ["sd","Programmation Orientée Objet","P.O.O","T5_Programmation/POO_BAC.md"]
+        4 : ["sd","Programmation Orientée Objet","P.O.O","T1_Structure_Donnees/POO_BAC.md"]
         #5 : ["sd","Piles et Files","Struc. Données","StructureDonnees/T2_2_Pile_File_BAC_Correction.md"],
         #6 : ["os","Protocole de routage","Réseaux","Archi_Materielle/T3_1_Routage_BAC_Correction.md"],
         #7 : ["algorithmique","Algorithmes de tri",1,"Algo/T5_2_algo_tri.md"],
@@ -464,7 +464,7 @@ Vous pouvez télécharger une copie au format pdf du diaporama de synthèse de c
     @env.macro
     def affiche_BAC(niveau):
         ret='''
-| |BAC      | Le  |
+| |BAC      | Thème  |
 |-|-------------|-------|
         '''
         if niveau=="premiere":

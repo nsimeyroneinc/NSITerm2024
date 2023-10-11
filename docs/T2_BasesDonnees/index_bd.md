@@ -18,6 +18,6 @@ de mise à jour qui peuvent par exemple être rédigées dans le langage SQL (St
 traitements peuvent conjuguer le recours au langage SQL et à un langage de programmation.
 
 !!! info
-    □ Modèle relationnel : relation, attribut, domaine, clef primaire, clef étrangère, schéma relationnel 
-    □ Base de données relationnelle et SGBD.  
-    □ Langage SQL : requêtes d'interrogation et de mise à jour d'une base de données  
+    🗹 Modèle relationnel : relation, attribut, domaine, clef primaire, clef étrangère, schéma relationnel 
+    🗹 Base de données relationnelle et SGBD.  
+    🗹 Langage SQL : requêtes d'interrogation et de mise à jour d'une base de données  
