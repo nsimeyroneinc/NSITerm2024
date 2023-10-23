@@ -1,0 +1,9 @@
+\mframe{\POO}
+^^I\begin{exampleblock}{Exemple}
+^^I^^IIl existe de nombreux type de dés à jouer, qui possèdent en commun d'avoir un nombre de faces bien définis et de pouvoir être lancé afin d'obtenir un résultat. On peut donc représenter un dé par un objet informatique
+^^I^^I\begin{lstlisting}
+  class De:
+      def __init__(nombre_faces):
+      self.faces=nombre_faces
+\end{lstlisting}
+^^I\end{exampleblock}

@@ -99,6 +99,35 @@ particulièrement déterminé (qui réalise un grand nombre de tirs).
         ...         # le score de la Base augmente de 40
 ```
 
+??? correction
+
+    1. C'est l'**instruction 3** : `joueur1 = Joueur("Sniper",319,"A")`
+
+    2.  a.
+        ```python
+        def redevenir_actif(self):
+            if not self.est_actif:
+                self.est_actif = True
+        ```
+
+        b.
+        ```python
+        def nb_de_tirs_recus(self):
+            return len(liste_id_tirs_recus)
+        ```
+
+    3.  a. C'est le **test 1** qui vérifie que l'équipe du participant est bien celle de la base.
+
+        b. A la ligne 5, on constate que lorsqu'un joueur a été touché par le tir d'un coéquipier, le score de l'équipe diminue de 20.
+
+    4. 
+    ```python
+    if participant.est_determine(): # (1)
+        self.incremente_score(40) 
+    ```
+
+        1. Dans la classe `Joueur` donnée en début d'exercice on trouve la méthode `est_determine`
+
 
 ##  Exercice 2 : D'après 2022, Centres étrangers, J2, Ex. 4
 
@@ -185,3 +214,42 @@ Parmi les structures linéaires de données suivantes : Tableau, File, Pile, que
 - $1$ si la carte `carte_1` a une valeur strictement plus forte que celle de `carte_2` ;
 - $-1$ si la carte `carte_2` a une valeur strictement plus forte que celle de `carte_1`.
 
+
+??? correction
+        
+    1.a.  
+    ```python
+    class Carte: 
+        def __init__(self, val, coul): 
+            self.valeur = val 
+            self.couleur = coul 
+    ```
+
+    1.b.  
+    ```python
+    c7 = Carte(7, "coeur")
+    ```
+
+    2.  
+    ```python
+    def initialiser() : 
+        jeu = [] 
+        for c in ["coeur", "carreau", "trefle", "pique"] : 
+            for v in range(2,15) : 
+                carte_cree = Carte(v,c)
+                jeu.append(carte_cree) 
+        return jeu
+    ```
+
+    3. La structure des données la plus adaptée est la file, puisque l’on a affaire à une structure de type FIFO (First IN First OUT). Le classement des cartes doit suivre la “règle FIFO”, car la carte remportée (la dernière arrivée) doit être placée en dessous du tas.  
+
+    4.  
+    ```python
+    def comparer(carte1, carte2): 
+        if carte1.valeur > carte2.valeur : 
+            return 1 
+        elif carte1.valeur < carte2.valeur :
+            return-1 
+        else : 
+            return 0
+    ```
