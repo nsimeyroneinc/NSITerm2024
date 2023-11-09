@@ -11,9 +11,9 @@
 
 
 1.  
-- `nom` : attribut  
-- `tab_voisines` : attribut  
-- `tab_couleurs_disponibles` : attribut
+    - `nom` : attribut  
+    - `tab_voisines` : attribut  
+    - `tab_couleurs_disponibles` : attribut
 
 
 2. `nom_region` est de type `str` : chaîne de caractère.
@@ -57,6 +57,9 @@ def est_voisine(self, region):
             return True
     return False
 ```
+
+
+**Partie 2**  
 
 9. 
 ```python
