@@ -107,8 +107,8 @@ def define_env(env):
     }
 
     env.variables['devoir_terminale']={
-        1 : ["devoir","Langage SQL","10/10/2023","Evaluations/DS1_correction.md"]
-        #2 : ["devoir","Pile-File et Protocole de Routage",'16/11/2023',"Evaluations/DS_Pile_File_Routage.md"],
+        1 : ["devoir","Langage SQL","10/10/2023","Evaluations/DS1_correction.md"],
+        2 : ["devoir","P.O.O",'07/11/2023',"Evaluations/DS2_correction.md"]
         #3 : ["devoir","Pile-File et Protocole de Routage",'16/11/2023',"Evaluations/DS_Pile_File_Routage.md"],
         #4 : ["devoir","Les tris - Diviser pour régner","02/12/2023","Evaluations/DS_Diviser_pour_regner_tris.md"],
         #5 : ["devoir","Les arbres binaires","16/12/2023","Evaluations/DS_Arbres.md"],
