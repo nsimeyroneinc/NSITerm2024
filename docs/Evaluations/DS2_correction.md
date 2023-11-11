@@ -7,7 +7,7 @@
 
 ## Correction 
 
-##Partie 1
+### Partie 1
 
 
 1.  
@@ -40,6 +40,11 @@ def est_coloriee(self):
     else :
         return True
 ```
+ou 
+```python
+def est_coloriee(self): 
+    return self.Couleur_attribuee != None
+```
 
 7.  
 ```python
@@ -57,15 +62,24 @@ def est_voisine(self, region):
     return False
 ```
 
+ou 
 
-## Partie 2
+```python
+def est_voisine(self,region): 
+    for r in self.tab_voisines: 
+        if r==region: 
+            return True
+    return False
+```
+
+### Partie 2
 
 9.  
 ```python
 def renvoie_tab_regions_non_coloriees(self): 
     L=[]
     for region in self.tab_regions :
-        if est_coloriee(region) == False :
+        if not region.est_coloriee():
             L.append(region)
     return L
 ```
@@ -79,9 +93,10 @@ def renvoie_tab_regions_non_coloriees(self):
 ```python
 def colorie(self):
     region_m = self.renvoie_max()
-    while region_m:
-        region_m.couleur_attribuee = region_m.renvoie_premiere_couleur_disponible()
-        for voisine in region_m.tab_voisines:
-            voisine.retire_couleur(region_m.couleur_attribuee)
-        region_m = self.renvoie_max()
+    while region_m != None:
+        couleur=region_m.renvoie_premiere_couleur_disponible()
+        region_m.couleur_attribuee=couleur 
+        for r in region_m.tab_voisines: 
+            r.retire_couleur(couleur)
+        region_m=self.renvoie_max()   
 ```
