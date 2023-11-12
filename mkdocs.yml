@@ -45,8 +45,8 @@ nav:
     
     - T3 - Archi. mat. :
       - Architecture matérielle et OS : Archi_Materielle/index_archi.md
-      #- 📓 C6 Protocole de routage : Archi_Materielle/T3_1_Routage.md
-      #- T3_1 BAC Protocole de routage : Archi_Materielle/T3_1_Routage_BAC.md
+      - 📓 C5 Protocole de routage : Archi_Materielle/T3_1_Routage.md
+      - T3_1 BAC Protocole de routage : Archi_Materielle/T3_1_Routage_BAC.md
       #- 📝 S6 BAC Correction Protocole de routage : Archi_Materielle/T3_1_Routage_BAC_Correction.md
       #- 📓 C13 Gestion Processus : Archi_Materielle/T3_2_gestion_processus.md
       #- 📝 S13 BAC Gestion Processus : Archi_Materielle/T3_3_gestion_processus_BAC.md

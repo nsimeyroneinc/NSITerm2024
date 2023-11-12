@@ -76,7 +76,7 @@ def define_env(env):
         4 : ["sd","Programmation Orientée Objet",2,"T1_Structure_Donnees/POO.md"],
         #20: ["os","Cryptographie",1,"Projet/cryptographie2.md"],
         #5 : ["os","Listes et Piles",2,"StructureDonnees/T2_1_Listes_Piles_et_Files.md"],
-        #6 : ["os","Protocole de routage",1,"Archi_Materielle/T3_1_Routage.md"],
+        5 : ["os","Protocole de routage",1,"Archi_Materielle/T3_1_Routage.md"]
         #7 : ["algorithmique","Algorithmes de tri",1,"Algo/T5_2_algo_tri.md"],
         #8 : ["algorithmique","Diviser pour régner",1,"Algo/T5_3_Diviser_pour_regner.md"],
         #9 : ["sd","Les Dictionnaires - Révision",1,"StructureDonnees/T4_1_Dictionnaires.md"],
