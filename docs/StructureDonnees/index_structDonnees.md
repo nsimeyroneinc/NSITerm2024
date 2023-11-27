@@ -17,4 +17,4 @@ On choisit un type abstrait en fonction du problème à résoudre (choisir le bo
     🗹 Vocabulaire de la programmation objet : classes, attributs, méthodes, objets 
     🗹 Listes, piles, files : structures linéaires. 
     🗹 Dictionnaires, index et clé  
-    🗹 Arbres : structures hiérarchiques. Arbres binaires : nœuds, racines, feuilles, sous-arbres gauches, sous-arbres droits
+    □ Arbres : structures hiérarchiques. Arbres binaires : nœuds, racines, feuilles, sous-arbres gauches, sous-arbres droits

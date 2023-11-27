@@ -18,12 +18,13 @@ nav:
 
     - T1 - Struct. données :
       - Structures de données : StructureDonnees/index_structDonnees.md
-      - 📓 C4 P.O.O : T1_Structure_Donnees/POO.md
+      - 📓 T3.1 P.O.O : T1_Structure_Donnees/POO.md
       - 📓 S4 P.O.O BAC  :  T1_Structure_Donnees/POO_BAC.md
       #- 💻 T4 POO Exercices : StructureDonnees/T1_2_TD_POO.md
       #- 💻 TD POO BAC : StructureDonnees/T1_3_BAC_Capytale.md     
       #- 📝 S4 Sujet POO BAC : StructureDonnees/POO_BAC_correction.md
-      - 📓 C5 Listes, Piles et Files : T1_Structure_Donnees/File_Pile_Exercices.md
+      - 📓 T3.2 Piles : T1_Structure_Donnees/Pile.md
+      - 📓 T3.3 Files : T1_Structure_Donnees/File.md
       #- T2_2 BAC - Listes, Piles et Files : StructureDonnees/T2_2_Pile_File_BAC.md
       #- 📝 S5 BAC Correction - Listes, Piles et Files : StructureDonnees/T2_2_Pile_File_BAC_Correction.md
       #- 📓 C9 Les dictionnaires : StructureDonnees/T4_1_Dictionnaires.md
@@ -45,8 +46,8 @@ nav:
     
     - T3 - Archi. mat. :
       - Architecture matérielle et OS : Archi_Materielle/index_archi.md
-      - 📓 C5 Protocole de routage : Archi_Materielle/T3_1_Routage.md
-      - T3_1 BAC Protocole de routage : Archi_Materielle/T3_1_Routage_BAC.md
+      #- 📓 C5 Protocole de routage : Archi_Materielle/T3_1_Routage.md
+      #- T3_1 BAC Protocole de routage : Archi_Materielle/T3_1_Routage_BAC.md
       #- 📝 S6 BAC Correction Protocole de routage : Archi_Materielle/T3_1_Routage_BAC_Correction.md
       #- 📓 C13 Gestion Processus : Archi_Materielle/T3_2_gestion_processus.md
       #- 📝 S13 BAC Gestion Processus : Archi_Materielle/T3_3_gestion_processus_BAC.md
@@ -55,7 +56,7 @@ nav:
     - T4 - Prog. :
       - Programmation : Programmation/index_prog.md
       #- 📓 C3 Récursivité  :  T5_Programmation/T4_1_Cours_TP_Recursivite_2023_2024_PROF.ipynb
-      - 📓 C4 POO BAC  :  T5_Programmation/POO_BAC.md
+      - 📓 S4 POO BAC  :  T5_Programmation/POO_BAC.md
 
       #- Calculabilité, décidabilité : Programmation/calculabilite.md
       

@@ -3,8 +3,8 @@
 ![](data/banniere.png)
 
 !!! info
-    🗹 Protocoles de routage  
-    🗹 Gestion des processus et des ressources par un système d'exploitation  
+    □ Protocoles de routage  
+    □ Gestion des processus et des ressources par un système d'exploitation  
     □ Revoir les principales commandes Linux
 
 

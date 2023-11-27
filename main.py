@@ -69,14 +69,16 @@ def define_env(env):
     env.variables['num_act']=1
 
     env.variables['progression_terminale']={
-        1 : ["db","Le Modéle relationnel",1,"T2_BasesDonnees/index_bd.md"],
-        2 : ["db","Langage SQL",2,"T2_BasesDonnees/memento_SQL.md"],
+        1 : ["db","Le Modéle relationnel","Base de données","T2_BasesDonnees/index_bd.md"],
+        2 : ["db","Langage SQL","Base de données","T2_BasesDonnees/memento_SQL.md"],
         #3 : ["db","Langage SQL",2,"T2_BasesDonnees/memento_SQL_BIS.md"]
         #3 : ["python","Récursivité",1,"Programmation/T1_1_Recursivite.md"],
-        4 : ["sd","Programmation Orientée Objet",2,"T1_Structure_Donnees/POO.md"],
+        4 : ["sd","Programmation Orientée Objet","P.O.O","T1_Structure_Donnees/POO.md"],
+        5 : ["sd","Piles","Struc. Données","T1_Structure_Donnees/Pile_c.md"],
+        6 : ["sd","Piles","Struc. Données","T1_Structure_Donnees/File_c.md"]
         #20: ["os","Cryptographie",1,"Projet/cryptographie2.md"],
         #5 : ["os","Listes et Piles",2,"StructureDonnees/T2_1_Listes_Piles_et_Files.md"],
-        5 : ["os","Protocole de routage",1,"Archi_Materielle/T3_1_Routage.md"]
+        #5 : ["os","Protocole de routage",1,"Archi_Materielle/T3_1_Routage.md"]
         #7 : ["algorithmique","Algorithmes de tri",1,"Algo/T5_2_algo_tri.md"],
         #8 : ["algorithmique","Diviser pour régner",1,"Algo/T5_3_Diviser_pour_regner.md"],
         #9 : ["sd","Les Dictionnaires - Révision",1,"StructureDonnees/T4_1_Dictionnaires.md"],
@@ -109,6 +111,7 @@ def define_env(env):
     env.variables['devoir_terminale']={
         1 : ["devoir","Langage SQL","10/10/2023","Evaluations/DS1_correction.md"],
         2 : ["devoir","P.O.O",'07/11/2023',"Evaluations/DS2_correction.md"]
+
         #3 : ["devoir","Pile-File et Protocole de Routage",'16/11/2023',"Evaluations/DS_Pile_File_Routage.md"],
         #4 : ["devoir","Les tris - Diviser pour régner","02/12/2023","Evaluations/DS_Diviser_pour_regner_tris.md"],
         #5 : ["devoir","Les arbres binaires","16/12/2023","Evaluations/DS_Arbres.md"],
@@ -138,7 +141,8 @@ def define_env(env):
         1 : ["db","Langage SQL","SQL","T2_BasesDonnees/SQL_BAC.md"],
         #3 : ["python","Récursivité",1,"Programmation/T1_1_Recursivite.md"],
         4 : ["sd","Programmation Orientée Objet","P.O.O","T1_Structure_Donnees/POO_BAC.md"],
-        5 : ["sd","Piles et Files","Struc. Données","T1_Structure_Donnees/File_Pile_Exercices.md"]
+        5 : ["sd","Piles","Struc. Données","T1_Structure_Donnees/Pile.md"],
+        6 : ["sd","Piles","Struc. Données","T1_Structure_Donnees/File.md"]
         #6 : ["os","Protocole de routage","Réseaux","Archi_Materielle/T3_1_Routage_BAC_Correction.md"],
         #7 : ["algorithmique","Algorithmes de tri",1,"Algo/T5_2_algo_tri.md"],
         #8 : ["algorithmique","Diviser pour régner",1,"T5_2_Diviser_pour_regner.md"]

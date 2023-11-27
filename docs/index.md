@@ -1,7 +1,7 @@
 
 
 !!! info "Thème en cours" 
-    - Programmation Orientée Objet
+    - Listes - Piles - Files
 
 
 ## Liste des chapitres 
@@ -32,10 +32,10 @@
 
 ### &#10145; Thème : Structure de données  
 
-□ Structure de données abstraites( file) : interface et implémentation  
+🗹 Structure de données abstraites( file) : interface et implémentation  
 🗹 Vocabulaire de la programmation objet : classes, attributs, méthodes, objets 
-□ Listes, piles, files : structures linéaires. 
-□ Dictionnaires, index et clé  
+🗹 Listes, piles, files : structures linéaires. 
+🗹 Dictionnaires, index et clé  
 □ Arbres : structures hiérarchiques. Arbres binaires : nœuds, racines, feuilles, sous-arbres gauches, sous-arbres droits
 □ Les graphes
 

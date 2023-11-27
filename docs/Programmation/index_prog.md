@@ -16,5 +16,5 @@
  
 !!! info     
     🗹 Récursivité  
-    🗹 Modularité  	
-    🗹 Mise au point des programmes. Gestion des bugs.  
+    □ Modularité  	
+    □ Mise au point des programmes. Gestion des bugs.  
