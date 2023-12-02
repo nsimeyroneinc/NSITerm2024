@@ -15,9 +15,9 @@
 
 ### Enoncés
 
-{{telecharger("Sujets BAC - SQL","../pdf/T3.3/Files.pdf")}}
+{{telecharger("Sujets BAC - FILES","../pdf/T3.3/Files.pdf")}}
 
 ### Corrigés
 
 
-{{telecharger("Sujets BAC - SQL","../pdf/T3.3/Files_Correction.pdf")}}
+{{telecharger("Sujets BAC - FILES - Correction","../pdf/T3.3/Files_Correction.pdf")}}

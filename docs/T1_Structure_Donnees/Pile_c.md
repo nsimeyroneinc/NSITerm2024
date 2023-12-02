@@ -15,9 +15,9 @@
 
 ### Enoncés
 
-{{telecharger("Sujets BAC - SQL","../pdf/T3.2/Piles.pdf")}}
+{{telecharger("Sujets BAC - PILES","../pdf/T3.2/Piles.pdf")}}
 
 ### Corrigés
 
 
-{{telecharger("Sujets BAC - SQL","../pdf/T3.2/Piles_Correction.pdf")}}
+{{telecharger("Sujets BAC - PILES - Correction","../pdf/T3.2/Piles_Correction.pdf")}}
