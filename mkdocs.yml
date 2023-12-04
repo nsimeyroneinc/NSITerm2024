@@ -16,15 +16,25 @@ nav:
     #- Index : progression.md
     #- Test : Notebook.ipynb
 
-    - T1 - Struct. données :
+    - T2 - Bases données :  
+          - Base de données : T2_BasesDonnees/index_bd.md
+          - 📓 C1 Modèle relationnel : T2_BasesDonnees/Modele_Relationnel.md
+          - 📓 Memento Langage SQL : T2_BasesDonnees/memento_SQL.md
+          #- 📓 C2 Langage SQL : BasesDonnees/Cours_TP_SQL.md
+          - 📝 S2 BAC SQL : T2_BasesDonnees/SQL_BAC.md
+          #- 📝 S2 BAC SQL : T2_BasesDonnees/SQL_BAC_BIS.md
+          #- 📝 S2 BAC SQL Correction : BasesDonnees/SQL_BAC_correction.md
+          
+    - T3 - Struct. données :
       - Structures de données : StructureDonnees/index_structDonnees.md
       - 📓 T3.1 P.O.O : T1_Structure_Donnees/POO.md
       - 📓 S4 P.O.O BAC  :  T1_Structure_Donnees/POO_BAC.md
       #- 💻 T4 POO Exercices : StructureDonnees/T1_2_TD_POO.md
       #- 💻 TD POO BAC : StructureDonnees/T1_3_BAC_Capytale.md     
       #- 📝 S4 Sujet POO BAC : StructureDonnees/POO_BAC_correction.md
-      - 📓 T3.2 Piles : T1_Structure_Donnees/Pile.md
-      - 📓 T3.3 Files : T1_Structure_Donnees/File.md
+      - 📓 T3.2 Piles : T3_Structure_Donnees/Pile.md
+      - 📓 T3.3 Files : T3_Structure_Donnees/File.md
+      - 📓 T3.4 Arbres : T3_Structure_Donnees/Arbres.md
       #- T2_2 BAC - Listes, Piles et Files : StructureDonnees/T2_2_Pile_File_BAC.md
       #- 📝 S5 BAC Correction - Listes, Piles et Files : StructureDonnees/T2_2_Pile_File_BAC_Correction.md
       #- 📓 C9 Les dictionnaires : StructureDonnees/T4_1_Dictionnaires.md
@@ -35,14 +45,7 @@ nav:
 
 
     
-    - T2 - Bases données :  
-      - Base de données : T2_BasesDonnees/index_bd.md
-      - 📓 C1 Modèle relationnel : T2_BasesDonnees/Modele_Relationnel.md
-      - 📓 Memento Langage SQL : T2_BasesDonnees/memento_SQL.md
-      #- 📓 C2 Langage SQL : BasesDonnees/Cours_TP_SQL.md
-      - 📝 S2 BAC SQL : T2_BasesDonnees/SQL_BAC.md
-      #- 📝 S2 BAC SQL : T2_BasesDonnees/SQL_BAC_BIS.md
-      #- 📝 S2 BAC SQL Correction : BasesDonnees/SQL_BAC_correction.md
+    
     
     - T3 - Archi. mat. :
       - Architecture matérielle et OS : Archi_Materielle/index_archi.md

@@ -73,16 +73,16 @@ def define_env(env):
         2 : ["db","Langage SQL","Base de données","T2_BasesDonnees/memento_SQL.md"],
         #3 : ["db","Langage SQL",2,"T2_BasesDonnees/memento_SQL_BIS.md"]
         #3 : ["python","Récursivité",1,"Programmation/T1_1_Recursivite.md"],
-        4 : ["sd","Programmation Orientée Objet","P.O.O","T1_Structure_Donnees/POO.md"],
-        5 : ["sd","Piles","Struc. Données","T1_Structure_Donnees/Pile_c.md"],
-        6 : ["sd","Piles","Struc. Données","T1_Structure_Donnees/File_c.md"]
+        4 : ["sd","Programmation Orientée Objet","P.O.O","T3_Structure_Donnees/POO.md"],
+        5 : ["sd","Piles","Struc. Données","T3_Structure_Donnees/Pile_c.md"],
+        6 : ["sd","Piles","Struc. Données","T3_Structure_Donnees/File_c.md"],
         #20: ["os","Cryptographie",1,"Projet/cryptographie2.md"],
         #5 : ["os","Listes et Piles",2,"StructureDonnees/T2_1_Listes_Piles_et_Files.md"],
         #5 : ["os","Protocole de routage",1,"Archi_Materielle/T3_1_Routage.md"]
         #7 : ["algorithmique","Algorithmes de tri",1,"Algo/T5_2_algo_tri.md"],
         #8 : ["algorithmique","Diviser pour régner",1,"Algo/T5_3_Diviser_pour_regner.md"],
         #9 : ["sd","Les Dictionnaires - Révision",1,"StructureDonnees/T4_1_Dictionnaires.md"],
-        #10 : ["sd","Les arbres",2,"StructureDonnees/T3_1_arbre.md"],
+        7 : ["sd","Les arbres","Struc. Données","T3_Structure_Donnees/Arbres.md"]
         #11: ["algorithmique","Algorithmes sur les arbres",2,"Algo/TP5_5_Implementation_arbres.md"],
         #12: ["algorithmique","arbres binaires de recherche",1,"StructureDonnees/T3_3_arbre_recherche.md"],
         #13 : ["os","Gestion Processus",1,"Archi_Materielle/T3_2_gestion_processus.md"],
