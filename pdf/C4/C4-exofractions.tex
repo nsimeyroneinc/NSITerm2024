@@ -1,0 +1,67 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage{Cours}
+\input{Macros.tex}
+\begin{document}
+
+
+%\ModeExercice
+%Titre de la fiche d'activité(s) et niveau de la classe
+\ProjetNSI{\faPython \; -- C4 : Programmation orienté objet}{\Term}{POO et calcul sur les fractions}
+
+\pythonmode
+
+%Nom de la première activité
+\begin{Exo}{\textbf{POO et calcul sur les fractions}}\\
+	Le but de l'activité est de mettre en oeuvre en Python un module permettant d'effectuer des calculs (additions, soustractions, multiplications, divisions) et des manipulations (simplification) en utilisant le paradigme de programmation objet.
+	\begin{enumerate}
+		\item L'objet fraction\\
+	On modélise une fraction par ses attributs numérateur et dénominateur, le dénominateur doit être non nul, sinon c'est une division par zéro.
+
+		\begin{enumerate}
+			\item Créer la classe {\tt Fraction} et son constructeur.
+			\item Modifier le constructeur de façon à pouvoir créer une fraction à partir d'un entier, par exemple l'entier 4 correspond à la fraction $\dfrac{4}{1}$.
+			\item Toutes les fractions ayant zéro comme numérateur sont nulles, on les représentera toutes par la fraction $\dfrac{0}{1}$, modifier le constructeur en ce sens.
+			\item Instancier la classe fraction pour créer la représentation informatique des fractions suivantes :\\
+	\renewcommand{\arraystretch}{1.5}
+	\begin{tabularx}{0.6\textwidth}{XXXX}
+		$a=\dfrac{3}{4}$ & $b=\dfrac{2}{5}$ & $c=-\dfrac{7}{12}$ & $d=3$ \\
+	\end{tabularx}
+		\end{enumerate}
+	\item Affichage de l'objet fraction\\
+	\danger \; Deux méthodes spéciales en Python permettent d'obtenir une représentation sous forme de chaine de caractères d'un objet, il s'agit de {\tt \_\_repr\_\_} et de {\tt \_\_str\_\_}, bien que des nuances existent entre ces deux méthodes, à notre niveau nous ne ferons pas de différences et on utilisera indifféremment l'une ou l'autre pour obtenir une version \og chaine de caractères \fg de notre objet.
+
+	\begin{enumerate}
+		\item Ecrire une méthode spéciale permettant de renvoyer la chaine de caractère {\tt 'a/b'} à partir de l'objet représentant la fraction $\dfrac{a}{b}$
+		\item Affiner cette méthode de façon à ce qu'une fraction ayant pour dénominateur 1 affiche simplement son numérateur.
+		\item Tester votre méthode sur les fractions $a, b, c$ et $d$ définies ci-dessus.
+	\end{enumerate}
+	\item Addition de deux fractions \\
+	La première idée est de créer une méthode {\tt addition} qui prend en argument deux fractions et renvoie leur somme, ainsi si nous avons deux objets fractions {\tt a} et {\tt b}, nous calculons leur somme avec {\tt a.addition(b)}. Cette solution n'est pas satisfaisante, en effet si {\tt a} et {\tt b} sont deux objets fractions, nous aimerions dans notre programme calculer leur somme en écrivant de façon plus naturelle : {\tt a+b}. La méthode spéciale {\tt \_\_add\_\_} permet en Python d'obtenir ce résultat.
+	\begin{enumerate}
+		\item Ecrire la méthode {\tt \_\_add\_\_} \\
+	\aide \; On a besoin ici de deux objets fractions, en plus du traditionnel {\tt self}, on notera {\tt other} l'autre objet. On rappelle d'autre part que $\dfrac{a}{b} + \dfrac{c}{d} = \dfrac{ad+bc}{bd} $
+		\item Tester votre méthode en additionnant les fractions $a$ et $b$ ci-dessus \\
+	\aide \; {\tt print(a+b)} devrait afficher {\tt 23/20}, en effet : $\dfrac{3}{4}+\dfrac{2}{5} = \dfrac{23}{20}$
+		\end{enumerate}
+	\item Les autres opérations de base
+	\begin{enumerate}
+		\item Ecrire la méthode {\tt \_\_sub\_\_} (la soustraction) et la tester.
+		\item Ecrire la méthode {\tt \_\_mul\_\_} (la multiplication) et la tester.
+		\item Ecrire la méthode {\tt \_\_truediv\_\_} (la division) et la tester.
+		\item On donne ci-dessous quelques calculs fractionnaires (donnés dans le passé au brevet des collèges) utiliser votre module pour effectuer ces calculs :\\
+	$A = \dfrac{3}{7}+\dfrac{4}{21}-\dfrac{5}{2}$ \qquad \qquad  $B = \dfrac{12}{5} - \dfrac{3}{5}\times \dfrac{7}{9}$ \qquad \qquad $C = 5 + \left(1+ \dfrac{1}{8}\right)\div\dfrac{3}{4}$
+		\end{enumerate}
+	\item Simplifier une fraction
+	\begin{enumerate} 
+		\item Ecrire une fonction {\tt pgcd} qui prend en arguments deux entiers et retourne leur plus grand commun diviseur.\\
+	\aide \; On rappelle que le {\sc pgcd} de deux entiers $a$ et $b$ se calcule avec l'algorithme d'Euclide :
+	\begin{enumerate}
+		\item Si $b=0$ alors l'algorithme se termine et le {\sc pgcd} est $a$
+		\item Sinon faire la division euclidienne de $a$, par $b$, on note $r$ le reste (et on sait que $r<b$). Revenir à l'étape 1 en prenant $a=b$ et $b=r$.
+	\end{enumerate}
+	\item Ecrire une méthode {\tt simplifie} qui simplifie  la fraction passée en paramètre pour la rendre irréductible.
+		\end{enumerate}
+	\end{enumerate}
+\end{Exo}
+\end{document}
